@@ -10,3 +10,4 @@
 !yii
 !composer.json
 !composer.lock
+!vendor/

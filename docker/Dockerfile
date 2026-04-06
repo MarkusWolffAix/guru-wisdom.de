@@ -1,10 +1,15 @@
 FROM composer/composer:2-bin AS composer
 
-# Switch to Alpine Linux base image to drastically reduce the final image size
-FROM dunglas/frankenphp:1-php8.4-alpine AS base
+# Alt: FROM dunglas/frankenphp:1-php8.4-bookworm AS base
+# Neu:
+FROM dunglas/frankenphp:1-php8.4-bookworm AS base
 
-# Alpine uses 'apk' instead of 'apt'. '--no-cache' prevents storing package index files, keeping the image slim.
-RUN apk add --no-cache unzip
+# ... der Rest bleibt gleich, aber achte auf die Installation von unzip
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    unzip \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Install required PHP extensions for Yii3
 RUN install-php-extensions \
@@ -38,10 +43,10 @@ RUN install-php-extensions xdebug
 
 COPY --from=composer /composer /usr/bin/composer
 
-# Create a non-root user and grant necessary capabilities (Alpine specific syntax)
-RUN apk add --no-cache libcap && \
-    addgroup -g ${GROUP_ID} ${GROUP_NAME} && \
-    adduser -D -u ${USER_ID} -G ${GROUP_NAME} ${USER_NAME} && \
+# Create a non-root user and grant necessary capabilities (Debian syntax)
+RUN \
+    groupadd --gid ${GROUP_ID} ${GROUP_NAME} && \
+    useradd --gid ${GROUP_ID} --uid ${USER_ID} ${GROUP_NAME} && \
     setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/frankenphp && \
     chown -R ${USER_NAME}:${GROUP_NAME} /data/caddy && \
     chown -R ${USER_NAME}:${GROUP_NAME} /config/caddy
