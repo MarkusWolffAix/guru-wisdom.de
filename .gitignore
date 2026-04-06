@@ -1,0 +1,74 @@
+# --- IDE & System ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- PHP & Composer ---
+/vendor/
+composer.phar
+.php-cs-fixer.cache
+.phpunit.result.cache
+
+# --- Yii3 Spezifisch ---
+/runtime/*
+!/runtime/.gitignore
+
+# Assets werden in Yii3 standardmäßig in public/assets generiert
+/public/assets/*
+!/public/assets/.gitignore
+
+# Falls du Ressourcen-Extraktion nutzt
+/resources/messages/*/extracted.php
+
+# --- Konfiguration & Geheimnisse (WICHTIG!) ---
+.env
+.env.local
+.env.*.local
+
+# Lokale Konfigurations-Dateien (Yii3 nutzt oft params-local.php)
+config/params-local.php
+config/di-local.php
+config/events-local.php
+config/routes-local.php
+
+# --- Docker ---
+# Falls du lokale Docker-Daten-Volumes im Projektordner hast
+docker/data/
+.docker-sync/
+docker-compose.override.yml
+
+# --- Sonstiges ---
+/node_modules/
+/npm-debug.log
+/dist/
+
+
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# sublime text project / workspace files
+*.sublime-project
+*.sublime-workspace
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# composer vendor dir
+/vendor
+
+# Codeception C3
+c3.php
