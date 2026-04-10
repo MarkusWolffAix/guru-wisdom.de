@@ -14,5 +14,6 @@ final class MainAsset extends AssetBundle
 
     public array $css = [
         'site.css',
+	'guruwisom.css',
     ];
 }

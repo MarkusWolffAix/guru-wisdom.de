@@ -1,0 +1,93 @@
+/* =========================================
+   Globale Styles
+   ========================================= */
+body {
+    background-image: url('../images/background/Opacarophile0.5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* font-size: 28px;               <-- Überlege dir gut, ob ALLES 28px sein soll */
+    /* font-family: 'Brush Script MT', cursive; <-- Besser nur für Überschriften nutzen */
+}
+
+/* Eigene Hintergrundfarbe (statt .bg-white zu überschreiben) */
+.bg-ivory {
+    background-color: rgb(255, 255, 240) !important;
+}
+
+/* Überschriften im Container */
+.container h1, 
+.container h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;         
+    margin-bottom: 20px;
+}       
+
+/* =========================================
+   Formulare & Controls
+   ========================================= */
+.custom-checkbox .custom-control-input:checked:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 255, 0, 0.25);
+}
+
+.custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.custom-checkbox .custom-control-input:active ~ .custom-control-label::before {
+    background-color: #C8FFC8;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background-color: transparent;
+}   
+
+/* =========================================
+   Navigation & Icons
+   ========================================= */
+.wisdom-nav-icon {
+    cursor: pointer;
+    width: 50px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+.wisdom-nav-icon:hover {
+    transform: scale(1.1);
+}
+
+/* =========================================
+   Markdown / Artikel Bereich
+   ========================================= */
+#markdown-body {
+    font-family: 'Lora', serif;
+    font-size: 18px;          
+    line-height: 1.7;         
+    color: #333333;           
+    /* Wenn du abgerundete Ecken willst, fehlt hier evtl. ein background-color: #fff; */
+    border-radius: 8px; 
+}
+
+#markdown-body h1, 
+#markdown-body h2, 
+.handwritten-text {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5em;         
+    margin-bottom: 20px;
+}
+
+#markdown-body blockquote {
+    padding: 15px 20px;
+    font-style: italic;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    /* Oft sieht ein Blockquote mit einem linken Rand besser aus: */
+    border-left: 4px solid #0d6efd; 
+    background-color: rgba(255, 255, 240, 0.5); /* Leichter Elfenbein-Hintergrund */
+}
+
+#markdown-body img {
+    max-width: 100%;    
+    height: auto;       
+    display: block;     
+    border-radius: 8px; /* Lässt auch die Bilder weicher wirken */
+}
