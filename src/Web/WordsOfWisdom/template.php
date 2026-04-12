@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+use Yiisoft\Html\Html; 
+use Yiisoft\View\WebView;
 /**
  * Für eine saubere IDE-Unterstützung (wie in PhpStorm) ist es guter Stil, 
  * die Variablen oben im Template einmal zu deklarieren:
@@ -9,20 +11,101 @@ declare(strict_types=1);
  * @var string $title
  * @var string $subtitle
  * @var string $wisdomText
- */
+ * @var string $image
+ * @var string $audio
+ * @var string|null $prevId
+ * @var string|null $nextId
+*/
 ?>
 
-<div class="wisdom-container">
-    <h1><?= htmlspecialchars($title) ?></h1>
+<?php
+$this->setTitle($title);
 
-    <?php if ($subtitle !== ''): ?>
-        <h3 class="text-muted"><?= htmlspecialchars($subtitle) ?></h3>
-    <?php endif; ?>
+// $this->params['breadcrumbs'][] = $title;
+   // include_once(Yii::getAlias("@webroot/wisdoms/$id.php"));
 
-    <hr>
-                <?= $id ?>
+echo "<h1>".$title."</h1>";
+if(!empty($subtitle)){
+    echo "<h2>".$subtitle."</h2>";
+}
 
-    <div class="wisdom-content">
-        <?= $wisdomText ?>
-    </div>
+// echo VideoWidget::widget(['url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ']) ;
+echo $image."<br/>"; 
+echo $audio."<br/>";
+?>
+<div class="wisdom-navigation mt-5">
+    
+    <?= Html::a(
+        Html::img('/images/icons/ArrowLeft.png')
+            ->id('before-button')
+            ->class('wisdom-nav-icon')
+            ->alt('before wisdom'),
+        '/' . $prevId
+    ) ?>
+    <?= Html::a(
+        Html::img('/images/icons/MagnifyingGlass.png')
+            ->id('toggle-button')
+            ->class('wisdom-nav-icon')
+            ->alt('show details'),
+    ) ?>
+        <?= Html::a(
+        Html::img('/images/icons/ArrowRight.png')
+            ->id('next-button')
+            ->class('wisdom-nav-icon')
+            ->alt('next wisdom'),
+        '/' . $nextId
+    ) ?>
+
+
 </div>
+
+
+ 
+
+<!-- Das DIV-Element, das versteckt/gezeigt werden soll -->
+<div id="markdown-body" class="markdown-body-class" style="display:none; border:1px solid #ccc; padding:10px; margin-top:10px;">
+<?php 
+      echo $wisdom['htmloutput'] ?? 'Der Inhalt dieser Weisheit konnte leider nicht geladen werden.';
+      // echo GuruWisdom::getWisdomContent($id)    ;
+?>
+</div>
+
+
+<?php
+// 1. extern MathJax Script to show LaTeX formulas in the markdown content
+// In Yii3 wird die Position als 2. Argument übergeben, nicht mehr in einem Array!
+$this->registerJsFile(
+    'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+    WebView::POSITION_HEAD
+);
+
+// 2. jQuery Toggle-Script
+$jsToggle = <<<JS
+$('#toggle-button').on('click', function() {
+    $('#markdown-body').toggle(1000); 
+});
+JS;
+
+// POSITION_READY Code is running after the DOM is fully loaded, but before images and other resources are loaded.
+$this->registerJs($jsToggle, WebView::POSITION_READY);
+
+// 3. Vanilla JS YouTube-Script
+$jsYoutube = <<<JS
+    document.querySelectorAll('.youtube-placeholder').forEach(function(placeholder) {
+        placeholder.addEventListener('click', function() {
+            var videoId = this.getAttribute('data-video-id');
+            var iframe = '<iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px;"></iframe>';
+            this.innerHTML = '<div class="ratio ratio-16x9">' + iframe + '</div>';
+        });
+    });
+JS;
+// POSITION_END places the script just before the closing </body> tag, which is ideal for scripts that manipulate the DOM after it has loaded.
+$this->registerJs($jsYoutube, WebView::POSITION_END);
+
+?>
+
+
+
+
+
+<

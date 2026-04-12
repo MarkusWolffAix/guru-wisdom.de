@@ -132,6 +132,9 @@ class BaseGuruWisdom
     public function parseFile(string $id, bool $autoSave = true): array
     {
         $filePath = $this->getFilePath($id);
+        // /app/public/wisdoms/Ganesha.md 
+        // public/wisdoms/Ganesha.md 
+
         
         if (!file_exists($filePath)) {
             return ['htmloutput' => ''];

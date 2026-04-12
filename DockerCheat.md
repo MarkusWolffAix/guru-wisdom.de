@@ -47,6 +47,8 @@ Diese Übersicht hilft dir, deine Docker-Umgebung sauber zu halten und die berü
 * **Logs einsehen:**
     `docker logs -f <container_id>`
     Folgt den Live-Ausgaben deiner App.
+    `docker compose logs -f app`  
+    Zeigt die Logs für die Entwicklung gut an 
 
 ---
 

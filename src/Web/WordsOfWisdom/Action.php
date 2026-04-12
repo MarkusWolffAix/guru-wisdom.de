@@ -15,7 +15,6 @@ final class Action implements RequestHandlerInterface
 {
     private ViewRenderer $viewRenderer;
 
-    // ✅ PHP 8 Constructor Promotion: 'private' direkt in den Klammern spart Code!
     public function __construct(
         ViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
@@ -33,20 +32,30 @@ final class Action implements RequestHandlerInterface
         // Check if we are on the index route (no specific ID provided)
         if ($id === null) {
             // Hier könntest du künftig deine Logik für einen zufälligen Post einbauen
-            $id = 'random'; 
+            $id = 'Ganesha'; // Platzhalter, bis die Logik für zufällige Posts implementiert ist
         }
         
         // parseFile gibt jetzt ein Array zurück!
         $wisdomData = $this->guruWisdom->parseFile($id);
 
+
+        $image = $this->guruWisdom->getImageHtml($id);
+        $audio = $this->guruWisdom->getAudioHtml($id);
+        $navids = $this->guruWisdom->getNavigationIds($id);
+        $prevId = $navids['prev'] ?? null;
+        $nextId = $navids['next'] ?? null;
+
+         
+
         return $this->viewRenderer->render('template', [
             'id' => $id,
-            // Wir greifen auf den key 'htmloutput' des Arrays zu
-            // Der Null-Coalescing Operator (?? '') verhindert Fehler, falls die Datei leer war
             'wisdomText' => $wisdomData['htmloutput'] ?? '', 
-            // Bonus: Du kannst jetzt auch Title & Subtitle an den View übergeben!
             'title' => $wisdomData['title'] ?? 'Kein Titel',
-            'subtitle' => $wisdomData['subtitle'] ?? ''
+            'subtitle' => $wisdomData['subtitle'] ?? '',
+            'image' => $image, 
+            'audio' => $audio,
+            'prevId' => $prevId,
+            'nextId' => $nextId
         ]);
     }
 }
