@@ -93,16 +93,23 @@ class BaseGuruWisdom
         return [$previousId, $currentId, $nextId];
     }
 
-    /**
-     * Processes custom placeholders in the markdown and replaces them with HTML.
+/**
+     * Processes custom placeholders in a string and converts them into HTML components.
+     * * Examples:
+     * - [youtube:dQw4w9WgXcQ] -> Standard YouTube Embed
+     * - [spotify:track:4uLU6hMCjMI75M1A2tKUQC] -> Spotify Player for a specific track
+     * - [image:https://example.com/photo.jpg|A beautiful sunset] -> Responsive image with alt text
+     *
+     * @param string $text The raw text containing placeholders.
+     * @return string The processed text with HTML tags.
      */
     public function processPlaceholders(string $text): string
     {
         // 1. YouTube Placeholders
+        // Matches [youtube:VIDEO_ID]
         $text = preg_replace_callback('/\[youtube:([a-zA-Z0-9_-]+)\]/', function(array $matches) {
             $videoId = $matches[1]; 
             
-            // htmlspecialchars replaces the old yii\bootstrap5\Html::encode
             return '<div class="ratio ratio-16x9 my-4" style="max-width: 640px;">
               <iframe 
                   src="https://www.youtube.com/embed/' . htmlspecialchars($videoId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . '" 
@@ -114,8 +121,41 @@ class BaseGuruWisdom
           </div>';
         }, $text);
 
-        // 2. Future Placeholders (e.g. Vimeo, Audio, Galleries)
-        // $text = preg_replace_callback('/\[vimeo:([0-9]+)\]/', ...
+        // 2. Spotify Placeholders
+        // Matches [spotify:type:ID] where type is track, album, playlist, artist, episode, or show
+        $text = preg_replace_callback('/\[spotify:(track|album|playlist|artist|episode|show):([a-zA-Z0-9]+)\]/', function(array $matches) {
+            $type = $matches[1];
+            $spotifyId = $matches[2];
+            
+            $safeType = htmlspecialchars($type, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $safeId = htmlspecialchars($spotifyId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+            return '<div class="my-4" style="max-width: 640px;">
+                <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
+            </div>';
+        }, $text);
+
+        // 3. Image Placeholders
+        // Matches [image:URL] or [image:URL|ALT_TEXT]
+        $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
+            $imageUrl = trim($matches[1]);
+            // Check if an optional alt text was provided after the pipe symbol
+            $altText = isset($matches[2]) ? trim($matches[2]) : '';
+            
+            $safeUrl = htmlspecialchars($imageUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+            // Returns a responsive image using Bootstrap-like classes
+            return '<img src="' . $safeUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">';
+        }, $text);
         
         return $text;
     }
