@@ -5,7 +5,9 @@
  * @license https://www.yiiframework.com/license/
  */
 
-namespace Ap\Helpers;
+
+
+namespace App\Helper;
 /**
  * Html provides a set of static methods for generating commonly used HTML tags.
  *

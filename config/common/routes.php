@@ -34,7 +34,7 @@ return [
         ->name('privacypolicy'),
 
     // 📜 Overview of all words of wisdom (Index)
-    Route::get('/wordsofwisdom')
+    Route::get('/')
         ->action([WordsOfWisdomAction::class, 'handle'])
         ->name('wordsofwisdom.index'), // Unique name for the list
 

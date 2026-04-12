@@ -15,6 +15,8 @@ return [
 
     'yiisoft/aliases' => [
         'aliases' => require __DIR__ . '/aliases.php',
+        '@public' => '@root/public',
+        '@wisdoms' => '@public/wisdoms', 
     ],
 
     'yiisoft/view' => [
@@ -35,4 +37,6 @@ return [
             Reference::to(CsrfViewInjection::class),
         ],
     ],
+
+   
 ];

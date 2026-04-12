@@ -8,19 +8,21 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
-use Yiisoft\Yii\View\ViewRenderer;
-// use App\Helper\GuruWisdom; // <-- Include your helper here!
+use Yiisoft\Yii\View\Renderer\ViewRenderer; 
+use App\Helper\BaseGuruWisdom; // ✅ Den richtigen Helper importiert!
 
 final class Action implements RequestHandlerInterface
 {
     private ViewRenderer $viewRenderer;
-    private CurrentRoute $currentRoute;
 
-    public function __construct(ViewRenderer $viewRenderer, CurrentRoute $currentRoute)
-    {
+    // ✅ PHP 8 Constructor Promotion: 'private' direkt in den Klammern spart Code!
+    public function __construct(
+        ViewRenderer $viewRenderer, 
+        private CurrentRoute $currentRoute, 
+        private BaseGuruWisdom $guruWisdom
+    ) {
         // Set view path to current directory
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);
-        $this->currentRoute = $currentRoute;
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface
@@ -30,20 +32,21 @@ final class Action implements RequestHandlerInterface
 
         // Check if we are on the index route (no specific ID provided)
         if ($id === null) {
-            // Generate a random ID or fetch a random wisdom using your helper
-            // Example: $wisdom = GuruWisdom::getRandom();
-            $id = 'random'; // Placeholder: Replace this with your actual random logic
+            // Hier könntest du künftig deine Logik für einen zufälligen Post einbauen
+            $id = 'random'; 
         }
+        
+        // parseFile gibt jetzt ein Array zurück!
+        $wisdomData = $this->guruWisdom->parseFile($id);
 
-	$wisdomText = GuruWisdom::getTextById($id); // (Beispielaufruf)
-
-	return $this->viewRenderer->render('template', [
-    		'id' => $id,
-    		'wisdomText' => $wisdomText // <-- Hier übergibst du den fertigen Text
-	]);
-        // Render the shared template.php and pass the ID (or wisdom object)
-        /* return $this->viewRenderer->render('template', [
+        return $this->viewRenderer->render('template', [
             'id' => $id,
-        ]);*/
+            // Wir greifen auf den key 'htmloutput' des Arrays zu
+            // Der Null-Coalescing Operator (?? '') verhindert Fehler, falls die Datei leer war
+            'wisdomText' => $wisdomData['htmloutput'] ?? '', 
+            // Bonus: Du kannst jetzt auch Title & Subtitle an den View übergeben!
+            'title' => $wisdomData['title'] ?? 'Kein Titel',
+            'subtitle' => $wisdomData['subtitle'] ?? ''
+        ]);
     }
 }
