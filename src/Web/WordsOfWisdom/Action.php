@@ -35,7 +35,8 @@ final class Action implements RequestHandlerInterface
             $id = 'Ganesha'; // Platzhalter, bis die Logik für zufällige Posts implementiert ist
         }
         
-        // parseFile gibt jetzt ein Array zurück!
+        // parseFile returns an array with 'htmloutput', 'title', and 'subtitle' keys, which we will use in the view
+    
         $wisdomData = $this->guruWisdom->parseFile($id);
 
 
@@ -46,7 +47,7 @@ final class Action implements RequestHandlerInterface
         $nextId = $navids['next'] ?? null;
 
         return $this->viewRenderer
-        ->withLayout('@src/Web/Shared/Layout/Main/layout') // Pfad zum Layout erzwingen
+        ->withLayout('@src/Web/Shared/Layout/Main/layout') // force Path tolayout
         ->render('template', [
             'id' => $id, 
             'wisdomText' => $wisdomData['htmloutput'] ?? '', 
@@ -57,15 +58,6 @@ final class Action implements RequestHandlerInterface
             'prevId' => $prevId,
             'nextId' => $nextId
         ]);
-        return $this->viewRenderer->render('template', [
-            'id' => $id,
-            'wisdomText' => $wisdomData['htmloutput'] ?? '', 
-            'title' => $wisdomData['title'] ?? 'Kein Titel',
-            'subtitle' => $wisdomData['subtitle'] ?? '',
-            'image' => $image, 
-            'audio' => $audio,
-            'prevId' => $prevId,
-            'nextId' => $nextId
-        ]);
+
     }
 }

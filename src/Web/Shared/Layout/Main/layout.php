@@ -52,7 +52,7 @@ $this->beginPage();
     $brandLabel = Html::img('/images/logo/GuruWisdom.png', 'Logo Guru Wisdom')
         ->id('brand-logo')
         ->addStyle('width:32px;')
-        ->class('img-responsive');
+        ->class('img-fluid');
 
     echo NavBar::widget()
         ->brandText((string) $brandLabel)
@@ -108,8 +108,8 @@ $this->beginPage();
         <div class="row text-muted">
             <div class="col-md-6 bg-white text-md-start text-dark">
                 <small> &copy; GURU Wisdom <?= date('Y') ?></small>
-                <a href="https://www.youtube.com/@guruwisdomaix"><img src="/images/icons/Youtube.png" alt="Youtube" width="24" height="24" class="img-responsive"/></a>
-                <a href="https://www.instagram.com/guru2wisdom"><img src="/images/icons/Instagram.png" alt="Instagram" width="16" height="16" class="img-responsive"/></a>
+                <a href="https://www.youtube.com/@guruwisdomaix"><img src="/images/icons/Youtube.png" alt="Youtube" width="24" height="24" class="img-fluid"/></a>
+                <a href="https://www.instagram.com/guru2wisdom"><img src="/images/icons/Instagram.png" alt="Instagram" width="16" height="16" class="img-fluid"/></a>
             </div>
             
             <?php
