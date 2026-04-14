@@ -45,8 +45,18 @@ final class Action implements RequestHandlerInterface
         $prevId = $navids['prev'] ?? null;
         $nextId = $navids['next'] ?? null;
 
-         
-
+        return $this->viewRenderer
+        ->withLayout('@src/Web/Shared/Layout/Main/layout') // Pfad zum Layout erzwingen
+        ->render('template', [
+            'id' => $id, 
+            'wisdomText' => $wisdomData['htmloutput'] ?? '', 
+            'title' => $wisdomData['title'] ?? 'Kein Titel',
+            'subtitle' => $wisdomData['subtitle'] ?? '',
+            'image' => $image, 
+            'audio' => $audio,
+            'prevId' => $prevId,
+            'nextId' => $nextId
+        ]);
         return $this->viewRenderer->render('template', [
             'id' => $id,
             'wisdomText' => $wisdomData['htmloutput'] ?? '', 

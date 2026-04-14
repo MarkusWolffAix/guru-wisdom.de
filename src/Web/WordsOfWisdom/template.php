@@ -63,9 +63,10 @@ echo $audio."<br/>";
  
 
 <!-- Das DIV-Element, das versteckt/gezeigt werden soll -->
-<div id="markdown-body" class="markdown-body-class" style="display:none; border:1px solid #ccc; padding:10px; margin-top:10px;">
+<div id="markdown-body" style="display:none;">
 <?php 
-      echo $wisdom['htmloutput'] ?? 'Der Inhalt dieser Weisheit konnte leider nicht geladen werden.';
+      echo $wisdomText;
+      // echo $wisdom['htmloutput'] ?? 'Der Inhalt dieser Weisheit konnte leider nicht geladen werden.';
       // echo GuruWisdom::getWisdomContent($id)    ;
 ?>
 </div>
@@ -78,16 +79,26 @@ $this->registerJsFile(
     'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
     WebView::POSITION_HEAD
 );
+?>
+<!-- 2. Vanilla JS Script to toggle the visibility of the markdown content -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtn = document.getElementById('toggle-button');
+    var markdownBody = document.getElementById('markdown-body');
 
-// 2. jQuery Toggle-Script
-$jsToggle = <<<JS
-$('#toggle-button').on('click', function() {
-    $('#markdown-body').toggle(1000); 
+    if(toggleBtn && markdownBody) {
+        toggleBtn.addEventListener('click', function() {
+            if (markdownBody.style.display === 'none') {
+                markdownBody.style.display = 'block';
+            } else {
+                markdownBody.style.display = 'none';
+            }
+        });
+    }
 });
-JS;
+</script>
+<?php
 
-// POSITION_READY Code is running after the DOM is fully loaded, but before images and other resources are loaded.
-$this->registerJs($jsToggle, WebView::POSITION_READY);
 
 // 3. Vanilla JS YouTube-Script
 $jsYoutube = <<<JS
@@ -103,9 +114,3 @@ JS;
 $this->registerJs($jsYoutube, WebView::POSITION_END);
 
 ?>
-
-
-
-
-
-<

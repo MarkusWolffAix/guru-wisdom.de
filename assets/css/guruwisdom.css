@@ -1,8 +1,16 @@
 /* =========================================
    Globale Styles
    ========================================= */
+
+/* --- Basis Layout --- */
+main > .container {
+    padding-top: 80px; /* Platz für die schwebende Menüleiste (etwas mehr als 70px sieht oft besser aus) */
+    padding-bottom: 20px;
+}
+
+/* ... hier folgt dein restlicher Code für Footer, Markdown und Menü ... */
 body {
-    background-image: url('../images/background/Opacarophile0.5.jpg');
+    background-image: url('/images/background/Opacarophile0.5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -91,3 +99,71 @@ audio::-webkit-media-controls-enclosure {
     display: block;     
     border-radius: 8px; /* Lässt auch die Bilder weicher wirken */
 }
+
+
+/* --- Liebevolle Menüleiste --- */
+
+/* 1. Schriftart und Abstände anpassen */
+.navbar .nav-link {
+    font-family: 'Caveat', cursive; /* Die liebevolle Handschrift */
+    font-size: 1.8rem;              /* Etwas größer, da Handschriften klein ausfallen */
+    padding-left: 1.5rem !important;  /* Mehr Platz nach links */
+    padding-right: 1.5rem !important; /* Mehr Platz nach rechts */
+    color: #555555;                 /* Ein sanftes Grau statt hartem Schwarz */
+    transition: color 0.3s ease;    /* Weicher Übergang beim Hovern */
+}
+
+/* 2. Farbe ändern, wenn man mit der Maus darüber fährt */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #d63384; /* Ein sanftes, liebliches Pink/Rot (passend zum Thema) */
+}
+
+/* 3. Den aktiven (angeklickten) Menüpunkt hervorheben */
+.navbar .nav-link.active {
+    color: #d63384;
+    font-weight: 700;
+}
+
+/* --- Markdown Content Box --- */
+#markdown-body {
+    border: 1px solid #cccccc;
+    padding: 1.5rem; /* Bootstrap-konformer Abstand (ca. 24px) */
+    margin-top: 1rem; 
+    border-radius: 8px; /* Ein bisschen abgerundete Ecken sehen moderner aus */
+    background-color: #fafafa; /* Sehr sanftes Grau als Texthintergrund */
+}
+
+/* --- Harmonisierter Footer --- */
+
+footer#footer {
+    border-top: 1px solid #f0f0f0; /* Eine sehr feine Trennlinie oben */
+    background-color: #ffffff;
+    font-family: 'Lora', serif;    /* Elegante Grundschrift für den Footer */
+    color: #6c757d;                /* Ein weiches Grau */
+}
+
+footer#footer small {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+}
+
+/* Falls du den Namen "GURU Wisdom" im Footer hervorheben willst */
+footer#footer .footer-brand {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color: #d63384; /* Dein Akzent-Pink */
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Abstände für die Social Icons */
+footer#footer a {
+    margin-left: 0px;
+    transition: opacity 0.3s ease;
+}
+
+footer#footer a:hover {
+    opacity: 0.7;
+}
+

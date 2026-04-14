@@ -18,9 +18,11 @@ use Yiisoft\Html\Html;
 use Yiisoft\Bootstrap5\Nav;
 use Yiisoft\Bootstrap5\NavLink;
 use Yiisoft\Bootstrap5\NavBar;
-// use app\widgets\Alert; // In Yii3 meist durch ein Session-Flash-Widget ersetzt
 
 $assetManager->register(MainAsset::class);
+$this->addCssFiles($assetManager->getCssFiles());
+$this->addJsFiles($assetManager->getJsFiles());
+
 
 $this->registerMeta(['charset' => 'UTF-8'], 'charset');
 $this->registerMeta(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no'], 'viewport');
@@ -29,7 +31,7 @@ $this->registerMeta(['name' => 'keywords', 'content' => $this->getParameter('met
 
 $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
 
-// Optional: $this->beginPage() und endPage() wurden in neueren Yii3-Versionen oft zugunsten direkter HTML-Struktur entfernt.
+$this->beginPage();
 ?>
 <!DOCTYPE html>
 <html lang="<?= Html::encode($language ?? 'de') ?>" class="h-100">
@@ -38,7 +40,8 @@ $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favi
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" >
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -57,15 +60,17 @@ $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favi
         ->attributes(['class' => 'navbar-expand-md navbar-light bg-white fixed-top'])
         ->begin();
 
-    $menuItems = [
- 	['label' => 'Weisheiten', 'url' => $urlGenerator->generate('wordsofwisdom.index')],
-        ['label' => 'Impressum', 'url' => $urlGenerator->generate('impressum')],
-        ['label' => 'Datenschutz', 'url' => $urlGenerator->generate('privacypolicy')],
-        ['label' => 'Kontakt', 'url' => $urlGenerator->generate('contact')],
-	NavLink::to('Kontakt', $urlGenerator->generate('contact')),  
-  ];
+  $menuItems = [
+        NavLink::to('Weisheiten')->url($urlGenerator->generate('wordsofwisdom.index')),
+        NavLink::to('Impressum')->url($urlGenerator->generate('impressum')),
+        NavLink::to('Datenschutz')->url($urlGenerator->generate('privacypolicy')),
+        NavLink::to('Kontakt')->url($urlGenerator->generate('contact')),
+    ];
 
-/*    if ($currentUser->isGuest()) {
+
+
+
+   /* if ($currentUser->isGuest()) {
         if (isset($environment) && $environment !== 'prod') {
             $menuItems[] = ['label' => 'Login', 'url' => $urlGenerator->generate('login')];
         }
@@ -79,19 +84,14 @@ $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favi
             )
             . Html::form()->close()
             . '</li>';
-    }
-*/
+    }*/
 
-   /*echo Nav::widget()
-    ->attributes(['class' => 'navbar-nav me-auto mb-2 mb-md-0'])
-    ->items(...$menuItems); // WICHTIG: Beachte die drei Punkte (...) vor der Variable!
-    */
-   /* echo Nav::widget()
-        ->attributes(['class' => 'navbar-nav'])
-        ->items($menuItems);
 
+   echo Nav::widget()
+    ->attributes(['class' => 'navbar-nav mx-auto mb-2 mb-md-0'])
+    ->items(...$menuItems);
     echo NavBar::end();
-*/
+
 ?>
 </header>
 
@@ -108,7 +108,7 @@ $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favi
         <div class="row text-muted">
             <div class="col-md-6 bg-white text-md-start text-dark">
                 <small> &copy; GURU Wisdom <?= date('Y') ?></small>
-                <a href="https://www.youtube.com/@guru2wisdom"><img src="/images/icons/Youtube.png" alt="Youtube" width="24" height="24" class="img-responsive"/></a>
+                <a href="https://www.youtube.com/@guruwisdomaix"><img src="/images/icons/Youtube.png" alt="Youtube" width="24" height="24" class="img-responsive"/></a>
                 <a href="https://www.instagram.com/guru2wisdom"><img src="/images/icons/Instagram.png" alt="Instagram" width="16" height="16" class="img-responsive"/></a>
             </div>
             
@@ -153,5 +153,7 @@ $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favi
     </div>
 </footer>
 <?php $this->endBody() ?>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php $this->endPage() ?>
