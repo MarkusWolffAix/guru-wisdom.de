@@ -8,15 +8,16 @@ use Yiisoft\Assets\AssetBundle;
 
 final class MainAsset extends AssetBundle
 {
-// 1. Wo landen die Dateien für den Browser? (Standard Yii-Aliase)
+    public ?string $sourcePath = '@root/assets';
     public ?string $basePath = '@assets'; 
     public ?string $baseUrl = '@assetsUrl'; 
 
-    // 2. Wo liegen deine Original-Dateien auf dem Server?
-    // @root zeigt auf das Hauptverzeichnis (/app), und dort in den Ordner 'assets'
-    public ?string $sourcePath = '@root/assets';
+public array $css = [
+        'css/bootstrap.5.3.2.min.css', 
+        'css/guruwisdom.css', 
+    ];
 
-    public array $css = [
-	    'css/guruwisdom.css',
+    public array $js = [
+        'js/bootstrap.bundle.5.3.2.min.js',
     ];
 }

@@ -36,12 +36,7 @@ $this->beginPage();
 <!DOCTYPE html>
 <html lang="<?= Html::encode($language ?? 'de') ?>" class="h-100">
 <head>
-    <title><?= Html::encode($this->getTitle()) ?></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <title><?= Html::encode($this->getTitle()) ?></title>    
     <?php $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
@@ -60,6 +55,9 @@ $this->beginPage();
         ->attributes(['class' => 'navbar-expand-md navbar-light bg-white fixed-top'])
         ->begin();
 
+
+        
+/*
   $menuItems = [
         NavLink::to('Weisheiten')->url($urlGenerator->generate('wordsofwisdom.index')),
         NavLink::to('Impressum')->url($urlGenerator->generate('impressum')),
@@ -67,7 +65,7 @@ $this->beginPage();
         NavLink::to('Kontakt')->url($urlGenerator->generate('contact')),
     ];
 
-
+*/
 
 
    /* if ($currentUser->isGuest()) {
@@ -86,10 +84,10 @@ $this->beginPage();
             . '</li>';
     }*/
 
-
-   echo Nav::widget()
+   /* echo Nav::widget()
     ->attributes(['class' => 'navbar-nav mx-auto mb-2 mb-md-0'])
     ->items(...$menuItems);
+*/
     echo NavBar::end();
 
 ?>
@@ -106,12 +104,23 @@ $this->beginPage();
 <footer id="footer" class="mt-auto py-3 bg-white text-white">
     <div class="container">
         <div class="row text-muted">
-            <div class="col-md-6 bg-white text-md-start text-dark">
-                <small> &copy; GURU Wisdom <?= date('Y') ?></small>
-                <a href="https://www.youtube.com/@guruwisdomaix"><img src="/images/icons/Youtube.png" alt="Youtube" width="24" height="24" class="img-fluid"/></a>
-                <a href="https://www.instagram.com/guru2wisdom"><img src="/images/icons/Instagram.png" alt="Instagram" width="16" height="16" class="img-fluid"/></a>
-            </div>
-            
+    
+        <div class="container text-center">
+        <div class="mb-3">
+            <a href="https://www.youtube.com/@guru2wisdom" class="me-3"><img src="/images/icons/Youtube.png" alt="Youtube" width="24"></a>
+            <a href="https://www.instagram.com/guru2wisdom" clsse="me-3" ><img src="/images/icons/Instagram.png" alt="Instagram" width="16"></a>
+        </div>
+        
+        <div class="small text-muted mb-2">
+            <a href="<?= $urlGenerator->generate('contact') ?>" class="text-decoration-none text-muted mx-2">Kontakt</a> |
+            <a href="<?= $urlGenerator->generate('impressum') ?>" class="text-decoration-none text-muted mx-2">Impressum</a> |
+            <a href="<?= $urlGenerator->generate('privacypolicy') ?>" class="text-decoration-none text-muted mx-2">Datenschutz</a>
+        </div>
+
+        <div class="text-muted">
+            <small>&copy; GURU Wisdom <?= date('Y') ?></small>
+        </div>
+        </div>
             <?php
             if (isset($environment) && $environment === 'test') {
                 $deployUrl = $urlGenerator->generate('deploy', ['token' => 'DEIN_GEHEIMER_TOKEN_123']);
@@ -153,7 +162,6 @@ $this->beginPage();
     </div>
 </footer>
 <?php $this->endBody() ?>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
 <?php $this->endPage() ?>
