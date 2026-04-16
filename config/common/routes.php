@@ -19,29 +19,29 @@ return [
         ->name('login'),
 
     // ✉️ Contact
-    Route::methods(['GET', 'POST'], '/contact')
+    Route::methods(['GET', 'POST'], '/kontakt')
         ->action([ContactAction::class, 'handle'])
-        ->name('contact'),
+        ->name('contact-de'),
 
     // ⚖️ Legal Notice (Impressum)
     Route::get('/impressum')
         ->action([ImpressumAction::class, 'handle'])
-        ->name('impressum'),
+        ->name('impressum-de'),
 
     // 🛡️ Privacy Policy
-    Route::get('/privacypolicy')
+    Route::get('/detenschutz') // German URL for privacy policy
         ->action([PrivacyPolicyAction::class, 'handle'])
-        ->name('privacypolicy'),
+        ->name('privacypolicy-de'),
 
     // 📜 Overview of all words of wisdom (Index)
     Route::get('/')
         ->action([WordsOfWisdomAction::class, 'handle'])
-        ->name('wordsofwisdom.index'), // Unique name for the list
+        ->name('wordsofwisdom.index-de'), // Unique name for the list
 
     // 🔍 Detailed view of ONE specific word of wisdom (View)
     Route::get('/{id:[\w-]+}')
         ->action([WordsOfWisdomAction::class, 'handle'])
-        ->name('wordsofwisdom.view'), // Unique name for the detail view
+        ->name('wordsofwisdom.view-de'), // Unique name for the detail view
 
     // 🚀 Deployment
     Route::get('/deploy')

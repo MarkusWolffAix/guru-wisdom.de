@@ -11,6 +11,7 @@ declare(strict_types=1);
  * @var \Psr\Http\Message\ServerRequestInterface $request
  * @var string $environment
  * @var string $language
+ * @var \Yiisoft\Translator\TranslatorInterface $translator
  */
 
 use App\Web\Shared\Layout\Main\MainAsset;
@@ -30,11 +31,14 @@ $this->registerMeta(['name' => 'description', 'content' => $this->getParameter('
 $this->registerMeta(['name' => 'keywords', 'content' => $this->getParameter('meta_keywords', '')], 'keywords');
 
 $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
+$lang = $translator->getLocale(); 
+
+ 
 
 $this->beginPage();
 ?>
 <!DOCTYPE html>
-<html lang="<?= Html::encode($language ?? 'de') ?>" class="h-100">
+<html lang="<?= Html::encode($lang ?? 'de') ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->getTitle()) ?></title>    
     <?php $this->head() ?>
@@ -51,7 +55,7 @@ $this->beginPage();
 
     echo NavBar::widget()
         ->brandText((string) $brandLabel)
-        ->brandUrl($urlGenerator->generate('wordsofwisdom.index'))
+        ->brandUrl($urlGenerator->generate('wordsofwisdom.index-'.$lang))
         ->attributes(['class' => 'navbar-expand-md navbar-light bg-white fixed-top'])
         ->begin();
 
@@ -111,11 +115,21 @@ $this->beginPage();
             <a href="https://www.instagram.com/guru2wisdom" clsse="me-3" ><img src="/images/icons/Instagram.png" alt="Instagram" width="16"></a>
         </div>
         
+
+
         <div class="small text-muted mb-2">
-            <a href="<?= $urlGenerator->generate('contact') ?>" class="text-decoration-none text-muted mx-2">Kontakt</a> |
-            <a href="<?= $urlGenerator->generate('impressum') ?>" class="text-decoration-none text-muted mx-2">Impressum</a> |
-            <a href="<?= $urlGenerator->generate('privacypolicy') ?>" class="text-decoration-none text-muted mx-2">Datenschutz</a>
-        </div>
+            <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
+                <?= $translator->translate('menu.contact', [], 'app') ?>
+            </a> |
+    
+            <a href="<?= $urlGenerator->generate('impressum-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
+              <?= $translator->translate('menu.imprint', [], 'app') ?>
+            </a> |
+    
+            <a href="<?= $urlGenerator->generate('privacypolicy-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
+                 <?= $translator->translate('menu.privacy', [], 'app') ?>
+            </a>
+            </div>
 
         <div class="text-muted">
             <small>&copy; GURU Wisdom <?= date('Y') ?></small>

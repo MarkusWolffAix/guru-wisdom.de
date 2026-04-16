@@ -9,12 +9,14 @@ use Yiisoft\Definitions\Reference;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Yii\View\Renderer\CsrfViewInjection;
+use Yiisoft\Translator\TranslatorInterface;
 
 return [
     'application' => require __DIR__ . '/application.php',
 
     'yiisoft/aliases' => [
         'aliases' => require __DIR__ . '/aliases.php',
+        '@message' => '@root/resources/messages',
         '@public' => '@root/public',
         '@wisdoms' => '@public/wisdoms', 
     ],
@@ -27,6 +29,7 @@ return [
             'aliases' => Reference::to(Aliases::class),
             'urlGenerator' => Reference::to(UrlGeneratorInterface::class),
             'currentRoute' => Reference::to(CurrentRoute::class),
+            'translator' => Reference::to(TranslatorInterface::class),
         ],
     ],
 
@@ -36,6 +39,12 @@ return [
         'injections' => [
             Reference::to(CsrfViewInjection::class),
         ],
+    ],
+
+    'yiisoft/translator' => [
+        'locale' => 'de',
+        'fallbackLocale' => 'de',
+        'defaultCategory' => 'app', 
     ],
 
    
