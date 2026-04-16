@@ -8,7 +8,7 @@ assignees: 'MarkusWolffAix'
 
 ### 🎯 Objective
 ### 🛠 Implementation Details (PHP/Yii3)
-- [ ] **Data Layer:** Create/Update Migrations and ActiveRecord/Cycle Entities.
+- [ ] **Data Layer:** Create/Update Migrations and ActiveRecord/Cycle Entities. 
 - [ ] **Logic Layer:** Implement Business Logic in `src/` (Actions or Services).
 - [ ] **Config Layer:** Register dependencies in `config/` (DI Container, Events).
 - [ ] **Routing:** Define or update routes in `config/routes.php`.

@@ -1,0 +1,30 @@
+name: Daily Project Backup
+
+on:
+  schedule:
+    # Runs the backup every day at 03:00 AM UTC
+    - cron: '0 3 * * *'
+  # Allows you to manually trigger the backup via the GitHub UI
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Export Project Data
+        env:
+          # Accesses your GitHub Secret (requires 'project' scope)
+          GH_TOKEN: ${{ secrets.PROJECT_BACKUP_TOKEN }}
+        run: |
+          # Replace '2' with your actual project number if needed
+          gh project item-list 2 --owner MarkusWolffAix --format json >  $HOME/OneDrive/Backup/guru-wisdom/project-backup-$(date +'%Y-%m-%d').json
+
+      - name: Upload Backup as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: project-backup
+          path: project-backup-*.json
+          # Retain the backup artifact on GitHub for 30 days
+          retention-days: 30

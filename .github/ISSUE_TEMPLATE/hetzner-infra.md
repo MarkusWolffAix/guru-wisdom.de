@@ -3,7 +3,7 @@ name: Hetzner Infrastructure
 about: Managing Hetzner Cloud VMs, High Availability, and S3 Object Storage.
 title: '[OPS] '
 labels: infrastructure, hetzner
-assignees: 'Markus Wolff'
+assignees: 'MarkusWolffAix'
 ---
 
 ### 🎯 Objective
