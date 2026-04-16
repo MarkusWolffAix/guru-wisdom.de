@@ -3,7 +3,7 @@ name: Yii3 Development Task
 about: A comprehensive template for classic PHP development within Yii3.
 title: '[DEV] '
 labels: yii3, enhancement
-assignees: ''
+assignees: 'Markus Wolff'
 ---
 
 ### 🎯 Objective
