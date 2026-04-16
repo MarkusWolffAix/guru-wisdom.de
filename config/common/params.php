@@ -16,9 +16,6 @@ return [
 
     'yiisoft/aliases' => [
         'aliases' => require __DIR__ . '/aliases.php',
-        '@message' => '@root/resources/messages',
-        '@public' => '@root/public',
-        '@wisdoms' => '@public/wisdoms', 
     ],
 
     'yiisoft/view' => [

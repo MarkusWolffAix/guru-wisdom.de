@@ -21,6 +21,8 @@ use Yiisoft\Bootstrap5\NavLink;
 use Yiisoft\Bootstrap5\NavBar;
 
 $assetManager->register(MainAsset::class);
+$lang = $translator->getLocale(); 
+
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());
 
@@ -31,7 +33,6 @@ $this->registerMeta(['name' => 'description', 'content' => $this->getParameter('
 $this->registerMeta(['name' => 'keywords', 'content' => $this->getParameter('meta_keywords', '')], 'keywords');
 
 $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
-$lang = $translator->getLocale(); 
 
  
 

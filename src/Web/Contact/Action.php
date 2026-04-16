@@ -6,20 +6,31 @@ namespace App\Web\Contact;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Yii\View\Renderer\ViewRenderer;
 
-final class Action
+final class Action implements RequestHandlerInterface
 {
-    public function __construct(
-        private ViewRenderer $viewRenderer
-    ) {
-        // Wir weisen den Renderer an, den 'Contact' Ordner für die Views zu nutzen
-        $this->viewRenderer = $viewRenderer->withControllerName('Contact'); 
+    private ViewRenderer $viewRenderer;
+
+    public function __construct(ViewRenderer $viewRenderer)
+    {
+        /**
+         * We set the view path to the feature-specific folder.
+         * The alias @views points to /app/resources/views.
+         */
+    $this->viewRenderer = $viewRenderer->withViewPath('@views/contact');
+
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        // Wir laden die template.php
+        /**
+         * Yii3's View Localization:
+         * Because we call render('template'), and our file is named 'template.de.php',
+         * Yii will automatically select the German version if the locale is set to 'de'.
+         */
+
         return $this->viewRenderer->render('template');
     }
 }

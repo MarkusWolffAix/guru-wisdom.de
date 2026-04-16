@@ -183,3 +183,19 @@ footer#footer a:hover {
     opacity: 0.7;
 }
 
+.reverse-email {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+    display: inline-block;
+}
+
+.impressum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Lora', serif; !important;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
