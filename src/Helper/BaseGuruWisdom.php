@@ -27,28 +27,37 @@ class BaseGuruWisdom
     ) {
         $this->aliases = $aliases; 
     }
-
-    public function getImageHtml(string $id): string
+    public  function getImageHtml($id)
     {
-        $filename = $id . '.jpg';
-        $url = 'https://media.guru-wisdom.de/images/' . $filename;
+       $url = "https://media.guru-wisdom.de/images/".$id.".jpg ";
+
+       $headers = @get_headers($url);
+       $htmlcode="";
+       if (!$headers || strpos($headers[0], '200') === false) {
+            return ""; 
+       };
+    
+        $htmlcode=$htmlcode.'<picture><img src="'.$url.'" alt="" class="img-fluid"></picture>';
         
-        return '
-          <picture>
-            <img src="' . $url . '" alt="Wisdom Image" class="img-fluid">
-          </picture>
-        ';
+        return $htmlcode;
     }
 
-    public function getAudioHtml(string $id): string
+    public  function getAudioHtml($id)
     {
-        $url = 'https://media.guru-wisdom.de/audio/' . $id . '.mp3';
-        
-        return '
-          <audio controls autoplay>
-             <source src="' . $url . '" type="audio/mpeg">
-             </audio>';
+        $url = "https://media.guru-wisdom.de/audio/".$id.".mp3";
+
+        $headers = @get_headers($url);
+        $htmlcode="";
+
+        if (!$headers || strpos($headers[0], '200') === false) {
+            return ""; 
+        };
+
+        $htmlcode = '<audio controls autoplay> <source src="'.$url.'" type="audio/mpeg"> </audio>';
+
+    return $htmlcode;
     }
+
 
     /**
      * Retrieves the previous, current, and next IDs for navigation.
@@ -143,8 +152,8 @@ class BaseGuruWisdom
 
         // 3. Image Placeholders
         // Matches [image:URL] or [image:URL|ALT_TEXT]
-        $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
-            $imageUrl = trim($matches[1]);
+            $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
+            $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1].".jpg"); // Assuming .jpg extension for all images
             // Check if an optional alt text was provided after the pipe symbol
             $altText = isset($matches[2]) ? trim($matches[2]) : '';
             
@@ -167,11 +176,10 @@ class BaseGuruWisdom
      * The main orchestrator function.
      * Parses the markdown file, handles fallbacks, and renders HTML.
      */
-    public function parseFile(string $id, bool $autoSave = true): array
+    public function parseFile(string $id, bool $autoSave = false): array
     {
         $filePath = $this->getFilePath($id);
-        // /app/public/wisdoms/Ganesha.md 
-        // public/wisdoms/Ganesha.md 
+
 
         
         if (!file_exists($filePath)) {
@@ -187,10 +195,10 @@ class BaseGuruWisdom
         $needsUpdate = $this->applyFallbacks($data);
 
         // Step 3: Auto-save the raw markdown if needed
-        $isDevMode = false; // Adjust this according to your Yii3 environment logic
-        if ($autoSave && $needsUpdate && $isDevMode) {
-            $this->updateFile($filePath, $data);
-        }
+        // $isDevMode = false; // Adjust this according to your Yii3 environment logic
+        // if ($autoSave && $needsUpdate && $isDevMode) {
+        //     $this->updateFile($filePath, $data);
+        // }
 
         // Step 4: Process placeholders and convert raw markdown to final HTML
         $contentForParsing = $this->processPlaceholders($data['raw_markdown']);
