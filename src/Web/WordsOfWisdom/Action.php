@@ -8,15 +8,28 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
-use Yiisoft\Yii\View\Renderer\ViewRenderer; 
-use App\Helper\BaseGuruWisdom; // ✅ Den richtigen Helper importiert!
+use Yiisoft\Yii\View\Renderer\WebViewRenderer;
+use App\Helper\BaseGuruWisdom;
+
+/** 
+ * Für eine saubere IDE-Unterstützung (wie in PhpStorm) ist es guter Stil, 
+ * die Variablen oben im Template einmal zu deklarieren:
+ *
+ * @var string $title
+ * @var string $subtitle
+ * @var string $wisdomText
+ * @var string $image
+ * @var string $audio
+ * @var string|null $prevId
+ * @var string|null $nextId
+*/
 
 final class Action implements RequestHandlerInterface
 {
-    private ViewRenderer $viewRenderer;
+    private WebViewRenderer $viewRenderer;
 
     public function __construct(
-        ViewRenderer $viewRenderer, 
+        WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
         private BaseGuruWisdom $guruWisdom
     ) {

@@ -6,20 +6,22 @@ namespace App\Web\Login;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Yiisoft\Yii\View\Renderer\ViewRenderer;
+use Psr\Http\Server\RequestHandlerInterface;
+use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
-final class Action
+final class Action implements RequestHandlerInterface
 {
-    public function __construct(
-        private ViewRenderer $viewRenderer
-    ) {
-        // Wir weisen den Renderer an, in diesem Fall den 'Login' Ordner zu nutzen
-        $this->viewRenderer = $viewRenderer->withControllerName('Login'); 
+    // NEU: WebViewRenderer
+    private WebViewRenderer $viewRenderer;
+
+    // NEU: WebViewRenderer im Konstruktor
+    public function __construct(WebViewRenderer $viewRenderer)
+    {
+        $this->viewRenderer = $viewRenderer->withViewPath('@views/login');
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        // Wir laden die template.php
         return $this->viewRenderer->render('template');
     }
 }

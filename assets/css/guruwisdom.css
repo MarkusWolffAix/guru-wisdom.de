@@ -190,12 +190,12 @@ footer#footer a:hover {
     display: inline-block;
 }
 
-.impressum {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-family: 'Lora', serif; !important;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+/* Nur auf die rechtlichen Seiten anwenden */
+.impressum, .datenschutz {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #333; /* Nutze hier deine Variablen */
+  max-width: 800px;
+  margin: 0 auto;
 }

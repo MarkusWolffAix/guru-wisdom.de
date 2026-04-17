@@ -7,30 +7,21 @@ namespace App\Web\Contact;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Yiisoft\Yii\View\Renderer\ViewRenderer;
+use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
 final class Action implements RequestHandlerInterface
 {
-    private ViewRenderer $viewRenderer;
+    // NEU: WebViewRenderer
+    private WebViewRenderer $viewRenderer;
 
-    public function __construct(ViewRenderer $viewRenderer)
+    // NEU: WebViewRenderer im Konstruktor
+    public function __construct(WebViewRenderer $viewRenderer)
     {
-        /**
-         * We set the view path to the feature-specific folder.
-         * The alias @views points to /app/resources/views.
-         */
-    $this->viewRenderer = $viewRenderer->withViewPath('@views/contact');
-
+        $this->viewRenderer = $viewRenderer->withViewPath('@views/contact');
     }
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        /**
-         * Yii3's View Localization:
-         * Because we call render('template'), and our file is named 'template.de.php',
-         * Yii will automatically select the German version if the locale is set to 'de'.
-         */
-
         return $this->viewRenderer->render('template');
     }
 }
