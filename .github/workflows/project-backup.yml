@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Export Project Data
         env:
           # Accesses your GitHub Secret (requires 'project' scope)
@@ -22,7 +22,7 @@ jobs:
           gh project item-list 2 --owner MarkusWolffAix --format json >  $HOME/OneDrive/Backup/guru-wisdom/project-backup-$(date +'%Y-%m-%d').json
 
       - name: Upload Backup as Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: project-backup
           path: project-backup-*.json
