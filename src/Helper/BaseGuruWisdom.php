@@ -20,9 +20,12 @@ class BaseGuruWisdom
     /**
      * Constructor injects required Yii3 dependencies.
      */
+    protected Aliases $aliases;
+
     public function __construct(
-        protected Aliases $aliases
+        Aliases $aliases // Entferne hier das 'protected'
     ) {
+        $this->aliases = $aliases; // Weise es manuell zu
     }
 
     public function getImageHtml(string $id): string
@@ -127,7 +130,7 @@ class BaseGuruWisdom
 
             return '<div class="my-4" style="max-width: 640px;">
                 <iframe style="border-radius:12px" 
-                    src="https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '" 
+                    src="https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '?utm_source=generator" 
                     width="100%" 
                     height="352" 
                     frameBorder="0" 
