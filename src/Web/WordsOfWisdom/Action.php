@@ -43,6 +43,7 @@ final class Action implements RequestHandlerInterface
         $image = $this->guruWisdom->getImageHtml($id);
         $audio = $this->guruWisdom->getAudioHtml($id);
         $navids = $this->guruWisdom->getNavigationIds($id);
+
         $prevId = $navids['prev'] ?? null;
         $nextId = $navids['next'] ?? null;
 

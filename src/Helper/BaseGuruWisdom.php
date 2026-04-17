@@ -90,7 +90,7 @@ class BaseGuruWisdom
         $nextId = basename($nextFile, '.md');
         $previousId = basename($previousFile, '.md');
 
-        return [$previousId, $currentId, $nextId];
+        return ["prev" => $previousId, "current" => $currentId, "next" => $nextId];
     }
 
 /**
