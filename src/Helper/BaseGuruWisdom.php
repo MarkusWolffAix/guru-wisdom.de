@@ -53,7 +53,7 @@ class BaseGuruWisdom
             return ""; 
         };
 
-        $htmlcode = '<audio controls autoplay> <source src="'.$url.'" type="audio/mpeg"> </audio>';
+        $htmlcode = '<audio controls> <source src="'.$url.'" type="audio/mpeg"> </audio>';
 
     return $htmlcode;
     }
