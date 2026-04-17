@@ -23,9 +23,9 @@ class BaseGuruWisdom
     protected Aliases $aliases;
 
     public function __construct(
-        Aliases $aliases // Entferne hier das 'protected'
+        Aliases $aliases 
     ) {
-        $this->aliases = $aliases; // Weise es manuell zu
+        $this->aliases = $aliases; 
     }
 
     public function getImageHtml(string $id): string
