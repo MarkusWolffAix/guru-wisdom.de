@@ -19,12 +19,14 @@ jobs:
           GH_TOKEN: ${{ secrets.PROJECT_BACKUP_TOKEN }}
         run: |
           # Replace '2' with your actual project number if needed
-          gh project item-list 2 --owner MarkusWolffAix --format json >  $HOME/OneDrive/Backup/guru-wisdom/project-backup-$(date +'%Y-%m-%d').json
+          # gh project item-list 2 --owner MarkusWolffAix --format json >  /Users/markuswolff/OneDrive/Backup/guru-wisdom/project-backup-$(date +'%Y-%m-%d').json
+          gh project item-list 2 --owner MarkusWolffAix --format json >  project-backup-$(date +'%Y-%m-%d').json
 
       - name: Upload Backup as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: project-backup
-          path: project-backup-*.json
+          name: project-backup-${{ github.run_id }}
+          path: project-backup.json
           # Retain the backup artifact on GitHub for 30 days
+          path: project-backup-*.json
           retention-days: 30
