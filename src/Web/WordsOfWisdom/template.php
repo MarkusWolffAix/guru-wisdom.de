@@ -18,7 +18,9 @@ use Yiisoft\View\WebView;
 */
 ?>
 
+<div class="wisdom-container">
 <?php
+
 $this->setTitle($title);
 
 // $this->params['breadcrumbs'][] = $title;
@@ -69,6 +71,8 @@ echo $audio."<br/>";
       // echo $wisdom['htmloutput'] ?? 'Der Inhalt dieser Weisheit konnte leider nicht geladen werden.';
       // echo GuruWisdom::getWisdomContent($id)    ;
 ?>
+</div>
+
 </div>
 
 

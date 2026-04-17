@@ -14,22 +14,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* font-size: 28px;               <-- Überlege dir gut, ob ALLES 28px sein soll */
-    /* font-family: 'Brush Script MT', cursive; <-- Besser nur für Überschriften nutzen */
+
 }
 
-/* Eigene Hintergrundfarbe (statt .bg-white zu überschreiben) */
 .bg-ivory {
     background-color: rgb(255, 255, 240) !important;
 }
 
-/* Überschriften im Container */
-.container h1, 
-.container h2 {
-    font-family: 'Caveat', cursive;
-    font-size: 2.5em;         
-    margin-bottom: 20px;
-}       
 
 /* =========================================
    Formulare & Controls
@@ -75,12 +66,30 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 8px; 
 }
 
-#markdown-body h1, 
-#markdown-body h2, 
 .handwritten-text {
     font-family: 'Caveat', cursive;
     font-size: 2.5em;         
     margin-bottom: 20px;
+}
+
+.wisdom-container h1,
+.wisdom-container h2,
+.wisdom-container h3 {
+    font-family: 'Caveat', cursive;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.wisdom-container h1 {
+    font-size: 4em;
+}
+
+.wisdom-container h2 {
+    font-size: 3em;
+}
+
+.wisdom-container h3 {
+    font-size: 2em;
 }
 
 #markdown-body blockquote {

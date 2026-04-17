@@ -10,7 +10,7 @@ $this->setTitle('Impressum');
     <div class="w-50"> 
     <img src="/images/team/_MeColibriFestival.jpg" class="img-fluid" alt="Profilbild Markus Wolff">
     </div> 
-    <h2>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz):
+    <h2>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz): </h2>
     <address itemscope itemtype="schema.org/PostalAddress">
         <span itemprop="name">GURU Wisdom GmbH </span>
         <div class="w-100"></div> 
@@ -25,7 +25,7 @@ $this->setTitle('Impressum');
         <div class="w-100"></div>
         <span itemprop="telephone">Mobil: <a href="tel:+4915560480346" class="link-dark">+4915560480346</a></span>
         <div class="w-100"></div> 
-        Email. <span itemprop="email"><a href="mailto:info@guru-wisdom.com" class="link-dark">info@guru-wisdom.com</a>
+        Email. <span itemprop="email"><a href="mailto:info@guru-wisdom.com" class="link-dark">info@guru-wisdom.com</a></span>
     </address>
 
         Registereintrag:
