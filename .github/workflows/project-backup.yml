@@ -26,7 +26,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: project-backup-${{ github.run_id }}
-          path: project-backup.json
           # Retain the backup artifact on GitHub for 30 days
           path: project-backup-*.json
           retention-days: 30
