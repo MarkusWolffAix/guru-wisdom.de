@@ -23,20 +23,15 @@ use Yiisoft\View\WebView;
 
 $this->setTitle($title);
 
-// $this->params['breadcrumbs'][] = $title;
-   // include_once(Yii::getAlias("@webroot/wisdoms/$id.php"));
-
 echo "<h1>".$title."</h1>";
 if(!empty($subtitle)){
     echo "<h2>".$subtitle."</h2>";
 }
 
-// echo VideoWidget::widget(['url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ']) ;
 echo $image."<br/>"; 
-echo $audio."<br/>";
+echo $audio;
 ?>
-<div class="wisdom-navigation mt-5">
-    
+<div class="wisdom-navigation">
     <?= Html::a(
         Html::img('/images/icons/ArrowLeft.png')
             ->id('before-button')
@@ -57,12 +52,7 @@ echo $audio."<br/>";
             ->alt('next wisdom'),
         '/' . $nextId
     ) ?>
-
-
 </div>
-
-
- 
 
 <!-- Das DIV-Element, das versteckt/gezeigt werden soll -->
 <div id="markdown-body" style="display:none;">
@@ -85,26 +75,12 @@ $this->registerJsFile(
 );
 ?>
 <!-- 2. Vanilla JS Script to toggle the visibility of the markdown content -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleBtn = document.getElementById('toggle-button');
-    var markdownBody = document.getElementById('markdown-body');
 
-    if(toggleBtn && markdownBody) {
-        toggleBtn.addEventListener('click', function() {
-            if (markdownBody.style.display === 'none') {
-                markdownBody.style.display = 'block';
-            } else {
-                markdownBody.style.display = 'none';
-            }
-        });
-    }
-});
-</script>
 <?php
 
 
 // 3. Vanilla JS YouTube-Script
+/*
 $jsYoutube = <<<JS
     document.querySelectorAll('.youtube-placeholder').forEach(function(placeholder) {
         placeholder.addEventListener('click', function() {
@@ -116,5 +92,6 @@ $jsYoutube = <<<JS
 JS;
 // POSITION_END places the script just before the closing </body> tag, which is ideal for scripts that manipulate the DOM after it has loaded.
 $this->registerJs($jsYoutube, WebView::POSITION_END);
+*/
 
 ?>

@@ -157,6 +157,7 @@ audio::-webkit-media-controls-enclosure {
     margin-top: 1rem; 
     border-radius: 8px; /* Ein bisschen abgerundete Ecken sehen moderner aus */
     background-color: #fafafa; /* Sehr sanftes Grau als Texthintergrund */
+    
 }
 
 /* --- Harmonisierter Footer --- */
