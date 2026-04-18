@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: prod
+    ports:
+      - "80:80"
+    # WICHTIG: Keine Volumes! Der Code ist im Image.
+    environment:
+      - SERVER_NAME=:80
+      - APP_ENV=test
+    restart: unless-stopped
+    tty: true

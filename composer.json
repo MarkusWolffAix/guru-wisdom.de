@@ -102,6 +102,9 @@
             "yiisoft/config": true,
             "codeception/c3": true,
             "composer/installers": true
+        },
+        "platform": {
+            "php": "8.5.0"
         }
     }
 }

@@ -2,7 +2,7 @@ FROM composer/composer:2-bin AS composer
 
 # Alt: FROM dunglas/frankenphp:1-php8.4-bookworm AS base
 # Neu:
-FROM dunglas/frankenphp:1-php8.4-bookworm AS base
+FROM dunglas/frankenphp:1-php8.5-trixie AS base
 
 # ... der Rest bleibt gleich, aber achte auf die Installation von unzip
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -59,7 +59,7 @@ WORKDIR /app
 #
 FROM base AS prod-builder
 COPY --from=composer /composer /usr/bin/composer
-COPY .. /app
+COPY . /app
 RUN --mount=type=cache,target=/tmp/cache \
     composer install --no-dev --no-progress --no-interaction --classmap-authoritative && \
     rm composer.lock composer.json

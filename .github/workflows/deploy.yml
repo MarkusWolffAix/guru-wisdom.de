@@ -1,0 +1,92 @@
+name: CI/CD Pipeline Guru-Wisdom
+
+# Trigger the workflow on every push to the main branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  # --- STAGE 1: AUTOMATED TESTING ---
+  # Run unit tests to ensure the code logic is correct before touching any server
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5' # Matches your Dockerfile base
+          extensions: mbstring, intl, pdo_mysql, dom, curl, libxml
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+
+      - name: Execute tests
+        run: vendor/bin/phpunit # Pipeline fails here if tests do not pass
+
+  # --- STAGE 2: DEPLOY TO TEST/STAGING ENVIRONMENT ---
+  # Automatic deployment to your test server after successful tests
+  deploy-test:
+    name: Deploy to Staging (Test Server)
+    needs: [test] # This job only runs if 'test' succeeds
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remote SSH Deployment (Staging)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.TEST_SERVER_IP }}
+          username: markus
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/guru-wisdom.de
+            
+            # Fetch latest code changes
+            git pull origin main
+            
+            # Recreate .env file for Staging environment
+            echo "APP_ENV=test" > .env
+            echo "DB_PASSWORD=${{ secrets.TEST_DB_PASSWORD }}" >> .env
+            echo "SERVER_NAME=test.guru-wisdom.de" >> .env
+            chmod 600 .env
+            
+            # Rebuild and restart containers using the test-specific compose file
+            docker compose -f docker-compose.test.yml up -d --build
+
+  # --- STAGE 3: DEPLOY TO PRODUCTION ---
+  # This job waits for the test deployment to finish AND requires manual approval in GitHub
+  deploy-prod:
+    name: Deploy to Production
+    needs: [deploy-test] # This job only runs if staging deployment succeeds
+    runs-on: ubuntu-latest
+    
+    # Enable Manual Approval Gate
+    # You must create an environment named 'production' in your GitHub repo settings
+    environment:
+      name: production
+      url: https://guru-wisdom.de
+
+    steps:
+      - name: Remote SSH Deployment (Production)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.PROD_SERVER_IP }}
+          username: markus
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/guru-wisdom.de
+            
+            # Fetch latest code changes
+            git pull origin main
+            
+            # Recreate .env file for Production environment
+            echo "APP_ENV=prod" > .env
+            echo "DB_PASSWORD=${{ secrets.PROD_DB_PASSWORD }}" >> .env
+            echo "SERVER_NAME=guru-wisdom.de" >> .env
+            chmod 600 .env
+            
+            # Rebuild and restart containers using the production-specific compose file
+            docker compose -f docker-compose.prod.yml up -d --build

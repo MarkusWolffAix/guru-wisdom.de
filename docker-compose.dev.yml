@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: dev
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/app
+    environment:
+      - SERVER_NAME=:80
+      - APP_ENV=dev
+      - XDEBUG_MODE=debug
+    tty: true
+    stdin_open: true
