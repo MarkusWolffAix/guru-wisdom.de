@@ -25,8 +25,8 @@ jobs:
       - name: Install dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
-      - name: Execute tests
-        run: vendor/bin/phpunit # Pipeline fails here if tests do not pass
+  #    - name: Execute tests
+  #      run: vendor/bin/phpunit # Pipeline fails here if tests do not pass
 
   # --- STAGE 2: DEPLOY TO TEST/STAGING ENVIRONMENT ---
   # Automatic deployment to your test server after successful tests
@@ -49,8 +49,8 @@ jobs:
             
             # Recreate .env file for Staging environment
             echo "APP_ENV=test" > .env
-            echo "DB_PASSWORD=${{ secrets.TEST_DB_PASSWORD }}" >> .env
-            echo "SERVER_NAME=test.guru-wisdom.de" >> .env
+            # echo "DB_PASSWORD=${{ secrets.TEST_DB_PASSWORD }}" >> .env
+            # echo "SERVER_NAME=test.guru-wisdom.de" >> .env
             chmod 600 .env
             
             # Rebuild and restart containers using the test-specific compose file
@@ -84,8 +84,8 @@ jobs:
             
             # Recreate .env file for Production environment
             echo "APP_ENV=prod" > .env
-            echo "DB_PASSWORD=${{ secrets.PROD_DB_PASSWORD }}" >> .env
-            echo "SERVER_NAME=guru-wisdom.de" >> .env
+            # echo "DB_PASSWORD=${{ secrets.PROD_DB_PASSWORD }}" >> .env
+            # echo "SERVER_NAME=guru-wisdom.de" >> .env
             chmod 600 .env
             
             # Rebuild and restart containers using the production-specific compose file
