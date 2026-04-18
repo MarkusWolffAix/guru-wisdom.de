@@ -83,3 +83,9 @@ Diese Übersicht hilft dir, deine Docker-Umgebung sauber zu halten und die berü
 1.  **Multi-Stage Builds:** Baue deine App in einem Image (mit Compilern) und kopiere nur das Ergebnis in ein minimales Final-Image.
 2.  **`.dockerignore`:** Erstelle immer eine Whitelist, um `.git`, `node_modules` oder Caches gar nicht erst hochzuladen.
 3.  **Layer-Combining:** Verbinde `apt-get update && apt-get install && rm -rf ...` in einem einzigen `RUN`-Befehl.
+
+## DevOps Verantwortung 
+| Rolle | Verantwortungsbereich | Werkzeug |
+| :--- | :--- | :--- |
+| **Dev** | **Inhalt des Pakets:** Code, Runtime, App-Logik. | `Dockerfile` |
+| **Ops** | **Transport des Pakets:** Server-Hardware, Netzwerk, Skalierung. | `docker-compose.yml`, CI/CD |
