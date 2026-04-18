@@ -86,3 +86,21 @@ Dafür gibt es zwei Wege:
 
    BREAKING CHANGE: The method `getWisdom()` was renamed to `generateWisdom()`. All controllers must be updated.
    ```
+
+### 5. Git Commit-Nachricht nachträglich ändern (Lokal)
+
+Wenn du einen Commit lokal durchgeführt hast, aber noch nicht gepusht hast, kannst du die Nachricht im Nachhinein anpassen. Hier sind die zwei Methoden dafür:
+
+Wenn du nur die Nachricht des **letzten** Commits ändern willst, nutzt du den `--amend` Befehl.
+
+* **Direkt in der Konsole**
+  ```bash
+  git commit --amend -m "Deine neue, bessere Commit-Message" or for long text git commit --amend 
+
+* **etwas älterer Commit ist (Interactive Rebase)**
+Falls du schon zwei oder drei Commits gemacht hast und die Nachricht von einem weiter hinten liegenden ändern willst, brauchst du das "Präzisionswerkzeug":
+  ```bash
+  git rebase -i HEAD~3 (Die 3 steht für die Anzahl der letzten Commits, die du sehen willst).
+  Es öffnet sich eine Liste. Ändere vor dem entsprechenden Commit das Wort pick in reword (oder einfach nur r).
+  Speichere und schließe den Editor.
+  Git wird dich nun nacheinander fragen, wie die neuen Nachrichten für diese Commits lauten sollen.
