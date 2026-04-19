@@ -6,9 +6,23 @@ services:
       target: prod
     ports:
       - "80:80"
-    # WICHTIG: Keine Volumes! Der Code ist im Image.
     environment:
       - SERVER_NAME=:80
       - APP_ENV=test
     restart: unless-stopped
     tty: true
+    # Hinzugefügt: Volumes für temporäre Daten und Zertifikate.
+    # Dein Code bleibt unangetastet im Image!
+    volumes:
+      - app_assets:/app/assets
+      - app_runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+
+# Diese Deklaration sagt Docker, dass es diese Volumes intern
+# verwalten und beim Neustart behalten soll.
+volumes:
+  app_assets:
+  app_runtime:
+  caddy_data:
+  caddy_config:
