@@ -1,15 +1,18 @@
+# ==========================================
+# 1. Composer Stage
+# ==========================================
 FROM composer/composer:2-bin AS composer
 
-# Alt: FROM dunglas/frankenphp:1-php8.4-bookworm AS base
-# Neu:
+# ==========================================
+# 2. Base Stage
+# ==========================================
 FROM dunglas/frankenphp:1-php8.5-trixie AS base
 
-# ... der Rest bleibt gleich, aber achte auf die Installation von unzip
+# Install system dependencies (e.g. unzip for composer)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
 
 # Install required PHP extensions for Yii3
 RUN install-php-extensions \
@@ -29,10 +32,11 @@ RUN install-php-extensions \
 
 ENV LC_ALL=C.UTF-8
 
-#
-# Development Stage
-#
+# ==========================================
+# 3. Development Stage
+# ==========================================
 FROM base AS dev
+
 ARG USER_ID=10001
 ARG GROUP_ID=10001
 ARG USER_NAME=appuser
@@ -43,28 +47,44 @@ RUN install-php-extensions xdebug
 
 COPY --from=composer /composer /usr/bin/composer
 
-# Create a non-root user and grant necessary capabilities (Debian syntax)
-RUN \
-    groupadd --gid ${GROUP_ID} ${GROUP_NAME} && \
+# Create non-root user, grant port capabilities, and prepare Caddy directories
+RUN groupadd --gid ${GROUP_ID} ${GROUP_NAME} && \
     useradd --gid ${GROUP_ID} --uid ${USER_ID} ${GROUP_NAME} && \
     setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/frankenphp && \
-    chown -R ${USER_NAME}:${GROUP_NAME} /data/caddy && \
-    chown -R ${USER_NAME}:${GROUP_NAME} /config/caddy
+    mkdir -p /data/caddy /config/caddy && \
+    chown -R ${USER_NAME}:${GROUP_NAME} /data /config
 
-USER ${USER_NAME}
 WORKDIR /app
+USER ${USER_NAME}
 
-#
-# Production Stage
-#
+# ==========================================
+# 4. Production Builder Stage
+# ==========================================
 FROM base AS prod-builder
+
 COPY --from=composer /composer /usr/bin/composer
+WORKDIR /app
 COPY . /app
+
+# Install dependencies optimized for production
 RUN --mount=type=cache,target=/tmp/cache \
     composer install --no-dev --no-progress --no-interaction --classmap-authoritative && \
     rm composer.lock composer.json
 
+# ==========================================
+# 5. Production Stage
+# ==========================================
 FROM base AS prod
+
 ENV APP_ENV=prod
+WORKDIR /app
+
+# 1. Create all system and app directories BEFORE copying the code
+RUN mkdir -p /data/caddy /config/caddy /app/assets /app/public/assets /app/runtime && \
+    chown -R www-data:www-data /data /config /app
+
+# 2. Copy the built application from the builder stage with correct permissions
 COPY --from=prod-builder --chown=www-data:www-data /app /app
+
+# 3. Switch to the secure non-root user
 USER www-data

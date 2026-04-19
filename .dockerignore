@@ -6,6 +6,7 @@
 !/config
 !/public
 !/src
+!/assets
 !autoload.php
 !yii
 !composer.json

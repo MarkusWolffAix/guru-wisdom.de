@@ -3,14 +3,24 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
-      target: dev
+      target: dev       
     ports:
-      - "8080:80"
-    volumes:
-      - ./:/app
+      - "8080:80"        
     environment:
       - SERVER_NAME=:80
       - APP_ENV=dev
       - XDEBUG_MODE=debug
+    restart: unless-stopped
     tty: true
-    stdin_open: true
+    volumes:
+      - ./:/app
+      - app_public_assets:/app/public/assets
+      - app_runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  app_public_assets:
+  app_runtime:
+  caddy_data:
+  caddy_config:

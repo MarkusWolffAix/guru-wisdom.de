@@ -5,10 +5,22 @@ services:
       dockerfile: docker/Dockerfile
       target: prod
     ports:
-      - "80:80"
-    # WICHTIG: Keine Volumes!
+      - "80:80"          # Standard HTTP
     environment:
-      - SERVER_NAME=:80
+      # HIER PASSIERT DIE MAGIE: 
+      # Trage hier deine echten Domains ein, und Caddy besorgt SSL-Zertifikate!
+      # - SERVER_NAME=guru-wisdom.de, www.guru-wisdom.de
       - APP_ENV=prod
-    restart: always
+    restart: always      # Wenn der Live-Server neu startet, startet auch die App
     tty: true
+    volumes:
+      - app_public_assets:/app/public/assets
+      - app_runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  app_public_assets:
+  app_runtime:
+  caddy_data:
+  caddy_config:
