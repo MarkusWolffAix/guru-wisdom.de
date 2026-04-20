@@ -17,6 +17,7 @@ USER="www-data"
 # Hinweis: Wir nutzen EOF ohne Anführungszeichen, damit Shell-Variablen ($ALIAS_IP) ersetzt werden.
 CLOUD_INIT=$(cat << EOF
 #cloud-config
+timezone: Europe/Berlin
 write_files:
   - path: /etc/network/interfaces.d/60-alias-ip.cfg
     permissions: '0644'
