@@ -7,6 +7,7 @@
 !/public
 !/src
 !/assets
+!/resources
 !autoload.php
 !yii
 !composer.json
