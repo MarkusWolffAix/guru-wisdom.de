@@ -29,7 +29,7 @@ return [
         ->name('impressum-de'),
 
     // 🛡️ Privacy Policy
-    Route::get('/detenschutz') // German URL for privacy policy
+    Route::get('/datenschutz') // German URL for privacy policy
         ->action([PrivacyPolicyAction::class, 'handle'])
         ->name('privacypolicy-de'),
 

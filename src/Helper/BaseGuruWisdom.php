@@ -27,6 +27,19 @@ class BaseGuruWisdom
     ) {
         $this->aliases = $aliases; 
     }
+
+    public function sanitizeId($id): string
+    {
+        $path = $this->aliases->get('@public/wisdoms/');
+        $filePath = $path . $id . '.md';
+        if (!file_exists($filePath)) {
+            $files = glob($path . '*.md');
+            $filePath= $files[array_rand($files)];
+        }
+        return basename($filePath, '.md');
+    }
+
+    
     public  function getImageHtml($id)
     {
        $url = "https://media.guru-wisdom.de/images/".$id.".jpg ";
@@ -65,26 +78,14 @@ class BaseGuruWisdom
     public function getNavigationIds(?string $id = null): array
     {
         $path = $this->aliases->get('@public/wisdoms/');
+        $searchPath = $path . $id . '.md';
+
         $files = glob($path . '*.md');
         $count = count($files);
 
-        if ($count === 0) {
-            return ['', '', ''];
-        }
-
-        if ($id !== null) {
-            $searchPath = $path . $id . '.md';
-            $currentIndex = array_search($searchPath, $files);
-            
-            // Fallback to the first file if the ID was not found
-            if ($currentIndex === false) {
-                $currentIndex = 0;
-            }
-        } else {
-            $currentIndex = array_rand($files);
-        }
-
-        $currentFile = $files[$currentIndex];
+        
+        $currentIndex = array_search($searchPath, $files);
+        $currentFile = $files[$currentIndex]; 
 
         // Calculate previous and next files using wrap-around logic
         $previousIndex = ($currentIndex - 1 + $count) % $count;
@@ -182,9 +183,7 @@ class BaseGuruWisdom
 
 
         
-        if (!file_exists($filePath)) {
-            return ['htmloutput' => ''];
-        }
+
 
         $content = file_get_contents($filePath);
         

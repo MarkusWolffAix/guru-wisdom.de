@@ -42,17 +42,10 @@ final class Action implements RequestHandlerInterface
         // Get the 'id' argument. If the route doesn't have an '{id}', this returns null.
         $id = $this->currentRoute->getArgument('id');
 
-        // Check if we are on the index route (no specific ID provided)
-        if ($id === null) {
-            // Hier könntest du künftig deine Logik für einen zufälligen Post einbauen
-            $id = 'Ganesha'; // Platzhalter, bis die Logik für zufällige Posts implementiert ist
-        }
-        
-        // parseFile returns an array with 'htmloutput', 'title', and 'subtitle' keys, which we will use in the view
+        $id= $this->guruWisdom->sanitizeId($id);
+     
     
         $wisdomData = $this->guruWisdom->parseFile($id);
-
-
         $image = $this->guruWisdom->getImageHtml($id);
         $audio = $this->guruWisdom->getAudioHtml($id);
         $navids = $this->guruWisdom->getNavigationIds($id);

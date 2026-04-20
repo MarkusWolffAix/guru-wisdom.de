@@ -12,6 +12,7 @@ Diese Übersicht hilft dir, deine Docker-Umgebung sauber zu halten und die berü
 | `docker images` | Listet alle lokalen Images auf (inkl. Repository, Tag und Größe). |
 | `docker build -t name:tag .` | Baut ein Image aus dem aktuellen Verzeichnis. |
 | `docker build --no-cache -t name .` | Erzwingt einen kompletten Neubau ohne Nutzung alter Layer. |
+| `docker compose -f docker-compose.test.yml build --no-cache` | Erzwingt einen kompletten Neubau ohne Nutzung alter Layer. |
 | `docker rmi <image_id>` | Löscht ein spezifisches lokales Image. |
 | `docker history --human <id>` | **WICHTIG:** Zeigt, welcher Befehl im Dockerfile wie viel Platz frisst. |
 | `docker pull <image>` | Lädt die neueste Version eines Images (z.B. von DockerHub) herunter. |
