@@ -12,9 +12,8 @@ use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 use App\Helper\BaseGuruWisdom;
 
 /** 
- * Für eine saubere IDE-Unterstützung (wie in PhpStorm) ist es guter Stil, 
- * die Variablen oben im Template einmal zu deklarieren:
- *
+
+ * @var string|null $id
  * @var string $title
  * @var string $subtitle
  * @var string $wisdomText
@@ -22,6 +21,10 @@ use App\Helper\BaseGuruWisdom;
  * @var string $audio
  * @var string|null $prevId
  * @var string|null $nextId
+ * @var CurrentRoute $currentRoute
+ * @var BaseGuruWisdom $guruWisdom 
+ * @var WebViewRenderer $viewRenderer
+ * 
 */
 
 final class Action implements RequestHandlerInterface
@@ -39,17 +42,12 @@ final class Action implements RequestHandlerInterface
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        // Get the 'id' argument. If the route doesn't have an '{id}', this returns null.
         $id = $this->currentRoute->getArgument('id');
-
         $id= $this->guruWisdom->sanitizeId($id);
-     
-    
         $wisdomData = $this->guruWisdom->parseFile($id);
         $image = $this->guruWisdom->getImageHtml($id);
         $audio = $this->guruWisdom->getAudioHtml($id);
         $navids = $this->guruWisdom->getNavigationIds($id);
-
         $prevId = $navids['prev'] ?? null;
         $nextId = $navids['next'] ?? null;
 
