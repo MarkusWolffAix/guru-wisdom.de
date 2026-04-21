@@ -19,7 +19,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.5' # Matches your Dockerfile base
-          extensions: mbstring, intl, pdo_mysql, dom, curl, libxml
+          extensions: mbstring, intl, dom, curl, libxml
           coverage: none
 
       - name: Install dependencies
@@ -29,18 +29,26 @@ jobs:
   #      run: vendor/bin/phpunit # Pipeline fails here if tests do not pass
 
   # --- STAGE 2: DEPLOY TO TEST/STAGING ENVIRONMENT ---
-  # Automatic deployment to your test server after successful tests
+  # Automatic deployment to your test server via Jump Server after successful tests
   deploy-test:
     name: Deploy to Staging (Test Server)
     needs: [test] # This job only runs if 'test' succeeds
     runs-on: ubuntu-latest
     steps:
-      - name: Remote SSH Deployment (Staging)
+      - name: Remote SSH Deployment (Staging) via Jump Server
         uses: appleboy/ssh-action@v1.0.3
         with:
+          # --- Target Server (Test Server Private IP) ---
           host: ${{ secrets.TEST_SERVER_IP }}
           username: markus
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # --- Jump Server Configuration (Public IP) ---
+          proxy_host: ${{ secrets.JUMP_SERVER_IP }}
+          proxy_username: markus
+          proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # --- Script executed on the Target Server ---
           script: |
             cd /opt/guru-wisdom.de
             
@@ -49,15 +57,14 @@ jobs:
             
             # Recreate .env file for Staging environment
             echo "APP_ENV=test" > .env
-            # echo "DB_PASSWORD=${{ secrets.TEST_DB_PASSWORD }}" >> .env
-            # echo "SERVER_NAME=test.guru-wisdom.de" >> .env
+
             chmod 600 .env
             
             # Rebuild and restart containers using the test-specific compose file
             docker compose -f docker-compose.test.yml up -d --build
 
   # --- STAGE 3: DEPLOY TO PRODUCTION ---
-  # This job waits for the test deployment to finish AND requires manual approval in GitHub
+  # This job waits for the test deployment to finish AND requires manual approval
   deploy-prod:
     name: Deploy to Production
     needs: [deploy-test] # This job only runs if staging deployment succeeds
@@ -70,12 +77,20 @@ jobs:
       url: https://guru-wisdom.de
 
     steps:
-      - name: Remote SSH Deployment (Production)
+      - name: Remote SSH Deployment (Production) via Jump Server
         uses: appleboy/ssh-action@v1.0.3
         with:
+          # --- Target Server (Production Server Private IP) ---
           host: ${{ secrets.PROD_SERVER_IP }}
           username: markus
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # --- Jump Server Configuration (Public IP) ---
+          proxy_host: ${{ secrets.JUMP_SERVER_IP }}
+          proxy_username: markus
+          proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+          # --- Script executed on the Target Server ---
           script: |
             cd /opt/guru-wisdom.de
             
@@ -84,8 +99,7 @@ jobs:
             
             # Recreate .env file for Production environment
             echo "APP_ENV=prod" > .env
-            # echo "DB_PASSWORD=${{ secrets.PROD_DB_PASSWORD }}" >> .env
-            # echo "SERVER_NAME=guru-wisdom.de" >> .env
+
             chmod 600 .env
             
             # Rebuild and restart containers using the production-specific compose file

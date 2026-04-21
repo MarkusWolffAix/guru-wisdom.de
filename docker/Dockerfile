@@ -26,9 +26,7 @@ RUN install-php-extensions \
     openssl \
     xml \
     xmlwriter \
-    simplexml \
-    pdo \
-    pdo_mysql
+    simplexml
 
 ENV LC_ALL=C.UTF-8
 
@@ -81,7 +79,8 @@ WORKDIR /app
 
 # 1. Create all system and app directories BEFORE copying the code
 RUN mkdir -p /data/caddy /config/caddy /app/assets /app/public/assets /app/runtime && \
-    chown -R www-data:www-data /data /config /app
+    chown -R www-data:www-data /data /config /app && chown -R www-data:www-data /app/runtime \
+    && chmod -R 775 /app/runtime
 
 # 2. Copy the built application from the builder stage with correct permissions
 COPY --from=prod-builder --chown=www-data:www-data /app /app

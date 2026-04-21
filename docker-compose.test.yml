@@ -1,3 +1,4 @@
+name: guruwisdom-test
 services:
   app:
     build:

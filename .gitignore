@@ -22,6 +22,7 @@ composer.phar
 # Falls du Ressourcen-Extraktion nutzt
 /resources/messages/*/extracted.php
 
+
 # --- Konfiguration & Geheimnisse (WICHTIG!) ---
 .env
 .env.local
