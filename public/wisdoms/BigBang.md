@@ -23,7 +23,7 @@ Die Schöpfung beginnt nicht mit einer zerstörerischen Explosion, sondern mit d
 * **Der Äther (Das goldene Ei):** Innerhalb dieses Lichts wächst durch die beständige Kraft der Liebe ein schützendes Gebilde – das goldene Ei. Dieses Ei definiert den **Äther**, den heiligen, sicheren Raum des Seins, in dem sich das Leben, der Kosmos und die Existenz in perfekter Harmonie entfalten.
 
 ---
-[image:BigBang2|OM Ruhe sonst knallts OM]
+![OM Ruhe sonst knallts OM](../images/BigBang2.jpg "OM Ruhe sonst knallts OM")
 
 ### 2. Die göttliche Familie im Äther
 Im Zentrum dieses Äthers existiert eine göttliche Triade, die das kosmische Gleichgewicht von Energie, Materie und Geist verkörpert. Sie leben in tiefer Verbundenheit in diesem schützenden, goldenen Raum.
@@ -37,7 +37,7 @@ Im Zentrum dieses Äthers existiert eine göttliche Triade, die das kosmische Gl
 
 ---
 
-[image:BigBang3|Erschaffung des Menschenkind]
+![Erschaffung des Menschenkind](../images/BigBang3.jpg "Erschaffung des Menschenkind")
 
 ### 3. Die Alchemie der Menschwerdung
 Die Erschaffung des Menschenkindes ist ein hochkomplexer, ineinandergreifender Kreislauf, der alle Elemente des Äthers miteinander verwebt:

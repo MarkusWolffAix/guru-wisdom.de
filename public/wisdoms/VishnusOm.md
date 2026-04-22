@@ -41,7 +41,7 @@ Auf der Erde lebte Markus. Er war ein Empath mit einer besonderen Gabe für das 
 Er verstand die physikalische Wahrheit: **Feuer ist im Grunde nur extrem verdichtete, vor Ehrgeiz reibende Luft.** Vishnu hatte beim „Auer-Ur“ so viel Druck gemacht, dass die sanfte Luft zu brennendem Ehrgeiz komprimiert worden war.
 
 ## Szene 7: Das Prisma der 5 Elemente
-[image:VishnusOm2|Markus und das Prisma der 5 Elemente]
+![Markus und das Prisma der 5 Elemente](../images/VishnusOm2.jpg)
 
 Der kosmische Mechanismus griff ein: Sobald das OM durch zu viel Feuer kippte, spaltete es sich automatisch auf. Wie durch ein Prisma fächerte sich der Klang in die **5 Elemente** auf: **Erde, Wasser, Feuer, Luft und Äther.**
 
