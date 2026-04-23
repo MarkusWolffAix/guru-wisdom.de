@@ -27,6 +27,7 @@ composer.phar
 .env
 .env.local
 .env.*.local
+docker-compose.yml 
 
 # Lokale Konfigurations-Dateien (Yii3 nutzt oft params-local.php)
 config/params-local.php
