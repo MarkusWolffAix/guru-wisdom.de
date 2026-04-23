@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # 1. Check if Docker is running
 if ! docker info >/dev/null 2>&1; then
