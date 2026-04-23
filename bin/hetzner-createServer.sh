@@ -46,6 +46,12 @@ write_files:
       iface enp7s0:1 inet static
           address $ALIAS_IP_2
           netmask 255.255.0.0
+          
+  - path: /etc/profile.d/99-custom-aliases.sh
+    permissions: '0644'
+    owner: root:root
+    content: |
+      alias sgit='sudo su - git'
 
 users:
   - name: markus
@@ -67,6 +73,7 @@ package_upgrade: true
 packages: [ca-certificates, curl, gnupg, sudo, git, lynx]
 
 runcmd:
+  # --- Netzwerk & Cron ---
   - (crontab -l 2>/dev/null; echo "@reboot sleep 5 && /sbin/ip route add default via 10.0.0.1") | crontab -
   - mkdir -p /etc/resolvconf/resolv.conf.d
   - echo "nameserver 1.1.1.1" >> /etc/resolvconf/resolv.conf.d/head
@@ -76,9 +83,13 @@ runcmd:
   - ip route add default via 10.0.0.1 dev enp7s0
   - ip addr add $ALIAS_IP_1/32 dev enp7s0 || true
   - ip addr add $ALIAS_IP_2/32 dev enp7s0 || true
+
+  # --- System Updates & Tools ---
   - apt update
   - apt upgrade -y
-  - apt install -y ca-certificates curl gnupg lsb-release sudo  git lynx
+  - apt install -y ca-certificates curl gnupg lsb-release sudo git lynx
+
+  # --- Docker Installation ---
   - install -m 0755 -d /etc/apt/keyrings
   - curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
   - chmod a+r /etc/apt/keyrings/docker.asc
@@ -93,11 +104,29 @@ runcmd:
     DOCKEREOF
   - apt update
   - apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-  - mkdir -p /opt/guru-wisdom.de && chown $USER:www-data /opt/guru-wisdom.de
+
+  # --- App Setup & Deployment ---
+  - mkdir -p /opt/guru-wisdom.de
+  - chown $USER:www-data /opt/guru-wisdom.de
   - runuser -u $USER -- git clone https://github.com/MarkusWolffAix/t3.guru-wisdom.de.git /opt/guru-wisdom.de
-  - runuser -u $USER -- bash -c "cd /opt/guru-wisdom.de && docker compose -f docker-compose.${ENV}.yml up -d"
-EOF
-)
+  
+  # Alles ab hier läuft als zusammenhängendes Skript in dem Ordner ab
+- |
+    cd /opt/guru-wisdom.de
+
+    # .env Datei anlegen
+    cat <<ENV_EOF > .env
+    APP_ENV=$ENV
+    ENV_EOF
+    
+    # Rechte für die .env an den User übergeben
+    chown $USER:www-data .env
+
+    # sed als User ausführen (mit korrigierten Anführungszeichen und IP-Variable)
+    runuser -u $USER -- bash -c "sed 's|SERVER_NAME=.*|SERVER_NAME=http://${ALIAS_IP_2}|' docker-compose.prod.yml > docker-compose.yml"
+
+    # Docker Compose als User starten
+    runuser -u $USER -- bash -c "docker compose -f docker-compose.yml up -d"
 
 # ==========================================
 # 2. BUILD PAYLOAD

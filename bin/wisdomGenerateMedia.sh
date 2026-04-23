@@ -5,14 +5,17 @@ zmodload zsh/stat
 
 # --- Configuration ---
 # 'base' is only needed to find the markdown (.md) files
-base="/Users/markuswolff/Documents/Arbeit/GuruWisdom/guru-wisdom.de/web"
+base="/Users/markuswolff/Documents/Arbeit/Development/t3.guru-wisdom.de/public/"
 MD_DIR="$base/wisdoms"
 SOURCE_MEDIA_DIR="/Users/markuswolff/Downloads"
 ONEDRIVE_DIR="$HOME/Library/CloudStorage/OneDrive-Persönlich/Backup/S3Storage"
 
 # S3 Settings
-S3_BUCKET="s3://guru-wisdom"
-S3_ENDPOINT="https://fsn1.your-objectstorage.com"
+S3_BUCKET_1="s3://guru-wisdom-first"
+S3_ENDPOINT_1="https://nbg1.your-objectstorage.com"
+
+S3_BUCKET_2="s3://guru-wisdom-first"
+S3_ENDPOINT_2="https://nbg1.your-objectstorage.com"
 
 # Create a temporary directory for image conversion
 TMP_DIR=$(mktemp -d)
@@ -41,8 +44,7 @@ if [[ -n "$1" ]]; then
     ID_PROVIDED=true
     echo -e "➔ Using provided ID: ${GREEN}$ID${NC}"
     REFERENCE_FILE="$MD_DIR/${ID}.md"
-    cp "$REFERENCE_FILE" "/Users/markuswolff/Development/t3.guru-wisdom.de/public/wisdoms/${ID}.md"
-else
+else 
     REFERENCE_FILE=$(ls -t "$MD_DIR"/*.md 2>/dev/null | head -n 1)
 
     if [[ -z "$REFERENCE_FILE" ]] || ! find "$REFERENCE_FILE" -mmin -180 >/dev/null 2>&1; then
@@ -60,27 +62,35 @@ fi
 
 # Helper function for S3 confirmation and checking
 confirm_s3_upload() {
-    local local_file="$1"
-    local s3_path="$2"
+    local local_file="$1"   # Pfad zur lokalen Datei (z.B. $TMP_DIR/ID.jpg)
+    local path_suffix="$2"  # Pfad NACH dem Bucket (z.B. /images/ID.jpg)
     
-    # Check if file already exists on S3
-    if aws s3 ls "$s3_path" --endpoint-url "$S3_ENDPOINT" > /dev/null 2>&1; then
-        echo -e -n "${RED}   ➔ File already exists on S3: $(basename "$s3_path"). ${NC}"
-        echo 
-        # read choice
-        # [[ "$choice" == [yY]* ]] && return 0 
-    fi
-
-    echo -e -n "${YELLOW}   ➔ Upload to S3 at $s3_path? [Y/n]: ${NC}"
+    echo -e -n "${YELLOW}   ➔ Upload to BOTH S3 buckets? ($path_suffix) [Y/n]: ${NC}"
     read confirm
     if [[ "$confirm" != [nN]* ]]; then
-        if aws s3 cp "$local_file" "$s3_path" --endpoint-url "$S3_ENDPOINT" >/dev/null; then
-            echo -e "      ${GREEN}✔ Upload successful.${NC}"
-            backupfile=$(echo $s3_path|cut -f4 -d '/'); 
-            cp "$local_file" "$ONEDRIVE_DIR/$backupfile"
+        
+        # --- Upload zu Bucket 1 ---
+        echo -e "      Pushing to Bucket 1..."
+        if aws s3 cp "$local_file" "${S3_BUCKET_1}${path_suffix}" --endpoint-url "$S3_ENDPOINT_1" >/dev/null; then
+            echo -e "      ${GREEN}✔ Bucket 1: Success.${NC}"
         else
-            echo -e "      ${RED}✘ Upload failed!${NC}"
+            echo -e "      ${RED}✘ Bucket 1: Failed!${NC}"
         fi
+
+        # --- Upload zu Bucket 2 ---
+        echo -e "      Pushing to Bucket 2..."
+        if aws s3 cp "$local_file" "${S3_BUCKET_2}${path_suffix}" --endpoint-url "$S3_ENDPOINT_2" >/dev/null; then
+            echo -e "      ${GREEN}✔ Bucket 2: Success.${NC}"
+        else
+            echo -e "      ${RED}✘ Bucket 2: Failed!${NC}"
+        fi
+
+        # --- Backup zu OneDrive ---
+        # Extrahiert den Ordnernamen (z.B. images, audio, video) für die Backup-Struktur
+        local folder_name=$(echo "$path_suffix" | cut -d'/' -f2)
+        mkdir -p "$ONEDRIVE_DIR/$folder_name"
+        cp "$local_file" "$ONEDRIVE_DIR/$folder_name/$(basename "$local_file")"
+        echo -e "      ${GREEN}✔ Local Backup: Done.${NC}"
     else
         echo -e "      ${YELLOW}⚠ S3 upload skipped.${NC}"
     fi
@@ -132,23 +142,23 @@ if [[ -f "$REFERENCE_FILE" ]]; then
             if [[ "$ext" == "png" ]]; then
                 # Convert to Web-JPG (in Temp folder)
                 sips --resampleWidth 640 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
-                confirm_s3_upload "$TMP_DIR/${ID}.jpg" "$S3_BUCKET/images/${ID}.jpg"
+                confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
                 # Convert to High-Res Org-JPG (in Temp folder)
                 sips -s format jpeg -s formatOptions high "$best_file" --out "$TMP_DIR/${ID}_org.jpg" >/dev/null 2>&1
-                confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "$S3_BUCKET/images/org/${ID}.jpg"
+                confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "images/org/${ID}.jpg"
 
                 # Note: The original PNG remains untouched in the Downloads folder.
 
             # --- CASE 2: AUDIO (MP3) ---
             elif [[ "$ext" == "mp3" ]]; then
                 # Direct upload from Downloads folder, original stays untouched
-                confirm_s3_upload "$best_file" "$S3_BUCKET/audio/${ID}.mp3"
+                confirm_s3_upload "$best_file" "/audio/${ID}.mp3"
 
             # --- CASE 3: VIDEO (MP4, MOV) ---
             elif [[ "$ext" == "mp4" || "$ext" == "mov" ]]; then
                 # Direct upload from Downloads folder, original stays untouched
-                confirm_s3_upload "$best_file" "$S3_BUCKET/video/${ID}.${ext}"
+                confirm_s3_upload "$best_file" "/video/${ID}.${ext}"
             fi
         fi
     done

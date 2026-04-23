@@ -2,9 +2,9 @@
 
 # --- Configuration ---
 # Change these values if you create new buckets in the future
-BUCKET_NAME="guru-wisdom-secound"
-ENDPOINT="https://hl1.your-objectstorage.com"
-TEST_IMAGE_URL="https://${BUCKET_NAME}.hel1.your-objectstorage.com/images/AbrahamLife.jpg"
+BUCKET_NAME="guru-wisdom-first"
+ENDPOINT="https://nbg1.your-objectstorage.com"
+TEST_IMAGE_URL="https://${BUCKET_NAME}.nbg1.your-objectstorage.com/images/AbrahamLife.jpg"
 
 echo "----------------------------------------------------"
 echo "🚀 Starting S3 Policy Update for: $BUCKET_NAME"
@@ -26,6 +26,8 @@ POLICY=$(cat <<EOF
       "Resource": [
 	"arn:aws:s3:::${BUCKET_NAME}/images/*",
 	"arn:aws:s3:::${BUCKET_NAME}/audio/*"
+  "arn:aws:s3:::${BUCKET_NAME}/video/*"
+
       ]
     }
   ]
