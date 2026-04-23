@@ -17,8 +17,8 @@ $this->setTitle('Kontakt');
         Herzlichst, 
 <br/>
 
-        Markus 
+        Markus <span class="reverse-email">moc.modsiw-urug@ofni</span>
 </p>
-        <span class="reverse-email">moc.modsiw-urug@ofni</span>
+        
         </div>
 </div>
