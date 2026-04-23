@@ -10,7 +10,7 @@ services:
     environment:
       # HIER PASSIERT DIE MAGIE: 
       # Trage hier deine echten Domains ein, und Caddy besorgt SSL-Zertifikate!
-      - SERVER_NAME=http://10.0.1.130
+      - SERVER_NAME=:80
      # - SERVER_NAME=guru-wisdom.de
       - APP_ENV=prod
     restart: always      # Wenn der Live-Server neu startet, startet auch die App
