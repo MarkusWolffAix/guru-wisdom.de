@@ -1,5 +1,5 @@
 ---
-id: "InnerGardenGallery"
+id: "InnerGalleryOfLife"
 title: "Die innere Galerie unseres Lebens"
 subtitle: "Vom Kurator zum Gärtner des Bewusstseins"
 description: "Eine umfassende Erkenntnissammlung über die Pflege innerer Bilder, die Kunst der Akzeptanz und des Loslassens sowie die Vision einer kollektiven Galerie."
