@@ -173,6 +173,10 @@ audio::-webkit-media-controls-enclosure {
     background-color: #fafafa;
 }
 
+#detailsContainer {
+    scroll-margin-top: 80px; /* Höhe deiner Navbar + ein bisschen Luft zum Atmen */
+}
+
 .text-container.open { grid-template-rows: 1fr; opacity: 1; }
 .text-content { overflow: hidden; min-height: 0; }
 

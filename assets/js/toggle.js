@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(() => {
                     detailsContainer.scrollIntoView({ 
                         behavior: 'smooth', 
-                        block: 'nearest' 
+                        block: 'start' 
                     });
                 }, 400); 
             }
