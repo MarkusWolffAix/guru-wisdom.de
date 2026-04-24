@@ -174,7 +174,7 @@ audio::-webkit-media-controls-enclosure {
 }
 
 #detailsContainer {
-    scroll-margin-top: 80px; /* Höhe deiner Navbar + ein bisschen Luft zum Atmen */
+    scroll-margin-top: 40px; /* Höhe deiner Navbar + ein bisschen Luft zum Atmen */
 }
 
 .text-container.open { grid-template-rows: 1fr; opacity: 1; }
