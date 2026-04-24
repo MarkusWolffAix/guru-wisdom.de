@@ -141,7 +141,7 @@ if [[ -f "$REFERENCE_FILE" ]]; then
             # --- CASE 1: IMAGES (Source: PNG) ---
             if [[ "$ext" == "png" ]]; then
                 # Convert to Web-JPG (in Temp folder)
-                sips --resampleWidth 640 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
+                sips --resampleWidth 1280 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
                 # Convert to High-Res Org-JPG (in Temp folder)

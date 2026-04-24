@@ -140,6 +140,12 @@ audio::-webkit-media-controls-enclosure {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+.nav-btn img {
+    width: 32px;
+    height: auto;
+}
+
+
 .nav-btn:hover { background-color: #f0f2f5; }
 .nav-btn:active { transform: scale(0.9); }
 
@@ -304,7 +310,6 @@ footer#footer a:hover { opacity: 0.7; }
         background-color: #fdfdfd;
     }
     
-    /* Icons minimal vergrößern */
     .nav-btn img {
         width: 32px !important;
         height: auto;
