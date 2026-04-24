@@ -259,3 +259,25 @@ footer#footer a:hover { opacity: 0.7; }
     text-align: left;
     display: inline-block;
 }
+
+/* =========================================
+   Mobile-Optimierung (Smartphones)
+   ========================================= */
+@media (max-width: 480px) {
+    .action-bar {
+        flex-wrap: wrap;       /* Erlaubt das Umbrechen in eine zweite Zeile */
+        padding: 16px 12px 8px 12px;
+    }
+    
+    .audio-player {
+        width: 100%;           /* Der Player bekommt 100% der Breite */
+        order: -1;             /* Schiebt den Player ganz nach oben */
+        margin: 0 0 16px 0;    /* Abstand nach unten zu den Buttons */
+    }
+    
+    /* Optional: Die drei Buttons auf mobilen Geräten perfekt zentrieren und verteilen */
+    .nav-btn {
+        flex: 1;
+        max-width: 80px;       /* Verhindert, dass sie zu weit auseinander rutschen */
+    }
+}
