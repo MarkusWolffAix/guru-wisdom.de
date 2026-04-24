@@ -48,54 +48,14 @@ $this->beginPage();
 <?php $this->beginBody() ?>
 
 <header id="header">
-    <?php
-    $brandLabel = Html::img('/images/logo/GuruWisdom.png', 'Logo Guru Wisdom')
-        ->id('brand-logo')
-        ->addStyle('width:32px;')
-        ->class('img-fluid');
-
-    echo NavBar::widget()
-        ->brandText((string) $brandLabel)
-        ->brandUrl($urlGenerator->generate('wordsofwisdom.index-'.$lang))
-        ->attributes(['class' => 'navbar-expand-md navbar-light bg-white fixed-top'])
-        ->begin();
-
-
+    <nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
         
-/*
-  $menuItems = [
-        NavLink::to('Weisheiten')->url($urlGenerator->generate('wordsofwisdom.index')),
-        NavLink::to('Impressum')->url($urlGenerator->generate('impressum')),
-        NavLink::to('Datenschutz')->url($urlGenerator->generate('privacypolicy')),
-        NavLink::to('Kontakt')->url($urlGenerator->generate('contact')),
-    ];
-
-*/
-
-
-   /* if ($currentUser->isGuest()) {
-        if (isset($environment) && $environment !== 'prod') {
-            $menuItems[] = ['label' => 'Login', 'url' => $urlGenerator->generate('login')];
-        }
-    } else {
-        $username = $currentUser->getIdentity()->get('username') ?? 'User';
-        $menuItems[] = '<li class="nav-item">'
-            . Html::form()->action($urlGenerator->generate('logout'))->open()
-            . Html::submitButton(
-                'Logout (' . Html::encode($username) . ')',
-                ['class' => 'nav-link btn btn-link logout']
-            )
-            . Html::form()->close()
-            . '</li>';
-    }*/
-
-   /* echo Nav::widget()
-    ->attributes(['class' => 'navbar-nav mx-auto mb-2 mb-md-0'])
-    ->items(...$menuItems);
-*/
-    echo NavBar::end();
-
-?>
+        <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand m-0 py-0">
+            
+            <img src="/images/logo/GuruWisdom.png" alt="Logo Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" class="img-fluid">
+            
+        </a>
+    </nav>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
