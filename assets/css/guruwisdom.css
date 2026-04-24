@@ -269,15 +269,25 @@ footer#footer a:hover { opacity: 0.7; }
         padding: 16px 12px 8px 12px;
     }
     
-    .audio-player {
-        width: 100%;           /* Der Player bekommt 100% der Breite */
-        order: -1;             /* Schiebt den Player ganz nach oben */
-        margin: 0 0 16px 0;    /* Abstand nach unten zu den Buttons */
+.audio-player {
+        width: 100%;           
+        order: -1;             
+        margin: 0 0 16px 0;    
     }
     
-    /* Optional: Die drei Buttons auf mobilen Geräten perfekt zentrieren und verteilen */
+    /* --- NEU: Breite, daumenfreundliche Navigations-Buttons --- */
     .nav-btn {
-        flex: 1;
-        max-width: 80px;       /* Verhindert, dass sie zu weit auseinander rutschen */
+        flex: 1;                   /* Teilt den unteren Platz gleichmäßig auf die 3 Buttons auf */
+        max-width: 100%;           /* Hebt die alte 80px-Sperre auf, damit sie maximal lang werden */
+        border-radius: 12px;       /* Macht aus dem runden Kreis ein breites, abgerundetes Rechteck */
+        margin: 0 6px;             /* Sorgt für einen kleinen Abstand zwischen den Buttons */
+        padding: 14px 0;           /* Macht die Hitbox auch nach oben und unten schön groß */
+        background-color: #f8f9fa; /* Ein Hauch von Grau, damit der Nutzer sieht, wie groß die Taste ist */
+    }
+    
+    /* Macht die Pfeile und die Lupe auf dem Handy minimal größer (28px statt 24px) */
+    .nav-btn img {
+        width: 32px !important;
+        height: auto;
     }
 }

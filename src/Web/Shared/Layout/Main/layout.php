@@ -48,14 +48,14 @@ $this->beginPage();
 <?php $this->beginBody() ?>
 
 <header id="header">
-    <nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
+<nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
+    
+    <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
         
-        <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand m-0 py-0">
-            
-            <img src="/images/logo/GuruWisdom.png" alt="Logo Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" class="img-fluid">
-            
-        </a>
-    </nav>
+        <img src="/images/logo/GuruWisdom.png" alt="Logo Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;">
+        
+    </a>
+</nav>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
