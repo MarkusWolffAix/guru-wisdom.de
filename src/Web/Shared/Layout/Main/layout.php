@@ -132,50 +132,12 @@ $this->beginPage();
             <a href="<?= $urlGenerator->generate('privacypolicy-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
                  <?= $translator->translate('menu.privacy', [], 'app') ?>
             </a>
-            </div>
+        </div>
 
         <div class="text-muted">
             <small>&copy; GURU Wisdom <?= date('Y') ?></small>
         </div>
-        </div>
-            <?php
-            if (isset($environment) && $environment === 'test') {
-                $deployUrl = $urlGenerator->generate('deploy', ['token' => 'DEIN_GEHEIMER_TOKEN_123']);
-        
-                echo Html::a('Deploy Test to Prod', $deployUrl, [
-                    'class' => 'btn btn-outline-danger',
-                    'onclick' => "return confirm('Wirklich die Test-Version in die Produktion überführen?');"
-                ]);
-            }
-            ?>
-            
-            <?php
-            if (isset($environment) && $environment === 'test') {
-                exec("git log -1 --format=%at | xargs -I{} date -d @{} +%d.%m.%Y_%H:%M:%S", $outstage, $resstage);
-                $outstageStr = implode('', $outstage);
-                echo "<h5 style='color:green'>Test Version: " . Html::encode($outstageStr) . "</h5>";
-                
-                chdir("/var/www/prod.guru-wisdom.de");
-                exec("git log -1 --format=%at | xargs -I{} date -d @{} +%d.%m.%Y_%H:%M:%S", $outprod, $resprod);
-                $outprodStr = implode('', $outprod);
-                echo "<h5 style='color:red'>Prod Version: " . Html::encode($outprodStr) . "</h5>";
-                
-                if ($outstageStr !== $outprodStr) {
-                    $deploySelfUrl = $urlGenerator->generate('index', ['DoDeployTest2prod' => 'yes']); // Passe den Route-Namen hier an
-                    echo Html::button('Deploy Test to Prod', [
-                        'class' => 'btn btn-light btn-lg btn-block btn-outline-danger',
-                        'onclick' => 'document.location.href="' . $deploySelfUrl . '"'
-                    ]);
-                    
-                    $queryParams = $request->getQueryParams();
-                    if (isset($queryParams['DoDeployTest2prod']) && $queryParams['DoDeployTest2prod'] === 'yes') {
-                        exec("git pull", $outprodPull, $resprodPull);
-                        echo "<h5 style='color:red'>" . Html::encode(implode("\n", $outprodPull)) . "</h5>";
-                    }
-                }
-            }
-            ?>
-        </div>
+       <div> 
     </div>
 </footer>
 <?php $this->endBody() ?>

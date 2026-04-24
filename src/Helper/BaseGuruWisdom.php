@@ -180,11 +180,6 @@ class BaseGuruWisdom
     public function parseFile(string $id, bool $autoSave = false): array
     {
         $filePath = $this->getFilePath($id);
-
-
-        
-
-
         $content = file_get_contents($filePath);
         
         // Step 1: Extract front matter and raw markdown text

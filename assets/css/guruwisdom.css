@@ -2,25 +2,63 @@
    Globale Styles
    ========================================= */
 
-/* --- Basis Layout --- */
-main > .container {
-    padding-top: 80px; /* Platz für die schwebende Menüleiste (etwas mehr als 70px sieht oft besser aus) */
-    padding-bottom: 20px;
-}
-
-/* ... hier folgt dein restlicher Code für Footer, Markdown und Menü ... */
 body {
     background-image: url('/images/background/Opacarophile0.5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+main > .container {
+    padding-top: 80px; 
+    padding-bottom: 20px;
 }
 
 .bg-ivory {
     background-color: rgb(255, 255, 240) !important;
 }
 
+/* =========================================
+   Schriftarten (Fonts)
+   ========================================= */
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/caveat-v7-latin_cyrillic-regular.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.woff2') format('woff2');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================================
+   Navigation (Menüleiste oben)
+   ========================================= */
+.navbar .nav-link {
+    font-family: 'Caveat', cursive; 
+    font-size: 1.8rem;              
+    padding-left: 1.5rem !important;  
+    padding-right: 1.5rem !important; 
+    color: #555555;                 
+    transition: color 0.3s ease;    
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #d63384; 
+}
+
+.navbar .nav-link.active {
+    color: #d63384;
+    font-weight: 700;
+}
 
 /* =========================================
    Formulare & Controls
@@ -41,171 +79,183 @@ audio::-webkit-media-controls-enclosure {
     background-color: transparent;
 }   
 
+
 /* =========================================
-   Navigation & Icons
+   GURU WISDOM CARD LAYOUT
    ========================================= */
-.wisdom-nav-icon {
+.wisdom-card {
+    background: #ffffff;
+    max-width: 700px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.06), 0 16px 32px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wisdom-card:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 16px 32px rgba(0, 0, 0, 0.08), 0 24px 48px rgba(0, 0, 0, 0.12); 
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 450px; 
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Aktionsleiste (Audio & Buttons) --- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.audio-player {
+    flex-grow: 1;
+    margin: 0 15px;
+}
+
+.audio-player audio {
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
     cursor: pointer;
-    width: 50px;
-    transition: transform 0.2s ease-in-out; 
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.wisdom-nav-icon:hover {
-    transform: scale(1.1);
-}
+.nav-btn:hover { background-color: #f0f2f5; }
+.nav-btn:active { transform: scale(0.9); }
+
+#lupe-icon { transition: transform 0.4s ease; }
+.open-icon #lupe-icon { transform: rotate(90deg); }
+
 
 /* =========================================
-   Markdown / Artikel Bereich
+   Akkordeon & Preview (Weiche Animationen)
    ========================================= */
-#markdown-body {
+
+/* --- Vorspann (Preview) --- */
+.preview-container {
+    display: grid;
+    cursor: pointer; 
+    grid-template-rows: 1fr; /* Start: Offen */
+    transition: background-color 0.2s ease, grid-template-rows 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.preview-container:hover { background-color: #f8f9fa; }
+.preview-container.hidden { grid-template-rows: 0fr; opacity: 0; }
+.preview-content { overflow: hidden; min-height: 0; }
+
+/* --- Details (Markdown Text) --- */
+.text-container {
+    display: grid;
+    grid-template-rows: 0fr; /* Start: Geschlossen */
+    transition: grid-template-rows 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    background-color: #fafafa;
+}
+
+.text-container.open { grid-template-rows: 1fr; opacity: 1; }
+.text-content { overflow: hidden; min-height: 0; }
+
+
+/* =========================================
+   Typografie in der Karte (Markdown & Preview)
+   ========================================= */
+   
+/* Globale Text-Einstellungen für das Innere der Karte */
+.wisdom-card {
     font-family: 'Lora', serif;
     font-size: 18px;          
     line-height: 1.7;         
-    color: #333333;           
-    /* Wenn du abgerundete Ecken willst, fehlt hier evtl. ein background-color: #fff; */
-    border-radius: 8px; 
+    color: #333333; 
 }
 
+/* Handschriftliche Titel */
+.wisdom-card h1,
+.wisdom-card h2,
+.wisdom-card h3,
 .handwritten-text {
     font-family: 'Caveat', cursive;
-    font-size: 2.5em;         
-    margin-bottom: 20px;
 }
 
-.wisdom-container h1,
-.wisdom-container h2,
-.wisdom-container h3 {
-    font-family: 'Caveat', cursive;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+.handwritten-text { font-size: 2.5em; margin-bottom: 20px; }
 
-.wisdom-container h1 {
-    font-size: 4em;
-}
+/* Spezifische Titelgrößen (angepasst für gute Lesbarkeit auf Mobile & Desktop) */
+.wisdom-card h1 { font-size: 2.8rem; margin-top: 0; }
+.wisdom-card h2 { font-size: 1.8rem; color: #6c757d; margin-bottom: 1.5rem; }
+.wisdom-card h3 { font-size: 1.5rem; color: #2c3e50; margin-top: 1.5rem; }
 
-.wisdom-container h2 {
-    font-size: 3em;
-}
-
-.wisdom-container h3 {
-    font-size: 2em;
-}
-
+/* Markdown Extras */
 #markdown-body blockquote {
     padding: 15px 20px;
     font-style: italic;
     margin: 20px 0;
     border-radius: 0 8px 8px 0;
-    /* Oft sieht ein Blockquote mit einem linken Rand besser aus: */
     border-left: 4px solid #fdcb0d; 
-    background-color: rgba(255, 255, 240, 0.5); /* Leichter Elfenbein-Hintergrund */
+    background-color: rgba(255, 255, 240, 0.5); 
 }
 
 #markdown-body img {
     max-width: 100%;    
     height: auto;       
     display: block;     
-    border-radius: 8px; /* Lässt auch die Bilder weicher wirken */
-}
-
-@font-face {
-    font-family: 'Caveat';
-    src: url('../fonts/caveat-v7-latin_cyrillic-regular.woff2') format('woff2');
-    font-weight: 400 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lora';
-    src: url('../fonts/Lora-Regular.woff2') format('woff2');
-    font-weight: 400 700;
-    font-style: normal;
-    font-display: swap;
+    border-radius: 8px; 
 }
 
 
-/* --- Liebevolle Menüleiste --- */
-
-/* 1. Schriftart und Abstände anpassen */
-.navbar .nav-link {
-    font-family: 'Caveat', cursive; /* Die liebevolle Handschrift */
-    font-size: 1.8rem;              /* Etwas größer, da Handschriften klein ausfallen */
-    padding-left: 1.5rem !important;  /* Mehr Platz nach links */
-    padding-right: 1.5rem !important; /* Mehr Platz nach rechts */
-    color: #555555;                 /* Ein sanftes Grau statt hartem Schwarz */
-    transition: color 0.3s ease;    /* Weicher Übergang beim Hovern */
+/* =========================================
+   Rechtliches & Footer
+   ========================================= */
+.impressum, .datenschutz {
+  font-family: 'Lora', serif;
+  line-height: 1.6;
+  color: #333; 
+  max-width: 800px;
+  margin: 0 auto;
 }
-
-/* 2. Farbe ändern, wenn man mit der Maus darüber fährt */
-.navbar .nav-link:hover,
-.navbar .nav-link:focus {
-    color: #d63384; /* Ein sanftes, liebliches Pink/Rot (passend zum Thema) */
-}
-
-/* 3. Den aktiven (angeklickten) Menüpunkt hervorheben */
-.navbar .nav-link.active {
-    color: #d63384;
-    font-weight: 700;
-}
-
-/* --- Markdown Content Box --- */
-#markdown-body {
-    border: 1px solid #cccccc;
-    padding: 1.5rem; /* Bootstrap-konformer Abstand (ca. 24px) */
-    margin-top: 1rem; 
-    border-radius: 8px; /* Ein bisschen abgerundete Ecken sehen moderner aus */
-    background-color: #fafafa; /* Sehr sanftes Grau als Texthintergrund */
-    
-}
-
-/* --- Harmonisierter Footer --- */
 
 footer#footer {
-    border-top: 1px solid #f0f0f0; /* Eine sehr feine Trennlinie oben */
+    border-top: 1px solid #f0f0f0; 
     background-color: #ffffff;
-    font-family: 'Lora', serif;    /* Elegante Grundschrift für den Footer */
-    color: #6c757d;                /* Ein weiches Grau */
+    font-family: 'Lora', serif;    
+    color: #6c757d;                
 }
 
-footer#footer small {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-}
+footer#footer small { font-size: 0.9rem; letter-spacing: 0.05rem; }
 
-/* Falls du den Namen "GURU Wisdom" im Footer hervorheben willst */
 footer#footer .footer-brand {
     font-family: 'Caveat', cursive;
     font-size: 1.4rem;
-    color: #d63384; /* Dein Akzent-Pink */
+    color: #d63384; 
     margin-right: 10px;
     vertical-align: middle;
 }
 
-/* Abstände für die Social Icons */
-footer#footer a {
-    margin-left: 0px;
-    transition: opacity 0.3s ease;
-}
-
-footer#footer a:hover {
-    opacity: 0.7;
-}
+footer#footer a { transition: opacity 0.3s ease; }
+footer#footer a:hover { opacity: 0.7; }
 
 .reverse-email {
     unicode-bidi: bidi-override;
     direction: rtl;
     text-align: left;
     display: inline-block;
-}
-
-
-/* Nur auf die rechtlichen Seiten anwenden */
-.impressum, .datenschutz {
-  font-family: 'Lora', serif;
-  line-height: 1.6;
-  color: #333; /* Nutze hier deine Variablen */
-  max-width: 800px;
-  margin: 0 auto;
 }

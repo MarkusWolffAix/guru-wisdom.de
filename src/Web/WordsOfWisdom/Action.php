@@ -58,6 +58,7 @@ final class Action implements RequestHandlerInterface
             'wisdomText' => $wisdomData['htmloutput'] ?? '', 
             'title' => $wisdomData['title'] ?? 'Kein Titel',
             'subtitle' => $wisdomData['subtitle'] ?? '',
+            'description' => $wisdomData['description'] ?? '',
             'image' => $image, 
             'audio' => $audio,
             'prevId' => $prevId,
