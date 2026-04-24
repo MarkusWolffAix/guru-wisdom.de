@@ -265,29 +265,44 @@ footer#footer a:hover { opacity: 0.7; }
    ========================================= */
 @media (max-width: 480px) {
     .action-bar {
-        flex-wrap: wrap;       /* Erlaubt das Umbrechen in eine zweite Zeile */
-        padding: 16px 12px 8px 12px;
+        flex-wrap: wrap;       
+        padding: 16px 12px 12px 12px; 
     }
     
-.audio-player {
+    .audio-player {
         width: 100%;           
         order: -1;             
         margin: 0 0 16px 0;    
     }
     
-    /* --- NEU: Breite, daumenfreundliche Navigations-Buttons --- */
+    /* --- Edler 3D-Knopf (Zartes Viereck) - NUR AUF DEM HANDY --- */
     .nav-btn {
-        flex: 1;                   /* Teilt den unteren Platz gleichmäßig auf die 3 Buttons auf */
-        max-width: 100%;           /* Hebt die alte 80px-Sperre auf, damit sie maximal lang werden */
-        border-radius: 12px;       /* Macht aus dem runden Kreis ein breites, abgerundetes Rechteck */
-        margin: 0 6px;             /* Sorgt für einen kleinen Abstand zwischen den Buttons */
-        padding: 14px 0;           /* Macht die Hitbox auch nach oben und unten schön groß */
-        background-color: #f8f9fa; /* Ein Hauch von Grau, damit der Nutzer sieht, wie groß die Taste ist */
+        flex: 1;                   
+        max-width: 100%;           
+        border-radius: 12px;       
+        margin: 0 6px;             
+        padding: 14px 0;           
+        
+        background-color: #ffffff; 
+        border: 1px solid rgba(0, 0, 0, 0.06); 
+        
+        box-shadow: 
+            0 4px 6px rgba(0, 0, 0, 0.05),  
+            0 1px 3px rgba(0, 0, 0, 0.03);  
+            
+        transition: all 0.2s ease; 
+    }
+
+    /* Klick-Effekt auf dem Handy */
+    .nav-btn:active {
+        transform: translateY(2px); 
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+        background-color: #fdfdfd;
     }
     
-    /* Macht die Pfeile und die Lupe auf dem Handy minimal größer (28px statt 24px) */
+    /* Icons minimal vergrößern */
     .nav-btn img {
-        width: 32px !important;
+        width: 28px !important;
         height: auto;
     }
 }
