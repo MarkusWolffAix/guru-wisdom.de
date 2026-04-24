@@ -302,7 +302,7 @@ footer#footer a:hover { opacity: 0.7; }
     
     /* Icons minimal vergrößern */
     .nav-btn img {
-        width: 28px !important;
+        width: 32px !important;
         height: auto;
     }
 }
