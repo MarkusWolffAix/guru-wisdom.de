@@ -80,6 +80,7 @@
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^3.0.2",
         "friendsofphp/php-cs-fixer": "^3.94.2",
+        "phpdocumentor/shim": "^3.9",
         "phpunit/phpunit": "^11.5.55",
         "rector/rector": "^2.4.0",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
@@ -102,9 +103,10 @@
         "sort-packages": true,
         "bump-after-update": true,
         "allow-plugins": {
-            "yiisoft/config": true,
             "codeception/c3": true,
-            "composer/installers": true
+            "composer/installers": true,
+            "phpdocumentor/shim": true,
+            "yiisoft/config": true
         },
         "platform": {
             "php": "8.5.0"

@@ -10,6 +10,8 @@ Thumbs.db
 composer.phar
 .php-cs-fixer.cache
 .phpunit.result.cache
+/.phpdoc/*
+
 
 # --- Yii3 Spezifisch ---
 /runtime/*
