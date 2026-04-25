@@ -32,8 +32,11 @@
         ],
         "test": "codecept run"
     },
+    "scripts": {
+        "test:unit": "phpunit tests/Unit"
+    },
     "require": {
-        "php": "8.2 - 8.5",
+	"php": "^8.5",
         "ext-filter": "*",
         "httpsoft/http-message": "^1.1.6",
         "psr/container": "^2.0.2",

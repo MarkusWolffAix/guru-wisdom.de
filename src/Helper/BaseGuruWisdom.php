@@ -77,28 +77,13 @@ class BaseGuruWisdom
      */
     public function getNavigationIds(?string $id = null): array
     {
-        $path = $this->aliases->get('@public/wisdoms/');
-        $searchPath = $path . $id . '.md';
-
-        $files = glob($path . '*.md');
-        $count = count($files);
-
+        $sortedId = $this->getSortedWisdomIds();    
+        $count = count($sortedId);
+        $currentIndex = array_search($id, $sortedId);
+        $prevId = ($currentIndex > 0) ? $sortedId[$currentIndex - 1] : null;
+        $nextId = ($currentIndex < $count - 1) ? $sortedId[$currentIndex + 1] : null;
         
-        $currentIndex = array_search($searchPath, $files);
-        $currentFile = $files[$currentIndex]; 
-
-        // Calculate previous and next files using wrap-around logic
-        $previousIndex = ($currentIndex - 1 + $count) % $count;
-        $previousFile = $files[$previousIndex];
-
-        $nextIndex = ($currentIndex + 1) % $count;
-        $nextFile = $files[$nextIndex];
-
-        $currentId = basename($currentFile, '.md');
-        $nextId = basename($nextFile, '.md');
-        $previousId = basename($previousFile, '.md');
-
-        return ["prev" => $previousId, "current" => $currentId, "next" => $nextId];
+        return ["prev" => $prevId, "current" => $id, "next" => $nextId];
     }
 
 /**
@@ -308,4 +293,64 @@ class BaseGuruWisdom
         
         file_put_contents($filePath, $newContent);
     }
+
+/**
+ * Sortiert Wisdom-IDs chronologisch absteigend anhand des Datums im Markdown-Header.
+ *
+ * @param array|null $ids Optional: Ein Array mit spezifischen IDs (z.B. ['GoldenThread', 'SilverLining']).
+ * Wenn null oder leer, werden alle Wisdoms im Ordner sortiert.
+ * @return array Ein Array mit den sortierten IDs, neueste zuerst.
+ */
+public function getSortedWisdomIds(?array $ids = null): array
+{
+    $path = $this->aliases->get('@public/wisdoms/');
+    $wisdomsToSort = [];
+
+    // 1. Zu verarbeitende Dateien ermitteln
+    if (!empty($ids)) {
+        // Fall A: Spezifische IDs wurden übergeben
+        foreach ($ids as $id) {
+            $file = $path . $id . '.md';
+            if (file_exists($file)) {
+                $wisdomsToSort[$id] = $file;
+            }
+        }
+    } else {
+        // Fall B: Keine IDs übergeben -> Alle .md Dateien suchen
+        $files = glob($path . '*.md');
+        if ($files !== false) {
+            foreach ($files as $file) {
+                // Den Dateinamen ohne ".md" extrahieren -> das ist die ID
+                $id = basename($file, '.md');
+                $wisdomsToSort[$id] = $file;
+            }
+        }
+    }
+
+    // 2. Datum auslesen und Array vorbereiten
+    $filesWithDate = [];
+    foreach ($wisdomsToSort as $id => $file) {
+        $content = file_get_contents($file, false, null, 0, 1024);
+        $timestamp = 0; // Fallback
+
+        if (preg_match('/^date:\s*(.+)$/im', $content, $matches)) {
+            $timestamp = strtotime(trim($matches[1]));
+        }
+
+        $filesWithDate[] = [
+            'id' => $id,
+            'timestamp' => $timestamp
+        ];
+    }
+
+    // 3. Absteigend nach Timestamp sortieren (Neueste zuerst)
+    usort($filesWithDate, function($a, $b) {
+        return $b['timestamp'] <=> $a['timestamp'];
+    });
+
+    // 4. Nur die IDs zurückgeben (z.B. ['GoldenThread', 'SilverLining', ...])
+    return array_column($filesWithDate, 'id');
+}
+
+
 }
