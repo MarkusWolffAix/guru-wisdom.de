@@ -11,7 +11,7 @@ Anbieter: z.B. Cloudflare, AWS Route53 (NICHT das Standard Hetzner DNS)
                                      [ INTERNET USER ]
                                             |
                                             V
-                             Anfrage an: www.deine-domain.de
+                             Anfrage an guru-wisom.de
                                             |
                               +-------------+-------------+
                               | GLOBAL DNS LOAD BALANCER  | (Führt permanente
@@ -23,7 +23,7 @@ Anbieter: z.B. Cloudflare, AWS Route53 (NICHT das Standard Hetzner DNS)
 =========================================================:================================
 EBENE 2: APPLIKATION (HETZNER CLOUD)                    :
 ---------------------------------------------------------:-------------------------------
-STANDORT 1: FALKENSTEIN (DE)                             : STANDORT 2: HELSINKI (FI)
+STANDORT 1: NÜRNBERG (DE)                             : STANDORT 2: HELSINKI (FI)
 =====================================                    : ==============================
                                      |                    :
 [ÖFFENTLICHES NETZ]                  |                    : [ÖFFENTLICHES NETZ]
@@ -53,9 +53,9 @@ EBENE 3: DATEN & SPEICHER (STAGING & REPLIKATION)
 
         (Dashed lines indicate continuous data synchronization/replication)
 
-      /==============\                                             /==============\
+      /==============\       media.hetzner-s3-storger                                /==============\
      ( Hetzner S3 DE )  <.-.-.-. S3 Cross-Region Replication .-.-.> ( Hetzner S3 FI )
-      \==============/           (Bilder, Assets, Backups)          \==============/
+      \==============/           (Bilder, Assets, Backups)         \==============/
              ^                                                             ^
              | (Yii 3 liest/schreibt Assets)                               |
              |                                                             |

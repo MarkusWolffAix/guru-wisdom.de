@@ -162,11 +162,11 @@ Specialized scripts located in `bin/`:
 
 **Backend & Storage**
 - [ ] **Storage:** Implement Hetzner S3 Integration & `IntegrityController` (Self-Healing)
-- [ ] **Database:** Evaluate/Setup SQLite DB for website analytics
-- [ ] **Metadata:** Create JSON files for metadata
-- [ ] **Create Test VM:** New Test VM Yii3 
-- [ ] **Create Prod VM :** New Prod VM Yii3
-- [ ] **Create one Public Proxy:** For Test and Prod 
+- [-] **Database:** Evaluate/Setup SQLite DB for website analytics
+- [?] **Metadata:** Create JSON files for metadata
+- [x] **Create Test VM:** New Test VM Yii3 
+- [x] **Create Prod VM :** New Prod VM Yii3
+- [x] **Create one Public Proxy:** For Test and Prod 
 
 
 **Frontend & Structure**
@@ -176,5 +176,5 @@ Specialized scripts located in `bin/`:
 **Maintenance & Quality Assurance**
 - [ ] **Git:** History Cleanup (remove legacy binary blobs from repo)
 - [ ] **QA:** Perform comprehensive testing
-- [ ] **Yi 3:** Prepare the Migration to Yii 3 
+- [x] **Yi 3:** Prepare the Migration to Yii 3 
  
