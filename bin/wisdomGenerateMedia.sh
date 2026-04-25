@@ -5,7 +5,7 @@ zmodload zsh/stat
 
 # --- Configuration ---
 # 'base' is only needed to find the markdown (.md) files
-base="/Users/markuswolff/Documents/Arbeit/Development/t3.guru-wisdom.de/public/"
+base="/Users/markuswolff/Documents/Arbeit/Development/guru-wisdom.de/public/"
 MD_DIR="$base/wisdoms"
 SOURCE_MEDIA_DIR="/Users/markuswolff/Downloads"
 ONEDRIVE_DIR="$HOME/Library/CloudStorage/OneDrive-Persönlich/Backup/S3Storage"
@@ -13,9 +13,11 @@ ONEDRIVE_DIR="$HOME/Library/CloudStorage/OneDrive-Persönlich/Backup/S3Storage"
 # S3 Settings
 S3_BUCKET_1="s3://guru-wisdom-first"
 S3_ENDPOINT_1="https://nbg1.your-objectstorage.com"
+S3_PROFILE_1="nuernberg"
 
-S3_BUCKET_2="s3://guru-wisdom-first"
-S3_ENDPOINT_2="https://nbg1.your-objectstorage.com"
+S3_BUCKET_2="s3://guru-wisdom-secound"
+S3_ENDPOINT_2="https://hel1.your-objectstorage.com"
+S3_PROFILE_2="helsinki"
 
 # Create a temporary directory for image conversion
 TMP_DIR=$(mktemp -d)
@@ -71,7 +73,7 @@ confirm_s3_upload() {
         
         # --- Upload zu Bucket 1 ---
         echo -e "      Pushing to Bucket 1..."
-        if aws s3 cp "$local_file" "${S3_BUCKET_1}${path_suffix}" --endpoint-url "$S3_ENDPOINT_1" >/dev/null; then
+        if aws s3 cp "$local_file" "${S3_BUCKET_1}${path_suffix}"  --profile "$S3_PROFILE_1" --endpoint-url "$S3_ENDPOINT_1" >/dev/null; then
             echo -e "      ${GREEN}✔ Bucket 1: Success.${NC}"
         else
             echo -e "      ${RED}✘ Bucket 1: Failed!${NC}"
@@ -79,7 +81,7 @@ confirm_s3_upload() {
 
         # --- Upload zu Bucket 2 ---
         echo -e "      Pushing to Bucket 2..."
-        if aws s3 cp "$local_file" "${S3_BUCKET_2}${path_suffix}" --endpoint-url "$S3_ENDPOINT_2" >/dev/null; then
+        if aws s3 cp "$local_file" "${S3_BUCKET_2}${path_suffix}" --profile "$S3_PROFILE_2"  --endpoint-url "$S3_ENDPOINT_2" >/dev/null; then
             echo -e "      ${GREEN}✔ Bucket 2: Success.${NC}"
         else
             echo -e "      ${RED}✘ Bucket 2: Failed!${NC}"
@@ -141,12 +143,12 @@ if [[ -f "$REFERENCE_FILE" ]]; then
             # --- CASE 1: IMAGES (Source: PNG) ---
             if [[ "$ext" == "png" ]]; then
                 # Convert to Web-JPG (in Temp folder)
-                sips --resampleWidth 1280 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
+                sips --resampleWidth 640 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
                 # Convert to High-Res Org-JPG (in Temp folder)
                 sips -s format jpeg -s formatOptions high "$best_file" --out "$TMP_DIR/${ID}_org.jpg" >/dev/null 2>&1
-                confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "images/org/${ID}.jpg"
+                confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "/images/org/${ID}.jpg"
 
                 # Note: The original PNG remains untouched in the Downloads folder.
 

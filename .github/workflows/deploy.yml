@@ -16,10 +16,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.TEST_SERVER_IP }}
-          username: markus
+          username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
-          proxy_username: markus
+          proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             set -e # Stops execution immediately if any command fails
@@ -29,8 +29,8 @@ jobs:
             
             echo "APP_ENV=test" > .env
             chmod 600 .env
-            
-            docker compose -f docker-compose.test.yml up -d --build
+            docker compose  up -d --build app
+            docker image prune -f
 
   # --- STAGE 2: DEPLOY TO PRODUCTION ---
   # Waits for staging and manual approval
@@ -49,10 +49,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.PROD_SERVER_IP }}
-          username: markus
+          username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
-          proxy_username: markus
+          proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             set -e
@@ -62,8 +62,8 @@ jobs:
             
             echo "APP_ENV=prod" > .env
             chmod 600 .env
-            
-            docker compose -f docker-compose.prod.yml up -d --build
+            docker compose  up -d --build app
+            docker image prune -f
 
   # --- STAGE 3: DEPLOY TO REPLICATION SERVER ---
   # Runs parallel to Production after the same manual approval
@@ -81,10 +81,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.REPLICA_SERVER_IP }} # Make sure to add this secret!
-          username: markus
+          username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
-          proxy_username: markus
+          proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             set -e
@@ -96,4 +96,6 @@ jobs:
             chmod 600 .env
             
             # Make sure you have a docker-compose.replica.yml if it differs from prod
-            docker compose -f docker-compose.prod.yml up -d --build
+            docker compose  up -d --build app
+            docker image prune -f
+    

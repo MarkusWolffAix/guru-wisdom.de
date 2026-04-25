@@ -108,7 +108,7 @@ runcmd:
   # --- App Setup & Deployment ---
   - mkdir -p /opt/guru-wisdom.de
   - chown $USER:www-data /opt/guru-wisdom.de
-  - runuser -u $USER -- git clone https://github.com/MarkusWolffAix/t3.guru-wisdom.de.git /opt/guru-wisdom.de
+  - runuser -u $USER -- git clone https://github.com/MarkusWolffAix/guru-wisdom.de.git /opt/guru-wisdom.de
   
   # Alles ab hier läuft als zusammenhängendes Skript in dem Ordner ab
 - |
