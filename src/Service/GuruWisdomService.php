@@ -125,63 +125,66 @@ class GuruWisdomService
      * @param string $text The raw text containing placeholders.
      * @return string The processed text with valid HTML tags.
      */
-    public function processPlaceholders(string $text): string
-    {
-        // 1. YouTube Placeholders
-        // Matches [youtube:VIDEO_ID]
-        $text = preg_replace_callback('/\[youtube:([a-zA-Z0-9_-]+)\]/', function(array $matches) {
-            $videoId = $matches[1]; 
-            
-            return '<div class="ratio ratio-16x9 my-4" style="max-width: 640px;">
-              <iframe 
-                  src="https://www.youtube.com/embed/' . htmlspecialchars($videoId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . '" 
-                  title="YouTube video" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen>
-              </iframe>
-          </div>';
-        }, $text);
-
-        // 2. Spotify Placeholders
-        // Matches [spotify:type:ID] where type is track, album, playlist, artist, episode, or show
-        $text = preg_replace_callback('/\[spotify:(track|album|playlist|artist|episode|show):([a-zA-Z0-9]+)\]/', function(array $matches) {
-            $type = $matches[1];
-            $spotifyId = $matches[2];
-            
-            $safeType = htmlspecialchars($type, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeId = htmlspecialchars($spotifyId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-
-            return '<div class="my-4" style="max-width: 640px;">
-                <iframe style="border-radius:12px" 
-                    src="https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '?utm_source=generator" 
-                    width="100%" 
-                    height="352" 
-                    frameBorder="0" 
-                    allowfullscreen="" 
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                    loading="lazy">
-                </iframe>
-            </div>';
-        }, $text);
-
-        // 3. Image Placeholders
-        // Matches [image:URL] or [image:URL|ALT_TEXT]
-        $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
-            $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1] . ".jpg"); // Assuming .jpg extension for all images
-            
-            // Check if an optional alt text was provided after the pipe symbol
-            $altText = isset($matches[2]) ? trim($matches[2]) : '';
-            
-            $safeUrl = htmlspecialchars($imageUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-
-            // Returns a responsive image using Bootstrap-like classes
-            return '<img src="' . $safeUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">';
-        }, $text);
+public function processPlaceholders(string $text): string
+{
+    // 1. YouTube Placeholders (Zwei-Klick-Lösung)
+    // Matches [youtube:VIDEO_ID]
+    $text = preg_replace_callback('/\[youtube:([a-zA-Z0-9_-]+)\]/', function(array $matches) {
+        $videoId = $matches[1]; 
+        $safeUrl = 'https://www.youtube-nocookie.com/embed/' . htmlspecialchars($videoId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
         
-        return $text;
-    }
+        return '<div class="two-click-container my-4" data-type="youtube" data-src="' . $safeUrl . '" style="max-width: 640px;">
+            <div class="two-click-placeholder p-4 text-center" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px;">
+                <p class="mb-3"><strong>Externes YouTube-Video</strong></p>
+                <p class="mb-3 small">Mit dem Klick auf "Video laden" stimmst du zu, dass deine IP-Adresse an Server von Google übermittelt wird.
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Mehr Informationen</a>, siehe auch
+                <a href="./datenschutz#externe-medien"> Datenschutz. </a>
+                </p>
+                </p>
+                <button class="btn btn-primary load-media-btn">Video laden</button>
+            </div>
+        </div>';
+    }, $text);
+
+    // 2. Spotify Placeholders (Zwei-Klick-Lösung)
+    // Matches [spotify:type:ID]
+    $text = preg_replace_callback('/\[spotify:(track|album|playlist|artist|episode|show):([a-zA-Z0-9]+)\]/', function(array $matches) {
+        $type = $matches[1];
+        $spotifyId = $matches[2];
+        
+        $safeType = htmlspecialchars($type, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $safeId = htmlspecialchars($spotifyId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        
+        // Korrigierte offizielle Spotify-URL
+        $safeUrl = 'https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '?utm_source=generator';
+
+        return '<div class="two-click-container my-4" data-type="spotify" data-src="' . $safeUrl . '" style="max-width: 640px;">
+            <div class="two-click-placeholder p-4 text-center" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 12px;">
+                <p class="mb-3"><strong>Externer Spotify-Player</strong></p>  
+                <p class="mb-3 small">Mit dem Klick auf "Inhalt laden" stimmst du zu, dass deine IP-Adresse an Server von Spotify übermittelt wird
+                siehe <a href="./datenschutz#externe-medien"> Datenschutz </a>.</p>
+                </p>
+  
+                <button class="btn btn-success load-media-btn">Inhalt laden</button>
+            </div>
+        </div>';
+    }, $text);
+
+    // 3. Image Placeholders (Bleibt unverändert, da eigene Domain)
+    // Matches [image:URL] or [image:URL|ALT_TEXT]
+    $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
+        $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1] . ".jpg"); 
+        
+        $altText = isset($matches[2]) ? trim($matches[2]) : '';
+        
+        $safeUrl = htmlspecialchars($imageUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+        return '<img src="' . $safeUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">';
+    }, $text);
+    
+    return $text;
+}
 
     /**
      * Resolves the absolute file path for a given wisdom ID.

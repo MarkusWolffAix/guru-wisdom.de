@@ -314,4 +314,57 @@ footer#footer a:hover { opacity: 0.7; }
         width: 32px !important;
         height: auto;
     }
+
+/* =========================================
+   Zwei-Klick-Lösung (YouTube / Externe Medien)
+   ========================================= */
+.two-click-container {
+    position: relative;
+    background-color: rgba(255, 255, 240, 0.5); /* Passt zu deinem Blockquote-Hintergrund */
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 315px; /* Typische Video-Höhe */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.two-click-placeholder {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.two-click-placeholder p {
+    font-family: 'Lora', serif;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.load-media-btn {
+    font-family: 'Caveat', cursive; /* Deine Handschrift-Schriftart für den Button */
+    font-size: 1.8rem;
+    background-color: #d63384;      /* Deine pinke Akzentfarbe */
+    color: #ffffff;
+    border: none;
+    padding: 6px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(214, 51, 132, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.load-media-btn:hover {
+    background-color: #b02a6c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(214, 51, 132, 0.3);
+}
+
+.load-media-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(214, 51, 132, 0.2);
+}
+
 }

@@ -1,17 +1,36 @@
-// public/assets/js/youtube.js
-document.addEventListener('DOMContentLoaded', function() {
-    // Sucht alle Platzhalter-Bilder
-    document.querySelectorAll('.youtube-placeholder').forEach(function(placeholder) {
-        
-        placeholder.addEventListener('click', function() {
-            var videoId = this.getAttribute('data-video-id');
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll('.two-click-container');
+
+    containers.forEach(function(container) {
+        const btn = container.querySelector('.load-media-btn');
+        if (!btn) return;
+
+        btn.addEventListener('click', function() {
+            const src = container.getAttribute('data-src');
+            const type = container.getAttribute('data-type');
             
-            // Baut den echten Iframe mit Autoplay zusammen
-            var iframe = '<iframe src="https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 8px;"></iframe>';
+            // iFrame Element erstellen
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', src);
+            iframe.setAttribute('frameborder', '0');
             
-            // Ersetzt das Bild durch das Video
-            this.innerHTML = '<div class="ratio ratio-16x9">' + iframe + '</div>';
+            // Spezifische Einstellungen je nach Typ (wie in deiner alten Funktion)
+            if (type === 'youtube') {
+                iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                iframe.setAttribute('allowfullscreen', 'true');
+                iframe.style.width = '100%';
+                iframe.style.aspectRatio = '16/9'; // Ersetzt die Bootstrap ratio-Klasse auf moderne Weise
+            } else if (type === 'spotify') {
+                iframe.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture');
+                iframe.setAttribute('loading', 'lazy');
+                iframe.style.width = '100%';
+                iframe.style.height = '352px';
+                iframe.style.borderRadius = '12px';
+            }
+
+            // Platzhalter löschen und iFrame einfügen
+            container.innerHTML = '';
+            container.appendChild(iframe);
         });
-        
     });
 });
