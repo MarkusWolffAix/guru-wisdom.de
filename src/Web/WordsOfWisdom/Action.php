@@ -9,7 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
-use App\Helper\BaseGuruWisdom;
+use App\Helper\GuruWisdomService;
 
 /**
  * Handles the web requests for the "Words of Wisdom" detail page.
@@ -33,7 +33,7 @@ final class Action implements RequestHandlerInterface
     public function __construct(
         WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
-        private BaseGuruWisdom $guruWisdom
+        private GuruWisdomService $guruWisdom
     ) {
         // Set the view path to the current directory of this class
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);

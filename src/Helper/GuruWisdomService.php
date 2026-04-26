@@ -15,7 +15,7 @@ use cebe\markdown\GithubMarkdown;
  * @author Markus Wolff <markus.wolff@guru-wisdom.com>
  * @since 2026-02-13
  */
-class BaseGuruWisdom
+class GuruWisdomService
 {
     /**
      * @var Aliases Dependency for resolving Yii path aliases.
