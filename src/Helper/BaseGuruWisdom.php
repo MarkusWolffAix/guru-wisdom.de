@@ -18,75 +18,104 @@ use cebe\markdown\GithubMarkdown;
 class BaseGuruWisdom
 {
     /**
-     * Constructor injects required Yii3 dependencies.
+     * @var Aliases Dependency for resolving Yii path aliases.
      */
     protected Aliases $aliases;
 
+    /**
+     * Initializes the class and injects required Yii3 dependencies.
+     *
+     * @param Aliases $aliases Component to resolve directory aliases.
+     */
     public function __construct(
         Aliases $aliases 
     ) {
         $this->aliases = $aliases; 
     }
 
+    /**
+     * Sanitizes the requested ID and ensures the corresponding file exists.
+     * If the file does not exist, it falls back to a random available wisdom file.
+     *
+     * @param string|mixed $id The requested wisdom ID.
+     * @return string The sanitized and valid file ID.
+     */
     public function sanitizeId($id): string
     {
         $path = $this->aliases->get('@public/wisdoms/');
         $filePath = $path . $id . '.md';
+        
         if (!file_exists($filePath)) {
             $files = glob($path . '*.md');
-            $filePath= $files[array_rand($files)];
+            $filePath = $files[array_rand($files)];
         }
+        
         return basename($filePath, '.md');
     }
 
-    
-    public  function getImageHtml($id)
+    /**
+     * Generates the HTML string for the wisdom's image if it exists on the media server.
+     *
+     * @param string|mixed $id The unique identifier of the wisdom.
+     * @return string The HTML `<picture>` element, or an empty string if the image is missing.
+     */
+    public function getImageHtml($id): string
     {
-       $url = "https://media.guru-wisdom.de/images/".$id.".jpg ";
+       $url = "https://media.guru-wisdom.de/images/" . $id . ".jpg";
 
        $headers = @get_headers($url);
-       $htmlcode="";
+       $htmlcode = "";
+       
        if (!$headers || strpos($headers[0], '200') === false) {
             return ""; 
-       };
+       }
     
-        $htmlcode=$htmlcode.'<picture><img src="'.$url.'" alt="" class="img-fluid"></picture>';
+       $htmlcode .= '<picture><img src="' . $url . '" alt="" class="img-fluid"></picture>';
         
-        return $htmlcode;
+       return $htmlcode;
     }
 
-    public  function getAudioHtml($id)
+    /**
+     * Generates the HTML string for the wisdom's audio player if it exists on the media server.
+     *
+     * @param string|mixed $id The unique identifier of the wisdom.
+     * @return string The HTML `<audio>` element, or an empty string if the audio is missing.
+     */
+    public function getAudioHtml($id): string
     {
-        $url = "https://media.guru-wisdom.de/audio/".$id.".mp3";
+        $url = "https://media.guru-wisdom.de/audio/" . $id . ".mp3";
 
         $headers = @get_headers($url);
-        $htmlcode="";
+        $htmlcode = "";
 
         if (!$headers || strpos($headers[0], '200') === false) {
             return ""; 
-        };
+        }
 
-        $htmlcode = '<audio controls> <source src="'.$url.'" type="audio/mpeg"> </audio>';
+        $htmlcode = '<audio controls> <source src="' . $url . '" type="audio/mpeg"> </audio>';
 
-    return $htmlcode;
+        return $htmlcode;
     }
-
 
     /**
      * Retrieves the previous, current, and next IDs for navigation.
+     *
+     * @param string|null $id The current wisdom ID.
+     * @return array{prev: string|null, current: string|null, next: string|null} An array containing the navigation IDs.
      */
     public function getNavigationIds(?string $id = null): array
     {
         $sortedId = $this->getSortedWisdomIds();    
         $count = count($sortedId);
         $currentIndex = array_search($id, $sortedId);
+        
         $prevId = ($currentIndex > 0) ? $sortedId[$currentIndex - 1] : null;
         $nextId = ($currentIndex < $count - 1) ? $sortedId[$currentIndex + 1] : null;
         
         return ["prev" => $prevId, "current" => $id, "next" => $nextId];
     }
 
-/**
+    /**
      * Processes custom placeholders in a string and converts them into HTML components.
      * * Examples:
      * - [youtube:dQw4w9WgXcQ] -> Standard YouTube Embed
@@ -94,7 +123,7 @@ class BaseGuruWisdom
      * - [image:https://example.com/photo.jpg|A beautiful sunset] -> Responsive image with alt text
      *
      * @param string $text The raw text containing placeholders.
-     * @return string The processed text with HTML tags.
+     * @return string The processed text with valid HTML tags.
      */
     public function processPlaceholders(string $text): string
     {
@@ -138,8 +167,9 @@ class BaseGuruWisdom
 
         // 3. Image Placeholders
         // Matches [image:URL] or [image:URL|ALT_TEXT]
-            $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
-            $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1].".jpg"); // Assuming .jpg extension for all images
+        $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
+            $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1] . ".jpg"); // Assuming .jpg extension for all images
+            
             // Check if an optional alt text was provided after the pipe symbol
             $altText = isset($matches[2]) ? trim($matches[2]) : '';
             
@@ -153,6 +183,12 @@ class BaseGuruWisdom
         return $text;
     }
 
+    /**
+     * Resolves the absolute file path for a given wisdom ID.
+     *
+     * @param string $id The wisdom ID.
+     * @return string The absolute path to the markdown file.
+     */
     public function getFilePath(string $id): string 
     {
         return $this->aliases->get('@public/wisdoms/' . $id . '.md');
@@ -160,7 +196,11 @@ class BaseGuruWisdom
 
     /**
      * The main orchestrator function.
-     * Parses the markdown file, handles fallbacks, and renders HTML.
+     * Parses the markdown file, handles fallbacks, and renders the HTML.
+     *
+     * @param string $id       The unique identifier of the wisdom.
+     * @param bool   $autoSave Whether to auto-save structural changes back to the file (disabled by default).
+     * @return array An array containing parsed data such as 'title', 'subtitle', and the final 'htmloutput'.
      */
     public function parseFile(string $id, bool $autoSave = false): array
     {
@@ -192,7 +232,10 @@ class BaseGuruWisdom
     }
 
     /**
-     * Extracts YAML Front Matter and cleans the text.
+     * Extracts YAML Front Matter and separates the raw text.
+     *
+     * @param string $content The raw content of the markdown file.
+     * @return array Parsed front matter properties along with the 'raw_markdown' string.
      */
     private function extractFrontMatter(string $content): array
     {
@@ -222,6 +265,9 @@ class BaseGuruWisdom
 
     /**
      * Handles missing titles and splits H1 headings containing a colon.
+     *
+     * @param array &$data A reference to the parsed data array.
+     * @return bool True if any modifications were made that would require a file update.
      */
     private function applyFallbacks(array &$data): bool
     {
@@ -270,6 +316,10 @@ class BaseGuruWisdom
 
     /**
      * Writes the updated data back into the physical markdown file.
+     *
+     * @param string $filePath The absolute path to the file.
+     * @param array  $data     The parsed data including the raw markdown to write.
+     * @return void
      */
     private function updateFile(string $filePath, array $data): void
     {
@@ -294,63 +344,62 @@ class BaseGuruWisdom
         file_put_contents($filePath, $newContent);
     }
 
-/**
- * Sortiert Wisdom-IDs chronologisch absteigend anhand des Datums im Markdown-Header.
- *
- * @param array|null $ids Optional: Ein Array mit spezifischen IDs (z.B. ['GoldenThread', 'SilverLining']).
- * Wenn null oder leer, werden alle Wisdoms im Ordner sortiert.
- * @return array Ein Array mit den sortierten IDs, neueste zuerst.
- */
-public function getSortedWisdomIds(?array $ids = null): array
-{
-    $path = $this->aliases->get('@public/wisdoms/');
-    $wisdomsToSort = [];
+    /**
+     * Sorts Wisdom IDs in descending chronological order based on the date in the Markdown header.
+     *
+     * @param array|null $ids Optional: An array of specific IDs (e.g., ['GoldenThread', 'SilverLining']).
+     * If null or empty, all wisdom files in the folder will be sorted.
+     * @return array An array of sorted IDs, with the newest first.
+     */
+    public function getSortedWisdomIds(?array $ids = null): array
+    {
+        $path = $this->aliases->get('@public/wisdoms/');
+        $wisdomsToSort = [];
 
-    // 1. Zu verarbeitende Dateien ermitteln
-    if (!empty($ids)) {
-        // Fall A: Spezifische IDs wurden übergeben
-        foreach ($ids as $id) {
-            $file = $path . $id . '.md';
-            if (file_exists($file)) {
-                $wisdomsToSort[$id] = $file;
+        // 1. Determine the files to process
+        if (!empty($ids)) {
+            // Case A: Specific IDs were provided
+            foreach ($ids as $id) {
+                $file = $path . $id . '.md';
+                if (file_exists($file)) {
+                    $wisdomsToSort[$id] = $file;
+                }
+            }
+        } else {
+            // Case B: No IDs provided -> Search for all .md files
+            $files = glob($path . '*.md');
+            if ($files !== false) {
+                foreach ($files as $file) {
+                    // Extract the filename without ".md" -> this is the ID
+                    $id = basename($file, '.md');
+                    $wisdomsToSort[$id] = $file;
+                }
             }
         }
-    } else {
-        // Fall B: Keine IDs übergeben -> Alle .md Dateien suchen
-        $files = glob($path . '*.md');
-        if ($files !== false) {
-            foreach ($files as $file) {
-                // Den Dateinamen ohne ".md" extrahieren -> das ist die ID
-                $id = basename($file, '.md');
-                $wisdomsToSort[$id] = $file;
+
+        // 2. Read the date and prepare the array
+        $filesWithDate = [];
+        foreach ($wisdomsToSort as $id => $file) {
+            // Read only the first 1024 bytes for performance
+            $content = file_get_contents($file, false, null, 0, 1024);
+            $timestamp = 0; // Fallback
+
+            if (preg_match('/^date:\s*(.+)$/im', $content, $matches)) {
+                $timestamp = strtotime(trim($matches[1]));
             }
-        }
-    }
 
-    // 2. Datum auslesen und Array vorbereiten
-    $filesWithDate = [];
-    foreach ($wisdomsToSort as $id => $file) {
-        $content = file_get_contents($file, false, null, 0, 1024);
-        $timestamp = 0; // Fallback
-
-        if (preg_match('/^date:\s*(.+)$/im', $content, $matches)) {
-            $timestamp = strtotime(trim($matches[1]));
+            $filesWithDate[] = [
+                'id' => $id,
+                'timestamp' => $timestamp
+            ];
         }
 
-        $filesWithDate[] = [
-            'id' => $id,
-            'timestamp' => $timestamp
-        ];
+        // 3. Sort descending by timestamp (Newest first)
+        usort($filesWithDate, function($a, $b) {
+            return $b['timestamp'] <=> $a['timestamp'];
+        });
+
+        // 4. Return only the array of IDs (e.g., ['GoldenThread', 'SilverLining', ...])
+        return array_column($filesWithDate, 'id');
     }
-
-    // 3. Absteigend nach Timestamp sortieren (Neueste zuerst)
-    usort($filesWithDate, function($a, $b) {
-        return $b['timestamp'] <=> $a['timestamp'];
-    });
-
-    // 4. Nur die IDs zurückgeben (z.B. ['GoldenThread', 'SilverLining', ...])
-    return array_column($filesWithDate, 'id');
-}
-
-
 }
