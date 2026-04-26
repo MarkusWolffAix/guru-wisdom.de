@@ -10,14 +10,22 @@ $this->setTitle('Kontakt');
 <div class="row mt-5">
     <div class="col-md-8 offset-md-2">
         <h1>Kontakt</h1>
-        <p>Wenn Sie eine eigene Weisheit mitteilein möchten und diese hier gern veröffentlichen würden, schreiben Sie mir gerne eine Nachricht. Ich freue mich über Ihre Nachricht und werde mich so schnell wie möglich bei Ihnen melden.
+
+    <div class="w-50"> 
+    <img src="/images/team/_MeColibriFestival.jpg" class="img-fluid" alt="Profilbild Markus Wolff">
+    </div> 
+        <br/>
+        <p>Wenn Sie eine eigene Weisheit mir mitteilein möchten oder ein ein anderes Anliegen haben, schreiben Sie mir gerne eine Nachricht an
+        <a href="mailto:info@guru-wisdom.com?subject=Weisheit">info@guru-wisdom.com</a>
+        . Ich freue mich über Ihre Nachricht und werde mich so schnellst möglich bei Ihnen melden.
 <br/>
 <br/>
 
-        Herzlichst, 
+        Liebe Grüße,<br/>
+        <strong>Markus Wolff</strong>
 <br/>
 
-        Markus <span class="reverse-email">moc.modsiw-urug@ofni</span>
+</br>   
 </p>
         
         </div>
