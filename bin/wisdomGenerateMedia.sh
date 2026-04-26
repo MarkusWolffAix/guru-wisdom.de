@@ -4,7 +4,6 @@
 zmodload zsh/stat
 
 # --- Configuration ---
-# 'base' is only needed to find the markdown (.md) files
 base="/Users/markuswolff/Documents/Arbeit/Development/guru-wisdom.de/public/"
 MD_DIR="$base/wisdoms"
 SOURCE_MEDIA_DIR="/Users/markuswolff/Downloads"
@@ -21,7 +20,6 @@ S3_PROFILE_2="helsinki"
 
 # Create a temporary directory for image conversion
 TMP_DIR=$(mktemp -d)
-# Trap: Automatically deletes the temporary directory when the script exits or is aborted
 trap 'rm -rf "$TMP_DIR"' EXIT
 
 # Extensions to search for in the Downloads folder
@@ -34,6 +32,34 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
+# --- Argument Parsing & Debug Setup ---
+DEBUG=false
+ID=""
+
+# Durchlaufe alle übergebenen Argumente
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -d|--debug)
+            DEBUG=true
+            shift # Springe zum nächsten Argument
+            ;;
+        *)
+            # Wenn es kein Schalter ist und wir noch keine ID haben, ist es die ID
+            if [[ -z "$ID" ]]; then
+                ID="$1"
+            fi
+            shift
+            ;;
+    esac
+done
+
+# Hilfsfunktion für saubere Debug-Ausgaben
+debug_log() {
+    if [[ "$DEBUG" == true ]]; then
+        echo -e "${YELLOW}[DEBUG] $1${NC}" >&2
+    fi
+}
+
 echo -e "${CYAN}========================================${NC}"
 echo -e "${CYAN}       Guru Wisdom File Processor       ${NC}"
 echo -e "${CYAN}       (Cloud-Only / Direct to S3)      ${NC}"
@@ -41,8 +67,7 @@ echo -e "${CYAN}========================================${NC}\n"
 
 # 1. Determine the ID (parameter or auto-detection)
 ID_PROVIDED=false
-if [[ -n "$1" ]]; then
-    ID="$1"
+if [[ -n "$ID" ]]; then
     ID_PROVIDED=true
     echo -e "➔ Using provided ID: ${GREEN}$ID${NC}"
     REFERENCE_FILE="$MD_DIR/${ID}.md"
@@ -51,7 +76,7 @@ else
 
     if [[ -z "$REFERENCE_FILE" ]] || ! find "$REFERENCE_FILE" -mmin -180 >/dev/null 2>&1; then
         echo -e "${RED}No recent Markdown file found (newer than 3 hours).${NC}"
-        echo -e "Usage: $0 <id>"
+        echo -e "Usage: $0 [-d|--debug] <id>"
         exit 1
     fi
 
@@ -64,14 +89,13 @@ fi
 
 # Helper function for S3 confirmation and checking
 confirm_s3_upload() {
-    local local_file="$1"   # Pfad zur lokalen Datei (z.B. $TMP_DIR/ID.jpg)
-    local path_suffix="$2"  # Pfad NACH dem Bucket (z.B. /images/ID.jpg)
+    local local_file="$1"
+    local path_suffix="$2"
     
     echo -e -n "${YELLOW}   ➔ Upload to BOTH S3 buckets? ($path_suffix) [Y/n]: ${NC}"
     read confirm
     if [[ "$confirm" != [nN]* ]]; then
         
-        # --- Upload zu Bucket 1 ---
         echo -e "      Pushing to Bucket 1..."
         if aws s3 cp "$local_file" "${S3_BUCKET_1}${path_suffix}"  --profile "$S3_PROFILE_1" --endpoint-url "$S3_ENDPOINT_1" >/dev/null; then
             echo -e "      ${GREEN}✔ Bucket 1: Success.${NC}"
@@ -79,7 +103,6 @@ confirm_s3_upload() {
             echo -e "      ${RED}✘ Bucket 1: Failed!${NC}"
         fi
 
-        # --- Upload zu Bucket 2 ---
         echo -e "      Pushing to Bucket 2..."
         if aws s3 cp "$local_file" "${S3_BUCKET_2}${path_suffix}" --profile "$S3_PROFILE_2"  --endpoint-url "$S3_ENDPOINT_2" >/dev/null; then
             echo -e "      ${GREEN}✔ Bucket 2: Success.${NC}"
@@ -87,8 +110,6 @@ confirm_s3_upload() {
             echo -e "      ${RED}✘ Bucket 2: Failed!${NC}"
         fi
 
-        # --- Backup zu OneDrive ---
-        # Extrahiert den Ordnernamen (z.B. images, audio, video) für die Backup-Struktur
         local folder_name=$(echo "$path_suffix" | cut -d'/' -f2)
         mkdir -p "$ONEDRIVE_DIR/$folder_name"
         cp "$local_file" "$ONEDRIVE_DIR/$folder_name/$(basename "$local_file")"
@@ -101,15 +122,20 @@ confirm_s3_upload() {
 # 2. Media File Matching & Processing
 if [[ -f "$REFERENCE_FILE" ]]; then
     MD_TIME=$(zstat +mtime "$REFERENCE_FILE")
-    MAX_DIFF=1800 # 30 minute window
+    MAX_DIFF=7200 # 2 Stunden Zeitfenster (7200 Sekunden)
+
+    debug_log "Markdown Time: $MD_TIME | Max Diff Allowed: $MAX_DIFF seconds"
 
     find_closest_media() {
         local ext="$1"
         local best_file=""
         local min_diff=$MAX_DIFF
-        setopt localoptions nullglob
+        setopt localoptions nullglob nocaseglob
         
-        for f in "$SOURCE_MEDIA_DIR"/*.$ext; do
+        local files=("$SOURCE_MEDIA_DIR"/*.$ext)
+        debug_log "find_closest_media: Found ${#files[@]} files for extension .$ext"
+
+        for f in "${files[@]}"; do
             local f_time=$(zstat +mtime "$f")
             local diff=$(( f_time - MD_TIME ))
             (( diff < 0 )) && diff=$(( -diff ))
@@ -122,17 +148,33 @@ if [[ -f "$REFERENCE_FILE" ]]; then
         echo "$best_file"
     }
 
+    # Ausführlicher Ordner-Check nur im Debug-Modus
+    if [[ "$DEBUG" == true ]]; then
+        echo -e "\n${YELLOW}[DEBUG] --- Checking Directory Access & Content ---${NC}"
+        echo -e "${YELLOW}[DEBUG] Listing up to 5 newest files in $SOURCE_MEDIA_DIR:${NC}"
+        ls -lht "$SOURCE_MEDIA_DIR" | head -n 6 | sed 's/^/  [DEBUG] /'
+        echo -e "${YELLOW}[DEBUG] -------------------------------------------${NC}"
+    fi
+
     echo -e "\n${CYAN}--- Processing Media Files ---${NC}"
 
     for ext in "${SOURCE_EXTS[@]}"; do
         best_file=""
+        debug_log "Scanning for type: ${(U)ext}"
         
-        # Logic: If ID is provided, look for <ID>.<ext> first
-        if [[ "$ID_PROVIDED" == true && -f "$SOURCE_MEDIA_DIR/${ID}.${ext}" ]]; then
-            best_file="$SOURCE_MEDIA_DIR/${ID}.${ext}"
+        setopt localoptions nocaseglob nullglob
+        local exact_matches=( "$SOURCE_MEDIA_DIR/${ID}.${ext}"(N) )
+
+        if [[ "$ID_PROVIDED" == true && ${#exact_matches[@]} -gt 0 ]]; then
+            best_file="${exact_matches[1]}"
+            debug_log "Exact match found: $(basename "$best_file")"
         else
-            # Otherwise (or if not found), look for the closest timestamp
             best_file=$(find_closest_media "$ext")
+            if [[ -n "$best_file" ]]; then
+                debug_log "Closest timestamp match found: $(basename "$best_file")"
+            else
+                debug_log "No suitable file found for $ext within the time window."
+            fi
         fi
         
         if [[ -n "$best_file" ]]; then
@@ -141,26 +183,21 @@ if [[ -f "$REFERENCE_FILE" ]]; then
             [[ "$ans" == [nN]* ]] && continue
 
             # --- CASE 1: IMAGES (Source: PNG) ---
-            if [[ "$ext" == "png" ]]; then
-                # Convert to Web-JPG (in Temp folder)
+            if [[ "${ext:l}" == "png" ]]; then
+                debug_log "Converting PNG to JPG..."
                 sips --resampleWidth 640 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
-                # Convert to High-Res Org-JPG (in Temp folder)
                 sips -s format jpeg -s formatOptions high "$best_file" --out "$TMP_DIR/${ID}_org.jpg" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "/images/org/${ID}.jpg"
 
-                # Note: The original PNG remains untouched in the Downloads folder.
-
             # --- CASE 2: AUDIO (MP3) ---
-            elif [[ "$ext" == "mp3" ]]; then
-                # Direct upload from Downloads folder, original stays untouched
+            elif [[ "${ext:l}" == "mp3" ]]; then
                 confirm_s3_upload "$best_file" "/audio/${ID}.mp3"
 
             # --- CASE 3: VIDEO (MP4, MOV) ---
-            elif [[ "$ext" == "mp4" || "$ext" == "mov" ]]; then
-                # Direct upload from Downloads folder, original stays untouched
-                confirm_s3_upload "$best_file" "/video/${ID}.${ext}"
+            elif [[ "${ext:l}" == "mp4" || "${ext:l}" == "mov" ]]; then
+                confirm_s3_upload "$best_file" "/video/${ID}.${ext:l}"
             fi
         fi
     done
