@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Standard-Gateway
 GATEWAY="10.0.0.1"
 LOGFILE="/var/log/route-fix.log"
