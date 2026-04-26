@@ -9,7 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
-use App\Helper\GuruWisdomService;
+use App\Service\GuruWisdomService;
 
 /**
  * Handles the web requests for the "Words of Wisdom" detail page.
@@ -28,7 +28,7 @@ final class Action implements RequestHandlerInterface
      *
      * @param WebViewRenderer $viewRenderer Component for rendering the HTML output.
      * @param CurrentRoute    $currentRoute Represents the currently matched route and its parameters.
-     * @param BaseGuruWisdom  $guruWisdom   Helper class for accessing the parsed wisdom data.
+     * @param GuruWisdomService  $guruWisdom   Helper class for accessing the parsed wisdom data.
      */
     public function __construct(
         WebViewRenderer $viewRenderer, 

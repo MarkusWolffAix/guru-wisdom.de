@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Helper;
+namespace App\Service;
 
 use Yiisoft\Aliases\Aliases;
 use cebe\markdown\GithubMarkdown;
