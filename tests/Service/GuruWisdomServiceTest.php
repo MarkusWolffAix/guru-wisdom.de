@@ -7,7 +7,6 @@ namespace App\Tests\Unit\Service;
 use PHPUnit\Framework\TestCase;
 use App\Service\GuruWisdomService;
 use Yiisoft\Aliases\Aliases;
-use PHPUnit\Framework\MockObject\MockObject;
 
 /**
  * Unit tests for the GuruWisdomService class.
@@ -15,8 +14,9 @@ use PHPUnit\Framework\MockObject\MockObject;
 final class GuruWisdomServiceTest extends TestCase
 {
     private GuruWisdomService $guruWisdom;
-    /** @var Aliases&MockObject */
-    private Aliases $aliasesMock;
+    
+    // 1. We now use the real Aliases class, no longer a mock
+    private Aliases $aliases; 
     private string $tempDir;
 
     /**
@@ -36,22 +36,16 @@ final class GuruWisdomServiceTest extends TestCase
         file_put_contents($this->tempDir . '/first-wisdom.md', $file1Content);
         file_put_contents($this->tempDir . '/second-wisdom.md', $file2Content);
 
-        // 3. Mock the Aliases service from Yii3
-        $this->aliasesMock = $this->createMock(Aliases::class);
-        $this->aliasesMock->method('get')->willReturnCallback(function (string $alias) {
-            // If the class asks for the path, we return our temporary directory
-            if ($alias === '@public/wisdoms/') {
-                return $this->tempDir . '/';
-            }
-            if (str_starts_with($alias, '@public/wisdoms/')) {
-                return str_replace('@public/wisdoms/', $this->tempDir . '/', $alias);
-            }
-            return $alias;
-        });
+        // 3. Feed the REAL Aliases instance with our test directory
+        $this->aliases = new Aliases([
+            '@public/wisdoms' => $this->tempDir
+        ]);
 
-        // 4. Instantiate the class with the mocked Aliases service
-        $this->guruWisdom = new GuruWisdomService($this->aliasesMock);
+        // 4. Instantiate the class with the real Aliases service
+        $this->guruWisdom = new GuruWisdomService($this->aliases);
     }
+
+    // ... The rest (tearDown and the test... methods) remains exactly the same!
 
     /**
      * Executed after EACH test.
