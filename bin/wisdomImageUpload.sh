@@ -8,10 +8,14 @@ TMP_DIR=$(mktemp -d)
 # Trap: Automatically deletes the temporary directory when the script exits or is aborted
 trap 'rm -rf "$TMP_DIR"' EXIT
 
-sips --resampleWidth 1280 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
-sips -s format jpeg -s formatOptions high "$best_file" --out "$TMP_DIR/${ID}_org.jpg" >/dev/null 2>&1
+cwebp -q 80 -resize 1280 0 "$best_file" -o "$TMP_DIR/${ID}.webp" >/dev/null 2>&1
+cwebp -q 80 -resize 640  0 "$best_file" -o "$TMP_DIR/${ID}_thumb.webp" >/dev/null 2>&1
+sips -Z 640 -s format jpeg -s formatOptions 80 "$best_file --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
 
 aws s3 cp "$TMP_DIR/${ID}.jpg" s3://guru-wisdom-first/images/${ID}.jpg  --profile nuernberg --endpoint-url https://nbg1.your-objectstorage.com
-aws s3 cp "$TMP_DIR/${ID}_org.jpg" s3://guru-wisdom-first/images/org/${ID}.jpg  --profile nuernberg --endpoint-url https://nbg1.your-objectstorage.com
+aws s3 cp "$TMP_DIR/${ID}.webp" s3://guru-wisdom-first/images/${ID}.webp  --profile nuernberg --endpoint-url https://nbg1.your-objectstorage.com
+aws s3 cp "$TMP_DIR/${ID}_thumb.webp" s3://guru-wisdom-first/images/thumb/${ID}.webp  --profile nuernberg --endpoint-url https://nbg1.your-objectstorage.com
+
 aws s3 cp "$TMP_DIR/${ID}.jpg" s3://guru-wisdom-secound/images/${ID}.jpg  --profile helsinki --endpoint-url https://hel1.your-objectstorage.com
-aws s3 cp "$TMP_DIR/${ID}_org.jpg" s3://guru-wisdom-secound/images/org/${ID}.jpg  --profile helsinki --endpoint-url https://hel1.your-objectstorage.com
+aws s3 cp "$TMP_DIR/${ID}.webp" s3://guru-wisdom-secound/images/${ID}.webp  --profile helsinki --endpoint-url https://hel1.your-objectstorage.com
+aws s3 cp "$TMP_DIR/${ID}_thumb.webp" s3://guru-wisdom-secound/images/thumb/${ID}.webp  --profile helsinki --endpoint-url https://hel1.your-objectstorage.com

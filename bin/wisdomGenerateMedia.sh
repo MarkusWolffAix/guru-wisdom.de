@@ -112,6 +112,7 @@ confirm_s3_upload() {
 
         local folder_name=$(echo "$path_suffix" | cut -d'/' -f2)
         mkdir -p "$ONEDRIVE_DIR/$folder_name"
+        echo -e "      Copy to onedrive Backup..."
         cp "$local_file" "$ONEDRIVE_DIR/$folder_name/$(basename "$local_file")"
         echo -e "      ${GREEN}✔ Local Backup: Done.${NC}"
     else
@@ -184,12 +185,17 @@ if [[ -f "$REFERENCE_FILE" ]]; then
 
             # --- CASE 1: IMAGES (Source: PNG) ---
             if [[ "${ext:l}" == "png" ]]; then
-                debug_log "Converting PNG to JPG..."
-                sips --resampleWidth 640 -s format jpeg "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
+                debug_log "Converting PNG to web images webp and jpg as fallbback..."
+    		
+		cwebp -q 80 -resize 1280 0 "$best_file" -o "$TMP_DIR/${ID}.webp" >/dev/null 2>&1 
+                confirm_s3_upload "$TMP_DIR/${ID}.webp" "/images/${ID}.webp"
+			
+		cwebp -q 80 -resize 640  0 "$best_file" -o "$TMP_DIR/${ID}_thumb.webp" >/dev/null 2>&1
+                confirm_s3_upload "$TMP_DIR/${ID}_thumb.webp" "/images/thumb/${ID}.jpg"
+    		
+		sips -Z 640 -s format jpeg -s formatOptions 80 "$best_file --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
-                sips -s format jpeg -s formatOptions high "$best_file" --out "$TMP_DIR/${ID}_org.jpg" >/dev/null 2>&1
-                confirm_s3_upload "$TMP_DIR/${ID}_org.jpg" "/images/org/${ID}.jpg"
 
             # --- CASE 2: AUDIO (MP3) ---
             elif [[ "${ext:l}" == "mp3" ]]; then
