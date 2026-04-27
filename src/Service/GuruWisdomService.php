@@ -145,8 +145,7 @@ public function processPlaceholders(string $text): string
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Mehr Informationen</a>, siehe auch
                 <a href="./datenschutz#externe-medien"> Datenschutz. </a>
                 </p>
-                </p>
-                <button class="btn btn-primary load-media-btn">Video laden</button>
+                <button class="btn btn-primary mt-1 load-media-btn">Video laden</button>
             </div>
         </div>';
     }, $text);
@@ -168,9 +167,7 @@ public function processPlaceholders(string $text): string
                 <p class="mb-3"><strong>Externer Spotify-Player</strong></p>  
                 <p class="mb-3 small">Mit dem Klick auf "Inhalt laden" stimmst du zu, dass deine IP-Adresse an Server von Spotify übermittelt wird
                 siehe <a href="./datenschutz#externe-medien"> Datenschutz </a>.</p>
-                </p>
-  
-                <button class="btn btn-success load-media-btn">Inhalt laden</button>
+                <button class="btn btn-success mt-1 load-media-btn">Inhalt laden</button>
             </div>
         </div>';
     }, $text);
@@ -248,11 +245,12 @@ public function processPlaceholders(string $text): string
         //     $this->updateFile($filePath, $data);
         // }
 
-        // Step 4: Process placeholders and convert raw markdown to final HTML
-        $contentForParsing = $this->processPlaceholders($data['raw_markdown']);
+        // Step 4: Convert raw markdown to HTML, THEN process placeholders
         $parser = new GithubMarkdown(); 
+        $parsedHtml = $parser->parse($data['raw_markdown']);
         
-        $data['htmloutput'] = $parser->parse($contentForParsing);
+        // Replace placeholders in the parsed HTML
+        $data['htmloutput'] = $this->processPlaceholders($parsedHtml);
 
         // Remove the raw markdown from the output array as the view only needs HTML
         unset($data['raw_markdown']);

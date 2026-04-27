@@ -6,10 +6,30 @@ on:
     branches: [ main ]
 
 jobs:
+  # --- STAGE 0: RUN TESTS (SICHERHEITSNETZ) ---
+  run-tests:
+    name: Run PHPUnit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3' # Passe dies an deine tatsächliche PHP-Version an
+          tools: composer:v2
+
+      - name: Install Dependencies
+        run: composer install --prefer-dist --no-progress --no-interaction
+
+      - name: Run PHPUnit
+        run: vendor/bin/phpunit tests/
+
   # --- STAGE 1: DEPLOY TO TEST SERVER ---
-  # Automatic deployment to your test server via Jump Server
   deploy-test:
     name: Deploy to Staging (Test Server)
+    needs: [run-tests] # WICHTIG: Wartet auf erfolgreiche Tests!
     runs-on: ubuntu-latest
     steps:
       - name: Remote SSH Deployment (Staging) via Jump Server
@@ -29,11 +49,10 @@ jobs:
             
             echo "APP_ENV=test" > .env
             chmod 600 .env
-            docker compose  up -d --build app
+            docker compose up -d --build app
             docker image prune -f
 
   # --- STAGE 2: DEPLOY TO PRODUCTION ---
-  # Waits for staging and manual approval
   deploy-prod:
     name: Deploy to Production
     needs: [deploy-test]
@@ -62,11 +81,10 @@ jobs:
             
             echo "APP_ENV=prod" > .env
             chmod 600 .env
-            docker compose  up -d --build app
+            docker compose up -d --build app
             docker image prune -f
 
   # --- STAGE 3: DEPLOY TO REPLICATION SERVER ---
-  # Runs parallel to Production after the same manual approval
   deploy-replica:
     name: Deploy to Replication
     needs: [deploy-test]
@@ -80,7 +98,7 @@ jobs:
       - name: Remote SSH Deployment (Replication)
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.REPLICA_SERVER_IP }} # Make sure to add this secret!
+          host: ${{ secrets.REPLICA_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
@@ -92,10 +110,8 @@ jobs:
             
             git pull origin main
             
-            echo "APP_ENV=prod" > .env # Adjust this if replica needs a different env variable
+            echo "APP_ENV=prod" > .env
             chmod 600 .env
             
-            # Make sure you have a docker-compose.replica.yml if it differs from prod
-            docker compose  up -d --build app
+            docker compose up -d --build app
             docker image prune -f
-    

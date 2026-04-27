@@ -108,8 +108,10 @@ final class GuruWisdomServiceTest extends TestCase
         $rawText = "Check this out: [youtube:dQw4w9WgXcQ]";
         $html = $this->guruWisdom->processPlaceholders($rawText);
         
-        $this->assertStringContainsString('<iframe', $html);
-        $this->assertStringContainsString('https://www.youtube.com/embed/dQw4w9WgXcQ', $html);
+        // Korrektur: Wir suchen in $html, nicht in $result!
+        $this->assertStringContainsString('class="two-click-container', $html);
+        $this->assertStringContainsString('data-type="youtube"', $html);
+        $this->assertStringContainsString('data-src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"', $html);
     }
 
     public function testProcessPlaceholdersConvertsSpotifyTags(): void
@@ -117,26 +119,26 @@ final class GuruWisdomServiceTest extends TestCase
         $rawText = "Listen to this: [spotify:track:4uLU6hMCjM]";
         $html = $this->guruWisdom->processPlaceholders($rawText);
         
-        $this->assertStringContainsString('<iframe', $html);
-        $this->assertStringContainsString('spotify.com', $html); 
+        // Suchen nach dem Zwei-Klick-Container statt nach iframe
+        $this->assertStringContainsString('class="two-click-container', $html);
+        $this->assertStringContainsString('data-type="spotify"', $html);
+        $this->assertStringContainsString('data-src="https://open.spotify.com/embed/track/4uLU6hMCjM?utm_source=generator"', $html); 
     }
 
     public function testParseFileExtractsFrontMatterAndParsesMarkdown(): void
     {
         $data = $this->guruWisdom->parseFile('first-wisdom');
 
-        // Check if front matter was read correctly
         $this->assertArrayHasKey('title', $data);
         $this->assertEquals('First Wisdom', $data['title']);
-
-        // Check if markdown was rendered to HTML (H1 tag)
         $this->assertArrayHasKey('htmloutput', $data);
         $this->assertStringContainsString('<h1>The first H1</h1>', $data['htmloutput']);
 
-        // Check if placeholders were replaced during parsing
-        $this->assertStringContainsString('<iframe', $data['htmloutput']);
+        // Suchen nach dem Zwei-Klick-Container statt nach iframe
+        $this->assertStringContainsString('class="two-click-container', $data['htmloutput']);
+        $this->assertStringContainsString('data-type="youtube"', $data['htmloutput']);
+        $this->assertStringContainsString('data-src="https://www.youtube-nocookie.com/embed/12345"', $data['htmloutput']);
 
-        // Check if 'raw_markdown' was cleanly removed at the end
         $this->assertArrayNotHasKey('raw_markdown', $data);
     }
 }
