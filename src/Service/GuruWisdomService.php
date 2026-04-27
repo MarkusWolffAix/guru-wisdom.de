@@ -61,17 +61,22 @@ class GuruWisdomService
      */
     public function getImageHtml($id): string
     {
-       $url = "https://media.guru-wisdom.de/images/" . $id . ".jpg";
+       $url = "https://media.guru-wisdom.de/images/";
 
-       $headers = @get_headers($url);
-       $htmlcode = "";
+      // $headers = @get_headers($url);
+      /* $htmlcode = "";
        
        if (!$headers || strpos($headers[0], '200') === false) {
             return ""; 
-       }
+       }*/
     
-       $htmlcode .= '<picture><img src="' . $url . '" alt="" class="img-fluid"></picture>';
-        
+       $htmlcode = '
+       <picture>
+           <source srcset="'.$url.$id.'.webp" alt="Image of Wisdom ' . $id . '" type="image/webp">
+           <img src="'.$url.$id.'.jpg" alt="Image of Wisdom ' . $id . '" class="img-fluid">
+      </picture>
+      '; 
+            
        return $htmlcode;
     }
 
@@ -170,17 +175,38 @@ public function processPlaceholders(string $text): string
         </div>';
     }, $text);
 
-    // 3. Image Placeholders (Bleibt unverändert, da eigene Domain)
+    // 3. Image Placeholders (Erweitert für <picture> mit WebP und Fallback)
     // Matches [image:URL] or [image:URL|ALT_TEXT]
     $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function(array $matches) {
-        $imageUrl = "https://media.guru-wisdom.de/images/" . trim($matches[1] . ".jpg"); 
+        
+        // 1. Dateinamen bereinigen und absichern
+        $rawName = trim($matches[1]);
+        $filename = basename($rawName); // Verhindert Path Traversal (z.B. ../../)
+
+        // 2. Dateiendung entfernen, um den reinen Namen zu erhalten
+        // Aus "BigBang" oder "BigBang.jpg" wird immer "BigBang"
+        $baseName = pathinfo($filename, PATHINFO_FILENAME);
+
+        // 3. URLs für WebP und das Fallback (JPG) generieren
+        $baseUrl = "https://media.guru-wisdom.de/images/";
+        
+        $webpUrl = $baseUrl . $baseName . ".webp";
+        // Hinweis: Falls "_fallback" nur ein Beispiel war, kannst du es hier einfach entfernen und nur ".jpg" nutzen.
+        $fallbackUrl = $baseUrl . $baseName . ".jpg"; 
         
         $altText = isset($matches[2]) ? trim($matches[2]) : '';
         
-        $safeUrl = htmlspecialchars($imageUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        // 4. Escaping (Sicherheit gegen XSS)
+        $safeWebpUrl = htmlspecialchars($webpUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $safeFallbackUrl = htmlspecialchars($fallbackUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
         $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
-        return '<img src="' . $safeUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">';
+        // 5. HTML <picture> Output
+        return '<picture>
+        <source srcset="' . $safeWebpUrl . '" type="image/webp">
+        <img src="' . $safeFallbackUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">
+    </picture>';
+
     }, $text);
     
     return $text;

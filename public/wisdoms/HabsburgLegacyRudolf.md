@@ -18,7 +18,8 @@ Rudolf I. von Habsburg (1218–1291) war der erste römisch-deutsche König aus 
 
 Sein politischer Aufstieg gipfelte in seiner überraschenden Wahl zum König am 1. Oktober 1273. Die Kurfürsten suchten nach dem Chaos des Interregnums einen "minderbequemlichen" Kandidaten, den sie kontrollieren konnten. Eine treibende Kraft hinter dieser Wahl war **Engelbert II. von Falkenburg**, der Erzbischof von Köln. Engelbert suchte einen starken Verbündeten für seine eigenen Konflikte – er war ein streitbarer Herr, der zeitweise von den Kölner Bürgern sogar in einem Käfig gefangen gehalten worden war.
 
-![Rudolfs Einfluss](../images/HabsburgLegacyRudolf2.jpg "Rudolfs Einfluss")
+[image:HabsburgLegacyRudolf2|Rudolfs Einfluss]
+
 
 ### 2. Herrschaft und Wendepunkte
 Die wichtigste Phase von Rudolfs Herrschaft war geprägt vom Konflikt mit Ottokar II. von Böhmen. In der Schlacht auf dem Marchfeld (1278) besiegte Rudolf seinen mächtigen Rivalen. Dieser Sieg sicherte den Habsburgern die Kontrolle über wesentliche Ländereien, darunter Österreich und die **Steiermark** – ein Meilenstein für die spätere habsburgische Weltmachtstellung. 

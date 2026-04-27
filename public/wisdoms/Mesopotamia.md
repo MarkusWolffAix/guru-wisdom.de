@@ -29,7 +29,8 @@ Während Eridu den Geist schuf, entwickelte Uruk den Körper der Zivilisation. A
 * **Massenproduktion:** Uruk führte die Standardisierung von Gütern ein (z. B. Glockentöpfe für Getreiderationen), ein früher Vorläufer industrieller Prozesse.
 
 
-![Divine Tide](../images/Mesopotamia2.jpg "Divine Tide")
+[image:Mesopotamia2|Divine Tide]
+
 
 ### 4. Ur: Wohlstand im Rhythmus des Wassers
 Ur musste das Rad nicht neu erfinden; es baute auf der religiösen Architektur von Eridu und der Verwaltungstechnik von Uruk auf.
