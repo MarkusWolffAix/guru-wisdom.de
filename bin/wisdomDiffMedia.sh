@@ -1,16 +1,17 @@
 #!/bin/zsh 
 
 # S3 Konfiguration
-S3_ENDPOINT="https://fsn1.your-objectstorage.com"
-S3_BUCKET="s3://guru-wisdom"
+S3_ENDPOINT="https://ngb1.your-objectstorage.com"
+S3_BUCKET="s3://guru-wisdom-first"
+S3_PROFIL="nuernberg"
 
-BASE_DIR="/Users/markuswolff/Documents/Arbeit/GuruWisdom/guru-wisdom.de/web"
-DIR_MD="$BASE_DIR/wisdoms"
+BASE_DIR="/Users/markuswolff/Documents/Arbeit/GuruWisdom/guru-wisdom.de/"
+DIR_MD="$BASE_DIR/public/wisdoms"
 
 # Hilfsfunktion zum Abrufen von S3-Dateilisten
 fetch_s3_files() {
     local folder=$1
-    aws s3 ls "$S3_BUCKET/$folder/" --endpoint-url "$S3_ENDPOINT" | grep -v " PRE " | awk '{print $4}'
+    aws s3 ls "$S3_BUCKET/$folder/" --profile $S3_PROFIL | grep -v " PRE " | awk '{print $4}'
 }
 
 echo "📡 Rufe Dateilisten von S3 ab..."

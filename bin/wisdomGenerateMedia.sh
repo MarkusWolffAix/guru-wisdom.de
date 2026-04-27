@@ -113,7 +113,7 @@ confirm_s3_upload() {
         local folder_name=$(echo "$path_suffix" | cut -d'/' -f2)
         mkdir -p "$ONEDRIVE_DIR/$folder_name"
         echo -e "      Copy to onedrive Backup..."
-        cp "$local_file" "$ONEDRIVE_DIR/$folder_name/$(basename "$local_file")"
+        cp "$local_file" "$ONEDRIVE_DIR/${path_suffix}"
         echo -e "      ${GREEN}✔ Local Backup: Done.${NC}"
     else
         echo -e "      ${YELLOW}⚠ S3 upload skipped.${NC}"
@@ -192,8 +192,8 @@ if [[ -f "$REFERENCE_FILE" ]]; then
 			
 		cwebp -q 80 -resize 640  0 "$best_file" -o "$TMP_DIR/${ID}_thumb.webp" >/dev/null 2>&1
                 confirm_s3_upload "$TMP_DIR/${ID}_thumb.webp" "/images/thumb/${ID}.jpg"
-    		
-		sips -Z 640 -s format jpeg -s formatOptions 80 "$best_file --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1
+    	
+		sips -Z 640 -s format jpeg -s formatOptions 80 "$best_file" --out "$TMP_DIR/${ID}.jpg" >/dev/null 2>&1	
                 confirm_s3_upload "$TMP_DIR/${ID}.jpg" "/images/${ID}.jpg"
 
 
