@@ -15,12 +15,13 @@ WISDOM_FILE="$BASE/public/wisdoms/${ID}.md"
 
 DOMAIN="https://guru-wisdom.de"
 
-DATE=$(date -r $WISDOM_FILE  "+%Y-%M-%dT%H:%M:%SZ")
+DATE=$(date -r $WISDOM_FILE  "+%Y-%m-%dT%H:%M:%SZ")
 echo $DATE
 # DATE=$(echo $(cat $WISDOM_FILE|grep "date:"|cut -f2 -d' ')T00:00:00Z)
 # echo $DATE
 # DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") # Erzeugt das von Google geforderte ISO 8601 Format
 # echo $DATE
+
 
 # 2. Prüfen, ob die Sitemap-Datei existiert
 if [ ! -f "$SITEMAP_FILE" ]; then
@@ -44,5 +45,6 @@ cat <<EOF >> "$SITEMAP_FILE"
   </url>
 </urlset>
 EOF
+
 
 echo "Erfolg: Die ID '${ID}' wurde erfolgreich zur $SITEMAP_FILE hinzugefügt."

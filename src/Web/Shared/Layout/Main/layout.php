@@ -52,7 +52,7 @@ $this->beginPage();
     
     <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
         
-        <img src="/images/logo/GuruWisdom.png" alt="Logo Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;">
+        <img src="/images/logo/GuruWisdom.png" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;">
         
     </a>
 </nav>
