@@ -12,6 +12,18 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+        <url>
+        <loc>https://guru-wisdom.de/impressum</loc>
+        <lastmod>2024-06-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+        <url>
+        <loc>https://guru-wisdom.de/datenschutz</loc>
+        <lastmod>2024-06-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 
   <url>
     <loc>https://guru-wisdom.de/AachenCrown</loc>

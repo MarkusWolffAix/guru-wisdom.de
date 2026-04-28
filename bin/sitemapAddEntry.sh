@@ -35,7 +35,17 @@ fi
 # sed -i '\|</urlset>|d' "$SITEMAP_FILE"
 
 # 3. Die Zeile direkt "in-place" aus der Originaldatei löschen
-sed -i '/<\/urlset>/d' "$SITEMAP_FILE"
+# Betriebssystem erkennen
+OS=$(uname -s)
+
+# Die richtige sed-Version je nach Betriebssystem ausführen
+if [ "$OS" = "Darwin" ]; then
+  # Mac (BSD sed)
+  sed -i '' '/<\/urlset>/d' "$SITEMAP_FILE"
+else
+  # Linux (GNU sed)
+  sed -i '/<\/urlset>/d' "$SITEMAP_FILE"
+fi
 
 # 4. Anhängen
 cat <<EOF >> "$SITEMAP_FILE"
