@@ -36,7 +36,7 @@
         "test:unit": "phpunit tests/Unit"
     },
     "require": {
-	"php": "^8.5",
+  	"php": ">=8.5.0", 	
         "ext-filter": "*",
         "httpsoft/http-message": "^1.1.6",
         "psr/container": "^2.0.2",
@@ -64,8 +64,8 @@
         "yiisoft/router": "^4.0.2",
         "yiisoft/router-fastroute": "^4.0.3",
         "yiisoft/session": "^3.0.1",
-        "yiisoft/translator": "^3.2",
-        "yiisoft/translator-message-php": "^1.1",
+        "yiisoft/translator": "^3.2.1",
+        "yiisoft/translator-message-php": "^1.1.2",
         "yiisoft/view": "^12.2.4",
         "yiisoft/yii-console": "^2.4.2",
         "yiisoft/yii-http": "^1.1.1",
@@ -79,10 +79,10 @@
         "codeception/module-asserts": "^3.3.0",
         "codeception/module-cli": "^2.0.1",
         "codeception/module-phpbrowser": "^3.0.2",
-        "friendsofphp/php-cs-fixer": "^3.94.2",
-        "phpdocumentor/shim": "^3.9",
+        "friendsofphp/php-cs-fixer": "^3.95.1",
+        "phpdocumentor/shim": "^3.9.1",
         "phpunit/phpunit": "^11.5.55",
-        "rector/rector": "^2.4.0",
+        "rector/rector": "^2.4.2",
         "shipmonk/composer-dependency-analyser": "^1.8.4",
         "vimeo/psalm": "^6.16.1"
     },
