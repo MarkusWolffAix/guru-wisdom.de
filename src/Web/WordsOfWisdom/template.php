@@ -22,6 +22,12 @@ use Yiisoft\View\WebView;
  */
 
 $this->setTitle($title);
+if (!empty($description)) {
+    $this->setParameter('meta_description', $description);
+}
+if (!empty($keywords)) {
+    $this->setParameter('meta_keywords', $keywords);
+}
 ?>
 
 <div class="d-flex justify-content-center w-100">

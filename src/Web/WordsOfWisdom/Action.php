@@ -63,6 +63,25 @@ final class Action implements RequestHandlerInterface
         $prevId = $navids['prev'] ?? null;
         $nextId = $navids['next'] ?? null;
 
+   
+        $tags = $wisdomData['tags'] ?? [];
+        $categories = $wisdomData['categories'] ?? [];
+        
+        $tags = $wisdomData['tags'] ?? [];
+        $categories = $wisdomData['categories'] ?? [];
+        
+        $cleanTags = array_map(function ($tag) {
+            return trim(str_replace(['"', "'", '&quot;'], '', $tag));
+        }, (array)$tags);
+
+        $cleanCategories = array_map(function ($cat) {
+            $cleanCat = trim(str_replace(['"', "'", '&quot;'], '', $cat));
+            return 'Category ' . $cleanCat; 
+        }, (array)$categories);
+        
+        $keywordsArray = array_unique(array_merge($cleanTags, $cleanCategories));
+        $keywords = implode(', ', $keywordsArray);
+
         return $this->viewRenderer
             ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
             ->render('template', [
@@ -71,6 +90,7 @@ final class Action implements RequestHandlerInterface
                 'title'       => $wisdomData['title'] ?? 'No Title',
                 'subtitle'    => $wisdomData['subtitle'] ?? '',
                 'description' => $wisdomData['description'] ?? '',
+                'keywords' => $keywords,
                 'image'       => $image, 
                 'audio'       => $audio,
                 'prevId'      => $prevId,
