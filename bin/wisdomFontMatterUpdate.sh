@@ -22,7 +22,7 @@
 #    - Traditions: Hinduism, Christianity, Buddhism, Antiquity, Sufism
 #    - Places: Aachen, Mesopotamia, Jerusalem, India
 #    - Practices: Meditation, Mantra, Yoga, Mindfulness
-#    - Concepts: Love, Zero, Infinity, Elements, Creation, Fire, Sound
+#    - Concepts: Love, OM, AUM, Zero, Infinity, Elements, Creation, Fire, Sound
 #    - Scientific: Biology, Mathematics, Quantum Physics, Psychology
 #    - Figures: Abraham, Mary, Vishnu, Ganesha, Gaia
 # ==============================================================================
