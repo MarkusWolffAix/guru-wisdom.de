@@ -1,44 +1,36 @@
 #!/bin/bash
 
-# 1. Prüfen, ob ein Parameter (die ID) übergeben wurde
-if [ -z "$1" ]; then
-  echo "Fehler: Du hast keine ID angegeben."
-  echo "Verwendung: ./update_sitemap.sh <deine_id>"
-  exit 1
-fi
-
-# Variablen definieren
 ID="$1"
 BASE="/Users/markuswolff/guru-wisdom.de"
 SITEMAP_FILE="$BASE/public/sitemap.xml"
 WISDOM_FILE="$BASE/public/wisdoms/${ID}.md"
-
 DOMAIN="https://guru-wisdom.de"
 
-DATE=$(date -r $WISDOM_FILE  "+%Y-%m-%dT%H:%M:%SZ")
-echo $DATE
-# DATE=$(echo $(cat $WISDOM_FILE|grep "date:"|cut -f2 -d' ')T00:00:00Z)
-# echo $DATE
-# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") # Erzeugt das von Google geforderte ISO 8601 Format
-# echo $DATE
 
-
-# 2. Prüfen, ob die Sitemap-Datei existiert
-if [ ! -f "$SITEMAP_FILE" ]; then
-  echo "Fehler: Die Datei $SITEMAP_FILE wurde nicht gefunden."
+if [ -z "$ID" ]; then
+  echo "Error: No ID provided."
+  echo "Usage: ./update_sitemap.sh <your_id>"
   exit 1
 fi
 
-# 3. Das abschließende </urlset> Tag aus der Datei entfernen
-# Dies löscht alle Zeilen, die exakt </urlset> enthalten
-# sed -i '/<\/urlset>/d' "$SITEMAP_FILE"
-# sed -i '\|</urlset>|d' "$SITEMAP_FILE"
+if [ ! -f "$WISDOM_FILE" ]; then
+  echo "Error: The file $WISDOM_FILE was not found."
+  exit 1
+fi
 
-# 3. Die Zeile direkt "in-place" aus der Originaldatei löschen
-# Betriebssystem erkennen
+if [ ! -f "$SITEMAP_FILE" ]; then
+  echo "Error: The file $SITEMAP_FILE was not found."
+  exit 1
+fi
+
+grep "<loc>${DOMAIN}/${ID}</loc>" "$SITEMAP_FILE" > /dev/null 
+if [ $? -eq 0 ]; then
+  echo "Info: The ID '${ID}' is already present in the sitemap."
+  exit 1
+fi
+
 OS=$(uname -s)
 
-# Die richtige sed-Version je nach Betriebssystem ausführen
 if [ "$OS" = "Darwin" ]; then
   # Mac (BSD sed)
   sed -i '' '/<\/urlset>/d' "$SITEMAP_FILE"
@@ -47,7 +39,10 @@ else
   sed -i '/<\/urlset>/d' "$SITEMAP_FILE"
 fi
 
-# 4. Anhängen
+# DATE=$(echo $(cat $WISDOM_FILE|grep "date:"|cut -f2 -d' ')T00:00:00Z)
+# DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") # Format Google ISO 8601 UTC 
+DATE=$(date -r $WISDOM_FILE  "+%Y-%m-%dT%H:%M:%SZ")
+
 cat <<EOF >> "$SITEMAP_FILE"
   <url>
     <loc>${DOMAIN}/${ID}</loc>
@@ -56,5 +51,4 @@ cat <<EOF >> "$SITEMAP_FILE"
 </urlset>
 EOF
 
-
-echo "Erfolg: Die ID '${ID}' wurde erfolgreich zur $SITEMAP_FILE hinzugefügt."
+echo "Info: The ID '${ID}' has been added to the sitemap $SITEMAP_FILE  with lastmod date ${DATE}."

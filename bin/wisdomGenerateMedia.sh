@@ -4,8 +4,8 @@
 zmodload zsh/stat
 
 # --- Configuration ---
-base="/Users/markuswolff/Documents/Arbeit/Development/guru-wisdom.de/public/"
-MD_DIR="$base/wisdoms"
+base="/Users/markuswolff/Documents/Arbeit/Development/guru-wisdom.de/"
+MD_DIR="$base/public/wisdoms"
 SOURCE_MEDIA_DIR="/Users/markuswolff/Downloads"
 ONEDRIVE_DIR="$HOME/Library/CloudStorage/OneDrive-Persönlich/Backup/S3Storage"
 
@@ -212,3 +212,6 @@ fi
 echo -e "\n${CYAN}========================================${NC}"
 echo -e "${GREEN}✔ Done! Files processed for ID: $ID${NC}"
 echo -e "${CYAN}========================================${NC}\n"
+
+echo -e "${CYAN}Executing sitemapAddEntry.sh {ID}  $ID${NC}"
+$base/bin/sitemapAddEntry.sh "$ID"
