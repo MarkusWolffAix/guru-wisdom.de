@@ -5,8 +5,8 @@ subtitle: "Eine unendliche Reise durch Mathematik, Kunst und Spiritualität"
 description: "Eine Reise in die Mandelbrot-Menge und was sie uns über das Potenzial des Geistes lehrt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mandelbrot", "Mathematik", "Unendlichkeit", "Fraktale"]
-categories: ["Wissenschaft", "Philosophie"]
+tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Mandelbrot-Menge", "Julia-Menge", "Apfelmännchen"]
+categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # Das Apfelmännchen
 ## Eine unendliche Reise durch Mathematik, Kunst und Spiritualität

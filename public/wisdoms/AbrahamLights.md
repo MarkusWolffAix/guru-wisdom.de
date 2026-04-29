@@ -5,8 +5,8 @@ subtitle: "Erleuchtung auf dem spirituellen Pfad"
 description: "Ein tiefer Einblick in die mystischen Aspekte und die innere Erleuchtung in der Tradition von Abraham."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Abraham", "Licht", "Mystik", "Erleuchtung"]
-categories: ["Spiritualität", "Philosophie"]
+tags: ["Abraham", "Licht", "Schöpfung", "Mystik", "Erleuchtung", "Offenbarung"]
+categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Das Licht in der Geschichte Abrahams (Ibrahim)
 ## Erleuchtung auf dem spirituellen Pfad

@@ -5,8 +5,8 @@ subtitle: "Vom harten Stein zum fließenden Leben"
 description: "Eine Reflexion über die verborgenen Quellbereiche unseres Lebens und die Verwandlung harter Widerstände in fließende Lebenskraft."
 date: 2026-04-19
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Spiritualität", "Naturmetaphern", "Innere Heilung", "Lebensweg"]
-categories: ["Lebensweisheit", "Reflexion"]
+tags: ["Psychologie", "Heilung", "Karstquelle", "Resilienz", "Naturmetapher"]
+categories: ["Heilung & Achtsamkeit", "Geschichte & Mythen"]
 ---
 
 # Die innere Karstquelle

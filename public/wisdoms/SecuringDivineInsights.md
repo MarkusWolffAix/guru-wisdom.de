@@ -5,8 +5,8 @@ subtitle: "Die Bewahrung der Erkenntnis für künftige Schöpfungen"
 description: "Eine Reflexion über den heiligen Kreislauf der Schöpfung und die Methoden, wie gewonnene Weisheit als Lichtfunken für kommende Zyklen gesichert werden kann."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Schöpfung", "Weisheit", "Ewigkeit", "Liebe"]
-categories: ["Metaphysik", "Spirituelle Archivierung"]
+tags: ["Achtsamkeit", "Philosophie", "Weisheit", "Ewigkeit", "Spirituelle Archivierung"]
+categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 
 # Erbe der Liebe

@@ -5,8 +5,8 @@ subtitle: "Die Blaupause der Transformation"
 description: "Eine tiefgründige Analyse der historischen Zyklen von Zerstörung und Wiederaufbau als universelles Muster für gesellschaftliche und persönliche Krisen."
 date: 2026-04-19
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Transformation", "Resilienz", "Geschichte", "Mustererkennung", "Krise", "Jerusalem", "Babylon", "Persien"]
-categories: ["Philosophie", "Historie", "Psychologie"]
+tags: ["Jerusalem", "Antike", "Psychologie", "Transformation", "Krise", "Babylon", "Persien"]
+categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
 ---
 
 # Jerusalem

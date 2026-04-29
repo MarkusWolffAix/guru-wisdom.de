@@ -5,8 +5,8 @@ subtitle: "Geschichte, Ursprung und Symbole"
 description: "Eine umfassende Zusammenfassung der biblischen Ostergeschichte, der Herkunft des Wortes Ostern sowie der Bedeutung von Grabstein, Osterei und Osterhase."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Ostern", "Geschichte", "Traditionen", "Bedeutung", "Symbole", "Liedtext"]
-categories: ["Religion", "Kultur", "Geschichte"]
+tags: ["Christentum", "Symbole", "Ostern", "Grabstein", "Osterei", "Osterhase"]
+categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 
 # Ostern

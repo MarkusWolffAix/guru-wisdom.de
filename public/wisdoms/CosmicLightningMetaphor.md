@@ -5,8 +5,8 @@ subtitle: "Natur, Geist und Liebe im kosmischen Spiegel"
 description: "Eine tiefgründige Betrachtung, die die Physik des Blitzes mit menschlicher Psychologie, dem göttlichen Funken und der antiken Elementenlehre zu einer universellen Metapher verbindet."
 date: 2026-03-30
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Metapher", "Psychologie", "Philosophie", "Physik", "Elementenlehre", "Gewitter", "Bewusstsein", "Äther", "Beziehung", "Lyrics"]
-categories: ["Philosophie", "Psychologie"]
+tags: ["Elemente", "Feuer", "Kosmos", "Gewitter", "Äther", "Spannungsabbau"]
+categories: ["Symbole & Muster", "Liebe & Verbundenheit"]
 ---
 
 # Die Anatomie des Gewitters

@@ -5,8 +5,8 @@ subtitle: "Die Vereinigung von Genuss und Befreiung"
 description: "Eine tiefgründige Reflexion über die tantrische Philosophie, die weibliche Urkraft, Kundalini und die Harmonie von Weltlichkeit und Spiritualität."
 date: 2026-04-24
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Tantra", "Lakshmi", "Kundalini", "Shiva", "Spiritualität", "Ananda", "Philosophie"]
-categories: ["Philosophie", "Spiritualität", "Erkenntnissammlung"]
+tags: ["Hinduismus", "Gottheiten", "Liebe", "Tantra", "Lakshmi", "Kundalini", "Ananda"]
+categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 
 # Das Lakshmi Tantra

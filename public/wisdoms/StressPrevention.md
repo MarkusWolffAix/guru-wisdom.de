@@ -5,8 +5,8 @@ subtitle: "Alte Weisheiten für die moderne Welt"
 description: "Ganzheitliche Techniken aus Yoga und Ayurveda, um Stress an der Wurzel zu packen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Stress", "Prävention", "Ruhe", "Ayurveda"]
-categories: ["Gesundheit", "Achtsamkeit"]
+tags: ["Psychologie", "Achtsamkeit", "Heilung", "Stressprävention", "Ruhe", "Resilienz"]
+categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # Stressprävention
 ## Alte Weisheiten für die moderne Welt

@@ -5,8 +5,8 @@ subtitle: "Atman, Ego und die Alchemie der Liebe"
 description: "Eine essayistische Betrachtung über das Atman als reines Bewusstsein, das Ego als dessen Abstraktion und die Liebe als universelle Quelle allen Seins."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Atman", "Ego", "Bewusstsein", "Empathie", "Spiritualität", "Philosophie"]
-categories: ["Erkenntnissammlung", "Spirituelle Philosophie"]
+tags: ["Liebe", "Psychologie", "Achtsamkeit", "Atman", "Ego", "Empathie", "Verschmelzung"]
+categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 
 # Die Architektur des Bewusstseins

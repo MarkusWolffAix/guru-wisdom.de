@@ -5,8 +5,8 @@ subtitle: "Wie wir Verstand und Gefühl in Einklang bringen"
 description: "Praktische Wege, um die Lücke zwischen rationalem Denken und tiefer Herzensweisheit zu schließen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Herz", "Verstand", "Emotionen", "Heilung"]
-categories: ["Achtsamkeit", "Lebensführung"]
+tags: ["Liebe", "Psychologie", "Herz-Verstand-Kohärenz", "Emotionen"]
+categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # Die Brücke zum Herzen
 ## Wie wir Verstand und Gefühl in Einklang bringen

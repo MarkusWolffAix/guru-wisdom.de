@@ -5,8 +5,8 @@ subtitle: "Der Weg von der Illusion zur Wahrheit"
 description: "Parallelen zwischen dem modernen Matrix-Konzept und dem alten vedischen Mantra Asato Ma."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Matrix", "Mantra", "Illusion", "Wahrheit"]
-categories: ["Philosophie", "Spiritualität"]
+tags: ["Mantra", "Hinduismus", "Psychologie", "Asato Ma", "Illusion", "Wahrheit"]
+categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 # Die Matrix und Asato Ma
 ## Der Weg von der Illusion zur Wahrheit

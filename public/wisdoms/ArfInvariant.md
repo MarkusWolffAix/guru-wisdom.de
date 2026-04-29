@@ -5,8 +5,8 @@ subtitle: "Mathematik als Spiegel der kosmischen Ordnung"
 description: "Wie komplexe mathematische Topologie uns hilft, die tieferen Strukturen des Universums zu verstehen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mathematik", "Topologie", "Wissenschaft", "Ordnung"]
-categories: ["Wissenschaft", "Philosophie"]
+tags: ["Mathematik", "Topologie", "Invariante", "Ordnung"]
+categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # Die Arf-Invariante
 ## Mathematik als Spiegel der kosmischen Ordnung

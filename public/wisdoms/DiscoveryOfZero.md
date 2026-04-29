@@ -5,8 +5,8 @@ subtitle: "Der Ursprung des Nichts"
 description: "Erforsche die faszinierende Geschichte der Null und wie sie Mathematik und Philosophie revolutionierte."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Null", "Mathematik", "Geschichte", "Philosophie"]
-categories: ["Wissenschaft", "Geschichte"]
+tags: ["Mathematik", "Null", "Indien", "Shunyata", "Leere", "Zahlensystem"]
+categories: ["Symbole & Muster", "Geschichte & Mythen"]
 ---
 # Die Entdeckung der Null
 ## Der Ursprung des Nichts

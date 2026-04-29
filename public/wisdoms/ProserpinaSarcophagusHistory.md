@@ -5,8 +5,8 @@ subtitle: "Mythos, christliche Umdeutung und Karl der Große"
 description: "Eine ausführliche Betrachtung des antiken Proserpina-Mythos, seiner biblischen Analogien und der historischen Wiederverwendung des römischen Sarkophags im Aachener Dom."
 date: 2026-04-09
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Proserpina", "Sarkophag", "Karl der Große", "Aachen", "Mythologie", "Spolien"]
-categories: ["Geschichte", "Kunstgeschichte", "Mythologie"]
+tags: ["Aachen", "Antike", "Historie", "Proserpina", "Sarkophag", "Spolien"]
+categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 
 # Proserpina-Sarkophag

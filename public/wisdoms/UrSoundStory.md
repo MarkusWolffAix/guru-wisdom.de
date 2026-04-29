@@ -5,8 +5,8 @@ subtitle: "Wie das Universum das Singen lernte"
 description: "Ein poetischer Blick auf den ersten Klang des Universums und seine Reise zu unseren Herzen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Urklang", "Kosmos", "Poesie", "Schöpfungsgeschichte"]
-categories: ["Weisheit", "Philosophie"]
+tags: ["Klang", "Schöpfung", "Mythen", "Urklang", "Poesie"]
+categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Die Geschichte des Urklangs
 ## Wie das Universum das Singen lernte

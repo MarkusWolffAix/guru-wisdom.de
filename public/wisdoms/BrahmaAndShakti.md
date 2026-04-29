@@ -5,8 +5,8 @@ subtitle: "Das Zusammenspiel von Brahma und Shakti"
 description: "Eine tiefe philosophische Betrachtung über das universelle Gesetz von Bewusstsein und Energie, Struktur und Fluss, personifiziert durch Brahma und Shakti."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Philosophie", "Vedanta", "Tantra", "Bewusstsein", "Energie"]
-categories: ["Erkenntnissammlung", "Vedische Weisheit"]
+tags: ["Hinduismus", "Schöpfung", "Gottheiten", "Vedanta", "Tantra", "Bewusstsein", "Energie"]
+categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 
 # Die Kosmische Ordnung

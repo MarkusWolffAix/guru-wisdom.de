@@ -5,8 +5,8 @@ subtitle: "Mut zur Verletzlichkeit in der Liebe"
 description: "Eine Reflexion über das Wagnis der Liebe, das Aufgeben von Kontrolle und den Mut, sich fallen zu lassen."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Liebe", "Mut", "Verletzlichkeit", "Vertrauen", "Metapher"]
-categories: ["Reflexionen", "Lebensweisheiten"]
+tags: ["Liebe", "Psychologie", "Mut", "Verletzlichkeit", "Komfortzone"]
+categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 
 # Der Sprung ins Ungewisse

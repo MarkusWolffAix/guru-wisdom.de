@@ -5,8 +5,8 @@ subtitle: "Eine Reise durch den Tag und unsere Energiezentren"
 description: "Eine essayistische Betrachtung über die physikalische Rayleigh-Streuung bei Sonnenauf- und -untergang und deren harmonische Parallelen zum System der Chakren."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Rayleigh-Streuung", "Chakren", "Tagesrhythmus", "Lichtspektrum", "Achtsamkeit"]
-categories: ["Naturphilosophie", "Spiritualität", "Wissenschaft"]
+tags: ["Licht", "Physik", "Spiritualität", "Rayleigh-Streuung", "Tagesrhythmus", "Farbspektrum"]
+categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 
 # Der Rhythmus des Lichts

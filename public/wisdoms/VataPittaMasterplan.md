@@ -5,8 +5,8 @@ subtitle: "Doshas im Gleichgewicht halten"
 description: "Ein vollumfängliches, ungekürztes Ayurveda-Dossier zur Harmonisierung der Doshas Vata und Pitta durch verifizierte Ernährung, tägliche Routinen und energetische Werkzeuge."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Ayurveda", "Vata", "Pitta", "Balance"]
-categories: ["Ayurveda", "Gesundheit"]
+tags: ["Ayurveda", "Biologie", "Heilung", "Vata", "Pitta", "Doshas"]
+categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # Der Vata-Pitta Masterplan
 ## Doshas im Gleichgewicht halten

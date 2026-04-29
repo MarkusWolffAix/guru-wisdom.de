@@ -5,8 +5,8 @@ subtitle: "Der Überwinder aller Hindernisse"
 description: "Die tiefe spirituelle Bedeutung von Ganesha und wie seine Weisheit uns durch Herausforderungen führt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Ganesha", "Hinduismus", "Mythologie", "Neuanfang"]
-categories: ["Mythologie", "Spiritualität"]
+tags: ["Ganesha", "Hinduismus", "Hindernisse", "Elefantenkopf", "Modak"]
+categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Ganesha
 ## Der Überwinder aller Hindernisse

@@ -5,8 +5,8 @@ subtitle: "Leere als Quelle aller Schöpfung"
 description: "Warum das Nichts nicht leer ist, sondern das Potenzial für alle Möglichkeiten in sich trägt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Null", "Leere", "Schöpfung", "Philosophie"]
-categories: ["Weisheit", "Wissenschaft"]
+tags: ["Mathematik", "Null", "Indien", "Leere", "Schöpfung", "Shunyata"]
+categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # Die Natur der Null
 ## Leere als Quelle aller Schöpfung

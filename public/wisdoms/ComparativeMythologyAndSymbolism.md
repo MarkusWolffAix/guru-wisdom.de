@@ -5,8 +5,8 @@ subtitle: "Von Schöpfungsmythen bis zur Schlangensymbolik"
 description: "Eine ungekürzte und umfassende Zusammenfassung des interkulturellen Vergleichs weltweiter Mythologien, der abrahamitischen Religionen, der tiefenpsychologischen Deutung von Kundalini, Schlangensymbolik und dem Ouroboros – inklusive der musikalischen Interpretation 'Teeth and Bone'."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mythologie", "Symbolik", "Religion", "Kundalini", "Spiritualität", "Ouroboros", "Archetypen", "Musik"]
-categories: ["Spiritualität", "Philosophie", "Kulturgeschichte"]
+tags: ["Antike", "Psychologie", "Religionen", "Ouroboros", "Kundalini", "Archetypen"]
+categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 
 # Weltmythologien im Vergleich

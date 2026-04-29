@@ -5,8 +5,8 @@ subtitle: "Warum der Verstand nicht sich selbst gehören darf"
 description: "Eine essayistische Reflexion darüber, dass der menschliche Verstand und all seine Abstraktionen nur dann einen wahren Wert besitzen, wenn sie der Liebe und dem Herzen dienen."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Philosophie", "Verstand", "Herz", "Abstraktion", "Menschlichkeit"]
-categories: ["Erkenntnis", "Systemkritik"]
+tags: ["Psychologie", "Liebe", "Philosophie", "Verstand", "Abstraktion", "Systemkritik"]
+categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
 ---
 
 # Der Diener des Herzens

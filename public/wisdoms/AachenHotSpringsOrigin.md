@@ -5,8 +5,8 @@ subtitle: "Das heiße Erbe der Erdgeschichte"
 description: "Eine umfassende Zusammenfassung über die geologischen Ursprünge, die historische Bedeutung und die physikalischen Wunder der Aachener Thermalquellen."
 date: 2026-04-08
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Aachen", "Geologie", "Thermalwasser", "Geschichte", "Physik", "Heilkraft"]
-categories: ["Wissenschaft", "Heimatkunde", "Naturphilosophie"]
+tags: ["Aachen", "Elemente", "Erde", "Thermalwasser", "Geologie", "Heilkraft"]
+categories: ["Heimat & Herkunft", "Wissenschaft & Natur"]
 ---
 
 # Aachener Thermalquellen

@@ -5,8 +5,8 @@ subtitle: "Vom glühenden Hitzkopf zum runden Weltentdecker"
 description: "Eine metaphorische Reise in das Bewusstsein eines Steins und Lektionen in Geduld."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Natur", "Geduld", "Metapher", "Weisheit"]
-categories: ["Philosophie", "Natur"]
+tags: ["Erde", "Zeit", "Philosophie", "Geduld", "Metapher", "Verwitterung"]
+categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # Die Geschichte des Steins Kalle Kiesel
 ## Vom glühenden Hitzkopf zum runden Weltentdecker

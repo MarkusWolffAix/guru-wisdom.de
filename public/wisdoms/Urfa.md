@@ -5,8 +5,8 @@ subtitle: "Der erste Tempel der Menschheit"
 description: "Eine Reise zum ältesten Tempel der Welt in Urfa und zu unseren uralten spirituellen Wurzeln."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Urfa", "Geschichte", "Archäologie", "Spiritualität"]
-categories: ["Geschichte", "Wissenschaft"]
+tags: ["Orte", "Religionen", "Historie", "Urfa", "Archäologie"]
+categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Ist Urfa das biblische Ur?
 ## Der erste Tempel der Menschheit

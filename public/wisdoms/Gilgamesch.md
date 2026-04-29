@@ -5,8 +5,8 @@ subtitle: "Die ewige Suche nach Unsterblichkeit"
 description: "Zeitlose Lektionen über Freundschaft, Verlust und den Sinn des Lebens aus der ältesten Geschichte."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Gilgamesch", "Mythologie", "Geschichte", "Sinnsuche"]
-categories: ["Geschichte", "Philosophie"]
+tags: ["Mesopotamien", "Antike", "Uruk", "Unsterblichkeit", "Sintflut"]
+categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # Das Gilgamesch-Epos
 ## Die ewige Suche nach Unsterblichkeit

@@ -5,8 +5,8 @@ subtitle: "Die Anatomie der Seele und der göttliche Gesang"
 description: "Eine philosophische Zusammenfassung über die Kernbotschaften der Bhagavad Gita, Ganeshas Opfer, die spirituelle Anatomie von Knochen und Gelenken sowie das Geheimnis wahrer Stabilität."
 date: 2026-03-30
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Bhagavad Gita", "Yoga", "Ganesha", "Anatomie", "Spiritualität", "OmSound", "Meditation", "Philosophie"]
-categories: ["Spiritualität", "Kunst"]
+tags: ["Klang", "Mantra", "Hinduismus", "Bhagavad Gita", "Anatomie", "Knochen", "Gelenke"]
+categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # Die Liebe zum Klang
 ## Die Anatomie der Seele und der göttliche Gesang

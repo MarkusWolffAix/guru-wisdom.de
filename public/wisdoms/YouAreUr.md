@@ -5,8 +5,8 @@ subtitle: "Die Brücke zwischen Stille und Klang"
 description: "Betrachtung der Chat-Abkürzung UR als Symbol für moderne Einfachheit und spirituelle Präsenz."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Achtsamkeit", "Linguistik", "Sprachwandel"]
-categories: ["Modern Wisdom", "Lifestyle"]
+tags: ["Sprache", "Philosophie", "Achtsamkeit", "Sprachwandel", "Identität"]
+categories: ["Symbole & Muster", "Geschichte & Mythen"]
 ---
 
 # UR

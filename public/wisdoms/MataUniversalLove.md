@@ -5,8 +5,8 @@ subtitle: "Wie die unscheinbare Sanskrit-Silbe „Ma“ den Weg zur universellen
 description: "Eine tiefgründige Betrachtung darüber, wie die Silbe 'Ma' uns vom Suchenden zur nährenden, universellen Schöpferkraft transformiert, ergänzt um die visuelle Symbolik der Lokamata."
 date: 2026-04-24
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Sanskrit", "Lokamata", "Spiritualität", "Schöpferkraft", "Liebe", "Symbolik"]
-categories: ["Philosophie", "Lebensweisheit"]
+tags: ["Liebe", "Hinduismus", "Schöpfung", "Lokamata", "Schöpferkraft", "Symbolik"]
+categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 
 # Ich bin eine Mutter für diese Welt

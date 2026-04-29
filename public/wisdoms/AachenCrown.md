@@ -5,8 +5,8 @@ subtitle: "Erbe und Krönungstradition in Aachen"
 description: "Eine umfassende Zusammenfassung über Karl den Großen, die symbolträchtige Karlsbüste und die Geschichte der 31 Königskrönungen im Aachener Dom."
 date: 2026-04-10
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Karl der Große", "Aachen", "Geschichte", "Mittelalter", "Krönung"]
-categories: ["Historie", "Kultur"]
+tags: ["Aachen", "Antike", "Christentum", "Karl der Große", "Mittelalter", "Krönung"]
+categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 
 # Karl der Große

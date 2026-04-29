@@ -5,8 +5,8 @@ subtitle: "Eine Reise durch das Bewusstsein"
 description: "Entschlüsselung der Kurven und Punkte des heiligen Om-Symbols und seiner Turiya-Bedeutung."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Om", "Symbolik", "Yoga", "Heilig"]
-categories: ["Philosophie", "Art"]
+tags: ["Symbole", "Hinduismus", "Yoga", "Symbolik", "Heilige Geometrie"]
+categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # Das Om-Symbol
 ## Eine Reise durch das Bewusstsein

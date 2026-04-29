@@ -5,8 +5,8 @@ subtitle: "Ein Monument der radikalen Empathie"
 description: "Eine umfassende Erkenntnissammlung, die geologische Fakten mit der radikalen Empathie der Anangu-Kultur und der spirituellen Verbundenheit verknüpft."
 date: 2026-04-16
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Uluru", "Ayers Rock", "Empathie", "Tjukurpa", "Mala", "Geologie", "William Gosse", "Traumzeit", "Ritual"]
-categories: ["Erkenntnisse", "Weltgeschichte", "Philosophie"]
+tags: ["Erde", "Orte", "Mythen", "Uluru", "Tjukurpa", "Mala", "Traumzeit"]
+categories: ["Wissenschaft & Natur", "Geschichte & Mythen"]
 ---
 
 # Uluru Ayers Rock

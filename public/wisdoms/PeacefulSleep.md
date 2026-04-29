@@ -5,8 +5,8 @@ subtitle: "Für einen friedlichen Schlaf"
 description: "Elf kraftvolle Sätze, die helfen, den Tag bewusst abzuschließen, das Nervensystem zu beruhigen und den Geist auf Erholung auszurichten."
 date: 2026-04-19
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Affirmationen", "Schlaf", "Loslassen", "Entspannung", "Achtsamkeit"]
-categories: ["Mentale Gesundheit", "Abendrituale", "Spiritualität"]
+tags: ["Achtsamkeit", "Heilung", "Psychologie", "Abendrituale", "Schlaf", "Loslassen"]
+categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 
 # Abendliche Affirmationen

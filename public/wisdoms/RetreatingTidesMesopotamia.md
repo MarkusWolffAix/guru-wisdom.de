@@ -5,8 +5,8 @@ subtitle: "Mesopotamiens Weg vom Meer ins Binnenland"
 description: "Die historische, mythologische und geografische Entwicklung der mesopotamischen Metropolen von den Küstenstädten bis zur Binnenmetropole Babylon."
 date: 2026-04-07
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mesopotamien", "Geschichte", "Mythologie", "Geografie", "Verlandung"]
-categories: ["Antike", "Kulturgeschichte"]
+tags: ["Mesopotamien", "Erde", "Verlandung", "Geografie"]
+categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 
 # Rückzug der Gezeiten

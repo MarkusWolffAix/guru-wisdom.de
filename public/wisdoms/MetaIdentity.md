@@ -5,8 +5,8 @@ subtitle: "Vom Wesen der Komposition"
 description: "Eine philosophische Abhandlung über den Moment, in dem Einzelteile zu einem Ganzen verschmelzen und die Rolle von Ratio und Emotion in diesem Prozess."
 date: 2026-04-13
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Philosophie", "Kulinarik", "Identität", "Theseus"]
-categories: ["Weisheit", "Erkenntnisse"]
+tags: ["Psychologie", "Philosophie", "Identität", "Theseus", "Authentizität"]
+categories: ["Symbole & Muster", "Philosophie"]
 ---
 
 # Metamorphose und Identität

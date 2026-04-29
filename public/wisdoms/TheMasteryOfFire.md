@@ -5,8 +5,8 @@ subtitle: "Vom Hüter der Flamme bis zum Omega der Schöpfung"
 description: "Eine philosophische Reise über die Bändigung des Feuers, die Harmonie der Gegensätze am Horizont und die vollkommene Versöhnung im Omega."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Feuer", "Wasser", "Omega", "Harmonie", "Mäßigung", "Horizont"]
-categories: ["Philosophie", "Metaphysik", "Lebenskunst"]
+tags: ["Feuer", "Evolution", "Philosophie", "Mäßigung", "Harmonie", "Horizont"]
+categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 
 # Das gezähmte Licht

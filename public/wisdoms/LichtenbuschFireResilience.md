@@ -5,8 +5,8 @@ subtitle: "Die wundersame Geschichte der Banneux-Kapelle in Lichtenbusch"
 description: "Wie aus Flüchen ein Segen und aus zerstörerischem Feuer ein Ort des Friedens an der deutsch-belgischen Grenze erwuchs."
 date: 2026-04-21
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Banneux", "Lichtenbusch", "Transformation", "Resilienz", "Grenze"]
-categories: ["Heimatgeschichte", "Philosophie", "Spiritualität"]
+tags: ["Aachen", "Feuer", "Heilung", "Banneux", "Lichtenbusch", "Resilienz", "Grenze"]
+categories: ["Heimat & Herkunft", "Heilung & Achtsamkeit"]
 ---
 
 # Segen aus Flüchen

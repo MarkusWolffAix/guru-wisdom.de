@@ -5,8 +5,8 @@ subtitle: "Eine Reise des Glaubens und der Hingabe"
 description: "Erforsche die spirituelle Reise und die zeitlose Weisheit im Leben von Abraham, dem Vater des Glaubens."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Abraham", "Spiritualität", "Glaube", "Geschichte"]
-categories: ["Weisheit", "Geschichte"]
+tags: ["Abraham", "Christentum", "Religionen", "Stammvater", "Judentum", "Glaube"]
+categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Das Leben von Abraham
 ## Eine Reise des Glaubens und der Hingabe

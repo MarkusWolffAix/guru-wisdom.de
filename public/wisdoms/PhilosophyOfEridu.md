@@ -5,8 +5,8 @@ subtitle: "Von Trennung zur Einheit"
 description: "Eine Betrachtung über die mystische Verbindung von Sprache, Ursprung und der Überwindung des Egos hin zur göttlichen Einheit."
 date: 2026-04-06
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Philosophie", "Mystik", "Sprache", "Einheit", "Bewusstsein"]
-categories: ["Spiritualität", "Philosophie"]
+tags: ["Mesopotamien", "Antike", "Philosophie", "Eridu", "Mystik", "Einheit"]
+categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 
 # Die Philosophie von Er-i-du

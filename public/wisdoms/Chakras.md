@@ -5,8 +5,8 @@ subtitle: "Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind"
 description: "Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind. Eine tiefenpsychologische Betrachtung der Chakren-Lehre."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Chakren", "Inneres Kind", "Spiritualität", "Selbstentwicklung", "Tantra"]
-categories: ["Spiritualität", "Gesundheit"]
+tags: ["Yoga", "Energie", "Hinduismus", "Chakren", "Inneres Kind", "Tantra"]
+categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # Der Weg der Chakren
 ## Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind

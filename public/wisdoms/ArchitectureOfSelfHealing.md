@@ -5,8 +5,8 @@ subtitle: "Wie das Selbst durch Abstraktion wächst"
 description: "Eine philosophische und psychologische Betrachtung der universellen Prinzipien, wie das Selbst durch Abstraktion lernt und Probleme durch Empathie zurück in die Liebe integriert."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Selbstheilung", "Philosophie", "Abstraktion", "Empathie", "Liebe", "Fraktale", "Psychologie"]
-categories: ["Philosophie", "Spiritualität", "Persönlichkeitsentwicklung"]
+tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
+categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 
 # Die Architektur der Selbstheilung
@@ -70,8 +70,8 @@ subtitle: "Songtext und Übersetzung"
 description: "Die musikalische Übersetzung der Architektur der Selbstheilung – ein Lied über das fraktale Selbst, die Abstraktion durch das Prisma und die Rückkehr in die Liebe."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Musik", "Lyrics", "Selbstheilung", "Philosophie", "Liebe", "Fraktale"]
-categories: ["Kunst", "Spiritualität"]
+tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
+categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 
 # Architecture of Light

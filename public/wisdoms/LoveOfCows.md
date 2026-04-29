@@ -5,8 +5,8 @@ subtitle: "Eine Geschichte über Liebe und Erinnerung"
 description: "Zusammenfassung eines kreativen Projekts über das Verschenken von drei indischen Kühen, das die tiefe emotionale Bindung durch Bild, Musik und Text einfängt."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Erinnerung", "Liebe", "Indien", "Kunstprojekt"]
-categories: ["Kreativität", "Philosophie"]
+tags: ["Liebe", "Indien", "Erinnerung", "Loslassen", "Kunstprojekt"]
+categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 
 # Die Gabe der drei Kühe

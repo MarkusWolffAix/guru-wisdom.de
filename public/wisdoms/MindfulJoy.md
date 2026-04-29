@@ -5,8 +5,8 @@ subtitle: "Glück im Großen"
 description: "Eine philosophische Betrachtung über die Achtsamkeit in den kleinsten Momenten des Alltags."
 date: 2026-04-12
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Achtsamkeit", "Lebenskunst", "Philosophie", "Alltag", "Glück"]
-categories: ["Geschichte"]
+tags: ["Achtsamkeit", "Psychologie", "Lebenskunst", "Alltag", "Glück"]
+categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
 ---
 
 # Achtsamkeit im Kleinen

@@ -5,8 +5,8 @@ subtitle: "Geschichte und Legenden eines Urlaubsparadieses"
 description: "Eine Geschichte, der venezianischen und byzantinischen Legenden von Ayia Napa auf Zypern."
 date: 2026-04-11
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Zypern", "Ayia Napa", "Legenden", "Musik", "Geschichte"]
-categories: ["Reise", "Kultur", "Mythologie"]
+tags: ["Antike", "Orte", "Zypern", "Ayia Napa", "Meeresmythen"]
+categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 
 # Ayia Napa

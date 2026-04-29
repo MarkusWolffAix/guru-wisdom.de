@@ -5,8 +5,8 @@ subtitle: "Die heilige Geometrie der Balance"
 description: "Die verborgene Symbolik des Hexagramms als Vereinigung von männlichen und weiblichen Energien."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Hexagramm", "Geometrie", "Symbolik", "Balance"]
-categories: ["Spiritualität", "Wissenschaft"]
+tags: ["Symbole", "Religionen", "Hexagramm", "Geometrie", "Balance", "Davidstern"]
+categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # Das Hexagramm
 ## Die heilige Geometrie der Balance

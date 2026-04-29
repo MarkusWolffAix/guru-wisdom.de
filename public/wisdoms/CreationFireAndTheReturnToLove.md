@@ -5,8 +5,8 @@ subtitle: "Das Schöpfungsfeuer und die Abstraktion der Liebe"
 description: "Eine philosophische Reise über die Entstehung der Welt aus der absoluten Liebe und die notwendige Reibung des Schöpfungsfeuers."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Philosophie", "Spiritualität", "Schöpfung", "Liebe"]
-categories: ["Erkenntnisse", "Metaphysik"]
+tags: ["Feuer", "Schöpfung", "Liebe", "Metaphysik", "Schöpfungsfeuer"]
+categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 
 # Vom Ursprung der Trennung
