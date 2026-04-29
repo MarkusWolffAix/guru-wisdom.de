@@ -5,7 +5,7 @@ subtitle: "Von der Sprachwissenschaft zum Mantra OM und AUM"
 description: "Eine tiefgehende Analyse der Laute A, O, U und M und deren linguistische, biologische, psychologische und spirituelle Bedeutung im Kontext der Mantras AUM und OM sowie des inneren Kindes."
 date: 2026-04-01
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Klang", "Mantra", "Psychologie", "Linguistik", "Inneres Kind", "AUM"]
+tags: ["OM", "AUM", "Klang", "Mantra", "Psychologie", "Linguistik", "Inneres Kind", "AUM"]
 categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 

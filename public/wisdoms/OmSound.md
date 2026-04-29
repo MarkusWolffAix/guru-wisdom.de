@@ -5,7 +5,7 @@ subtitle: "Die Urfrequenz des Universums"
 description: "Erforsche die physische und spirituelle Bedeutung von Om und seine kosmische Verbindung."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mantra", "Klang", "Meditation", "Schwingung", "Fünf Elemente", "Weißes Licht"]
+tags: ["OM", "AUM", "Mantra", "Klang", "Meditation", "Schwingung", "Fünf Elemente", "Weißes Licht"]
 categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # Der Klang von Om

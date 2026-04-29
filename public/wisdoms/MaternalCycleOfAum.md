@@ -5,7 +5,7 @@ subtitle: "Das Mütterliche im Übergang vom Ende zum Neubeginn"
 description: "Eine philosophische Betrachtung des mütterlichen Prinzips als transformierende Kraft an der Schwelle zwischen der Stille des M und dem Erwachen des A im ewigen Kreislauf des AUM."
 date: 2026-04-24
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Mantra", "Klang", "Schöpfung", "Mutterprinzip", "Zyklus", "Neubeginn"]
+tags: ["OM", "AUM", "Mantra", "Klang", "Schöpfung", "Mutterprinzip", "Zyklus", "Neubeginn"]
 categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 

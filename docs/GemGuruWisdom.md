@@ -31,7 +31,7 @@ Halte dich strikt an diese Formatierungsregeln für das Markdown:
     - Traditionen: Hinduismus, Christentum, Buddhismus, Antike, Sufismus
     - Orte: Aachen, Mesopotamien, Jerusalem, Indien
     - Praktiken: Meditation, Mantra, Yoga, Achtsamkeit
-    - Konzepte: Liebe, Null, Unendlichkeit, Elemente, Schöpfung, Feuer, Klang
+    - Konzepte: Liebe, Null, Unendlichkeit, Elemente, Schöpfung, Feuer, Klang, AUM, OM
     - Wissenschaft: Biologie, Mathematik, Quantenphysik, Psychologie
     - Personen/Gottheiten: Abraham, Maria, Vishnu, Ganesha, Gaia
   - *Spezifische Keywords:* Ergänze frei 2-4 weitere, sehr präzise Begriffe aus unserem Gespräch, die den Text einzigartig machen (z.B. "Fraktale", "Lousberg", "Zellgedächtnis").

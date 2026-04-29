@@ -5,7 +5,7 @@ subtitle: "Der Mythos des goldenen Urknalls und des Äthers"
 description: "Eine umfassende Zusammenfassung der spirituellen Schöpfungsgeschichte rund um den goldenen Urknall, den Äther, die göttliche Familie und die Beseelung des Menschen."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Quantenphysik", "Schöpfung", "Urknall", "Prana", "Äther", "Kosmologie"]
+tags: ["OM", "Quantenphysik", "Schöpfung", "Urknall", "Prana", "Äther", "Kosmologie"]
 categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 

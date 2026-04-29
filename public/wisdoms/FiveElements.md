@@ -5,7 +5,7 @@ subtitle: "Vom Atemzug bis zum Universum"
 description: "Erde, Wasser, Feuer, Luft und Äther: Wie Elemente unsere Gesundheit und unser Bewusstsein formen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Elemente", "Natur", "Hinduismus", "Panchamahabhuta", "Tattvas", "Äther"]
+tags: ["OM", "Elemente", "Natur", "Hinduismus", "Panchamahabhuta", "Tattvas", "Äther"]
 categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 
