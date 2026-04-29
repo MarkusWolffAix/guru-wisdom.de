@@ -62,7 +62,10 @@ $this->setTitle('Impressum');
     <p>Diese Inhalte stellen <strong>keinen Ersatz für eine professionelle medizinische, psychologische, psychiatrische oder therapeutische Beratung, Diagnostik oder Behandlung</strong> dar. Bei gesundheitlichen, psychischen oder ernsthaften emotionalen Problemen oder Erkrankungen ist stets ein qualifizierter Arzt, Heilpraktiker oder Therapeut zu konsultieren.</p>
     <p>Wir geben keinerlei Heilversprechen ab. Die Nutzung und Umsetzung der auf dieser Website bereitgestellten Ratschläge, Übungen und Informationen erfolgt ausdrücklich auf eigene Verantwortung und auf eigenes Risiko. Wir übernehmen keine Haftung für Schäden jedweder Art, die direkt oder indirekt aus der Anwendung oder Verwendung der auf dieser Website bereitgestellten Informationen entstehen.</p>
 
-    <h3>5. Hinweis zu KI-generierten Bildinhalten</h3>
-    <p>Zur visuellen Untermalung unserer Erkenntnissammlung nutzen wir auf dieser Webseite teilweise Bilder, die durch eine Künstliche Intelligenz (Google Gemini) erzeugt wurden. Sie erkennen diese KI-generierten Illustrationen an dem spezifischen Wasserzeichen in der unteren rechten Bildecke. Es handelt sich bei diesen Werken um symbolische, algorithmisch erschaffene Visualisierungen und ausdrücklich nicht um authentische historische Fotografien oder Werke menschlicher Bildurheber.</p>
-
+    <h3>5. Hinweis zu KI-generierten Medien (Bilder und Musik)</h3>
+    <p>Zur visuellen und akustischen Untermalung unserer Erkenntnissammlung nutzen wir auf dieser Webseite teilweise Medien, die durch eine Künstliche Intelligenz erzeugt wurden.</p>
+    <ul>
+        <li><strong>Bildinhalte:</strong> Sie erkennen diese KI-generierten Illustrationen (erstellt mit Google Gemini) an dem spezifischen Wasserzeichen in der unteren rechten Bildecke. Es handelt sich bei diesen Werken um symbolische, algorithmisch erschaffene Visualisierungen und ausdrücklich nicht um authentische historische Fotografien oder Werke menschlicher Bildurheber.</li>
+        <li><strong>Musikinhalte:</strong> Auch die Musikstücke, die unter den Hauptbildern der jeweiligen „Wisdoms“ abspielbar sind, wurden vollständig von einer Künstlichen Intelligenz komponiert und generiert.</li>
+    </ul>
 </div>
