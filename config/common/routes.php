@@ -32,6 +32,11 @@ return [
     Route::get('/datenschutz') // German URL for privacy policy
         ->action([PrivacyPolicyAction::class, 'handle'])
         ->name('privacypolicy-de'),
+    
+    // 🚀 Deployment
+    Route::get('/deploy')
+        ->action([DeploymentAction::class, 'handle'])
+        ->name('deploy-de'),
 
     // 📜 Overview of all words of wisdom (Index)
     Route::get('/')
@@ -43,8 +48,5 @@ return [
         ->action([WordsOfWisdomAction::class, 'handle'])
         ->name('wordsofwisdom.view-de'), // Unique name for the detail view
 
-    // 🚀 Deployment
-    Route::get('/deploy')
-        ->action([DeploymentAction::class, 'handle'])
-        ->name('deploy'),
+
 ];

@@ -10,6 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 use App\Service\GuruWisdomService;
+use App\Service\WisdomCacheService;
 
 /**
  * Handles the web requests for the "Words of Wisdom" detail page.
@@ -29,11 +30,13 @@ final class Action implements RequestHandlerInterface
      * @param WebViewRenderer $viewRenderer Component for rendering the HTML output.
      * @param CurrentRoute    $currentRoute Represents the currently matched route and its parameters.
      * @param GuruWisdomService  $guruWisdom   Helper class for accessing the parsed wisdom data.
+     * @param WisdomCacheService $wisdomCache  Service für die performante Navigation.
      */
     public function __construct(
         WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
-        private GuruWisdomService $guruWisdom
+        private GuruWisdomService $guruWisdom,
+        private WisdomCacheService $wisdomCache // Hier injizieren wir das neue Gedächtnis
     ) {
         // Set the view path to the current directory of this class
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);
@@ -49,24 +52,54 @@ final class Action implements RequestHandlerInterface
      * @param ServerRequestInterface $request The incoming HTTP request.
      * @return ResponseInterface The rendered HTML response including the layout.
      */
+
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         /** @var string|null $id */
         $id = $this->currentRoute->getArgument('id');
-        $id = $this->guruWisdom->sanitizeId($id);
-        
+
+        // 1. ID bereinigen, falls sie übergeben wurde
+        if ($id !== null) {
+            $id = $this->guruWisdom->sanitizeId($id);
+        }
+
+        // 2. Validierung: Prüfen, ob die ID im Archiv überhaupt existiert
+        $isValid = false;
+        if ($id !== null) {
+            // Wir rufen alle bekannten Slugs blitzschnell aus dem Cache ab
+            $allWisdoms = $this->wisdomCache->getSortedWisdoms();
+            foreach ($allWisdoms as $wisdom) {
+                if ($wisdom['slug'] === $id) {
+                    $isValid = true;
+                    break;
+                }
+            }
+        }
+
+        // 3. Der Fallback: Wenn keine ID da ist (Startseite) ODER die ID ungültig ist
+        if ($id === null || !$isValid) {
+            $latestWisdom = $this->wisdomCache->getLatestWisdom();
+            // Ein kleiner Sicherheitsanker, falls das Archiv komplett leer sein sollte
+            if ($latestWisdom === null) {
+                throw new \RuntimeException("Das Archiv ist noch leer. Es gibt keine Weisheiten zum Anzeigen.");
+            }
+            
+            // Wir überschreiben die (fehlende/falsche) ID mit der neuesten ID
+            $id = $latestWisdom['slug'];
+        }
+
+        // 4. Ab hier ist absolut garantiert, dass $id ein gültiger String ist.
+        // Das Parsing wird also niemals mehr mit "null" aufgerufen und wirft keinen Fehler.
         $wisdomData = $this->guruWisdom->parseFile($id);
         $image      = $this->guruWisdom->getImageHtml($id);
         $audio      = $this->guruWisdom->getAudioHtml($id);
-        $navids     = $this->guruWisdom->getNavigationIds($id);
         
-        $prevId = $navids['prev'] ?? null;
-        $nextId = $navids['next'] ?? null;
+        // Navigation (Neuere / Ältere Weisheit)
+        $neighbors = $this->wisdomCache->getNeighbors($id);
+        $newerWisdom = $neighbors['newer'];
+        $olderWisdom = $neighbors['older'];
 
-   
-        $tags = $wisdomData['tags'] ?? [];
-        $categories = $wisdomData['categories'] ?? [];
-        
+        // Metadaten und Tags bereinigen
         $tags = $wisdomData['tags'] ?? [];
         $categories = $wisdomData['categories'] ?? [];
         
@@ -90,11 +123,13 @@ final class Action implements RequestHandlerInterface
                 'title'       => $wisdomData['title'] ?? 'No Title',
                 'subtitle'    => $wisdomData['subtitle'] ?? '',
                 'description' => $wisdomData['description'] ?? '',
-                'keywords' => $keywords,
+                'keywords'    => $keywords,
                 'image'       => $image, 
                 'audio'       => $audio,
-                'prevId'      => $prevId,
-                'nextId'      => $nextId
-            ]);
+                // Wir übergeben nun die kompletten Arrays (oder null), 
+                // damit das Template auch Titel/Datum für die Pfeile anzeigen kann
+                'prevId' => $newerWisdom['slug'] ?? null,
+                'nextId' => $olderWisdom['slug'] ?? null,
+            ]); 
     }
 }

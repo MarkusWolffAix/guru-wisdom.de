@@ -50,6 +50,7 @@ jobs:
             echo "APP_ENV=test" > .env
             chmod 600 .env
             docker compose up -d --build app
+            docker compose exec app rm -rf runtime/cache/*
             docker image prune -f
 
   # --- STAGE 2: DEPLOY TO PRODUCTION ---
@@ -82,6 +83,7 @@ jobs:
             echo "APP_ENV=prod" > .env
             chmod 600 .env
             docker compose up -d --build app
+            docker compose exec app rm -rf runtime/cache/*
             docker image prune -f
 
   # --- STAGE 3: DEPLOY TO REPLICATION SERVER ---
@@ -114,4 +116,5 @@ jobs:
             chmod 600 .env
             
             docker compose up -d --build app
+            docker compose exec app rm -rf runtime/cache/*
             docker image prune -f

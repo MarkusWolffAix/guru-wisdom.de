@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <!-- Die Form des offenen Auges -->
+    <clipPath id="eyeShape">
+      <path d="M 150 200 C 250 50, 500 50, 650 200 C 550 350, 300 350, 150 200 Z" />
+    </clipPath>
+
+    <!-- Sklera (Augapfel) -->
+    <radialGradient id="scleraGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#d0d5dc" />
+    </radialGradient>
+
+    <!-- Kosmische Iris: Von hellem Nebel über tiefes Ozeanblau zur Dunkelheit des Alls -->
+    <radialGradient id="irisGradCosmic" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />   <!-- Zentrum: Pures Licht/Quasar -->
+      <stop offset="15%" stop-color="#8ce6ff" />  <!-- Heller, blauer Nebel -->
+      <stop offset="45%" stop-color="#004a8f" />  <!-- Tiefere kosmische Wolken -->
+      <stop offset="85%" stop-color="#00122e" />  <!-- Rand des Nebels -->
+      <stop offset="100%" stop-color="#030b14" /> <!-- Dunkler Raum -->
+    </radialGradient>
+
+    <!-- Sanftes Leuchten für Reflexionen und Sterne -->
+    <filter id="wetGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Ein stärkeres Glühen für das Zentrum der Galaxie -->
+    <filter id="coreGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Ein einfaches Spiralelement (S-Kurve) für den kosmischen Wirbel -->
+    <path id="spiralArm" d="M 400 200 Q 430 160 450 200 Q 420 220 400 200 Z" fill="#8ce6ff" opacity="0.3" filter="url(#wetGlow)"/>
+  </defs>
+
+  <!-- Obere Lidfalte -->
+  <path d="M 170 140 C 300 10, 500 10, 630 140" fill="none" stroke="#222222" stroke-width="3" opacity="0.4" filter="url(#wetGlow)" />
+
+  <!-- Der Augapfel (Sklera) -->
+  <path d="M 150 200 C 250 50, 500 50, 650 200 C 550 350, 300 350, 150 200 Z" fill="url(#scleraGrad)" stroke="#1a1a1a" stroke-width="2" />
+
+  <!-- Innerer Bereich, beschnitten auf die offene Augenform -->
+  <g clip-path="url(#eyeShape)">
+    
+    <!-- Die kosmische Grundfarbe der Iris -->
+    <circle cx="400" cy="200" r="90" fill="url(#irisGradCosmic)" />
+    
+    <!-- Andeutung von Spiralarmen / Galaxienwirbeln -->
+    <!-- Wir setzen die Arme um das Zentrum und drehen sie leicht -->
+    <g transform="rotate(20 400 200)">
+        <use href="#spiralArm" />
+        <use href="#spiralArm" transform="rotate(120 400 200)" />
+        <use href="#spiralArm" transform="rotate(240 400 200)" />
+    </g>
+    <g transform="rotate(-40 400 200) scale(0.8) translate(100 50)">
+        <use href="#spiralArm" />
+        <use href="#spiralArm" transform="rotate(120 400 200)" />
+        <use href="#spiralArm" transform="rotate(240 400 200)" />
+    </g>
+
+    <!-- Sternenstaub (Kleine, leuchtende Punkte) -->
+    <circle cx="360" cy="170" r="1.5" fill="#ffffff" opacity="0.9" filter="url(#wetGlow)" />
+    <circle cx="440" cy="180" r="1" fill="#ffffff" opacity="0.7" />
+    <circle cx="380" cy="240" r="2" fill="#8ce6ff" opacity="0.8" filter="url(#wetGlow)" />
+    <circle cx="460" cy="220" r="1" fill="#ffffff" opacity="0.6" />
+    <circle cx="340" cy="210" r="1.5" fill="#8ce6ff" opacity="0.5" />
+    <circle cx="430" cy="150" r="2" fill="#ffffff" opacity="0.8" filter="url(#wetGlow)" />
+    <circle cx="470" cy="190" r="1" fill="#ffffff" opacity="0.5" />
+    
+    <!-- Iris-Struktur (Sehr feine Linien, die an kosmische Strahlung erinnern) -->
+    <circle cx="400" cy="200" r="75" fill="none" stroke="#8ce6ff" stroke-width="15" stroke-dasharray="1 8" opacity="0.15" />
+
+    <!-- Das Schwarze Loch / Die Pupille -->
+    <circle cx="400" cy="200" r="24" fill="#020508" />
+
+    <!-- Der leuchtende Kern (Event Horizon / Quasar-Leuchten um die Pupille) -->
+    <circle cx="400" cy="200" r="26" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.6" filter="url(#coreGlow)" />
+
+    <!-- Feuchte Lichtreflexionen auf der Hornhaut (Geben die Illusion eines physischen Auges zurück) -->
+    <path d="M 350 145 Q 380 135 410 145 Q 380 160 350 145 Z" fill="#ffffff" opacity="0.6" filter="url(#wetGlow)" />
+    <circle cx="430" cy="255" r="3" fill="#ffffff" opacity="0.4" filter="url(#wetGlow)" />
+  </g>
+
+  <!-- Wimpernkranz / Obere Lidkante -->
+  <path d="M 150 200 C 250 50, 500 50, 650 200" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round" />
+  
+  <!-- Untere Lidkante -->
+  <path d="M 150 200 C 300 350, 550 350, 650 200" fill="none" stroke="#2a2a2a" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Innerer Augenwinkel -->
+  <path d="M 150 200 Q 140 205 155 210 Z" fill="#e0a59b" opacity="0.5" />
+</svg>
