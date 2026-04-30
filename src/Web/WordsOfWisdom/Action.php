@@ -59,9 +59,9 @@ final class Action implements RequestHandlerInterface
         $id = $this->currentRoute->getArgument('id');
 
         // 1. ID bereinigen, falls sie übergeben wurde
-        if ($id !== null) {
-            $id = $this->guruWisdom->sanitizeId($id);
-        }
+        //  if ($id !== null) {
+        //    $id = $this->guruWisdom->sanitizeId($id);
+        //  }
 
         // 2. Validierung: Prüfen, ob die ID im Archiv überhaupt existiert
         $isValid = false;
