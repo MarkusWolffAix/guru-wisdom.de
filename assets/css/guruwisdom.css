@@ -91,13 +91,16 @@ audio::-webkit-media-controls-enclosure {
     margin-top: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 8px 16px rgba(0, 0, 0, 0.06), 0 16px 32px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
+    cursor: pointer;
 }
 
 .wisdom-card:hover {
-    transform: translateY(-4px); 
+    transform: translateY(-4px) translateX(5px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 16px 32px rgba(0, 0, 0, 0.08), 0 24px 48px rgba(0, 0, 0, 0.12); 
+    background-color: #f8f9fa !important; /* Ein sanftes Hellgrau/Weiß statt Schwarz! */
 }
+
 
 .image-container img {
     width: 100%;
@@ -144,7 +147,6 @@ audio::-webkit-media-controls-enclosure {
     width: 32px;
     height: auto;
 }
-
 
 .nav-btn:hover { background-color: #f0f2f5; }
 .nav-btn:active { transform: scale(0.9); }
@@ -209,7 +211,7 @@ audio::-webkit-media-controls-enclosure {
 
 .handwritten-text { font-size: 2.5em; margin-bottom: 20px; }
 
-/* Spezifische Titelgrößen (angepasst für gute Lesbarkeit auf Mobile & Desktop) */
+/* Spezifische Titelgrößen */
 .wisdom-card h1 { font-size: 2.8rem; margin-top: 0; }
 .wisdom-card h2 { font-size: 1.8rem; color: #6c757d; margin-bottom: 1.5rem; }
 .wisdom-card h3 { font-size: 1.5rem; color: #2c3e50; margin-top: 1.5rem; }
@@ -314,13 +316,15 @@ footer#footer a:hover { opacity: 0.7; }
         width: 32px !important;
         height: auto;
     }
+} /* <--- WICHTIG: HIER WIRD DIE MOBILE ANSICHT GESCHLOSSEN! */
+
 
 /* =========================================
    Zwei-Klick-Lösung (YouTube / Externe Medien)
    ========================================= */
 .two-click-container {
     position: relative;
-    background-color: rgba(255, 255, 240, 0.5); /* Passt zu deinem Blockquote-Hintergrund */
+    background-color: rgba(255, 255, 240, 0.5); 
     border: 1px solid #f0f0f0;
     border-radius: 8px;
     padding: 40px 20px;
@@ -328,7 +332,7 @@ footer#footer a:hover { opacity: 0.7; }
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 315px; /* Typische Video-Höhe */
+    min-height: 315px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -344,9 +348,9 @@ footer#footer a:hover { opacity: 0.7; }
 }
 
 .load-media-btn {
-    font-family: 'Caveat', cursive; /* Deine Handschrift-Schriftart für den Button */
+    font-family: 'Caveat', cursive; 
     font-size: 1.8rem;
-    background-color: #d63384;      /* Deine pinke Akzentfarbe */
+    background-color: #d63384;      
     color: #ffffff;
     border: none;
     padding: 6px 30px;
@@ -367,4 +371,177 @@ footer#footer a:hover { opacity: 0.7; }
     box-shadow: 0 2px 4px rgba(214, 51, 132, 0.2);
 }
 
+
+/* =========================================
+   STARTSEITE: DIE MAGISCHE SCHRIFTROLLE
+   ========================================= */
+
+/* Der Hintergrund der Schriftrolle */
+.mystic-scroll-bg {
+    background-color: #121212; 
+    border: 1px solid #333;    
+    border-radius: 15px;       
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.8); 
 }
+
+/* Verstecken für die Live-Suche */
+.wisdom-link-wrapper.hidden {
+    display: none !important;
+}
+
+/* Die Schriftrolle als zentrierender Flex-Container */
+
+
+
+
+/* Der liebevolle, breite Streifen als sanft abgerundetes Rechteck */
+.mystic-scroll-bar {
+    background: linear-gradient(180deg, rgba(30, 30, 46, 0.7), rgba(18, 18, 28, 0.8));
+    border: 1px solid #2a2a3c;
+    color: #666; 
+    border-radius: 15px; 
+    padding: 10px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.mystic-scroll-bar:hover {
+    background: linear-gradient(180deg, rgba(35, 35, 55, 0.9), rgba(22, 22, 35, 0.9));
+    border-color: #00e5ff;
+    color: #00e5ff; 
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2), inset 0 0 8px rgba(0, 229, 255, 0.1);
+}
+
+.mystic-scroll-bar:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+
+.wisdom-card .wisdom-thumb-container {
+    width: 110px !important;
+    height: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+    flex: 0 0 110px !important;
+    
+    border-radius: 12px;
+    border: 1px solid rgba(214, 51, 132, 0.2);
+    position: relative;
+    /* overflow: visible;  <-- WICHTIG: Erlaubt dem Bild, über den Rand zu wachsen */
+    overflow: visible; 
+    z-index: 1;
+}
+/* Das Bild im Inneren, das sich dem Kasten unterordnen muss */
+.wisdom-thumb-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; 
+    display: block; 
+}
+
+/* Die Hülle nimmt nun den vollen Platz ein, um den seitlichen Rand zu minimieren */
+.wisdom-link-wrapper {
+    max-width: 550px;
+    flex-shrink: 0; 
+    text-decoration: none; 
+    display: block;
+    width: 100%; /* Geändert von 95% auf 100% */
+    margin: 0 auto; 
+}
+
+/* Wir überschreiben die riesigen globalen Margins (2rem) für die Listen-Ansicht */
+.wisdom-scroll-area .wisdom-card {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Wir verringern die Höhe der gesamten Schriftrolle leicht, da die Karten nun enger liegen */
+.wisdom-scroll-area {
+    max-height: 400px; 
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Der unsichtbare, schwerelose Hintergrund der gesamten Schriftrolle */
+.mystic-scroll-bg {
+    background-color: transparent; /* Vollkommen durchsichtig */
+    border: none;                  /* Kein starrer Rahmen mehr */
+    box-shadow: none;              /* Keine Schatten, pure Leichtigkeit */
+    border-radius: 15px;       
+}
+
+/* Die transparenten Knöpfe */
+.mystic-scroll-bar {
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(214, 51, 132, 0.05) 50%, 
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    
+    border: 1px solid rgba(214, 51, 132, 0.15); /* Ein feiner, pink angehauchter Rand */
+    color: #6c757d;
+    border-radius: 15px; 
+    padding: 10px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: none; /* Kein Schatten im Ruhezustand */
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* Der Hover-Effekt: Ein Hauch von Magie beim Drüberfahren */
+.mystic-scroll-bar:hover {
+    background: linear-gradient(90deg, 
+        rgba(255, 255, 255, 0.2) 0%, 
+        rgba(115, 187, 28, 0.05) 50%, 
+        rgba(138, 35, 35, 0.2) 100%
+    );
+    
+    border: 1px solid rgba(214, 51, 132, 0.15); /* Ein feiner, pink angehauchter Rand */
+    color: #6c757d;                       /* Der Pfeil leuchtet pink */
+}
+
+
+/* Die Hülle der Karte darf nun die volle Breite nutzen */
+.wisdom-link-wrapper {
+    max-width: 100%; /* HIER WURDE DIE GRENZE GEBROCHEN (vorher 550px) */
+    flex-shrink: 0; 
+    text-decoration: none; 
+    display: block;
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+/* Wir sagen der Karte selbst, dass sie sich an die neue, volle Breite anpassen soll */
+.wisdom-link-wrapper .wisdom-card {
+    max-width: 100% !important; /* Überschreibt die globalen 700px */
+}
+
+
+/* 2. Das Bild: Vorbereitung für die Vergrößerung */
+.wisdom-card .wisdom-thumb-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 10px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    z-index: 2;
+    cursor: zoom-in;
+}
+
+

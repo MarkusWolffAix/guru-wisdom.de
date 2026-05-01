@@ -65,7 +65,7 @@ final class Action implements RequestHandlerInterface
 
         // 2. Validierung: Prüfen, ob die ID im Archiv überhaupt existiert
         $isValid = false;
-        if ($id !== null) {
+       // if ($id !== null) {
             // Wir rufen alle bekannten Slugs blitzschnell aus dem Cache ab
             $allWisdoms = $this->wisdomCache->getSortedWisdoms();
             foreach ($allWisdoms as $wisdom) {
@@ -74,7 +74,12 @@ final class Action implements RequestHandlerInterface
                     break;
                 }
             }
-        }
+                    return $this->viewRenderer
+            ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
+            ->render('overview', [
+                'wisdoms'       => $allWisdoms,
+            ]); 
+       // }
 
         // 3. Der Fallback: Wenn keine ID da ist (Startseite) ODER die ID ungültig ist
         if ($id === null || !$isValid) {

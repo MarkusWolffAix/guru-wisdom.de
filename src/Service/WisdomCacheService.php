@@ -44,6 +44,8 @@ class WisdomCacheService
                 $wisdoms[] = [
                     'slug'  => $slug,
                     'title' => $data['title'] ?? $slug,
+                    'description' => $data['description'] ?? '',
+                    'tags'  => $data['tags'] ?? [],
                     'date'  => $data['date'] ?? date('Y-m-d', filemtime($file))
                 ];
             }
