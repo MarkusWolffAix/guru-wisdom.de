@@ -8,18 +8,21 @@ declare(strict_types=1);
 $this->setTitle('Übersicht der Weisheiten');
 ?>
 
-<!-- Hero Sektion: Das Auge -->
-<header class="py-5 text-center position-relative">
-    <div class="container">
-        <div class="eye-container mx-auto" style="max-width: 600px;">
+
+<!-- flex-column zwingt die Elemente IMMER untereinander. flex-md-row wurde entfernt. -->
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        
+        <!-- mb-3 gibt dem Bild einen schönen Abstand nach unten zum Text. Alle me-md-... Klassen sind weg. -->
+        <div class="eye-container mb-3" style="max-width: 250px;">
             <img src="/images/icons/gurueye.webp" alt="Das wachende Auge der Erkenntnis" class="img-fluid">
         </div>
-        <h1 class="mt-2 fw-light">Guru Wisdom</h1>
-        <p class="lead text-muted">Tritt ein und finde, was du suchst.</p>
+        
+        <!-- text-center gilt jetzt für alle Geräte. text-md-start wurde entfernt. -->
+        <div class="text-center">
+            <p class="lead text-muted mb-0">Übersicht der Weisheiten</p>
+        </div>
+
     </div>
-</header>       
-
-
 
 <!-- Die Schriftrolle: Der magische Container -->
 <section class="container pb-5">
@@ -38,60 +41,76 @@ $this->setTitle('Übersicht der Weisheiten');
 
                 <!-- Scroll-Container: Zeigt durch CSS max-height nur 3 Karten gleichzeitig -->
                 <div class="wisdom-scroll-area" id="wisdomContainer">
-                    <?php 
-                    $Count = count($wisdoms);
-                    foreach ($wisdoms as $wisdom): ?>
+                    <?php foreach ($wisdoms as $wisdom): ?>
                         <?php 
-    
                             $id = $wisdom['id'] ?? $wisdom['slug'];
                             $title = $wisdom['title'] ?? 'Unbekannte Weisheit';
-                            $title = "#" . $Count-- . '. ' . $title; // Nummerierung hinzufügen
-                            $category = $wisdom['category'] ?? 'allgemein';
-                            $description = $wisdom['description'] ?? '';
+                            $subtitle = $wisdom['subtitle'] ?? '';
                             $tags = $wisdom['tags'] ?? [];
                             $tags = array_map(fn($item) => trim($item, '"'), $tags);
-                         
+                            // SICHERHEIT: Kategorie sauber auslesen (egal ob Array oder String)
+                            $categories = $wisdom['categories'] ?? ['Allgemein'];
+                            $categories =array_map(fn($item) => trim($item, '"'), $categories);
+                            $category = is_array($categories) ? ($categories[0] ?? 'Allgemein') : $categories;
+
+                            $imageName = !empty($wisdom['image']) ? $wisdom['image'] : 'Urd';
                             $imagePathWebp = "https://media.guru-wisdom.de/images/thumb/{$id}.webp";
                             $imagePathJpg = "https://media.guru-wisdom.de/images/{$id}.jpg";
                         ?>
 
-                        <a href="https://guru-wisdom.de/<?= htmlspecialchars((string)$id) ?>" 
-                           class="text-decoration-none wisdom-link-wrapper mb-2">
-                            <div class="card wisdom-card flex-row align-items-center p-3 shadow-sm border-0" 
-                                 data-category="<?= htmlspecialchars((string)$category) ?>">
+                        <div class="card wisdom-card p-3 shadow-sm border-0 mb-1" data-category="<?= htmlspecialchars((string)$category) ?>">
+                            
+                            <!-- Anklickbarer Bereich: Bild links, Text rechts -->
+                            <a href="<?= htmlspecialchars((string)$id) ?>" class="wisdom-clickable-area text-decoration-none d-flex flex-row align-items-center">
                                 
-                                <!-- Vorschaubild (90px Wächter-Container) -->
+                                <!-- Vorschaubild (Links, Wächter-Container) -->
                                 <div class="wisdom-thumb-container me-4">
                                     <picture class="wisdom-picture">
                                         <source srcset="<?= $imagePathWebp ?>" type="image/webp">
-                                        <img src="<?= $imagePathJpg ?>" 
-                                             alt="<?= htmlspecialchars((string)$title) ?>" 
-                                             class="wisdom-thumb-img">
+                                        <img src="<?= $imagePathJpg ?>" alt="<?= htmlspecialchars((string)$title) ?>" class="wisdom-thumb-img">
                                     </picture>
                                 </div>
                                 
-                                <!-- Text-Inhalt -->
-                                <div class="card-body p-0">
+                                <!-- Text-Inhalt (Rechts daneben) -->
+                                <div class="wisdom-text-container flex-grow-1 text-start">
                                     <h3 class="card-title h5 fw-bold mb-2 text-dark">
                                         <?= htmlspecialchars((string)$title) ?>
                                     </h3>
-                                    <p class="card-text text-muted mb-2 small">
-                                        <?= htmlspecialchars((string)$description) ?>
+                                    <p class="card-text text-muted mb-0 small">
+                                        <?= htmlspecialchars((string)$subtitle) ?>
                                     </p>
-                                    <div class="tags">
-                                        <?php foreach ($tags as $tag): ?>
-                                            <span class="badge bg-light text-dark border-0 shadow-sm" style="font-size: 0.75rem;">
-                                                <?= htmlspecialchars((string)$tag) ?>
-                                            </span>
-                                        <?php endforeach; ?>
+                                </div>
+                            </a>
+
+                            <!-- Unterer Bereich: Kategorie & Tags getrennt -->
+                            <div class="wisdom-tags-area mt-3 pt-2 mb-0 border-top">
+                                
+                                <!-- Zeile 1: Die Hauptkategorie -->
+                                <div class="mb-2">
+                                    <div class="d-flex flex-wrap justify-content-start gap-1">
+                                    <?php foreach ($categories as $category): ?>
+                                        <span class="badge bg-secondary text-light px-2 py-1" style="font-size: 0.75rem;">
+                                            <?= htmlspecialchars((string)$category) ?>
+                                        </span>
+                                    <?php endforeach; ?>
                                     </div>
                                 </div>
-                            </div>
-                        </a>
-                    <?php endforeach; ?>
-                </div>
 
-                <!-- Mystischer Runter-Button (Gradient-Stil) -->
+                                <!-- Zeile 2: Die Tags -->
+                                <div class="d-flex flex-wrap justify-content-start gap-1">
+                                    <?php foreach ($tags as $tag): ?>
+                                        <span class="badge bg-light text-dark border-0 shadow-sm" style="font-size: 0.75rem;">
+                                            <?= htmlspecialchars((string)$tag) ?>
+                                        </span>
+                                    <?php endforeach; ?>
+                                </div>
+                                
+                            </div>
+                        </div> <!-- WICHTIG: Das schließt die einzelne Karte -->
+                    <?php endforeach; ?> <!-- WICHTIG: Das beendet die PHP-Schleife -->
+                </div> <!-- WICHTIG: Das schließt den gesamten Scroll-Container -->
+
+                <!-- Mystischer Runter-Button (Wieder an der richtigen Stelle!) -->
                 <button id="scrollDownBtn" class="mystic-scroll-bar w-100 mt-2" aria-label="Weiter in die Zukunft">
                     <svg viewBox="0 0 24 24" width="40" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M 4 8 Q 12 20 20 8"></path>

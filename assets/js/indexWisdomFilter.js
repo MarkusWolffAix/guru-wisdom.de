@@ -1,30 +1,27 @@
-// --- Logik für die Schriftrollen-Buttons ---
 const scrollArea = document.getElementById("wisdomContainer");
 const btnUp = document.getElementById("scrollUpBtn");
 const btnDown = document.getElementById("scrollDownBtn");
 
-// Funktion, um exakt um die Höhe einer Karte nach oben oder unten zu scrollen
 function scrollWisdomList(direction) {
-    // Finde eine sichtbare Karte, um deren Höhe als Maßstab zu nehmen
-    const firstVisibleCard = Array.from(scrollArea.querySelectorAll('.wisdom-link-wrapper')).find(card => !card.classList.contains('hidden'));
+    // HIER IST DIE ÄNDERUNG: Wir suchen jetzt nach '.wisdom-card' anstatt '.wisdom-link-wrapper'
+    const cards = Array.from(scrollArea.querySelectorAll('.wisdom-card:not(.hidden)'));
     
-    if (!firstVisibleCard) return; // Wenn nichts gefunden wurde, abbrechen
+    if (cards.length === 0) return;
 
-    // Wir berechnen die Höhe der Karte + den Abstand (margin-bottom)
-    const style = window.getComputedStyle(firstVisibleCard.querySelector('.wisdom-card'));
-    const marginBottom = parseFloat(style.marginBottom);
-    const cardHeight = firstVisibleCard.offsetHeight + marginBottom;
+    // Wir berechnen die Höhe der ersten Karte plus den Abstand (mb-3 entspricht 16px)
+    const cardHeight = cards[0].offsetHeight + 16; 
 
-    // Scrolle um diesen Wert
-    if (direction === 'up') {
-        scrollArea.scrollBy({ top: -cardHeight, left: 0, behavior: 'smooth' });
+    if (direction === 'down') {
+        // Scrolle genau eine Karte weiter runter
+        scrollArea.scrollBy({ top: cardHeight, behavior: 'smooth' });
     } else {
-        scrollArea.scrollBy({ top: cardHeight, left: 0, behavior: 'smooth' });
+        // Scrolle genau eine Karte weiter hoch
+        scrollArea.scrollBy({ top: -cardHeight, behavior: 'smooth' });
     }
 }
 
-// Klick-Ereignisse an die Buttons binden
-if (btnUp && btnDown && scrollArea) {
+// Event Listener für die Buttons
+if (btnUp && btnDown) {
     btnUp.addEventListener("click", () => scrollWisdomList('up'));
     btnDown.addEventListener("click", () => scrollWisdomList('down'));
 }

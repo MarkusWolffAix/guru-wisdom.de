@@ -14,7 +14,7 @@ use App\Service\WisdomCacheService;
 
 /**
  * Handles the web requests for the "Words of Wisdom" detail page.
- * * This action loads the data for a specific wisdom (including text, 
+ * This action loads the data for a specific wisdom (including text, 
  * image, audio, and navigation) and renders it using the corresponding view template.
  */
 final class Action implements RequestHandlerInterface
@@ -36,7 +36,7 @@ final class Action implements RequestHandlerInterface
         WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
         private GuruWisdomService $guruWisdom,
-        private WisdomCacheService $wisdomCache // Hier injizieren wir das neue Gedächtnis
+        private WisdomCacheService $wisdomCache
     ) {
         // Set the view path to the current directory of this class
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);
@@ -52,54 +52,51 @@ final class Action implements RequestHandlerInterface
      * @param ServerRequestInterface $request The incoming HTTP request.
      * @return ResponseInterface The rendered HTML response including the layout.
      */
-
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         /** @var string|null $id */
         $id = $this->currentRoute->getArgument('id');
 
-        // 1. ID bereinigen, falls sie übergeben wurde
-        //  if ($id !== null) {
-        //    $id = $this->guruWisdom->sanitizeId($id);
-        //  }
-
-        // 2. Validierung: Prüfen, ob die ID im Archiv überhaupt existiert
-        $isValid = false;
-       // if ($id !== null) {
-            // Wir rufen alle bekannten Slugs blitzschnell aus dem Cache ab
+        // 1. STARTSEITE: Wenn KEINE ID übergeben wurde, zeigen wir die Übersicht (Schriftrolle)
+        if ($id === null) {
             $allWisdoms = $this->wisdomCache->getSortedWisdoms();
-            foreach ($allWisdoms as $wisdom) {
-                if ($wisdom['slug'] === $id) {
-                    $isValid = true;
-                    break;
-                }
-            }
-                    return $this->viewRenderer
-            ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
-            ->render('overview', [
-                'wisdoms'       => $allWisdoms,
-            ]); 
-       // }
+            
+            return $this->viewRenderer
+                ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
+                ->render('overview', [
+                    'wisdoms' => $allWisdoms,
+                ]); 
+        }
 
-        // 3. Der Fallback: Wenn keine ID da ist (Startseite) ODER die ID ungültig ist
-        if ($id === null || !$isValid) {
+        // 2. DETAILSEITE: Wenn eine ID da ist -> Validierung! (Ist sie im Archiv?)
+        $isValid = false;
+        $allWisdoms = $this->wisdomCache->getSortedWisdoms();
+        foreach ($allWisdoms as $wisdom) {
+            if ($wisdom['slug'] === $id) {
+                $isValid = true;
+                break;
+            }
+        }
+
+        // 3. FALLBACK: Wenn die übergebene ID ungültig ist (z.B. Tippfehler in der URL)
+        if (!$isValid) {
             $latestWisdom = $this->wisdomCache->getLatestWisdom();
+            
             // Ein kleiner Sicherheitsanker, falls das Archiv komplett leer sein sollte
             if ($latestWisdom === null) {
                 throw new \RuntimeException("Das Archiv ist noch leer. Es gibt keine Weisheiten zum Anzeigen.");
             }
             
-            // Wir überschreiben die (fehlende/falsche) ID mit der neuesten ID
+            // Wir überschreiben die falsche ID mit der neuesten ID
             $id = $latestWisdom['slug'];
         }
 
-        // 4. Ab hier ist absolut garantiert, dass $id ein gültiger String ist.
-        // Das Parsing wird also niemals mehr mit "null" aufgerufen und wirft keinen Fehler.
+        // 4. DATEN LADEN: Ab hier ist absolut garantiert, dass $id ein gültiger String ist.
         $wisdomData = $this->guruWisdom->parseFile($id);
         $image      = $this->guruWisdom->getImageHtml($id);
         $audio      = $this->guruWisdom->getAudioHtml($id);
         
-        // Navigation (Neuere / Ältere Weisheit)
+        // Navigation (Neuere / Ältere Weisheit für die Pfeile)
         $neighbors = $this->wisdomCache->getNeighbors($id);
         $newerWisdom = $neighbors['newer'];
         $olderWisdom = $neighbors['older'];
@@ -120,6 +117,7 @@ final class Action implements RequestHandlerInterface
         $keywordsArray = array_unique(array_merge($cleanTags, $cleanCategories));
         $keywords = implode(', ', $keywordsArray);
 
+        // 5. RENDERN DER EINZELNEN WEISHEIT
         return $this->viewRenderer
             ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
             ->render('template', [
@@ -131,10 +129,8 @@ final class Action implements RequestHandlerInterface
                 'keywords'    => $keywords,
                 'image'       => $image, 
                 'audio'       => $audio,
-                // Wir übergeben nun die kompletten Arrays (oder null), 
-                // damit das Template auch Titel/Datum für die Pfeile anzeigen kann
-                'prevId' => $newerWisdom['slug'] ?? null,
-                'nextId' => $olderWisdom['slug'] ?? null,
+                'prevId'      => $newerWisdom['slug'] ?? null,
+                'nextId'      => $olderWisdom['slug'] ?? null,
             ]); 
     }
-}
+}   

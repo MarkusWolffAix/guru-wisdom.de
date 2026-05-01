@@ -371,98 +371,13 @@ footer#footer a:hover { opacity: 0.7; }
     box-shadow: 0 2px 4px rgba(214, 51, 132, 0.2);
 }
 
-
 /* =========================================
    STARTSEITE: DIE MAGISCHE SCHRIFTROLLE
    ========================================= */
 
-/* Der Hintergrund der Schriftrolle */
-.mystic-scroll-bg {
-    background-color: #121212; 
-    border: 1px solid #333;    
-    border-radius: 15px;       
-    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.8); 
-}
-
-/* Verstecken für die Live-Suche */
-.wisdom-link-wrapper.hidden {
-    display: none !important;
-}
-
-/* Die Schriftrolle als zentrierender Flex-Container */
-
-
-
-
-/* Der liebevolle, breite Streifen als sanft abgerundetes Rechteck */
-.mystic-scroll-bar {
-    background: linear-gradient(180deg, rgba(30, 30, 46, 0.7), rgba(18, 18, 28, 0.8));
-    border: 1px solid #2a2a3c;
-    color: #666; 
-    border-radius: 15px; 
-    padding: 10px 0; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease;
-}
-
-.mystic-scroll-bar:hover {
-    background: linear-gradient(180deg, rgba(35, 35, 55, 0.9), rgba(22, 22, 35, 0.9));
-    border-color: #00e5ff;
-    color: #00e5ff; 
-    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2), inset 0 0 8px rgba(0, 229, 255, 0.1);
-}
-
-.mystic-scroll-bar:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-
-.wisdom-card .wisdom-thumb-container {
-    width: 110px !important;
-    height: 110px !important;
-    min-width: 110px !important;
-    max-width: 110px !important;
-    flex: 0 0 110px !important;
-    
-    border-radius: 12px;
-    border: 1px solid rgba(214, 51, 132, 0.2);
-    position: relative;
-    /* overflow: visible;  <-- WICHTIG: Erlaubt dem Bild, über den Rand zu wachsen */
-    overflow: visible; 
-    z-index: 1;
-}
-/* Das Bild im Inneren, das sich dem Kasten unterordnen muss */
-.wisdom-thumb-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; 
-    display: block; 
-}
-
-/* Die Hülle nimmt nun den vollen Platz ein, um den seitlichen Rand zu minimieren */
-.wisdom-link-wrapper {
-    max-width: 550px;
-    flex-shrink: 0; 
-    text-decoration: none; 
-    display: block;
-    width: 100%; /* Geändert von 95% auf 100% */
-    margin: 0 auto; 
-}
-
-/* Wir überschreiben die riesigen globalen Margins (2rem) für die Listen-Ansicht */
-.wisdom-scroll-area .wisdom-card {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-/* Wir verringern die Höhe der gesamten Schriftrolle leicht, da die Karten nun enger liegen */
+/* --- 1. DER SCHRIFTROLLEN-CONTAINER --- */
 .wisdom-scroll-area {
-    max-height: 400px; 
+    max-height: 400px; /* Passe diesen Wert an, je nachdem wie viele Karten sichtbar sein sollen */
     overflow-y: hidden;
     scroll-behavior: smooth;
     display: flex;
@@ -472,76 +387,169 @@ footer#footer a:hover { opacity: 0.7; }
 
 /* Der unsichtbare, schwerelose Hintergrund der gesamten Schriftrolle */
 .mystic-scroll-bg {
-    background-color: transparent; /* Vollkommen durchsichtig */
-    border: none;                  /* Kein starrer Rahmen mehr */
-    box-shadow: none;              /* Keine Schatten, pure Leichtigkeit */
+    background-color: transparent;
+    border: none;                  
+    box-shadow: none;              
     border-radius: 15px;       
 }
 
-/* Die transparenten Knöpfe */
+
+/* --- 2. DIE MYSTISCHEN SCROLL-BUTTONS --- */
 .mystic-scroll-bar {
     background: linear-gradient(90deg, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(214, 51, 132, 0.05) 50%, 
         rgba(255, 255, 255, 0.2) 100%
     );
-    
-    border: 1px solid rgba(214, 51, 132, 0.15); /* Ein feiner, pink angehauchter Rand */
+    border: 1px solid rgba(214, 51, 132, 0.15); /* Feiner, pink angehauchter Rand */
     color: #6c757d;
     border-radius: 15px; 
     padding: 10px 0; 
+    height: 45px; /* Komfortable Klick-Höhe */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: none; /* Kein Schatten im Ruhezustand */
+    box-shadow: none; 
     transition: all 0.3s ease;
 }
 
-
-
-
-/* Der Hover-Effekt: Ein Hauch von Magie beim Drüberfahren */
 .mystic-scroll-bar:hover {
     background: linear-gradient(90deg, 
         rgba(255, 255, 255, 0.2) 0%, 
         rgba(115, 187, 28, 0.05) 50%, 
         rgba(138, 35, 35, 0.2) 100%
     );
-    
-    border: 1px solid rgba(214, 51, 132, 0.15); /* Ein feiner, pink angehauchter Rand */
-    color: #6c757d;                       /* Der Pfeil leuchtet pink */
+    border-color: rgba(214, 51, 132, 0.3);
+}
+
+.mystic-scroll-bar:active {
+    transform: translateY(2px); /* Sanftes Eindrücken beim Klicken */
 }
 
 
-/* Die Hülle der Karte darf nun die volle Breite nutzen */
+/* --- 3. DIE WISDOM CARDS (HAUPTKARTEN) --- */
+
+/* Verstecken für die Live-Suche */
+.wisdom-link-wrapper.hidden {
+    display: none !important;
+}
+
+/* Die Link-Hülle darf die volle Breite nutzen */
 .wisdom-link-wrapper {
-    max-width: 100%; /* HIER WURDE DIE GRENZE GEBROCHEN (vorher 550px) */
+    width: 100%; 
+    max-width: 100%; 
     flex-shrink: 0; 
     text-decoration: none; 
     display: block;
-    width: 100%; 
     margin: 0 auto; 
 }
 
-/* Wir sagen der Karte selbst, dass sie sich an die neue, volle Breite anpassen soll */
-.wisdom-link-wrapper .wisdom-card {
-    max-width: 100% !important; /* Überschreibt die globalen 700px */
+/* Die Karte selbst: Passt sich dem Inhalt an, wird nicht gequetscht */
+.wisdom-scroll-area .wisdom-card {
+    width: 100%;
+    max-width: 100% !important;
+    height: max-content !important; /* Klammert sich eng an den Inhalt */
+    flex-shrink: 0 !important;      /* Schutzschild gegen das Quetschen */
+    margin-top: 0 !important;
+    margin-bottom: 0px !important;    /* Außenabstände werden per HTML mb-1/mb-2 gesteuert */
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
 }
 
 
-/* 2. Das Bild: Vorbereitung für die Vergrößerung */
+/* --- 4. BILD & THUMBNAIL-CONTAINER --- */
+
+/* Der Bild-Container (Setzt das Bild auf 50% Breite mit Abstand nach rechts) */
+.wisdom-card .wisdom-thumb-container {
+    width: 50% !important;
+    min-width: 50% !important;
+    max-width: 50% !important;
+    height: auto !important; 
+    flex-shrink: 0 !important; 
+    
+    margin: 0 15px 0 0 !important; /* Abstand zum Text rechts daneben */
+    border-radius: 12px;
+    position: relative;
+    overflow: visible; /* Extrem wichtig für den Hover-Zoom! */
+    z-index: 10;
+}
+
+/* Das Bild selbst */
 .wisdom-card .wisdom-thumb-img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    position: relative; 
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important; 
+    max-height: 280px; /* Sicherheitsgrenze für Hochkant-Bilder */
     object-fit: cover !important;
-    border-radius: 10px;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    
+    border-radius: 12px;
     z-index: 2;
     cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
 }
 
+/* --- 5. INTERAKTIONEN & TEXT --- */
 
+/* Der klickbare Bereich (Wird meist per Bootstrap d-flex flex-row gesteuert) */
+.wisdom-clickable-area {
+    display: flex;
+    width: 100%;
+}
+
+/* Sanfter Farbwechsel des Titels beim Hover über die Karte */
+.wisdom-clickable-area:hover .card-title {
+    color: #d63384 !important; /* Guru-Wisdom Pink */
+    transition: color 0.2s ease;
+}
+
+/* Container für die Tags am Boden */
+.wisdom-tags-area {
+    width: 100%;
+}
+
+/* =========================================
+   REPARATUR: DETAILSEITE (HAUPT-WISDOM)
+   ========================================= */
+
+/* 1. Basis-Design für die große Karte auf der Detailseite */
+.wisdom-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08); /* Sanfter Schatten für die große Karte */
+    max-width: 800px; /* Verhindert, dass die Karte auf dem PC riesig wird */
+    margin: 0 auto;   /* Zentriert die Karte auf dem Bildschirm */
+    
+    /* overflow: hidden; MÜSSEN wir weglassen, sonst geht der Zoom auf der Startseite kaputt. 
+       Dafür runden wir das Bild unten manuell ab: */
+}
+
+/* 2. Das große Bild auf der Detailseite zähmen */
+.wisdom-card .image-container {
+    width: 100%;
+    position: relative;
+}
+
+.wisdom-card .image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh; /* Macht das Bild nicht endlos hoch (maximal 60% der Bildschirmhöhe) */
+    object-fit: cover;
+    border-top-left-radius: 15px;  /* Passt sich den runden Ecken der Karte an */
+    border-top-right-radius: 15px;
+}
+
+/* =========================================
+   SCHUTZSCHILD FÜR DIE SCHRIFTROLLE (STARTSEITE)
+   ========================================= */
+
+/* Hier überschreiben wir die Detail-Regeln wieder, damit die Liste perfekt bleibt! */
+.wisdom-scroll-area .wisdom-card {
+    background-color: #ffffff; 
+    box-shadow: none !important; /* Bootstrap (shadow-sm) übernimmt hier */
+    max-width: 100% !important;  /* In der Liste darf sie die volle Breite nutzen */
+    margin: 0 !important;        /* Abstand wird über HTML mb-1 gesteuert */
+    border-radius: 12px;
+}
