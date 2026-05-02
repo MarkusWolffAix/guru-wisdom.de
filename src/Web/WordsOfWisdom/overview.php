@@ -13,13 +13,16 @@ $this->setTitle('Übersicht der Weisheiten');
     <div class="container d-flex flex-column align-items-center justify-content-center">
         
         <!-- mb-3 gibt dem Bild einen schönen Abstand nach unten zum Text. Alle me-md-... Klassen sind weg. -->
-        <div class="eye-container mb-3" style="max-width: 250px;">
+        <!-- <div class="eye-container mb-3" style="max-width: 250px;">
+            <h2 class="text-center mb-2">Das Auge der Erkenntnis wach</h2>
             <img src="/images/icons/gurueye.webp" alt="Das wachende Auge der Erkenntnis" class="img-fluid">
         </div>
-        
+-->
+            <!-- Das Auge der Erkenntnis: Jetzt in einem eigenen Container mit max-width, damit es nicht zu riesig wird. -->        
         <!-- text-center gilt jetzt für alle Geräte. text-md-start wurde entfernt. -->
-        <div class="text-center">
-            <p class="lead text-muted mb-0">Übersicht der Weisheiten</p>
+        <div class="handwritten-text text-center">
+            <h2 class="display-4 fw-bold mb-2">Willkommen bei Guru Wisdom </h2> <h3> Archiv der Weisheiten</h3>
+
         </div>
 
     </div>

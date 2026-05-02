@@ -391,6 +391,37 @@ footer#footer a:hover { opacity: 0.7; }
     border: none;                  
     box-shadow: none;              
     border-radius: 15px;       
+
+/* Der Hintergrund der Schriftrolle (Pergament / Bild) */
+    /* 1. Pfad zu deinem Bild (bitte anpassen!) */
+    background-image: url('/images/icons/gurueye.webp'); 
+    
+    /* 2. Wie soll sich das Bild verhalten? */
+    background-size: 100% 100%; /* Zieht das Bild exakt auf die Größe des Containers */
+    /* Alternativ: background-size: cover; (schneidet Ränder ab, behält aber die Proportionen) */
+    
+    
+    /* 3. Optischer Feinschliff */
+    border-radius: 15px; /* Rundet die Ecken deines Bildes ab */
+    padding: 20px;       /* Sorgt dafür, dass die Karten nicht direkt am Bildrand kleben */
+    
+    /* Optional: Ein leichter innerer Schatten, um es dreidimensionaler wirken zu lassen */
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5); 
+
+    background-size: 90% auto; 
+    
+    /* 2. BILD WEITER NACH OBEN SCHIEBEN */
+    /* 'center' hält es in der Mitte (links/rechts). 
+       'top' zieht es ganz nach oben an den inneren Rand des Containers. 
+       Geheimtipp: Wenn es noch HÖHER soll (über den Rand hinaus), 
+       kannst du auch negative Pixel nutzen, z.B.: center -30px; */
+    background-position: center top; 
+    
+    background-repeat: no-repeat;
+    border-radius: 15px; 
+    padding: 20px;
+
+
 }
 
 
@@ -552,4 +583,21 @@ footer#footer a:hover { opacity: 0.7; }
     max-width: 100% !important;  /* In der Liste darf sie die volle Breite nutzen */
     margin: 0 !important;        /* Abstand wird über HTML mb-1 gesteuert */
     border-radius: 12px;
+
+
+}
+
+.wisdom-scroll-area {
+    max-height: 400px; 
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+    padding-top: 150px; 
+    padding-bottom: 150px; 
+    
+    /* NEU: Das erzeugt den perfekten, gleichmäßigen Abstand zwischen den Karten! */
+    gap: 5px; 
 }
