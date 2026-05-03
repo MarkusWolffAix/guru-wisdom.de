@@ -21,6 +21,7 @@ use Yiisoft\View\WebView;
  * @var WebView     $this        The view component rendering this template.
  */
 
+
 $this->setTitle($title);
 if (!empty($description)) {
     $this->setParameter('meta_description', $description);
@@ -95,10 +96,21 @@ if (!empty($keywords)) {
 </div>
 
 <?php
+$needsMathJax = str_contains($wisdomText, '$$') || str_contains($wisdomText, '\[');
+
+// Wenn ja, registrieren wir das CDN-Skript für diese Seite
+if ($needsMathJax) {
 // 1. External MathJax script to render LaTeX formulas within the markdown content.
 // In Yii3, the position is passed as the second argument!
 $this->registerJsFile(
     'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-    WebView::POSITION_HEAD
+    WebView::POSITION_HEAD,
+    [
+        'async' => true, // Wichtig für die Performance! Blockiert das Rendern nicht.
+        'id' => 'mathjax-script'
+    ]
 );
+}; 
+
+
 ?>
