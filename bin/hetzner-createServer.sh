@@ -4,27 +4,29 @@
 # CONFIGURATION (Global Variables)
 # ==========================================
 HETZNER_TOKEN=$(security find-generic-password -a "markuswolff" -s "guruwisdom_HETZNER_API_TOKEN_RW" -w | tr -d '\n')
-ENV="test" 
-SERVER_NAME="test20"
-ALIAS_IP_1="10.0.0.20"
-ALIAS_IP_2="10.0.1.20"
-LOCATION="fsn1"
 
+# --- TEST ENVIRONMENT (Auskommentiert) ---
+# ENV="test" 
+# SERVER_NAME="test20"
+# ALIAS_IP_1="10.0.0.20"
+# ALIAS_IP_2="10.0.1.20"
+# LOCATION="fsn1"
+# USER="git"
+
+# --- PROD ENVIRONMENT ---
 ENV="prod"
-SERVER_NAME="prod130"
-ALIAS_IP_1="10.0.0.130"
-ALIAS_IP_2="10.0.1.130"
+SERVER_NAME="prod30"
+ALIAS_IP_1="10.0.0.30"
+ALIAS_IP_2="10.0.1.30"
 USER="git"
-LOCATION="hel1"
+LOCATION="nbg1"
 
+# --- GLOBAL SETTINGS ---
 NETWORK_ID="12140000"
 PLACEMENT_GROUP_NAME="guru-wisdom.de"
 PLACEMENT_GROUP_ID="1572343" 
-
-SERVER_TYPE="cx23"
+SERVER_TYPE="cx33"
 IMAGE="debian-13" 
-
-
 
 # ==========================================
 # 1. DEFINE CLOUD-INIT
@@ -32,6 +34,7 @@ IMAGE="debian-13"
 CLOUD_INIT=$(cat << EOF
 #cloud-config
 timezone: Europe/Berlin
+
 write_files:
   - path: /etc/network/interfaces.d/60-alias-ip.cfg
     permissions: '0644'
@@ -62,7 +65,7 @@ users:
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCBRO4EGqop11BukSLm27PhW/guswjG47Q5BogJxisasflXq9CyO2AIPwEYb3w4vakFGqW2ELVyLSK5HUfkzpjCnetPu48FHk2vl6uKhNfTblwg4DIErJQYeecftLPFunA3P5qzqDRi1BJQG1jWWkaanxN0WnA/D7fVqU4QE1WxqKWPRQMEPpclubTxpsYflo+0RZOofTFKdd4qpZdeAc2hv0ZWWVJAI66YiJYisComVsDdNFDGdQww6pmg+lzXo2a4A6ynBi+4a09IXPD1oA53kR8nbYJN4f2TlHKQDWv4z8i2TOSuUfGic6QGTwT4EdwVCxVYrqhY+Pck1B/k/rTl
   - name: git
-    groups: [www-data,docker]
+    groups: [www-data, docker]
     shell: /bin/bash
     lock_passwd: false
     ssh_authorized_keys:
@@ -86,7 +89,7 @@ runcmd:
 
   # --- System Updates & Tools ---
   - apt update
-  - apt upgrade -y
+  - DEBIAN_FRONTEND=noninteractive apt upgrade -y
   - apt install -y ca-certificates curl gnupg lsb-release sudo git lynx
 
   # --- Docker Installation ---
@@ -111,22 +114,25 @@ runcmd:
   - runuser -u $USER -- git clone https://github.com/MarkusWolffAix/guru-wisdom.de.git /opt/guru-wisdom.de
   
   # Alles ab hier läuft als zusammenhängendes Skript in dem Ordner ab
-- |
-    cd /opt/guru-wisdom.de
+  - |
+      cd /opt/guru-wisdom.de
 
-    # .env Datei anlegen
-    cat <<ENV_EOF > .env
-    APP_ENV=$ENV
-    ENV_EOF
-    
-    # Rechte für die .env an den User übergeben
-    chown $USER:www-data .env
+      # .env Datei anlegen
+      cat <<ENV_EOF > .env
+      APP_ENV=$ENV
+      ENV_EOF
+      
+      # Rechte für die .env an den User übergeben
+      chown $USER:www-data .env
 
-    # sed als User ausführen (mit korrigierten Anführungszeichen und IP-Variable)
-    runuser -u $USER -- bash -c "sed 's|SERVER_NAME=.*|SERVER_NAME=http://${ALIAS_IP_2}|' docker-compose.prod.yml > docker-compose.yml"
+      # sed als User ausführen
+      runuser -u $USER -- bash -c "sed 's|SERVER_NAME=.*|SERVER_NAME=http://${ALIAS_IP_2}|' docker-compose.prod.yml > docker-compose.yml"
 
-    # Docker Compose als User starten
-    runuser -u $USER -- bash -c "docker compose -f docker-compose.yml up -d"
+      # Docker Compose als User starten
+      runuser -u $USER -- bash -c "docker compose -f docker-compose.yml up -d"
+
+EOF
+)
 
 # ==========================================
 # 2. BUILD PAYLOAD
@@ -160,10 +166,9 @@ jq -n -c \
     user_data: $ud
   }' > /tmp/payload.json
 
-# DEBUG: Zeig uns das JSON (nur die ersten 100 Zeichen, wegen Cloud-Init)
+# DEBUG: Zeig uns das JSON
 echo "Kontrolle der Network-ID im JSON:"
 jq '.networks' /tmp/payload.json
-
 
 # ==========================================
 # 3. CREATE SERVER
@@ -187,8 +192,8 @@ echo "Server successfully created! ID: $SERVER_ID"
 # ==========================================
 # 4. ASSIGN ALIAS IPs
 # ==========================================
-echo "Waiting briefly for server initialization..."
-sleep 3
+echo "Waiting briefly for server initialization before assigning Alias IPs..."
+sleep 5
 echo "Configuring alias IPs $ALIAS_IP_1 and $ALIAS_IP_2 in the Hetzner network..."
 curl -s -X POST "https://api.hetzner.cloud/v1/servers/$SERVER_ID/actions/change_alias_ips" \
      -H "Authorization: Bearer $HETZNER_TOKEN" \
@@ -198,5 +203,5 @@ curl -s -X POST "https://api.hetzner.cloud/v1/servers/$SERVER_ID/actions/change_
            \"alias_ips\": [\"$ALIAS_IP_1\", \"$ALIAS_IP_2\"]
          }" | jq -r '.action.status'
 
-echo "Finish! The Server is running Docker/Yii3."
+echo "Finish! The server is provisioning in the background. It will take 1-3 minutes until Docker/Yii3 is fully running."
 rm /tmp/payload.json
