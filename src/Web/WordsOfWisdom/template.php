@@ -39,7 +39,7 @@ if (!empty($keywords)) {
         
         <div class="action-bar">
             <?= Html::a(
-                Html::img('/images/icons/ArrowLeft.png')
+                Html::img('/images/icons/ArrowLeft.jpg')
                     ->id('before-button')
                     ->alt('previous wisdom')
                     ->attribute('width', '24'),
@@ -51,11 +51,11 @@ if (!empty($keywords)) {
             </div>
 
             <button id="toggle-button" class="nav-btn" aria-label="Show details">
-                <img id="lupe-icon" src="/images/icons/MagnifyingGlass.png" alt="show details" width="24">
+                <img id="lupe-icon" src="/images/icons/MagnifyingGlass.jpg" alt="show details" width="24">
             </button>
 
             <?= Html::a(
-                Html::img('/images/icons/ArrowRight.png')
+                Html::img('/images/icons/ArrowRight.jpg')
                     ->id('next-button')
                     ->alt('next wisdom')
                     ->attribute('width', '24'),
