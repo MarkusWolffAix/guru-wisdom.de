@@ -5,6 +5,14 @@ declare(strict_types=1);
 /** @var \Yiisoft\View\WebView $this */
 /** @var array $wisdoms */
 
+
+
+$this->registerMeta(['name' => 'description', 'content' => 'Entdecke auf Guru-Wisdom tiefgründige Weisheiten und Zitate für jeden Tag. Lass dich inspirieren und finde neue Perspektiven für dein Leben.'], 'description');
+$this->registerMeta(['name' => 'keywords', 'content' => 'Weisheiten, Zitate, Inspiration, Philosophie, Spiritualität, Nordische Mythologie, Guru-Wisdom'], 'keywords');
+$this->registerMeta(['name' => 'author', 'content' => 'Markus Wolff'], 'author');
+$this->registerMeta(['name' => 'robots', 'content' => 'index, follow'], 'robots');
+
+
 $this->setTitle('Übersicht der Weisheiten');
 ?>
 

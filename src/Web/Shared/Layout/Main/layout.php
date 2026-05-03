@@ -29,12 +29,13 @@ $this->addJsFiles($assetManager->getJsFiles());
 
 $this->registerMeta(['charset' => 'UTF-8'], 'charset');
 $this->registerMeta(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no'], 'viewport');
-$this->registerMeta(['name' => 'description', 'content' => $this->getParameter('meta_description', '')], 'description');
-$this->registerMeta(['name' => 'keywords', 'content' => $this->getParameter('meta_keywords', '')], 'keywords');
+
+$this->registerMeta(['name' => 'author', 'content' => 'Markus Wolff'], 'author');
+$this->registerMeta(['name' => 'robots', 'content' => 'index, follow'], 'robots');
 
 $this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
 
- 
+
 
 $this->beginPage();
 ?>

@@ -24,10 +24,15 @@ use Yiisoft\View\WebView;
 
 $this->setTitle($title);
 if (!empty($description)) {
-    $this->setParameter('meta_description', $description);
+    $this->registerMeta(['name' => 'description', 'content' => "$description"], 'description');
+} else  {
+    $this->registerMeta(['name' => 'description', 'content' => 'Entdecke tiefgründige Weisheiten und Zitate für jeden Tag. Lass dich inspirieren und finde neue Perspektiven für dein Leben.'], 'description');
 }
+
 if (!empty($keywords)) {
-    $this->setParameter('meta_keywords', $keywords);
+    $this->registerMeta(['name' => 'keywords', 'content' => "$keywords"], 'keywords');
+} else {
+    $this->registerMeta(['name' => 'keywords', 'content' => 'Weisheiten, Zitate, Inspiration, Philosophie, Spiritualität, Nordische Mythologie, Guru-Wisdom'], 'keywords');
 }
 ?>
 
