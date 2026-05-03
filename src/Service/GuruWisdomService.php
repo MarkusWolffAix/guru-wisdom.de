@@ -71,10 +71,10 @@ class GuruWisdomService
        }*/
     
        $htmlcode = '
-       <picture>
-           <source srcset="'.$url.$id.'.webp" alt="Image of Wisdom ' . $id . '" type="image/webp">
-           <img src="'.$url.$id.'.jpg" alt="Image of Wisdom ' . $id . '" class="img-fluid">
-      </picture>
+        <picture>
+            <source srcset="'.$url.$id.'.webp" type="image/webp">
+            <img src="'.$url.$id.'.jpg" alt="Image of Wisdom ' . $id . '" class="img-fluid" fetchpriority="high">
+        </picture>
       '; 
             
        return $htmlcode;
