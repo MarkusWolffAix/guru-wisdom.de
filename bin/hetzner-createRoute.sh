@@ -7,5 +7,5 @@ curl -X POST "https://api.hetzner.cloud/v1/networks/$NETWORK_ID/actions/add_rout
      -H "Content-Type: application/json" \
      -d '{
            "destination": "0.0.0.0/0",
-           "gateway": "10.0.0.10"
+           "gateway": "10.0.0.254"
          }'
