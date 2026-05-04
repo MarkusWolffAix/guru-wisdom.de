@@ -37,59 +37,106 @@ Liebevolle Geschichten sind wie magische Samen, die in das Herz der Erde gepflan
 Möge die Liebe dein stetiger Kompass und das aufrichtige Interesse dein Weg sein.
 
 ***
+***
 
-### Musikstück: The Cosmic Breath / Der kosmische Atem
+### Musikstück: Goldene Fäden / Golden Threads
 
-**Original Lyrics (English)**
+**Originaltext (Deutsch)**
 
-(Verse 1)
-We walk upon a breathing heart,
-Every stone and stream a living part.
-The divine echo calling from above,
-A sacred circle bound by love.
+**(Strophe 1)**
+Ein leuchtend Blau im Sternenmeer,
+atmet tief und beugt sich her.
+Und beugt sich her.
+Ein Urgrund schlägt ein Herz aus Stein,
+in jedem Funken groß und klein.
+Dass ich erwach' im Spiegelglas,
+such nach dem andern, unermesslich blass.
 
-(Chorus)
-Open your eyes, awaken the flame,
-Every story whispers your name.
-Give and receive the cosmic breath,
-Love is the spark that conquers death.
+**(Refrain)**
+Goldene Fäden, himmlisch rein,
+weben sich ins Dasein ein.
+Von Hand zu Hand, von Mund zu Ohr,
+steigt die Passion im Chor empor.
+Das Feuer nährt den Geist der Welt,
+bis uns der Sternenstaub umfällt.
+Sternenstaub umfällt.
 
-(Verse 2)
-In the silence, hear the mother sigh,
-Beneath the vast and endless sky.
-Bridge the gap with open hands,
-Interest blooming across the lands.
+**(Strophe 2)**
+Am Feuer sitzt die graue Zeit,
+hält ein Buch der Ewigkeit.
+Gesichter leuchten warm und nah,
+die Weisheit alter Tage ist nun da.
+Jede Narbe, jedes Wort,
+trägt uns an den heil'gen Ort,
+trägt uns an den heil'gen Ort.
+An den heil'gen Ort.
 
-(Chorus)
-Open your eyes, awaken the flame,
-Every story whispers your name.
-Give and receive the cosmic breath,
-Love is the spark that conquers death.
+**(Bridge)**
+Ohne Interesse kein Verstehn.
+Ohne Liebe kein Gestehn.
+Schenkt dem Selbst die Zärtlichkeit,
+für die Welt und ihre Zeit.
+
+**(Refrain)**
+Goldene Fäden, himmlisch rein,
+weben sich ins Dasein ein.
+Von Hand zu Hand, von Mund zu Ohr,
+steigt die Passion im Chor empor.
+Das Feuer nährt den Geist der Welt,
+bis uns der Sternenstaub umfällt.
+Sternenstaub umfällt.
+
+**(Outro)**
+Liebe schenken im Sternenlicht.
+Alles ist eins.
 
 ---
 
-**Deutsche Übersetzung**
+**Englische Übersetzung**
 
-(Strophe 1)
-Wir wandeln auf einem atmenden Herzen,
-Jeder Stein und Strom ein lebendiger Teil.
-Das göttliche Echo ruft von oben,
-Ein heiliger Kreis, verbunden durch Liebe.
+**(Verse 1)**
+A shining blue in the sea of stars,
+breathes deeply and bows down near.
+And bows down near.
+A primal ground beats a heart of stone,
+in every spark, the great and the small.
+That I awaken in the mirror's glass,
+searching for the other, immeasurably pale.
 
-(Refrain)
-Öffne deine Augen, erwecke die Flamme,
-Jede Geschichte flüstert deinen Namen.
-Gib und empfange den kosmischen Atem,
-Liebe ist der Funke, der den Tod besiegt.
+**(Chorus)**
+Golden threads, heavenly pure,
+weave themselves into existence.
+From hand to hand, from mouth to ear,
+the passion rises in the choir.
+The fire nourishes the spirit of the world,
+until the stardust falls upon us.
+Stardust falls upon us.
 
-(Strophe 2)
-Höre in der Stille die Mutter seufzen,
-Unter dem weiten und endlosen Himmel.
-Überbrücke die Kluft mit offenen Händen,
-Interesse erblüht über die Ländereien.
+**(Verse 2)**
+By the fire sits the graying time,
+holding a book of eternity.
+Faces glow warm and near,
+the wisdom of old days is now here.
+Every scar, every word,
+carries us to the sacred place,
+carries us to the sacred place.
+To the sacred place.
 
-(Refrain)
-Öffne deine Augen, erwecke die Flamme,
-Jede Geschichte flüstert deinen Namen.
-Gib und empfange den kosmischen Atem,
-Liebe ist der Funke, der den Tod besiegt.
+**(Bridge)**
+Without interest, no understanding.
+Without love, no confessing.
+Give the self that tenderness,
+for the world and all its time.
+
+**(Chorus)**
+Golden threads, heavenly pure,
+weave themselves into existence.
+From hand to hand, from mouth to ear,
+the passion rises in the choir.
+The fire nourishes the spirit of the world,
+until the stardust falls upon us.
+Stardust falls upon us.
+
+**(Outro)**
+Giving love in the starlight.
+All is one.
