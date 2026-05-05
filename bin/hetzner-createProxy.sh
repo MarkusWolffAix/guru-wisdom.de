@@ -5,19 +5,10 @@
 # ==========================================
 HETZNER_TOKEN=$(security find-generic-password -a "markuswolff" -s "guruwisdom_HETZNER_API_TOKEN_RW" -w | tr -d '\n')
 
-# --- TEST ENVIRONMENT (Auskommentiert) ---
-# ENV="test" 
-# SERVER_NAME="test20"
-# ALIAS_IP_1="10.0.0.20"
-# ALIAS_IP_2="10.0.1.20"
-# LOCATION="fsn1"
-# USER="git"
-
 # --- PROD ENVIRONMENT ---
-ENV="prod"
-SERVER_NAME="prod30"
-ALIAS_IP_1="10.0.0.30"
-ALIAS_IP_2="10.0.1.30"
+SERVER_NAME="proy10"
+ALIAS_IP_1="10.0.0.10"
+ALIAS_IP_2="10.0.1.10"
 USER="git"
 LOCATION="nbg1"
 

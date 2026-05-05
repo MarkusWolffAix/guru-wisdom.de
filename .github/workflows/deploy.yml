@@ -28,7 +28,7 @@ jobs:
 
   # --- STAGE 1: DEPLOY TO TEST SERVER ---
   deploy-test:
-    name: Deploy to Staging (Test Server)
+    name: Deploy to Staging Nuenberg (Test Server)
     needs: [run-tests] # WICHTIG: Wartet auf erfolgreiche Tests!
     runs-on: ubuntu-latest
     steps:
@@ -55,7 +55,7 @@ jobs:
 
   # --- STAGE 2: DEPLOY TO PRODUCTION ---
   deploy-prod:
-    name: Deploy to Production
+    name: Deploy to Production Nuernberg
     needs: [deploy-test]
     runs-on: ubuntu-latest
     
@@ -65,10 +65,10 @@ jobs:
       url: https://guru-wisdom.de
 
     steps:
-      - name: Remote SSH Deployment (Production)
+      - name: Remote SSH Deployment Nürnberg (Production)
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.PROD_SERVER_IP }}
+          host: ${{ secrets.PROD_NBG1_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
@@ -88,7 +88,7 @@ jobs:
 
   # --- STAGE 3: DEPLOY TO REPLICATION SERVER ---
   deploy-replica:
-    name: Deploy to Replication
+    name: Deploy to Producton Helsinki
     needs: [deploy-test]
     runs-on: ubuntu-latest
     
@@ -100,7 +100,7 @@ jobs:
       - name: Remote SSH Deployment (Replication)
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.REPLICA_SERVER_IP }}
+          host: ${{ secrets.PROD_HEL1_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           proxy_host: ${{ secrets.JUMP_SERVER_IP }}
