@@ -3,7 +3,7 @@ id: "LovingHeartAwakening"
 title: "Die Taufe am Jordan"
 subtitle: "Das Erwachen des liebenden Herzens"
 description: "Eine tiefe Betrachtung der Taufe Jesu als radikale Rückbesinnung auf die lebendige Essenz des Judentums und die universelle Kraft der Liebe."
-date: 2026-05-06
+date: 2026-05-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Liebe", "Teschuwa", "JordanTaufe", "Mystik", "JohannesDerTäufer"]
 categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
@@ -25,67 +25,38 @@ In genau diesem Bewusstsein liegt das Geheimnis des "Reiches Gottes". Es ist kei
 ***
 **Lyrics: Leuchtende Wahrheit**
 
-The reeds are standing tall in the silver light
-(Das Schilf steht hoch im silbernen Licht)
-Tall grasses leaning in to the quiet of the night
-(Hohe Gräser neigen sich in die Stille der Nacht)
-He’s holding the shell, pouring the river on my head
-(Er hält die Muschel, gießt den Fluss über meinen Kopf)
-Letting the old world die instead
-(Lässt stattdessen die alte Welt sterben)
-Moving away from the ritual frame
-(Bewege mich weg vom rituellen Rahmen)
-Leaving the structures, shedding the name
-(Verlasse die Strukturen, streife den Namen ab)
+Das Schilf steht hoch im silbernen Licht,
+Hohe Gräser neigen sich in die Stille der Nacht.
+Er hält die Muschel, gießt den Fluss über meinen Kopf,
+Lässt stattdessen die alte Welt sterben.
+Bewege mich weg vom rituellen Rahmen,
+Verlasse die Strukturen, streife den Namen ab.
 
-The clouds part wide for a soft white bird
-(Die Wolken teilen sich weit für einen sanften weißen Vogel)
-A language that doesn’t need a word
-(Eine Sprache, die kein Wort braucht)
-It’s the leuchtende Wahrheit, the luminous truth
-(Es ist die leuchtende Wahrheit, die leuchtende Wahrheit)
-It’s the leuchtende Wahrheit, the core of my youth
-(Es ist die leuchtende Wahrheit, der Kern meiner Jugend)
-The loving heart is the only way
-(Das liebende Herz ist der einzige Weg)
-To break the blue of the fading day
-(Um das Blau des schwindenden Tages zu durchbrechen)
-Authentic, fluid, grace like a flood
-(Authentisch, fließend, Gnade wie eine Flut)
-Written in love, not in blood
-(Geschrieben in Liebe, nicht in Blut)
+Die Wolken teilen sich weit für einen sanften weißen Vogel,
+Eine Sprache, die kein Wort braucht.
+Es ist die leuchtende Wahrheit, the luminous truth,
+Es ist die leuchtende Wahrheit, der Kern meiner Jugend.
 
-Calm waters mirror the fading blue
-(Ruhige Wasser spiegeln das schwindende Blau)
-Little boats resting, starting anew
-(Kleine Boote ruhen, fangen neu an)
-I don’t need the laws or the stone-cold walls
-(Ich brauche die Gesetze oder die steinkalten Mauern nicht)
-I’m listening now where the spirit calls
-(Ich höre jetzt dorthin, wo der Geist ruft)
-A gentle texture in the silent space
-(Eine sanfte Textur im stillen Raum)
-Finding the core, the saving grace
-(Den Kern finden, die rettende Gnade)
+Das liebende Herz ist der einzige Weg,
+Um das Blau des schwindenden Tages zu durchbrechen.
+Authentisch, fließend, Gnade wie eine Flut,
+Geschrieben in Liebe, nicht in Blut.
 
-The clouds part wide for a soft white bird
-(Die Wolken teilen sich weit für einen sanften weißen Vogel)
-A language that doesn’t need a word
-(Eine Sprache, die kein Wort braucht)
-It’s the leuchtende Wahrheit, the luminous truth
-(Es ist die leuchtende Wahrheit, die leuchtende Wahrheit)
-It’s the leuchtende Wahrheit, the core of my youth
-(Es ist die leuchtende Wahrheit, der Kern meiner Jugend)
-The loving heart is the only way
-(Das liebende Herz ist der einzige Weg)
-To break the blue of the fading day
-(Um das Blau des schwindenden Tages zu durchbrechen)
-Authentic, fluid, grace like a flood
-(Authentisch, fließend, Gnade wie eine Flut)
-Written in love, not in blood
-(Geschrieben in Liebe, nicht in Blut)
+Ruhige Wasser spiegeln das schwindende Blau,
+Kleine Boote ruhen, fangen neu an.
+Ich brauche die Gesetze oder die steinkalten Mauern nicht,
+Ich höre jetzt dorthin, wo der Geist ruft.
+Eine sanfte Textur im stillen Raum,
+Den Kern finden, die rettende Gnade.
 
-Written in love, not in blood.
-(Geschrieben in Liebe, nicht in Blut.)
+Die Wolken teilen sich weit für einen sanften weißen Vogel,
+Eine Sprache, die kein Wort braucht.
+Es ist die leuchtende Wahrheit, the luminous truth,
+Es ist die leuchtende Wahrheit, der Kern meiner Jugend.
+Das liebende Herz ist der einzige Weg,
+Um das Blau des schwindenden Tages zu durchbrechen.
+Authentisch, fließend, Gnade wie eine Flut,
+Geschrieben in Liebe, nicht in Blut.
+
+Geschrieben in Liebe, nicht in Blut.
 Leuchtende Wahrheit...
-(Leuchtende Wahrheit...)
