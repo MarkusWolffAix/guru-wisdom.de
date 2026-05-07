@@ -23,7 +23,7 @@ Die Taufe Jesu war somit eine radikale Bejahung seiner Wurzeln – allerdings ni
 In genau diesem Bewusstsein liegt das Geheimnis des "Reiches Gottes". Es ist kein ferner, geografischer Ort und kein vertröstendes Versprechen für ein Jenseits nach dem Tod, sondern ein Zustand des Seins, der im Hier und Jetzt entsteht. Es manifestiert sich in dem Moment, in dem der Mensch den mutigen Wechsel vollzieht: weg vom rituellen "Muss" und der geistigen Buchhaltung hin zum "Sein aus Verbundenheit" – getragen von einem Herzen, das erwacht ist und liebt.
 
 ***
-**Lyrics: Gnade wie eine Flut**
+**Lyrics: Leuchtende Wahrheit**
 
 Das Schilf steht hoch im silbernen Licht,
 Hohe Gräser neigen sich in die Stille der Nacht.
