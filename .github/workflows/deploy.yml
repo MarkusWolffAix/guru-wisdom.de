@@ -28,135 +28,93 @@ jobs:
 
   # --- STAGE 1: DEPLOY TO TEST SERVER ---
   deploy-test:
-    name: Deploy to Staging Nuernberg (Test Server)
-    needs: [run-tests]
+    name: Deploy to Staging Nuenberg (Test Server)
+    needs: [run-tests] # WICHTIG: Wartet auf erfolgreiche Tests!
     runs-on: ubuntu-latest
     steps:
-      - name: Remote SSH Deployment (Primary Jump Server)
-        id: deploy_test_primary
-        continue-on-error: true
+      - name: Remote SSH Deployment (Staging) via Jump Server
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.TEST_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_PRIMARY_IP }}
+          proxy_host: ${{ secrets.JUMP_SERVER_IP }}
           proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: &deploy_script_test |
-            set -e
+          script: |
+            set -e # Stops execution immediately if any command fails
             cd /opt/guru-wisdom.de
+            
             git pull origin main
+            
             echo "APP_ENV=test" > .env
             chmod 600 .env
             docker compose up -d --build app
             docker compose exec app rm -rf runtime/cache/*
             docker image prune -f
 
-      - name: Remote SSH Deployment (Fallback Jump Server)
-        id: deploy_test_fallback
-        if: steps.deploy_test_primary.outcome == 'failure'
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.TEST_SERVER_IP }}
-          username: git
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_SECONDARY_IP }}
-          proxy_username: git
-          proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: *deploy_script_test
-
-      - name: Check Deployment Status
-        if: steps.deploy_test_primary.outcome == 'failure' && steps.deploy_test_fallback.outcome == 'failure'
-        run: |
-          echo "Deployment failed via both primary and fallback jump servers."
-          exit 1
-
-  # --- STAGE 2: DEPLOY TO PRODUCTION (NUERNBERG) ---
+  # --- STAGE 2: DEPLOY TO PRODUCTION ---
   deploy-prod:
     name: Deploy to Production Nuernberg
     needs: [deploy-test]
     runs-on: ubuntu-latest
+    
+    # Enable Manual Approval Gate
     environment:
       name: production
       url: https://guru-wisdom.de
+
     steps:
-      - name: Remote SSH Deployment (Primary Jump Server)
-        id: deploy_prod_primary
-        continue-on-error: true
+      - name: Remote SSH Deployment Nürnberg (Production)
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.PROD_NBG1_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_PRIMARY_IP }}
+          proxy_host: ${{ secrets.JUMP_SERVER_IP }}
           proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: &deploy_script_prod |
+          script: |
             set -e
             cd /opt/guru-wisdom.de
+            
             git pull origin main
+            
             echo "APP_ENV=prod" > .env
             chmod 600 .env
             docker compose up -d --build app
             docker compose exec app rm -rf runtime/cache/*
             docker image prune -f
 
-      - name: Remote SSH Deployment (Fallback Jump Server)
-        id: deploy_prod_fallback
-        if: steps.deploy_prod_primary.outcome == 'failure'
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.PROD_NBG1_SERVER_IP }}
-          username: git
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_SECONDARY_IP }}
-          proxy_username: git
-          proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: *deploy_script_prod
-
-      - name: Check Deployment Status
-        if: steps.deploy_prod_primary.outcome == 'failure' && steps.deploy_prod_fallback.outcome == 'failure'
-        run: |
-          echo "Deployment failed via both primary and fallback jump servers."
-          exit 1
-
-  # --- STAGE 3: DEPLOY TO REPLICATION SERVER (HELSINKI) ---
+  # --- STAGE 3: DEPLOY TO REPLICATION SERVER ---
   deploy-replica:
-    name: Deploy to Production Helsinki
+    name: Deploy to Producton Helsinki
     needs: [deploy-test]
     runs-on: ubuntu-latest
+    
+    # Uses the same environment gate, so one click approves both Production and Replication
     environment:
       name: production
+
     steps:
-      - name: Remote SSH Deployment (Primary Jump Server)
-        id: deploy_rep_primary
-        continue-on-error: true
+      - name: Remote SSH Deployment (Replication)
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.PROD_HEL1_SERVER_IP }}
           username: git
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_PRIMARY_IP }}
+          proxy_host: ${{ secrets.JUMP_SERVER_IP }}
           proxy_username: git
           proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: *deploy_script_prod
-
-      - name: Remote SSH Deployment (Fallback Jump Server)
-        id: deploy_rep_fallback
-        if: steps.deploy_rep_primary.outcome == 'failure'
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.PROD_HEL1_SERVER_IP }}
-          username: git
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          proxy_host: ${{ secrets.JUMP_SERVER_SECONDARY_IP }}
-          proxy_username: git
-          proxy_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: *deploy_script_prod
-
-      - name: Check Deployment Status
-        if: steps.deploy_rep_primary.outcome == 'failure' && steps.deploy_rep_fallback.outcome == 'failure'
-        run: |
-          echo "Deployment failed via both primary and fallback jump servers."
-          exit 1
+          script: |
+            set -e
+            cd /opt/guru-wisdom.de
+            
+            git pull origin main
+            
+            echo "APP_ENV=prod" > .env
+            chmod 600 .env
+            
+            docker compose up -d --build app
+            docker compose exec app rm -rf runtime/cache/*
+            docker image prune -f
