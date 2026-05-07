@@ -5,19 +5,27 @@
 # ==========================================
 HETZNER_TOKEN=$(security find-generic-password -a "markuswolff" -s "guruwisdom_HETZNER_API_TOKEN_RW" -w | tr -d '\n')
 
+# --- TEST ENVIRONMENT (Auskommentiert) ---
+# ENV="test" 
+# SERVER_NAME="test20"
+# ALIAS_IP_1="10.0.0.20"
+# ALIAS_IP_2="10.0.1.20"
+# LOCATION="fsn1"
+# USER="git"
+
 # --- PROD ENVIRONMENT ---
-SERVER_NAME="proxy110"
-ALIAS_IP_1="10.0.0.110"
-ALIAS_IP_2="10.0.1.110"
-ALIAS_IP_3="10.0.0.254"
+ENV="prod"
+SERVER_NAME="prod30"
+ALIAS_IP_1="10.0.0.30"
+ALIAS_IP_2="10.0.1.30"
 USER="git"
-LOCATION="hel1"
+LOCATION="nbg1"
 
 # --- GLOBAL SETTINGS ---
 NETWORK_ID="12140000"
 PLACEMENT_GROUP_NAME="guru-wisdom.de"
 PLACEMENT_GROUP_ID="1572343" 
-SERVER_TYPE="cx23"
+SERVER_TYPE="cx33"
 IMAGE="debian-13" 
 
 # ==========================================
@@ -28,9 +36,6 @@ CLOUD_INIT=$(cat << EOF
 timezone: Europe/Berlin
 
 write_files:
-  - path: /etc/sysctl.d/99-gateway-forwarding.conf
-    content: |
-      net.ipv4.ip_forward=1
   - path: /etc/network/interfaces.d/60-alias-ip.cfg
     permissions: '0644'
     owner: root:root
@@ -44,12 +49,7 @@ write_files:
       iface enp7s0:1 inet static
           address $ALIAS_IP_2
           netmask 255.255.255.255
-
-      auto enp7s0:2
-      iface enp7s0:1 inet static
-          address $ALIAS_IP_3
-          netmask 255.255.255.255
-
+          
   - path: /etc/profile.d/99-custom-aliases.sh
     permissions: '0644'
     owner: root:root
@@ -73,13 +73,21 @@ users:
  
 package_update: true
 package_upgrade: true
-packages: [ca-certificates, curl, gnupg, sudo, git, lynx, nginx, vim, pass, iptables-persistent]
+packages: [ca-certificates, curl, gnupg, sudo, git, lynx]
 
 runcmd:
+  # --- Netzwerk & Cron ---
+  - (crontab -l 2>/dev/null; echo "@reboot sleep 5 && /sbin/ip route add default via 10.0.0.1") | crontab -
+  - mkdir -p /etc/resolvconf/resolv.conf.d
+  - echo "nameserver 1.1.1.1" >> /etc/resolvconf/resolv.conf.d/head
+  - echo "nameserver 8.8.8.8" >> /etc/resolvconf/resolv.conf.d/head  
+  - resolvconf -u || true  
+  - ip route del default || true
+  - ip route add default via 10.0.0.1 dev enp7s0
+  - ip addr add $ALIAS_IP_1/32 dev enp7s0 || true
+  - ip addr add $ALIAS_IP_2/32 dev enp7s0 || true
+
   # --- System Updates & Tools ---
-  - sysctl --system
-  - sysctl -w net.ipv4.ip_forward=1 && iptables -t nat -A POSTROUTING -s 10.0.0.0/16 -o eth0 -j MASQUERADE
-  - netfilter-persistent save
   - apt update
   - DEBIAN_FRONTEND=noninteractive apt upgrade -y
   - apt install -y ca-certificates curl gnupg lsb-release sudo git lynx
@@ -100,9 +108,28 @@ runcmd:
   - apt update
   - apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-
+  # --- App Setup & Deployment ---
+  - mkdir -p /opt/guru-wisdom.de
+  - chown $USER:www-data /opt/guru-wisdom.de
+  - runuser -u $USER -- git clone https://github.com/MarkusWolffAix/guru-wisdom.de.git /opt/guru-wisdom.de
   
+  # Alles ab hier läuft als zusammenhängendes Skript in dem Ordner ab
+  - |
+      cd /opt/guru-wisdom.de
 
+      # .env Datei anlegen
+      cat <<ENV_EOF > .env
+      APP_ENV=$ENV
+      ENV_EOF
+      
+      # Rechte für die .env an den User übergeben
+      chown $USER:www-data .env
+
+      # sed als User ausführen
+      runuser -u $USER -- bash -c "sed 's|SERVER_NAME=.*|SERVER_NAME=http://${ALIAS_IP_2}|' docker-compose.prod.yml > docker-compose.yml"
+
+      # Docker Compose als User starten
+      runuser -u $USER -- bash -c "docker compose -f docker-compose.yml up -d"
 
 EOF
 )
@@ -133,7 +160,7 @@ jq -n -c \
       "managed_by": "bash-script"
     },
     public_net: {
-      enable_ipv4: true,
+      enable_ipv4: false,
       enable_ipv6: false
     }, 
     user_data: $ud
@@ -173,7 +200,7 @@ curl -s -X POST "https://api.hetzner.cloud/v1/servers/$SERVER_ID/actions/change_
      -H "Content-Type: application/json" \
      -d "{
            \"network\": $NETWORK_ID,
-           \"alias_ips\": [\"$ALIAS_IP_1\", \"$ALIAS_IP_2\",  \"$ALIAS_IP_3\"]
+           \"alias_ips\": [\"$ALIAS_IP_1\", \"$ALIAS_IP_2\"]
          }" | jq -r '.action.status'
 
 echo "Finish! The server is provisioning in the background. It will take 1-3 minutes until Docker/Yii3 is fully running."
