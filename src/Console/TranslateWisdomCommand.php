@@ -2,122 +2,118 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace App\Console;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Yaml\Yaml;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 
 final class TranslateWisdomCommand extends Command
 {
-    protected static $defaultName = 'wisdom/translate-md';
-    protected static $defaultDescription = 'Übersetzt Markdown-Dateien mit YAML-Frontmatter via DeepL';
+    protected static $defaultName = 'wisdom/translate';
+    protected static $defaultDescription = 'Übersetzt deutsche Markdown-Weisheiten ins Englische via Google Cloud';
 
-    private string $deeplApiKey = 'DEIN_DEEPL_API_KEY_HIER'; 
+    private string $sourceDir;
+    private string $targetDir;
+
+    public function __construct()
+    {
+        parent::__construct();
+        // Pfade basierend auf deiner Struktur in public/wisdoms
+        $this->sourceDir = dirname(__DIR__, 2) . '/public/wisdoms';
+        $this->targetDir = $this->sourceDir . '/en';
+    }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
         
-        // Beispiel: Pfad zu deiner deutschen Datei und wo die englische hin soll
-        $fileDe = __DIR__ . '/../../data/de/AbrahamLights.md';
-        $fileEn = __DIR__ . '/../../data/en/AbrahamLights.md';
+        // Key sicher aus der Umgebungsvariable laden
+        $apiKey = $_ENV['GOOGLE_TRANSLATE_API_KEY'] ?? getenv('GOOGLE_TRANSLATE_API_KEY');
 
-        if (!file_exists($fileDe)) {
-            $io->error("Datei nicht gefunden: {$fileDe}");
+        if (empty($apiKey)) {
+            $io->error('API-Key nicht gefunden! Stelle sicher, dass GOOGLE_TRANSLATE_API_KEY in der .env Datei steht.');
             return Command::FAILURE;
         }
 
-        $io->title('Starte Übersetzung der Markdown-Datei...');
+        $files = glob($this->sourceDir . '/*.md');
+        $io->title('Starte Übersetzung von ' . count($files) . ' Dateien');
 
-        // 1. Datei einlesen und in Frontmatter (Metadaten) und Body (Text) aufteilen
-        $content = file_get_contents($fileDe);
-        
-        // Nutzt einen Regulären Ausdruck, um den Block zwischen --- und --- zu finden
-        if (!preg_match('/^\s*---\n(.*?)\n---\n(.*)/s', $content, $matches)) {
-            $io->error("Ungültiges Dateiformat. YAML Frontmatter (---) fehlt.");
-            return Command::FAILURE;
+        if (!is_dir($this->targetDir)) {
+            mkdir($this->targetDir, 0775, true);
         }
 
-        $yamlBlock = $matches[1];
-        $markdownBody = $matches[2];
+        $client = new Client();
+        $io->progressStart(count($files));
 
-        // 2. YAML in ein PHP-Array umwandeln
-        $metaData = Yaml::parse($yamlBlock);
+        foreach ($files as $file) {
+            $filename = basename($file);
+            $targetFile = $this->targetDir . '/' . $filename;
 
-        // 3. Metadaten übersetzen (nur die relevanten Felder!)
-        $io->text('Übersetze Metadaten...');
-        if (isset($metaData['title'])) {
-            $metaData['title'] = $this->translateViaDeepL($metaData['title']);
-        }
-        if (isset($metaData['subtitle'])) {
-            $metaData['subtitle'] = $this->translateViaDeepL($metaData['subtitle']);
-        }
-        if (isset($metaData['description'])) {
-            $metaData['description'] = $this->translateViaDeepL($metaData['description']);
-        }
-        // Optional: Tags und Kategorien übersetzen, falls gewünscht.
+            // Überspringen, wenn Datei bereits existiert
+            if (file_exists($targetFile)) {
+                $io->progressAdvance();
+                continue;
+            }
 
-        // 4. Den eigentlichen Markdown-Text übersetzen
-        $io->text('Übersetze Haupttext...');
-        $translatedBody = $this->translateViaDeepL($markdownBody);
+            $content = file_get_contents($file);
+            
+            // 1. Zerlegen in Frontmatter und Body
+            if (preg_match('/^---\n(.*?)\n---\n(.*)/s', $content, $matches)) {
+                $yaml = Yaml::parse($matches[1]);
+                $body = $matches[2];
 
-        if (!$translatedBody) {
-            $io->error('Fehler bei der Übersetzung des Haupttextes.');
-            return Command::FAILURE;
-        }
+                // 2. Metadaten übersetzen
+                $yaml['title'] = $this->translate($client, $apiKey, $yaml['title'] ?? '');
+                $yaml['subtitle'] = $this->translate($client, $apiKey, $yaml['subtitle'] ?? '');
+                $yaml['description'] = $this->translate($client, $apiKey, $yaml['description'] ?? '');
 
-        // 5. Alles wieder zusammenbauen
-        // Yaml::dump wandelt das PHP-Array wieder in einen YAML-String um
-        $newYamlBlock = Yaml::dump($metaData);
-        $newContent = "---\n" . $newYamlBlock . "---\n" . $translatedBody;
+                // 3. Body übersetzen
+                $translatedBody = $this->translate($client, $apiKey, $body);
 
-        // 6. Neue englische Datei speichern
-        // Erstelle den Zielordner, falls er nicht existiert
-        $dir = dirname($fileEn);
-        if (!is_dir($dir)) {
-            mkdir($dir, 0777, true);
+                // 4. Zusammenbauen und Speichern
+                $newContent = "---\n" . Yaml::dump($yaml, 2, 4, Yaml::DUMP_MULTI_LINE_LITERAL_BLOCK) . "---\n" . $translatedBody;
+                file_put_contents($targetFile, $newContent);
+            }
+
+            $io->progressAdvance();
         }
 
-        file_put_contents($fileEn, $newContent);
-
-        $io->success("Datei erfolgreich übersetzt und gespeichert unter: {$fileEn}");
+        $io->progressFinish();
+        $io->success('Übersetzung abgeschlossen. Die Dateien liegen in ' . $this->targetDir);
 
         return Command::SUCCESS;
     }
 
-    private function translateViaDeepL(string $text): ?string
+    private function translate(Client $client, string $key, string $text): string
     {
-        $url = 'https://api-free.deepl.com/v2/translate';
-        
-        $data = [
-            'text' => [$text],
-            'target_lang' => 'EN-US',
-            'source_lang' => 'DE',
-            // Wichtig für Markdown: DeepL soll die Formatierung (#, *, etc.) so gut es geht erhalten
-            'preserve_formatting' => '1' 
-        ];
-
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
-        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-            'Authorization: DeepL-Auth-Key ' . $this->deeplApiKey,
-            'Content-Type: application/json'
-        ]);
-
-        $response = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        curl_close($ch);
-
-        if ($httpCode !== 200 || !$response) {
-            return null;
+        if (empty(trim($text))) {
+            return $text;
         }
 
-        $result = json_decode($response, true);
-        return $result['translations'][0]['text'] ?? null;
+        try {
+            $response = $client->post('https://translation.googleapis.com/language/translate/v2', [
+                'query' => ['key' => $key],
+                'json' => [
+                    'q' => $text,
+                    'source' => 'de',
+                    'target' => 'en',
+                    'format' => 'text'
+                ]
+            ]);
+
+            $data = json_decode($response->getBody()->getContents(), true);
+            $translated = $data['data']['translations'][0]['translatedText'] ?? $text;
+            
+            // Google escaped manchmal Zeichen, die wir im Markdown im Klartext wollen
+            return htmlspecialchars_decode($translated, ENT_QUOTES);
+            
+        } catch (GuzzleException $e) {
+            return "[Error: " . $e->getMessage() . "] " . $text;
+        }
     }
 }
