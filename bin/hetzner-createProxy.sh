@@ -6,12 +6,12 @@
 HETZNER_TOKEN=$(security find-generic-password -a "markuswolff" -s "guruwisdom_HETZNER_API_TOKEN_RW" -w | tr -d '\n')
 
 # --- PROD ENVIRONMENT ---
-SERVER_NAME="proxy110"
-ALIAS_IP_1="10.0.0.110"
-ALIAS_IP_2="10.0.1.110"
-ALIAS_IP_3="10.0.0.254"
+SERVER_NAME="proxy10"
+ALIAS_IP_1="10.0.0.10"
+ALIAS_IP_2="10.0.1.10"
+ALIAS_IP_3="10.0.0.253"
 USER="git"
-LOCATION="hel1"
+LOCATION="nbg1"
 
 # --- GLOBAL SETTINGS ---
 NETWORK_ID="12140000"
