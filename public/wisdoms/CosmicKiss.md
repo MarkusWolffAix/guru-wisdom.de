@@ -1,7 +1,7 @@
 ---
 id: "CosmicKiss"
 title: "Der kosmische Kuss"
-subtitle: "Die Kunst, die Lebe und das Leben zu verschönern und die Demut der Flamme"
+subtitle: "Die Kunst, die Liebe und das Leben zu verschönern und die Demut der Flamme"
 description: "Eine poetische Betrachtung über das ewige Spiel der Elemente, das verblassende Gedächtnis des Feuers und unsere Aufgabe, dieses Spiel stetig zu verschönern."
 date: 2026-05-08
 author: "Markus Wolff guru-wisdom.de"
@@ -10,7 +10,7 @@ categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 
 # Der kosmische Kuss
-## Die Kunst, die Lebe und das Leben zu verschönern und die Demut der Flamme
+## Die Kunst, die Liebe und das Leben zu verschönern und die Demut der Flamme
 
 Am Anfang war der Atem. Ein sanfter Hauch, reine Luft, die sich im Raum bewegte, sich verdichtete und sich schließlich entzündete – so wurde aus der Luft das Feuer geboren. Doch das Feuer, so hell und wärmend es auch brannte, spürte in seinem Lodern eine unendliche Sehnsucht. Es brauchte Liebe. Und genau hier, in diesem flackernden Verlangen, beginnt die eigentliche Geschichte der Liebe.
 
