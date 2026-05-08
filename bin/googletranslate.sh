@@ -13,7 +13,6 @@ if [[ -f "$ENV_FILE" ]]; then
 fi
 
 API_KEY="${GOOGLE_TRANSLATE_API_KEY}"
-
 if [[ -z "$API_KEY" ]]; then
     echo "❌ Error: GOOGLE_TRANSLATE_API_KEY not found!"
     echo "Please ensure the .env file exists and contains the key."
@@ -21,7 +20,7 @@ if [[ -z "$API_KEY" ]]; then
 fi
 
 # Define directory paths
-SOURCE_DIR="$(dirname $0)/../public/wisdoms"
+SOURCE_DIR="/Users/markuswolff/guru-wisdom.de/public/wisdoms"
 TARGET_DIR="${SOURCE_DIR}/en"
 
 mkdir -p "$TARGET_DIR"
