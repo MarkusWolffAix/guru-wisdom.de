@@ -8,14 +8,13 @@ echo "Starting translation script..."
 # 1. Load the API Key from the .env file (located in the project root)
 ENV_FILE="/Users/markuswolff/guru-wisdom.de//.env"
 if [[ -f "$ENV_FILE" ]]; then
-    # Export variables, ignoring commented lines
     export $(grep -v '^#' "$ENV_FILE" | xargs)
 fi
 
 API_KEY="${GOOGLE_TRANSLATE_API_KEY}"
+
 if [[ -z "$API_KEY" ]]; then
     echo "❌ Error: GOOGLE_TRANSLATE_API_KEY not found!"
-    echo "Please ensure the .env file exists and contains the key."
     exit 1
 fi
 
@@ -29,35 +28,33 @@ mkdir -p "$TARGET_DIR"
 translate_text() {
     local text="$1"
     
-    # Do nothing if the string is empty
     if [[ -z "$text" ]]; then
-        echo ""
         return
     fi
 
-    # Safely build the JSON payload using jq (prevents issues with quotes in the text)
-    local json_payload=$(jq -n --arg q "$text" '{q: [$q], source: "de", target: "en", format: "text"}')
+    # [FIX 1] Use jq -Rs to safely read massive text blocks from stdin
+    local json_payload=$(printf "%s" "$text" | jq -Rs '{q: [.], source: "de", target: "en", format: "text"}')
 
-    # Send POST request via cURL
-    local response=$(curl -s -X POST \
+    # [FIX 2] Pipe the payload into curl using -d @- to preserve all exact bytes and formatting
+    local response=$(printf "%s" "$json_payload" | curl -s -X POST \
         -H "Content-Type: application/json" \
-        -d "$json_payload" \
+        -d @- \
         "https://translation.googleapis.com/language/translate/v2?key=${API_KEY}")
 
-    # Error handling: Check if Google returned an error (e.g., invalid key)
-    local error_msg=$(echo "$response" | jq -r '.error.message // empty')
+    # [FIX 3] Use printf "%s" instead of echo to prevent ZSH from expanding \n into real newlines
+    local error_msg=$(printf "%s" "$response" | jq -r '.error.message // empty')
     if [[ -n "$error_msg" ]]; then
-        echo "API Error: $error_msg" >&2
+        printf "API Error: %s\n" "$error_msg" >&2
         return 1
     fi
 
-    # Extract the translated text from the JSON response
-    local translated=$(echo "$response" | jq -r '.data.translations[0].translatedText // empty')
+    # Extract the translated text safely
+    local translated=$(printf "%s" "$response" | jq -r '.data.translations[0].translatedText // empty')
 
-    # Google sometimes returns HTML entities (like &#39; for '), let's decode the common ones:
-    translated=$(echo "$translated" | sed "s/&#39;/'/g; s/&quot;/\"/g; s/&amp;/\&/g; s/&lt;/</g; s/&gt;/>/g")
+    # Decode HTML entities injected by Google
+    translated=$(printf "%s" "$translated" | sed "s/&#39;/'/g; s/&quot;/\"/g; s/&amp;/\&/g; s/&lt;/</g; s/&gt;/>/g")
 
-    echo "$translated"
+    printf "%s" "$translated"
 }
 
 # 3. Process all .md files
@@ -65,7 +62,6 @@ for file in "$SOURCE_DIR"/*.md; do
     filename=$(basename "$file")
     target_file="$TARGET_DIR/$filename"
 
-    # Skip files that have already been translated
     if [[ -f "$target_file" ]]; then
         echo "⏭️  Skipping $filename (already exists)"
         continue
@@ -73,36 +69,32 @@ for file in "$SOURCE_DIR"/*.md; do
 
     echo "⏳ Translating $filename..."
 
-    # Split file into Frontmatter (YAML) and Body (Markdown) using awk
+    # Split file into Frontmatter (YAML) and Body (Markdown)
     yaml_content=$(awk 'BEGIN {p=0} /^---$/ {p++; if(p==2) exit; next} p==1 {print}' "$file")
     markdown_body=$(awk 'BEGIN {p=0} /^---$/ {p++; next} p>=2 {print}' "$file")
 
-    # 4. Process YAML Frontmatter line by line to translate specific keys
-    new_yaml=""
-    echo "$yaml_content" | while IFS= read -r line; do
-        # Use ZSH Regex to match title:, subtitle:, or description:
+    # 4. Safely translate specific YAML keys without string concatenation bugs
+    new_yaml=$(printf "%s\n" "$yaml_content" | while IFS= read -r line; do
         if [[ "$line" =~ ^(title|subtitle|description):\ *(.*)$ ]]; then
             key=$match[1]
-            # Remove leading/trailing quotes if present
-            val=$(echo "$match[2]" | sed 's/^"//;s/"$//')
+            val=$(printf "%s" "$match[2]" | sed 's/^"//;s/"$//')
             
             translated_val=$(translate_text "$val")
-            new_yaml+="${key}: \"${translated_val}\"\n"
+            printf "%s: \"%s\"\n" "$key" "$translated_val"
         else
-            # Keep other lines (like id, tags, date) untouched
-            new_yaml+="${line}\n"
+            printf "%s\n" "$line"
         fi
-    done
+    done)
 
     # 5. Translate the main Markdown body
     translated_body=$(translate_text "$markdown_body")
 
-    # 6. Reassemble the file and save it
+    # 6. Reassemble the file using printf for strict formatting control
     {
         echo "---"
-        echo -e -n "$new_yaml"
+        printf "%s\n" "$new_yaml"
         echo "---"
-        echo "$translated_body"
+        printf "%s\n" "$translated_body"
     } > "$target_file"
 
     echo "✅ Done: $filename"
