@@ -55,3 +55,5 @@ Feuer und Wasser, tanzend im Licht,
 Die Erde wächst aus diesem Kuss
 Kein starres Rezept, kein Ziel, kein Gewicht,
 Nur der Tanz, der ewig beginnt.
+
+[image:CosmicKiss2|Zushause]
