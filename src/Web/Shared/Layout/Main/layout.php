@@ -23,9 +23,31 @@ use Yiisoft\Bootstrap5\NavBar;
 $assetManager->register(MainAsset::class);
 $lang = $translator->getLocale(); 
 
+// 1. Dynamische Basis-URL für das Asset Bundle ermitteln
+$mainAssetBundle = $assetManager->getBundle(MainAsset::class);
+$baseUrl = $mainAssetBundle ? $mainAssetBundle->baseUrl : '';
+
+// 2. Schriftarten vorab laden (Preload) - Verhindert "Render-Blocking"
+if ($baseUrl !== '') {
+    $this->registerLinkTag([
+        'rel' => 'preload',
+        'href' => $baseUrl . '/fonts/caveat-v7-latin_cyrillic-regular.woff2',
+        'as' => 'font',
+        'type' => 'font/woff2',
+        'crossorigin' => 'anonymous'
+    ]);
+
+    $this->registerLinkTag([
+        'rel' => 'preload',
+        'href' => $baseUrl . '/fonts/Lora-Regular.woff2',
+        'as' => 'font',
+        'type' => 'font/woff2',
+        'crossorigin' => 'anonymous'
+    ]);
+}
+
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());
-
 
 $this->registerMeta(['charset' => 'UTF-8'], 'charset');
 $this->registerMeta(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no'], 'viewport');
@@ -33,9 +55,7 @@ $this->registerMeta(['name' => 'viewport', 'content' => 'width=device-width, ini
 $this->registerMeta(['name' => 'author', 'content' => 'Markus Wolff'], 'author');
 $this->registerMeta(['name' => 'robots', 'content' => 'index, follow'], 'robots');
 
-$this->registerLink(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
-
-
+$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
 
 $this->beginPage();
 ?>
@@ -53,7 +73,10 @@ $this->beginPage();
     
     <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
         
-        <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;">
+        <picture>
+            <source srcset="/images/logo/GuruWisdom.webp" type="image/webp">
+            <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" width="120" height="40">
+        </picture>
         
     </a>
 </nav>
@@ -74,13 +97,17 @@ $this->beginPage();
         <div class="container text-center">
         <div class="mb-3">
            
-            <a href="https://www.instagram.com/guru2wisdom" class="me-3" ><img src="/images/icons/instagram.png" alt="Instagram" width="20"></a>
-            <a href="https://www.facebook.com/profile.php?id=61577589013906" class="me-3"><img src="/images/icons/facebook.png" alt="Facebook" width="20"></a>
-            <a href="https://www.youtube.com/@guru2wisdom" class="me-3"><img src="/images/icons/youtube.png" alt="Youtube" width="20"></a>
+            <a href="https://www.instagram.com/guru2wisdom" class="me-3" >
+                <img src="/images/icons/instagram.png" alt="Instagram" width="20" height="20" loading="lazy">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61577589013906" class="me-3">
+                <img src="/images/icons/facebook.png" alt="Facebook" width="20" height="20" loading="lazy">
+            </a>
+            <a href="https://www.youtube.com/@guru2wisdom" class="me-3">
+                <img src="/images/icons/youtube.png" alt="Youtube" width="20" height="20" loading="lazy">
+            </a>
         </div>
         
-
-
         <div class="small text-muted mb-2">
             <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
                 <?= $translator->translate('menu.contact', [], 'app') ?>
