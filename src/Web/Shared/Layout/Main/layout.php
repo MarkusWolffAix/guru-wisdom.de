@@ -27,23 +27,26 @@ $lang = $translator->getLocale();
 $mainAssetBundle = $assetManager->getBundle(MainAsset::class);
 $baseUrl = $mainAssetBundle ? $mainAssetBundle->baseUrl : '';
 
+
 // 2. Schriftarten vorab laden (Preload) - Verhindert "Render-Blocking"
 if ($baseUrl !== '') {
-    $this->registerLinkTag([
-        'rel' => 'preload',
-        'href' => $baseUrl . '/fonts/caveat-v7-latin_cyrillic-regular.woff2',
-        'as' => 'font',
-        'type' => 'font/woff2',
-        'crossorigin' => 'anonymous'
-    ]);
+    $this->registerLinkTag(
+        Html::link($baseUrl . '/fonts/caveat-v7-latin_cyrillic-regular.woff2', [
+            'rel' => 'preload',
+            'as' => 'font',
+            'type' => 'font/woff2',
+            'crossorigin' => 'anonymous'
+        ])
+    );
 
-    $this->registerLinkTag([
-        'rel' => 'preload',
-        'href' => $baseUrl . '/fonts/Lora-Regular.woff2',
-        'as' => 'font',
-        'type' => 'font/woff2',
-        'crossorigin' => 'anonymous'
-    ]);
+    $this->registerLinkTag(
+        Html::link($baseUrl . '/fonts/Lora-Regular.woff2', [
+            'rel' => 'preload',
+            'as' => 'font',
+            'type' => 'font/woff2',
+            'crossorigin' => 'anonymous'
+        ])
+    );
 }
 
 $this->addCssFiles($assetManager->getCssFiles());
@@ -55,7 +58,13 @@ $this->registerMeta(['name' => 'viewport', 'content' => 'width=device-width, ini
 $this->registerMeta(['name' => 'author', 'content' => 'Markus Wolff'], 'author');
 $this->registerMeta(['name' => 'robots', 'content' => 'index, follow'], 'robots');
 
-$this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '/favicon.ico']);
+$this->registerLinkTag(
+    Html::link('/favicon.ico', [
+        'rel' => 'icon',
+        'type' => 'image/x-icon'
+    ])
+);
+
 
 $this->beginPage();
 ?>
