@@ -34,7 +34,7 @@ Sobald die Sonne auf die Mosaike im Deckengewölbe trifft, scheinen die Wände z
 
 Direkt unter diesem schützenden Himmel schwebt der Barbarossaleuchter (12. Jahrhundert). Dieser gewaltige Radleuchter, gestiftet von Kaiser Friedrich Barbarossa, formt das Herabkommen des Göttlichen auf die Erde nach. Er ist ein direktes architektonisches Modell der Stadtmauer des Himmlischen Jerusalems, gekrönt von exakt 12 Türmen. Die kunstvolle Inschrift benennt ihn explizit als *Celica Jherusalem*.
 
-### Ein Zentrum der Hingabe, Pilgerschaft und weltlichen Macht
+### Ein Zentrum der Hingabe und der Geschichte
 
 Seit über 1200 Jahren ist der Dom ein ununterbrochenes Zentrum menschlicher Hingabe. Die Heiligtumsfahrt zieht alle sieben Jahre abertausende Pilger an den Marienschrein. 
 
@@ -53,42 +53,73 @@ Genau dazwischen, im leeren Raum, steht der Mensch. Wir sind die „lebendigen S
 
 ---
 
-### Lyrik des begleitenden Musikstücks
+### Musikalische Resonanz: „Weightless Gold“
 
-**Original (Deutsch):**
-Im Oktogon, wo Karl der Große thront,
-Wird Gold zu Geist, der hier in Steinen wohnt.
-Der Thron aus Marmor, schlicht und ohne Pracht,
-Bezeugt die Macht, die einst das Abendland bewacht.
+Um die Atmosphäre dieses Ortes klanglich einzufangen, wurde das Stück „Weightless Gold“ komponiert. Es reflektiert die Spannung zwischen dem schweren Stein und dem alles durchdringenden Licht.
 
-Das Licht zerbricht in Blau und tiefem Rot,
-Ein Himmelsschein, der Trost in Not uns bot.
-Der Boden spiegelt alter Zeiten Gang,
-Ein Teppich ohne Ende, ohne Zwang.
+#### Original Lyrik (Englisch)
+**Verse 1**
+Mortar holds the breath of centuries past
+A hundred forty-four, the measure cast
+Not just the rock, but veins of older light
+Carved in the grey, defying coming night
+The circle waits to take the square away
+Where silence learns the language of the day
 
-Der Barbarossaleuchter, goldner Kranz,
-Fängt ein das Firmament in seinem Tanz.
-Seine Inschrift spricht von Weisheit und von Licht,
-Die in der Mitte dieser Welt zerbricht.
+**Chorus**
+Weightless gold, the ceiling starts to breathe
+Above the floor where ancient shadows seethe
+Between the earth, the ground beneath our feet
+And where the heavens and the stone-walls meet
+We are the mortar, living in the seam
+The waking part of someone else’s dream
+The waking part of someone else’s dream
 
-Die Steine schweigen nun.
-Aachen bleibt.
+**Verse 2**
+Steps have worn the paths of kings and ghosts
+A silent army of unnumbered hosts
+The bronze holds firm, the iron holds the cold
+While stories turn to embers in the mold
+No crown can stop the spinning of the sun
+The many vanish, and the many come as one
 
-**Translation (English):**
-In the octagon, where Charlemagne sits enthroned,
-Gold becomes spirit, dwelling here in stone.
-The marble throne, simple and without splendor,
-Testifies to the power that once guarded the Occident.
+**Outro**
+Measure the height
+Measure the grace
+The stone remains in this holy place
+Still...
+Still...
+The light remains.
 
-The light breaks into blue and deep red,
-A heavenly glow that offered us comfort in need.
-The floor reflects the passage of ancient times,
-An endless carpet, without constraint.
+#### Deutsche Übersetzung
+**Strophe 1**
+Der Mörtel hält den Atem vergangener Jahrhunderte,
+Hundertvierundvierzig, das festgelegte Maß.
+Nicht nur der Fels, sondern Adern aus älterem Licht,
+In das Grau gemeißelt, der kommenden Nacht trotzend.
+Der Kreis wartet darauf, das Viereck aufzuheben,
+Wo die Stille die Sprache des Tages erlernt.
 
-The Barbarossa chandelier, a golden wreath,
-Captures the firmament in its dance.
-Its inscription speaks of wisdom and of light,
-Which breaks in the center of this world.
+**Refrain**
+Schwereloses Gold, das Gewölbe beginnt zu atmen,
+Über dem Boden, wo uralte Schatten wogen.
+Zwischen der Erde, dem Grund unter unseren Füßen,
+Und dort, wo der Himmel und die Steinmauern sich berühren.
+Wir sind der Mörtel, wir leben in der Fuge,
+Der erwachende Teil vom Traum eines anderen.
+Der erwachende Teil vom Traum eines anderen.
 
-The stones are silent now.
-Aachen remains.
+**Strophe 2**
+Schritte haben die Pfade von Königen und Geistern gezeichnet,
+Eine stille Armee unzähliger Heerscharen.
+Die Bronze hält stand, das Eisen bewahrt die Kälte,
+Während Geschichten in ihrer Form zu Glut verglimmen.
+Keine Krone kann den Lauf der Sonne aufhalten,
+Die Vielen vergehen, und die Vielen werden zu Eins.
+
+**Outro**
+Ermesse die Höhe,
+Ermesse die Gnade,
+Der Stein verweilt an diesem heiligen Ort.
+Still...
+Das Licht bleibt.
