@@ -1,19 +1,71 @@
+# 🧘‍♂️ guru-wisdom.de
 
+Willkommen im offiziellen Repository von **guru-wisdom.de**. Dieses Projekt ist eine moderne, hochverfügbare und komplett zustandslose (stateless) Web-Plattform, die philosophische, spirituelle und historische Erkenntnisse ("Wisdoms") in einer performanten Architektur bereitstellt.
 
+## 🚀 Über das Projekt
 
-## Prerequisites
+Die Plattform verzichtet bewusst auf eine klassische relationale Datenbank. Stattdessen folgt sie einem konsequenten **Content-as-Code**-Ansatz:
+Alle Inhalte werden als Markdown-Dateien mit YAML-Frontmatter versioniert (`public/wisdoms/`). Die Applikation generiert daraus zur Laufzeit einen extrem schnellen, flüchtigen JSON-Cache. 
 
-- **PHP**: >= 8.5
-- **Composer**: For dependency management
-- **Web Server**: Nginx
+### 🛠️ Tech Stack
+* **Framework:** [Yii3](https://github.com/yiisoft)
+* **Webserver / PHP:** [FrankenPHP](https://frankenphp.dev/) (PHP 8.5)
+* **Infrastruktur:** Docker, Hetzner Cloud, Cloudflare
+* **Storage:** Georedundante Hetzner S3-Buckets
 
-## Installation
+## 🏗️ Systemarchitektur
 
-1. **Clone the repository:**
-   git clone <repository-url>
+Das System ist auf maximale Ausfallsicherheit und Geo-Redundanz ausgelegt:
+
+* **Edge / DNS:** Cloudflare dient als Loadbalancer, WAF und DDoS-Schutz.
+* **Standorte:** Die Infrastruktur ist auf zwei Hetzner-Rechenzentren verteilt (Nürnberg & Helsinki).
+* **Netzwerk-Segmentierung:** * `10.0.0.0/24`: Isoliertes Management-Netzwerk (Out-of-Band SSH, Administration).
+  * `10.0.1.0/24`: Applikations-Netzwerk für den internen Traffic.
+* **Server-Rollen:**
+  * **Reverse Proxies** (`proxy10`, `proxy110`): NGINX-Gateways. Sie routen den Traffic per Stream (`ip_hash`) an die Docker-Hosts und fungieren als Media-Proxies für die S3-Buckets.
+  * **Applikations-Hosts** (`prod30`, `prod130`, `test20`): Stateless Docker-Nodes, auf denen die eigentliche Applikation läuft.
+
+## 🤖 Content Workflow (Das "Guru Wisdom" Gem)
+
+Die Erstellung der Inhalte ist stark automatisiert und wird durch einen KI-Agenten (das "Guru Wisdom" Gem) unterstützt. 
+
+Der Workflow funktioniert über definierte Trigger:
+1. **Reflexion:** Dialogische Erarbeitung des Inhalts.
+2. **Generierung:** Durch den Befehl `/wisdom` erzeugt das System ein komplettes Content-Paket:
+   * Metaphorische Bildbeschreibung
+   * Musik-Konzept / Track
+   * Strukturiertes Markdown-Dokument (inkl. vorgegebenen Kategorien, Unified Tags und H1/H2-Logik)
+   * Routing-URLs für die Umgebungen (Local, Staging, Live)
+
+## 🔄 CI/CD & Deployment
+
+Deployments erfolgen vollautomatisiert über **GitHub Actions**. Ein Push in den `main`-Branch löst folgende Pipeline aus:
+
+1. **Test-Stage:** Ausführung der PHPUnit-Tests zur Sicherstellung der Code-Qualität.
+2. **Staging:** Automatisches Deployment auf den Test-Server (`test20`).
+3. **Manual Gate:** Manuelle Freigabe (Approval) durch den Administrator.
+4. **Production & Replica:** Paralleles Deployment via SSH auf die produktiven Nodes in Nürnberg (`prod30`) und Helsinki (`prod130`).
+   * *Mechanik:* `git pull` ➔ `docker compose up -d --build app` (Markdown wird ins Image gebacken) ➔ Cache-Invalidierung.
+
+## 💻 Lokale Entwicklung
+
+Voraussetzungen: [Docker](https://www.docker.com/) und [Docker Compose](https://docs.docker.com/compose/).
+
+1. **Repository klonen:**
+   git clone [https://github.com/MarkusWolffAix/guru-wisdom.de.git](https://github.com/MarkusWolffAix/guru-wisdom.de.git)
    cd guru-wisdom.de
 
+2. **Umgebungsvariablen konfigurieren:**
+   Kopiere die .env.example zu .env und passe die Werte für die lokale Entwicklung an.
 
+3. **Container starten:**
+   Wir nutzen eine dedizierte Compose-Datei für die Entwicklung.
+   docker compose -f docker-compose.dev.yml up -d --build
+   Cache leeren (falls nötig):
+
+   rm -rf runtime/cache/*
+
+Das Projekt ist nun lokal erreichbar. Die genauen Ports hängen von der .env-Konfiguration ab (standardmäßig Port 80/8080).
 
 
 ---
@@ -50,14 +102,6 @@ The macOS development environment is secured by an automated `zsh` script (`back
 
 ## Testing & Deployment
 
-- **Testing:** Uses **Codeception**. Run all tests via `./vendor/bin/codecept run`.
-- **Deployment:** A specialized `DeployController` and `actionDeploy` in `SiteController` facilitate automated updates via Git hooks or manual triggers.
-
----
-
-## System Architecture 
-
----
 
 
 ## Project TODOs
