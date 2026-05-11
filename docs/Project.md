@@ -117,32 +117,6 @@ Specialized scripts located in `bin/`:
 
 ---
 
-## System Architecture 
-
-[ Internet / User ]
-                                │
-                                ▼ (Port 443 / HTTPS)
-                    ┌──────────────────────────┐
-                    │      VM 1: Gateway       │
-                    │   (Debian + Nginx Proxy) │  <-- SSL-Zertifikate, Firewall, Routing
-                    └───────┬──────────┬───────┘
-                            │          │
-         Routing via        │          │       Routing via
-   www.deine-domain.de      │          │     test.deine-domain.de
-                            │          │
-             ┌──────────────▼─┐      ┌─▼──────────────┐
-             │ VM 2: Prod App │      │ VM 3: Test App │
-             │  (Debian + PHP)│      │ (Debian + PHP) │
-             │                │      │                │
-             │   - Yii 3      │      │   - Yii 3      │
-             │   - SQLite DB  │      │   - SQLite DB  │
-             └───────┬────────┘      └────────┬───────┘
-                     │                        │
-                     └───────────┬────────────┘
-                                 ▼ (API / HTTPS)
-                       ┌──────────────────────┐
-                       │  Hetzner S3 Storage  │ <-- Zwei Buckets: 1x Prod, 1x Test
-                       └──────────────────────┘
 
 
 ---
