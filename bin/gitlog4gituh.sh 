@@ -1,2 +1,2 @@
-
-git log --pretty=format:"- %h %s" %1
+#!/bin/bash
+git log --pretty=format:"- %h (%as) %s" $1
