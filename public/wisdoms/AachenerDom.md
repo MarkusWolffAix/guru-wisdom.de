@@ -51,6 +51,78 @@ In seiner Gesamtheit offenbart der Dom eine gewaltige architektonische und spiri
 
 Genau dazwischen, im leeren Raum, steht der Mensch. Wir sind die „lebendigen Steine“, die Verbindungslinie zwischen dem alten, festen Marmor der Erde und dem schwerelosen, herabströmenden Licht des Himmels – auf ewig dazu berufen, die Balance zwischen tiefer Verwurzelung und geistiger Ausdehnung zu halten.
 
+
+
+
+---
+
+### Die Aachener Karlsbüste: Reliquiar und Machtsymbol
+Die um **1349** von Kaiser Karl IV. gestiftete Büste ist eines der bedeutendsten Werke der Gotik.
+
+* **Reliquiar:** Sie enthält die **Original-Schädeldecke Karls des Großen**. Anthropologische Untersuchungen (2014) bestätigen die Authentizität der Gebeine.
+* **Wappensymbolik:** Das Gewand zeigt den **Reichsadler** (Heiliges Römisches Reich) und die **Lilie** (Fleur-de-Lys für Frankreich). Dies markiert Karl als gemeinsamen Ursprung beider Nationen.
+* **Details:** Die Büste trägt eine abnehmbare gotische Lilienkrone, die mit antiken römischen **Kameen** besetzt ist, um die Kontinuität zum Römischen Reich zu betonen.
+* **Realismus:** Trotz idealisierter Züge (Vollbart statt des historisch wahrscheinlichen Schnurrbarts) gilt sie als früher Meilenstein individueller Porträtkunst.
+
+---
+
+### Aachen als Krönungsort (936–1531)
+Zwischen der Krönung Ottos I. und Ferdinands I. war Aachen der rechtmäßige Ort für die Einsetzung der römisch-deutschen Könige. Entscheidend war die Inthronisation auf dem **Thron Karls des Großen**. Das Privileg der Krönung lag traditionell beim **Erzbischof von Köln**.
+
+#### Detaillierte Liste der Aachener Königskrönungen
+
+| Nr. | Jahr | König / Herrscher | Gekrönt durch (Erzbischof/Prälat) |
+| :--- | :--- | :--- | :--- |
+| 1 | 936 | **Otto I. (der Große)** | Hildebert (Mainz) & Wichfrid (Köln) |
+| 2 | 961 | **Otto II.** | Bruno I. (Köln) |
+| 3 | 983 | **Otto III.** | Willigis (Mainz) - *in Vertretung* |
+| 4 | 1002 | **Heinrich II.** | Willigis (Mainz) - *Inthronisation* |
+| 5 | 1024 | **Konrad II.** | Aribo (Mainz) - *Inthronisation* |
+| 6 | 1028 | **Heinrich III.** | Pilgrim (Köln) |
+| 7 | 1054 | **Heinrich IV.** | Hermann II. (Köln) |
+| 8 | 1087 | **Konrad (Sohn H. IV.)** | Sigewin (Köln) |
+| 9 | 1099 | **Heinrich V.** | Hermann III. (Köln) |
+| 10 | 1125 | **Lothar III.** | Friedrich I. (Köln) |
+| 11 | 1138 | **Konrad III.** | Kardinal Theodwin (Papstlegat) |
+| 12 | 1147 | **Heinrich-Berengar** | Arnold I. (Köln) |
+| 13 | 1152 | **Friedrich I. (Barbarossa)** | Arnold II. (Köln) |
+| 14 | 1169 | **Heinrich VI.** | Philipp I. (Köln) |
+| 15 | 1198 | **Otto IV. (Welfe)** | Adolf I. (Köln) |
+| 16 | 1205 | **Philipp von Schwaben** | Adolf I. (Köln) - *Nachkrönung* |
+| 17 | 1215 | **Friedrich II.** | Siegfried II. (Mainz) |
+| 18 | 1222 | **Heinrich (VII.)** | Engelbert I. (Köln) |
+| 19 | 1237 | **Konrad IV.** | Siegfried III. (Mainz) - *Inthronisation* |
+| 20 | 1248 | **Wilhelm von Holland** | Konrad von Hochstaden (Köln) |
+| 21 | 1257 | **Richard von Cornwall** | Konrad von Hochstaden (Köln) |
+| 22 | 1273 | **Rudolf I. (Habsburg)** | Engelbert II. (Köln) |
+| 23 | 1292 | **Adolf von Nassau** | Siegfried von Westerburg (Köln) |
+| 24 | 1298 | **Albrecht I.** | Wigbold von Holte (Köln) |
+| 25 | 1309 | **Heinrich VII.** | Heinrich II. von Virneburg (Köln) |
+| 26 | 1314 | **Ludwig IV. (der Bayer)** | Peter von Aspelt (Mainz) - *Streitfall* |
+| 27 | 1349 | **Karl IV.** | Walram von Jülich (Köln) |
+| 28 | 1376 | **Wenzel** | Friedrich III. (Köln) |
+| 29 | 1407 | **Ruprecht** | Friedrich III. (Köln) - *Inthronisation* |
+| 30 | 1414 | **Sigismund** | Dietrich II. von Moers (Köln) |
+| 31 | 1442 | **Friedrich III.** | Dietrich II. von Moers (Köln) |
+| 32 | 1486 | **Maximilian I.** | Hermann IV. von Hessen (Köln) |
+| 33 | 1520 | **Karl V.** | Hermann V. von Wied (Köln) |
+| 34 | 1531 | **Ferdinand I.** | Hermann V. von Wied (Köln) - *Letzte Krönung* |
+
+*(Anmerkung: Die offizielle Aachener Liste nennt meist 31 Könige. Die Zählung schwankt historisch geringfügig, je nachdem, ob man reine Inthronisationen ohne neue Weihe mitzählt).*
+
+---
+
+### Ende der Aachener Ära
+Ab **1562** (Maximilian II.) wurden die Könige in **Frankfurt am Main** gekrönt. Die Gründe waren rein praktisch: In Frankfurt fanden die Wahlen statt, die Stadt war geografisch zentraler und die logistischen Vorteile überwogen den rituellen Bezug zur Pfalz Karls des Großen.
+
+---
+
+### Internationale Dimensionen des Reiches
+Obwohl das Reich später den Zusatz „Deutscher Nation“ erhielt, war es ein übernationales Gebilde. Viele Herrscher waren kulturell international geprägt (z. B. die **Luxemburger** in Prag oder **Karl V.** in Flandern und Spanien). Dies unterstreicht den europäischen Kern des Kaisertums, der in der Person Karls des Großen seinen Ursprung fand.
+
+
+
+
 ---
 
 ### Musikalische Resonanz: „Weightless Gold“
