@@ -3,10 +3,10 @@ id: "VoicesOfTheWorld"
 title: "Die Stimmen der Welt"
 subtitle: "Ein Stammbaum der Sprachmütter"
 description: "Eine tiefgründige Reise zu den Ursprüngen der menschlichen Sprache, den großen Sprachfamilien und der unendlichen Vielfalt des menschlichen Klangs."
-date: 2026-05-13
+date: 2026-05-14
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Klang", "Antike", "Indien", "Urindogermanisch", "Sprachfamilien", "Phonetik"]
-categories: ["Geschichte & Mythen"]
+tags: ["Antike", "Indien", "Klang", "Urindogermanisch", "Phonetik", "Sprachfamilien"]
+categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 
 # Die Stimmen der Welt
@@ -17,6 +17,8 @@ Wenn wir die faszinierende Landschaft der menschlichen Sprachen betrachten, blic
 Doch diese indogermanische Mutter ist nicht allein. Sie ist Teil eines bemerkenswerten Rates der Mütter, der die Vielfalt menschlichen Ausdrucks in all ihren Facetten widerspiegelt. Die Menschheit hat nicht aus einer einzigen Quelle geschöpft, um der Welt Bedeutung zu verleihen, sondern viele Feuer der Kommunikation entfacht.
 
 Zu den großen Schwestern des Urindogermanischen gehören mächtige Ursprachen, die weite Teile der Erde prägten: Die sino-tibetische Mutter ist die Wiege der ostasiatischen Sprachen, deren berühmtestes Kind das Mandarin ist. Aus der afroasiatischen Mutter entsprangen die Sprachen der Propheten und Pharaonen – Arabisch, Hebräisch, das alte Ägyptisch und Aramäisch. Die Niger-Kongo-Familie bildet die klangvolle, kinderreichste Linie der Welt, die Subsahara-Afrika mit Sprachen wie Swahili und Zulu durchzieht. Die austronesische Mutter wiederum ist die große Seefahrerin, deren Nachkommen Ozeane überquerten, von Madagaskar bis zu den Maori in Neuseeland. Und die drawidische Mutter stellt eine alte, tiefe Wurzel im Süden Indiens dar, die bereits blühte, lange bevor die indogermanischen Sprachen den Subkontinent erreichten.
+
+### Die großen Sprachmütter, ihre Ursprünge und ihr globales Erbe
 
 Um diese gewaltigen Ströme begreifbar zu machen, betrachten wir sie in ihrer chronologischen und gegenwärtigen Präsenz. Hier zeigt sich, wann diese Wurzeln vermutlich geschlagen wurden und wie ungleich das Erbe unserer Stimmen heute verteilt ist:
 
@@ -38,28 +40,37 @@ Ein besonders berührendes Beispiel für die tiefe Verwandtschaft innerhalb der 
 
 Die Weltkarte der Sprachen ist somit nicht nur ein Verzeichnis von Vokabeln, sondern ein Archiv des menschlichen Geistes – geformt durch Zeit, Wanderungen, Wind und die immerwährende Suche nach Verbindung.
 
-
 ---
 
 ### Lyrik & Musik
 
-**The First Breath (Der erste Atemzug)**
+**Das unsichtbare Band (Das Gestern im Heute)**
 
-From the cradle of the ancient earth,
-A silent thought was given birth.
-A breath across the mountains high,
-A single sound beneath the sky.
-We wander far, we shape the clay,
-In thousand tongues, we find our way.
-But in the root, the echo calls,
-One beating heart within the walls.
+*Strophe 1*
+In der Stille alter Zeiten
+hör ich ferne Melodien,
+die durch ferne Länder gleiten
+in den Wurzeln, die uns ziehn.
+Jedes Wort ein ferner Garten,
+jeder Atemzug ein Licht,
+wo die Ahnen auf uns warten
+in dem ewgen Angesicht.
 
-*Übersetzung:*
-*Aus der Wiege der alten Erde,*
-*Wurde ein stiller Gedanke geboren.*
-*Ein Atemzug über den hohen Bergen,*
-*Ein einziger Klang unter dem Himmel.*
-*Wir wandern weit, wir formen den Ton,*
-*In tausend Zungen finden wir unseren Weg.*
-*Doch in der Wurzel ruft das Echo,*
-*Ein schlagendes Herz innerhalb der Mauern.*
+*Refrain*
+Das Echo der Mutter, es ruft uns zurück
+über die Berge im Abendglück.
+Die Weite der Welt in einem einzigen Herz,
+Heilung der Freude, Erlösung vom Schmerz.
+Wir sind der Fluss, der ins Morgenland fließt,
+wo sich das Gestern im Heute schließt.
+
+*Strophe 2*
+Von den Steppen bis zum Rhein
+spannt sich ein unsichtbar Band.
+Niemand bleibt mit sich allein
+in diesem heilgen, weiten Land.
+Ost und West in einem Schlag,
+ein Riss, der sonst niemals bricht.
+
+*Outro*
+Das Echo...
