@@ -38,6 +38,7 @@ Ein besonders berührendes Beispiel für die tiefe Verwandtschaft innerhalb der 
 
 Die Weltkarte der Sprachen ist somit nicht nur ein Verzeichnis von Vokabeln, sondern ein Archiv des menschlichen Geistes – geformt durch Zeit, Wanderungen, Wind und die immerwährende Suche nach Verbindung.
 
+
 ---
 
 ### Lyrik & Musik
