@@ -1,5 +1,5 @@
 ---
-id: "DanceOfElements"
+id: "CosmicDance"
 title: "Der Tanz der Elemente"
 subtitle: "Die Evolution des göttlichen Feuers und der Atem des Geistes"
 description: "Eine mystische Betrachtung über die Schöpfung, in der die Erde als fühlendes Wesen das göttliche Licht nährt, das Ur-Feuer den Lebenskreislauf entzündet und die Luft als unsichtbarer Geist alles verbindet."
