@@ -28,7 +28,7 @@ Aus mystischer Sicht jedoch ist es das *Bewusstsein* selbst, das dem Atom voraus
 
 Wie aber wird aus dem einfachen Wasserstoff die unendliche Vielfalt unserer Welt? Hier treten die Sterne auf den Plan. In ihren glühenden Herzen, unter dem unvorstellbaren Druck und der Hitze der Kernfusion, wird der Wasserstoff zusammengepresst.
 
-Dieser Prozess erfordert das Überwinden enormen Widerstands. Die positiv geladenen Wasserstoffkerne stoßen sich ab. Doch der Druck ist so gewaltig, dass diese natürliche Abstoßung in einem flüchtigen Moment überwunden wird und die "starke Kernkraft" sie vereint. In einem mehrstufigen Prozess verschmelzen vier Wasserstoffkerne zu Helium. Dabei verwandelt sich ein winziger Teil der Materie in reine Energie ($E=mc^2$) – das intensive Licht und die Wärme, die den Stern zum Leuchten bringen.
+Dieser Prozess erfordert das Überwinden enormen Widerstands. Die positiv geladenen Wasserstoffkerne stoßen sich ab. Doch der Druck ist so gewaltig, dass diese natürliche Abstoßung in einem flüchtigen Moment überwunden wird und die "starke Kernkraft" sie vereint. In einem mehrstufigen Prozess verschmelzen vier Wasserstoffkerne zu Helium. Dabei verwandelt sich ein winziger Teil der Materie in reine Energie ($$E=mc^2$$) – das intensive Licht und die Wärme, die den Stern zum Leuchten bringen.
 
 Das Helium, das dabei entsteht, ist ein faszinierendes Element. Als Edelgas ist es vollkommen in sich ruhend, ungebunden und wunschlos glücklich. Es geht keine Verbindungen ein. Während es in Sternen den Prozess der Verschmelzung still beobachtet, steigt es auf der Erde, einmal aus dem Gestein befreit, unaufhaltsam in die Atmosphäre auf, zu leicht für die Schwerkraft. Es ist eine Metapher für jene Momente innerer Stille und Anhaftungslosigkeit, in denen wir einfach nur *sind*, in uns ruhend und voller Leichtigkeit.
 
@@ -36,7 +36,7 @@ Das Helium, das dabei entsteht, ist ein faszinierendes Element. Als Edelgas ist 
 
 Wenn der Stern altert, beginnt der nächste Schritt der kosmischen Alchemie. Unter unvorstellbarer Hitze verschmelzen zwei Helium-Kerne zu Beryllium-8. 
 
-Dieses Beryllium hat ein fundamentales kosmisches Dilemma: Es ist extrem instabil. Es existiert nur für den winzigen Bruchteil von etwa einer Billiardstel Sekunde ($10^{-16}$ Sekunden), bevor es unweigerlich wieder zerbricht. Es ist ein Zustand reinster, hocheffizienter Vergänglichkeit.
+Dieses Beryllium hat ein fundamentales kosmisches Dilemma: Es ist extrem instabil. Es existiert nur für den winzigen Bruchteil von etwa einer Billiardstel Sekunde ($$10^{-16}$$ Sekunden), bevor es unweigerlich wieder zerbricht. Es ist ein Zustand reinster, hocheffizienter Vergänglichkeit.
 
 Erst wenn in genau diesem flüchtigen Wimpernschlag ein *drittes* Helium-Atom einschlägt, entsteht etwas Neues. Beryllium ist der Moment des reinen Übergangs, vergleichbar mit der flüchtigen Stille zwischen Ein- und Ausatmen (Kumbhaka). Es ist ein instabiler, dynamischer Raum, der absolut notwendig ist, damit etwas völlig Neues entstehen kann.
 
