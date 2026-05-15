@@ -22,20 +22,31 @@ main > .container {
    Schriftarten (Fonts)
    ========================================= */
 
+/* Caveat Variable Font (Normal & Fett in einer Datei) */
 @font-face {
     font-family: 'Caveat';
-    src: url('../fonts/caveat-v7-latin_cyrillic-regular.woff2') format('woff2');
-    font-weight: 400 700;
     font-style: normal;
+    font-weight: 400 700;
     font-display: swap;
+    src: url('../fonts/caveat-variable.woff2') format('woff2');
 }
 
+/* Lora Variable Font (Normal & bold) */
 @font-face {
-    font-family: 'Lora';
-    src: url('../fonts/Lora-Regular.woff2') format('woff2');
-    font-weight: 400 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/lora-variable.woff2') format('woff2');
+}
+
+/* Lora Variable Font (Kursiv & Kursiv-Fett) */
+@font-face {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/lora-variable-italic.woff2') format('woff2');
 }
 
 /* =========================================

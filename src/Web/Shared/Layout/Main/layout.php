@@ -30,8 +30,9 @@ $baseUrl = $mainAssetBundle ? $mainAssetBundle->baseUrl : '';
 
 // 2. Schriftarten vorab laden (Preload) - Verhindert "Render-Blocking"
 if ($baseUrl !== '') {
+    // Caveat (Normal & Fett)
     $this->registerLinkTag(
-        Html::link($baseUrl . '/fonts/caveat-v7-latin_cyrillic-regular.woff2', [
+        Html::link($baseUrl . '/fonts/caveat-variable.woff2', [
             'rel' => 'preload',
             'as' => 'font',
             'type' => 'font/woff2',
@@ -39,8 +40,19 @@ if ($baseUrl !== '') {
         ])
     );
 
+    // Lora (Normal & Fett)
     $this->registerLinkTag(
-        Html::link($baseUrl . '/fonts/Lora-Regular.woff2', [
+        Html::link($baseUrl . '/fonts/lora-variable.woff2', [
+            'rel' => 'preload',
+            'as' => 'font',
+            'type' => 'font/woff2',
+            'crossorigin' => 'anonymous'
+        ])
+    );
+
+    // Lora (Kursiv & Kursiv-Fett)
+    $this->registerLinkTag(
+        Html::link($baseUrl . '/fonts/lora-variable-italic.woff2', [
             'rel' => 'preload',
             'as' => 'font',
             'type' => 'font/woff2',
