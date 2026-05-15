@@ -59,13 +59,10 @@ Wenn wir tief einatmen – sei es beim Gehen durch einen Wald, beim Singen eines
 Unser Körper verheiratet in jedem Atemzug aufs Neue die materielle Form mit der formlosen Stille, um das innere Feuer am Brennen zu halten. Jeder noch so kleine, alltägliche Moment der Achtsamkeit trägt diese gewaltige, Milliarden Jahre alte kosmische Geschichte in sich. Wir sind wandelndes, atmendes Universum, das über sich selbst nachdenkt.
 
 ---
-### Musik & Lyrik
+### Musik & Lyrik: Oxygen in the Fingertips
 
-**Titel:** Sauerstoff tanzt
-**Genre:** Modern Ambient
+**Original Lyrics (English):**
 
-**Englische Lyrics:**
-(Instrumental Intro)
 At the foot of the oak I sit in silence,
 Breath is all the cosmos seeks here.
 A mist of H floats through the night,
@@ -76,7 +73,7 @@ No beginning, no end, only fusion,
 Within me the Hoyle resonance.
 
 Born in fire, transformed in light,
-Helium, carbon, oxygen speak.
+Helium, carbon, oxygen.
 What began in the star flows through my blood,
 The galaxy glows, I am well.
 We are the dust that understands itself,
@@ -84,37 +81,46 @@ An eternal circle that vanishes in breath.
 
 Oxygen dances in the fingertips,
 Carbon makes the stars flash.
-I am the C, I am the O,
-In the forest under stars I am glad.
+I am the C under stars I am glad.
 The earth sleeps, the cosmos wakes,
 An image of chemistry in deepest splendor.
 
-All is H... one breath... enough.
-(H)... (He)... (C)... (O).
+All is H...
+One breath...
+Enough...
+H...
+Enough...
+H...
+
+***
 
 **Deutsche Übersetzung:**
+
 Am Fuße der Eiche sitze ich still,
-Der Atem ist alles, was das All hier will.
+Atem ist alles, was der Kosmos hier will.
 Ein Nebel aus H schwebt durch die Nacht,
 Aus Wasserstoff hat die Welt sich gemacht.
 Blätter fallen, golden und schwer,
-Ich atme das erste Element her.
+Ich atme das erste Element in mich her.
 Kein Anfang, kein Ende, nur Fusion,
 In mir die Hoyle-Resonanz.
 
 Geboren im Feuer, gewandelt im Licht,
-Helium, Kohlenstoff, Sauerstoff spricht.
+Helium, Kohlenstoff, Sauerstoff.
 Was im Stern begann, fließt durch mein Blut,
-Die Galaxie glüht, mir ist es gut.
+Die Galaxie glüht, mir geht es gut.
 Wir sind der Staub, der sich selbst versteht,
 Ein ewiger Kreis, der im Atem vergeht.
 
 Sauerstoff tanzt in den Fingerspitzen,
 Kohlenstoff lässt die Sterne blitzen.
-Ich bin das C, ich bin das O,
-Im Wald unter Sternen bin ich froh.
+Ich bin das C, unter Sternen bin ich froh.
 Die Erde schläft, der Kosmos wacht,
 Ein Bild aus Chemie in tiefster Pracht.
 
-Alles ist H... ein Atemzug... genug.
-(H)... (He)... (C)... (O).
+Alles ist H...
+Ein Atemzug...
+Genug...
+H...
+Genug...
+H...
