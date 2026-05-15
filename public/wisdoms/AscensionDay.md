@@ -1,5 +1,5 @@
 ---
-id: "Ascension"
+id: "AscensionDay"
 title: "Christi Himmelfahrt: Der universelle Pfad der Transformation"
 subtitle: "Die Mystik der 40 Tage und die Rückkehr zur Quelle"
 description: "Eine tiefgründige Betrachtung der Himmelfahrt als spiritueller Übergang vom Begrenzten ins Unbegrenzte und die Kraft der 40-tägigen Metamorphose."
