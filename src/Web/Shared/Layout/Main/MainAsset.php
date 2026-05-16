@@ -21,7 +21,6 @@ public array $css = [
         'js/bootstrap.bundle.5.3.2.min.js',
         'js/toggle.js',
         'js/youtube.js',
-        'js/mathjax.js',
         'js/indexWisdomFilter.js',
     ];
 }

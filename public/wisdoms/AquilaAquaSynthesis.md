@@ -31,9 +31,9 @@ Doch die wahre Stärke eines Symbols zeigt sich in seiner Wandlungsfähigkeit. D
 ### Die Resonanz der Ursprache: Ur, Stein und fließendes Licht
 Die tiefste Ebene unserer Erkenntnis finden wir in der Etymologie. Der **Steinadler** verbindet in seinem Namen das härteste Fundament mit dem reinsten Glanz. Während "Ur" für den Stein, das komprimierte Gestein des Anfangs und den Urknall steht, symbolisiert das goldene Gefieder die Sonne und das göttliche Licht. 
 
-Sprachwissenschaftlich wurzeln *Aquila* und *Aqua* in dem urindogermanischen Lautkörper $$h_2ek$$. Diese Wurzel teilt sich in zwei energetische Richtungen:
-* ** $$h_2eḱ-$$ (Scharf/Adler):** Eine palatale Spannung am Gaumen, die den scharfen Blick und den gezielten Zugriff beschreibt.
-* ** $$h_2ek^w-$$ (Fließen/Wasser):** Eine labialisierte Rundung der Lippen, die das umschließende, nährende und fließende Element verkörpert.
+Sprachwissenschaftlich wurzeln *Aquila* und *Aqua* in dem urindogermanischen Lautkörper $h_2ek$. Diese Wurzel teilt sich in zwei energetische Richtungen:
+* ** $h_2eḱ-$ (Scharf/Adler):** Eine palatale Spannung am Gaumen, die den scharfen Blick und den gezielten Zugriff beschreibt.
+* ** $h_2ek^w-$ (Fließen/Wasser):** Eine labialisierte Rundung der Lippen, die das umschließende, nährende und fließende Element verkörpert.
 
 ### Der Schmerz der Trennung und die Heilung im Ohmm
 Genau an dieser Gabelung der Sprache offenbart sich eine der größten Tragödien der Menschheitsgeschichte. Bevor sich diese Energien aufspalteten, ruhte alles in der ungeteilten Einheit des ewigen Klangs – im **OM**. Wird dieses als ein kontinuierliches, tiefes **"Ohmm"** erfahren, erkennen wir, dass es kein bloßes Geräusch ist, sondern ein fühlendes Wesen. Es ist die grenzenlose, umschließende Verbundenheit, die im tiefsten Kern nichts anderes ist als reine, weiche *Liebe*. Diese Liebe ist im elementaren Sinne fließendes *Aqua*; sie durchdringt alles, weich und unaufhaltsam.

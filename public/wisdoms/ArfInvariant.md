@@ -21,13 +21,12 @@ Stell dir vor, du hast ein Objekt – sagen wir, eine Kaffeetasse aus weichem To
 ## 2. Was genau ist nun die Arf-Invariante?
 Cahit Arf hat 1941 eine spezielle Invariante für sogenannte **quadratische Formen über Körpern der Charakteristik 2** definiert. Das klingt wahnsinnig kompliziert, bedeutet aber im Kern Folgendes:
 
-* **Charakteristik 2:** In der Welt der Informatik kennen wir das Binärsystem: Es gibt nur die Zahlen 0 und 1. In der Mathematik entspricht das einem Rechnen im "Körper der Charakteristik 2", wo $$1 + 1 = 0$$ gilt.
+* **Charakteristik 2:** In der Welt der Informatik kennen wir das Binärsystem: Es gibt nur die Zahlen 0 und 1. In der Mathematik entspricht das einem Rechnen im "Körper der Charakteristik 2", wo $1 + 1 = 0$ gilt.
 * **Die Formel:** Arf hat eine Methode gefunden, um bestimmten mathematischen Strukturen eindeutig genau einen von zwei Werten zuzuordnen: **entweder 0 oder 1**.
 
-Wenn eine quadratische Form $$q$$ auf einem Vektorraum über einem solchen Körper definiert ist (mit einer sogenannten symplektischen Basis aus Vektorpaaren $$a_i$$ und $$b_i$$), lautet die Formel für die Arf-Invariante:
+Wenn eine quadratische Form $q$ auf einem Vektorraum über einem solchen Körper definiert ist (mit einer sogenannten symplektischen Basis aus Vektorpaaren $a_i$ und $b_i$), lautet die Formel für die Arf-Invariante:
 
-$$	ext{Arf}(q) = \sum_{i=1}^{n} q(a_i) q(b_i) \pmod 2$$
-
+$$  \text{Arf}(q) = \sum_{i=1}^{n} q(a_i) q(b_i) \pmod 2$$
 Das Ergebnis dieser Gleichung ist immer entweder 0 oder 1. Egal, welche geeignete Basis du wählst, das Endergebnis bleibt gleich – es ist eben *invariant*.
 
 ---

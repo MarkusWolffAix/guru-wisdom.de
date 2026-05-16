@@ -101,20 +101,40 @@ if (!empty($keywords)) {
 </div>
 
 <?php
-$needsMathJax = str_contains($wisdomText, '$$') || str_contains($wisdomText, '\[');
+$needsMathJax = str_contains($wisdomText, '$') || str_contains($wisdomText, '\[');
 
 // Wenn ja, registrieren wir das CDN-Skript für diese Seite
 if ($needsMathJax) {
 // 1. External MathJax script to render LaTeX formulas within the markdown content.
 // In Yii3, the position is passed as the second argument!
+// 1. Zuerst deine lokale Konfigurationsdatei laden
+// Der Pfad beginnt mit '/', was auf dein Web-Stammverzeichnis (public) verweist
+
+
+// 1. Config direkt als String in den <head> schreiben
+$mathJaxConfig = <<<'JS'
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  }
+};
+JS;
+
+$this->registerJs($mathJaxConfig, WebView::POSITION_HEAD);
+
+// 2. CDN Skript laden
 $this->registerJsFile(
     'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
     WebView::POSITION_HEAD,
+
     [
-        'async' => true, // Wichtig für die Performance! Blockiert das Rendern nicht.
+        'async' => true,
         'id' => 'mathjax-script'
     ]
 );
+
+
 }; 
 
 

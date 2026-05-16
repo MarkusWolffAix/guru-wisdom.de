@@ -36,7 +36,7 @@ Das Helium, das dabei entsteht, ist ein faszinierendes Element. Als Edelgas ist 
 
 Wenn der Stern altert, beginnt der nächste Schritt der kosmischen Alchemie. Unter unvorstellbarer Hitze verschmelzen zwei Helium-Kerne zu Beryllium-8. 
 
-Dieses Beryllium hat ein fundamentales kosmisches Dilemma: Es ist extrem instabil. Es existiert nur für den winzigen Bruchteil von etwa einer Billiardstel Sekunde ($10^{-16}$ Sekunden), bevor es unweigerlich wieder zerbricht. Es ist ein Zustand reinster, hocheffizienter Vergänglichkeit.
+Dieses Beryllium hat ein fundamentales kosmisches Dilemma: Es ist extrem instabil. Es existiert nur für den winzigen Bruchteil von etwa einer Billiardstel Sekunde  ($10^{-16}$ Sekunden) , bevor es unweigerlich wieder zerbricht. Es ist ein Zustand reinster, hocheffizienter Vergänglichkeit.
 
 Erst wenn in genau diesem flüchtigen Wimpernschlag ein *drittes* Helium-Atom einschlägt, entsteht etwas Neues. Beryllium ist der Moment des reinen Übergangs, vergleichbar mit der flüchtigen Stille zwischen Ein- und Ausatmen (Kumbhaka). Es ist ein instabiler, dynamischer Raum, der absolut notwendig ist, damit etwas völlig Neues entstehen kann.
 
