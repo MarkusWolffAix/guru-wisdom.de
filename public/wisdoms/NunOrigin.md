@@ -2,7 +2,7 @@
 id: "NunOrigin"
 title: "NUN"
 subtitle: "Der absolute Ursprung in Ägypten und Mesopotamien"
-description: "Eine philosophische Betrachtung des Begriffs NUN als absoluter Ursprung, unter Klärung der linguistischen Unabhängigkeit zwischen dem ägyptischen Urgewässer und dem sumerischen Nun.ki."
+description: "Eine philosophische Betrachtung des Begriffs NUN als absoluter Ursprung, unter Klärung der linguistischen Unabhängigkeit zwischen dem ägyptischen Urgewässer und dem sumerischen Nun.ki . Und NUN 😀 ?"
 date: 2026-05-17
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Schöpfung", "Nun", "Eridu"]
@@ -38,7 +38,7 @@ Das sumerische Suffix „.ki“ (Ort/Erde) wirkt hier fast wie eine philosophisc
 
 ### Spirituelle Reflexion 
 
-Für unsere eigene innere Entwicklung sind diese alten Mythen zeitlose Spiegel. Wir tragen beide Prinzipien in uns. Dein inneres Nun ist der unendliche Raum deines reinen Bewusstseins – formlos, still und voller unausgeschöpfter Möglichkeiten. Dein inneres Nun.ki ist die erste bewusste Handlung, der erste Gedanke, die erste Struktur, die du in deinem Leben aufbaust. Es ist dein "edler Ort" in der Welt. Wahre Schöpferkraft entsteht dort, wo du dir deines unendlichen Ursprungs bewusst bist und dennoch den Mut aufbringst, dein Leben im Konkreten mutig und klar zu formen.
+Für unsere eigene innere Entwicklung sind diese alten Mythen zeitlose Spiegel. Wir tragen beide Prinzipien in uns. Dein inneres Nun ist der unendliche Raum deines reinen Bewusstseins – formlos, still und voller unausgeschöpfter Möglichkeiten. Dein inneres Nun.ki ist die erste bewusste Handlung, der erste Gedanke, die erste Struktur, die du in deinem Leben aufbaust. Es ist dein "edler Ort" in der Welt. Wahre Schöpferkraft entsteht dort, wo du dir deines unendlichen Ursprungs bewusst bist und dennoch den Mut aufbringst, dein Leben im Konkreten mutig und klar zu formen. Und NUN 😀 ?
 
 ***
 
