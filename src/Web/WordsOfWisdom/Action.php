@@ -132,6 +132,9 @@ final class Action implements RequestHandlerInterface
                 'prevId'      => $newerWisdom['slug'] ?? null,
                 'nextId'      => $olderWisdom['slug'] ?? null,
                 'currentUrl'  => (string) $request->getUri(), 
+                'datePublished' => $wisdomData['date'] ?? null,
+                'publisherName' => $wisdomData['publisher'] ?? null,
+                'authorName'    => $wisdomData['author'] ?? null, 
             ]); 
     }
 }   
