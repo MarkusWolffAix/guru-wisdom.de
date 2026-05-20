@@ -83,32 +83,33 @@ $this->beginPage();
 <!DOCTYPE html>
 <html lang="<?= Html::encode($lang ?? 'de') ?>" class="h-100">
 <head>
-    <title><?= Html::encode($this->getTitle()) ?></title>    
-    <?php $this->head() ?>
+<title><?= Html::encode($this->getTitle()) ?></title>    
+
+<?php $this->head() ?>
+
+
 </head>
+
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
 
 <header id="header">
-<nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
-    
-    <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
-        
-        <picture>
-            <source srcset="/images/logo/GuruWisdom.webp" type="image/webp">
-            <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" width="120" height="40">
-        </picture>
-        
-    </a>
-</nav>
+    <nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
+        <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
+            <picture>
+                <source srcset="/images/logo/GuruWisdom.webp" type="image/webp">
+                <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" width="120" height="40">
+             </picture>
+        </a>
+    </nav>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
+  <div class="container">
         <?php /* Falls Breadcrumbs benötigt werden: echo Breadcrumbs::widget()->links($this->getParameter('breadcrumbs', [])); */ ?>
         <?= '' /* Alert::widget() - Bitte prüfen, ob das Alert-Widget für Yii3 portiert wurde */ ?>
         <?= $content ?>
-    </div>
+  </div> <! close container -->
 </main>
 
 <footer id="footer" class="mt-auto py-3 bg-white text-white">
@@ -130,24 +131,16 @@ $this->beginPage();
         </div>
         
         <div class="small text-muted mb-2">
-            <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
-                <?= $translator->translate('menu.contact', [], 'app') ?>
-            </a> |
-    
-            <a href="<?= $urlGenerator->generate('impressum-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
-              <?= $translator->translate('menu.imprint', [], 'app') ?>
-            </a> |
-    
-            <a href="<?= $urlGenerator->generate('privacypolicy-' . $lang) ?>" class="text-decoration-none text-muted mx-2">
-                 <?= $translator->translate('menu.privacy', [], 'app') ?>
-            </a>
+            <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
+            <a href="<?= $urlGenerator->generate('impressum-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
+            <a href="<?= $urlGenerator->generate('privacypolicy-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
         </div>
 
         <div class="text-muted">
             <small>&copy; GURU Wisdom <?= date('Y') ?></small>
-        </div>
-       <div> 
-    </div>
+        </div> <!-- close text-muted -->
+       <div> <!-- close container -->
+    </div> <!-- close row -->
 </footer>
 <?php $this->endBody() ?>
 </body>

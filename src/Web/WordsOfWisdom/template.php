@@ -99,17 +99,13 @@ if (!empty($datePublished)) {
 $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 ?>
 
-<script type="application/ld+json">
-    <?= $jsonLd ?>
-</script>
+    <script type="application/ld+json"><?= $jsonLd ?></script>
 
 
-<div class="d-flex justify-content-center w-100">
-    <div class="wisdom-card w-100">
+    <div class="d-flex justify-content-center w-100">
+      <div class="wisdom-card w-100">
         
-        <div class="image-container">
-            <?= $image ?>
-        </div>
+        <div class="image-container"><?= $image ?>  </div>
         
         <div class="action-bar">
             <?= Html::a(
@@ -120,10 +116,7 @@ $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICO
                 '/' . $prevId
             )->class('nav-btn')->attribute('aria-label', 'Previous wisdom') ?>
 
-            <div class="audio-player">
-                <?= $audio ?>
-            </div>
-
+            <div class="audio-player"><?= $audio ?></div>
             <button id="toggle-button" class="nav-btn" aria-label="Show details">
                 <img id="lupe-icon" src="/images/icons/MagnifyingGlass.jpg" alt="show details" width="24">
             </button>
@@ -135,24 +128,16 @@ $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICO
                     ->attribute('width', '24'),
                 '/' . $nextId
             )->class('nav-btn')->attribute('aria-label', 'Next wisdom') ?>
+        
         </div>
         
         <div class="preview-container" id="previewContainer">
             <div class="preview-content">
                 <div class="p-4 pb-2 text-center">
                     <h1 class="mb-2"><?= Html::encode($title) ?></h1>
-                    
-                    <?php if (!empty($subtitle)): ?>
-                        <h2 class="text-muted mb-3" style="font-size: 1.2rem;">
-                            <?= Html::encode($subtitle) ?>
-                        </h2>
-                    <?php endif; ?>
-                    
-                    <?php if (!empty($description)): ?>
-                        <p style="font-size: 1.1rem; color: #555;">
-                            <?= Html::encode($description) ?>
-                        </p>
-                    <?php endif; ?>
+                    <?php if (!empty($subtitle)): ?><h2 class="text-muted mb-3" style="font-size: 1.2rem;"><?= Html::encode($subtitle) ?></h2>
+                    <?php endif; ?><?php if (!empty($description)): ?><p style="font-size: 1.1rem; color: #555;"><?= Html::encode($description) ?></p>
+                    <?php endif; ?> 
                 </div>
             </div>
         </div>
@@ -161,13 +146,11 @@ $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICO
             <div class="text-content">
                 <div id="markdown-body" class="p-4">
                     <?= $wisdomText ?>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
+                </div> <! close markdown-body -->
+            </div> <! close text-content -->
+        </div> <! close text-container -->
+      </div> <! close wisdom-card -->
+    </div> <! close d-flex -->
 <?php
 $needsMathJax = str_contains($wisdomText, '$') || str_contains($wisdomText, '\[');
 
