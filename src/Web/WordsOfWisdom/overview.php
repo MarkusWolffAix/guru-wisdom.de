@@ -133,10 +133,14 @@ $this->setTitle($title);
                             <a href="<?= htmlspecialchars((string)$id) ?>" class="wisdom-clickable-area text-decoration-none d-flex flex-row align-items-center">
                                 
                                 <!-- Vorschaubild (Links, Wächter-Container) -->
-                                <div class="wisdom-thumb-container me-4">
+                            <div class="wisdom-thumb-container me-4">
                                     <picture class="wisdom-picture">
                                         <source srcset="<?= $imagePathWebp ?>" type="image/webp">
-                                        <img src="<?= $imagePathJpg ?>" alt="<?= htmlspecialchars((string)$title) ?>" class="wisdom-thumb-img">
+                                        <img src="<?= $imagePathJpg ?>" 
+                                             alt="<?= htmlspecialchars((string)$title) ?>" 
+                                             class="wisdom-thumb-img" 
+                                             loading="lazy" 
+                                             decoding="async">
                                     </picture>
                                 </div>
                                 
