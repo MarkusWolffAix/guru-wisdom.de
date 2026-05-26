@@ -11,6 +11,8 @@ use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 use App\Service\GuruWisdomService;
 use App\Service\WisdomCacheService;
+use App\Web\NotFound\NotFoundHandler;
+
 
 /**
  * Handles the web requests for the "Words of Wisdom" detail page.
@@ -36,7 +38,8 @@ final class Action implements RequestHandlerInterface
         WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
         private GuruWisdomService $guruWisdom,
-        private WisdomCacheService $wisdomCache
+        private WisdomCacheService $wisdomCache,
+        private NotFoundHandler $notFoundHandler
     ) {
         // Set the view path to the current directory of this class
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);
@@ -79,18 +82,14 @@ final class Action implements RequestHandlerInterface
             }
         }
 
-        // 3. FALLBACK: Wenn die übergebene ID ungültig ist (z.B. Tippfehler in der URL)
+        // 3. 404 NotFound
         if (!$isValid) {
-            $latestWisdom = $this->wisdomCache->getLatestWisdom();
-            
-            // Ein kleiner Sicherheitsanker, falls das Archiv komplett leer sein sollte
-            if ($latestWisdom === null) {
-                throw new \RuntimeException("Das Archiv ist noch leer. Es gibt keine Weisheiten zum Anzeigen.");
-            }
-            
-            // Wir überschreiben die falsche ID mit der neuesten ID
-            $id = $latestWisdom['slug'];
+            // Wir übergeben den Request direkt an den NotFoundHandler.
+            // Dieser kümmert sich um den 404 HTTP-Header und das Design-Template.
+            return $this->notFoundHandler->handle($request);
         }
+
+
 
         // 4. DATEN LADEN: Ab hier ist absolut garantiert, dass $id ein gültiger String ist.
         $wisdomData = $this->guruWisdom->parseFile($id);
