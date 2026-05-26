@@ -110,8 +110,11 @@ $this->setTitle($title);
 
                 <!-- Scroll-Container: Zeigt durch CSS max-height nur 3 Karten gleichzeitig -->
                 <div class="wisdom-scroll-area" id="wisdomContainer">
+                    <?php $index = 0; ?>
                     <?php foreach ($wisdoms as $wisdom): ?>
                         <?php 
+                            $isTopElement = ($index < 3);
+                            $imagePriority = $isTopElement ? 'fetchpriority="high"' : 'loading="lazy"';
                             $id = $wisdom['id'] ?? $wisdom['slug'];
                             $title = $wisdom['title'] ?? 'Unbekannte Weisheit';
                             $subtitle = $wisdom['subtitle'] ?? '';
@@ -139,7 +142,8 @@ $this->setTitle($title);
                                         <img src="<?= $imagePathJpg ?>" 
                                              alt="<?= htmlspecialchars((string)$title) ?>" 
                                              class="wisdom-thumb-img" 
-                                             loading="lazy" 
+                                             <?= $imagePriority ?>
+                                             
                                              decoding="async">
                                     </picture>
                                 </div>
@@ -180,6 +184,7 @@ $this->setTitle($title);
                                 
                             </div>
                         </div> <!-- WICHTIG: Das schließt die einzelne Karte -->
+                        <?php $index++; ?>
                     <?php endforeach; ?> <!-- WICHTIG: Das beendet die PHP-Schleife -->
                 </div> <!-- WICHTIG: Das schließt den gesamten Scroll-Container -->
 
