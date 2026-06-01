@@ -6,4 +6,5 @@ use App\Console;
 
 return [
     'hello' => Console\HelloCommand::class,
+    'wisdom/clear-cache' => Console\ClearWisdomCacheCommand::class,
 ];

@@ -96,4 +96,15 @@ public function getNeighbors(string $currentId): array
         $wisdoms = $this->getSortedWisdoms();
         return !empty($wisdoms) ? $wisdoms[0] : null;
     }
+
+    public function clearCache(): void
+    {
+        // PSR-16 Standard (wird von Yii3 genutzt) um einen spezifischen Key zu löschen
+        $this->cache->remove('wisdom_sorted_index'); 
+        
+        // Alternativ, falls du noch mehr Keys hättest, könntest du clear() nutzen, 
+        // was aber den gesamten Cache dieses Stores leert:
+        // $this->cache->clear();
+    }
+
 }
