@@ -119,15 +119,9 @@ $this->beginPage();
         <div class="container text-center">
         <div class="mb-3">
            
-            <a href="https://www.instagram.com/guru2wisdom" class="me-3" >
-                <img src="/images/icons/instagram.png" alt="Instagram" width="20" height="20" loading="lazy">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61577589013906" class="me-3">
-                <img src="/images/icons/facebook.png" alt="Facebook" width="20" height="20" loading="lazy">
-            </a>
-            <a href="https://www.youtube.com/@guru2wisdom" class="me-3">
-                <img src="/images/icons/youtube.png" alt="Youtube" width="20" height="20" loading="lazy">
-            </a>
+            <a href="https://www.instagram.com/guru2wisdom" class="me-3" ><img src="/images/icons/instagram.png" alt="Instagram" width="20" height="20" ></a>
+            <a href="https://www.facebook.com/profile.php?id=61577589013906" class="me-3"><img src="/images/icons/facebook.png" alt="Facebook" width="20" height="20" ></a>
+            <a href="https://www.youtube.com/@guru2wisdom" class="me-3"><img src="/images/icons/youtube.png" alt="Youtube" width="20" height="20" ></a>
         </div>
         
         <div class="small text-muted mb-2">
