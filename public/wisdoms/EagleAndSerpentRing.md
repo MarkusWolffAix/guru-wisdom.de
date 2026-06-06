@@ -5,7 +5,7 @@ subtitle: "Der Adler, die Schlange und der Ring der Ewigkeit"
 description: "Eine tiefgründige Betrachtung des uralten Symbols von Adler und Schlange, ihrer Verbindung und der Überwindung der Dualität durch den Ring der Ewigen Wiederkehr."
 date: 2026-06-06
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Yoga", "Antike", "Unendlichkeit", "Zarathustra", "Ouroboros", "Zellgedächtnis"]
+tags: ["Antike", "Yoga", "Unendlichkeit", "Zarathustra", "Ouroboros", "Mexiko", "Prana", "Nietzsche", "Adler", "Schlange"]
 categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 
@@ -62,8 +62,11 @@ Dass gerade der Adler – beziehungsweise der Geier – und die Schlange dort al
 **Adler und Schlange in Göbekli Tepe**
 
 In der Vorstellung vieler früher Kulturen waren große Greifvögel Adler und Geier weit mehr als bloße Tiere; sie waren die Begleiter der Toten. Bei rituellen Bestattungsformen, wie der Himmelsbestattung, trugen diese Vögel die Überreste der Verstorbenen in die Lüfte. Der Geier agierte nicht als einfacher Aasfresser, sondern als Seelenträger und Transformator. Er nahm das Irdische, das Vergängliche auf und erhob es in den Himmel. Somit steht der Vogel für die obere Welt, den Geist, die grenzenlose Weite des Himmels und das finale Loslassen der materiellen Hülle.
+
 Die Schlange, die Hüterin,  bildet den perfekten archaischen Gegenpol. Sie ist tief mit der Erde und der Unterwelt verwurzelt. Sie kriecht auf dem Bauch, verschwindet in dunklen, kühlen Erdspalten und entzieht sich dem Licht. Gleichzeitig ist sie durch den Akt der Häutung ein universelles und mächtiges Symbol für Wiedergeburt, Heilung und eine unzerstörbare Lebenskraft. Auf den T-Pfeilern von Göbekli Tepe sind Schlangen oft in fließenden, abwärts gerichteten Bewegungen dargestellt. Sie repräsentieren das Erdgebundene, das tiefe Geheimnis, die Fruchtbarkeit und die rohe, ungezähmte Kraft der Materie.
+
 Wenn wir nun beide Tiere vereint auf denselben steinernen Pfeilern betrachten, werden wir Zeugen des vielleicht frühesten Ausdrucks eines kosmischen Gleichgewichts, des komischen Tanzes : Himmel und Erde, Geist und Materie, Tod und Wiedergeburt. Es ist der ewige Tanz der Polaritäten, eingefangen im harten Stein der anatolischen Landschaft. Der Mensch der Steinzeit verortete sich vermutlich genau in der Mitte zwischen diesen beiden gewaltigen Kräften – fest verwurzelt auf der Erde wie die Schlange, aber gesegnet mit einem Bewusstsein, das sich frei in den Himmel erheben konnte wie der Adler.
+
 Diese Symbolik berührt noch heute etwas sehr Tiefes in uns. Sie erinnert uns daran, dass das menschliche Leben seit jeher ein Balancieren zwischen der materiellen Realität und der spirituellen Sehnsucht ist. Göbekli Tepe ist somit nicht nur ein Monument der Vergangenheit, sondern ein ewiger Spiegel der menschlichen Natur, der uns lehrt, die Polaritäten des Lebens nicht als Gegensätze, sondern als untrennbare Teile eines großen, kosmischen Ganzen zu begreifen.
 
 ---
