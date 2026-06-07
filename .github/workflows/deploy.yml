@@ -2,9 +2,10 @@ name: CI/CD Pipeline Guru-Wisdom
 
 # Trigger the workflow on every push to the main branch
 on:
-  push:
-    branches: [ main ]
-
+  # Temp disabled to prevent accidental deployments during testing phase. Re-enable before going live!:
+  # push:
+  #   branches: [ main ]
+  workflow_dispatch: # Allows manual triggering from the GitHub UI
 jobs:
   # --- STAGE 0: RUN TESTS (SICHERHEITSNETZ) ---
   run-tests:
