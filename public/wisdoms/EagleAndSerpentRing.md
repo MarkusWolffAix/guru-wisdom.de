@@ -33,33 +33,31 @@ Wenn wir diesen Ring in unsere eigene Praxis, etwa auf die Yogamatte, holen, ist
 
 Zarathustra, der als einsamer Sucher auf den Berggipfeln steht, vereint all diese Erkenntnisse. Er hat alte Dogmen hinter sich gelassen, um das vollkommene Gleichgewicht zu finden: tief verwurzelt in der rauen, erdigen Materie und doch vollkommen frei im Geiste. Der Adler und die Schlange lehren uns letztlich, dass der Kampf in uns erst dann endet, wenn wir aufhören, den Himmel gegen die Erde auszuspielen. Wer diese beiden Kräfte als Verbündete erkennt, findet die Schöpferkraft in sich selbst – und wird zu einer wahren Mutter für diese Welt, die die Dualität im Ring der Ewigkeit überwindet.
 
-[image:EagleAndSerpentRing2]
 **Die aztekische Vision (Die mexikanische Flagge)**
-
+[image:EagleAndSerpentRing2]
 Die Darstellung auf der mexikanischen Flagge geht auf den Gründungsmythos der Hauptstadt Tenochtitlán (das heutige Mexiko-Stadt) zurück. Der Sonnengott Huitzilopochtli prophezeite den Azteken, sie würden ihre ewige Heimat dort finden, wo ein Adler auf einem Feigenkaktus sitzt und eine Schlange verschlingt.
 Der tiefere Hintergrund: Für die indigenen Völker Mesoamerikas war dies nicht der Sieg des „Guten“ (Adler) über das „Böse“ (Schlange). Der Adler repräsentierte die solare Kraft, den Himmel und das Licht. Die Schlange (Coatl) stand für die Erde, das Wasser und die Fruchtbarkeit. Aus dem Schnabel des Adlers kam oft das Symbol atl-tlachinolli (brennendes Wasser), was von den spanischen Eroberern später fälschlicherweise oft nur als Schlange interpretiert wurde. Es war das Zeichen der ultimativen Vereinigung der Gegensätze – Feuer und Wasser, Himmel und Erde –, aus der überhaupt erst eine Hochkultur entstehen konnte.
-[image:EagleAndSerpentRing3]
-**Mesopotamien: Der Baum des Lebens (Etana-Mythos)**
 
+**Mesopotamien: Der Baum des Lebens (Etana-Mythos)**
+[image:EagleAndSerpentRing3]
 Auf alten Rollsiegeln aus der sumerischen und akkadischen Zeit finden wir den Mythos von Etana. Hier leben ein Adler und eine Schlange zusammen in einem großen Baum (oft als Huluppu-Baum gedeutet). Der Adler nistet in der Krone, die Schlange in den Wurzeln.
 Der tiefere Hintergrund: Sie schwören vor dem Sonnengott Shamash einen Eid der Freundschaft. Doch der Adler bricht den Eid und frisst die Kinder der Schlange, woraufhin ein erbitterter Kampf beginnt. Dies zeigt eine Phase, in der der menschliche Geist (der aufsteigende Adler) den Bezug zu seinen erdigen Wurzeln (der Schlange) verliert und übermütig wird. Es ist die Mahnung, dass der Intellekt nicht ohne die Instinkte der Erde überleben kann.
-[image:EagleAndSerpentRing4]
-**Garuda und die Nagas**
 
+**Garuda und die Nagas**
+[image:EagleAndSerpentRing4]
 In der hinduistischen Mythologie und den tiefen Wurzeln des Yoga begegnen wir Garuda, dem riesigen himmlischen Adler (dem Reittier Vishnus), und den Nagas, den weisen Schlangenwesen der Unterwelt. Sie gelten als ewige Feinde.
 Der tiefere Hintergrund: In der yogischen Alchemie stehen sie für die Ströme in unserem Körper. Der Adler ist das Prana (die nach oben fließende Lebensenergie, das Licht, der Geist), die Schlange ist Apana (die nach unten fließende Energie, die erdende Kraft) oder auch die Kundalini.  Die Schlange ruht als Kundalini-Kraft an der Basis unserer Wirbelsäule (Muladhara-Chakra), während der Adler die Weitsicht unseres Geistes (Ajna-Chakra) repräsentiert. Der dritte Verbindungspunkt, der eigentliche Alchemie-Ofen, ist das Herz (Anahata-Chakra). Erst hier, in der Mitte unserer Brust, vereinen sich die aufsteigende (Prana) und die absteigende Energie (Apana). Der „Kampf“ der beiden ist eigentlich der Prozess der inneren Reinigung. Erst wenn diese beiden Energien aufhören zu kämpfen und sich im Herzraum verbinden, entsteht wahre spirituelle Erweckung.
-[image:EagleAndSerpentRing5]
-**Das antike Griechenland: Das Omen in der Ilias**
 
+**Das antike Griechenland: Das Omen in der Ilias**
+[image:EagleAndSerpentRing5]
 In Homers Ilias taucht das Bild auf, als ein Adler mit einer blutenden, noch lebenden Schlange in den Krallen über das Schlachtfeld fliegt. Die Schlange wehrt sich, beißt den Adler in die Brust, und der Adler lässt sie fallen.
 Der tiefere Hintergrund: Hier repräsentiert der Adler den Willen des Zeus (die himmlische Ordnung), während die Schlange die chthonischen (erdverbundenen) Urkräfte darstellt. Das Herabfallen der Schlange zeigt, dass die Erde sich nicht restlos vom Himmel dominieren lässt.
 
+**Adler und Schlange in Göbekli Tepe**
+[image:EagleAndSerpentRing6]
 In der steinzeitlichen Anlage von Göbekli Tepe im Südosten der heutigen Türkei öffnet sich uns ein Fenster in die Seele der frühen Menschheit. Wenn wir auf die gewaltigen, T-förmigen Pfeiler dieser über zwölftausend Jahre alten Stätte blicken, betrachten wir nicht weniger als die ersten in Stein gemeißelten Träume, spirituellen Vorstellungen und Ängste unserer Vorfahren. Es ist der Anbeginn unseres kollektiven Gedächtnisses. 
 
 Dass gerade der Adler – beziehungsweise der Geier – und die Schlange dort als zentrale und am häufigsten dargestellte Tiermotive auftreten, ist kein Zufall. In diesen beiden Tieren begegnet uns einer der ältesten und tiefsten Dualismen der Menschheitsgeschichte. Es ist eine faszinierende Symbolik, die Jahrtausende später in unzähligen Kulturen rund um den Globus immer wieder aufsteigen sollte, um die ewige Polarität unserer Existenz zu beschreiben.
-
-[image:EagleAndSerpentRing6]
-**Adler und Schlange in Göbekli Tepe**
 
 In der Vorstellung vieler früher Kulturen waren große Greifvögel Adler und Geier weit mehr als bloße Tiere; sie waren die Begleiter der Toten. Bei rituellen Bestattungsformen, wie der Himmelsbestattung, trugen diese Vögel die Überreste der Verstorbenen in die Lüfte. Der Geier agierte nicht als einfacher Aasfresser, sondern als Seelenträger und Transformator. Er nahm das Irdische, das Vergängliche auf und erhob es in den Himmel. Somit steht der Vogel für die obere Welt, den Geist, die grenzenlose Weite des Himmels und das finale Loslassen der materiellen Hülle.
 
