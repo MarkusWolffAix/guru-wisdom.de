@@ -37,7 +37,6 @@ Liebevolle Geschichten sind wie magische Samen, die in das Herz der Erde gepflan
 Möge die Liebe dein stetiger Kompass und das aufrichtige Interesse dein Weg sein.
 
 ***
-***
 
 ### Musikstück: Goldene Fäden / Golden Threads
 
