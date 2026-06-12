@@ -8,7 +8,10 @@ FROM composer/composer:2-bin AS composer
 # ==========================================
 FROM dunglas/frankenphp:1-php8.5-trixie AS base
 
-# Install system dependencies (e.g. unzip for composer)
+# Unterdrückt die debconf-Warnungen beim apt-get install
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     && apt-get clean \
@@ -77,10 +80,13 @@ FROM base AS prod
 ENV APP_ENV=prod
 WORKDIR /app
 
-# 1. Create all system and app directories BEFORE copying the code
+# 1. Grant port binding capabilities to FrankenPHP (CRITICAL FIX)
+RUN setcap CAP_NET_BIND_SERVICE=+eip /usr/local/bin/frankenphp
+
+# 2. Erstelle Verzeichnisse und setze Berechtigungen (vereinfacht)
 RUN mkdir -p /data/caddy /config/caddy /app/assets /app/public/assets /app/runtime && \
-    chown -R www-data:www-data /data /config /app && chown -R www-data:www-data /app/runtime \
-    && chmod -R 775 /app/runtime
+    chown -R www-data:www-data /data /config /app && \
+    chmod -R 775 /app/runtime
 
 # 2. Copy the built application from the builder stage with correct permissions
 COPY --from=prod-builder --chown=www-data:www-data /app /app
