@@ -3,7 +3,7 @@ id: "SacredSharingCenteringChalice"
 title: "Der gemeinsame Kelch"
 subtitle: "Vom Ende der Trennung und der Kraft der Mitte"
 description: "Eine philosophisch-kulturgeschichtliche Betrachtung über den Wandel von gemeinschaftlichen Ritualen hin zum modernen Individualismus und der heilenden Rückkehr zur geteilten Mitte."
-date: 2026-06-12
+date: 2026-06-13
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Antike", "Christentum", "Achtsamkeit", "Gemeinschaft", "Esskultur"]
 categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
