@@ -14,6 +14,7 @@ categories: ["Geschichte & Mythen", "Symbole & Muster"]
 
 Leonardo da Vinci (1452–1519) war weit mehr als ein Maler, Anatom oder Ingenieur; er verkörperte den *Uomo Universale* – den universellen Menschen. Als uneheliches Kind in dem kleinen toskanischen Dorf Vinci geboren, genoss er keine klassische, akademische Ausbildung. Anstatt antiquiertes Wissen aus Büchern zu kopieren, wurde die Natur selbst zu seiner unerschöpflichen Lehrmeisterin. Das Fundament seines Schaffens bildete das Prinzip des *Saper Vedere* – das „Wissen, wie man sieht“. Für Leonardo existierte keine künstliche Trennlinie zwischen Wissenschaft und Kunst. Er erkannte, dass das Fließen eines Flusses, das Strömen des Blutes in den Adern und das Kräuseln von Haar denselben universellen Gesetzen der Dynamik folgen. Alles in der Natur offenbarte sich ihm als ein zusammenhängendes, atmendes System.
 
+[image:LeonardoUniversalGenius2]
 ### Die sprachliche Illusion der Mona Lisa
 
 Das berühmteste Gemälde der Welt zeugt nicht nur von handwerklicher Meisterschaft, sondern auch von der Formbarkeit menschlicher Sprache und Wahrnehmung. Die weltweite Schreibweise „Mona Lisa“ mit nur einem „n“ ist im Grunde genommen ein historischer Schreibfehler. Ursprünglich leitete sich der Begriff von dem italienischen *Monna* ab, einer höflichen Abkürzung für *Madonna* („Meine Herrin“ oder „Frau“), gemeint war Lisa del Giocondo.
@@ -30,6 +31,8 @@ Trotz all dieser – teils absurden oder negativen – wörtlichen Übersetzunge
 Die Bestimmung der Mona Lisa wandelte sich im Laufe der Jahrhunderte fundamental. Als Leonardo 1516 einer Einladung von König Franz I. folgte und an den französischen Hof in Amboise zog, trug er das Porträt über die Alpen mit sich. Zeitlebens betrachtete er das Bild als unvollendet und trug immer wieder hauchdünne Farbschichten (*Sfumato*) auf. 
 
 Nach seinem Tod im Jahr 1519 ging das Gemälde in den Besitz der französischen Könige über und schmückte jahrhundertelang die privaten Gemächer in Fontainebleau und Versailles. Erst durch die Französische Revolution Ende des 18. Jahrhunderts, als der königliche Palast des Louvre zu einem öffentlichen Museum erklärt wurde, wandelte sich das Bild vom privaten Schatz der Monarchie zum kollektiven Eigentum der gesamten Menschheit. Ein Meisterwerk, das losgelassen wurde und eine völlig neue, weltweite Bedeutung erhielt.
+
+[image:LeonardoUniversalGenius3]
 
 ### Das Abendmahl und moderne Mythen
 
