@@ -1,7 +1,7 @@
 ---
 id: "SitaliPranayamaCoolingBreath"
-title: "Die innere Oase: Der kühlende Atem"
-subtitle: "Wie Sitali Pranayama uns nicht nur an heißen Tagen Erfrischung und geistige Klarheit schenkt"
+title: "der kühlende Atem - Sitali Pranayama"
+subtitle: "Für Erfrischung und geistige Klarheit"
 description: "Eine liebevolle Anleitung zur yogischen Atemtechnik Sitali, die nicht nur den erhitzten Körper kühlt, sondern auch unruhige Gedanken sanft zur Ruhe bringt."
 date: 2026-06-21
 author: "Markus Wolff guru-wisdom.de"
@@ -9,8 +9,8 @@ tags: ["Pranayama", "Achtsamkeit", "Yoga", "Kühlung", "Innere Ruhe", "Sommer"]
 categories: ["Heilung & Achtsamkeit", "Körper & Geist"]
 ---
 
-# Die innere Oase: Der kühlende Atem
-## Wie Sitali Pranayama uns an heißen Tagen Erfrischung und geistige Klarheit schenkt
+# der kühlende Atem - Sitali Pranayama 
+## Für Erfrischung und geistige Klarheit
 
 Wenn die Sommersonne hoch am Himmel steht und die Welt in ein flirrendes Hitzemeer taucht, spüren wir das Feuer nicht nur auf unserer Haut. Auch unser Geist kann an solchen Tagen leicht überhitzen. Wir werden unruhig, vielleicht ein wenig gereizter, und die Gedanken fühlen sich schwer und träge an. Es ist die Zeit, in der wir uns im Außen nach Schatten und kühlem Wasser sehnen – und in der wir gerufen sind, auch im Innen eine Oase der Frische zu erschaffen.
 
