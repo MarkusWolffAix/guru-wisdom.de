@@ -1,6 +1,6 @@
 ---
 id: "SitaliPranayamaCoolingBreath"
-title: "der kühlende Atem - Sitali Pranayama"
+title: "Der kühlende Atem – Sitali Pranayama"
 subtitle: "Für Erfrischung und geistige Klarheit"
 description: "Eine liebevolle Anleitung zur yogischen Atemtechnik Sitali, die nicht nur den erhitzten Körper kühlt, sondern auch unruhige Gedanken sanft zur Ruhe bringt."
 date: 2026-06-21
