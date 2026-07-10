@@ -123,8 +123,7 @@ $this->beginPage();
             <a href="https://www.facebook.com/profile.php?id=61577589013906" class="me-3"><img src="/images/icons/facebook.png" alt="Facebook" width="20" height="20" ></a>
             <a href="https://www.youtube.com/@guru2wisdom" class="me-3"><img src="/images/icons/youtube.png" alt="Youtube" width="20" height="20" ></a>
             <a href="https://www.linkedin.com/company/guru-wisdom" class="me-3"><img src="/images/icons/linkedin-30.png" alt="LinkedIn" width="20" height="20" ></a>
-            
-        </div>
+           <a href="https://www.xing.com/pages/guru-wisdom-gmbh" class="me-3"><img src="/images/icons/xing-50.png" alt="Xing" width="20" height="20" ></a>
         
         <div class="small text-muted mb-2">
             <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
