@@ -36,7 +36,7 @@
         "test:unit": "phpunit tests/Unit"
     },
     "require": {
-  	"php": ">=8.5.0", 	
+        "php": ">=8.5.0",
         "ext-filter": "*",
         "httpsoft/http-message": "^1.1.6",
         "psr/container": "^2.0.2",
@@ -66,6 +66,7 @@
         "yiisoft/session": "^3.0.1",
         "yiisoft/translator": "^3.2.1",
         "yiisoft/translator-message-php": "^1.1.2",
+        "yiisoft/user": "^2.3",
         "yiisoft/view": "^12.2.4",
         "yiisoft/yii-console": "^2.4.2",
         "yiisoft/yii-http": "^1.1.1",
