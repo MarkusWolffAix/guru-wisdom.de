@@ -1,6 +1,6 @@
 ---
 id: "Amavasya"
-title: "Amavasya"
+title: "Amavasya - Neumond"
 subtitle: "Die Fülle der Dunkelheit"
 description: "Eine Reflexion über die hinduistische Neumondnacht und die transformative Kraft der Dunkelheit, in der alles Neue seinen Anfang nimmt."
 date: 2026-07-15
