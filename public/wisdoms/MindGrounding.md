@@ -3,7 +3,7 @@ id: "MindGrounding"
 title: "Wege aus dem Gedankenlabyrinth"
 subtitle: "Die Kraft der physischen Präsenz"
 description: "Eine Reflexion darüber, wie die 5-4-3-2-1-Methode uns aus dem Grübeln in die Unmittelbarkeit des Hier und Jetzt zurückholt."
-date: 2026-07-30
+date: 2026-07-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Meditation", "Achtsamkeit", "Psychologie", "Gegenwart", "Sinneseindrücke"]
 categories: ["Heilung & Achtsamkeit"]
