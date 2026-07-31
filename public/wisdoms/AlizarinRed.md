@@ -30,6 +30,10 @@ Diese jahrhundertealte Landwirtschaft und das mühsame Ernten in Südfrankreich 
 
 Das synthetische Alizarin war reiner, billiger und in unendlichen Mengen herstellbar – ein Triumph für die moderne Chemie, der jedoch über Nacht die gesamte traditionelle Krapp-Landwirtschaft in der Provence und in Zeeland vernichtete. Die Natur wurde von der Fabrik eingeholt, und eine uralte Symbiose aus Erde, Wurzel und Handarbeit wich dem unaufhaltsamen Fortschritt der industriellen Moderne.
 
+[image:AlizarinRed2]
+### Die Provence und Zeeland heute 
+Während die Provence im sonnigen Süden für ihre weltberühmten, leuchtend violetten Lavendelfelder steht, blickt das maritime Zeeland auf eine ganz andere, geschichtsträchtige Kulturlandschaft zurück: Historisch war es das harte Kernland des Krappanbaus für den roten Farbstoff, während seine heutigen Frühlingsfelder – ganz im Einklang mit dem niederländischen Erbe – vor allem durch die strahlenden, bunten Prachtteppiche der Tulpen- und Blumenfelder.
+
 ### Music & Lyrics
 
 **Alchemical Red**
