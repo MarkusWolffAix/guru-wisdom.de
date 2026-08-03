@@ -1,5 +1,5 @@
 ---
-id: "OceanCyle"
+id: "OceanCycle"
 title: "Das Fundament des Lebens"
 subtitle: "Die Rückkehr der Schalen in den Kreislauf"
 description: "Eine umfassende Betrachtung über die transformative Kraft der Natur, den Aufbau von Austernriffen und die konkrete Vision eines zirkulären Netzwerks zwischen der Gastronomie Hamburgs und der Nordsee."
