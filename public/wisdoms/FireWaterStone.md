@@ -5,7 +5,7 @@ subtitle: "Zwischen Feuer und Wasser"
 description: "Eine philosophische Reise von den kosmischen Ringen in Stonehenge zu den Urmeeren Aachens – und was sie uns über Transformation und Verwurzelung lehren."
 date: 2026-08-21
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Aachen", "Feuer", "Elemente", "Stonehenge", "Blaustein", "Dualität"]
+tags: ["Aachen", "Wasser", "Feuer", "Elemente", "Stonehenge", "Blaustein", "Dualität"]
 categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 
