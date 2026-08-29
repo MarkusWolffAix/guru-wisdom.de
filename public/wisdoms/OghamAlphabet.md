@@ -3,7 +3,7 @@ id: "OghamAlphabet"
 title: "Ogham"
 subtitle: "Die magische Sprache der Bäume"
 description: "Eine Reise in die faszinierende Welt des keltischen Ogham-Alphabets, seine baumspezifischen Bedeutungen und der Ursprungsmythos um Ogma."
-date: 2026-08-26
+date: 2026-08-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Elemente", "Ogham", "Ogma", "Baumalphabet", "Runen"]
 categories: ["Geschichte & Mythen", "Symbole & Muster"]
@@ -70,26 +70,42 @@ Ogham erinnert uns bis heute daran, dass Sprache Macht besitzt. Wenn wir mit Bed
 
 ---
 
-### Lyrik: The Birch Warning (Die Warnung der Birke)
+### Lyrik / Geschichte
 
 **English:**
-(Verse 1)
-Carved in the birch, a warning in the wood,
-Ogma's blade where the ancient forest stood.
-Seven silent strokes upon the sacred bark,
-To bring the light and shield her from the dark.
+Sit back and listen.
 
-(Chorus)
-Oh, the branches speak, the roots run deep,
-Secrets of the earth that the wise ones keep.
-Line upon line, the magic takes its hold,
-A story of the trees, beautifully told.
+Irish mythology tells of the Tuatha Dé Danann, the ancient god-folk of Ireland — beings of great magic, radiant beauty, and deep knowledge.
 
-(Verse 2)
-Beith for the start, a cleansing of the air,
-A spell of protection woven in the prayer.
-Words are not just wind, they are forged in the stone,
-A guiding quiet power to lead the wanderer home.
+Among them lived Ogma, also called Ogma Mac Elathan. He was a warrior of immense physical strength. But his true power lay in his eloquence and in his mind.
+
+He was called the Sun-face, for his words brought light into the darkness of ignorance.
+
+Ogma observed the language of his time and realized: The written word should not belong only to merchants and tallymen. It should preserve a hidden knowledge — a language accessible to the wise, the druids, and the poets, the Filid.
+
+A language so deeply connected to nature that no fool could desecrate it.
+
+One day, Ogma sensed a danger approaching the world of men and gods. He foresaw that the wife of his divine brother Lugh, the master of all arts, was to be abducted by dark forces into the Otherworld — into that realm of fairies and spirits that lies beyond the visible.
+
+Ogma had to warn Lugh.
+
+He took his sword and stepped up to a birch tree. Then he cut a young branch. Beith — the tree of new beginnings, purification, and protection.
+
+With the blade, he carved seven simple, powerful strokes into the bright wood.
+
+It was the very first Ogham inscription in the world.
+
+Ogma sent the branch to Lugh. The hidden message of the notches and the wood itself read:
+
+Your wife will be snatched away into the Otherworld, unless the birch protects her.
+
+The birch was not merely the bearer of a message. It became an active, magical shield — a living sign against the impending doom.
+
+Thus, through Ogma's deed, the alphabet was born.
+
+From the very beginning, Ogham was more than writing. It was memory, magic, protection, and warning all at once.
+
+And even today, in every bright cut on an old branch, a remnant of that first intention seems to linger: that words, when written with knowledge and responsibility, not only describe the world — but can preserve it.
 
 **Deutsch:**
 Lehn dich zurück und lausche.
@@ -125,4 +141,3 @@ So wurde durch Ogmas Tat das Alphabet geboren.
 Von Anfang an war Ogham mehr als Schrift. Es war Erinnerung, Zauber, Schutz und Warnung zugleich.
 
 Und noch heute scheint in jedem hellen Schnitt auf einem alten Zweig ein Rest jener ersten Absicht zu liegen: dass Worte, wenn sie mit Wissen und Verantwortung geschrieben werden, nicht nur die Welt beschreiben — sondern sie bewahren können.
-
