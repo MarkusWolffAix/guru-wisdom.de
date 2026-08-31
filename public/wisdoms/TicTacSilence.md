@@ -3,7 +3,7 @@ id: "TicTacSilence"
 title: "Tic-Tac-Toe"
 subtitle: "Die erdende Stille des Nicht-Gewinnens"
 description: "Von der Illusion des Sieges zur Mystik des Spiels: Wie Tic-Tac-Toe und der Film WarGames uns lehren, das Ego loszulassen und die Harmonie im Hier und Jetzt zu finden."
-date: 2026-08-29
+date: 2026-08-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Null", "WarGames", "Ego", "Erdende Stille", "Uranus"]
 categories: ["Spiritualität & Mystik", "Symbole & Muster"]
