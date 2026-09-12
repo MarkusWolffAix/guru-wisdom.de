@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Web\NotFound\NotFoundHandler;
+use App\Web\Shared\LocaleMiddleware;
 use Yiisoft\Csrf\CsrfTokenMiddleware;
 use Yiisoft\DataResponse\Middleware\FormatDataResponse;
 use Yiisoft\Definitions\DynamicReference;
@@ -16,6 +17,7 @@ use Yiisoft\Middleware\Dispatcher\ParametersResolverInterface;
 use Yiisoft\RequestProvider\RequestCatcherMiddleware;
 use Yiisoft\Router\Middleware\Router;
 use Yiisoft\Session\SessionMiddleware;
+use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\Yii\Http\Application;
 
 /** @var array $params */
@@ -30,6 +32,7 @@ return [
                         ErrorCatcher::class,
                         SessionMiddleware::class,
                         CsrfTokenMiddleware::class,
+                        LocaleMiddleware::class,
                         FormatDataResponse::class,
                         RequestCatcherMiddleware::class,
                         Router::class,
@@ -37,6 +40,13 @@ return [
                 ],
             ]),
             'fallbackHandler' => Reference::to(NotFoundHandler::class),
+        ],
+    ],
+
+    LocaleMiddleware::class => [
+        '__construct()' => [
+            'translator' => Reference::to(TranslatorInterface::class),
+            'params' => $params,
         ],
     ],
 

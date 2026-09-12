@@ -619,3 +619,22 @@ footer#footer a:hover { opacity: 0.7; }
     background-color: #f8f9fa !important; 
     cursor: pointer; /* Nur hier wird der Cursor zum Zeiger */
 }
+
+.lang-support-button {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 0.2rem 0.55rem;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+    background-color: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.lang-support-button:hover {
+    color: #212529;
+    border-color: #adb5bd;
+    background-color: #f8f9fa;
+}

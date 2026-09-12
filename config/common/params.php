@@ -44,5 +44,18 @@ return [
         'defaultCategory' => 'app', 
     ],
 
+    'locales' => [
+        'available' => ['de', 'en'],
+        'default' => 'de',
+    ],
+
+    'multilingual' => [
+        'enable_lang_support_button' => false, // default deactivated, can be activated in the future
+        'allow_query_override' => false,      // only for development and testing purposes
+        'domains' => [
+            'de' => 'guru-wisdom.de',
+            'en' => 'guru-wisdom.com',
+        ],
+    ],
    
 ];
