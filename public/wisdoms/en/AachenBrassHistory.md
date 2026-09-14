@@ -21,11 +21,10 @@ The weight of crowns, the sound of pilgrims' hymns, and the power struggles have
 
 Aachen still rests today as a silent, yet living witness to time. In every crack of the ancient stonework, in every wisp of mist that drifts across the Elisengarten on cold mornings, history echoes. It is a place that teaches us that true change is inevitable, yet the deepest roots endure even the most turbulent times.
 
+
 ***
-
-### Musical Echo: Stone Witness
-
-**Original Lyrics:**
+## Lyrics
+### Stone Witness 
 
 Beneath the pavement beats a hot pulse,
 Springs from the depths, ancient as the stone.

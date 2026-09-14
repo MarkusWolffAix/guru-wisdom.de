@@ -149,25 +149,15 @@ Although the empire later received the designation "of the German Nation," it wa
 
 To capture the atmosphere of this place sonically, the piece “Weightless Gold” was composed. It reflects the tension between the heavy stone and the all-pervading light.
 
+***
+## Lyrics
+### SWeightless Gold - Original
 
-### Musical Resonance: “Weightless Gold”
-
-To capture the atmosphere of this place sonically, the piece “Weightless Gold” was composed. It reflects the tension between the heavy stone and the all-pervading light.
-
-### Musical Resonance: “Weightless Gold”
-
-To capture the atmosphere of this place sonically, the piece “Weightless Gold” was composed.
-
-
-
-
-
-... #### Original poetry (English)
 **Verse 1**
 Mortar holds the breath of centuries past
 A hundred forty-four, the measure cast
 Not just the rock, but veins of older light
-Carved in the gray, defying coming night
+Carved in the grey, defying coming night
 The circle waits to take the square away
 Where silence learns the language of the day
 
@@ -175,63 +165,23 @@ Where silence learns the language of the day
 Weightless gold, the ceiling starts to breathe
 Above the floor where ancient shadows seethe
 Between the earth, the ground beneath our feet
-And where the heavens and the stone walls meet
+And where the heavens and the stone-walls meet
 We are the mortar, living in the seam
-The waking part of someone else's dream
-The waking part of someone else's dream
+The waking part of someone else’s dream
+The waking part of someone else’s dream
 
-**Verses 2**
+**Verse 2**
 Steps have worn the paths of kings and ghosts
 A silent army of unnumbered hosts
 The bronze holds firm, the iron holds the cold
 While stories turn to embers in the mold
 No crown can stop the spinning of the sun
-The many disappear, and the Many come as one
+The many vanish, and the many come as one
 
 **Outro**
 Measure the height
 Measure the grace
 The stone remains in this holy place
 Still...
-Still...
-The light remains.
-
-#### German Translation
-**Verse 1**
-The mortar holds the breath of centuries past,
-One hundred and forty-four, the fixed measure.
-
-Not just the rock, but veins of ancient light,
-Carved into the gray, defying the coming night.
-
-The circle waits to lift the square,
-Where silence learns the language of day.
-
-**Chorus**
-Weightless gold, the vault begins to breathe,
-Above the ground where ancient shadows surged.
-Between the earth, the ground beneath our feet,
-And there, where the sky and the stone walls touch.
-
-We are the mortar, we live in the joint,
-The awakening part of another's dream.
-
-The awakening part of another's dream.
-
-**Verse 2**
-Footsteps have marked the paths of kings and spirits,
-A silent army of countless hosts.
-
-The bronze endures, the iron preserves the cold,
-While stories in their form smolder into embers.
-
-No crown can halt the sun's course,
-The many pass away, and the many become one.
-
-**Outro**
-Measure the height,
-Measure the grace,
-The stone lingers in this sacred place.
-
 Still...
 The light remains.

@@ -120,50 +120,10 @@ Ab **1562** (Maximilian II.) wurden die Könige in **Frankfurt am Main** gekrön
 ### Internationale Dimensionen des Reiches
 Obwohl das Reich später den Zusatz „Deutscher Nation“ erhielt, war es ein übernationales Gebilde. Viele Herrscher waren kulturell international geprägt (z. B. die **Luxemburger** in Prag oder **Karl V.** in Flandern und Spanien). Dies unterstreicht den europäischen Kern des Kaisertums, der in der Person Karls des Großen seinen Ursprung fand.
 
+***
+## Lyrik
+### Schwereloses Gold
 
-
-
----
-
-### Musikalische Resonanz: „Weightless Gold“
-
-Um die Atmosphäre dieses Ortes klanglich einzufangen, wurde das Stück „Weightless Gold“ komponiert. Es reflektiert die Spannung zwischen dem schweren Stein und dem alles durchdringenden Licht.
-
-#### Original Lyrik (Englisch)
-**Verse 1**
-Mortar holds the breath of centuries past
-A hundred forty-four, the measure cast
-Not just the rock, but veins of older light
-Carved in the grey, defying coming night
-The circle waits to take the square away
-Where silence learns the language of the day
-
-**Chorus**
-Weightless gold, the ceiling starts to breathe
-Above the floor where ancient shadows seethe
-Between the earth, the ground beneath our feet
-And where the heavens and the stone-walls meet
-We are the mortar, living in the seam
-The waking part of someone else’s dream
-The waking part of someone else’s dream
-
-**Verse 2**
-Steps have worn the paths of kings and ghosts
-A silent army of unnumbered hosts
-The bronze holds firm, the iron holds the cold
-While stories turn to embers in the mold
-No crown can stop the spinning of the sun
-The many vanish, and the many come as one
-
-**Outro**
-Measure the height
-Measure the grace
-The stone remains in this holy place
-Still...
-Still...
-The light remains.
-
-#### Deutsche Übersetzung
 **Strophe 1**
 Der Mörtel hält den Atem vergangener Jahrhunderte,
 Hundertvierundvierzig, das festgelegte Maß.

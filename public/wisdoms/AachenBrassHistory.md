@@ -23,10 +23,8 @@ Das Gewicht der Kronen, der Klang der Pilgergesänge und die Ränkespiele der Ma
 Aachen ruht bis heute als ein stummer, aber lebendiger Zeuge der Zeit. In jedem Riss des alten Mauerwerks, in jedem Nebelschleier, der an kalten Morgen über den Elisengarten zieht, hallt die Geschichte wider. Es ist ein Ort, der uns lehrt, dass der wahre Wandel unaufhaltsam ist, die tiefsten Wurzeln jedoch selbst die stürmischsten Zeiten überdauern.
 
 ***
-
-### Musikalisches Echo: Steinerner Zeuge
-
-**Deutsche Original-Lyrik:**
+## Lyrik
+### Steinerner Zeuge - Orginal
 
 Unter dem Pflaster schlägt ein heißer Puls,
 Quellen aus der Tiefe, alt wie der Stein.
