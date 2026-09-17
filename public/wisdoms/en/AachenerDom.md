@@ -149,7 +149,7 @@ Although the empire later received the designation "of the German Nation," it wa
 
 To capture the atmosphere of this place sonically, the piece “Weightless Gold” was composed. It reflects the tension between the heavy stone and the all-pervading light.
 
-***
+---
 ## Lyrics
 ### SWeightless Gold - Original
 

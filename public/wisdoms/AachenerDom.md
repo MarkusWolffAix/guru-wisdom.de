@@ -120,7 +120,7 @@ Ab **1562** (Maximilian II.) wurden die Könige in **Frankfurt am Main** gekrön
 ### Internationale Dimensionen des Reiches
 Obwohl das Reich später den Zusatz „Deutscher Nation“ erhielt, war es ein übernationales Gebilde. Viele Herrscher waren kulturell international geprägt (z. B. die **Luxemburger** in Prag oder **Karl V.** in Flandern und Spanien). Dies unterstreicht den europäischen Kern des Kaisertums, der in der Person Karls des Großen seinen Ursprung fand.
 
-***
+---
 ## Lyrik
 ### Schwereloses Gold
 
