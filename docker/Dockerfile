@@ -73,7 +73,6 @@ RUN --mount=type=cache,target=/tmp/cache \
     rm composer.lock composer.json
 
 # NEU: Assets fest in das Image generieren
-RUN ./yii asset/publish
 
 # ==========================================
 # 5. Production Stage

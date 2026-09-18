@@ -1,28 +1,21 @@
 name: guruwisdom-prod
 services:
   app:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: prod
+    container_name: guruwisdom-prod
+    image: ghcr.io/markuswolffaix/guru-wisdom.de-app:latest
     ports:
-      - "80:80"          # Standard HTTP
+      - "80:80"          
     environment:
-      # HIER PASSIERT DIE MAGIE: 
-      # Trage hier deine echten Domains ein, und Caddy besorgt SSL-Zertifikate!
       - SERVER_NAME=:80
-     # - SERVER_NAME=guru-wisdom.de
       - APP_ENV=prod
-    restart: always      # Wenn der Live-Server neu startet, startet auch die App
+    restart: unless-stopped
     tty: true
     volumes:
-      # - app_public_assets:/app/public/assets
       - app_runtime:/app/runtime
       - caddy_data:/data
       - caddy_config:/config
 
 volumes:
-  # app_public_assets:
   app_runtime:
   caddy_data:
   caddy_config:

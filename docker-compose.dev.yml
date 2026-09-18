@@ -1,10 +1,8 @@
 name: guruwisdom-dev
 services:
   app:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-      target: dev       
+    container_name: guruwisdom-dev
+    image: ghcr.io/markuswolffaix/guru-wisdom.de-app:latest
     ports:
       - "8080:80"        
     environment:
@@ -14,12 +12,11 @@ services:
     restart: unless-stopped
     tty: true
     volumes:
-      - ./:/app
+      - app_runtime:/app/runtime
       - caddy_data:/data
       - caddy_config:/config
 
 volumes:
-  # app_public_assets:
   app_runtime:
   caddy_data:
   caddy_config:
