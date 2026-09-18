@@ -72,6 +72,9 @@ RUN --mount=type=cache,target=/tmp/cache \
     composer install --no-dev --no-progress --no-interaction --classmap-authoritative && \
     rm composer.lock composer.json
 
+# NEU: Assets fest in das Image generieren
+RUN ./yii asset/publish
+
 # ==========================================
 # 5. Production Stage
 # ==========================================

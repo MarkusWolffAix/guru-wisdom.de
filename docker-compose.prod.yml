@@ -16,13 +16,13 @@ services:
     restart: always      # Wenn der Live-Server neu startet, startet auch die App
     tty: true
     volumes:
-      - app_public_assets:/app/public/assets
+      # - app_public_assets:/app/public/assets
       - app_runtime:/app/runtime
       - caddy_data:/data
       - caddy_config:/config
 
 volumes:
-  app_public_assets:
+  # app_public_assets:
   app_runtime:
   caddy_data:
   caddy_config:

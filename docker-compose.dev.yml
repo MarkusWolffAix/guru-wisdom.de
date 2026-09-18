@@ -19,7 +19,7 @@ services:
       - caddy_config:/config
 
 volumes:
-  app_public_assets:
+  # app_public_assets:
   app_runtime:
   caddy_data:
   caddy_config:
