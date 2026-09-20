@@ -91,7 +91,7 @@ $this->beginPage();
 <link type="font/woff2" href="/fonts/lora-variable-italic.woff2" rel="preload" as="font" crossorigin="anonymous">
 <link type="image/x-icon" href="/favicon.ico" rel="icon">
 <link href="/css/bootstrap.5.3.2.min.css" rel="stylesheet">
-<link href="css/guruwisdom.css" rel="stylesheet">
+<link href="/css/guruwisdom.css" rel="stylesheet">
 
 </head>
 
