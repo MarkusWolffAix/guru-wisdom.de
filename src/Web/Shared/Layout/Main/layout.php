@@ -86,7 +86,12 @@ $this->beginPage();
 <title><?= Html::encode($this->getTitle()) ?></title>    
 
 <?php $this->head() ?>
-
+<link type="font/woff2" href="fonts/caveat-variable.woff2" rel="preload" as="font" crossorigin="anonymous">
+<link type="font/woff2" href="/fonts/lora-variable.woff2" rel="preload" as="font" crossorigin="anonymous">
+<link type="font/woff2" href="/fonts/lora-variable-italic.woff2" rel="preload" as="font" crossorigin="anonymous">
+<link type="image/x-icon" href="/favicon.ico" rel="icon">
+<link href="/css/bootstrap.5.3.2.min.css" rel="stylesheet">
+<link href="css/guruwisdom.css" rel="stylesheet">
 
 </head>
 
@@ -139,5 +144,9 @@ $this->beginPage();
 </footer>
 <?php $this->endBody() ?>
 </body>
+<script src="/js/bootstrap.bundle.5.3.2.min.js"></script>
+<script src="/js/toggle.js"></script>
+<script src="/js/youtube.js"></script>
+<script src="/js/indexWisdomFilter.js"></script></body>
 </html>
 <?php $this->endPage() ?>
