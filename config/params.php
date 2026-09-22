@@ -23,6 +23,12 @@ return [
         ],
     ],
 
+    'yiisoft/assets' => [
+        'assetManager' => [
+            'publish' => false,
+        ],
+    ],
+
     'yiisoft/cookies' => [
         // Dein alter cookieValidationKey
         'secretKey' => 'UJxxD25WdCiy4zAE9MolOQpdeZRwgkbH', 
