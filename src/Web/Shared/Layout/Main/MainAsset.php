@@ -13,14 +13,14 @@ final class MainAsset extends AssetBundle
     public ?string $baseUrl = '@assetsUrl'; 
 
 public array $css = [
-        'css/bootstrap.5.3.2.min.css', 
-        'css/guruwisdom.css', 
+  #      'css/bootstrap.5.3.2.min.css', 
+  #      'css/guruwisdom.css', 
     ];
 
     public array $js = [
-        'js/bootstrap.bundle.5.3.2.min.js',
-        'js/toggle.js',
-        'js/youtube.js',
-        'js/indexWisdomFilter.js',
+   #     'js/bootstrap.bundle.5.3.2.min.js',
+    #    'js/toggle.js',
+     #   'js/youtube.js',
+      #  'js/indexWisdomFilter.js',
     ];
 }

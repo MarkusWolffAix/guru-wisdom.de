@@ -20,7 +20,7 @@ use Yiisoft\Bootstrap5\Nav;
 use Yiisoft\Bootstrap5\NavLink;
 use Yiisoft\Bootstrap5\NavBar;
 
-$assetManager->register(MainAsset::class);
+// $assetManager->register(MainAsset::class);
 $lang = $translator->getLocale(); 
 
 // 1. Dynamische Basis-URL für das Asset Bundle ermitteln
