@@ -27,7 +27,7 @@ $lang = $translator->getLocale();
 $mainAssetBundle = $assetManager->getBundle(MainAsset::class);
 $baseUrl = $mainAssetBundle ? $mainAssetBundle->baseUrl : '';
 
-
+/*
 // 2. Schriftarten vorab laden (Preload) - Verhindert "Render-Blocking"
 if ($baseUrl !== '') {
     // Caveat (Normal & Fett)
@@ -60,6 +60,7 @@ if ($baseUrl !== '') {
         ])
     );
 }
+*/
 
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());
