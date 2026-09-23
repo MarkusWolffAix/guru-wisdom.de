@@ -1,0 +1,27 @@
+name: guruwisdom-prod
+services:
+  app:
+    container_name: guruwisdom-prod
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: prod
+    image: guruwisdom-prod:local
+    # no build finish package, use prebuilt image from ghcr.io
+    # image: ghcr.io/markuswolffaix/guru-wisdom.de-app:latest
+    ports:
+      - "80:80"          
+    environment:
+      - SERVER_NAME=:80
+      - APP_ENV=prod
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - app_runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  app_runtime:
+  caddy_data:
+  caddy_config:

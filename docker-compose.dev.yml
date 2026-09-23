@@ -1,0 +1,27 @@
+name: guruwisdom-dev
+services:
+  app:
+    container_name: guruwisdom-dev
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: dev # Nutzt die Dev-Stage (inkl. Xdebug und appuser)
+    image: guruwisdom-dev:local
+    ports:
+      - "8080:80"        
+    environment:
+      - SERVER_NAME=:80
+      - APP_ENV=dev
+      - XDEBUG_MODE=debug,develop # Aktiviert Xdebug für die lokale Entwicklung
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./:/app # WICHTIG: Mountet deinen lokalen Quellcode in den Container
+      - app_runtime:/app/runtime
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  app_runtime:
+  caddy_data:
+  caddy_config:
