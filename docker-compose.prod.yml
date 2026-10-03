@@ -1,4 +1,4 @@
-name: guruwisdom-prod
+name: guruwisdom
 services:
   app:
     container_name: guruwisdom-prod
@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile
       target: prod
-    image: guruwisdom-prod:local
+    image: guruwisdom-prod:latest
     # no build finish package, use prebuilt image from ghcr.io
     # image: ghcr.io/markuswolffaix/guru-wisdom.de-app:latest
     ports:

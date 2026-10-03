@@ -1,4 +1,4 @@
-name: guruwisdom-dev
+name: guruwisdom
 services:
   app:
     container_name: guruwisdom-dev
@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile
       target: dev # Nutzt die Dev-Stage (inkl. Xdebug und appuser)
-    image: guruwisdom-dev:local
+    image: guruwisdom-dev:latest
     ports:
       - "8080:80"        
     environment:
