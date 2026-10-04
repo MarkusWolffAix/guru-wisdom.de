@@ -13,6 +13,7 @@ services:
       - SERVER_NAME=:80
       - APP_ENV=dev
       - XDEBUG_MODE=debug,develop # Aktiviert Xdebug für die lokale Entwicklung
+      - XDEBUG_CONFIG=client_host=host.docker.internal start_with_request=yes
     restart: unless-stopped
     tty: true
     volumes:
