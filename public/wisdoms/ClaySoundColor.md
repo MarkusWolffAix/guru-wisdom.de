@@ -34,7 +34,7 @@ In dieser vielschichtigen Betrachtung schließt sich der Kreis des Menschenbilde
 | **Materie & Ursprung** | Die Erde / der Lehm | Der formbare Urstoff, das Gefäß des Lebens, der Körper |
 | **Schwingung & Geist** | Die Musik / der Klang | Die unsichtbare Welle, der Atem, die Resonanz |
 | **Licht & Wahrnehmung** | Die Farbe / der Farbton | Die Nuance, die Tiefe, das Spiel zwischen Licht und Schatten |
-| **Raum & Messbarkeit** | Das Gewicht & das Volumen | Die handfeste Verankerung in der physikalischen Wirklichkeit |
+| **Raum & Messbarkeit** | Das Gewicht & das Volumen (Tonne engl. ton) | Die handfeste Verankerung in der physikalischen Wirklichkeit |
 
 ---
 ## Lyrik

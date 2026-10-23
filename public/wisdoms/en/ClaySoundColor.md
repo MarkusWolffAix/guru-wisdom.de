@@ -38,7 +38,7 @@ Dimension | Phenomenon | What it describes |
 
 **Light & Perception** | Color / hue | The nuance, the depth, the interplay of light and shadow |
 
-**Space & Measurability** | Weight & Volume | The tangible grounding in physical reality |
+**Space & Measurability** | Weight & Volume (ton) | The tangible grounding in physical reality |
 
 ---
 ## Lyrics
