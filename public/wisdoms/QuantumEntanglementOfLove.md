@@ -1,12 +1,12 @@
 ---
-id: QuantumEntanglementOfLove
+id: "QuantumEntanglementOfLove"
 title: "Spukhafte Fernwirkung oder das Band der Liebe"
 subtitle: "Was die Quantenverschränkung über unsere tiefste Verbundenheit lehrt"
 description: "Eine philosophische, physikalische und mathematische Betrachtung der Quantenverschränkung: Warum Einsteins 'spukhafte Fernwirkung' kein unheimlicher Mechanismus ist, sondern das Echo einer fundamentalen Einheit, in der wir füreinander Saite und Resonanzkörper sind."
 date: 2026-10-24
 author: "Markus Wolff guru-wisdom.de"
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 tags: ["Verbundenheit", "Liebe", "Bewusstsein", "Quantenphysik", "Quantenverschränkung", "Albert Einstein", "Panpsychismus", "Advaita", "Resonanz"]
+categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 
 # Spukhafte Fernwirkung oder das Band der Liebe
