@@ -218,6 +218,7 @@ audio::-webkit-media-controls-enclosure {
 .wisdom-card h3,
 .handwritten-text {
     font-family: 'Caveat', cursive;
+    text-align: center;
 }
 
 .handwritten-text { font-size: 2.5em; margin-bottom: 20px; }
