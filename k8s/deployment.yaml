@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guru-wisdom
+  labels:
+    app: guru-wisdom
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guru-wisdom
+  template:
+    metadata:
+      labels:
+        app: guru-wisdom
+    spec:
+      containers:
+      - name: web
+        # Falls Sie noch kein eigenes Image gebaut haben, können Sie
+        # für den Funktionstest vorerst nginx:alpine nutzen:
+        image: nginx:alpine
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: guru-wisdom-service
+spec:
+  selector:
+    app: guru-wisdom
+  ports:
+  - port: 80
+    targetPort: 80
+
