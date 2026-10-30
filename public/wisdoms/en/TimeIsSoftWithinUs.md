@@ -27,10 +27,10 @@ To make these inner rhythms tangible, here is the archive of our inner pacemaker
 
 ### Grief: The Extreme Dilation of Time
 * **Perceived Speed:** Sluggish and creeping
-* **The Experience:** An emotion of withdrawal. Because we often passively endure grief instead of taking action, energy drains from the body. Days feel like endless eons, and every hour stretches on inexorably.
+* **The Experience:** An emotion of withdrawal. Because we often passively endure grief instead of taking action, energy drains from the body. Days feel like endless epochs, and every hour stretches on inexorably.
 
 
-# ### Anxiety and Panic: The Slow-Motion Effect
+### Grief ### Anxiety and Panic: The Slow-Motion Effect
 * **Perceived Speed:** Internal racing with external slow motion
 * **The Experience:** A paradoxical state. Internally, everything is happening at top speed in an attempt to find a way out. However, the sheer volume of details being processed at breakneck speed makes the brief external moment seem like an eternity.
 
