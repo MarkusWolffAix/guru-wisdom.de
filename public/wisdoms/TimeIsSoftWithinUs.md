@@ -26,7 +26,7 @@ Um diese inneren Rhythmen greifbar zu machen, ist hier das Archiv der inneren Ta
 
 ### Trauer: Die extreme Zeitdehnung
 * **Gefühlte Geschwindigkeit:** Zäh und kriechend
-* **Das Erleben:** Eine Emotion des Rückzugs. Weil wir in der Trauer oft passiv aushalten, statt aktiv zu handeln, weicht die Energie aus dem Körper. Tage fühlen sich an wie endlose Äonen, und jede Stunde zieht sich unerbittlich in die Länge.
+* **Das Erleben:** Eine Emotion des Rückzugs. Weil wir in der Trauer oft passiv aushalten, statt aktiv zu handeln, weicht die Energie aus dem Körper. Tage fühlen sich an wie endlose Epochen an, und jede Stunde zieht sich unerbittlich in die Länge.
 
 ### Angst und Panik: Der Zeitlupen-Effekt
 * **Gefühlte Geschwindigkeit:** Inneres Rasen bei äußerer Zeitlupe
