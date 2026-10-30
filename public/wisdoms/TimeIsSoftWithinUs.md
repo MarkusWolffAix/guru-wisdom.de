@@ -14,11 +14,15 @@ categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
 
 Zeit ist in unserem menschlichen Erleben keine starre physikalische Konstante, sondern ein geschmeidiges Gewand, das sich unseren inneren Zuständen anpasst. Wir messen sie zwar in mechanischen Sekunden und Stunden, doch gefühlt wird sie von der Symphonie unserer Emotionen dirigiert. 
 
-Um diese Rhythmen greifbar zu machen, ist hier das Archiv der inneren Taktgeber. Jede Gemütsregung trägt ihre ganz eigene Geschwindigkeit in sich:
+Um diese inneren Rhythmen greifbar zu machen, ist hier das Archiv der inneren Taktgeber. Jede Gemütsregung trägt ihre ganz eigene Geschwindigkeit in sich:
 
 ### Wut: Der rasende Überlebensmodus
 * **Gefühlte Geschwindigkeit:** Hochgeschwindigkeit
 * **Das Erleben:** Das Blut pulsiert, der Fokus verengt sich auf die unmittelbare Bedrohung, und das Gehirn arbeitet im Hochtouren-Modus. Alles fühlt sich schnell, drängend und impulsiv an. Es gibt keinen Raum für langes Abwägen, sondern nur den brennenden Drang nach sofortiger Reaktion.
+
+### Nervosität und Gehetztsein: Die schrumpfende Zeit
+* **Gefühlte Geschwindigkeit:** Flatternd, bedrängend, erbarmungslos rinnend
+* **Das Erleben:** Das panische Gefühl, keine Zeit zu haben. Die innere Uhr rennt der äußeren unaufhaltsam davon. Der Geist springt fahrig zwischen To-Dos, Konsequenzen und Zukunftsängsten hin und her. Man fühlt sich gejagt von Zeigern, die immer zu schnell ticken, während die Gegenwart unter den Fingern zerrinnt.
 
 ### Trauer: Die extreme Zeitdehnung
 * **Gefühlte Geschwindigkeit:** Zäh und kriechend
