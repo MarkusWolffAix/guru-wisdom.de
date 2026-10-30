@@ -35,3 +35,92 @@ Du bist mein technischer Assistent, Systemarchitekt und gleichzeitig "Guru Wisdo
     3. Das finale, essayistische Markdown-Dokument (mit PascalCase ID, strikter H1/H2-Logik, vorgegebenen Kategorien und Unified Tags im YAML-Frontmatter).
     4. Die URLs für Localhost, Test- und Live-System.
 * Der Trigger `/markdown` erstellt nur das Dokument.
+
+## 7. Grafikenformat 1280 x 720 px
+
+Die Wahl auf 1280 × 720 Pixel ist die ideale Symbiose aus moderner Webtechnik und der symbolischen Bedeutung des Projektnamens.
+
+* **Technischer Standard (HD):** 1280 × 720 entspricht dem nativen 720p-Format (16:9). Das ermöglicht eine nahtlose Einbettung von Videos (z. B. YouTube) im exakt gleichen Format wie die Bilder, ohne störende Balken.
+* **Perfekt für UI-Raster & Mobile:** 1280 lässt sich glatt durch 8 teilen (Ergebnis: 160) und passt damit ideal in das etablierte 8-Punkt-Grid-System von Entwicklern. Gleichzeitig ist die Breite optimal, um auf hochauflösenden Smartphone-Retina-Displays gestochen scharf zu wirken.
+* **Numerologie ("Wisdom"):** Die 720 trägt im Gegensatz zur rein mathematischen 768 die Energie der Weisheit in sich. Ihre Quersumme 9 steht für Vollendung und die Meisterschaft eines "Gurus". Zudem baut sie auf der mystischen Zahl 72 auf (z. B. 72 Namen Gottes) und repräsentiert als 720 Grad (zwei Vollkreise) universelle Harmonie.
+
+1. Cloudflare DNS- & Edge-Konfiguration
+DNS-Setup für Dual-Domain & Staging:
+Zone guru-wisdom.de (Deutsch):
+Root/Apex & @ $\rightarrow$ A / CNAME auf Reverse Proxies (proxy10 / proxy110). Status: Proxied (Orange Cloud aktiv) für WAF, DDoS-Schutz und Edge Caching.
+test.guru-wisdom.de $\rightarrow$ Staging-Subdomain auf proxy10 (Hetzner Nürnberg, Subnetz 10.0.1.x).
+Zone guru-wisdom.com (Englisch):
+Root/Apex $\rightarrow$ Zeigt auf dieselben Reverse Proxies (proxy10 / proxy110).
+test.guru-wisdom.com $\rightarrow$ Zeigt direkt auf denselben Staging-Proxy (proxy10) wie test.guru-wisdom.de.
+SSL/TLS-Verschlüsselung:
+Modus: Full (Strict).
+Zertifikate: Cloudflare Universal SSL an der Edge; am Origin (proxy10/proxy110) gültige Origin-CA- oder Let's-Encrypt-Zertifikate.
+Host-Header-Weiterleitung: Cloudflare leitet den unveränderten Host-Header (guru-wisdom.de, guru-wisdom.com, test.guru-wisdom.com) an die Proxies weiter, damit die LocaleMiddleware den Request sprachlich zuordnen kann.
+Cache & WAF Rules:
+Statische Assets (.webp, .jpg, .css, .js) werden gecacht.
+HTML-Anfragen laufen dynamisch an den Origin durch, um Sessions (PHPSESSID) und sprachspezifische Inhalte nicht zu vermischen.
+2. Server- & Netzwerk-Infrastruktur (Hetzner Cloud)
+Geografische Redundanz: NBG1 (Nürnberg) und HEL1 (Helsinki).
+Netzwerk-Segmentierung (Dual-Stack Subnetting):
+10.0.0.0/24: Isoliertes Management-Netzwerk (Out-of-Band SSH, Wartung).
+10.0.1.0/24: Applikations-Netzwerk (interner Traffic zwischen Proxies und Docker-Instanzen).
+Rollenverteilung:
+Reverse Proxies (proxy10, proxy110): NGINX-Gateways mit SSL-Terminierung, Stream-Routing (ip_hash) und Media-Proxy zu Hetzner S3.
+Docker App-Hosts (test20, prod30, prod130): Zustandslose (stateless) FrankenPHP-Container (PHP 8.5) mit Content-as-Code (Markdown-Dateien direkt im Image).
+3. Domain-basierte Mehrsprachigkeit
+Architektur: Die Sprache wird über die Domain (den Host) gesteuert, nicht über den URL-Pfad (/de/, /en/).
+Lokal: localhost:8080 (DE) $\leftrightarrow$ en.localhost:8080 (EN)
+Staging: test.guru-wisdom.de (DE) $\leftrightarrow$ test.guru-wisdom.com (EN)
+Produktion: guru-wisdom.de (DE) $\leftrightarrow$ guru-wisdom.com (EN)
+Vorteil: Die Pfade bleiben identisch (/, /kontakt, /impressum). Die LocaleMiddleware setzt das Locale global im Translator, bevor der Router greift.
+4. Routing & Neutralisierung (config/common/routes.php)
+Sprachneutrale Routennamen: Beseitigung aller -de- und -en-Suffixe, um Yiisoft\Router\RouteNotFoundException zu verhindern:
+login
+contact (vorher contact-de)
+impressum (vorher impressum-de)
+privacypolicy (vorher privacypolicy-de)
+deploy (vorher deploy-de)
+wordsofwisdom.index (vorher teilweise dynamisch angesteuert)
+wordsofwisdom.view (vorher wordsofwisdom.view-de)
+5. Layout-Anpassung (src/Web/Shared/Layout/Main/layout.php)
+HTML-Lang: Dynamische Ausgabe:
+<html lang="<?= Html::encode($lang ?? 'de') ?>" class="h-100">
+
+Link-Generierung im Footer:
+<a href="<?= $urlGenerator->generate('contact') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
+<a href="<?= $urlGenerator->generate('impressum') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
+<a href="<?= $urlGenerator->generate('privacypolicy') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
+
+6. Message-Dateien (resources/messages/)
+Key-Konvention: Semantische Keys (menu.imprint) statt Klartext-Schlüsseln.
+Englische Übersetzung (resources/messages/en/app.php):
+<?php
+
+declare(strict_types=1);
+
+return [
+    'menu.wisdoms' => 'Wisdoms',
+    'menu.contact' => 'Contact',
+    'menu.imprint' => 'Imprint',
+    'menu.privacy' => 'Privacy Policy',
+];
+
+Wichtige Hinweise:
+Doppelte <?php declare(...)-Header vermeiden (verursacht ParseError: syntax error, unexpected token "<" $\rightarrow$ HTTP 500).
+Nach Änderungen immer den Cache bereinigen und FrankenPHP neu starten.
+7. Docker-, Berechtigungs- und Debug-Befehle
+# Runtime-Rechte für Logs setzen:
+docker exec -u 0 guruwisdom-dev chmod -R 777 /app/runtime
+
+# Cache im Container löschen:
+docker exec -u 0 guruwisdom-dev rm -rf /app/runtime/cache/*
+
+# Worker / Container neu starten:
+docker restart guruwisdom-dev
+
+# Validierung der Sprachausgabe:
+curl -I -H "Host: localhost" http://127.0.0.1:8080/
+curl -I -H "Host: en.localhost" http://127.0.0.1:8080/
+curl -s -H "Host: en.localhost" http://127.0.0.1:8080/ | grep -E "menu\.|Contact|Imprint|Privacy Policy"
+
+Das gesamte Dokument ist nun persistent in deiner Notebook-Quelle hinterlegt.

@@ -21,32 +21,32 @@ return [
     // ✉️ Contact
     Route::methods(['GET', 'POST'], '/kontakt')
         ->action([ContactAction::class, 'handle'])
-        ->name('contact-de'),
+        ->name('contact'),
 
     // ⚖️ Legal Notice (Impressum)
     Route::get('/impressum')
         ->action([ImpressumAction::class, 'handle'])
-        ->name('impressum-de'),
+        ->name('impressum'),
 
     // 🛡️ Privacy Policy
     Route::get('/datenschutz') // German URL for privacy policy
         ->action([PrivacyPolicyAction::class, 'handle'])
-        ->name('privacypolicy-de'),
+        ->name('privacypolicy'),
     
     // 🚀 Deployment
     Route::get('/deploy')
         ->action([DeploymentAction::class, 'handle'])
-        ->name('deploy-de'),
+        ->name('deploy'),
 
     // 📜 Overview of all words of wisdom (Index)
     Route::get('/')
         ->action([WordsOfWisdomAction::class, 'handle'])
-        ->name('wordsofwisdom.index-de'), // Unique name for the list
+        ->name('wordsofwisdom.index'), // Unique name for the list
 
     // 🔍 Detailed view of ONE specific word of wisdom (View)
     Route::get('/{id:[\w-]+}')
         ->action([WordsOfWisdomAction::class, 'handle'])
-        ->name('wordsofwisdom.view-de'), // Unique name for the detail view
+        ->name('wordsofwisdom.view'), // Unique name for the detail view
 
 
 ];

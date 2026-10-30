@@ -49,13 +49,51 @@ return [
         'default' => 'de',
     ],
 
+    
     'multilingual' => [
-        'enable_lang_support_button' => false, // default deactivated, can be activated in the future
-        'allow_query_override' => false,      // only for development and testing purposes
-        'domains' => [
-            'de' => 'guru-wisdom.de',
-            'en' => 'guru-wisdom.com',
+        'default_locale' => 'de',
+        'locales' => [
+            'available' => ['de', 'en'],
+        ],
+        'enable_lang_support_button' => false,
+        'allow_query_override' => false,
+
+        // Hostname to locale mapping (Dev, Staging, Production)
+        'domain_to_locale' => [
+            // Local Development
+            'localhost'            => 'de',
+            'de.localhost'         => 'de',
+            'en.localhost'         => 'en',
+
+            // Staging / Testing
+            'test.guru-wisdom.de'  => 'de',
+            'test.guru-wisdom.com' => 'en',
+
+            // Production
+            'guru-wisdom.de'       => 'de',
+            'www.guru-wisdom.de'   => 'de',
+            'guru-wisdom.com'      => 'en',
+            'www.guru-wisdom.com'  => 'en',
+        ],
+
+        // Target switch host for each environment pair
+        'domain_switch_map' => [
+            // Local Development
+            'localhost'            => 'en.localhost',
+            'de.localhost'         => 'en.localhost',
+            'en.localhost'         => 'localhost',
+
+            // Staging / Testing
+            'test.guru-wisdom.de'  => 'test.guru-wisdom.com',
+            'test.guru-wisdom.com' => 'test.guru-wisdom.de',
+
+            // Production
+            'guru-wisdom.de'       => 'guru-wisdom.com',
+            'www.guru-wisdom.de'   => 'guru-wisdom.com',
+            'guru-wisdom.com'      => 'guru-wisdom.de',
+            'www.guru-wisdom.com'  => 'guru-wisdom.de',
         ],
     ],
+
    
 ];
