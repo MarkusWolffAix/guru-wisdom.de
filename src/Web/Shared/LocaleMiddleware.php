@@ -14,27 +14,25 @@ final class LocaleMiddleware implements MiddlewareInterface
 {
     public function __construct(
         private readonly TranslatorInterface $translator,
-        private readonly array $params = []
+        private readonly array $params
     ) {
     }
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $multilingual = $this->params['multilingual'] ?? [];
-        $available = $this->params['locales']['available'] ?? ['de', 'en'];
-        $default = $this->params['locales']['default'] ?? 'de';
+        $defaultLocale = $multilingual['default_locale'] ?? 'de';
+        $available = $multilingual['locales']['available'] ?? ['de', 'en'];
+        $domainToLocale = $multilingual['domain_to_locale'] ?? [];
 
-        $locale = $default;
-        $host = $request->getUri()->getHost();
+        // Strip optional port from host header (e.g. localhost:8080 -> localhost)
+        $rawHost = $request->getUri()->getHost();
+        $host = strtok($rawHost, ':');
 
-        // 1. Domain-Routing (Prod: .com -> en, .de -> de)
-        if (str_ends_with($host, '.com')) {
-            $locale = 'en';
-        } elseif (str_ends_with($host, '.de')) {
-            $locale = 'de';
-        }
+        // 1. Exact domain resolution with fallback to default locale
+        $locale = $domainToLocale[$host] ?? $defaultLocale;
 
-        // 2. GET-Parameter Override für Dev und Testing
+        // 2. Query parameter override (strictly when explicitly enabled)
         if (!empty($multilingual['allow_query_override'])) {
             $queryParams = $request->getQueryParams();
             if (isset($queryParams['lang']) && in_array($queryParams['lang'], $available, true)) {
@@ -42,10 +40,10 @@ final class LocaleMiddleware implements MiddlewareInterface
             }
         }
 
-        // Translator global auf die ermittelte Sprache setzen
+        // Apply locale globally to the translator
         $this->translator->setLocale($locale);
 
-        // Request anreichern für Actions, Layout und View-Templates
+        // Enrich the request attributes for actions, layout, and view templates
         $request = $request
             ->withAttribute('current_locale', $locale)
             ->withAttribute('enable_lang_support_button', (bool) ($multilingual['enable_lang_support_button'] ?? false));

@@ -101,7 +101,7 @@ $this->beginPage();
 
 <header id="header">
     <nav class="navbar navbar-light bg-white fixed-top border-bottom py-1">
-        <a href="<?= $urlGenerator->generate('wordsofwisdom.index-' . $lang) ?>" class="navbar-brand ms-3 mt-1 py-0">
+        <a href="<?= $urlGenerator->generate('wordsofwisdom.index') ?>" class="navbar-brand ms-3 mt-1 py-0">
             <picture>
                 <source srcset="/images/logo/GuruWisdom.webp" type="image/webp">
                 <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" width="120" height="40">
@@ -132,9 +132,9 @@ $this->beginPage();
            <a href="https://www.xing.com/pages/guru-wisdom-gmbh" class="me-3"><img src="/images/icons/xing-50.png" alt="Xing" width="20" height="20" ></a>
         
         <div class="small text-muted mb-2">
-            <a href="<?= $urlGenerator->generate('contact-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
-            <a href="<?= $urlGenerator->generate('impressum-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
-            <a href="<?= $urlGenerator->generate('privacypolicy-' . $lang) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
+            <a href="<?= $urlGenerator->generate('contact' ) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
+            <a href="<?= $urlGenerator->generate('impressum') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
+            <a href="<?= $urlGenerator->generate('privacypolicy') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
         </div>
 
         <div class="text-muted">

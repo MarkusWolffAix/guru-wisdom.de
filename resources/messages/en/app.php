@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 return [
-    'Weisheiten'  => 'Wisdoms',
-    'Kontakt'     => 'Contact',
-    'Impressum'   => 'Imprint',
-    'Datenschutz' => 'Privacy Policy',
+    'menu.wisdoms' => 'Wisdoms',
+    'menu.contact' => 'Contact',
+    'menu.imprint' => 'Imprint',
+    'menu.privacy' => 'Privacy Policy',
 ];

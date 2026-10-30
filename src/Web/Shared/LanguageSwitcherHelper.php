@@ -12,25 +12,31 @@ final class LanguageSwitcherHelper
     {
         $multilingual = $params['multilingual'] ?? [];
 
-        // Prüfen, ob der Button aktiviert ist
+        // Check if the language switch button is enabled
         if (empty($multilingual['enable_lang_support_button'])) {
             return null;
         }
 
-        $currentLocale = (string) ($request->getAttribute('current_locale', 'de'));
+        $defaultLocale = $multilingual['default_locale'] ?? 'de';
+        $currentLocale = (string) ($request->getAttribute('current_locale', $defaultLocale));
         $targetLocale = ($currentLocale === 'de') ? 'en' : 'de';
         $uri = $request->getUri();
-        $host = $uri->getHost();
 
-        // Verhalten 1: Testing (test.guru-wisdom.de) & Dev (localhost)
+        // Strip optional port from host header
+        $rawHost = $uri->getHost();
+        $host = strtok($rawHost, ':');
+
+        // Mode 1: Development/Testing query parameter override
         if (!empty($multilingual['allow_query_override'])) {
             $queryParams = $request->getQueryParams();
             $queryParams['lang'] = $targetLocale;
             return (string) $uri->withQuery(http_build_query($queryParams));
         }
 
-        // Verhalten 2: Prod (Domain-Wechsel guru-wisdom.de <-> guru-wisdom.com)
-        $targetHost = $multilingual['domains'][$targetLocale] ?? $host;
+        // Mode 2: Strict environment-pair domain switching
+        $switchMap = $multilingual['domain_switch_map'] ?? [];
+        $targetHost = $switchMap[$host] ?? $host;
+
         return (string) $uri->withHost($targetHost);
     }
 }
