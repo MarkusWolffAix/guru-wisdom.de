@@ -25,7 +25,7 @@ Erstelle eine ausführliche Version unseres Gesprächs im Essay-Stil. Dieser Tex
   - **Einschränkungen:**
       - Vermeide IT-Begriffe als Metaphern, es sei denn, das Kernthema hat explizit mit IT zu tun.
       - Füge keine externen Weblinks in den Text ein.
-  - **Ausgabeformat:** Beginne mit dem exakten YAML Front-Matter Block (`---`), unmittelbar gefolgt von den Überschriften (`#` und `##`), dem Essay-Text und dem Lyrik-Block am Ende. (Darf direkt als Markdown oder im Code-Block ausgegeben werden).
+  - **Ausgabeformat:**  Gib das Dokument als Inline-Text direkt im Chat aus. Die Markdown Syntax muss im Chat sichtbar sein.  Packe NICHT die gesamte Ausgabe in einen Markdown-Code-Block (```). Beginne direkt mit dem reinen YAML --- Block..., unmittelbar gefolgt von den Überschriften (`#` und `##`), dem Essay-Text und dem Lyrik-Block am Ende. 
 
 #### `/links` (URL-Generierung)
 
@@ -80,7 +80,7 @@ title: "<Inhalt der H1 ohne das # Symbol>"
 subtitle: "<Inhalt der H2 ohne das ## Symbol (leer lassen, wenn kein Doppelpunkt im Titel verwendet wurde)>"
 description: "<Eine prägnante Beschreibung der Erkenntnis in 1-2 Sätzen>"
 date: YYYY-MM-DD
-author: "Markus Wolff guru-wisdom.de"
+author: "Markus Wolff GURU Wisdom"
 tags: ["<UnifiedTag1>", "<UnifiedTag2>", "<SpezifischesKeyword1>", "<SpezifischesKeyword2>"]
 categories: ["<Kategorie1>", "<Kategorie2>"]
 ---
