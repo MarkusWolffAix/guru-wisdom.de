@@ -133,8 +133,8 @@ $this->beginPage();
         
         <div class="small text-muted mb-2">
             <a href="<?= $urlGenerator->generate('contact' ) ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.contact', [], 'app') ?></a> |
-            <a href="<?= $urlGenerator->generate('impressum') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
-            <a href="<?= $urlGenerator->generate('privacypolicy') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
+            <a href="<?= $urlGenerator->generate('imprint') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.imprint', [], 'app') ?></a> |
+            <a href="<?= $urlGenerator->generate('privacy') ?>" class="text-decoration-none text-muted mx-2"><?= $translator->translate('menu.privacy', [], 'app') ?></a>
         </div>
 
         <div class="text-muted">
