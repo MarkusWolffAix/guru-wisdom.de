@@ -20,8 +20,16 @@ final class Action implements RequestHandlerInterface
         $this->viewRenderer = $viewRenderer->withViewPath('@views/contact');
     }
 
-    public function handle(ServerRequestInterface $request): ResponseInterface
-    {
-        return $this->viewRenderer->render('template');
-    }
+   public function handle(ServerRequestInterface $request): ResponseInterface
+   {
+    /** @var string $locale */
+    $locale = $request->getAttribute('current_locale', 'de');
+    $viewName = ($locale === 'en') ? 'en/template' : 'template';
+
+    return $this->viewRenderer
+        ->withLocale($locale)
+        ->render($viewName);
+   }
+
+
 }

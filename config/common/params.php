@@ -67,12 +67,12 @@ return [
 
             // Staging / Testing
             'test.guru-wisdom.de'  => 'de',
-            'test.guru-wisdom.com' => 'en',
+            'test.guru-wisdom.com' => 'de',
 
             // Production
             'guru-wisdom.de'       => 'de',
             'www.guru-wisdom.de'   => 'de',
-            'guru-wisdom.com'      => 'en',
+            'guru-wisdom.com'      => 'de',
             'www.guru-wisdom.com'  => 'en',
         ],
 

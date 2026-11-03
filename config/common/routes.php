@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use App\Web\Contact\Action as ContactAction;
 use App\Web\Deployment\Action as DeploymentAction;
-use App\Web\Impressum\Action as ImpressumAction;
+use App\Web\Imprint\Action as ImprintAction;
 use App\Web\Login\Action as LoginAction;
-use App\Web\PrivacyPolicy\Action as PrivacyPolicyAction;
+use App\Web\Privacy\Action as PrivacyAction;
 use App\Web\WordsOfWisdom\Action as WordsOfWisdomAction;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -27,12 +27,12 @@ return [
     // ⚖️ Legal Notice (Impressum)
     Route::get('/imprint')
         ->name('imprint')
-        ->action([ImpressumAction::class, 'handle']),
+        ->action([ImprintAction::class, 'handle']),
 
-    // 🛡️ Privacy Policy
+    // 🛡️ Privacy 
     Route::get('/privacy')
         ->name('privacy')
-        ->action([PrivacyPolicyAction::class, 'handle']),
+        ->action([PrivacyAction::class, 'handle']),
 
     // 🚀 Deployment
     Route::get('/deploy')

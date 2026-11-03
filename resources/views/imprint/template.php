@@ -65,7 +65,7 @@ $this->setTitle('Impressum');
     <h3>5. Hinweis zu KI-generierten Medien (Bilder und Musik)</h3>
     <p>Zur visuellen und akustischen Untermalung unserer Erkenntnissammlung nutzen wir auf dieser Webseite teilweise Medien, die durch eine Künstliche Intelligenz erzeugt wurden.</p>
     <ul>
-        <li><strong>Bildinhalte:</strong> Sie erkennen diese KI-generierten Illustrationen (erstellt mit Google Gemini) an dem spezifischen Wasserzeichen in der unteren rechten Bildecke. Es handelt sich bei diesen Werken um symbolische, algorithmisch erschaffene Visualisierungen und ausdrücklich nicht um authentische historische Fotografien oder Werke menschlicher Bildurheber.</li>
+        <li><strong>Bildinhalte:</strong>  KI-generierten Illustrationen werden auf Guru-Wisdom überwiegend genutzt. Es handelt sich bei diesen Werken um symbolische, algorithmisch erschaffene Visualisierungen und ausdrücklich nicht um authentische historische Fotografien oder Werke menschlicher Bildurheber.</li>
         <li><strong>Musikinhalte:</strong> Auch die Musikstücke, die unter den Hauptbildern der jeweiligen „Wisdoms“ abspielbar sind, wurden vollständig von einer Künstlichen Intelligenz komponiert und generiert.</li>
     </ul>
 </div>
