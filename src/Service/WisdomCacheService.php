@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use Yiisoft\Cache\CacheInterface;
-use Yiisoft\Aliases\Aliases; // <-- WICHTIG: Das Alias-Paket importieren
+use Yiisoft\Aliases\Aliases;
 use App\Service\GuruWisdomService;
 
 class WisdomCacheService
@@ -15,56 +15,73 @@ class WisdomCacheService
     public function __construct(
         private CacheInterface $cache,
         private GuruWisdomService $guruWisdom,
-        Aliases $aliases // <-- Yii3 reicht uns die Aliase automatisch herein
+        Aliases $aliases
     ) {
-        // Wir nutzen dein exaktes Alias, um den absolut korrekten Pfad zu holen!
         $this->wisdomPath = $aliases->get('@public/wisdoms');
     }
 
-    public function getSortedWisdoms(): array
+    /**
+     * Liefert alle sortierten Weisheiten für die gewünschte Sprache.
+     * Nutzt für jede Sprache einen separaten Cache-Eintrag.
+     */
+    public function getSortedWisdoms(string $locale = 'de'): array
     {
-        return $this->cache->getOrSet('wisdom_sorted_index', function () {
+        $cacheKey = 'wisdom_sorted_index_' . $locale;
+
+        return $this->cache->getOrSet($cacheKey, function () use ($locale) {
             $wisdoms = [];
-            
-            // rtrim sichert uns ab, falls am Ende des Alias ein '/' steht oder nicht
-            $searchPath = rtrim($this->wisdomPath, '/') . '/*.md';
+
+            // 1. Pfad bestimmen: bei 'en' nach /public/wisdoms/en/ suchen
+            $baseDir = rtrim($this->wisdomPath, '/');
+            $targetDir = ($locale === 'en') ? $baseDir . '/en' : $baseDir;
+
+            // Fallback auf Standardpfad, falls /en/ nicht existiert oder leer ist
+            if (!is_dir($targetDir) || empty(glob($targetDir . '/*.md'))) {
+                $targetDir = $baseDir;
+            }
+
+            $searchPath = $targetDir . '/*.md';
             $files = glob($searchPath);
 
-            // Unser kleiner Diagnose-Wächter (kann später auch entfernt werden)
             if (empty($files)) {
                 throw new \RuntimeException(
                     "Diagnose-Fehler: Ich suche im Pfad '" . $searchPath . "', finde aber keine .md Dateien."
                 );
             }
 
+            // 2. Weisheiten parsen
             foreach ($files as $file) {
                 $slug = basename($file, '.md');
-                $data = $this->guruWisdom->parseFile($slug);
-                
+                // Sprache an GuruWisdomService übergeben
+                $data = $this->guruWisdom->parseFile($slug, $locale);
+
                 $wisdoms[] = [
-                    'slug'  => $slug,
-                    'title' => $data['title'] ?? $slug,
-                    'subtitle' => $data['subtitle'] ?? '',
+                    'slug'        => $slug,
+                    'title'       => $data['title'] ?? $slug,
+                    'subtitle'    => $data['subtitle'] ?? '',
                     'description' => $data['description'] ?? '',
-                    'tags'  => $data['tags'] ?? [],
-                    'categories' => $data['categories'] ?? 'allgemein',
-                    'date'  => $data['date'] ?? date('Y-m-d', filemtime($file))
+                    'tags'        => $data['tags'] ?? [],
+                    'categories'  => $data['categories'] ?? 'allgemein',
+                    'date'        => $data['date'] ?? date('Y-m-d', filemtime($file)),
                 ];
             }
 
+            // 3. Chronologisch absteigend sortieren
             usort($wisdoms, fn($a, $b) => strcmp((string)$b['date'], (string)$a['date']));
 
             return $wisdoms;
-        }, 86400); 
+        }, 86400);
     }
 
-public function getNeighbors(string $currentId): array
+    /**
+     * Ermittelt die vorherige und nächste Weisheit für die Navigationspfeile.
+     */
+    public function getNeighbors(string $currentId, string $locale = 'de'): array
     {
-        $wisdoms = $this->getSortedWisdoms();
+        $wisdoms = $this->getSortedWisdoms($locale);
         $currentIndex = null;
         $totalCount = count($wisdoms);
 
-        // Position des aktuellen Eintrags finden
         foreach ($wisdoms as $index => $wisdom) {
             if ($wisdom['slug'] === $currentId) {
                 $currentIndex = $index;
@@ -72,17 +89,12 @@ public function getNeighbors(string $currentId): array
             }
         }
 
-        // Falls der Beitrag nicht existiert oder es weniger als 2 Beiträge gibt
         if ($currentIndex === null || $totalCount < 2) {
             return ['newer' => null, 'older' => null];
         }
 
-        // --- Die Kreislauf-Logik ---
-        
-        // Neuer (Links): Wenn wir am Anfang sind (0), springen wir zum letzten Element (totalCount - 1)
+        // Kreislauf-Logik (Karussell)
         $newerIndex = ($currentIndex === 0) ? ($totalCount - 1) : ($currentIndex - 1);
-        
-        // Älter (Rechts): Wenn wir am Ende sind (totalCount - 1), springen wir zum ersten Element (0)
         $olderIndex = ($currentIndex === ($totalCount - 1)) ? 0 : ($currentIndex + 1);
 
         return [
@@ -91,20 +103,25 @@ public function getNeighbors(string $currentId): array
         ];
     }
 
-    public function getLatestWisdom(): ?array
+    public function getLatestWisdom(string $locale = 'de'): ?array
     {
-        $wisdoms = $this->getSortedWisdoms();
+        $wisdoms = $this->getSortedWisdoms($locale);
         return !empty($wisdoms) ? $wisdoms[0] : null;
     }
 
-    public function clearCache(): void
+    /**
+     * Leert den Cache (entweder für eine bestimmte Sprache oder für alle).
+     */
+    public function clearCache(?string $locale = null): void
     {
-        // PSR-16 Standard (wird von Yii3 genutzt) um einen spezifischen Key zu löschen
-        $this->cache->remove('wisdom_sorted_index'); 
-        
-        // Alternativ, falls du noch mehr Keys hättest, könntest du clear() nutzen, 
-        // was aber den gesamten Cache dieses Stores leert:
-        // $this->cache->clear();
-    }
+        if ($locale !== null) {
+            $this->cache->remove('wisdom_sorted_index_' . $locale);
+            return;
+        }
 
+        // Beide Caches und alten Legacy-Key bereinigen
+        $this->cache->remove('wisdom_sorted_index_de');
+        $this->cache->remove('wisdom_sorted_index_en');
+        $this->cache->remove('wisdom_sorted_index');
+    }
 }

@@ -60,21 +60,26 @@ final class Action implements RequestHandlerInterface
         /** @var string|null $id */
         $id = $this->currentRoute->getArgument('id');
 
+	$locale = $request->getAttribute('current_locale', 'de');
+
         // 1. STARTSEITE: Wenn KEINE ID übergeben wurde, zeigen wir die Übersicht (Schriftrolle)
         if ($id === null) {
-            $allWisdoms = $this->wisdomCache->getSortedWisdoms();
-            
+            // Nachher:
+	    $allWisdoms = $this->wisdomCache->getSortedWisdoms($locale);
+	    
+            $viewName = ($locale === 'en') ? 'en/overview' : 'overview';
+
             return $this->viewRenderer
                 ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
-                ->render('overview', [
-                    'currentUrl'  => (string) $request->getUri(), 
+                ->render($viewName, [
+                    'currentUrl'  => (string) $request->getUri(),
                     'wisdoms' => $allWisdoms,
                 ]); 
         }
 
         // 2. DETAILSEITE: Wenn eine ID da ist -> Validierung! (Ist sie im Archiv?)
         $isValid = false;
-        $allWisdoms = $this->wisdomCache->getSortedWisdoms();
+        $allWisdoms = $this->wisdomCache->getSortedWisdoms($locale);
         foreach ($allWisdoms as $wisdom) {
             if ($wisdom['slug'] === $id) {
                 $isValid = true;
@@ -92,12 +97,12 @@ final class Action implements RequestHandlerInterface
 
 
         // 4. DATEN LADEN: Ab hier ist absolut garantiert, dass $id ein gültiger String ist.
-        $wisdomData = $this->guruWisdom->parseFile($id);
-        $image      = $this->guruWisdom->getImageHtml($id);
-        $audio      = $this->guruWisdom->getAudioHtml($id);
+        $wisdomData = $this->guruWisdom->parseFile($id,$locale);
+        $image      = $this->guruWisdom->getImageHtml($id,$locale);
+        $audio      = $this->guruWisdom->getAudioHtml($id,$locale);
         
         // Navigation (Neuere / Ältere Weisheit für die Pfeile)
-        $neighbors = $this->wisdomCache->getNeighbors($id);
+        $neighbors = $this->wisdomCache->getNeighbors($id,$locale);
         $newerWisdom = $neighbors['newer'];
         $olderWisdom = $neighbors['older'];
 
@@ -118,9 +123,10 @@ final class Action implements RequestHandlerInterface
         $keywords = implode(', ', $keywordsArray);
 
         // 5. RENDERN DER EINZELNEN WEISHEIT
+	$viewName = ($locale === 'en') ? 'en/template' : 'template';
         return $this->viewRenderer
             ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
-            ->render('template', [
+            ->render($viewName, [
                 'id'          => $id, 
                 'wisdomText'  => $wisdomData['htmloutput'] ?? '', 
                 'title'       => $wisdomData['title'] ?? 'No Title',

@@ -1,0 +1,208 @@
+<?php
+
+declare(strict_types=1);
+
+use Yiisoft\Html\Html;
+use Yiisoft\View\WebView;
+
+/** @var \Yiisoft\View\WebView $this */
+/** @var array $wisdoms */
+/** @var string      $currentUrl     The dynamic absolute URL from request. */
+
+$ogImageUrl = $currentUrl . 'images/logo/GuruWisdom.png';
+$finalAuthor = 'Markus Wolff & Team';
+$finalPublisher = 'GURU Wisdom';
+$title = 'Archive of Wisdom';
+$description = 'Discover profound wisdom on Guru-Wisdom. Get inspired and find new perspectives for your life.';
+
+$this->registerMeta(['property' => 'og:title', 'content' => $title], 'og:title');
+$this->registerMeta(['property' => 'og:description', 'content' =>  $description ], 'og:description');
+$this->registerMeta(['property' => 'og:image', 'content' => $ogImageUrl], 'og:image');
+$this->registerMeta(['property' => 'og:url', 'content' => $currentUrl], 'og:url');
+$this->registerMeta(['property' => 'og:type', 'content' => 'article'], 'og:type');
+
+$this->registerMeta(['name' => 'description', 'content' => $description], 'description');
+$this->registerMeta(['name' => 'keywords', 'content' => 'Wisdom, Quotes, Inspiration, Philosophy, Spirituality, Norse Mythology, Guru-Wisdom'], 'keywords');
+$this->registerMeta(['name' => 'author', 'content' => $finalAuthor], 'author');
+$this->registerMeta(['name' => 'robots', 'content' => 'index, follow'], 'robots');
+
+$this->registerMeta(['name' => 'twitter:card', 'content' => 'summary_large_image'], 'twitter:card');
+$this->registerMeta(['name' => 'twitter:title', 'content' => $title], 'twitter:title');
+$this->registerMeta(['name' => 'twitter:description', 'content' => $description], 'twitter:description');
+$this->registerMeta(['name' => 'twitter:image', 'content' => $ogImageUrl], 'twitter:image');
+
+$this->registerLinkTag(Html::link($currentUrl, ['rel' => 'canonical']));
+
+$this->registerMeta(['name' => 'theme-color', 'content' => '#ffffff'], 'theme-color');
+
+$schemaData = [
+    '@context' => 'https://schema.org',
+    '@type' => 'Article',
+    'headline' => $title,
+    'description' => $description,
+    'image' => [
+        $ogImageUrl
+    ],
+    'author' => [
+        '@type' => 'Person',
+        'name' => $finalAuthor,
+        'url' => 'https://guru-wisdom.de/imprint'
+    ],
+    'publisher' => [
+        '@type' => 'Organization',
+        'name' => $finalPublisher,
+        'logo' => [
+            '@type' => 'ImageObject',
+            'url' => 'https://guru-wisdom.de/images/logo/GuruWisdom.jpg'
+        ]
+    ],
+    'mainEntityOfPage' => [
+        '@type' => 'WebPage',
+        '@id' => $currentUrl
+    ]
+];
+
+// Falls ein Datum im Markdown hinterlegt war, fügen wir es ISO 8601 formatiert hinzu
+if (!empty($datePublished)) {
+    $schemaData['datePublished'] = date('c', strtotime((string)array_first($wisdoms)['date'] ?? 'now'));
+}
+
+// Array in einen sicheren JSON-String umwandeln
+$jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+
+$this->setTitle($title);
+?>
+
+<script type="application/ld+json"><?= $jsonLd ?></script>
+
+<!-- flex-column zwingt die Elemente IMMER untereinander. flex-md-row wurde entfernt. -->
+<div class="container d-flex flex-column align-items-center justify-content-center">
+
+    <!-- Das Auge der Erkenntnis: Jetzt in einem eigenen Container mit max-width, damit es nicht zu riesig wird. -->
+    <!-- text-center gilt jetzt für alle Geräte. text-md-start wurde entfernt. -->
+    <div class="handwritten-text text-center">
+        <h2 class="display-4 fw-bold mb-2">Welcome to Guru Wisdom </h2> <h3> Archive of Wisdom</h3>
+    </div>
+
+</div>
+
+<!-- Die Schriftrolle: Der magische Container -->
+<section class="container pb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <!-- Der Schriftrollen-Hintergrund (Transparent durch CSS gesteuert) -->
+            <div class="mystic-scroll-bg p-2 shadow-lg">
+
+                <!-- Mystischer Hoch-Button (Gradient-Stil) -->
+                <button id="scrollUpBtn" class="mystic-scroll-bar w-100 mb-2" aria-label="Back into the past">
+                    <svg viewBox="0 0 24 24" width="40" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M 4 16 Q 12 4 20 16"></path>
+                    </svg>
+                </button>
+
+                <!-- Scroll-Container: Zeigt durch CSS max-height nur 3 Karten gleichzeitig -->
+                <div class="wisdom-scroll-area" id="wisdomContainer">
+                    <?php $index = 0; ?>
+                    <?php foreach ($wisdoms as $wisdom): ?>
+                        <?php
+                            $isTopElement = ($index < 3);
+                            $imagePriority = $isTopElement ? 'fetchpriority="high"' : 'loading="lazy"';
+                            $id = $wisdom['id'] ?? $wisdom['slug'];
+                            $wisdomTitle = $wisdom['title'] ?? 'Unknown Wisdom';
+                            $subtitle = $wisdom['subtitle'] ?? '';
+                            $tags = $wisdom['tags'] ?? [];
+                            $tags = array_map(fn($item) => trim($item, '"'), $tags);
+                            // SICHERHEIT: Kategorie sauber auslesen (egal ob Array oder String)
+                            $categories = $wisdom['categories'] ?? ['General'];
+                            $categories =array_map(fn($item) => trim($item, '"'), $categories);
+                            $category = is_array($categories) ? ($categories[0] ?? 'General') : $categories;
+
+                            $imageName = !empty($wisdom['image']) ? $wisdom['image'] : 'Urd';
+                            $imagePathWebp = "https://media.guru-wisdom.de/images/thumb/{$id}.webp";
+                            $imagePathJpg = "https://media.guru-wisdom.de/images/{$id}.jpg";
+                        ?>
+
+                        <div class="card wisdom-card  wisdom-card-link p-3 shadow-sm border-0 mb-1" data-category="<?= htmlspecialchars((string)$category) ?>">
+
+                            <!-- Anklickbarer Bereich: Bild links, Text rechts -->
+                            <a href="<?= htmlspecialchars((string)$id) ?>" class="wisdom-clickable-area text-decoration-none d-flex flex-row align-items-center">
+
+                                <!-- Vorschaubild (Links, Wächter-Container) -->
+                            <div class="wisdom-thumb-container me-4">
+                                    <picture class="wisdom-picture">
+                                        <source srcset="<?= $imagePathWebp ?>" type="image/webp">
+                                        <img src="<?= $imagePathJpg ?>"
+                                             alt="<?= htmlspecialchars((string)$wisdomTitle) ?>"
+                                             class="wisdom-thumb-img"
+                                             <?= $imagePriority ?>
+                                             decoding="async">
+                                    </picture>
+                                </div>
+
+                                <!-- Text-Inhalt (Rechts daneben) -->
+                                <div class="wisdom-text-container flex-grow-1 text-start">
+                                    <h3 class="card-title h5 fw-bold mb-2 text-dark">
+                                        <?= htmlspecialchars((string)$wisdomTitle) ?>
+                                    </h3>
+                                    <p class="card-text text-muted mb-0 small">
+                                        <?= htmlspecialchars((string)$subtitle) ?>
+                                    </p>
+                                </div>
+                            </a>
+
+                            <!-- Unterer Bereich: Kategorie & Tags getrennt -->
+                            <div class="wisdom-tags-area mt-3 pt-2 mb-0 border-top">
+
+                                <!-- Zeile 1: Die Hauptkategorie -->
+                                <div class="mb-2">
+                                    <div class="d-flex flex-wrap justify-content-start gap-1">
+                                    <?php foreach ($categories as $categoryItem): ?>
+                                        <span class="badge bg-secondary text-light px-2 py-1" style="font-size: 0.75rem;">
+                                            <?= htmlspecialchars((string)$categoryItem) ?>
+                                        </span>
+                                    <?php endforeach; ?>
+                                    </div>
+                                </div>
+
+                                <!-- Zeile 2: Die Tags -->
+                                <div class="d-flex flex-wrap justify-content-start gap-1">
+                                    <?php foreach ($tags as $tag): ?>
+                                        <span class="badge bg-light text-dark border-0 shadow-sm" style="font-size: 0.75rem;">
+                                            <?= htmlspecialchars((string)$tag) ?>
+                                        </span>
+                                    <?php endforeach; ?>
+                                </div>
+
+                            </div>
+                        </div> <!-- WICHTIG: Das schließt die einzelne Karte -->
+                        <?php $index++; ?>
+                    <?php endforeach; ?> <!-- WICHTIG: Das beendet die PHP-Schleife -->
+                </div> <!-- WICHTIG: Das schließt den gesamten Scroll-Container -->
+
+                <!-- Mystischer Runter-Button (Wieder an der richtigen Stelle!) -->
+                <button id="scrollDownBtn" class="mystic-scroll-bar w-100 mt-2" aria-label="Forward into the future">
+                    <svg viewBox="0 0 24 24" width="40" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M 4 8 Q 12 20 20 8"></path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Offcanvas für Tags (wird durch den Button oben ausgelöst) -->
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="tagOffcanvas" aria-labelledby="tagOffcanvasLabel" style="height: 50vh;">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="tagOffcanvasLabel">Filter deeper (Tags)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="tagCloud" class="d-flex flex-wrap justify-content-center gap-2">
+            <!-- Wird dynamisch befüllt oder manuell ergänzt -->
+            <p class="text-muted small">Select a topic to refine your search.</p>
+        </div>
+    </div>
+</div>
+
