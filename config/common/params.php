@@ -72,7 +72,7 @@ return [
             // Production
             'guru-wisdom.de'       => 'de',
             'www.guru-wisdom.de'   => 'de',
-            'guru-wisdom.com'      => 'de',
+            'guru-wisdom.com'      => 'en',
             'www.guru-wisdom.com'  => 'en',
         ],
 
