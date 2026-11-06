@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use Yiisoft\Aliases\Aliases;
 use cebe\markdown\GithubMarkdown;
+use InvalidArgumentException;
+use RuntimeException;
+use Yiisoft\Aliases\Aliases;
 
 /**
- * BaseGuruWisdom
+ * GuruWisdomService
  *
  * Provides core functionalities to parse and render wisdom markdown files.
  *
@@ -17,10 +19,51 @@ use cebe\markdown\GithubMarkdown;
  */
 class GuruWisdomService
 {
+    private const MEDIA_BASE_URL = 'https://media.guru-wisdom.de';
+
+    /**
+     * Texts for the two-click placeholders, per locale.
+     */
+    private const TEXTS = [
+        'de' => [
+            'youtube_title' => 'Externes YouTube-Video',
+            'youtube_text' => 'Mit dem Klick auf "Video laden" stimmst du zu, dass deine IP-Adresse an Server von Google übermittelt wird.',
+            'youtube_more' => 'Mehr Informationen',
+            'see_also' => 'siehe auch',
+            'privacy' => 'Datenschutz',
+            'youtube_button' => 'Video laden',
+            'spotify_title' => 'Externer Spotify-Player',
+            'spotify_text' => 'Mit dem Klick auf "Inhalt laden" stimmst du zu, dass deine IP-Adresse an Server von Spotify übermittelt wird, siehe',
+            'content_button' => 'Inhalt laden',
+            'video_unsupported' => 'Dein Browser unterstützt das Video-Tag nicht. Bitte aktualisiere deinen Browser.',
+            'image_alt' => 'Bild zur Weisheit',
+        ],
+        'en' => [
+            'youtube_title' => 'External YouTube video',
+            'youtube_text' => 'By clicking "Load video" you agree that your IP address will be transmitted to Google servers.',
+            'youtube_more' => 'More information',
+            'see_also' => 'see also',
+            'privacy' => 'Privacy policy',
+            'youtube_button' => 'Load video',
+            'spotify_title' => 'External Spotify player',
+            'spotify_text' => 'By clicking "Load content" you agree that your IP address will be transmitted to Spotify servers, see',
+            'content_button' => 'Load content',
+            'video_unsupported' => 'Your browser does not support the video tag. Please update your browser.',
+            'image_alt' => 'Image of wisdom',
+        ],
+    ];
+
     /**
      * @var Aliases Dependency for resolving Yii path aliases.
      */
     protected Aliases $aliases;
+
+    /**
+     * In-request cache of the sorted ID list per locale.
+     *
+     * @var array<string, list<string>>
+     */
+    private array $sortedIdsCache = [];
 
     /**
      * Initializes the class and injects required Yii3 dependencies.
@@ -34,18 +77,34 @@ class GuruWisdomService
     }
 
     /**
+     * Checks whether an ID only contains safe characters (no path separators, no dots).
+     *
+     * @param string $id The wisdom ID.
+     * @return bool True if the ID is valid.
+     */
+    public function isValidId(string $id): bool
+    {
+        return preg_match('/^[A-Za-z0-9_-]+$/', $id) === 1;
+    }
+
+    /**
      * Resolves the absolute file path for a given wisdom ID with language fallback.
      * Checks /public/wisdoms/en/{id}.md first for English, then falls back to /public/wisdoms/{id}.md.
      *
      * @param string $id     The wisdom ID.
      * @param string $locale The language code ('de' or 'en').
      * @return string The absolute path to the resolved markdown file.
+     * @throws InvalidArgumentException If the ID contains invalid characters.
      */
     public function getFilePath(string $id, string $locale = 'de'): string
     {
+        if (!$this->isValidId($id)) {
+            throw new InvalidArgumentException('Invalid wisdom ID.');
+        }
+
         if ($locale === 'en') {
             $enPath = $this->aliases->get('@public/wisdoms/en/' . $id . '.md');
-            if (file_exists($enPath)) {
+            if (is_file($enPath)) {
                 return $enPath;
             }
         }
@@ -55,27 +114,27 @@ class GuruWisdomService
 
     /**
      * Sanitizes the requested ID and ensures the corresponding file exists.
+     * Invalid or unknown IDs fall back to a random existing wisdom.
      *
      * @param string|mixed $id     The requested wisdom ID.
      * @param string       $locale The language code ('de' or 'en').
      * @return string The sanitized and valid file ID.
+     * @throws RuntimeException If no wisdom files exist at all.
      */
     public function sanitizeId($id, string $locale = 'de'): string
     {
-        $filePath = $this->getFilePath((string)$id, $locale);
+        $id = is_scalar($id) ? (string)$id : '';
 
-        if (!file_exists($filePath)) {
-            $basePath = ($locale === 'en' && is_dir($this->aliases->get('@public/wisdoms/en/')))
-                ? $this->aliases->get('@public/wisdoms/en/')
-                : $this->aliases->get('@public/wisdoms/');
-
-            $files = glob($basePath . '*.md');
-            if (!empty($files)) {
-                $filePath = $files[array_rand($files)];
-            }
+        if ($this->isValidId($id) && is_file($this->getFilePath($id, $locale))) {
+            return $id;
         }
 
-        return basename($filePath, '.md');
+        $files = glob($this->getWisdomsDirectory($locale) . '*.md');
+        if ($files === false || $files === []) {
+            throw new RuntimeException('No wisdom files found.');
+        }
+
+        return basename($files[array_rand($files)], '.md');
     }
 
     /**
@@ -89,12 +148,20 @@ class GuruWisdomService
     public function getImageHtml($id, string $locale = 'de'): string
     {
         $subDir = ($locale === 'en') ? 'en/' : '';
-        $url = "https://media.guru-wisdom.de/images/" . $subDir;
+        $url = self::MEDIA_BASE_URL . '/images/' . $subDir . rawurlencode((string)$id);
+
+        $safeWebp = htmlspecialchars($url . '.webp', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $safeJpg = htmlspecialchars($url . '.jpg', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        $safeAlt = htmlspecialchars(
+            $this->t('image_alt', $locale) . ' ' . (string)$id,
+            ENT_QUOTES | ENT_SUBSTITUTE,
+            'UTF-8'
+        );
 
         return '
         <picture>
-            <source srcset="' . $url . $id . '.webp" type="image/webp">
-            <img src="' . $url . $id . '.jpg" alt="Image of Wisdom ' . htmlspecialchars((string)$id, ENT_QUOTES, 'UTF-8') . '" class="img-fluid" fetchpriority="high">
+            <source srcset="' . $safeWebp . '" type="image/webp">
+            <img src="' . $safeJpg . '" alt="' . $safeAlt . '" class="img-fluid" fetchpriority="high">
         </picture>
         ';
     }
@@ -110,9 +177,10 @@ class GuruWisdomService
     public function getAudioHtml($id, string $locale = 'de'): string
     {
         $subDir = ($locale === 'en') ? 'en/' : '';
-        $url = "https://media.guru-wisdom.de/audio/" . $subDir . $id . ".mp3";
+        $url = self::MEDIA_BASE_URL . '/audio/' . $subDir . rawurlencode((string)$id) . '.mp3';
+        $safeUrl = htmlspecialchars($url, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
-        return '<audio controls preload="metadata"> <source src="' . $url . '" type="audio/mpeg"> </audio>';
+        return '<audio controls preload="metadata"> <source src="' . $safeUrl . '" type="audio/mpeg"> </audio>';
     }
 
     /**
@@ -124,14 +192,14 @@ class GuruWisdomService
      */
     public function getNavigationIds(?string $id = null, string $locale = 'de'): array
     {
-        $sortedId = $this->getSortedWisdomIds(null, $locale);
-        $count = count($sortedId);
-        $currentIndex = array_search($id, $sortedId, true);
+        $sortedIds = $this->getSortedWisdomIds(null, $locale);
+        $count = count($sortedIds);
+        $currentIndex = $id === null ? false : array_search($id, $sortedIds, true);
 
-        $prevId = ($currentIndex !== false && $currentIndex > 0) ? $sortedId[$currentIndex - 1] : null;
-        $nextId = ($currentIndex !== false && $currentIndex < $count - 1) ? $sortedId[$currentIndex + 1] : null;
+        $prevId = ($currentIndex !== false && $currentIndex > 0) ? $sortedIds[$currentIndex - 1] : null;
+        $nextId = ($currentIndex !== false && $currentIndex < $count - 1) ? $sortedIds[$currentIndex + 1] : null;
 
-        return ["prev" => $prevId, "current" => $id, "next" => $nextId];
+        return ['prev' => $prevId, 'current' => $id, 'next' => $nextId];
     }
 
     /**
@@ -144,78 +212,83 @@ class GuruWisdomService
     public function processPlaceholders(string $text, string $locale = 'de'): string
     {
         $mediaSubDir = ($locale === 'en') ? 'en/' : '';
+        $t = fn(string $key): string => $this->t($key, $locale);
 
-        // 1. YouTube Placeholders (Zwei-Klick-Lösung)
-        $text = preg_replace_callback('/\[youtube:([a-zA-Z0-9_-]+)\]/', function (array $matches) {
-            $videoId = $matches[1];
-            $safeUrl = 'https://www.youtube-nocookie.com/embed/' . htmlspecialchars($videoId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        // 1. YouTube placeholders (two-click solution)
+        $text = preg_replace_callback('/\[youtube:([a-zA-Z0-9_-]+)\]/', function (array $matches) use ($t) {
+            $safeUrl = 'https://www.youtube-nocookie.com/embed/'
+                . htmlspecialchars($matches[1], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
             return '<div class="two-click-container my-4" data-type="youtube" data-src="' . $safeUrl . '" style="max-width: 640px;">
                 <div class="two-click-placeholder p-4 text-center" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px;">
-                    <p class="mb-3"><strong>Externes YouTube-Video</strong></p>
-                    <p class="mb-3 small">Mit dem Klick auf "Video laden" stimmst du zu, dass deine IP-Adresse an Server von Google übermittelt wird.
-                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Mehr Informationen</a>, siehe auch
-                    <a href="./privacy#externe-medien"> Datenschutz. </a>
+                    <p class="mb-3"><strong>' . $t('youtube_title') . '</strong></p>
+                    <p class="mb-3 small">' . $t('youtube_text') . '
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">' . $t('youtube_more') . '</a>, ' . $t('see_also') . '
+                    <a href="./privacy#externe-medien">' . $t('privacy') . '</a>.
                     </p>
-                    <button class="btn btn-primary mt-1 load-media-btn">Video laden</button>
+                    <button class="btn btn-primary mt-1 load-media-btn">' . $t('youtube_button') . '</button>
                 </div>
             </div>';
         }, $text);
 
-        // 2. Spotify Placeholders
-        $text = preg_replace_callback('/\[spotify:(track|album|playlist|artist|episode|show):([a-zA-Z0-9]+)\]/', function (array $matches) {
-            $type = $matches[1];
-            $spotifyId = $matches[2];
+        // 2. Spotify placeholders
+        $text = preg_replace_callback(
+            '/\[spotify:(track|album|playlist|artist|episode|show):([a-zA-Z0-9]+)\]/',
+            function (array $matches) use ($t) {
+                $safeType = htmlspecialchars($matches[1], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeId = htmlspecialchars($matches[2], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeUrl = 'https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '?utm_source=generator';
 
-            $safeType = htmlspecialchars($type, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeId = htmlspecialchars($spotifyId, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeUrl = 'https://open.spotify.com/embed/' . $safeType . '/' . $safeId . '?utm_source=generator';
-
-            return '<div class="two-click-container my-4" data-type="spotify" data-src="' . $safeUrl . '" style="max-width: 640px;">
+                return '<div class="two-click-container my-4" data-type="spotify" data-src="' . $safeUrl . '" style="max-width: 640px;">
                 <div class="two-click-placeholder p-4 text-center" style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 12px;">
-                    <p class="mb-3"><strong>Externer Spotify-Player</strong></p>
-                    <p class="mb-3 small">Mit dem Klick auf "Inhalt laden" stimmst du zu, dass deine IP-Adresse an Server von Spotify übermittelt wird
-                    siehe <a href="./privacy#externe-medien"> Datenschutz </a>.</p>
-                    <button class="btn btn-success mt-1 load-media-btn">Inhalt laden</button>
+                    <p class="mb-3"><strong>' . $t('spotify_title') . '</strong></p>
+                    <p class="mb-3 small">' . $t('spotify_text') . ' <a href="./privacy#externe-medien">' . $t('privacy') . '</a>.</p>
+                    <button class="btn btn-success mt-1 load-media-btn">' . $t('content_button') . '</button>
                 </div>
             </div>';
-        }, $text);
+            },
+            $text
+        );
 
-        // 3. Image Placeholders
-        $text = preg_replace_callback('/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/', function (array $matches) use ($mediaSubDir) {
-            $rawName = trim($matches[1]);
-            $filename = basename($rawName);
-            $baseName = pathinfo($filename, PATHINFO_FILENAME);
+        // 3. Image placeholders
+        $text = preg_replace_callback(
+            '/\[image:([^\|\]]+)(?:\|([^\]]+))?\]/',
+            function (array $matches) use ($mediaSubDir) {
+                $filename = basename(trim($matches[1]));
+                $baseName = pathinfo($filename, PATHINFO_FILENAME);
 
-            $baseUrl = "https://media.guru-wisdom.de/images/" . $mediaSubDir;
-            $webpUrl = $baseUrl . $baseName . ".webp";
-            $fallbackUrl = $baseUrl . $baseName . ".jpg";
-            $altText = isset($matches[2]) ? trim($matches[2]) : '';
+                $baseUrl = self::MEDIA_BASE_URL . '/images/' . $mediaSubDir . rawurlencode($baseName);
+                $altText = isset($matches[2]) ? trim($matches[2]) : '';
 
-            $safeWebpUrl = htmlspecialchars($webpUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeFallbackUrl = htmlspecialchars($fallbackUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-            $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeWebpUrl = htmlspecialchars($baseUrl . '.webp', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeFallbackUrl = htmlspecialchars($baseUrl . '.jpg', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeAlt = htmlspecialchars($altText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
-            return '<picture>
+                return '<picture>
                 <source srcset="' . $safeWebpUrl . '" type="image/webp">
                 <img src="' . $safeFallbackUrl . '" alt="' . $safeAlt . '" class="img-fluid my-4" style="max-width: 100%; height: auto; border-radius: 8px;">
             </picture>';
-        }, $text);
+            },
+            $text
+        );
 
-        // 4. Video Placeholders
-        $text = preg_replace_callback('/\[video:([^\]]+)\]/', function (array $matches) use ($mediaSubDir) {
-            $rawId = trim($matches[1]);
-            $filename = basename($rawId);
-            $videoUrl = "https://media.guru-wisdom.de/video/" . $mediaSubDir . $filename . ".mp4";
-            $safeVideoUrl = htmlspecialchars($videoUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        // 4. Video placeholders
+        $text = preg_replace_callback(
+            '/\[video:([^\]]+)\]/',
+            function (array $matches) use ($mediaSubDir, $t) {
+                $filename = basename(trim($matches[1]));
+                $videoUrl = self::MEDIA_BASE_URL . '/video/' . $mediaSubDir . rawurlencode($filename) . '.mp4';
+                $safeVideoUrl = htmlspecialchars($videoUrl, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 
-            return '<div class="my-4 text-center">
+                return '<div class="my-4 text-center">
                 <video controls preload="metadata" style="max-width: 100%; width: 640px; border-radius: 8px; background-color: #000;">
                     <source src="' . $safeVideoUrl . '" type="video/mp4">
-                    Dein Browser unterstützt das Video-Tag nicht. Bitte aktualisiere deinen Browser.
+                    ' . $t('video_unsupported') . '
                 </video>
             </div>';
-        }, $text);
+            },
+            $text
+        );
 
         return $text;
     }
@@ -225,41 +298,174 @@ class GuruWisdomService
      *
      * @param string $id       The unique identifier of the wisdom.
      * @param string $locale   The language code ('de' or 'en').
-     * @param bool   $autoSave Whether to auto-save structural changes back to the file.
-     * @return array
+     * @param bool   $autoSave Deprecated and ignored. Kept for backwards compatibility.
+     * @return array Front matter data plus 'htmloutput'; empty array if the file cannot be read.
      */
     public function parseFile(string $id, string $locale = 'de', bool $autoSave = false): array
     {
-        $filePath = $this->getFilePath($id, $locale);
-        $content = file_get_contents($filePath);
+        if (!$this->isValidId($id)) {
+            return [];
+        }
 
+        $filePath = $this->getFilePath($id, $locale);
+        if (!is_file($filePath)) {
+            return [];
+        }
+
+        $content = file_get_contents($filePath);
         if ($content === false) {
             return [];
         }
 
         $data = $this->extractFrontMatter($content);
-        
-        // Step 2: Apply fallbacks and split colon-headings
-        $needsUpdate = $this->applyFallbacks($data);
+        $this->applyFallbacks($data);
 
-        // Step 3: Auto-save the raw markdown if needed
-        // $isDevMode = false; // Adjust this according to your Yii3 environment logic
-        // if ($autoSave && $needsUpdate && $isDevMode) {
-        //     $this->updateFile($filePath, $data);
-        // }
+        // Replace placeholders by neutral tokens BEFORE markdown parsing, so that characters like
+        // "_" or "*" in YouTube IDs, file names or alt texts cannot be turned into <em>/<strong>.
+        $stash = [];
+        $markdown = $this->protectPlaceholders($data['raw_markdown'], $locale, $stash);
 
-        // Step 4: Convert raw markdown to HTML, THEN process placeholders
         $parser = new GithubMarkdown();
-        $parsedHtml = $parser->parse($data['raw_markdown']);
+        $html = $parser->parse($markdown);
 
-        // Replace placeholders in the parsed HTML
-        $data['htmloutput'] = $this->processPlaceholders($parsedHtml);
+        // Restore the real HTML. Unwrap block elements from the <p> the parser put around the token.
+        $replacements = [];
+        foreach ($stash as $token => $placeholderHtml) {
+            $replacements['<p>' . $token . '</p>'] = $placeholderHtml;
+            $replacements[$token] = $placeholderHtml;
+        }
+        $data['htmloutput'] = strtr($html, $replacements);
 
-        // Remove the raw markdown from the output array as the view only needs HTML
         unset($data['raw_markdown']);
 
         return $data;
     }
+
+    /**
+     * Returns wisdom IDs sorted by their front matter date, newest first.
+     *
+     * @param array|null $ids    Optional subset of IDs to sort. If empty, all wisdoms are used.
+     * @param string     $locale The language code ('de' or 'en').
+     * @return list<string> Sorted IDs.
+     */
+    public function getSortedWisdomIds(?array $ids = null, string $locale = 'de'): array
+    {
+        $useCache = empty($ids);
+        if ($useCache && isset($this->sortedIdsCache[$locale])) {
+            return $this->sortedIdsCache[$locale];
+        }
+
+        $path = $this->getWisdomsDirectory($locale);
+        $wisdomsToSort = [];
+
+        if (!empty($ids)) {
+            foreach ($ids as $id) {
+                $id = (string)$id;
+                if (!$this->isValidId($id)) {
+                    continue;
+                }
+
+                $file = $path . $id . '.md';
+                if (!is_file($file)) {
+                    $file = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+                }
+                if (is_file($file)) {
+                    $wisdomsToSort[$id] = $file;
+                }
+            }
+        } else {
+            $files = glob($path . '*.md');
+            if ($files !== false) {
+                foreach ($files as $file) {
+                    $wisdomsToSort[basename($file, '.md')] = $file;
+                }
+            }
+        }
+
+        // Read only the first 1024 bytes of each file for performance
+        $filesWithDate = [];
+        foreach ($wisdomsToSort as $id => $file) {
+            $content = file_get_contents($file, false, null, 0, 1024);
+            $timestamp = 0;
+
+            if ($content !== false && preg_match('/^date:[ \t]*(.+)$/im', $content, $matches)) {
+                $timestamp = strtotime(trim($matches[1], " \t\n\r\0\x0B\"'")) ?: 0;
+            }
+
+            $filesWithDate[] = [
+                // PHP converts numeric string array keys to int, so cast back to string.
+                'id' => (string)$id,
+                'timestamp' => $timestamp,
+            ];
+        }
+
+        // Newest first; ties are sorted by ID so the order stays stable
+        usort($filesWithDate, static function (array $a, array $b): int {
+            return [$b['timestamp'], $a['id']] <=> [$a['timestamp'], $b['id']];
+        });
+
+        $sortedIds = array_column($filesWithDate, 'id');
+
+        if ($useCache) {
+            $this->sortedIdsCache[$locale] = $sortedIds;
+        }
+
+        return $sortedIds;
+    }
+
+    /**
+     * Returns the wisdom directory for a locale (with trailing slash), falling back to the default one.
+     *
+     * @param string $locale The language code ('de' or 'en').
+     * @return string Absolute directory path.
+     */
+    private function getWisdomsDirectory(string $locale): string
+    {
+        if ($locale === 'en') {
+            $enDir = $this->aliases->get('@public/wisdoms/en/');
+            if (is_dir($enDir)) {
+                return $enDir;
+            }
+        }
+
+        return $this->aliases->get('@public/wisdoms/');
+    }
+
+    /**
+     * Returns a translated text for the given key, falling back to German.
+     *
+     * @param string $key    The text key.
+     * @param string $locale The language code ('de' or 'en').
+     * @return string The text.
+     */
+    private function t(string $key, string $locale): string
+    {
+        return self::TEXTS[$locale][$key] ?? self::TEXTS['de'][$key] ?? $key;
+    }
+
+    /**
+     * Replaces all placeholders with unique tokens and stores the rendered HTML in $stash.
+     *
+     * @param string               $markdown The raw markdown.
+     * @param string               $locale   The language code ('de' or 'en').
+     * @param array<string,string> $stash    Receives token => HTML.
+     * @return string Markdown with tokens instead of placeholders.
+     */
+    private function protectPlaceholders(string $markdown, string $locale, array &$stash): string
+    {
+        $pattern = '/\[(?:youtube:[a-zA-Z0-9_-]+'
+            . '|spotify:(?:track|album|playlist|artist|episode|show):[a-zA-Z0-9]+'
+            . '|image:[^\|\]]+(?:\|[^\]]+)?'
+            . '|video:[^\]]+)\]/';
+
+        return (string)preg_replace_callback($pattern, function (array $matches) use ($locale, &$stash): string {
+            $token = 'WISDOMPH' . count($stash) . 'X';
+            $stash[$token] = $this->processPlaceholders($matches[0], $locale);
+
+            return $token;
+        }, $markdown);
+    }
+
     /**
      * Extracts YAML Front Matter and separates the raw text.
      *
@@ -268,16 +474,23 @@ class GuruWisdomService
      */
     private function extractFrontMatter(string $content): array
     {
-        $data = ['raw_markdown' => $content];
+        // Strip UTF-8 BOM
+        $content = preg_replace('/^\xEF\xBB\xBF/', '', $content) ?? $content;
 
-        if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+(.*)$/s', $content, $matches)) {
-            $data['raw_markdown'] = trim($matches[2]);
-            $lines = preg_split('/[\r\n]+/', trim($matches[1]));
+        $data = ['raw_markdown' => trim($content)];
+
+        if (preg_match('/\A---[ \t]*\R(?:(.*?)\R)?---[ \t]*(?:\R(.*))?\z/s', $content, $matches)) {
+            $data['raw_markdown'] = trim($matches[2] ?? '');
+            $lines = preg_split('/\R/', trim($matches[1] ?? '')) ?: [];
 
             foreach ($lines as $line) {
                 if (preg_match('/^([a-zA-Z0-9_-]+)\s*:\s*(.*)$/', trim($line), $lineMatches)) {
                     $key = strtolower(trim($lineMatches[1]));
                     $value = trim($lineMatches[2], " \t\n\r\0\x0B\"'");
+
+                    if ($key === 'raw_markdown') {
+                        continue; // never let front matter overwrite the content
+                    }
 
                     if (preg_match('/^\[(.*)\]$/', $value, $arrayMatches)) {
                         $value = array_map('trim', explode(',', $arrayMatches[1]));
@@ -294,35 +507,36 @@ class GuruWisdomService
      * Handles missing titles and splits H1 headings containing a colon.
      *
      * @param array &$data A reference to the parsed data array.
-     * @return bool True if any modifications were made that would require a file update.
+     * @return bool True if any modifications were made.
      */
     private function applyFallbacks(array &$data): bool
     {
         $updated = false;
 
-        // Detect H1 with a colon and rewrite the raw markdown structure
-        $data['raw_markdown'] = preg_replace_callback('/^#\s+([^:\n]+):\s*(.+)$/m', function(array $matches) use (&$data, &$updated) {
-            $mainTitle = trim($matches[1]);
-            $subTitle = trim($matches[2]);
+        // Detect H1 with a colon and split it into H1 + H2
+        $data['raw_markdown'] = preg_replace_callback(
+            '/^#[ \t]+([^:\n]+):[ \t]*(.+)$/m',
+            function (array $matches) use (&$data, &$updated) {
+                $mainTitle = trim($matches[1]);
+                $subTitle = trim($matches[2]);
 
-            if (empty($data['title'])) {
-                $data['title'] = $mainTitle;
-            }
-            if (empty($data['subtitle'])) {
-                $data['subtitle'] = $subTitle;
-            }
+                if (empty($data['title'])) {
+                    $data['title'] = $mainTitle;
+                }
+                if (empty($data['subtitle'])) {
+                    $data['subtitle'] = $subTitle;
+                }
 
-            $updated = true;
-            return '# ' . $mainTitle . "\n## " . $subTitle;
-        }, $data['raw_markdown'], -1, $count);
+                $updated = true;
 
-        if ($count > 0) {
-            $updated = true;
-        }
+                return '# ' . $mainTitle . "\n## " . $subTitle;
+            },
+            $data['raw_markdown']
+        ) ?? $data['raw_markdown'];
 
-        // Standard fallback for Title
+        // Fallback for title
         if (empty($data['title'])) {
-            if (preg_match('/^#\s+(.+)$/m', $data['raw_markdown'], $titleMatches)) {
+            if (preg_match('/^#[ \t]+(.+)$/m', $data['raw_markdown'], $titleMatches)) {
                 $data['title'] = trim($titleMatches[1]);
                 $updated = true;
             } else {
@@ -330,72 +544,12 @@ class GuruWisdomService
             }
         }
 
-        // Standard fallback for Subtitle
-        if (empty($data['subtitle']) && preg_match('/^##\s+(.+)$/m', $data['raw_markdown'], $subMatches)) {
+        // Fallback for subtitle
+        if (empty($data['subtitle']) && preg_match('/^##[ \t]+(.+)$/m', $data['raw_markdown'], $subMatches)) {
             $data['subtitle'] = trim($subMatches[1]);
             $updated = true;
         }
 
         return $updated;
-    }
-    /**
-     * Writes the updated data back into the physical markdown file.
-     *
-     * @param string $filePath The absolute path to the file.
-     * @param array  $data     The parsed data including the raw markdown to write.
-     * @return void
-     */
-    public function getSortedWisdomIds(?array $ids = null, string $locale = 'de'): array
-    {
-        $path = ($locale === 'en' && is_dir($this->aliases->get('@public/wisdoms/en/')))
-            ? $this->aliases->get('@public/wisdoms/en/')
-            : $this->aliases->get('@public/wisdoms/');
-
-        $wisdomsToSort = [];
-
-        if (!empty($ids)) {
-            foreach ($ids as $id) {
-                $file = $path . $id . '.md';
-                if (!file_exists($file)) {
-                    $file = $this->aliases->get('@public/wisdoms/' . $id . '.md');
-                }
-                if (file_exists($file)) {
-                    $wisdomsToSort[$id] = $file;
-                }
-            }
-        } else {
-            $files = glob($path . '*.md');
-            if ($files !== false) {
-                foreach ($files as $file) {
-                    $id = basename($file, '.md');
-                    $wisdomsToSort[$id] = $file;
-                }
-            }
-        }
-
-        // 2. Read the date and prepare the array
-        $filesWithDate = [];
-        foreach ($wisdomsToSort as $id => $file) {
-            // Read only the first 1024 bytes for performance
-            $content = file_get_contents($file, false, null, 0, 1024);
-            $timestamp = 0; // Fallback
-
-            if ($content !== false && preg_match('/^date:\s*(.+)$/im', $content, $matches)) {
-                $timestamp = strtotime(trim($matches[1])) ?: 0;
-            }
-
-            $filesWithDate[] = [
-                'id' => $id,
-                'timestamp' => $timestamp
-            ];
-        }
-
-        // 3. Sort descending by timestamp (Newest first)
-        usort($filesWithDate, function($a, $b) {
-            return $b['timestamp'] <=> $a['timestamp'];
-        });
-
-        // 4. Return only the array of IDs (e.g., ['GoldenThread', 'SilverLining', ...])
-        return array_column($filesWithDate, 'id');
     }
 }
