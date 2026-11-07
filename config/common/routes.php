@@ -3,9 +3,7 @@
 declare(strict_types=1);
 
 use App\Web\Contact\Action as ContactAction;
-use App\Web\Deployment\Action as DeploymentAction;
 use App\Web\Imprint\Action as ImprintAction;
-use App\Web\Login\Action as LoginAction;
 use App\Web\Privacy\Action as PrivacyAction;
 use App\Web\WordsOfWisdom\Action as WordsOfWisdomAction;
 use Psr\Http\Message\ResponseFactoryInterface;
@@ -14,11 +12,6 @@ use Yiisoft\Router\Route;
 
 return [
     // --- Standard-Routen (Englische Pfade & neutrale Namen) ---
-    // 🔐 Login
-    Route::methods(['GET', 'POST'], '/login')
-        ->name('login')
-        ->action([LoginAction::class, 'handle']),
-
     // ✉️ Contact
     Route::methods(['GET', 'POST'], '/contact')
         ->name('contact')
@@ -33,11 +26,6 @@ return [
     Route::get('/privacy')
         ->name('privacy')
         ->action([PrivacyAction::class, 'handle']),
-
-    // 🚀 Deployment
-    Route::get('/deploy')
-        ->name('deploy')
-        ->action([DeploymentAction::class, 'handle']),
 
     // 📜 Overview of all words of wisdom (Index)
     Route::get('/')
