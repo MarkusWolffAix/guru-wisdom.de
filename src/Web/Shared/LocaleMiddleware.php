@@ -60,6 +60,7 @@ final class LocaleMiddleware implements MiddlewareInterface
             $uri->getScheme(),
             $this->aliases->get('@public/wisdoms'),
             $locale,
+            $uri->getPort(),
         ));
 
         return $handler->handle($request);

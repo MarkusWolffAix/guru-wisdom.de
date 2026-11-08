@@ -26,6 +26,7 @@ final class LanguageSwitcherHelper
      * @param string $query       Raw query string of the current request.
      * @param string $scheme      Scheme of the current request (used only for local hosts).
      * @param string $wisdomsDir  Directory with the German wisdoms; English ones are in "<dir>/en".
+     * @param int|null $port      Port of the current request; only used for local hosts (public domains use the default port).
      *
      * @return array{
      *     current: string, target: string, currentLabel: string, targetLabel: string,
@@ -40,6 +41,7 @@ final class LanguageSwitcherHelper
         string $scheme,
         string $wisdomsDir,
         string $currentLocale,
+        ?int $port = null,
     ): ?array {
         if (empty($multilingual['enable_lang_support_button'])) {
             return null;
@@ -59,14 +61,14 @@ final class LanguageSwitcherHelper
         // Only the query of a page that exists in both languages is meaningful for the other domain.
         $targetQuery = ($existsInTarget && $query !== '') ? '?' . $query : '';
 
-        $url = self::origin($targetHost, $scheme) . $targetPath . $targetQuery;
+        $url = self::origin($targetHost, $scheme, $port) . $targetPath . $targetQuery;
 
         // hreflang pairs only for pages that really exist in both languages
         $alternate = null;
         if ($existsInTarget && self::existsInLocale($path, $currentLocale, $wisdomsDir)) {
             $alternate = [
-                'self' => self::origin($host, $scheme) . $path,
-                'other' => self::origin($targetHost, $scheme) . $path,
+                'self' => self::origin($host, $scheme, $port) . $path,
+                'other' => self::origin($targetHost, $scheme, $port) . $path,
             ];
         }
 
@@ -95,11 +97,18 @@ final class LanguageSwitcherHelper
         return is_file($dir . '/' . $m[1] . '.md');
     }
 
-    private static function origin(string $host, string $scheme): string
+    private static function origin(string $host, string $scheme, ?int $port): string
     {
         // Behind the proxy the request scheme can be http; the public domains are https only.
         $local = $host === 'localhost' || str_ends_with($host, '.localhost');
+        if (!$local) {
+            return 'https://' . $host;
+        }
 
-        return ($local ? $scheme : 'https') . '://' . $host;
+        // Local development keeps the port (e.g. en.localhost:8080) unless it is the default of the scheme.
+        $defaultPort = $scheme === 'https' ? 443 : 80;
+        $suffix = ($port !== null && $port !== $defaultPort) ? ':' . $port : '';
+
+        return $scheme . '://' . $host . $suffix;
     }
 }

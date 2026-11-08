@@ -45,9 +45,9 @@ final class LanguageSwitcherHelperTest extends TestCase
         rmdir($this->dir);
     }
 
-    private function build(string $host, string $path, string $locale, string $query = '', array $ml = self::MULTILINGUAL): ?array
+    private function build(string $host, string $path, string $locale, string $query = '', array $ml = self::MULTILINGUAL, ?int $port = null): ?array
     {
-        return LanguageSwitcherHelper::build($ml, $host, $path, $query, 'http', $this->dir, $locale);
+        return LanguageSwitcherHelper::build($ml, $host, $path, $query, 'http', $this->dir, $locale, $port);
     }
 
     public function testDisabledSwitchReturnsNull(): void
@@ -109,8 +109,19 @@ final class LanguageSwitcherHelperTest extends TestCase
         $this->assertSame('https://guru-wisdom.com/', $this->build('guru-wisdom.de', '/OnlyDe', 'de', 'x=1')['url']);
     }
 
-    public function testPortIsIgnoredAndLocalhostKeepsScheme(): void
+    public function testLocalhostKeepsSchemeAndPort(): void
     {
-        $this->assertSame('http://en.localhost/Both', $this->build('localhost:8080', '/Both', 'de')['url']);
+        $result = $this->build('localhost', '/Both', 'de', '', self::MULTILINGUAL, 8080);
+        $this->assertSame('http://en.localhost:8080/Both', $result['url']);
+        $this->assertSame(
+            ['self' => 'http://localhost:8080/Both', 'other' => 'http://en.localhost:8080/Both'],
+            $result['alternate']
+        );
+        $this->assertSame('http://en.localhost/Both', $this->build('localhost', '/Both', 'de', '', self::MULTILINGUAL, 80)['url'], 'The default port is omitted.');
+    }
+
+    public function testPublicDomainsIgnoreThePort(): void
+    {
+        $this->assertSame('https://guru-wisdom.com/Both', $this->build('guru-wisdom.de', '/Both', 'de', '', self::MULTILINGUAL, 8443)['url']);
     }
 }
