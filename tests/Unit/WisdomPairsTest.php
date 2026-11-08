@@ -20,7 +20,7 @@ final class WisdomPairsTest extends TestCase
      * When you add the file, remove the ID here. The test fails if an entry is no longer a gap.
      * New gaps that are not listed here make the test fail.
      */
-    private const MISSING_IN_DE = ['FrankenbergNode', 'RhythmsOfEmotion'];
+    private const MISSING_IN_DE = [];
     private const MISSING_IN_EN = ['RhythmOfLight'];
 
     /**
