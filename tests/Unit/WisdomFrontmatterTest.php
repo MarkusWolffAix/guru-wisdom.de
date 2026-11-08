@@ -4,96 +4,103 @@ declare(strict_types=1);
 
 namespace App\Tests\Unit;
 
+use App\Service\GuruWisdomService;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Yaml\Yaml;
+use Yiisoft\Aliases\Aliases;
 
+/**
+ * Checks the front matter of every wisdom the way the application reads it.
+ *
+ * The German file is the base. A translation only has to contain what differs, so the checks run
+ * on the merged front matter (GuruWisdomService::getFrontMatter), not on the raw file.
+ */
 final class WisdomFrontmatterTest extends TestCase
 {
-    /**
-     * Path to the folder containing the Markdown files.
-     * Adjust this path to match your Yii3 project structure.
-     */
     private const WISDOMS_DIR = __DIR__ . '/../../public/wisdoms';
 
-    /**
-     * The DataProvider scans the directory and passes each 
-     * found .md file individually to the test method.
-     */
-    public static function markdownFileProvider(): iterable
-    {
-        if (!is_dir(self::WISDOMS_DIR)) {
-            self::markTestSkipped('The directory ' . self::WISDOMS_DIR . ' does not exist.');
-            return [];
-        }
+    private const LOCALE_DIRS = [
+        'de' => self::WISDOMS_DIR,
+        'en' => self::WISDOMS_DIR . '/en',
+    ];
 
-        foreach (glob(self::WISDOMS_DIR . '/*.md') as $file) {
-            // The filename is used as the key, so PHPUnit names the test in the terminal (e.g., "NatureOfZero.md")
-            yield basename($file) => [$file];
+    /**
+     * One test case per file and language, named like "en/NatureOfZero".
+     *
+     * @return iterable<string, array{string, string}>
+     */
+    public static function wisdomProvider(): iterable
+    {
+        foreach (self::LOCALE_DIRS as $locale => $dir) {
+            if (!is_dir($dir)) {
+                continue;
+            }
+
+            foreach (glob($dir . '/*.md') ?: [] as $file) {
+                $id = basename($file, '.md');
+                yield $locale . '/' . $id => [$locale, $id];
+            }
         }
     }
 
-    /**
-     * @dataProvider markdownFileProvider
-     */
-    public function testFrontmatterStructure(string $filePath): void
+    #[DataProvider('wisdomProvider')]
+    public function testFrontmatterStructure(string $locale, string $id): void
     {
-        $content = file_get_contents($filePath);
+        $label = $locale . '/' . $id;
+        $file = self::LOCALE_DIRS[$locale] . '/' . $id . '.md';
 
-        // 1. Check if a frontmatter block (--- ... ---) exists at all
-        $pattern = '/^---\s*(.*?)\s*---/s';
-        $hasFrontmatter = preg_match($pattern, $content, $matches);
-        
-        $this->assertSame(
-            1, 
-            $hasFrontmatter, 
-            "The file " . basename($filePath) . " does not have a valid YAML frontmatter block at the beginning."
+        $this->assertTrue(
+            (new GuruWisdomService(new Aliases(['@public/wisdoms' => self::WISDOMS_DIR])))->isValidId($id),
+            "The file name of {$label} contains characters that are not allowed in an ID."
         );
 
-        $frontmatterYaml = $matches[1];
+        $content = (string)file_get_contents($file);
+        $this->assertSame(
+            1,
+            preg_match('/\A(?:\xEF\xBB\xBF)?---[ \t]*\R(.*?)\R---[ \t]*(?:\R|\z)/s', $content, $matches),
+            "{$label} does not start with a front matter block."
+        );
 
-        // 2. Parse YAML
-        // Catch exception if the YAML is broken (e.g., wrong indentation)
-        try {
-            $data = Yaml::parse($frontmatterYaml);
-        } catch (\Exception $e) {
-            $this->fail("YAML syntax error in " . basename($filePath) . ": " . $e->getMessage());
-        }
-
-        $this->assertIsArray($data, "The frontmatter in " . basename($filePath) . " could not be parsed as an array.");
-
-        // 3. Check required fields
-        $expectedKeys = ['id', 'title', 'subtitle', 'description', 'date', 'author', 'tags', 'categories'];
-        foreach ($expectedKeys as $key) {
-            $this->assertArrayHasKey(
-                $key, 
-                $data, 
-                "Missing key '{$key}' in the frontmatter of " . basename($filePath)
+        // The ID is the file name. A front matter 'id' is not needed; if present it must not deviate.
+        if (preg_match('/^id:[ \t]*(.*)$/m', $matches[1], $idMatch)) {
+            $this->assertSame(
+                $id,
+                trim($idMatch[1], " \t\"'"),
+                "The front matter 'id' of {$label} differs from the file name. Remove the 'id' line."
             );
         }
 
-        // 4. Validate data types and specific content
-        $this->assertIsString($data['id'], "'id' must be a string.");
-        $this->assertIsString($data['title'], "'title' must be a string.");
-        $this->assertIsString($data['subtitle'], "'subtitle' must be a string.");
-        $this->assertIsString($data['description'], "'description' must be a string.");
+        $service = new GuruWisdomService(new Aliases(['@public/wisdoms' => self::WISDOMS_DIR]));
+        $data = $service->getFrontMatter($id, $locale);
 
-        // Date: YAML parsers often convert a date (YYYY-MM-DD) without quotes into integers/timestamps.
-        // We dynamically check if a value exists (typing is secondary here as long as it's valid).
-        $this->assertNotEmpty($data['date'], "'date' must not be empty.");
+        foreach (['title', 'subtitle', 'description', 'date', 'author', 'tags', 'categories'] as $key) {
+            $this->assertArrayHasKey($key, $data, "Missing '{$key}' in {$label}.");
+            $this->assertNotEmpty($data[$key], "'{$key}' is empty in {$label}.");
+        }
 
-        // Fixed author
-        $this->assertEquals(
-            "Markus Wolff guru-wisdom.de", 
-            $data['author'], 
-            "The author in " . basename($filePath) . " deviates from the standard format."
+        $this->assertMatchesRegularExpression(
+            '/^\d{4}-\d{2}-\d{2}$/',
+            (string)$data['date'],
+            "'date' of {$label} must have the form YYYY-MM-DD (with leading zeros)."
+        );
+        [$year, $month, $day] = array_map('intval', explode('-', (string)$data['date']));
+        $this->assertTrue(checkdate($month, $day, $year), "'date' of {$label} is not a valid date.");
+
+        $this->assertSame(
+            'Markus Wolff guru-wisdom.de',
+            $data['author'],
+            "The author of {$label} deviates from the standard."
         );
 
-        // Arrays (Tags & Categories)
-        $this->assertIsArray($data['tags'], "'tags' must be a list (array) (e.g., [\"Tag1\", \"Tag2\"]).");
-        $this->assertIsArray($data['categories'], "'categories' must be a list (array).");
-        
-        // Check if arrays are not empty (optional)
-        $this->assertNotEmpty($data['tags'], "At least one tag must be provided.");
-        $this->assertNotEmpty($data['categories'], "At least one category must be provided.");
+        foreach (['tags', 'categories'] as $listKey) {
+            $this->assertIsArray($data[$listKey], "'{$listKey}' of {$label} must be a list, e.g. [\"A\", \"B\"].");
+            foreach ($data[$listKey] as $item) {
+                $this->assertMatchesRegularExpression(
+                    '/^"[^"]+"$/',
+                    (string)$item,
+                    "Entry {$item} in '{$listKey}' of {$label} is not a complete quoted string (missing quote or comma inside)."
+                );
+            }
+        }
     }
 }
