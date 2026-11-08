@@ -8,13 +8,16 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
+use Yiisoft\Aliases\Aliases;
 use Yiisoft\Translator\TranslatorInterface;
 
 final class LocaleMiddleware implements MiddlewareInterface
 {
     public function __construct(
         private readonly TranslatorInterface $translator,
-        private readonly array $params
+        private readonly array $params,
+        private readonly LanguageSwitchHolder $languageSwitch,
+        private readonly Aliases $aliases,
     ) {
     }
 
@@ -47,6 +50,17 @@ final class LocaleMiddleware implements MiddlewareInterface
         $request = $request
             ->withAttribute('current_locale', $locale)
             ->withAttribute('enable_lang_support_button', (bool) ($multilingual['enable_lang_support_button'] ?? false));
+
+        $uri = $request->getUri();
+        $this->languageSwitch->set(LanguageSwitcherHelper::build(
+            $multilingual,
+            $uri->getHost(),
+            $uri->getPath(),
+            $uri->getQuery(),
+            $uri->getScheme(),
+            $this->aliases->get('@public/wisdoms'),
+            $locale,
+        ));
 
         return $handler->handle($request);
     }

@@ -12,6 +12,7 @@ declare(strict_types=1);
  * @var string $environment
  * @var string $language
  * @var \Yiisoft\Translator\TranslatorInterface $translator
+ * @var array<string, mixed>|null $languageSwitch Data for the DE | EN switch (LanguageSwitcherHelper), null = switch off.
  */
 
 use App\Web\Shared\Layout\Main\MainAsset;
@@ -22,6 +23,19 @@ use Yiisoft\Bootstrap5\NavBar;
 
 // $assetManager->register(MainAsset::class);
 $lang = $translator->getLocale(); 
+$languageSwitch = $languageSwitch ?? null;
+
+// hreflang pair, only for pages that exist in both languages
+if (is_array($languageSwitch) && is_array($languageSwitch['alternate'] ?? null)) {
+    $hreflangUrls = [
+        $languageSwitch['current'] => $languageSwitch['alternate']['self'],
+        $languageSwitch['target'] => $languageSwitch['alternate']['other'],
+    ];
+    ksort($hreflangUrls);
+    foreach ($hreflangUrls as $hreflang => $hreflangUrl) {
+        $this->registerLinkTag(Html::link($hreflangUrl, ['rel' => 'alternate', 'hreflang' => $hreflang]));
+    }
+}
 
 // 1. Dynamische Basis-URL für das Asset Bundle ermitteln
 $mainAssetBundle = $assetManager->getBundle(MainAsset::class);
@@ -107,6 +121,17 @@ $this->beginPage();
                 <img src="/images/logo/GuruWisdom.jpg" alt="Guru Wisdom" id="brand-logo" style="height: 40px; width: auto;" width="120" height="40">
              </picture>
         </a>
+        <?php if (is_array($languageSwitch)): ?>
+            <span class="small me-3" id="language-switch">
+                <strong aria-current="true"><?= Html::encode($languageSwitch['currentLabel']) ?></strong>
+                <span class="text-muted mx-1" aria-hidden="true">|</span>
+                <a href="<?= Html::encode($languageSwitch['url']) ?>"
+                   class="text-muted text-decoration-none"
+                   lang="<?= Html::encode($languageSwitch['target']) ?>"
+                   hreflang="<?= Html::encode($languageSwitch['target']) ?>"
+                   title="<?= Html::encode($languageSwitch['targetName']) ?>"><?= Html::encode($languageSwitch['targetLabel']) ?></a>
+            </span>
+        <?php endif; ?>
     </nav>
 </header>
 
