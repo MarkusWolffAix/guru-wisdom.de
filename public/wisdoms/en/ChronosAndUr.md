@@ -3,7 +3,7 @@ id: "ChronosAndUr"
 title: "Time and clock"
 subtitle: "The duality of time and eternal origin"
 description: "A reflection on the mythological and linguistic connection between measurable time and the timeless state of being."
-date: 2026-08-24
+date: 2026-11-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Unendlichkeit", "Achtsamkeit", "Kronos", "Chronos", "Uranus"]
 categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
