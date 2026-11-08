@@ -7,7 +7,7 @@ use Yiisoft\Translator\CategorySource;
 use Yiisoft\Translator\Message\Php\MessageSource;
 
 return [
-    // The source of translations for the "app" category
+    // The source of translations for the "app" category (resources/messages/<locale>/app.php)
     'translation.app' => [
         'definition' => static function (Aliases $aliases) {
             // lookup the path to the messages directory using the alias system
@@ -17,6 +17,16 @@ return [
             return new CategorySource('app', $reader);
         },
         // This tag is magic: Yii3 automatically collects all services with this tag
+        'tags' => ['translation.categorySource'],
+    ],
+
+    // The source of translations for the "categories" category (resources/messages/<locale>/categories.php)
+    'translation.categories' => [
+        'definition' => static function (Aliases $aliases) {
+            $reader = new MessageSource($aliases->get('@root/resources/messages'));
+
+            return new CategorySource('categories', $reader);
+        },
         'tags' => ['translation.categorySource'],
     ],
 ];

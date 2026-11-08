@@ -9,6 +9,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
+use App\Service\CategoryLabelService;
 use App\Service\GuruWisdomService;
 use App\Service\WisdomCacheService;
 use App\Web\NotFound\NotFoundHandler;
@@ -33,13 +34,15 @@ final class Action implements RequestHandlerInterface
      * @param CurrentRoute    $currentRoute Represents the currently matched route and its parameters.
      * @param GuruWisdomService  $guruWisdom   Helper class for accessing the parsed wisdom data.
      * @param WisdomCacheService $wisdomCache  Service für die performante Navigation.
+     * @param CategoryLabelService $categoryLabels Liefert die Anzeigenamen der Kategorien je Sprache.
      */
     public function __construct(
         WebViewRenderer $viewRenderer, 
         private CurrentRoute $currentRoute, 
         private GuruWisdomService $guruWisdom,
         private WisdomCacheService $wisdomCache,
-        private NotFoundHandler $notFoundHandler
+        private NotFoundHandler $notFoundHandler,
+        private CategoryLabelService $categoryLabels
     ) {
         // Set the view path to the current directory of this class
         $this->viewRenderer = $viewRenderer->withViewPath(__DIR__);
@@ -74,6 +77,7 @@ final class Action implements RequestHandlerInterface
                 ->render($viewName, [
                     'currentUrl'  => (string) $request->getUri(),
                     'wisdoms' => $allWisdoms,
+                    'categoryLabels' => $this->categoryLabels->labelsFor($allWisdoms, $locale),
                 ]); 
         }
 
@@ -114,9 +118,8 @@ final class Action implements RequestHandlerInterface
             return trim(str_replace(['"', "'", '&quot;'], '', $tag));
         }, (array)$tags);
 
-        $cleanCategories = array_map(function ($cat) {
-            $cleanCat = trim(str_replace(['"', "'", '&quot;'], '', $cat));
-            return 'Category ' . $cleanCat; 
+        $cleanCategories = array_map(function ($cat) use ($locale) {
+            return 'Category ' . $this->categoryLabels->label((string)$cat, $locale);
         }, (array)$categories);
         
         $keywordsArray = array_unique(array_merge($cleanTags, $cleanCategories));

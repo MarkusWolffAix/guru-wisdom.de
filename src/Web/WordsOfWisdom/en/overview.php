@@ -7,6 +7,7 @@ use Yiisoft\View\WebView;
 
 /** @var \Yiisoft\View\WebView $this */
 /** @var array $wisdoms */
+/** @var array<string, string> $categoryLabels Display name per category value, built by CategoryLabelService. */
 /** @var string      $currentUrl     The dynamic absolute URL from request. */
 
 $ogImageUrl = $currentUrl . 'images/logo/GuruWisdom.png';
@@ -159,7 +160,7 @@ $this->setTitle($title);
                                     <div class="d-flex flex-wrap justify-content-start gap-1">
                                     <?php foreach ($categories as $categoryItem): ?>
                                         <span class="badge bg-secondary text-light px-2 py-1" style="font-size: 0.75rem;">
-                                            <?= htmlspecialchars((string)$categoryItem) ?>
+                                            <?= htmlspecialchars((string)($categoryLabels[$categoryItem] ?? $categoryItem)) ?>
                                         </span>
                                     <?php endforeach; ?>
                                     </div>
