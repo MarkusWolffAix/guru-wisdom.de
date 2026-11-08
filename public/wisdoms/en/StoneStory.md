@@ -2,7 +2,7 @@
 title: "The story of the stone Kalle Kiesel"
 subtitle: "From fiery hothead to round world explorer"
 description: "A metaphorical journey into the consciousness of a stone and lessons in patience."
-tags: ["Erde", "Zeit", "Philosophie", "Geduld", "Metapher", "Verwitterung"]
+tags: ["Earth", "Time", "philosophy", "patience", "metaphor", "weathering"]
 ---
 # The Story of Kalle Kiesel the Stone
 ## From Fiery Hothead to Round World Explorer

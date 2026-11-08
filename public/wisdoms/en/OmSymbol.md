@@ -2,7 +2,7 @@
 title: "The Om symbol"
 subtitle: "A journey through consciousness"
 description: "Deciphering the curves and points of the sacred Om symbol and its Turiya meaning."
-tags: ["Symbole", "Hinduismus", "Yoga", "Symbolik", "Heilige Geometrie"]
+tags: ["Symbols", "Hinduism", "yoga", "symbolism", "Sacred Geometry"]
 ---
 # The Om Symbol
 ## A Journey Through Consciousness

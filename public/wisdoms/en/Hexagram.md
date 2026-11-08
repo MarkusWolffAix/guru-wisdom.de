@@ -2,7 +2,7 @@
 title: "The hexagram"
 subtitle: "The sacred geometry of balance"
 description: "The hidden symbolism of the hexagram as a union of masculine and feminine energies."
-tags: ["Symbole", "Religionen", "Hexagramm", "Geometrie", "Balance", "Davidstern"]
+tags: ["Symbols", "Religions", "Hexagram", "geometry", "balance", "Star of David"]
 ---
 # The Hexagram
 ## The Sacred Geometry of Balance

@@ -2,7 +2,7 @@
 title: "Alpha and Omega"
 subtitle: "The eternal cycle of beginning and end"
 description: "Understanding the concept of infinity and how Alpha and Omega shape our view of eternity."
-tags: ["Christentum", "Unendlichkeit", "Alpha", "Omega", "Kosmos", "Anfang und Ende"]
+tags: ["Christianity", "infinity", "alpha", "omega", "cosmos", "Beginning and end"]
 ---
 # Alpha and Omega
 ## The Eternal Cycle of Beginning and End

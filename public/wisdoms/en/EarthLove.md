@@ -2,7 +2,7 @@
 title: "The Chronicle of Warmth"
 subtitle: "The Earth as a living organism of love"
 description: "A reflection on the Earth as a living being, the universal cycle of love, and the healing power of sincere interest and stories."
-tags: ["Liebe", "Gaia", "Achtsamkeit", "Interesse", "Geschichten"]
+tags: ["Love", "Gaia", "Mindfulness", "interest", "Stories"]
 ---
 # The Chronicle of Warmth
 ## The Earth as a Living Organism of Love

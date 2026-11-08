@@ -2,7 +2,7 @@
 title: "Rome in the mirror"
 subtitle: "The inner return to love and peace"
 description: "How the reversal of Rome's names in ancient languages reveals a deep spiritual path from outer power to inner peace, love, and light."
-tags: ["Liebe", "Antike", "Schöpfung", "Amor", "Emor", "Sprachmystik"]
+tags: ["Love", "Ancient times", "Creation", "Cupid", "Emor", "Mysticism of language"]
 ---
 # Rome in the Mirror
 ## The Inner Return to Love and Peace

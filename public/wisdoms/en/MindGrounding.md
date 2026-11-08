@@ -2,7 +2,7 @@
 title: "Ways out of the labyrinth of thoughts"
 subtitle: "The power of physical presence"
 description: "A reflection on how the 5-4-3-2-1 method brings us back from rumination to the immediacy of the here and now."
-tags: ["Meditation", "Achtsamkeit", "Psychologie", "Gegenwart", "Sinneseindrücke"]
+tags: ["meditation", "Mindfulness", "psychology", "Present", "Sensory impressions"]
 ---
 # Ways Out of the Labyrinth of Thoughts
 ## The Power of Physical Presence

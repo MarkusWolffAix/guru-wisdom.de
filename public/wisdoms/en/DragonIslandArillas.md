@@ -2,7 +2,7 @@
 title: "Dragon Island"
 subtitle: "The Guardian of Arillas"
 description: "A profound reflection on the grounding, dragon-like power of the island of Gravia and the discovery of inner stillness."
-tags: ["Meditation", "Mantra", "Elemente", "Gravia", "Kosmischer Fokus", "Silbe Ma"]
+tags: ["meditation", "Mantra", "elements", "Gravia", "Cosmic Focus", "Syllable Ma"]
 ---
 # Dragon Island
 ## The Guardian of Arillas

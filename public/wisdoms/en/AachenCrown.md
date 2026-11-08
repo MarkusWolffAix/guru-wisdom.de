@@ -2,7 +2,7 @@
 title: "Charlemagne"
 subtitle: "Heritage and coronation tradition in Aachen"
 description: "A comprehensive summary about Charlemagne, the symbolic bust of Charlemagne and the history of the 31 royal coronations in Aachen Cathedral."
-tags: ["Aachen", "Antike", "Christentum", "Karl der Große", "Mittelalter", "Krönung"]
+tags: ["Aachen", "Ancient times", "Christianity", "Charlemagne", "Medieval Times", "coronation"]
 ---
 # Charlemagne
 ## Heritage and Coronation Tradition in Aachen

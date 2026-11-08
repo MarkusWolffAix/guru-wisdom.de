@@ -2,7 +2,7 @@
 title: "The story of the primal sound"
 subtitle: "How the Universe Learned to Sing"
 description: "A poetic look at the first sound of the universe and its journey to our hearts."
-tags: ["Klang", "Schöpfung", "Mythen", "Urklang", "Poesie"]
+tags: ["sound", "Creation", "Myths", "Primordial sound", "poetry"]
 ---
 # The Story of the Primordial Sound
 ## How the Universe Learned to Sing

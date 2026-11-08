@@ -2,7 +2,7 @@
 title: "Cosmic Barrels"
 subtitle: "From ancient craftsmanship to string theory"
 description: "A philosophical reflection on how old sayings of the cooper's craft reflect the fundamental principles of quantum physics and our inner transformation."
-tags: ["Quantenphysik", "Schöpfung", "Stringtheorie", "Fassbinderei", "Phasenübergang", "Transformation"]
+tags: ["Quantum physics", "Creation", "String theory", "Cooperage", "Phase transition", "transformation"]
 ---
 
 # Cosmic Barrels

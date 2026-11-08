@@ -2,7 +2,7 @@
 title: "Love and abstraction"
 subtitle: "The mind as servant of the heart"
 description: "A philosophical journey exploring the dynamics of love, abstraction, empathy, and changing perspectives."
-tags: ["Liebe", "Philosophie", "Psychologie", "Empathie", "Perspektivenwechsel"]
+tags: ["Love", "philosophy", "psychology", "empathy", "Change of perspective"]
 ---
 # Love and Abstraction
 ## The Mind as Servant of the Heart

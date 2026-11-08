@@ -2,7 +2,7 @@
 title: "The power of We"
 subtitle: "A unity without an enemy image"
 description: "A reflection on the universal sense of "we", the move away from divisive enemy images and the conscious decision for love as a constructive force."
-tags: ["Liebe", "Quantenphysik", "Wir-Gefühl", "Konstruktive Ausrichtung"]
+tags: ["Love", "Quantum physics", "sense of community", "Constructive orientation"]
 ---
 
 # The Power of We

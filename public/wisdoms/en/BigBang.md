@@ -2,7 +2,7 @@
 title: "Cosmic Creation"
 subtitle: "The myth of the golden Big Bang and the ether"
 description: "A comprehensive summary of the spiritual creation story surrounding the golden Big Bang, the ether, the divine family, and the ensoulment of man."
-tags: ["OM", "Quantenphysik", "Schöpfung", "Urknall", "Prana", "Äther", "Kosmologie"]
+tags: ["OM", "Quantum physics", "Creation", "Big Bang", "Prana", "ether", "cosmology"]
 ---
 # Cosmic Creation
 ## The Myth of the Golden Big Bang and the Aether

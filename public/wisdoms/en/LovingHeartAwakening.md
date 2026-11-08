@@ -2,7 +2,7 @@
 title: "Baptism in the Jordan"
 subtitle: "The awakening of the loving heart"
 description: "A profound reflection on the baptism of Jesus as a radical return to the living essence of Judaism and the universal power of love."
-tags: ["Christentum", "Liebe", "Teschuwa", "JordanTaufe", "Mystik", "JohannesDerTäufer"]
+tags: ["Christianity", "Love", "Teshuva", "Jordan Baptism", "mysticism", "John the Baptist"]
 ---
 # Baptism in the Jordan
 ## The Awakening of the Loving Heart

@@ -2,7 +2,7 @@
 title: "The Matrix and Asato Ma"
 subtitle: "The path from illusion to truth"
 description: "Parallels between the modern matrix concept and the ancient Vedic mantra Asato Ma."
-tags: ["Mantra", "Hinduismus", "Psychologie", "Asato Ma", "Illusion", "Wahrheit"]
+tags: ["Mantra", "Hinduism", "psychology", "Asato Ma", "illusion", "Truth"]
 ---
 # The Matrix and Asato Ma
 ## The Path from Illusion to Truth

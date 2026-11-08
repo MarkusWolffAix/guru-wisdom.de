@@ -2,7 +2,7 @@
 title: "The Cross of the Rivers"
 subtitle: "Where amber and salt meet"
 description: "An essayistic examination of the historical overland routes where the white gold and the gold of the north intersect and find their culmination in Salzburg."
-tags: ["Elemente", "Liebe", "Hellweg", "Bernsteinstraße", "Salzburg"]
+tags: ["elements", "Love", "Hellweg", "Amber Road", "Salzburg"]
 ---
 
 # The Crossroads of Rivers

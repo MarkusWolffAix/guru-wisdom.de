@@ -2,7 +2,7 @@
 title: "The Voices of the World"
 subtitle: "A family tree of language mothers"
 description: "A profound journey to the origins of human language, the major language families, and the infinite diversity of human sound."
-tags: ["Antike", "Indien", "Klang", "Urindogermanisch", "Phonetik", "Sprachfamilien"]
+tags: ["Ancient times", "India", "sound", "Proto-Indo-European", "phonetics", "Language families"]
 ---
 # The Voices of the World
 ## A Family Tree of Language Mothers

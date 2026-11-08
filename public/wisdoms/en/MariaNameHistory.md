@@ -2,7 +2,7 @@
 title: "The name Maria"
 subtitle: "A journey from silent protest to worldwide love"
 description: "How a name from ancient Judea became a worldwide symbol of protection, devotion, and bridge-building."
-tags: ["Maria", "Christentum", "Mirjam", "Namensgeschichte", "Hoffnung"]
+tags: ["Mary", "Christianity", "Miriam", "Name history", "Hope"]
 ---
 # The Name Maria
 ## A Journey from Silent Protest to Global Love

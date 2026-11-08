@@ -2,7 +2,7 @@
 title: "The ego in conversation"
 subtitle: "The lightning rod leads nowhere."
 description: "A reflection on the role of the ego in discussions, the mechanics of inner resistance, and the liberating power of letting emotional energy dissipate."
-tags: ["Psychologie", "Achtsamkeit", "Blitzableiter", "Leere"]
+tags: ["psychology", "Mindfulness", "Lightning rod", "Emptiness"]
 ---
 # The Ego in Conversation
 ## The Lightning Rod into the Void

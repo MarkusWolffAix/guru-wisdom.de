@@ -2,7 +2,7 @@
 title: "The global linguistic meaning of "Ur""
 subtitle: "The resonance of creation"
 description: "Connection with the frequency of origin through singing bowls and mantras."
-tags: ["Klang", "Schöpfung", "Urklang", "Frequenz"]
+tags: ["sound", "Creation", "Primordial sound", "frequency"]
 ---
 # The Global Linguistic Meaning of "Ur"
 ## The Resonance of Creation

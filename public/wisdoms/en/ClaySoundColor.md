@@ -2,7 +2,7 @@
 title: "The secret of tone"
 subtitle: "From the vessel of the earth to the vibration of the spirit"
 description: "How a single word bridges the gap between the formed matter of creation, the nuance of light, and the finest resonance of sound."
-tags: ["Christentum", "Klang", "Schöpfung", "Elemente", "Erde", "Resonanz", "Farbe"]
+tags: ["Christianity", "sound", "Creation", "elements", "Earth", "resonance", "Color"]
 ---
 
 # The Secret of Clay

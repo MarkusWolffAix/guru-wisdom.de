@@ -2,7 +2,7 @@
 title: "Universal breathing"
 subtitle: "A master plan to heal the Earth"
 description: "An essayistic synthesis of ecological regeneration, the wisdom of ancient civilizations, and the formative consciousness space of Ma."
-tags: ["Biologie", "Liebe", "Mesopotamien", "Prinzip Ma", "Baum-Zeit", "Biotische Pumpe"]
+tags: ["biology", "Love", "Mesopotamia", "Principle Ma", "Tree Time", "Biotic pump"]
 ---
 # Universal Breathing
 ## A Master Plan for Healing the Earth

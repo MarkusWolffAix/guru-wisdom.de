@@ -2,7 +2,7 @@
 title: "Water and resistance"
 subtitle: "The Metamorphosis of Life Energy"
 description: "How formless energy finds its true power through structure and resistance."
-tags: ["Elemente", "Psychologie", "Hingabe", "Transformation", "Ozeanwelle"]
+tags: ["elements", "psychology", "devotion", "transformation", "Ocean wave"]
 ---
 # Water and Resistance
 ## The Metamorphosis of Life Energy

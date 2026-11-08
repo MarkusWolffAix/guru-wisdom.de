@@ -2,7 +2,7 @@
 title: "Urd and the Fateweavers"
 subtitle: "Past and Karma in Norse Mythology"
 description: "The profound symbolism of the Norns and what Urd teaches us about our own karma."
-tags: ["Antike", "Schicksal", "Mythen", "Urd", "Karma", "Schicksalsweberin"]
+tags: ["Ancient times", "Fate", "Myths", "Urd", "karma", "Fate Weaver"]
 ---
 # Urd and the Fateweavers
 ## Past and Karma in Norse Mythology

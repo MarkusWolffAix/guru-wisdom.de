@@ -2,7 +2,7 @@
 title: "The origin of being"
 subtitle: "How the child experiences the world before abstraction"
 description: "A reflection on the original, undivided state of being, before the human mind begins to divide the world into quantities and abstract concepts."
-tags: ["Liebe", "Ursprung", "Muttererde", "Abstraktion"]
+tags: ["Love", "origin", "Mother Earth", "abstraction"]
 ---
 # The Origin of Being
 ## How a Child Experiences the World Before Abstraction

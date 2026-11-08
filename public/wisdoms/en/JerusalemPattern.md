@@ -2,7 +2,7 @@
 title: "Jerusalem"
 subtitle: "The blueprint for transformation"
 description: "A profound analysis of the historical cycles of destruction and reconstruction as a universal pattern for societal and personal crises."
-tags: ["Jerusalem", "Antike", "Psychologie", "Transformation", "Krise", "Babylon", "Persien"]
+tags: ["Jerusalem", "Ancient times", "psychology", "transformation", "crisis", "Babylon", "Persia"]
 ---
 # Jerusalem
 ## The Blueprint of Transformation

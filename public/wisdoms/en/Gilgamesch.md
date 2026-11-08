@@ -2,7 +2,7 @@
 title: "The Epic of Gilgamesh"
 subtitle: "The eternal quest for immortality"
 description: "Timeless lessons about friendship, loss, and the meaning of life from the oldest history."
-tags: ["Mesopotamien", "Antike", "Uruk", "Unsterblichkeit", "Sintflut"]
+tags: ["Mesopotamia", "Ancient times", "Uruk", "immortality", "Flood"]
 ---
 # The Epic of Gilgamesh
 ## The Eternal Quest for Immortality

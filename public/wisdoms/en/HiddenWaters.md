@@ -2,7 +2,7 @@
 title: "The hidden current"
 subtitle: "From the unity of the forest to the depths of the worm"
 description: "A consideration of Aachen's underground waters and their deep symbolic meaning for creation and spirit."
-tags: ["Aachen", "Schöpfung", "Elemente", "Beverbach", "Gillesbach", "Wurm"]
+tags: ["Aachen", "Creation", "elements", "Beverbach", "Gillesbach", "worm"]
 ---
 
 # The Hidden Current

@@ -2,7 +2,7 @@
 title: "The five Vayus"
 subtitle: "The subtle winds of life force"
 description: "A profound journey through the five Prana Vayus. We examine in detail the physical and mental imbalances of our life energy and show gentle paths to healing."
-tags: ["Yoga", "Prana", "Achtsamkeit", "Blockaden", "Energiefluss"]
+tags: ["yoga", "Prana", "Mindfulness", "Blockages", "Energy flow"]
 ---
 # The Five Vayus
 ## The Subtle Winds of Life Force

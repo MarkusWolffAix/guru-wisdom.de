@@ -2,7 +2,7 @@
 title: "You Are or Short UR"
 subtitle: "The bridge between silence and sound"
 description: "Considering the chat abbreviation UR as a symbol of modern simplicity and spiritual presence."
-tags: ["Sprache", "Philosophie", "Achtsamkeit", "Sprachwandel", "Identität"]
+tags: ["Language", "philosophy", "Mindfulness", "Language change", "identity"]
 ---
 # UR
 ## The Bridge Between Silence and Sound

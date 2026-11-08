@@ -2,7 +2,7 @@
 title: "The Dance of the Elements"
 subtitle: "The Evolution of Divine Fire and the Breath of the Spirit"
 description: "A mystical reflection on creation, in which the earth, as a sentient being, nourishes the divine light, the primordial fire ignites the cycle of life, and the air, as an invisible spirit, connects everything."
-tags: ["Schöpfung", "Elemente", "Liebe", "Feuer", "fühlendes Wesen", "Habitable Zone"]
+tags: ["Creation", "elements", "Love", "Fire", "sentient being", "Habitable Zone"]
 ---
 # The Dance of the Elements
 ## The Evolution of Divine Fire and the Breath of Spirit

@@ -2,7 +2,7 @@
 title: "The five Koshas"
 subtitle: "A journey to the inner light"
 description: "A profound exploration of the Pancha Kosha philosophy and the journey through the five sheaths of being to the true self."
-tags: ["Hinduismus", "Meditation", "Yoga", "Atman", "Zwiebelschalenprinzip"]
+tags: ["Hinduism", "meditation", "yoga", "Atman", "Onion skin principle"]
 ---
 # The Five Koshas
 ## A Journey to Inner Light

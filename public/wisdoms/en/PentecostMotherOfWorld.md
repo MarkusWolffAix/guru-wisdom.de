@@ -2,7 +2,7 @@
 title: "Pentecost and the primal fear"
 subtitle: "Humanity as the mother of the world"
 description: "A profound exploration of the Pentecostal mystery as a path out of inner isolation towards a universal, fearless empathy."
-tags: ["Christentum", "Feuer", "Pneuma", "Empathie", "Urangst", "Isolation"]
+tags: ["Christianity", "Fire", "Pneuma", "empathy", "primal fear", "isolation"]
 ---
 # Pentecost and the Primal Fear
 ## Humanity as Mother of the World

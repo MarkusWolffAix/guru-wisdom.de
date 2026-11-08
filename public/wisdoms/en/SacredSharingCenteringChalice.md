@@ -2,7 +2,7 @@
 title: "The common chalice"
 subtitle: "On the end of division and the power of the center"
 description: "A philosophical and cultural-historical examination of the transformation of communal rituals, the myth of the Grail, stone vessels of antiquity, and the healing return to the shared center."
-tags: ["Liebe", "Christentum", "Antike", "Heiliger Gral", "Mütterliche Schöpferkraft", "Halacha"]
+tags: ["Love", "Christianity", "Ancient times", "Holy Grail", "Maternal creative power", "Halacha"]
 ---
 # The Shared Chalice
 ## On the End of Division and the Power of the Center

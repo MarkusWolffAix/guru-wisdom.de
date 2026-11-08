@@ -2,7 +2,7 @@
 title: "The Alchemy of Butter"
 subtitle: "Awakening through constant friction"
 description: "A philosophical reflection on the process of butter-making as a metaphor for spiritual practice, overcoming the ego, and revealing inner Buddha-nature."
-tags: ["Yoga", "Elemente", "Tapas", "Phasenumkehr", "Dialektik"]
+tags: ["yoga", "elements", "Tapas", "Phase reversal", "dialectic"]
 ---
 # The Alchemy of Butter
 ## Awakening Through Constant Friction

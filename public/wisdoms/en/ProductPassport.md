@@ -2,7 +2,7 @@
 title: "Digital Product Passport"
 subtitle: "The future of the circular economy"
 description: "A comprehensive analysis of the Digital Product Passport (DPP) and its significance for transparency and sustainability in global supply chains."
-tags: ["Erde", "Technologie", "Kreislaufwirtschaft", "Digitalisierung", "EU"]
+tags: ["Earth", "technology", "Circular economy", "Digitization", "EU"]
 ---
 # Digital Product Passport
 ## The Future of the Circular Economy

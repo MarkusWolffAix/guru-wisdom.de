@@ -2,7 +2,7 @@
 title: "Easter"
 subtitle: "History, origin and symbols"
 description: "A comprehensive summary of the biblical Easter story, the origin of the word Easter, and the meaning of gravestone, Easter egg, and Easter bunny."
-tags: ["Christentum", "Symbole", "Ostern", "Grabstein", "Osterei", "Osterhase"]
+tags: ["Christianity", "Symbols", "Easter", "gravestone", "Easter egg", "Easter Bunny"]
 ---
 # Easter
 

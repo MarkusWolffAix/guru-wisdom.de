@@ -2,7 +2,7 @@
 title: "The Cosmic Order"
 subtitle: "The interplay of Brahma and Shakti"
 description: "A profound philosophical reflection on the universal law of consciousness and energy, structure and flow, personified by Brahma and Shakti."
-tags: ["Hinduismus", "Schöpfung", "Gottheiten", "Vedanta", "Tantra", "Bewusstsein", "Energie"]
+tags: ["Hinduism", "Creation", "Deities", "Vedanta", "Tantra", "consciousness", "energy"]
 ---
 # The Cosmic Order
 ## The Interplay of Brahma and Shakti

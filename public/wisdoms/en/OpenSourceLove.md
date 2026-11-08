@@ -2,7 +2,7 @@
 title: "The Architecture of Compassion"
 subtitle: "When the ego serves love"
 description: "A reflection on how the ego functions as a servant of love, the importance of active appreciation, and how constructive criticism helps to recognize and build upon beauty."
-tags: ["Liebe", "Psychologie", "Yoga", "OpenSource", "Ego", "Wertschätzung", "Kritikfähigkeit"]
+tags: ["Love", "psychology", "yoga", "OpenSource", "ego", "Appreciation", "Ability to accept criticism"]
 ---
 # The Architecture of Compassion
 ## When the Ego Serves Love

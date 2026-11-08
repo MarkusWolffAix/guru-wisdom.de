@@ -2,7 +2,7 @@
 title: "The architecture of perception"
 subtitle: "From the outside to the inside"
 description: "A fascinating journey through the anatomy of our senses: from their evolutionary placement in our face, through the Vedic Samkhya philosophy, to modern interoception and the true self."
-tags: ["Hinduismus", "Yoga", "Wissenschaft", "OM", "Antahkarana", "Interozeption", "Atman"]
+tags: ["Hinduism", "yoga", "Science", "OM", "Antahkarana", "Interoception", "Atman"]
 ---
 # The Architecture of Perception
 ## From the Outside to the Inside

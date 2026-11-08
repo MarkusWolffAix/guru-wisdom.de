@@ -2,7 +2,7 @@
 title: "Amavasya - New Moon"
 subtitle: "The abundance of darkness"
 description: "A reflection on the Hindu new moon night and the transformative power of darkness, in which everything new begins."
-tags: ["Hinduismus", "Neumond", "Loslassen", "Stille", "Erneuerung"]
+tags: ["Hinduism", "new moon", "Release", "silence", "renewal"]
 ---
 # Amavasya
 ## The Abundance of Darkness

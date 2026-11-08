@@ -2,7 +2,7 @@
 title: "The pulse under the plaster"
 subtitle: "Aachen: From steaming springs to the center of power"
 description: "A journey through the centuries of Aachen's city history – from the ancient thermal springs to Charlemagne and the city's unwavering soul."
-tags: ["Aachen", "Karl der Große", "Oktogon", "Thermalquellen", "Geschichte", "Kaiserstadt"]
+tags: ["Aachen", "Charlemagne", "Octagon", "thermal springs", "Story", "Imperial City"]
 ---
 # The Pulse Beneath the Pavement
 ## Aachen: From Steaming Springs to the Center of Power

@@ -2,7 +2,7 @@
 title: "The fascia"
 subtitle: "The hidden network of our consciousness"
 description: "Discover how our fascial network supports the body and stores emotions and energy."
-tags: ["Biologie", "Heilung", "Achtsamkeit", "Faszien", "Bindegewebe", "Körperbewusstsein"]
+tags: ["biology", "cure", "Mindfulness", "Fascia", "connective tissue", "Body awareness"]
 ---
 # Fascia
 ## The Hidden Network of Our Consciousness

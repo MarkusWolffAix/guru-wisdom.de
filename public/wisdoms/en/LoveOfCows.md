@@ -2,7 +2,7 @@
 title: "The Gift of the Three Cows"
 subtitle: "A story about love and memory"
 description: "Summary of a creative project about giving away three Indian cows, capturing the deep emotional bond through image, music and text."
-tags: ["Liebe", "Indien", "Erinnerung", "Loslassen", "Kunstprojekt"]
+tags: ["Love", "India", "Memory", "Release", "art project"]
 ---
 # The Gift of the Three Cows
 ## A Story About Love and Remembrance

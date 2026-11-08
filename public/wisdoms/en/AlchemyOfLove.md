@@ -2,7 +2,7 @@
 title: "The Architecture of Consciousness"
 subtitle: "Atman, Ego and the Alchemy of Love"
 description: "An essayistic reflection on the Atman as pure consciousness, the ego as its abstraction, and love as the universal source of all being."
-tags: ["Liebe", "Psychologie", "Achtsamkeit", "Atman", "Ego", "Empathie", "Verschmelzung"]
+tags: ["Love", "psychology", "Mindfulness", "Atman", "ego", "empathy", "merger"]
 ---
 # The Architecture of Consciousness
 ## Atman, Ego, and the Alchemy of Love

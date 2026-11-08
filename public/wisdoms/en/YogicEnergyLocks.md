@@ -2,7 +2,7 @@
 title: "The Gates of Energy"
 subtitle: "The secret of the sacred bandhas"
 description: "An in-depth analysis of the energetic locks for directing prana in the Hatha Yoga tradition, as well as their musical expression."
-tags: ["Yoga", "Indien", "Meditation", "Bandhas", "Sushumna Nadi", "Prana", "Lyrics"]
+tags: ["yoga", "India", "meditation", "Bandhas", "Sushumna Nadi", "Prana", "Lyrics"]
 ---
 # The Gates of Energy
 ## The Secret of the Sacred Bandhas

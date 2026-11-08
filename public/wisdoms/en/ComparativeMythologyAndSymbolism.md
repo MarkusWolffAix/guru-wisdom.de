@@ -2,7 +2,7 @@
 title: "A comparison of world mythologies"
 subtitle: "From creation myths to snake symbolism"
 description: "An unabridged and comprehensive summary of the intercultural comparison of worldwide mythologies, the Abrahamic religions, the depth psychological interpretation of Kundalini, snake symbolism and the Ouroboros – including the musical interpretation 'Teeth and Bone'."
-tags: ["Antike", "Psychologie", "Religionen", "Ouroboros", "Kundalini", "Archetypen"]
+tags: ["Ancient times", "psychology", "Religions", "Ouroboros", "Kundalini", "Archetypes"]
 ---
 # World Mythologies Compared
 ## From Creation Myths to Serpent Symbolism

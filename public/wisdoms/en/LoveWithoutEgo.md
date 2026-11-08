@@ -2,7 +2,7 @@
 title: "The River of Love"
 subtitle: "From protective distance to true closeness"
 description: "A reflection on how letting go of the ego and a true understanding of respect allow the natural flow of love."
-tags: ["Liebe", "Achtsamkeit", "Psychologie", "Ego", "Würde", "Distanz"]
+tags: ["Love", "Mindfulness", "psychology", "ego", "dignity", "distance"]
 ---
 
 # The Flow of Love

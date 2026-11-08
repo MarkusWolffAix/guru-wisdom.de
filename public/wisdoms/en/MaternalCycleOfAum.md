@@ -2,7 +2,7 @@
 title: "The cosmic womb"
 subtitle: "The maternal aspect in the transition from end to new beginning"
 description: "A philosophical consideration of the maternal principle as a transformative force at the threshold between the stillness of M and the awakening of A in the eternal cycle of AUM."
-tags: ["OM", "AUM", "Mantra", "Klang", "Schöpfung", "Mutterprinzip", "Zyklus", "Neubeginn"]
+tags: ["OM", "AUM", "Mantra", "sound", "Creation", "Mother principle", "cycle", "New beginning"]
 ---
 # The Cosmic Womb
 ## The Maternal in the Transition from End to New Beginning

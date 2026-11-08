@@ -2,7 +2,7 @@
 title: "The golden roots"
 subtitle: "Preserving original knowledge in the age of automation"
 description: "A profound reflection on the preservation of traditional and natural knowledge in a highly technological world."
-tags: ["Erde", "Psychologie", "Automatisierung", "Handwerk", "Ursprungswissen"]
+tags: ["Earth", "psychology", "automation", "Craftsmanship", "Origin knowledge"]
 ---
 # The Golden Roots
 ## Preserving Original Knowledge in the Age of Automation

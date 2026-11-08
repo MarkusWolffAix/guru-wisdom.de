@@ -2,7 +2,7 @@
 title: "Architecture of the Soul"
 subtitle: "Carl Gustav Jung and the timeless wisdom of the Vedas"
 description: "An essayistic exploration of the fascinating parallels between C.G. Jung's analytical psychology and ancient Indian philosophy."
-tags: ["Hinduismus", "Psychologie", "Kollektives Unbewusstes", "Archetypen", "Individuation"]
+tags: ["Hinduism", "psychology", "Collective unconscious", "Archetypes", "Individuation"]
 ---
 # Architecture of the Soul
 ## Carl Gustav Jung and the Timeless Wisdom of the Vedas

@@ -2,7 +2,7 @@
 title: "The story of Arillas and Corfu"
 subtitle: "A journey through time, sound and energy"
 description: "A reflection on the historical and energetic transformation of Arillas on Corfu, from a pirate hideout to a modern spiritual oasis."
-tags: ["Antike", "Achtsamkeit", "Korfu", "Transformation", "Etymologie", "Olivenhaine"]
+tags: ["Ancient times", "Mindfulness", "Corfu", "transformation", "etymology", "Olive groves"]
 ---
 # The Story of Arillas and Corfu
 ## A Journey Through Time, Sound, and Energy

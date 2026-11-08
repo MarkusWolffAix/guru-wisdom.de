@@ -2,7 +2,7 @@
 title: "The Divine Game"
 subtitle: "The return to the primal joy of love"
 description: "A reflection on the unification of the Higher Self in the divine game through love, responsibility, helpfulness, and creative joy."
-tags: ["Yoga", "Liebe", "Schöpfung", "Klang", "Kreativität", "Urfreude", "Karma Yoga"]
+tags: ["yoga", "Love", "Creation", "sound", "creativity", "Primal joy", "Karma Yoga"]
 ---
 
 # The Divine Play

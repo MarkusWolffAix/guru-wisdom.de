@@ -2,7 +2,7 @@
 title: "The Anatomy of a Thunderstorm"
 subtitle: "Nature, spirit and love in the cosmic mirror"
 description: "A profound exploration that combines the physics of lightning with human psychology, the divine spark, and the ancient theory of elements into a universal metaphor."
-tags: ["Elemente", "Feuer", "Kosmos", "Gewitter", "Äther", "Spannungsabbau"]
+tags: ["elements", "Fire", "cosmos", "Thunderstorm", "ether", "stress relief"]
 ---
 # The Anatomy of a Thunderstorm
 

@@ -2,7 +2,7 @@
 title: "Tic-Tac-Toe"
 subtitle: "The grounding stillness of not winning"
 description: "From the illusion of victory to the mysticism of the game: How Tic-Tac-Toe and the film WarGames teach us to let go of the ego and find harmony in the here and now."
-tags: ["Achtsamkeit", "Null", "WarGames", "Ego", "Erdende Stille", "Uranus"]
+tags: ["Mindfulness", "Zero", "WarGames", "ego", "Grounding silence", "Uranus"]
 ---
 # Tic-Tac-Toe
 ## The Grounding Stillness of Not Winning

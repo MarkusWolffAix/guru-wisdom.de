@@ -2,7 +2,7 @@
 title: "Origin of Being"
 subtitle: "The essence of love, Gaia, and abstraction"
 description: "A reflection on love as the universal ground of being, the earth (Gaia) as the womb of the spirit, and abstraction as a tool in dealing with life."
-tags: ["Liebe", "Gaia", "Schöpfung", "Abstraktion", "Fraktale"]
+tags: ["Love", "Gaia", "Creation", "abstraction", "Fractals"]
 ---
 # Origin of Being
 ## The Essence of Love, Gaia, and Abstraction

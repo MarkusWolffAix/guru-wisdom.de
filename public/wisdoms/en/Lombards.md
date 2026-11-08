@@ -2,7 +2,7 @@
 title: "The serpentine of history"
 subtitle: "From the Lombards to Francis of Assisi"
 description: "A reflection on the transformation of the Lombards from a warrior tribe to the architects of modern trust, and the spiritual necessity of curves in life's journey."
-tags: ["Christentum", "Achtsamkeit", "Langobarden", "Lombardkredit", "Vertragliches Vertrauen", "Franz von Assisi"]
+tags: ["Christianity", "Mindfulness", "Lombards", "Lombard loan", "Contractual trust", "Francis of Assisi"]
 ---
 # The Serpentine of History
 ## From the Lombards to Francis of Assisi

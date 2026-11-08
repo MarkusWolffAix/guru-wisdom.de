@@ -2,7 +2,7 @@
 title: "The Cosmic Symphony"
 subtitle: "Nada Brahma and the Resonance of Empathy"
 description: "A philosophical and physical exploration of how sound, quantum entanglement, and conscious listening shape the reality of our universe."
-tags: ["Quantenphysik", "Klang", "Liebe", "Stringtheorie", "Nada Brahma", "Relationalität"]
+tags: ["Quantum physics", "sound", "Love", "String theory", "Nada Brahma", "Relationality"]
 ---
 
 # The Cosmic Symphony

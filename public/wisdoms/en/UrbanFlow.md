@@ -2,7 +2,7 @@
 title: "The city river"
 subtitle: "Downpipes as vessels of transition"
 description: "A practical and in-depth plan to improve the urban water ecosystem through unsealing and the transformation of downpipe elements into lifelines."
-tags: ["Elemente", "Biologie", "Fallrohr", "Schwammstadt", "Regengarten"]
+tags: ["elements", "biology", "downpipe", "Sponge city", "Rain garden"]
 ---
 # The Urban River
 ## Downpipes as Vessels of Transition

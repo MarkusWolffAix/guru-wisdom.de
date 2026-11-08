@@ -2,7 +2,7 @@
 title: "The love of sound"
 subtitle: "The Anatomy of the Soul and the Divine Song"
 description: "A philosophical summary of the core messages of the Bhagavad Gita, Ganesha's sacrifice, the spiritual anatomy of bones and joints, and the secret of true stability."
-tags: ["Klang", "Mantra", "Hinduismus", "Bhagavad Gita", "Anatomie", "Knochen", "Gelenke"]
+tags: ["sound", "Mantra", "Hinduism", "Bhagavad Gita", "anatomy", "Bone", "joints"]
 ---
 # The Love of Sound
 ## The Anatomy of the Soul and the Divine Song

@@ -2,7 +2,7 @@
 title: "Time and clock"
 subtitle: "The duality of time and eternal origin"
 description: "A reflection on the mythological and linguistic connection between measurable time and the timeless state of being."
-tags: ["Antike", "Unendlichkeit", "Achtsamkeit", "Kronos", "Chronos", "Uranus"]
+tags: ["Ancient times", "infinity", "Mindfulness", "Kronos", "Chronos", "Uranus"]
 ---
 
 # The Origin and the Clock

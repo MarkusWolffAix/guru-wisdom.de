@@ -2,7 +2,7 @@
 title: "I am a mother to this world"
 subtitle: "How the unassuming Sanskrit syllable "Ma" reveals the path to universal love and spiritual creative power"
 description: "A profound exploration of how the syllable 'Ma' transforms us from seekers to nurturing, universal creative forces, complemented by the visual symbolism of the Lokamata."
-tags: ["Liebe", "Hinduismus", "Schöpfung", "Lokamata", "Schöpferkraft", "Symbolik"]
+tags: ["Love", "Hinduism", "Creation", "Lokamata", "Creative power", "symbolism"]
 ---
 # I Am a Mother to This World
 ## How the Unassuming Sanskrit Syllable "Ma" Reveals the Path to Universal Love and Spiritual Creativity

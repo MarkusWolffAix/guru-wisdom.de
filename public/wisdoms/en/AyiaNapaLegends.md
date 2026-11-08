@@ -2,7 +2,7 @@
 title: "Ayia Napa"
 subtitle: "History and legends of a holiday paradise"
 description: "A story based on Venetian and Byzantine legends of Ayia Napa in Cyprus."
-tags: ["Antike", "Orte", "Zypern", "Ayia Napa", "Meeresmythen"]
+tags: ["Ancient times", "places", "Cyprus", "Ayia Napa", "Sea myths"]
 ---
 # Ayia Napa
 ## History and Legends of a Holiday Paradise

@@ -2,7 +2,7 @@
 title: "Spooky action at a distance or the bond of love"
 subtitle: "What quantum entanglement teaches us about our deepest connection"
 description: "A philosophical, physical and mathematical examination of quantum entanglement: Why Einstein's 'spooky action at a distance' is not an uncanny mechanism, but the echo of a fundamental unity in which we are string and resonator for each other."
-tags: ["Verbundenheit", "Liebe", "Bewusstsein", "Quantenphysik", "Quantenverschränkung", "Albert Einstein", "Panpsychismus", "Advaita", "Resonanz"]
+tags: ["Connection", "Love", "consciousness", "Quantum physics", "Quantum entanglement", "Albert Einstein", "Panpsychism", "Advaita", "resonance"]
 ---
 
 # Spooky Action at a Distance or the Bond of Love

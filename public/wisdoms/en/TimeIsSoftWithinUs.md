@@ -2,7 +2,7 @@
 title: "Time is soft within us"
 subtitle: "The rhythms of our inner states"
 description: "A psychological and philosophical exploration of how our emotions shape our experience of time – from raging anger to timeless bliss."
-tags: ["Psychologie", "Achtsamkeit", "Zeitempfinden", "Tunnel", "Glückseligkeit"]
+tags: ["psychology", "Mindfulness", "perception of time", "tunnel", "bliss"]
 ---
 
 # Time is Soft Within Us

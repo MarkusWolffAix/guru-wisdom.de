@@ -2,7 +2,7 @@
 title: "The unity of opposites"
 subtitle: "The Eagle, the Serpent and the Ring of Eternity"
 description: "A profound exploration of the ancient symbol of the eagle and the serpent, their connection, and the overcoming of duality through the Ring of Eternal Return."
-tags: ["Antike", "Yoga", "Unendlichkeit", "Zarathustra", "Ouroboros", "Mexiko", "Prana", "Nietzsche", "Adler", "Schlange"]
+tags: ["Ancient times", "yoga", "infinity", "Zarathustra", "Ouroboros", "Mexico", "Prana", "Nietzsche", "eagle", "Snake"]
 ---
 # The Unity of Opposites
 ## The Eagle, the Serpent, and the Ring of Eternity

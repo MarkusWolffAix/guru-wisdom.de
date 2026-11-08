@@ -2,7 +2,7 @@
 title: "Historical timeline"
 subtitle: "Occupiers & Influences of Alexandria"
 description: "A detailed summary of the historical periods, occupiers and cultural influences of the city of Alexandria, complemented by poetic song lyrics."
-tags: ["Antike", "Wissenschaft", "Bibliothek", "Ägypten", "Zeitstrahl"]
+tags: ["Ancient times", "Science", "library", "Egypt", "Timeline"]
 ---
 # Historical Timeline
 ## Occupiers & Influences of Alexandria

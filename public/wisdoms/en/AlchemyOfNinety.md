@@ -2,7 +2,7 @@
 title: "The philosophy of the loving 90%"
 subtitle: "Transformation and focus in everyday life"
 description: "A philosophical reflection on achieving goals through empathy, moving away from perfectionism, and the daily transformation of obstacles into love."
-tags: ["Liebe", "Achtsamkeit", "Selbstliebe", "Kleine Geschichten"]
+tags: ["Love", "Mindfulness", "self-love", "Short Stories"]
 ---
 # The Philosophy of Loving 90%
 ## Transformation and Focus in Everyday Life

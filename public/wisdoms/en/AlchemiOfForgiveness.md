@@ -2,7 +2,7 @@
 title: "The Alchemy of Forgiveness"
 subtitle: "Stopping the absurd cycle"
 description: "A philosophical and practical reflection on forgiveness, conscious questioning, and the power of acceptance as ways out of inner constriction."
-tags: ["Achtsamkeit", "Liebe", "Christentum", "Kreislauf", "Transformation", "Akzeptanz"]
+tags: ["Mindfulness", "Love", "Christianity", "circulatory system", "transformation", "acceptance"]
 ---
 # The Alchemy of Forgiveness
 ## Breaking the Absurd Cycle

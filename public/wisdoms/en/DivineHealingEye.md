@@ -2,7 +2,7 @@
 title: "The Healing of the Divine"
 subtitle: "From the illusion of suffering to joyful realization"
 description: "How the divine overcame the virus of problem-creation and how sincere joy in nature and one's neighbor became the true source of science and knowledge."
-tags: ["Liebe", "Schöpfung", "Wissenschaft", "Kosmische Grippe", "Das Auge", "Wissensfreude"]
+tags: ["Love", "Creation", "Science", "Cosmic Flu", "The eye", "Joy of knowledge"]
 ---
 # The Healing of the Divine
 ## From the Illusion of Suffering to Joyful Realization

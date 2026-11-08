@@ -2,7 +2,7 @@
 title: "Creation myths of the world"
 subtitle: "The universal parallels of the origin of the world"
 description: "A detailed examination of the structural and content-related similarities between the creation myths of the Māori, Greeks, Egyptians and Sumerians."
-tags: ["Schöpfung", "Religionen", "Mythen", "Papatūānuku", "Welteltern", "Vergleichende Mythologie"]
+tags: ["Creation", "Religions", "Myths", "Papatūānuku", "World Parents", "Comparative Mythology"]
 ---
 # Creation Myths of the World
 ## The Universal Parallels of the Origin of the World

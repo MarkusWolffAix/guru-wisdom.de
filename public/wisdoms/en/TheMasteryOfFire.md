@@ -2,7 +2,7 @@
 title: "The tamed light"
 subtitle: "From the Guardian of the Flame to the Omega of Creation"
 description: "A philosophical journey about the taming of fire, the harmony of opposites on the horizon, and perfect reconciliation in Omega."
-tags: ["Feuer", "Evolution", "Philosophie", "Mäßigung", "Harmonie", "Horizont"]
+tags: ["Fire", "evolution", "philosophy", "moderation", "harmony", "horizon"]
 ---
 # The Tamed Light
 ## From the Guardian of the Flame to the Omega of Creation

@@ -2,7 +2,7 @@
 title: "The foundation of life"
 subtitle: "The return of the shells to the cycle"
 description: "A comprehensive look at the transformative power of nature, the formation of oyster reefs and the concrete vision of a circular network between Hamburg's gastronomy and the North Sea."
-tags: ["Biologie", "Schöpfung", "Hamburg", "Austernschalen", "Kreislaufwirtschaft", "WWF"]
+tags: ["biology", "Creation", "Hamburg", "oyster shells", "Circular economy", "WWF"]
 ---
 # The Foundation of Life
 ## The Return of Shells to the Cycle

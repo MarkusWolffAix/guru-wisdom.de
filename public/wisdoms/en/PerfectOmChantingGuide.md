@@ -2,7 +2,7 @@
 title: "The perfect Om chanting guide"
 subtitle: "Instructions for the ultimate sound meditation"
 description: "A comprehensive and well-founded guide to chanting the perfect OM (AUM), supplemented by the intuitive smiley-bow visualization and factual background information from anatomy, linguistics and philosophy."
-tags: ["OM", "AUM", "Mantra", "Yoga", "Achtsamkeit", "Chanting", "Sandhi", "Praxis"]
+tags: ["OM", "AUM", "Mantra", "yoga", "Mindfulness", "Chanting", "Sandhi", "Practice"]
 ---
 # The Perfect Om Chanting Guide
 ## Instructions for the Ultimate Sound Meditation

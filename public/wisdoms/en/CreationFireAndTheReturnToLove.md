@@ -2,7 +2,7 @@
 title: "The origin of the separation"
 subtitle: "The fire of creation and the abstraction of love"
 description: "A philosophical journey about the origin of the world from absolute love and the necessary friction of the creative fire."
-tags: ["Feuer", "Schöpfung", "Liebe", "Metaphysik", "Schöpfungsfeuer"]
+tags: ["Fire", "Creation", "Love", "metaphysics", "Creation fire"]
 ---
 # On the Origin of Separation
 ## The Fire of Creation and the Abstraction of Love

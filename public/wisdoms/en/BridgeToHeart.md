@@ -2,7 +2,7 @@
 title: "The bridge to the heart"
 subtitle: "How we can reconcile mind and emotion"
 description: "Practical ways to bridge the gap between rational thinking and deep wisdom of the heart."
-tags: ["Liebe", "Psychologie", "Herz-Verstand-Kohärenz", "Emotionen"]
+tags: ["Love", "psychology", "Heart-mind coherence", "Emotions"]
 ---
 # The Bridge to the Heart
 ## How We Reconcile Mind and Emotion

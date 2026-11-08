@@ -2,7 +2,7 @@
 title: "Piazza San Giovanni"
 subtitle: "Through the echoes of time to an inner new beginning"
 description: "A reflection on the Piazza San Giovanni in Oneglia, where the historical echo of an old mural meets the spiritual call of John and the rough sounds of Paolo Nutini."
-tags: ["Christentum", "Aachen", "Elemente", "Oneglia", "Wandgemälde", "Paolo Nutini", "Offenbarung"]
+tags: ["Christianity", "Aachen", "elements", "Oneglia", "mural", "Paolo Nutini", "revelation"]
 ---
 # Piazza San Giovanni
 ## Through the Echoes of Time to Inner Rebirth

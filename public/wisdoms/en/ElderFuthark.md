@@ -2,7 +2,7 @@
 title: "The Elder Futhark"
 subtitle: "Odin's self-sacrifice and the magic of the runes"
 description: "A profound journey into the world of the Germanic runic alphabet and Odin's mythical sacrifice at the world tree."
-tags: ["Antike", "Schöpfung", "Yggdrasil", "Runenmagie", "Runen"]
+tags: ["Ancient times", "Creation", "Yggdrasil", "Rune magic", "Runes"]
 ---
 # The Elder Futhark
 ## Odin's Self-Sacrifice and the Magic of the Runes

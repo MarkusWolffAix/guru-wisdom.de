@@ -2,7 +2,7 @@
 title: "The cosmic kiss"
 subtitle: "The art of beautifying love and life, and the humility of the flame"
 description: "A poetic reflection on the eternal play of the elements, the fading memory of fire, and our task of continually beautifying this play."
-tags: ["Liebe", "Elemente", "Schöpfung", "Feuer", "Wasser", "Hingabe", "Vergänglichkeit", "Kosmischer Kuss"]
+tags: ["Love", "elements", "Creation", "Fire", "Water", "devotion", "transience", "Cosmic Kiss"]
 ---
 # The Cosmic Kiss
 ## The Art of Enhancing Love and Life and the Humility of the Flame

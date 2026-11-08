@@ -2,7 +2,7 @@
 title: "The Eagle of Flowing Light"
 subtitle: "The synthesis of Aquila, Aqua, and the cosmic Ohm"
 description: "A deep investigation into the transformation from the warlike golden eagle to the flowing element of love and its origin in the eternal sound Ohm."
-tags: ["Antike", "Aachen", "OM", "Liebe", "Ur-Resonanz", "Steinadler", "Aquila"]
+tags: ["Ancient times", "Aachen", "OM", "Love", "primal resonance", "Golden eagle", "Aquila"]
 ---
 # The Eagle of Flowing Light
 ## The Synthesis of Aquila, Aqua, and the Cosmic Ohm

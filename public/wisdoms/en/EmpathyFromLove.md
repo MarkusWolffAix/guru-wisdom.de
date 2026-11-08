@@ -2,7 +2,7 @@
 title: "Empathy as a bridge of love"
 subtitle: "From the illusion of separation to true connection"
 description: "A reflection on how empathy is intended as a bridge of love, but can be misused through manipulative emotional traps and pseudo-justifications to project one's own shadows."
-tags: ["Liebe", "Psychologie", "Achtsamkeit", "Projektion", "Verstrickung"]
+tags: ["Love", "psychology", "Mindfulness", "projection", "entanglement"]
 ---
 
 # Empathy as a Bridge of Love

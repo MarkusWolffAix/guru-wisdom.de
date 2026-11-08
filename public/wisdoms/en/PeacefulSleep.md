@@ -2,7 +2,7 @@
 title: "Evening affirmations"
 subtitle: "For a peaceful sleep"
 description: "Eleven powerful phrases to help you consciously end the day, calm your nervous system, and prepare your mind for recovery."
-tags: ["Achtsamkeit", "Heilung", "Psychologie", "Abendrituale", "Schlaf", "Loslassen"]
+tags: ["Mindfulness", "cure", "psychology", "Evening rituals", "Sleep", "Release"]
 ---
 # Evening Affirmations
 ## For a Peaceful Sleep

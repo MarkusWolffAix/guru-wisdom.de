@@ -2,7 +2,7 @@
 title: "Light and Chakras"
 subtitle: "The resonance of colors in space and mind"
 description: "A consideration of how physical light frequencies resonate with the subtle anatomy of our chakras and awaken deep emotional states."
-tags: ["Yoga", "Biologie", "Liebe", "Farbtemperatur", "Urvertrauen", "Wurzelchakra", "Sakralchakra"]
+tags: ["yoga", "biology", "Love", "Color temperature", "Basic trust", "Root chakra", "Sacral chakra"]
 ---
 # Light and Chakras
 ## The Resonance of Colors in Space and Mind

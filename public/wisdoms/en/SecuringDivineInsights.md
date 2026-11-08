@@ -2,7 +2,7 @@
 title: "Legacy of Love"
 subtitle: "Preserving knowledge for future creations"
 description: "A reflection on the sacred cycle of creation and the methods by which wisdom gained can be secured as a spark of light for future cycles."
-tags: ["Achtsamkeit", "Philosophie", "Weisheit", "Ewigkeit", "Spirituelle Archivierung"]
+tags: ["Mindfulness", "philosophy", "wisdom", "eternity", "Spiritual archiving"]
 ---
 # Legacy of Love
 ## Preserving Knowledge for Future Creations

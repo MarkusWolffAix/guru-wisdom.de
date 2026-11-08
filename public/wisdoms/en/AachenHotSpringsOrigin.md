@@ -2,7 +2,7 @@
 title: "Aachen thermal springs"
 subtitle: "The hot legacy of Earth's history"
 description: "A comprehensive summary of the geological origins, historical significance and physical wonders of Aachen's thermal springs."
-tags: ["Aachen", "Elemente", "Erde", "Thermalwasser", "Geologie", "Heilkraft"]
+tags: ["Aachen", "elements", "Earth", "thermal water", "geology", "Healing power"]
 ---
 # Aachen Thermal Springs
 ## The Hot Legacy of Earth's History

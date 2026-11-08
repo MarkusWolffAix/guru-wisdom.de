@@ -2,7 +2,7 @@
 title: "The body's memory"
 subtitle: "How the etymology of our five senses reveals a forgotten worldview"
 description: "A linguistic-historical journey to the roots of our sensory organs, showing how our ancestors understood perception as an active interaction with the elements."
-tags: ["Achtsamkeit", "Feuer", "Biologie", "Elemente", "Etymologie", "Sinnesorgane", "Lebensatem", "Wahrnehmung"]
+tags: ["Mindfulness", "Fire", "biology", "elements", "etymology", "Sensory organs", "Breath of life", "perception"]
 ---
 
 # The Body's Memory

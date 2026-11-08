@@ -2,7 +2,7 @@
 title: "Is Urfa the biblical Ur?"
 subtitle: "The first temple of humanity"
 description: "A journey to the oldest temple in the world in Urfa and to our ancient spiritual roots."
-tags: ["Orte", "Religionen", "Historie", "Urfa", "Archäologie"]
+tags: ["places", "Religions", "history", "Urfa", "archeology"]
 ---
 # Is Urfa the Biblical Ur?
 

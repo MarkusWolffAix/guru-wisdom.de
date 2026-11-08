@@ -2,7 +2,7 @@
 title: "The Many Faces of John"
 subtitle: "A spiritual succession"
 description: "A profound examination of the various biblical bearers of the name John and their role in the evolution of a spiritual doctrine."
-tags: ["Christentum", "Johannes", "Sukzession", "Johanneische Schule"]
+tags: ["Christianity", "Johannes", "Succession", "Johannine School"]
 ---
 # The Many Faces of John
 ## A Spiritual Succession

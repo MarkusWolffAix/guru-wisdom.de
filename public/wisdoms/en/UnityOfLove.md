@@ -2,7 +2,7 @@
 title: "The illusion of separation"
 subtitle: "Feelings as a reflection of all-encompassing love"
 description: "A reflection on how our emotions act as a direct compass, showing us our inseparable connection with universal love."
-tags: ["Liebe", "Psychologie", "Getrenntheit", "Verbundenheit", "Widerstand"]
+tags: ["Love", "psychology", "Separation", "Connection", "Resistance"]
 ---
 # The Illusion of Separation
 ## Feelings as a Reflection of All-Encompassing Love

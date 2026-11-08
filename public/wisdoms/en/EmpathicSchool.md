@@ -2,7 +2,7 @@
 title: "The School of Love"
 subtitle: "Soft structures and learning through feeling"
 description: "A holistic vision for a school system based on empathy, intrinsic motivation, soft structures, and the playful experience of learning."
-tags: ["Liebe", "Wissenschaft", "Yoga", "Weiche Strukturen", "Theaterpädagogik", "Intrinsische Motivation"]
+tags: ["Love", "Science", "yoga", "Soft structures", "Theatre pedagogy", "Intrinsic motivation"]
 ---
 # The School of Love
 ## Soft Structures and Learning Through Feeling

@@ -2,7 +2,7 @@
 title: "Geometry of Love"
 subtitle: "From zero to heart"
 description: "A philosophical, mathematical and geometric consideration of how the universal symbol of the heart arises from a cut out of the void of zero."
-tags: ["Null", "Liebe", "Mathematik", "Schöpfung", "Leere Menge", "Perspektivwechsel"]
+tags: ["Zero", "Love", "mathematics", "Creation", "Empty quantity", "Change of perspective"]
 ---
 # Geometry of Love
 ## From Zero to the Heart

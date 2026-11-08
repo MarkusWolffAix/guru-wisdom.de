@@ -2,7 +2,7 @@
 title: "The Discovery of Zero"
 subtitle: "The Origin of Nothingness"
 description: "Explore the fascinating history of zero and how it revolutionized mathematics and philosophy."
-tags: ["Mathematik", "Null", "Indien", "Shunyata", "Leere", "Zahlensystem"]
+tags: ["mathematics", "Zero", "India", "Shunyata", "Emptiness", "Number system"]
 ---
 # The Discovery of Zero
 ## The Origin of Nothingness

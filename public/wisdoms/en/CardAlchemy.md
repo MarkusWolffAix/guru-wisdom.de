@@ -2,7 +2,7 @@
 title: "The Alchemy of Playing Cards"
 subtitle: "From Italian status symbols to a universal language"
 description: "A journey through the cultural history of playing cards – how tangible medieval social classes were transformed through printing technology into the universal elements of human consciousness."
-tags: ["Elemente", "Liebe", "Spielkarten", "Tarot", "Feigenblatt", "Massendruck"]
+tags: ["elements", "Love", "Playing cards", "Tarot", "fig leaf", "Mass pressure"]
 ---
 # The Alchemy of Playing Cards
 ## From Italian Class Symbols to a Universal Language

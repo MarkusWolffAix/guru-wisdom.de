@@ -2,7 +2,7 @@
 title: "Soil care and regeneration"
 subtitle: "An analysis"
 description: "Summary of the best methods for topsoil management and regenerative agriculture to combat desertification."
-tags: ["Erde", "Biologie", "Mutterboden", "Wüstenbildung", "Agroforst"]
+tags: ["Earth", "biology", "soil", "Desertification", "Agroforestry"]
 ---
 # Soil Care and Regeneration
 

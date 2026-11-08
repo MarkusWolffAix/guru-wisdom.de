@@ -2,7 +2,7 @@
 title: "The Alchemy of Bluestones"
 subtitle: "Between fire and water"
 description: "A philosophical journey from the cosmic rings at Stonehenge to the primeval seas of Aachen – and what they teach us about transformation and rootedness."
-tags: ["Aachen", "Wasser", "Feuer", "Elemente", "Stonehenge", "Blaustein", "Dualität"]
+tags: ["Aachen", "Water", "Fire", "elements", "Stonehenge", "Bluestone", "duality"]
 ---
 # The Alchemy of Bluestones
 ## Between Fire and Water

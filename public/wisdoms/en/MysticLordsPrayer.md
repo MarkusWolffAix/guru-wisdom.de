@@ -2,7 +2,7 @@
 title: "The Lord's Prayer"
 subtitle: "The cosmic architecture of an ancient mantra"
 description: "A synthesis of Semitic-Greek linguistic roots, Kabbalistic creation theology, mathematical-structural vector geometry, and non-dual consciousness architecture."
-tags: ["Christentum", "Meditation", "Mantra", "Schöpfung", "Liebe", "Zimzum", "Tikkun Olam", "Epiousios", "Gethsemane", "Passivum Divinum"]
+tags: ["Christianity", "meditation", "Mantra", "Creation", "Love", "Zimtzum", "Tikkun Olam", "Epiousios", "gethsemane", "Divine Passive"]
 ---
 # The Lord's Prayer
 ## The Cosmic Architecture of an Ancient Mantra

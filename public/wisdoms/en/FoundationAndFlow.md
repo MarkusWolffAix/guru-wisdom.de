@@ -2,7 +2,7 @@
 title: "The balance of love"
 subtitle: "Foundation and river"
 description: "A philosophical reflection on the tension between creating a secure foundation and experiencing carefree ease in relationships."
-tags: ["Liebe", "Yoga", "Raum-Halten", "Verantwortlicher Spaß", "Zynismus"]
+tags: ["Love", "yoga", "Keeping space", "Responsible Fun", "cynicism"]
 ---
 # The Balance of Love
 ## Foundation and Flow

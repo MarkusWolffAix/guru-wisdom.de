@@ -2,7 +2,7 @@
 title: "The path to adulthood"
 subtitle: "Responsibility, inner reconciliation, and care for oneself and others"
 description: "An essayistic reflection on growing up as an inner maturation process that includes accepting one's own childhood, taking responsibility, and caring for oneself and others."
-tags: ["Psychologie", "Achtsamkeit", "Verantwortung", "Selbstfürsorge"]
+tags: ["psychology", "Mindfulness", "Responsibility", "Self-care"]
 ---
 # The Path to Adulthood
 ## Responsibility, Inner Reconciliation, and Caring for Oneself and Others

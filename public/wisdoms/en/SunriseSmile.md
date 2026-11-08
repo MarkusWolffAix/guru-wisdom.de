@@ -2,7 +2,7 @@
 title: "The Land of Smiles"
 subtitle: "The inner sun of the morning"
 description: "A holistic view of how morning light and a conscious smile shape our day on a biological, psychological, and spiritual level."
-tags: ["Biologie", "Psychologie", "Sonnenaufgang", "Serotonin"]
+tags: ["biology", "psychology", "sunrise", "Serotonin"]
 ---
 # The Land of Smiles
 ## The Inner Sun of Morning

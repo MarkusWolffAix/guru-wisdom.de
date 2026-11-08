@@ -2,7 +2,7 @@
 title: "The Vata-Pitta Masterplan"
 subtitle: "Keeping the doshas in balance"
 description: "A comprehensive, unabridged Ayurveda dossier on harmonizing the doshas Vata and Pitta through verified nutrition, daily routines and energetic tools."
-tags: ["Ayurveda", "Biologie", "Heilung", "Vata", "Pitta", "Doshas"]
+tags: ["Ayurveda", "biology", "cure", "Vata", "Pitta", "Doshas"]
 ---
 # The Vata-Pitta Master Plan
 ## Keeping Your Doshas in Balance

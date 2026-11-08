@@ -2,7 +2,7 @@
 title: "The Art of Understanding"
 subtitle: "Bridges across the ocean of abstraction"
 description: "How we can make complex thoughts tangible through concrete examples, permissive language and systematic breaking down, and dissolve mental blocks."
-tags: ["Psychologie", "Achtsamkeit", "Abstraktion", "DivideAndConquer", "MentaleBlockaden"]
+tags: ["psychology", "Mindfulness", "abstraction", "Divide and Conquer", "Mental blocks"]
 ---
 # The Art of Understanding
 ## Bridges Across the Ocean of Abstraction

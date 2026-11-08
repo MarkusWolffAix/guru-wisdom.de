@@ -2,7 +2,7 @@
 title: "The universal language of numbers"
 subtitle: "A colorful alphabet of love"
 description: "A reflection on the transformation of rigid, burdensome everyday numbers into a colorful, singable alphabet of love, interwoven with historical traditions."
-tags: ["Liebe", "Mathematik", "Klang", "Synästhesie", "Problemzahlen", "Solresol"]
+tags: ["Love", "mathematics", "sound", "Synesthesia", "Problem numbers", "Solresol"]
 ---
 # The Universal Language of Numbers
 ## A Colorful Alphabet of Love

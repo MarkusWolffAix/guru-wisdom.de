@@ -2,7 +2,7 @@
 title: "The highest intelligence"
 subtitle: "Empathy as a universal law"
 description: "A reflection on empathy as the foundation of the universe, overcoming the ego, and returning to intuition as the highest guide."
-tags: ["Liebe", "Wissenschaft", "Intuition", "Albert Einstein", "Hingabe"]
+tags: ["Love", "Science", "intuition", "Albert Einstein", "devotion"]
 ---
 # The Highest Intelligence
 ## Empathy as a Universal Law

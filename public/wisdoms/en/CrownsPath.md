@@ -2,7 +2,7 @@
 title: "The Path of the Crowns"
 subtitle: "A mnemonic journey through European history"
 description: "An essayistic stroll through the forest of history to understand the rise and fall of Central European power from Charlemagne to Ludwig II."
-tags: ["Aachen", "Christentum", "Gedächtnispalast", "Mnemotechnik"]
+tags: ["Aachen", "Christianity", "Memorial Palace", "Mnemonics"]
 ---
 # The Path of the Crowns
 ## A Mnemonic Journey Through Europe's History

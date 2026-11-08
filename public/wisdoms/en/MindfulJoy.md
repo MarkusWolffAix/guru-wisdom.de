@@ -2,7 +2,7 @@
 title: "Mindfulness in small things"
 subtitle: "Happiness in the Big Picture"
 description: "A philosophical reflection on mindfulness in the smallest moments of everyday life."
-tags: ["Achtsamkeit", "Psychologie", "Lebenskunst", "Alltag", "Glück"]
+tags: ["Mindfulness", "psychology", "The art of living", "Everyday", "Luck"]
 ---
 # Mindfulness in Small Things
 

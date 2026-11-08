@@ -2,7 +2,7 @@
 title: "✨The Kiss of Oblivion"
 subtitle: "The gift of not knowing"
 description: "A reflection on the ancient legend of the angel who takes cosmic knowledge from newborns so that they can experience earthly life."
-tags: ["Antike", "Liebe", "Psychologie", "Philtrum", "Engel Laila", "Seelenwissen"]
+tags: ["Ancient times", "Love", "psychology", "Philtrum", "Angel Laila", "Soul knowledge"]
 ---
 ✨The Kiss of Forgetting
 ## The Gift of Not Knowing

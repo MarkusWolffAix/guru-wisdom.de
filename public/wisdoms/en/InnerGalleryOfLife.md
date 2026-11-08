@@ -2,7 +2,7 @@
 title: "The inner gallery of our lives"
 subtitle: "From curator to gardener of consciousness"
 description: "A comprehensive collection of insights into the cultivation of inner images, the art of acceptance and letting go, and the vision of a collective gallery."
-tags: ["Psychologie", "Achtsamkeit", "Kurator", "Innerer Garten", "Akzeptanz"]
+tags: ["psychology", "Mindfulness", "curator", "Inner Garden", "acceptance"]
 ---
 # The Inner Gallery of Our Lives
 ## From Curator to Gardener of Consciousness

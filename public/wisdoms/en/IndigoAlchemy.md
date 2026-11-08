@@ -2,7 +2,7 @@
 title: "From invisible seed to deep blue"
 subtitle: "The Transformation of Indigo"
 description: "A consideration of the botany, chemistry and history of indigo as a metaphor for transformation, healing and social change."
-tags: ["Indien", "Biologie", "Indigo", "Satyagraha", "Alchemie"]
+tags: ["India", "biology", "indigo", "Satyagraha", "Alchemy"]
 ---
 # From Invisible Seed to Deep Blue
 ## The Transformation of Indigo

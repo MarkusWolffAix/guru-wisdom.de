@@ -2,7 +2,7 @@
 title: "The Winning Day"
 subtitle: "A Morning Manifesto"
 description: "Summary of an inspiring morning motivational manifesto and its translation into German."
-tags: ["Achtsamkeit", "Psychologie", "Morgenroutine", "Dankbarkeit", "Mindset"]
+tags: ["Mindfulness", "psychology", "Morning routine", "gratitude", "Mindset"]
 ---
 # The Winning Day
 ## A Morning Manifesto

@@ -2,7 +2,7 @@
 title: "The Apple Man"
 subtitle: "An endless journey through mathematics, art, and spirituality"
 description: "A journey into the Mandelbrot set and what it teaches us about the potential of the mind."
-tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Mandelbrot-Menge", "Julia-Menge", "Apfelmännchen"]
+tags: ["mathematics", "Fractals", "infinity", "Mandelbrot quantity", "Julia Menge", "Apple man"]
 ---
 # The Mandelbrot Set
 ## An Infinite Journey Through Mathematics, Art, and Spirituality

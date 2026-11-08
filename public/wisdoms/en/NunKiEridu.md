@@ -2,7 +2,7 @@
 title: "NUN.KI"
 subtitle: "The descent of the divine order and the awakening of Eridu"
 description: "A metaphysical and conceptual analysis of the Sumerian archetypes, the city of Eridu, and the descent of consciousness."
-tags: ["Antike", "Mesopotamien", "Schöpfung", "NUN.KI", "Herabkunft", "Enki"]
+tags: ["Ancient times", "Mesopotamia", "Creation", "NUN.KI", "Descent", "Enki"]
 ---
 # NUN.KI
 ## The Descent of Divine Order and the Awakening of Eridu

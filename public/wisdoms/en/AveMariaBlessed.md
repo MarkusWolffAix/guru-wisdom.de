@@ -2,7 +2,7 @@
 title: "Ave Maria"
 subtitle: "The healing power of kind words"
 description: "An essayistic reflection on the Ave Maria, the comforting power of childhood memories, and the profound human meaning of the word 'blessed'."
-tags: ["Maria", "Christentum", "Klang", "Ave Maria", "Gebenedeit", "Kunstgeschichte"]
+tags: ["Mary", "Christianity", "sound", "Ave Maria", "Blessedness", "Art history"]
 ---
 # Ave Maria
 ## The Healing Power of Words of Comfort

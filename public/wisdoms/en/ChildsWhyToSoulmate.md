@@ -2,7 +2,7 @@
 title: "The secret of why"
 subtitle: "From childlike wonder to the glue of connection"
 description: "A reflection on the deeper meaning of children's questions, shared experiences as anchors of knowledge, and the magic of like-minded souls."
-tags: ["Liebe", "Psychologie", "Kindliche Neugier", "Seelenpartner"]
+tags: ["Love", "psychology", "Childlike curiosity", "Soulmate"]
 ---
 # The Secret of Why
 ## From Childlike Wonder to the Glue of Connection

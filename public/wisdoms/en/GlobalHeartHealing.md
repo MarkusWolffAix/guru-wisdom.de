@@ -2,7 +2,7 @@
 title: "The Global Heart"
 subtitle: "The healing of the whole through the healthy cell"
 description: "A deep reflection on the hermetic principle 'As above, so below' using the metaphor of the human heart as healer of the global organism."
-tags: ["Yoga", "Zellgedächtnis", "Fraktale", "Liebe"]
+tags: ["yoga", "Cellular memory", "Fractals", "Love"]
 ---
 # The Global Heart
 ## Healing the Whole Through the Healthy Cell

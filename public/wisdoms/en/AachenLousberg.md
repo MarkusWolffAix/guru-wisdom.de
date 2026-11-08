@@ -2,7 +2,7 @@
 title: "The Lousberg"
 subtitle: "Between Earth's history and Aachen legend"
 description: "An essayistic examination of the Lousberg in Aachen, which interweaves its geological origin, prehistoric significance as a flint mine and the famous legend of the devil."
-tags: ["Aachen", "Mythen", "Lousberg", "Legende", "Feuerstein"]
+tags: ["Aachen", "Myths", "Lousberg", "legend", "flint"]
 ---
 # The Lousberg
 ## Between Earth's History and Aachen Legend

@@ -2,7 +2,7 @@
 title: "The Life of Abraham"
 subtitle: "A journey of faith and devotion"
 description: "Explore the spiritual journey and timeless wisdom in the life of Abraham, the father of faith."
-tags: ["Abraham", "Christentum", "Religionen", "Stammvater", "Judentum", "Glaube"]
+tags: ["Abraham", "Christianity", "Religions", "Progenitor", "Judaism", "Believe"]
 ---
 # The Life of Abraham
 ## A Journey of Faith and Devotion

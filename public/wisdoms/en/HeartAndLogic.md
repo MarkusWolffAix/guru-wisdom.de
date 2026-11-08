@@ -2,7 +2,7 @@
 title: "The Servant of the Heart"
 subtitle: "Why the mind should not belong to itself"
 description: "An essayistic reflection on the idea that the human mind and all its abstractions only possess true value when they serve love and the heart."
-tags: ["Psychologie", "Liebe", "Philosophie", "Verstand", "Abstraktion", "Systemkritik"]
+tags: ["psychology", "Love", "philosophy", "mind", "abstraction", "System critique"]
 ---
 # The Servant of the Heart
 ## Why the Mind Must Not Belong to Itself

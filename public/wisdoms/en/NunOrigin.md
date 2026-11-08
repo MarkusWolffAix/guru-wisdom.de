@@ -2,7 +2,7 @@
 title: "SO"
 subtitle: "Its absolute origin lies in Egypt and Mesopotamia."
 description: "A philosophical examination of the concept of NUN as an absolute origin, clarifying the linguistic independence between the Egyptian primordial waters and the Sumerian Nun.ki. And NUN 😀?"
-tags: ["Antike", "Mesopotamien", "Schöpfung", "Nun", "Eridu"]
+tags: ["Ancient times", "Mesopotamia", "Creation", "Well", "Eridu"]
 ---
 # NUN
 ## The Absolute Origin in Egypt and Mesopotamia

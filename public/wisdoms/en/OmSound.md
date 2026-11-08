@@ -2,7 +2,7 @@
 title: "The sound of Om"
 subtitle: "The primordial frequency of the universe"
 description: "Explore the physical and spiritual significance of Om and its cosmic connection."
-tags: ["OM", "AUM", "Mantra", "Klang", "Meditation", "Schwingung", "Fünf Elemente", "Weißes Licht"]
+tags: ["OM", "AUM", "Mantra", "sound", "meditation", "vibration", "Five elements", "White light"]
 ---
 # The Sound of Om
 ## The Primal Frequency of the Universe

@@ -2,7 +2,7 @@
 title: "The Philosophy of the Five Elements"
 subtitle: "From the breath to the universe"
 description: "Earth, water, fire, air and ether: How elements shape our health and consciousness."
-tags: ["OM", "Elemente", "Natur", "Hinduismus", "Panchamahabhuta", "Tattvas", "Äther"]
+tags: ["OM", "elements", "Nature", "Hinduism", "Panchamahabhuta", "Tattvas", "ether"]
 ---
 # The Philosophy of the Five Elements
 ## From Breath to the Universe

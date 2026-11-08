@@ -2,7 +2,7 @@
 title: "The architecture of self-healing"
 subtitle: "How the self grows through abstraction"
 description: "A philosophical and psychological examination of the universal principles of how the self learns through abstraction and integrates problems back into love through empathy."
-tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
+tags: ["biology", "psychology", "cure", "Self-healing", "Fractals", "Cellular memory"]
 ---
 # The Architecture of Self-Healing
 

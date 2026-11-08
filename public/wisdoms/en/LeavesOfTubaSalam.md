@@ -2,7 +2,7 @@
 title: "The Tuba Tree"
 subtitle: "A reflection on paradise in Islam"
 description: "A consideration of the Islamic paradise (Jannah) beyond material concepts, leading to a deep spiritual level of cosmic peace and inner unity."
-tags: ["Sufismus", "Dschanna", "Tuba-Baum", "Salam", "Mystik", "Frieden"]
+tags: ["Sufism", "Jannah", "Tuba tree", "Salam", "mysticism", "Peace"]
 ---
 # The Tuba Tree
 ## A Reflection on Paradise in Islam

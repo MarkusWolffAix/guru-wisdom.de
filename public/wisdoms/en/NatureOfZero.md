@@ -2,7 +2,7 @@
 title: "The Nature of Zero"
 subtitle: "Emptiness as the source of all creation"
 description: "Why nothingness is not empty, but contains within it the potential for all possibilities."
-tags: ["Mathematik", "Null", "Indien", "Leere", "Schöpfung", "Shunyata"]
+tags: ["mathematics", "Zero", "India", "Emptiness", "Creation", "Shunyata"]
 ---
 # The Nature of Zero
 ## Emptiness as the Source of All Creation

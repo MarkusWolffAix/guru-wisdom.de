@@ -2,7 +2,7 @@
 title: "Vibrant presence"
 subtitle: "The tantric journey to ourselves"
 description: "A deep exploration of Tantra as a path to inner connection, vitality, and the union of lunar, solar, and fire energy."
-tags: ["Yoga", "Achtsamkeit", "Feuer", "Liebe", "Mondpraxis", "Pranayama"]
+tags: ["yoga", "Mindfulness", "Fire", "Love", "Moon Practice", "Pranayama"]
 ---
 
 # Vibrant Presence

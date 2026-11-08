@@ -2,7 +2,7 @@
 title: "The undivided eye"
 subtitle: "The clear view and the gentle yoke"
 description: "A reflection on Matthew 6 and 11, the sattvic clarity of pure perception, and the letting go of inner resistance."
-tags: ["Christentum", "Yoga", "Achtsamkeit", "Haplous", "Sattvischer Zustand", "Yuj"]
+tags: ["Christianity", "yoga", "Mindfulness", "Haplous", "Sattvic state", "Yuj"]
 ---
 # The Undivided Eye
 ## Clear Vision and the Gentle Yoke

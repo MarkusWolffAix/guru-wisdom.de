@@ -2,7 +2,7 @@
 title: "Greek mythology"
 subtitle: "The Saga of Uranus, Gaia and Cronus"
 description: "A detailed summary of the ancient creation story: From the creation of the world by Gaia and Uranus, through the betrayal of the Titans, to the epic war of the gods led by Zeus."
-tags: ["Antike", "Gottheiten", "Mythen", "Uranos", "Gaia", "Kronos", "Titanen"]
+tags: ["Ancient times", "Deities", "Myths", "Uranus", "Gaia", "Kronos", "Titans"]
 ---
 # Greek Mythology
 

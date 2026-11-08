@@ -2,7 +2,7 @@
 title: "amber"
 subtitle: "The golden bridge between myth, time, and transience"
 description: "A reflection on amber as a witness to eternity, from the tears of the Heliades to Kant's philosophy and the fate of the Amber Room."
-tags: ["Antike", "Unendlichkeit", "Phaethon", "Immanuel Kant", "Bernsteinzimmer"]
+tags: ["Ancient times", "infinity", "Phaethon", "Immanuel Kant", "Amber Room"]
 ---
 
 # Amber

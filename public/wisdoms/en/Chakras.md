@@ -2,7 +2,7 @@
 title: "The Path of the Chakras"
 subtitle: "The synthesis of self, community, and the inner child"
 description: "The synthesis of self, community, and the inner child. A depth-psychological examination of the chakra theory."
-tags: ["Yoga", "Energie", "Hinduismus", "Chakren", "Inneres Kind", "Tantra"]
+tags: ["yoga", "energy", "Hinduism", "Chakras", "Inner Child", "Tantra"]
 ---
 # The Path of the Chakras
 ## The Synthesis of Self, Community, and the Inner Child

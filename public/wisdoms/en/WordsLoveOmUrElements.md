@@ -2,7 +2,7 @@
 title: "The magic of the elements in animal and plant names"
 subtitle: "A fascinating collection of living beings categorized by earth, water, fire, air, and spiritual origins."
 description: "Comprehensive list of animals, plants and fungi that bear terms such as earth, water, fire, air, ether, primordial, om and love in their German common names."
-tags: ["Elemente", "Sprache", "Biologie", "Etymologie", "Biologie"]
+tags: ["elements", "Language", "biology", "etymology"]
 ---
 
 # Complete List of Living Beings by Element and Spiritual Terms

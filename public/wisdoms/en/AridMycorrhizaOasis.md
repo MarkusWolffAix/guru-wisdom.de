@@ -2,7 +2,7 @@
 title: "The Wood Wide Web of the desert"
 subtitle: "The art of ecological mycorrhizal cultivation"
 description: "A journey into the Earth's hidden networks: How we can transform the driest soils into vibrant oases through patience and natural barriers."
-tags: ["Biologie", "Elemente", "Fallenkultur", "Ollas", "Permakultur"]
+tags: ["biology", "elements", "Trap culture", "Ollas", "Permaculture"]
 ---
 # The Wood Wide Web of the Desert
 ## The Art of Organic Mycorrhizal Cultivation

@@ -2,7 +2,7 @@
 title: "The blue heart"
 subtitle: "The Alchemy of Fire and Water"
 description: "A profound reflection on the candle flame as a mirror of human transformation and the secret kinship of opposites."
-tags: ["Feuer", "Elemente", "Wissenschaft", "Chemolumineszenz", "Verdichtungstheorie", "Auflösung"]
+tags: ["Fire", "elements", "Science", "Chemiluminescence", "Compression theory", "resolution"]
 ---
 # The Blue Heart
 ## The Alchemy of Fire and Water

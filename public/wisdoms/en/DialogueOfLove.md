@@ -2,7 +2,7 @@
 title: "The beauty of creation"
 subtitle: "A Dialogue of Love"
 description: "A reflection on how sincere effort and deep interest bring forth true beauty in all that is created."
-tags: ["Liebe", "Schöpfung", "Klang", "Innere Präsenz", "Aufrichtiges Bemühen"]
+tags: ["Love", "Creation", "sound", "Inner presence", "Sincere effort"]
 ---
 # The Beauty of Creation
 ## A Dialogue of Love

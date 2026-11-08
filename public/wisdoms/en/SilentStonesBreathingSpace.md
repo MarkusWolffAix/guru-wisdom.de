@@ -2,7 +2,7 @@
 title: "The art of speaking"
 subtitle: "From silent suffering to healing vulnerability"
 description: "A reflection on the courage to transform unspoken conflicts into gentle invitations to connection and to approach the world softly."
-tags: ["Liebe", "Mitwelt", "Resonanz", "Mikro-Grenzen", "Beziehungsraum"]
+tags: ["Love", "Environment", "resonance", "Micro-boundaries", "Relationship space"]
 ---
 # The Art of Speaking Out
 ## From Silent Endurance to Healing Vulnerability

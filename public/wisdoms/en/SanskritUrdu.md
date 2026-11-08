@@ -2,7 +2,7 @@
 title: "The Melody of Love"
 subtitle: "Sanskrit's harmonious soundscape and the poetry of Urdu"
 description: "A detailed comparison of Urdu and the melodic love language Sanskrit with a special focus on their unique soundscape, complemented by poetic song lyrics."
-tags: ["Sprache", "Indien", "Urdu", "Linguistik", "Poesie"]
+tags: ["Language", "India", "Urdu", "linguistics", "poetry"]
 ---
 # The Melody of Love
 

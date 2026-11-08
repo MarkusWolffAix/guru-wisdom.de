@@ -2,7 +2,7 @@
 title: "The salutary shock"
 subtitle: "The awakening of consciousness after the bang"
 description: "A reflection on the trigger of the inner shock, the shattering of our illusions, and the conscious path back to all-encompassing love."
-tags: ["Liebe", "Achtsamkeit", "Schockmoment", "Illusion", "Taschenuhr"]
+tags: ["Love", "Mindfulness", "Shocking moment", "illusion", "pocket watch"]
 ---
 # The Healing Shock
 ## The Awakening of Consciousness After the Bang

@@ -2,7 +2,7 @@
 title: "The Mystery of H"
 subtitle: "The invisible breath of creation and the cosmic laughter"
 description: "A philosophical and linguistic examination of the letter H as pure life force, link between mind and matter – and the liberating power of laughter."
-tags: ["Schöpfung", "Klang", "Yoga", "Laryngaltheorie", "Prana", "Lachen", "Lila"]
+tags: ["Creation", "sound", "yoga", "Laryngeal theory", "Prana", "Laugh", "Purple"]
 ---
 # The Mystery of H
 ## The Invisible Breath of Creation and the Cosmic Laughter

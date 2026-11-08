@@ -2,7 +2,7 @@
 title: "The Philosophy of Er-i-du"
 subtitle: "From separation to unity"
 description: "A reflection on the mystical connection between language, origin, and the overcoming of the ego towards divine unity."
-tags: ["Mesopotamien", "Antike", "Philosophie", "Eridu", "Mystik", "Einheit"]
+tags: ["Mesopotamia", "Ancient times", "philosophy", "Eridu", "mysticism", "Unit"]
 ---
 # The Philosophy of Er-i-du
 ## From Separation to Unity

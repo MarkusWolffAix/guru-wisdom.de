@@ -2,7 +2,7 @@
 title: "The mnemonic device"
 subtitle: "From a detour to self-discovery"
 description: "A reflection on the origin of the mnemonic device and how the reflection of our fear can lead to the deepest insight."
-tags: ["Psychologie", "Achtsamkeit", "Eselsbruecke", "Spiegelbild", "Wortspiel"]
+tags: ["psychology", "Mindfulness", "Donkey bridge", "reflection", "pun"]
 ---
 # The Mnemonic Device
 ## From Detours to Self-Knowledge

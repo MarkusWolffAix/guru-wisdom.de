@@ -2,7 +2,7 @@
 title: "Architecture by guru-wisdom.de"
 subtitle: "The image of the natural mycelia"
 description: "A reflection on the universal nature of networks, from fungal mycelia in the forest to highly available server infrastructure as a digital fall net."
-tags: ["Biologie", "Schöpfung", "Netzwerkarchitektur", "Myzel", "Zustandslosigkeit"]
+tags: ["biology", "Creation", "Network architecture", "Mycelium", "Statelessness"]
 ---
 # Architecture by guru-wisdom.de
 ## The Image of Natural Mycelia

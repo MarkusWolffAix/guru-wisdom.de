@@ -2,7 +2,7 @@
 title: "The Archive of Light"
 subtitle: "The cosmic geometry of love"
 description: "An essayistic exploration of the shape of the universe, in which the light of distant stars is understood as the bearer of ancient stories and infinite love."
-tags: ["Liebe", "Schöpfung", "Unendlichkeit", "Lichtgeschwindigkeit", "Sternstunden", "Kosmische Geometrie"]
+tags: ["Love", "Creation", "infinity", "speed of light", "stellar moments", "Cosmic geometry"]
 ---
 
 # The Archive as Light

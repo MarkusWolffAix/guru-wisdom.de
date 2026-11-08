@@ -2,7 +2,7 @@
 title: "Stress prevention"
 subtitle: "Ancient wisdom for the modern world"
 description: "Holistic techniques from yoga and Ayurveda to tackle stress at its root."
-tags: ["Psychologie", "Achtsamkeit", "Heilung", "Stressprävention", "Ruhe", "Resilienz"]
+tags: ["psychology", "Mindfulness", "cure", "Stress prevention", "Quiet", "Resilience"]
 ---
 # Stress Prevention
 ## Ancient Wisdom for the Modern World

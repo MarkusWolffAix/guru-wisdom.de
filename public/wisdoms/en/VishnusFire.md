@@ -2,7 +2,7 @@
 title: "🕉️ Vishnu and the Spark of Enlightenment"
 subtitle: "From ticking time to liberating breath"
 description: "Discover Vishnu's role as preserver and how his spiritual fire protects us."
-tags: ["Vishnu", "Feuer", "Hinduismus", "Schutz", "Erhaltung"]
+tags: ["Vishnu", "Fire", "Hinduism", "Protection", "conservation"]
 ---
 # 🕉️ Vishnu and the Spark of Enlightenment
 ## From the Ticking of Time to the Liberating Breath

@@ -2,7 +2,7 @@
 title: "Norf through the lens of time"
 subtitle: "Nature, structure, spirit, and the creation of beauty"
 description: "A profound examination of the historical pillars of Norf: the flowing nature, the unifying architecture, the spiritual foundation and the conscious aesthetics."
-tags: ["Christentum", "Heimat & Herkunft", "Elemente", "Vellbrüggen", "Schloss Müggenburg"]
+tags: ["Christianity", "Homeland & Origin", "elements", "Vellbrüggen", "Müggenburg Castle"]
 ---
 
 # Norf Through the Ages

@@ -2,7 +2,7 @@
 title: "Uluru Ayers Rock"
 subtitle: "A monument to radical empathy"
 description: "A comprehensive collection of knowledge that links geological facts with the radical empathy of the Anangu culture and spiritual connection."
-tags: ["Erde", "Orte", "Mythen", "Uluru", "Tjukurpa", "Mala", "Traumzeit"]
+tags: ["Earth", "places", "Myths", "Uluru", "Tjukurpa", "Mala", "Dreamtime"]
 ---
 # Uluru Ayers Rock
 

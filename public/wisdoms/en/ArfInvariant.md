@@ -2,7 +2,7 @@
 title: "The Arf invariant"
 subtitle: "Mathematics as a reflection of cosmic order"
 description: "How complex mathematical topology helps us understand the deeper structures of the universe."
-tags: ["Mathematik", "Topologie", "Invariante", "Ordnung"]
+tags: ["mathematics", "topology", "Invariant", "Order"]
 ---
 # The Arf Invariant
 ## Mathematics as a Reflection of Cosmic Order

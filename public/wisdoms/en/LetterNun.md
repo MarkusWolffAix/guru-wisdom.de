@@ -2,7 +2,7 @@
 title: "The Echo of Nun"
 subtitle: "From ocean and princes to pure lineage"
 description: "How our everyday letter was forged from the mythological concept of the infinite primordial waters and the Sumerian cuneiform script."
-tags: ["Antike", "Mesopotamien", "Proto-Sinaitisch", "Hieroglyphen"]
+tags: ["Ancient times", "Mesopotamia", "Proto-Sinaitic", "Hieroglyphs"]
 ---
 # The Echo of Nun
 ## From Ocean and Princes to Pure Line

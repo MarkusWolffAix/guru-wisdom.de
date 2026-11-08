@@ -2,7 +2,7 @@
 title: "Birth from the Divine"
 subtitle: "The Lighthouse of Love"
 description: "A profound reflection on how pure love, as a cosmic magnet, guides divine consciousness into physical form."
-tags: ["Yoga", "Liebe", "Wiedergeburt", "Leuchtturm"]
+tags: ["yoga", "Love", "Rebirth", "lighthouse"]
 ---
 # Birth from the Divine
 ## The Lighthouse of Love

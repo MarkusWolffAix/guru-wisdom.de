@@ -2,7 +2,7 @@
 title: "Rudolf I of Habsburg"
 subtitle: "The rise of a dynasty"
 description: "A comprehensive summary of the life of Rudolf I, his rise to power, important historical sites and his musical memorial."
-tags: ["Historie", "Europa", "Rudolf I", "Habsburg", "Steiermark", "Speyer"]
+tags: ["history", "Europe", "Rudolf I", "Habsburg", "Styria", "Speyer"]
 ---
 # Rudolf I of Habsburg
 

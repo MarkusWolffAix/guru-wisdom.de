@@ -2,7 +2,7 @@
 title: "Our digestive system"
 subtitle: "Agni and the Fire of Life"
 description: "Ayurvedic insights into digestion and how a strong digestive fire transforms your health."
-tags: ["Biologie", "Heilung", "Ayurveda", "Verdauung", "Agni", "Stoffwechsel"]
+tags: ["biology", "cure", "Ayurveda", "digestion", "Agni", "metabolism"]
 ---
 # Our Digestive System
 ## Agni and the Fire of Life

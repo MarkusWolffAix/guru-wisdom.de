@@ -2,7 +2,7 @@
 title: "The Lakshmi Tantra"
 subtitle: "The union of pleasure and liberation"
 description: "A profound reflection on tantric philosophy, the primal feminine power, Kundalini, and the harmony of worldliness and spirituality."
-tags: ["Hinduismus", "Gottheiten", "Liebe", "Tantra", "Lakshmi", "Kundalini", "Ananda"]
+tags: ["Hinduism", "Deities", "Love", "Tantra", "Lakshmi", "Kundalini", "Ananda"]
 ---
 # The Lakshmi Tantra
 ## The Union of Pleasure and Liberation

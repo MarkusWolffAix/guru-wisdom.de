@@ -2,7 +2,7 @@
 title: "The fruit of knowledge"
 subtitle: "From Eve to Newton and the awakening from the Maya"
 description: "A philosophical journey about breaking out of the unconscious paradise, the masterful architecture of the physical world, and the symbols of true awakening."
-tags: ["Christentum", "Yoga", "Schöpfung", "Maya", "Demiurg", "Pentagramm"]
+tags: ["Christianity", "yoga", "Creation", "Maya", "Demiurg", "Pentagram"]
 ---
 
 # The Fruit of Knowledge

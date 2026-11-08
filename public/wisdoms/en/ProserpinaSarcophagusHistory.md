@@ -2,7 +2,7 @@
 title: "Proserpina sarcophagus"
 subtitle: "Myth, Christian reinterpretation, and Charlemagne"
 description: "A detailed examination of the ancient Proserpina myth, its biblical analogies and the historical reuse of the Roman sarcophagus in Aachen Cathedral."
-tags: ["Aachen", "Antike", "Historie", "Proserpina", "Sarkophag", "Spolien"]
+tags: ["Aachen", "Ancient times", "history", "Proserpina", "sarcophagus", "Spolia"]
 ---
 # Proserpina Sarcophagus
 ## Myth, Christian Reinterpretation, and Charlemagne

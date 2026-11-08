@@ -2,7 +2,7 @@
 title: "The Resonance of the Divine"
 subtitle: "The hidden wisdom in AUM, UMA and UR"
 description: "A philosophical and linguistic exploration of the Sanskrit sounds AUM, UMA and UR and their connection to the divine and universal love."
-tags: ["OM", "AUM", "Klang", "Mantra", "Hinduismus", "Sanskrit", "AUM", "UMA", "Linguistik"]
+tags: ["OM", "AUM", "sound", "Mantra", "Hinduism", "Sanskrit", "UMA", "linguistics"]
 ---
 # The Resonance of the Divine
 ## The Hidden Wisdom in AUM, UMA, and UR

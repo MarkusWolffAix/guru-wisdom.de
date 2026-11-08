@@ -2,7 +2,7 @@
 title: "The Bibliotheca Alexandrina"
 subtitle: "A metaphorical reflection of universal knowledge"
 description: "A detailed summary of the philosophical, architectural, and musical metaphors of the new Library of Alexandria."
-tags: ["Antike", "Ägypten", "Wissenschaft", "Bibliothek", "Architektur", "Universalwissen"]
+tags: ["Ancient times", "Egypt", "Science", "library", "architecture", "Universal knowledge"]
 ---
 # The Bibliotheca Alexandrina
 

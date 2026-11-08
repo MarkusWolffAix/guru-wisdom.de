@@ -2,7 +2,7 @@
 title: "Metamorphosis and Identity"
 subtitle: "On the nature of composition"
 description: "A philosophical treatise on the moment when individual parts merge to form a whole and the role of reason and emotion in this process."
-tags: ["Psychologie", "Philosophie", "Identität", "Theseus", "Authentizität"]
+tags: ["psychology", "philosophy", "identity", "Theseus", "authenticity"]
 ---
 # Metamorphosis and Identity
 ## On the Nature of Composition

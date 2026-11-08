@@ -2,7 +2,7 @@
 title: "Fair Milk"
 subtitle: "Conscious nutrition for body and mind"
 description: "Why the quality and origin of milk are essential for a pure, sattvic lifestyle in Ayurveda."
-tags: ["Biologie", "Erde", "Sattva", "Milch", "Nachhaltigkeit", "Weidehaltung"]
+tags: ["biology", "Earth", "Sattva", "Milk", "sustainability", "Pasture farming"]
 ---
 # Fair Milk
 ## Conscious Nutrition for Body and Mind

@@ -2,7 +2,7 @@
 title: "The Cosmic Eye"
 subtitle: "The breathing of creation through love and stardust"
 description: "A mystical-scientific exploration of black holes, spacetime curvature, and the universal power of love."
-tags: ["Liebe", "Schöpfung", "Quantenphysik", "Schwarzes Loch", "Raumkrümmung", "Sternenstaub"]
+tags: ["Love", "Creation", "Quantum physics", "Black hole", "Spatial curvature", "Stardust"]
 ---
 # The Cosmic Eye
 ## The Breathing of Creation Through Love and Stardust

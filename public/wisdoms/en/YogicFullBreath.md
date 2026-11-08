@@ -2,7 +2,7 @@
 title: "The Wave of Life"
 subtitle: "The complete yogic breathing and vital capacity"
 description: "A profound journey through the three breathing spaces of yoga, the precise physiology of vital capacity, and the unfolding of our full life energy."
-tags: ["Yoga", "Achtsamkeit", "Biologie", "Vitalkapazität", "Schlüsselbeinatmung", "Atemräume", "Zwerchfellatmung"]
+tags: ["yoga", "Mindfulness", "biology", "Vital capacity", "clavicular breathing", "Breathing spaces", "Diaphragmatic breathing"]
 ---
 # The Wave of Life
 ## Complete Yoga Breathing and Vital Capacity

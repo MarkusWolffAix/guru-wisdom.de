@@ -2,7 +2,7 @@
 title: "The Barber, the Fire in the Ear, and the Secret of Hearing"
 subtitle: "Like breath ignites fire through an O, and in the Au at the ear our perception awakens."
 description: "A parable about the barber, blowing on the embers and the fire at the ear – linked with the mantra Om (Aum) and the linguistic root of audio."
-tags: ["Bewusstsein", "Achtsamkeit", "Resonanz", "Weisheit", "Mantra", "Sanskrit", "Etymologie", "Urklang"]
+tags: ["consciousness", "Mindfulness", "resonance", "wisdom", "Mantra", "Sanskrit", "etymology", "Primordial sound"]
 ---
 
 # The Barber, the Fire at the Ear, and the Secret of Hearing

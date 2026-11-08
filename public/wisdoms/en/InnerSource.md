@@ -2,7 +2,7 @@
 title: "The inner karst spring"
 subtitle: "From hard stone to flowing life"
 description: "A reflection on the hidden sources of our lives and the transformation of harsh resistance into flowing life force."
-tags: ["Psychologie", "Heilung", "Karstquelle", "Resilienz", "Naturmetapher"]
+tags: ["psychology", "cure", "Karst spring", "Resilience", "Nature metaphor"]
 ---
 # The Inner Karst Spring
 ## From Hard Stone to Flowing Life

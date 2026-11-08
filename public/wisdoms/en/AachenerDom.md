@@ -2,7 +2,7 @@
 title: "Aachen Cathedral"
 subtitle: "Built theology and cosmic order"
 description: "A profound examination of the spiritual and architectural symbolism of Aachen Cathedral – from the sacred geometry of the octagon to the inscriptions and the dissolution of matter in light."
-tags: ["Christentum", "Aachen", "Oktogon", "Lebendige Steine", "Barbarossaleuchter", "Karolingisch", "Gebaute Theologie"]
+tags: ["Christianity", "Aachen", "Octagon", "Living Stones", "Barbarossa chandelier", "Carolingian", "Built Theology"]
 ---
 # Aachen Cathedral
 ## Built Theology and Cosmic Order

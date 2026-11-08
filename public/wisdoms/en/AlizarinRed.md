@@ -2,7 +2,7 @@
 title: "The Alchemy of Red"
 subtitle: "From the laborious harvesting of roots to the industrial revolution of color"
 description: "An essayistic examination of the historical development of red – from the laborious madder plants in Provence and Zeeland to chemical synthesis."
-tags: ["Antike", "Europa", "Wissenschaft", "Färberkrapp", "Alizarin", "IndustrielleRevolution"]
+tags: ["Ancient times", "Europe", "Science", "Madder", "alizarin", "Industrial Revolution"]
 ---
 # The Alchemy of Red
 ## From the Laborious Harvesting of Roots to the Industrial Revolution of Color

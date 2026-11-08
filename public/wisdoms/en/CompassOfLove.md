@@ -2,7 +2,7 @@
 title: "The Gate of Consciousness"
 subtitle: "The energetic compass of birth"
 description: "A profound examination of the child's fontanelles as a biological miracle and energetic portal for the incarnation of consciousness through parental love."
-tags: ["Liebe", "Biologie", "Unendlichkeit", "Fontanelle", "Mandorla", "Energiefluss"]
+tags: ["Love", "biology", "infinity", "fontanelle", "Mandorla", "Energy flow"]
 ---
 # The Gateway to Consciousness
 ## The Energetic Compass of Birth

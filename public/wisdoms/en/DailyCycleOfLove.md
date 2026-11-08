@@ -2,7 +2,7 @@
 title: "The breathing day"
 subtitle: "From awakening to beauty and returning to oneness"
 description: "A reflection on the daily routine as a conscious act of creation, the loving transformation of impressions, and the peaceful return to Earth."
-tags: ["Achtsamkeit", "Liebe", "Schöpfung", "Transformation", "Naturverbundenheit", "Innere Pflege"]
+tags: ["Mindfulness", "Love", "Creation", "transformation", "Connection to nature", "Internal Care"]
 ---
 # The Breathing Day
 ## From Awakening to Beauty and Returning to Oneness

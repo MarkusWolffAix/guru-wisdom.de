@@ -2,7 +2,7 @@
 title: "Ganesha"
 subtitle: "The conqueror of all obstacles"
 description: "The profound spiritual meaning of Ganesha and how his wisdom guides us through challenges."
-tags: ["Ganesha", "Hinduismus", "Hindernisse", "Elefantenkopf", "Modak"]
+tags: ["Ganesha", "Hinduism", "Obstacles", "Elephant's head", "Modak"]
 ---
 # Ganesha
 ## The Overcomer of All Obstacles

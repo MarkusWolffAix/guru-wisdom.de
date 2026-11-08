@@ -2,7 +2,7 @@
 title: "Ogham"
 subtitle: "The magical language of trees"
 description: "A journey into the fascinating world of the Celtic Ogham alphabet, its tree-specific meanings and the origin myth of Ogma."
-tags: ["Antike", "Elemente", "Ogham", "Ogma", "Baumalphabet", "Runen"]
+tags: ["Ancient times", "elements", "Ogham", "Ogma", "Tree alphabet", "Runes"]
 ---
 # Ogham
 

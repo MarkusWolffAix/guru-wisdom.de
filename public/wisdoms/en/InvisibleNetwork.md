@@ -2,7 +2,7 @@
 title: "The invisible, useful network"
 subtitle: "The profound wisdom of mycorrhiza"
 description: "An essayistic exploration of the ancient symbiosis between plants and fungi, which teaches us that true growth arises from cooperation, devotion, and letting go of control."
-tags: ["Biologie", "Achtsamkeit", "Mykorrhiza", "Wood Wide Web"]
+tags: ["biology", "Mindfulness", "Mycorrhiza", "Wood Wide Web"]
 ---
 # The Invisible, Beneficial Network
 ## The Profound Wisdom of Mycorrhiza

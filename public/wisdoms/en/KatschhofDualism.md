@@ -2,7 +2,7 @@
 title: "Topography of attention"
 subtitle: "Katschhof & The Duality of Eight"
 description: "A profound etymological and topographical study of the existential bridge between attentive care and painful exclusion in historical Aachen."
-tags: ["Aachen", "Antike", "Achtsamkeit", "Pranger", "Rechtsgeschichte", "Acht", "ahta", "âhta" ]
+tags: ["Aachen", "Ancient times", "Mindfulness", "pillory", "Legal history", "Eight", "ahta", "âhta"]
 ---
 # Topography of Attention
 ## Katschhof & The Duality of Eight

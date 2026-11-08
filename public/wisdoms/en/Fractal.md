@@ -2,7 +2,7 @@
 title: "Fractal worlds"
 subtitle: "Recognizing the great in the small"
 description: "How fractal geometry reflects the patterns of nature and teaches us universal connection."
-tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Rekursion", "Selbstähnlichkeit"]
+tags: ["mathematics", "Fractals", "infinity", "Recursion", "Self-similarity"]
 ---
 # Fractal Worlds
 ## Recognizing the Great in the Small

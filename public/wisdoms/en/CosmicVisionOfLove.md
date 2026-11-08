@@ -2,7 +2,7 @@
 title: "The cosmic vision"
 subtitle: "Everything originates from love."
 description: "A profound reflection on the interconnectedness of all things, divine collectives, and the principle of cosmic empathy."
-tags: ["Liebe", "Unendlichkeit", "Kosmische Vision", "Empathie"]
+tags: ["Love", "infinity", "Cosmic Vision", "empathy"]
 ---
 # The Cosmic Vision
 ## Everything Originates from Love

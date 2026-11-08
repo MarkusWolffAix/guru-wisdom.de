@@ -2,7 +2,7 @@
 title: "Blessings from curses"
 subtitle: "The miraculous story of the Banneux Chapel in Lichtenbusch"
 description: "How curses became a blessing and destructive fire became a place of peace on the German-Belgian border."
-tags: ["Aachen", "Feuer", "Heilung", "Banneux", "Lichtenbusch", "Resilienz", "Grenze"]
+tags: ["Aachen", "Fire", "cure", "Banneux", "Lichtenbusch", "Resilience", "Border"]
 ---
 # Blessings from Curses
 
