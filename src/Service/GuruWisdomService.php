@@ -22,6 +22,12 @@ class GuruWisdomService
     private const MEDIA_BASE_URL = 'https://media.guru-wisdom.de';
 
     /**
+     * Front matter keys that are never inherited from the default-language file, because their
+     * value is language specific. A locale file that lacks them falls back to its own H1 instead.
+     */
+    private const NON_INHERITED_KEYS = ['title', 'subtitle', 'description'];
+
+    /**
      * Texts for the two-click placeholders, per locale.
      */
     private const TEXTS = [
@@ -303,21 +309,11 @@ class GuruWisdomService
      */
     public function parseFile(string $id, string $locale = 'de', bool $autoSave = false): array
     {
-        if (!$this->isValidId($id)) {
+        $data = $this->loadMergedData($id, $locale);
+        if ($data === null) {
             return [];
         }
 
-        $filePath = $this->getFilePath($id, $locale);
-        if (!is_file($filePath)) {
-            return [];
-        }
-
-        $content = file_get_contents($filePath);
-        if ($content === false) {
-            return [];
-        }
-
-        $data = $this->extractFrontMatter($content);
         $this->applyFallbacks($data);
 
         // Replace placeholders by neutral tokens BEFORE markdown parsing, so that characters like
@@ -337,6 +333,81 @@ class GuruWisdomService
         $data['htmloutput'] = strtr($html, $replacements);
 
         unset($data['raw_markdown']);
+
+        return $data;
+    }
+
+    /**
+     * Returns only the front matter of a wisdom, without rendering the markdown.
+     *
+     * For a non-default locale the front matter of the default (German) file is the base, and the
+     * keys of the locale file override it. So a translation only needs to contain what differs.
+     * 'title', 'subtitle' and 'description' are never inherited. 'id' is always the file name.
+     * Title and subtitle fall back to the headings of the markdown, as in parseFile().
+     *
+     * @param string $id     The wisdom ID.
+     * @param string $locale The language code ('de' or 'en').
+     * @return array Front matter data; empty array if the file cannot be read.
+     */
+    public function getFrontMatter(string $id, string $locale = 'de'): array
+    {
+        $data = $this->loadMergedData($id, $locale);
+        if ($data === null) {
+            return [];
+        }
+
+        // Same title/subtitle fallbacks as parseFile(), so both methods return the same front matter.
+        $this->applyFallbacks($data);
+        unset($data['raw_markdown']);
+
+        return $data;
+    }
+
+    /**
+     * Reads a wisdom file, merges the default-language front matter below it and sets the ID.
+     *
+     * @param string $id     The wisdom ID.
+     * @param string $locale The language code ('de' or 'en').
+     * @return array|null Front matter plus 'raw_markdown', or null if the file cannot be read.
+     */
+    private function loadMergedData(string $id, string $locale): ?array
+    {
+        if (!$this->isValidId($id)) {
+            return null;
+        }
+
+        $filePath = $this->getFilePath($id, $locale);
+        if (!is_file($filePath)) {
+            return null;
+        }
+
+        $content = file_get_contents($filePath);
+        if ($content === false) {
+            return null;
+        }
+
+        $data = $this->extractFrontMatter($content);
+
+        $basePath = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+        if ($basePath !== $filePath && is_file($basePath)) {
+            $baseContent = file_get_contents($basePath);
+            if ($baseContent !== false) {
+                $base = $this->extractFrontMatter($baseContent);
+                unset($base['raw_markdown']);
+
+                foreach ($base as $key => $value) {
+                    if (in_array($key, self::NON_INHERITED_KEYS, true)) {
+                        continue;
+                    }
+                    if (!array_key_exists($key, $data) || $data[$key] === '' || $data[$key] === []) {
+                        $data[$key] = $value;
+                    }
+                }
+            }
+        }
+
+        // The file name is the ID. A front matter 'id' is ignored.
+        $data['id'] = $id;
 
         return $data;
     }
@@ -385,11 +456,14 @@ class GuruWisdomService
         // Read only the first 1024 bytes of each file for performance
         $filesWithDate = [];
         foreach ($wisdomsToSort as $id => $file) {
-            $content = file_get_contents($file, false, null, 0, 1024);
-            $timestamp = 0;
+            $timestamp = $this->readDateTimestamp($file);
 
-            if ($content !== false && preg_match('/^date:[ \t]*(.+)$/im', $content, $matches)) {
-                $timestamp = strtotime(trim($matches[1], " \t\n\r\0\x0B\"'")) ?: 0;
+            // A translation without its own date uses the date of the default-language file.
+            if ($timestamp === 0) {
+                $basePath = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+                if ($basePath !== $file && is_file($basePath)) {
+                    $timestamp = $this->readDateTimestamp($basePath);
+                }
             }
 
             $filesWithDate[] = [
@@ -411,6 +485,22 @@ class GuruWisdomService
         }
 
         return $sortedIds;
+    }
+
+    /**
+     * Reads the front matter date of a file (first 1024 bytes only) as a Unix timestamp.
+     *
+     * @param string $file Absolute file path.
+     * @return int The timestamp, or 0 if there is no valid date.
+     */
+    private function readDateTimestamp(string $file): int
+    {
+        $content = file_get_contents($file, false, null, 0, 1024);
+        if ($content !== false && preg_match('/^date:[ \t]*(.+)$/im', $content, $matches)) {
+            return strtotime(trim($matches[1], " \t\n\r\0\x0B\"'")) ?: 0;
+        }
+
+        return 0;
     }
 
     /**

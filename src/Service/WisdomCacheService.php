@@ -52,8 +52,8 @@ class WisdomCacheService
             // 2. Weisheiten parsen
             foreach ($files as $file) {
                 $slug = basename($file, '.md');
-                // Sprache an GuruWisdomService übergeben
-                $data = $this->guruWisdom->parseFile($slug, $locale);
+                // Nur das Front Matter lesen (inkl. Vererbung aus der deutschen Datei), kein Markdown rendern
+                $data = $this->guruWisdom->getFrontMatter($slug, $locale);
 
                 $wisdoms[] = [
                     'slug'        => $slug,
@@ -67,7 +67,8 @@ class WisdomCacheService
             }
 
             // 3. Chronologisch absteigend sortieren
-            usort($wisdoms, fn($a, $b) => strcmp((string)$b['date'], (string)$a['date']));
+            // Nach Zeitstempel statt per String-Vergleich, damit z. B. "2026-11-7" nicht vor "2026-11-10" landet
+            usort($wisdoms, fn($a, $b) => (strtotime((string)$b['date']) ?: 0) <=> (strtotime((string)$a['date']) ?: 0));
 
             return $wisdoms;
         }, 86400);

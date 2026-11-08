@@ -53,10 +53,15 @@ final class GuruWisdomServiceTest extends TestCase
      */
     protected function tearDown(): void
     {
-        $files = glob($this->tempDir . '/*');
-        foreach ($files as $file) {
-            if (is_file($file)) {
-                unlink($file);
+        foreach (['/en', ''] as $subDir) {
+            $files = glob($this->tempDir . $subDir . '/*') ?: [];
+            foreach ($files as $file) {
+                if (is_file($file)) {
+                    unlink($file);
+                }
+            }
+            if ($subDir !== '' && is_dir($this->tempDir . $subDir)) {
+                rmdir($this->tempDir . $subDir);
             }
         }
         rmdir($this->tempDir);
@@ -140,5 +145,88 @@ final class GuruWisdomServiceTest extends TestCase
         $this->assertStringContainsString('data-src="https://www.youtube-nocookie.com/embed/12345"', $data['htmloutput']);
 
         $this->assertArrayNotHasKey('raw_markdown', $data);
+    }
+
+    // --- FRONT MATTER INHERITANCE (translations only contain what differs) ---
+
+    private function writeWisdom(string $id, string $content, string $locale = 'de'): void
+    {
+        $dir = $locale === 'de' ? $this->tempDir : $this->tempDir . '/' . $locale;
+        if (!is_dir($dir)) {
+            mkdir($dir);
+        }
+        file_put_contents($dir . '/' . $id . '.md', $content);
+    }
+
+    public function testGetFrontMatterInheritsFromDefaultLanguage(): void
+    {
+        $this->writeWisdom('pair', "---\ntitle: Titel\nauthor: Markus\ndate: 2026-03-01\ntags: [\"a\", \"b\"]\n---\n\n# Titel\nText.");
+        $this->writeWisdom('pair', "---\ntitle: Title\nsubtitle: Sub\n---\n\n# Title\nText.", 'en');
+
+        $data = $this->guruWisdom->getFrontMatter('pair', 'en');
+
+        $this->assertSame('Title', $data['title']);
+        $this->assertSame('Sub', $data['subtitle']);
+        $this->assertSame('Markus', $data['author']);
+        $this->assertSame('2026-03-01', $data['date']);
+        $this->assertSame(['"a"', '"b"'], $data['tags']);
+        $this->assertSame('pair', $data['id']);
+        $this->assertArrayNotHasKey('raw_markdown', $data);
+    }
+
+    public function testGetFrontMatterLocaleOverridesAndDoesNotInheritTexts(): void
+    {
+        $this->writeWisdom('pair', "---\ntitle: Titel\nsubtitle: Untertitel\ndescription: Beschreibung\ntags: [\"a\"]\n---\n\n# Titel");
+        $this->writeWisdom('pair', "---\ntitle: Title\ntags: [\"x\", \"y\"]\n---\n\n# Title", 'en');
+
+        $data = $this->guruWisdom->getFrontMatter('pair', 'en');
+
+        $this->assertSame(['"x"', '"y"'], $data['tags'], 'A key in the locale file overrides the default.');
+        $this->assertArrayNotHasKey('subtitle', $data, 'Subtitle is language specific and not inherited.');
+        $this->assertArrayNotHasKey('description', $data, 'Description is language specific and not inherited.');
+    }
+
+    public function testGetFrontMatterIgnoresIdFromFile(): void
+    {
+        $this->writeWisdom('real-name', "---\nid: old-name\ntitle: T\n---\n\n# T");
+
+        $this->assertSame('real-name', $this->guruWisdom->getFrontMatter('real-name')['id']);
+    }
+
+    public function testGetFrontMatterWithoutDefaultFileKeepsOwnData(): void
+    {
+        $this->writeWisdom('only-en', "---\ntitle: Only\nauthor: Me\n---\n\n# Only", 'en');
+
+        $data = $this->guruWisdom->getFrontMatter('only-en', 'en');
+
+        $this->assertSame('Me', $data['author']);
+        $this->assertSame('only-en', $data['id']);
+    }
+
+    public function testGetFrontMatterReturnsEmptyForUnknownOrInvalidId(): void
+    {
+        $this->assertSame([], $this->guruWisdom->getFrontMatter('does-not-exist'));
+        $this->assertSame([], $this->guruWisdom->getFrontMatter('../etc/passwd'));
+    }
+
+    public function testParseFileUsesInheritedFrontMatter(): void
+    {
+        $this->writeWisdom('pair', "---\ntitle: Titel\nauthor: Markus\n---\n\n# Titel");
+        $this->writeWisdom('pair', "---\ntitle: Title\n---\n\n# Title\nHello.", 'en');
+
+        $data = $this->guruWisdom->parseFile('pair', 'en');
+
+        $this->assertSame('Markus', $data['author']);
+        $this->assertStringContainsString('Hello.', $data['htmloutput']);
+    }
+
+    public function testSortedIdsOfTranslationUseDateOfDefaultLanguage(): void
+    {
+        $this->writeWisdom('older', "---\ntitle: A\ndate: 2026-01-01\n---\n\n# A");
+        $this->writeWisdom('newer', "---\ntitle: B\ndate: 2026-02-01\n---\n\n# B");
+        $this->writeWisdom('older', "---\ntitle: A en\n---\n\n# A en", 'en');
+        $this->writeWisdom('newer', "---\ntitle: B en\n---\n\n# B en", 'en');
+
+        $this->assertSame(['newer', 'older'], $this->guruWisdom->getSortedWisdomIds(null, 'en'));
     }
 }
