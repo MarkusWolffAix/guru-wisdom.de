@@ -1,12 +1,11 @@
 ---
-id: "LeavesOfTubaSalam"
 title: "Der Tuba Baum"
 subtitle: "Eine Reflexion über das Paradies im Islam"
 description: "Eine Betrachtung des islamischen Paradieses (Dschanna) jenseits materieller Vorstellungen, hin zu einer tiefen spirituellen Ebene des kosmischen Friedens und der inneren Einheit."
 date: 2026-05-22
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Sufismus", "Dschanna", "Tuba-Baum", "Salam", "Mystik", "Frieden"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Der Tuba Baum

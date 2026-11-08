@@ -1,12 +1,8 @@
 ---
-id: "StoneStory"
 title: "The story of the stone Kalle Kiesel"
 subtitle: "From fiery hothead to round world explorer"
 description: "A metaphorical journey into the consciousness of a stone and lessons in patience."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Zeit", "Philosophie", "Geduld", "Metapher", "Verwitterung"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # The Story of Kalle Kiesel the Stone
 ## From Fiery Hothead to Round World Explorer

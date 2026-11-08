@@ -1,12 +1,11 @@
 ---
-id: "AachenLousberg"
 title: "Der Lousberg"
 subtitle: "Zwischen Erdgeschichte und Aachener Legende"
 description: "Eine essayistische Betrachtung des Lousbergs in Aachen, die seine geologische Entstehung, prähistorische Bedeutung als Feuerstein-Mine und die berühmte Teufelssage miteinander verwebt."
 date: 2026-04-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Mythen", "Lousberg", "Legende", "Feuerstein"]
-categories: ["Heimat & Herkunft", "Geschichte & Mythen"]
+categories: ["home", "history"]
 ---
 
 # Der Lousberg

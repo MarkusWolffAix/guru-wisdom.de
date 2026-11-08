@@ -1,12 +1,11 @@
 ---
-id: "RhythmOfLight"
 title: "Der Rhythmus des Lichts"
 subtitle: "Eine Reise durch den Tag und unsere Energiezentren"
 description: "Eine essayistische Betrachtung über die physikalische Rayleigh-Streuung bei Sonnenauf- und -untergang und deren harmonische Parallelen zum System der Chakren."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Licht", "Physik", "Spiritualität", "Rayleigh-Streuung", "Tagesrhythmus", "Farbspektrum"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
+categories: ["science", "spirituality"]
 ---
 
 # Der Rhythmus des Lichts

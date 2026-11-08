@@ -1,12 +1,11 @@
 ---
-id: "NuminousExperience"
 title: "Das Numinose"
 subtitle: "Rudolf Ottos Weg zum Ganz Anderen"
 description: "Das Numinose beschreibt das irrationale und paradoxe Erleben des absolut Heiligen, geprägt von tiefem Erschauern und faszinierender Anziehungskraft. Diese essayistische Betrachtung ergründet unsere Begegnung mit dem 'Ganz Anderen' nach Rudolf Otto."
 date: 2026-04-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Buddhismus", "Hinduismus", "Rudolf Otto", "Mysterium Tremendum", "Das Heilige"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Das Numinose

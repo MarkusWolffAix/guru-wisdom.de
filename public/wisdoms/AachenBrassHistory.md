@@ -1,12 +1,11 @@
 ---
-id: "AachenHistorySprings"
 title: "Der Puls unter dem Pflaster"
 subtitle: "Aachen: Von dampfenden Quellen zum Zentrum der Macht"
 description: "Eine Reise durch die Jahrhunderte der Aachener Stadtgeschichte – von den antiken Thermalquellen über Karl den Großen bis hin zur unerschütterlichen Seele der Stadt."
 date: 2026-05-05
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Karl der Große", "Oktogon", "Thermalquellen", "Geschichte", "Kaiserstadt"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
+categories: ["history", "home"]
 ---
 
 # Der Puls unter dem Pflaster

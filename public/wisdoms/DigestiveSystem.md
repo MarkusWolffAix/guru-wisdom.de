@@ -1,12 +1,11 @@
 ---
-id: "DigestiveSystem"
 title: "Unser Verdauungssystem"
 subtitle: "Agni und das Feuer des Lebens"
 description: "Ayurvedische Einblicke in die Verdauung und wie ein starkes Verdauungsfeuer deine Gesundheit transformiert."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Heilung", "Ayurveda", "Verdauung", "Agni", "Stoffwechsel"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 # Unser Verdauungssystem
 ## Agni und das Feuer des Lebens

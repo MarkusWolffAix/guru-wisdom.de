@@ -1,12 +1,11 @@
 ---
-id: "VishnusOm"
 title: "🕉️ Vishnu und das Lied der Welten"
 subtitle: "Vom Alpha zur ewigen Mühe"
 description: "Wie der heilige Klang Om mit Vishnu für innere Stabilität und Meditation verbunden ist."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Vishnu", "Mantra", "Klang", "Erhalter", "Klangschwingung"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 # 🕉️ Vishnu und das Lied der Welten
 ## Vom Alpha zur ewigen Mühe

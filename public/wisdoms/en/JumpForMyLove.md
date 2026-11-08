@@ -1,12 +1,8 @@
 ---
-id: "JumpForMyLove"
 title: "The leap into the unknown"
 subtitle: "Courage to be vulnerable in love"
 description: "A reflection on the risk of love, relinquishing control, and the courage to let go."
-date: 2026-04-26
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Mut", "Verletzlichkeit", "Komfortzone"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Leap into the Unknown
 ## Courage to Be Vulnerable in Love

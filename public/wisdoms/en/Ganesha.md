@@ -1,12 +1,8 @@
 ---
-id: "Ganesha"
 title: "Ganesha"
 subtitle: "The conqueror of all obstacles"
 description: "The profound spiritual meaning of Ganesha and how his wisdom guides us through challenges."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Ganesha", "Hinduismus", "Hindernisse", "Elefantenkopf", "Modak"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Ganesha
 ## The Overcomer of All Obstacles

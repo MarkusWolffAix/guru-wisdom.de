@@ -1,12 +1,8 @@
 ---
-id: "AachenLousberg"
 title: "The Lousberg"
 subtitle: "Between Earth's history and Aachen legend"
 description: "An essayistic examination of the Lousberg in Aachen, which interweaves its geological origin, prehistoric significance as a flint mine and the famous legend of the devil."
-date: 2026-04-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Mythen", "Lousberg", "Legende", "Feuerstein"]
-categories: ["Heimat & Herkunft", "Geschichte & Mythen"]
 ---
 # The Lousberg
 ## Between Earth's History and Aachen Legend

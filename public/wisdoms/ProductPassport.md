@@ -1,12 +1,11 @@
 ---
-id: "ProductPassport"
 title: "Digitaler Produktpass"
 subtitle: "Die Zukunft der Kreislaufwirtschaft"
 description: "Eine umfassende Analyse des Digitalen Produktpasses (DPP) und seiner Bedeutung für Transparenz und Nachhaltigkeit in globalen Lieferketten."
 date: 2026-04-13
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Technologie", "Kreislaufwirtschaft", "Digitalisierung", "EU"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
+categories: ["science", "symbols"]
 ---
 
 # Digitaler Produktpass

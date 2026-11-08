@@ -1,12 +1,8 @@
 ---
-id: "MountainOfNames"
 title: "The mountain of many names"
 subtitle: "From Igmu Tanka Pahá to the Monument of the More"
 description: "A reflection on the linguistic and spiritual metamorphosis of a summit in the Black Hills – from nourishing earth to monument of the ego."
-date: 2026-07-13
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Elemente", "Tȟuŋkášila Šákpe", "Mount Rushmore", "Igmu Tanka Pahá", "Maka"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Mountain of Many Names
 ## From Igmu Tanka Pahá to the Monument of More

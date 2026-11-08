@@ -1,12 +1,8 @@
 ---
-id: "Amavasya"
 title: "Amavasya - New Moon"
 subtitle: "The abundance of darkness"
 description: "A reflection on the Hindu new moon night and the transformative power of darkness, in which everything new begins."
-date: 2026-07-15
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Neumond", "Loslassen", "Stille", "Erneuerung"]
-categories: ["Spiritualität & Mystik"]
 ---
 # Amavasya
 ## The Abundance of Darkness

@@ -1,12 +1,11 @@
 ---
-id: "UniversalWeFeeling"
 title: "Die Kraft des Wir"
 subtitle: "Einheit ohne Feindbild"
 description: "Eine Betrachtung über das universelle Wir-Gefühl, die Abkehr von spaltenden Feindbildern und die bewusste Entscheidung für die Liebe als konstruktive Kraft."
 date: 2026-09-14
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Quantenphysik", "Wir-Gefühl", "Konstruktive Ausrichtung"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Die Kraft des Wir

@@ -1,12 +1,11 @@
 ---
-id: "JerusalemPattern"
 title: "Jerusalem"
 subtitle: "Die Blaupause der Transformation"
 description: "Eine tiefgründige Analyse der historischen Zyklen von Zerstörung und Wiederaufbau als universelles Muster für gesellschaftliche und persönliche Krisen."
 date: 2026-04-19
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Jerusalem", "Antike", "Psychologie", "Transformation", "Krise", "Babylon", "Persien"]
-categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
+categories: ["history", "healing"]
 ---
 
 # Jerusalem

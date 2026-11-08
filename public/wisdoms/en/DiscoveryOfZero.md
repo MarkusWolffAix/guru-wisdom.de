@@ -1,12 +1,8 @@
 ---
-id: "DiscoveryOfZero"
 title: "The Discovery of Zero"
 subtitle: "The Origin of Nothingness"
 description: "Explore the fascinating history of zero and how it revolutionized mathematics and philosophy."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Null", "Indien", "Shunyata", "Leere", "Zahlensystem"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
 ---
 # The Discovery of Zero
 ## The Origin of Nothingness

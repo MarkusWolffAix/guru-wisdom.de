@@ -1,12 +1,8 @@
 ---
-id: "MysticLordsPrayer"
 title: "The Lord's Prayer"
 subtitle: "The cosmic architecture of an ancient mantra"
 description: "A synthesis of Semitic-Greek linguistic roots, Kabbalistic creation theology, mathematical-structural vector geometry, and non-dual consciousness architecture."
-date: 2026-09-11
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Meditation", "Mantra", "Schöpfung", "Liebe", "Zimzum", "Tikkun Olam", "Epiousios", "Gethsemane", "Passivum Divinum"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Lord's Prayer
 ## The Cosmic Architecture of an Ancient Mantra

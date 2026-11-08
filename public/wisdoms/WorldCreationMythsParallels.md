@@ -1,12 +1,11 @@
 ---
-id: "WorldCreationMythsParallels"
 title: "Schöpfungsmythen der Welt"
 subtitle: "Die universellen Parallelen der Weltentstehung"
 description: "Eine detaillierte Betrachtung der strukturellen und inhaltlichen Gemeinsamkeiten zwischen den Schöpfungsmythen der Māori, Griechen, Ägypter und Sumerer."
 date: 2026-04-05
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Religionen", "Mythen", "Papatūānuku", "Welteltern", "Vergleichende Mythologie"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Schöpfungsmythen der Welt

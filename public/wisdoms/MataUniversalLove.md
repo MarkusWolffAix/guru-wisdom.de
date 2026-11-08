@@ -1,12 +1,11 @@
 ---
-id: "MataUniversalLove"
 title: "Ich bin eine Mutter für diese Welt"
 subtitle: "Wie die unscheinbare Sanskrit-Silbe „Ma“ den Weg zur universellen Liebe und spirituellen Schöpferkraft offenbart"
 description: "Eine tiefgründige Betrachtung darüber, wie die Silbe 'Ma' uns vom Suchenden zur nährenden, universellen Schöpferkraft transformiert, ergänzt um die visuelle Symbolik der Lokamata."
 date: 2026-04-24
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Hinduismus", "Schöpfung", "Lokamata", "Schöpferkraft", "Symbolik"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Ich bin eine Mutter für diese Welt

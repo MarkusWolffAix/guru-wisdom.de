@@ -1,12 +1,8 @@
 ---
-id: "LawOfEmpathy"
 title: "The highest intelligence"
 subtitle: "Empathy as a universal law"
 description: "A reflection on empathy as the foundation of the universe, overcoming the ego, and returning to intuition as the highest guide."
-date: 2026-09-09
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Wissenschaft", "Intuition", "Albert Einstein", "Hingabe"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Highest Intelligence
 ## Empathy as a Universal Law

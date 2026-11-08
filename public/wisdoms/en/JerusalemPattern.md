@@ -1,12 +1,8 @@
 ---
-id: "JerusalemPattern"
 title: "Jerusalem"
 subtitle: "The blueprint for transformation"
 description: "A profound analysis of the historical cycles of destruction and reconstruction as a universal pattern for societal and personal crises."
-date: 2026-04-19
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Jerusalem", "Antike", "Psychologie", "Transformation", "Krise", "Babylon", "Persien"]
-categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
 ---
 # Jerusalem
 ## The Blueprint of Transformation

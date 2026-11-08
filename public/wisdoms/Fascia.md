@@ -1,12 +1,11 @@
 ---
-id: "Fascia"
 title: "Die Faszien"
 subtitle: "Das versteckte Netzwerk unseres Bewusstseins"
 description: "Entdecke, wie unser Fasziennetzwerk den Körper stützt und Emotionen sowie Energie speichert."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Heilung", "Achtsamkeit", "Faszien", "Bindegewebe", "Körperbewusstsein"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 # Die Faszien
 ## Das versteckte Netzwerk unseres Bewusstseins

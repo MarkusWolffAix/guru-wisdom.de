@@ -1,12 +1,11 @@
 ---
-id: "Chakras"
 title: "Der Weg der Chakren"
 subtitle: "Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind"
 description: "Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind. Eine tiefenpsychologische Betrachtung der Chakren-Lehre."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Energie", "Hinduismus", "Chakren", "Inneres Kind", "Tantra"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 # Der Weg der Chakren
 ## Die Synthese aus Selbst, Gemeinschaft und dem Inneren Kind

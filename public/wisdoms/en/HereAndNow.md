@@ -1,12 +1,8 @@
 ---
-id: "HereAndNow"
 title: "The here and now"
 subtitle: "The transformative power of the present"
 description: "Why staying in the present moment is the only key to true inner peace."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Meditation", "Gegenwart", "Fluss der Zeit", "Erdung"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # The Here and Now
 ## The Transformative Power of the Present

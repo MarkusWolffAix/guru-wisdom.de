@@ -1,12 +1,11 @@
 ---
-id: "BridgingTheAbstract"
 title: "Die Kunst des Begreifens"
 subtitle: "Brücken über den Ozean der Abstraktion"
 description: "Wie wir komplexe Gedanken durch konkrete Beispiele, erlaubende Sprache und systematisches Herunterbrechen greifbar machen und mentale Blockaden auflösen."
 date: 2026-04-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Abstraktion", "DivideAndConquer", "MentaleBlockaden"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 
 # Die Kunst des Begreifens

@@ -1,12 +1,8 @@
 ---
-id: "CosmicBreath"
 title: "The Cosmic Eye"
 subtitle: "The breathing of creation through love and stardust"
 description: "A mystical-scientific exploration of black holes, spacetime curvature, and the universal power of love."
-date: 2026-08-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Quantenphysik", "Schwarzes Loch", "Raumkrümmung", "Sternenstaub"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # The Cosmic Eye
 ## The Breathing of Creation Through Love and Stardust

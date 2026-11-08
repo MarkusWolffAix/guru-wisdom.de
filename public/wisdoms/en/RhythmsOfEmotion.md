@@ -1,12 +1,11 @@
 ---
-id: "RhythmsOfEmotion"
 title: "The Archive of Inner Time"
 subtitle: "Emotions and their speeds"
 description: "A structured overview of how our emotions shape our subjective experience of time – from raging anger to timeless bliss."
 date: 2026-10-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Zeitempfinden", "Tunnel", "Glückseligkeit"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 
 # The Archive of Inner Time

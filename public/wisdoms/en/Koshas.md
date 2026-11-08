@@ -1,12 +1,8 @@
 ---
-id: "Koshas"
 title: "The five Koshas"
 subtitle: "A journey to the inner light"
 description: "A profound exploration of the Pancha Kosha philosophy and the journey through the five sheaths of being to the true self."
-date: 2026-05-02
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Meditation", "Yoga", "Atman", "Zwiebelschalenprinzip"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Five Koshas
 ## A Journey to Inner Light

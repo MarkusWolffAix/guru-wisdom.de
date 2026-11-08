@@ -1,12 +1,8 @@
 ---
-id: "YouAreUr"
 title: "You Are or Short UR"
 subtitle: "The bridge between silence and sound"
 description: "Considering the chat abbreviation UR as a symbol of modern simplicity and spiritual presence."
-date: 2026-04-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Sprache", "Philosophie", "Achtsamkeit", "Sprachwandel", "Identität"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
 ---
 # UR
 ## The Bridge Between Silence and Sound

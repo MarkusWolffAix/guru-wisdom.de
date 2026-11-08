@@ -1,12 +1,11 @@
 ---
-id: "EagleAndSerpentRing"
 title: "Die Einheit der Gegensätze"
 subtitle: "Der Adler, die Schlange und der Ring der Ewigkeit"
 description: "Eine tiefgründige Betrachtung des uralten Symbols von Adler und Schlange, ihrer Verbindung und der Überwindung der Dualität durch den Ring der Ewigen Wiederkehr."
 date: 2026-06-06
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Yoga", "Unendlichkeit", "Zarathustra", "Ouroboros", "Mexiko", "Prana", "Nietzsche", "Adler", "Schlange"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
+categories: ["symbols", "spirituality"]
 ---
 
 # Die Einheit der Gegensätze

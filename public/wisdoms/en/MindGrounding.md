@@ -1,12 +1,8 @@
 ---
-id: "MindGrounding"
 title: "Ways out of the labyrinth of thoughts"
 subtitle: "The power of physical presence"
 description: "A reflection on how the 5-4-3-2-1 method brings us back from rumination to the immediacy of the here and now."
-date: 2026-07-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Meditation", "Achtsamkeit", "Psychologie", "Gegenwart", "Sinneseindrücke"]
-categories: ["Heilung & Achtsamkeit"]
 ---
 # Ways Out of the Labyrinth of Thoughts
 ## The Power of Physical Presence

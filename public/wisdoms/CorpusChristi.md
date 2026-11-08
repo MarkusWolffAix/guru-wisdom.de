@@ -1,12 +1,11 @@
 ---
-id: "CorpusChristi"
 title: "Das Mysterium von Fronleichnam"
 subtitle: "Auf den Spuren der Juliana von Lüttich"
 description: "Eine spirituelle und historische Betrachtung des Fronleichnamsfestes, seiner mystischen Ursprünge und der Kraft, das innere Heiligtum in die Welt zu tragen."
 date: 2026-06-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Aachen", "Meditation", "JulianaVonLüttich", "Alltagsspiritualität"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 
 # Das Mysterium von Fronleichnam

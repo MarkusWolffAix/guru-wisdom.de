@@ -1,12 +1,8 @@
 ---
-id: "ArchitectureOfSelfHealing"
 title: "The architecture of self-healing"
 subtitle: "How the self grows through abstraction"
 description: "A philosophical and psychological examination of the universal principles of how the self learns through abstraction and integrates problems back into love through empathy."
-date: 2026-03-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # The Architecture of Self-Healing
 

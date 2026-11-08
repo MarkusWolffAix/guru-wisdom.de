@@ -1,12 +1,11 @@
 ---
-id: "CompassOfLove"
 title: "Das Tor des Bewusstseins"
 subtitle: "Der energetische Kompass der Geburt"
 description: "Eine tiefgründige Betrachtung der kindlichen Fontanellen als biologisches Wunder und energetisches Portal für die Inkarnation des Bewusstseins durch elterliche Liebe."
 date: 2026-09-25
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Biologie", "Unendlichkeit", "Fontanelle", "Mandorla", "Energiefluss"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Das Tor des Bewusstseins

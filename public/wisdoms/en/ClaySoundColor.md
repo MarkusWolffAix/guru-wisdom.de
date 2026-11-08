@@ -1,12 +1,8 @@
 ---
-id: "ClaySoundColor"
 title: "The secret of tone"
 subtitle: "From the vessel of the earth to the vibration of the spirit"
 description: "How a single word bridges the gap between the formed matter of creation, the nuance of light, and the finest resonance of sound."
-date: 2026-10-19
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Klang", "Schöpfung", "Elemente", "Erde", "Resonanz", "Farbe"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 
 # The Secret of Clay

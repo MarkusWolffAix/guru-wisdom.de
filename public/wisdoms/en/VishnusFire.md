@@ -1,12 +1,8 @@
 ---
-id: "VishnusFire"
 title: "🕉️ Vishnu and the Spark of Enlightenment"
 subtitle: "From ticking time to liberating breath"
 description: "Discover Vishnu's role as preserver and how his spiritual fire protects us."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Vishnu", "Feuer", "Hinduismus", "Schutz", "Erhaltung"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 # 🕉️ Vishnu and the Spark of Enlightenment
 ## From the Ticking of Time to the Liberating Breath

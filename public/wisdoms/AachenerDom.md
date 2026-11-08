@@ -1,12 +1,11 @@
 ---
-id: "AachenerDom"
 title: "Der Aachener Dom"
 subtitle: "Gebaute Theologie und kosmische Ordnung"
 description: "Eine tiefgründige Betrachtung der spirituellen und architektonischen Symbolik des Aachener Doms – von der heiligen Geometrie des Oktogons über die Inschriften bis zur Auflösung der Materie im Licht."
 date: 2026-05-10
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Aachen", "Oktogon", "Lebendige Steine", "Barbarossaleuchter", "Karolingisch", "Gebaute Theologie"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 
 # Der Aachener Dom

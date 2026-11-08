@@ -1,12 +1,8 @@
 ---
-id: "EgoResistanceVoid"
 title: "The ego in conversation"
 subtitle: "The lightning rod leads nowhere."
 description: "A reflection on the role of the ego in discussions, the mechanics of inner resistance, and the liberating power of letting emotional energy dissipate."
-date: 2026-08-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Blitzableiter", "Leere"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # The Ego in Conversation
 ## The Lightning Rod into the Void

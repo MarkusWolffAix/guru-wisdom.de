@@ -1,12 +1,8 @@
 ---
-id: "QuantumEntanglementOfLove"
 title: "Spooky action at a distance or the bond of love"
 subtitle: "What quantum entanglement teaches us about our deepest connection"
 description: "A philosophical, physical and mathematical examination of quantum entanglement: Why Einstein's 'spooky action at a distance' is not an uncanny mechanism, but the echo of a fundamental unity in which we are string and resonator for each other."
-date: 2026-10-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Verbundenheit", "Liebe", "Bewusstsein", "Quantenphysik", "Quantenverschränkung", "Albert Einstein", "Panpsychismus", "Advaita", "Resonanz"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 
 # Spooky Action at a Distance or the Bond of Love

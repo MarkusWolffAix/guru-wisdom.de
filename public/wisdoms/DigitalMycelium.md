@@ -1,12 +1,11 @@
 ---
-id: "DigitalMycelium"
 title: "Architektur von guru-wisdom.de"
 subtitle: "Das Abbild von den natürlichen Myzelien"
 description: "Eine Reflexion über die universelle Natur von Netzwerken, von Pilzgeflechten im Wald bis hin zur hochverfügbaren Server-Infrastruktur als digitales Fallnetz."
 date: 2026-06-11
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Schöpfung", "Netzwerkarchitektur", "Myzel", "Zustandslosigkeit"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
+categories: ["science", "symbols"]
 ---
 
 # Architektur von guru-wisdom.de 

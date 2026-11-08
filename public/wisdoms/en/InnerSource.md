@@ -1,12 +1,8 @@
 ---
-id: "InnerSource"
 title: "The inner karst spring"
 subtitle: "From hard stone to flowing life"
 description: "A reflection on the hidden sources of our lives and the transformation of harsh resistance into flowing life force."
-date: 2026-04-19
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Heilung", "Karstquelle", "Resilienz", "Naturmetapher"]
-categories: ["Heilung & Achtsamkeit", "Geschichte & Mythen"]
 ---
 # The Inner Karst Spring
 ## From Hard Stone to Flowing Life

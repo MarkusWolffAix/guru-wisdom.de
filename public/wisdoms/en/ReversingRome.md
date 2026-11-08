@@ -1,12 +1,8 @@
 ---
-id: "ReversingRome"
 title: "Rome in the mirror"
 subtitle: "The inner return to love and peace"
 description: "How the reversal of Rome's names in ancient languages reveals a deep spiritual path from outer power to inner peace, love, and light."
-date: 2026-05-23
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Antike", "Schöpfung", "Amor", "Emor", "Sprachmystik"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # Rome in the Mirror
 ## The Inner Return to Love and Peace

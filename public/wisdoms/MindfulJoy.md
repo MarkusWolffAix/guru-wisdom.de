@@ -1,12 +1,11 @@
 ---
-id: "MindfulJoy"
 title: "Achtsamkeit im Kleinen"
 subtitle: "Glück im Großen"
 description: "Eine philosophische Betrachtung über die Achtsamkeit in den kleinsten Momenten des Alltags."
 date: 2026-04-12
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Psychologie", "Lebenskunst", "Alltag", "Glück"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
+categories: ["healing", "love"]
 ---
 
 # Achtsamkeit im Kleinen

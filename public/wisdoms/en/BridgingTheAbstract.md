@@ -1,12 +1,8 @@
 ---
-id: "BridgingTheAbstract"
 title: "The Art of Understanding"
 subtitle: "Bridges across the ocean of abstraction"
 description: "How we can make complex thoughts tangible through concrete examples, permissive language and systematic breaking down, and dissolve mental blocks."
-date: 2026-04-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Abstraktion", "DivideAndConquer", "MentaleBlockaden"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # The Art of Understanding
 ## Bridges Across the Ocean of Abstraction

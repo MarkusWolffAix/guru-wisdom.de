@@ -1,12 +1,11 @@
 ---
-id: "DialogueOfLove"
 title: "Die Schönheit der Schöpfung"
 subtitle: "Ein Dialog der Liebe"
 description: "Eine Reflexion darüber, wie aufrichtiges Bemühen und tiefes Interesse wahre Schönheit in allem Erschaffenen hervorbringen."
 date: 2026-08-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Klang", "Innere Präsenz", "Aufrichtiges Bemühen"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Die Schönheit der Schöpfung

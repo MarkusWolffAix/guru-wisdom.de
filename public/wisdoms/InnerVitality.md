@@ -1,12 +1,11 @@
 ---
-id: "InnerVitality"
 title: "Lebendige Präsenz"
 subtitle: "Die tantrische Reise zu uns selbst"
 description: "Eine tiefe Ergründung von Tantra als Weg zur inneren Verbundenheit, Lebendigkeit und der Vereinigung von Mond-, Sonnen- und Feuerenergie."
 date: 2026-09-24
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Achtsamkeit", "Feuer", "Liebe", "Mondpraxis", "Pranayama"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Lebendige Präsenz

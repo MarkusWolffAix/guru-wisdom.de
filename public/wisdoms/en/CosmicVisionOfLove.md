@@ -1,12 +1,8 @@
 ---
-id: "CosmicVisionOfLove"
 title: "The cosmic vision"
 subtitle: "Everything originates from love."
 description: "A profound reflection on the interconnectedness of all things, divine collectives, and the principle of cosmic empathy."
-date: 2026-04-02
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Unendlichkeit", "Kosmische Vision", "Empathie"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Cosmic Vision
 ## Everything Originates from Love

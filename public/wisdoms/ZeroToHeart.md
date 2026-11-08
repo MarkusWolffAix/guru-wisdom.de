@@ -1,12 +1,11 @@
 ---
-id: "ZeroToHeart"
 title: "Geometrie der Liebe"
 subtitle: "Von der Null zum Herzen"
 description: "Eine philosophische, mathematische und geometrische Betrachtung, wie durch einen Schnitt aus der Leere der Null das universelle Symbol des Herzens entsteht."
 date: 2026-06-01
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Null", "Liebe", "Mathematik", "Schöpfung", "Leere Menge", "Perspektivwechsel"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
+categories: ["symbols", "science"]
 ---
 
 # Geometrie der Liebe

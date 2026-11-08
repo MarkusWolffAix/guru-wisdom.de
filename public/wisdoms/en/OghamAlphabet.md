@@ -1,12 +1,8 @@
 ---
-id: "OghamAlphabet"
 title: "Ogham"
 subtitle: "The magical language of trees"
 description: "A journey into the fascinating world of the Celtic Ogham alphabet, its tree-specific meanings and the origin myth of Ogma."
-date: 2026-08-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Elemente", "Ogham", "Ogma", "Baumalphabet", "Runen"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # Ogham
 

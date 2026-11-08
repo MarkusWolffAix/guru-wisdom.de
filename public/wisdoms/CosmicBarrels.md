@@ -1,12 +1,11 @@
 ---
-id: "CosmicBarrels"
 title: "Kosmische Fässer"
 subtitle: "Von alter Handwerkskunst zur Stringtheorie"
 description: "Eine philosophische Betrachtung darüber, wie alte Redewendungen des Küferhandwerks die fundamentalen Prinzipien der Quantenphysik und unsere innere Transformation widerspiegeln."
 date: 2026-10-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Quantenphysik", "Schöpfung", "Stringtheorie", "Fassbinderei", "Phasenübergang", "Transformation"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
+categories: ["science", "symbols"]
 ---
 
 # Kosmische Fässer

@@ -1,12 +1,11 @@
 ---
-id: "AlizarinRed"
 title: "Die Alchimie des Rots"
 subtitle: "Von der mühsamen Ernte der Wurzeln zur industriellen Revolution der Farbe"
 description: "Eine essayistische Betrachtung der historischen Entwicklung des Rots – von den mühsamen Krapppflanzen in der Provence und Zeeland bis zur chemischen Synthese."
 date: 2026-07-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Europa", "Wissenschaft", "Färberkrapp", "Alizarin", "IndustrielleRevolution"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Die Alchimie des Rots

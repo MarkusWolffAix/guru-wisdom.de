@@ -1,12 +1,8 @@
 ---
-id: "SacredBreath"
 title: "The Mystery of H"
 subtitle: "The invisible breath of creation and the cosmic laughter"
 description: "A philosophical and linguistic examination of the letter H as pure life force, link between mind and matter – and the liberating power of laughter."
-date: 2026-05-15
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Klang", "Yoga", "Laryngaltheorie", "Prana", "Lachen", "Lila"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # The Mystery of H
 ## The Invisible Breath of Creation and the Cosmic Laughter

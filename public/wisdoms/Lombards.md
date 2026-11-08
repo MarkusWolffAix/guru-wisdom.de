@@ -1,12 +1,11 @@
 ---
-id: "Lombards"
 title: "Die Serpentine der Geschichte"
 subtitle: "Von den Langobarden zu Franz von Assisi"
 description: "Eine Reflexion über den Wandel der Langobarden vom Kriegerstamm zu den Architekten des modernen Vertrauens und die spirituelle Notwendigkeit von Kurven auf dem Lebensweg."
 date: 2026-06-25
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Achtsamkeit", "Langobarden", "Lombardkredit", "Vertragliches Vertrauen", "Franz von Assisi"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Die Serpentine der Geschichte

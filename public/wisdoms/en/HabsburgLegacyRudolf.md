@@ -1,12 +1,8 @@
 ---
-id: "HabsburgLegacyRudolf"
 title: "Rudolf I of Habsburg"
 subtitle: "The rise of a dynasty"
 description: "A comprehensive summary of the life of Rudolf I, his rise to power, important historical sites and his musical memorial."
-date: 2026-04-11
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Historie", "Europa", "Rudolf I", "Habsburg", "Steiermark", "Speyer"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # Rudolf I of Habsburg
 

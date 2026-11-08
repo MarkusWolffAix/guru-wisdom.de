@@ -1,12 +1,8 @@
 ---
-id: "CrownsPath"
 title: "The Path of the Crowns"
 subtitle: "A mnemonic journey through European history"
 description: "An essayistic stroll through the forest of history to understand the rise and fall of Central European power from Charlemagne to Ludwig II."
-date: 2026-08-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Christentum", "Gedächtnispalast", "Mnemotechnik"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Path of the Crowns
 ## A Mnemonic Journey Through Europe's History

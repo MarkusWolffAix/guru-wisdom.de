@@ -1,12 +1,11 @@
 ---
-id: "UranosGaia"
 title: "Griechische Mythologie"
 subtitle: "Die Saga von Uranos, Gaia und Kronos"
 description: "Eine detaillierte Zusammenfassung der antiken Schöpfungsgeschichte: Von der Entstehung der Welt durch Gaia und Uranos über den Verrat der Titanen bis hin zum epischen Krieg der Götter unter Führung von Zeus."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Gottheiten", "Mythen", "Uranos", "Gaia", "Kronos", "Titanen"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Griechische Mythologie

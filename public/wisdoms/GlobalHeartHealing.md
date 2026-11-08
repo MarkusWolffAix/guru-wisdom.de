@@ -1,12 +1,11 @@
 ---
-id: "GlobalHeartHealing"
 title: "Das Globale Herz"
 subtitle: "Die Heilung des Ganzen durch die gesunde Zelle"
 description: "Eine tiefe Reflexion über das hermetische Prinzip 'Wie im Kleinen, so im Großen' anhand der Metapher des menschlichen Herzens als Heiler des globalen Organismus."
 date: 2026-06-06
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Zellgedächtnis", "Fraktale", "Liebe"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
+categories: ["healing", "love"]
 ---
 
 # Das Globale Herz

@@ -1,12 +1,11 @@
 ---
-id: "SanskritUrdu"
 title: "Die Melodie der Liebe"
 subtitle: "Sanskrits harmonisches Klangbild und die Poesie des Urdu"
 description: "Ein detaillierter Vergleich von Urdu und der melodischen Liebessprache Sanskrit mit besonderem Fokus auf ihr einzigartiges Klangbild, ergänzt durch poetische Liedtexte."
 date: 2026-04-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Sprache", "Indien", "Urdu", "Linguistik", "Poesie"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
+categories: ["symbols", "history"]
 ---
 
 # Die Melodie der Liebe

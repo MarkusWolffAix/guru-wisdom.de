@@ -1,12 +1,8 @@
 ---
-id: "IndigoAlchemy"
 title: "From invisible seed to deep blue"
 subtitle: "The Transformation of Indigo"
 description: "A consideration of the botany, chemistry and history of indigo as a metaphor for transformation, healing and social change."
-date: 2026-07-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Indien", "Biologie", "Indigo", "Satyagraha", "Alchemie"]
-categories: ["Wissenschaft & Natur", "Geschichte & Mythen"]
 ---
 # From Invisible Seed to Deep Blue
 ## The Transformation of Indigo

@@ -1,12 +1,8 @@
 ---
-id: "ChildsWhyToSoulmate"
 title: "The secret of why"
 subtitle: "From childlike wonder to the glue of connection"
 description: "A reflection on the deeper meaning of children's questions, shared experiences as anchors of knowledge, and the magic of like-minded souls."
-date: 2026-09-01
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Kindliche Neugier", "Seelenpartner"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Secret of Why
 ## From Childlike Wonder to the Glue of Connection

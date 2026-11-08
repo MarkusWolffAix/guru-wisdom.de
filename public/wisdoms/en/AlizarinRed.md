@@ -1,12 +1,8 @@
 ---
-id: "AlizarinRed"
 title: "The Alchemy of Red"
 subtitle: "From the laborious harvesting of roots to the industrial revolution of color"
 description: "An essayistic examination of the historical development of red – from the laborious madder plants in Provence and Zeeland to chemical synthesis."
-date: 2026-07-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Europa", "Wissenschaft", "Färberkrapp", "Alizarin", "IndustrielleRevolution"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 # The Alchemy of Red
 ## From the Laborious Harvesting of Roots to the Industrial Revolution of Color

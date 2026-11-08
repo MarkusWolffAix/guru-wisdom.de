@@ -1,12 +1,11 @@
 ---
-id: "CrownsPath"
 title: "Der Pfad der Kronen"
 subtitle: "Eine mnemonische Reise durch Europas Geschichte"
 description: "Ein essayistischer Spaziergang durch den Wald der Geschichte, um das Werden und Vergehen der mitteleuropäischen Macht von Karl dem Großen bis Ludwig II. zu begreifen."
 date: 2026-08-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Christentum", "Gedächtnispalast", "Mnemotechnik"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Der Pfad der Kronen

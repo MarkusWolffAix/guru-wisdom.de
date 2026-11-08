@@ -1,12 +1,11 @@
 ---
-id: "WordsLoveOmUrElements"
 title: "Die Magie der Elemente in Tier- und Pflanzennamen"
 subtitle: "Eine faszinierende Sammlung von Lebewesen nach Erde, Wasser, Feuer, Luft und spirituellen Ursprüngen"
 description: "Umfassende Liste von Tieren, Pflanzen und Pilzen, die Bezeichnungen wie Erde, Wasser, Feuer, Luft, Äther, Ur, Om und Liebe in ihrem deutschen Trivialnamen tragen."
 date: 2026-04-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Sprache", "Biologie", "Etymologie", "Biologie"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
+categories: ["symbols", "science"]
 ---
 
 # Vollständige Liste der Lebewesen nach Elementen und spirituellen Begriffen

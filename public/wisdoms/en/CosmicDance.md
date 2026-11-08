@@ -1,12 +1,8 @@
 ---
-id: "CosmicDance"
 title: "The Dance of the Elements"
 subtitle: "The Evolution of Divine Fire and the Breath of the Spirit"
 description: "A mystical reflection on creation, in which the earth, as a sentient being, nourishes the divine light, the primordial fire ignites the cycle of life, and the air, as an invisible spirit, connects everything."
-date: 2026-05-14
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Elemente", "Liebe", "Feuer", "fühlendes Wesen", "Habitable Zone"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Dance of the Elements
 ## The Evolution of Divine Fire and the Breath of Spirit

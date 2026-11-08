@@ -1,12 +1,8 @@
 ---
-id: "UrSoundStory"
 title: "The story of the primal sound"
 subtitle: "How the Universe Learned to Sing"
 description: "A poetic look at the first sound of the universe and its journey to our hearts."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Klang", "Schöpfung", "Mythen", "Urklang", "Poesie"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # The Story of the Primordial Sound
 ## How the Universe Learned to Sing

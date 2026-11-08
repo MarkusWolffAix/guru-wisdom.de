@@ -1,12 +1,8 @@
 ---
-id: "NorfEssence"
 title: "Norf through the lens of time"
 subtitle: "Nature, structure, spirit, and the creation of beauty"
 description: "A profound examination of the historical pillars of Norf: the flowing nature, the unifying architecture, the spiritual foundation and the conscious aesthetics."
-date: 2026-09-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Heimat & Herkunft", "Elemente", "Vellbrüggen", "Schloss Müggenburg"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 
 # Norf Through the Ages

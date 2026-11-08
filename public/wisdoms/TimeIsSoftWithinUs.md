@@ -1,12 +1,11 @@
 ---
-id: "TimeIsSoftWithinUs"
 title: "Die Zeit ist weich in uns"
 subtitle: "Die Rhythmen unserer inneren Zustände"
 description: "Eine psychologische und philosophische Betrachtung darüber, wie unsere Emotionen das Erleben von Zeit formen – von der rasenden Wut bis zur zeitlosen Glückseligkeit."
 date: 2026-10-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Zeitempfinden", "Tunnel", "Glückseligkeit"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 
 # Die Zeit ist weich in uns

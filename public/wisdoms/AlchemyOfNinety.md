@@ -1,12 +1,11 @@
 ---
-id: "AlchemyOfNinety"
 title: "Die Philosophie der liebevollen 90%"
 subtitle: "Transformation und Fokus im Alltag"
 description: "Eine philosophische Betrachtung über das Erreichen von Zielen durch Empathie, die Abkehr vom Perfektionismus und die tägliche Transformation von Hindernissen in Liebe."
 date: 2026-05-18
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Selbstliebe", "Kleine Geschichten"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Die Philosophie der liebevollen 90%

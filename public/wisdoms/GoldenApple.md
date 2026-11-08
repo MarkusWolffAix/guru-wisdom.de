@@ -1,12 +1,11 @@
 ---
-id: "GoldenApple"
 title: "Die Frucht der Erkenntnis"
 subtitle: "Von Eva bis Newton und das Erwachen aus der Maya"
 description: "Eine philosophische Reise über den Ausbruch aus dem unbewussten Paradies, die meisterhafte Architektur der physischen Welt und die Symbole wahren Erwachens."
 date: 2026-09-26
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Yoga", "Schöpfung", "Maya", "Demiurg", "Pentagramm"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 
 # Die Frucht der Erkenntnis

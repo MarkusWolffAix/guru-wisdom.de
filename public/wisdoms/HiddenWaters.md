@@ -1,12 +1,11 @@
 ---
-id: "HiddenWaters"
 title: "Die verborgene Strömung"
 subtitle: "Von der Einheit des Waldes zur Tiefe der Wurm"
 description: "Eine Betrachtung der unterirdischen Gewässer Aachens und ihrer tiefen symbolischen Bedeutung für Schöpfung und Geist."
 date: 2026-10-06
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Schöpfung", "Elemente", "Beverbach", "Gillesbach", "Wurm"]
-categories: ["Heimat & Herkunft", "Symbole & Muster"]
+categories: ["home", "symbols"]
 ---
 
 # Die verborgene Strömung

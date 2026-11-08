@@ -1,12 +1,8 @@
 ---
-id: "SunriseSmile"
 title: "The Land of Smiles"
 subtitle: "The inner sun of the morning"
 description: "A holistic view of how morning light and a conscious smile shape our day on a biological, psychological, and spiritual level."
-date: 2026-08-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Psychologie", "Sonnenaufgang", "Serotonin"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # The Land of Smiles
 ## The Inner Sun of Morning

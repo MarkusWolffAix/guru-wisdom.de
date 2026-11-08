@@ -1,12 +1,8 @@
 ---
-id: "CorpusChristi"
 title: "The Mystery of Corpus Christi"
 subtitle: "Following in the footsteps of Juliana of Liège"
 description: "A spiritual and historical examination of the Feast of Corpus Christi, its mystical origins and its power to carry the inner sanctuary into the world."
-date: 2026-06-04
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Aachen", "Meditation", "JulianaVonLüttich", "Alltagsspiritualität"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # The Mystery of Corpus Christi
 ## In the Footsteps of Juliana of Liège

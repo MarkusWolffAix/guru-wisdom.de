@@ -1,12 +1,8 @@
 ---
-id: "BigBang"
 title: "Cosmic Creation"
 subtitle: "The myth of the golden Big Bang and the ether"
 description: "A comprehensive summary of the spiritual creation story surrounding the golden Big Bang, the ether, the divine family, and the ensoulment of man."
-date: 2026-03-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "Quantenphysik", "Schöpfung", "Urknall", "Prana", "Äther", "Kosmologie"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 # Cosmic Creation
 ## The Myth of the Golden Big Bang and the Aether

@@ -1,12 +1,11 @@
 ---
-id: "ChildsWhyToSoulmate"
 title: "Das Geheimnis des Warums"
 subtitle: "Vom kindlichen Staunen zum Klebstoff der Verbundenheit"
 description: "Eine Reflexion über die tiefere Bedeutung kindlicher Fragen, gemeinsame Erlebnisse als Anker des Wissens und die Magie gleichklingender Seelen."
 date: 2026-09-01
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Kindliche Neugier", "Seelenpartner"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Das Geheimnis des Warums

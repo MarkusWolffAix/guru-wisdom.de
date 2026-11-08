@@ -1,12 +1,8 @@
 ---
-id: "DigitalMycelium"
 title: "Architecture by guru-wisdom.de"
 subtitle: "The image of the natural mycelia"
 description: "A reflection on the universal nature of networks, from fungal mycelia in the forest to highly available server infrastructure as a digital fall net."
-date: 2026-06-11
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Schöpfung", "Netzwerkarchitektur", "Myzel", "Zustandslosigkeit"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
 ---
 # Architecture by guru-wisdom.de
 ## The Image of Natural Mycelia

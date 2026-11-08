@@ -1,12 +1,8 @@
 ---
-id: "BlueHeartWisdom"
 title: "The blue heart"
 subtitle: "The Alchemy of Fire and Water"
 description: "A profound reflection on the candle flame as a mirror of human transformation and the secret kinship of opposites."
-date: 2026-05-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Feuer", "Elemente", "Wissenschaft", "Chemolumineszenz", "Verdichtungstheorie", "Auflösung"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # The Blue Heart
 ## The Alchemy of Fire and Water

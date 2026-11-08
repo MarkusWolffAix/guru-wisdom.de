@@ -1,12 +1,8 @@
 ---
-id: "Mesopotamia"
 title: "Ancient Mesopotamia"
 subtitle: "The story of Ur, Uruk and Eridu"
 description: "A comprehensive summary of the origins of civilization, the pioneering role of Eridu and Uruk, the water-dependent prosperity of Ur, and the connection to the biblical Garden of Eden."
-date: 2026-04-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Antike", "Ur", "Uruk", "Eridu", "Sumerer", "Zivilisation"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 # Ancient Mesopotamia
 ## The History of Ur, Uruk, and Eridu

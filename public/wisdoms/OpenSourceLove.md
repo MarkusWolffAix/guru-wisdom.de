@@ -1,12 +1,11 @@
 ---
-id: "ArchitectureOfCompassion"
 title: "Die Architektur des Mitgefühls"
 subtitle: "Wenn das Ego der Liebe dient"
 description: "Eine Reflexion darüber, wie das Ego als Diener der Liebe fungiert, die Bedeutung der aktiven Wertschätzung und wie konstruktive Kritik hilft, das Schöne zu erkennen und darauf aufzubauen."
 date: 2026-07-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Yoga", "OpenSource", "Ego", "Wertschätzung", "Kritikfähigkeit"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 # Die Architektur des Mitgefühls
 ## Wenn das Ego der Liebe dient

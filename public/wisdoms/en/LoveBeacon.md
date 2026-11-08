@@ -1,12 +1,8 @@
 ---
-id: "LoveBeacon"
 title: "Birth from the Divine"
 subtitle: "The Lighthouse of Love"
 description: "A profound reflection on how pure love, as a cosmic magnet, guides divine consciousness into physical form."
-date: 2026-06-25
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Liebe", "Wiedergeburt", "Leuchtturm"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # Birth from the Divine
 ## The Lighthouse of Love

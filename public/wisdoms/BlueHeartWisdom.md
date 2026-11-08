@@ -1,12 +1,11 @@
 ---
-id: "BlueHeartWisdom"
 title: "Das blaue Herz"
 subtitle: "Die Alchemie von Feuer und Wasser"
 description: "Eine tiefgründige Betrachtung über die Kerzenflamme als Spiegel menschlicher Transformation und die geheime Verwandtschaft der Gegensätze."
 date: 2026-05-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Feuer", "Elemente", "Wissenschaft", "Chemolumineszenz", "Verdichtungstheorie", "Auflösung"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Das blaue Herz

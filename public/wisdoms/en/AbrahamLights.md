@@ -1,12 +1,8 @@
 ---
-id: "AbrahamLights"
 title: "The light in the story of Abraham (Ibrahim)"
 subtitle: "Enlightenment on the spiritual path"
 description: "A deep insight into the mystical aspects and inner enlightenment in the tradition of Abraham."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Abraham", "Licht", "Schöpfung", "Mystik", "Erleuchtung", "Offenbarung"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Light in the Story of Abraham (Ibrahim)
 ## Enlightenment on the Spiritual Path

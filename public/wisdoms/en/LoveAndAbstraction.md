@@ -1,12 +1,8 @@
 ---
-id: "LoveAndAbstraction"
 title: "Love and abstraction"
 subtitle: "The mind as servant of the heart"
 description: "A philosophical journey exploring the dynamics of love, abstraction, empathy, and changing perspectives."
-date: 2026-04-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Philosophie", "Psychologie", "Empathie", "Perspektivenwechsel"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
 ---
 # Love and Abstraction
 ## The Mind as Servant of the Heart

@@ -1,12 +1,11 @@
 ---
-id: "CosmicVisionOfLove"
 title: "Die kosmische Vision"
 subtitle: "Alles entspringt der Liebe"
 description: "Eine tiefgründige Betrachtung über die Verbundenheit aller Dinge, göttliche Kollektive und das Prinzip der kosmischen Empathie."
 date: 2026-04-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Unendlichkeit", "Kosmische Vision", "Empathie"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Die kosmische Vision

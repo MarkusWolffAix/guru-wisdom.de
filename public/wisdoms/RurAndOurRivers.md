@@ -1,12 +1,11 @@
 ---
-id: "RurAndOurRivers"
 title: "Rur und Our"
 subtitle: "Der Weg des Wassers vom Hohen Venn in die Nordsee"
 description: "Eine detaillierte Zusammenfassung der Flusssysteme im Dreiländereck mit Fokus auf die Flüsse Rur und Our, von ihrer gemeinsamen Quelle im Hohen Venn bis zur Mündung in die Nordsee."
 date: 2026-04-10
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Erde", "Orte", "Rur", "Our", "Flusssysteme", "Hohes Venn"]
-categories: ["Heimat & Herkunft", "Wissenschaft & Natur"]
+categories: ["home", "science"]
 ---
 
 # Rur und Our

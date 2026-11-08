@@ -1,12 +1,8 @@
 ---
-id: "CosmicBarrels"
 title: "Cosmic Barrels"
 subtitle: "From ancient craftsmanship to string theory"
 description: "A philosophical reflection on how old sayings of the cooper's craft reflect the fundamental principles of quantum physics and our inner transformation."
-date: 2026-10-01
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Quantenphysik", "Schöpfung", "Stringtheorie", "Fassbinderei", "Phasenübergang", "Transformation"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
 ---
 
 # Cosmic Barrels

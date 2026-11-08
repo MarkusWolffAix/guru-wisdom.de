@@ -1,12 +1,11 @@
 ---
-id: "UniversalBreath"
 title: "Das universelle Atmen"
 subtitle: "Ein Masterplan zur Heilung der Erde"
 description: "Eine essayistische Synthese aus ökologischer Regeneration, der Weisheit alter Zivilisationen und dem formgebenden Bewusstseinsraum des Ma."
 date: 2026-06-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Liebe", "Mesopotamien", "Prinzip Ma", "Baum-Zeit", "Biotische Pumpe"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 
 # Das universelle Atmen

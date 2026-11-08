@@ -1,12 +1,8 @@
 ---
-id: "CompassOfLove"
 title: "The Gate of Consciousness"
 subtitle: "The energetic compass of birth"
 description: "A profound examination of the child's fontanelles as a biological miracle and energetic portal for the incarnation of consciousness through parental love."
-date: 2026-09-25
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Biologie", "Unendlichkeit", "Fontanelle", "Mandorla", "Energiefluss"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Gateway to Consciousness
 ## The Energetic Compass of Birth

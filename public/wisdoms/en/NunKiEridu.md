@@ -1,12 +1,8 @@
 ---
-id: "NunKiEridu"
 title: "NUN.KI"
 subtitle: "The descent of the divine order and the awakening of Eridu"
 description: "A metaphysical and conceptual analysis of the Sumerian archetypes, the city of Eridu, and the descent of consciousness."
-date: 2026-05-16
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Schöpfung", "NUN.KI", "Herabkunft", "Enki"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # NUN.KI
 ## The Descent of Divine Order and the Awakening of Eridu

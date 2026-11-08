@@ -1,12 +1,8 @@
 ---
-id: "ProserpinaSarcophagusHistory"
 title: "Proserpina sarcophagus"
 subtitle: "Myth, Christian reinterpretation, and Charlemagne"
 description: "A detailed examination of the ancient Proserpina myth, its biblical analogies and the historical reuse of the Roman sarcophagus in Aachen Cathedral."
-date: 2026-04-09
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Antike", "Historie", "Proserpina", "Sarkophag", "Spolien"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # Proserpina Sarcophagus
 ## Myth, Christian Reinterpretation, and Charlemagne

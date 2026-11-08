@@ -1,12 +1,11 @@
 ---
-id: "Koshas"
 title: "Die fünf Koshas und die drei Körper"
 subtitle: "Eine Reise durch die Hüllen des Seins zum inneren Licht"
 description: "Eine tiefgründige Betrachtung der Pancha Kosha Philosophie, der drei Shariras (Körper) und der Reise durch die fünf Hüllen hin zum wahren Selbst."
 date: 2026-05-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Yoga", "Meditation", "Atman", "Zwiebelschalenprinzip", "Selbsterkenntnis", "Sharira"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Die fünf Koshas und die drei Körper

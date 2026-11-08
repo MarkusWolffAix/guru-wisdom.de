@@ -1,12 +1,11 @@
 ---
-id: "SitaliPranayamaCoolingBreath"
 title: "Der kühlende Atem – Sitali Pranayama"
 subtitle: "Für Erfrischung und geistige Klarheit"
 description: "Eine liebevolle Anleitung zur yogischen Atemtechnik Sitali, die nicht nur den erhitzten Körper kühlt, sondern auch unruhige Gedanken sanft zur Ruhe bringt."
 date: 2026-06-21
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Pranayama", "Achtsamkeit", "Yoga", "Kühlung", "Innere Ruhe", "Sommer"]
-categories: ["Heilung & Achtsamkeit", "Körper & Geist"]
+categories: ["healing", "body-mind"]
 ---
 
 # der kühlende Atem - Sitali Pranayama 

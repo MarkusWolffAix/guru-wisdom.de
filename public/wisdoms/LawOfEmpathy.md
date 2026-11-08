@@ -1,12 +1,11 @@
 ---
-id: "LawOfEmpathy"
 title: "Die höchste Intelligenz"
 subtitle: "Empathie als universelles Gesetz"
 description: "Eine Reflexion über Empathie als Fundament des Universums, das Überwinden des Egos und die Rückkehr zur Intuition als höchster Wegweiser."
 date: 2026-09-09
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Wissenschaft", "Intuition", "Empathie", "Albert Einstein"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Die höchste Intelligenz

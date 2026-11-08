@@ -1,12 +1,8 @@
 ---
-id: "AbrahamLife"
 title: "The Life of Abraham"
 subtitle: "A journey of faith and devotion"
 description: "Explore the spiritual journey and timeless wisdom in the life of Abraham, the father of faith."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Abraham", "Christentum", "Religionen", "Stammvater", "Judentum", "Glaube"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Life of Abraham
 ## A Journey of Faith and Devotion

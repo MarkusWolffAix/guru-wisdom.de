@@ -1,12 +1,11 @@
 ---
-id: AlchemiOfForgiveness
 title: Die Alchemie der Vergebung
 subtitle: Das Stoppen des absurden Kreislaufs
 description: Eine philosophische und praktische Reflexion über Vergebung, bewusstes Hinterfragen und die Kraft der Akzeptanz als Wege aus der inneren Enge.
 date: 2026-05-21
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Liebe", "Christentum", "Kreislauf", "Transformation", "Akzeptanz"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
+categories: ["healing", "love"]
 ---
 
 # Die Alchemie der Vergebung

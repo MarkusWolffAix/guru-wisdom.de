@@ -1,12 +1,8 @@
 ---
-id: "CreationFireAndTheReturnToLove"
 title: "The origin of the separation"
 subtitle: "The fire of creation and the abstraction of love"
 description: "A philosophical journey about the origin of the world from absolute love and the necessary friction of the creative fire."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Feuer", "Schöpfung", "Liebe", "Metaphysik", "Schöpfungsfeuer"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # On the Origin of Separation
 ## The Fire of Creation and the Abstraction of Love

@@ -1,12 +1,8 @@
 ---
-id: "LovingHeartAwakening"
 title: "Baptism in the Jordan"
 subtitle: "The awakening of the loving heart"
 description: "A profound reflection on the baptism of Jesus as a radical return to the living essence of Judaism and the universal power of love."
-date: 2026-05-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Liebe", "Teschuwa", "JordanTaufe", "Mystik", "JohannesDerTäufer"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # Baptism in the Jordan
 ## The Awakening of the Loving Heart

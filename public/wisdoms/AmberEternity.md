@@ -1,12 +1,11 @@
 ---
-id: "AmberEternity"
 title: "Bernstein"
 subtitle: "Die goldene Brücke zwischen Mythos, Zeit und Vergänglichkeit"
 description: "Eine Reflexion über Bernstein als Zeuge der Ewigkeit, von den Tränen der Heliaden über Kants Philosophie bis zum Schicksal des Bernsteinzimmers."
 date: 2026-10-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Unendlichkeit", "Phaethon", "Immanuel Kant", "Bernsteinzimmer"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Bernstein

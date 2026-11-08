@@ -1,12 +1,8 @@
 ---
-id: "SilentStonesBreathingSpace"
 title: "The art of speaking"
 subtitle: "From silent suffering to healing vulnerability"
 description: "A reflection on the courage to transform unspoken conflicts into gentle invitations to connection and to approach the world softly."
-date: 2026-08-04
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Mitwelt", "Resonanz", "Mikro-Grenzen", "Beziehungsraum"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Art of Speaking Out
 ## From Silent Endurance to Healing Vulnerability

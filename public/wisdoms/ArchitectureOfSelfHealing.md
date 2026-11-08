@@ -1,12 +1,11 @@
 ---
-id: "ArchitectureOfSelfHealing"
 title: "Die Architektur der Selbstheilung"
 subtitle: "Wie das Selbst durch Abstraktion wächst"
 description: "Eine philosophische und psychologische Betrachtung der universellen Prinzipien, wie das Selbst durch Abstraktion lernt und Probleme durch Empathie zurück in die Liebe integriert."
 date: 2026-03-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 
 # Die Architektur der Selbstheilung

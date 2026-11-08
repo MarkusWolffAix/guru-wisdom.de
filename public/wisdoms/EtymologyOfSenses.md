@@ -1,12 +1,11 @@
 ---
-id: "EtymologyOfSenses"
 title: "Das Gedächtnis des Körpers"
 subtitle: "Wie die Etymologie unserer fünf Sinne ein vergessenes Weltbild offenbart"
 description: "Eine sprachhistorische Reise zu den Wurzeln unserer Sinnesorgane, die zeigt, wie unsere Vorfahren Wahrnehmung als aktives Zusammenspiel mit den Elementen verstanden."
 date: 2026-10-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Feuer", "Biologie", "Elemente", "Etymologie", "Sinnesorgane", "Lebensatem", "Wahrnehmung"]
-categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
+categories: ["history", "healing"]
 ---
 # Das Gedächtnis des Körpers
 ## Wie die Etymologie unserer fünf Sinne ein vergessenes Weltbild offenbart

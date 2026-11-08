@@ -1,12 +1,8 @@
 ---
-id: "FairMilk"
 title: "Fair Milk"
 subtitle: "Conscious nutrition for body and mind"
 description: "Why the quality and origin of milk are essential for a pure, sattvic lifestyle in Ayurveda."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Erde", "Sattva", "Milch", "Nachhaltigkeit", "Weidehaltung"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
 ---
 # Fair Milk
 ## Conscious Nutrition for Body and Mind

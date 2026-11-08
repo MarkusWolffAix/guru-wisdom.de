@@ -1,12 +1,11 @@
 ---
-id: "LightFrequenciesChakras"
 title: "Licht und Chakren"
 subtitle: "Die Resonanz der Farben in Raum und Geist"
 description: "Eine Betrachtung darüber, wie physikalische Lichtfrequenzen mit der feinstofflichen Anatomie unserer Chakren in Resonanz gehen und tiefe emotionale Zustände wecken."
 date: 2026-08-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Biologie", "Liebe", "Farbtemperatur", "Urvertrauen", "Wurzelchakra", "Sakralchakra"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Licht und Chakren

@@ -1,12 +1,11 @@
 ---
-id: "AridMycorrhizaOasis"
 title: "Das Wood Wide Web der Wüste"
 subtitle: "Die Kunst der ökologischen Mykorrhiza-Zucht"
 description: "Eine Reise in die verborgenen Netzwerke der Erde: Wie wir durch Geduld und natürliche Barrieren trockenste Böden in lebendige Oasen verwandeln können."
 date: 2026-06-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Elemente", "Fallenkultur", "Ollas", "Permakultur"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 
 # Das Wood Wide Web der Wüste

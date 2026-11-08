@@ -1,12 +1,8 @@
 ---
-id: "MaturationJourney"
 title: "The path to adulthood"
 subtitle: "Responsibility, inner reconciliation, and care for oneself and others"
 description: "An essayistic reflection on growing up as an inner maturation process that includes accepting one's own childhood, taking responsibility, and caring for oneself and others."
-date: 2026-08-09
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Verantwortung", "Selbstfürsorge"]
-categories: ["Heilung & Achtsamkeit"]
 ---
 # The Path to Adulthood
 ## Responsibility, Inner Reconciliation, and Caring for Oneself and Others

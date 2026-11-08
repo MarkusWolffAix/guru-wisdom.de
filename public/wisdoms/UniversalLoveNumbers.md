@@ -1,12 +1,11 @@
 ---
-id: "UniversalLoveNumbers"
 title: "Die universelle Sprache der Zahlen"
 subtitle: "Ein farbiges Alphabet der Liebe"
 description: "Eine Reflexion über die Verwandlung starrer, belastender Alltagszahlen in ein farbiges, singbares Alphabet der Liebe, verwoben mit historischen Traditionen."
 date: 2026-08-05
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Mathematik", "Klang", "Synästhesie", "Problemzahlen", "Solresol"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
+categories: ["love", "symbols"]
 ---
 
 # Die universelle Sprache der Zahlen

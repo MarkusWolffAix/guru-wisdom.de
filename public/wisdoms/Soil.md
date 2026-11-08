@@ -1,12 +1,11 @@
 ---
-id: "Soil"
 title: "Bodenpflege und Regeneration"
 subtitle: "Eine Analyse"
 description: "Zusammenfassung der besten Methoden zur Pflege des Mutterbodens und der regenerativen Landwirtschaft gegen Wüstenbildung."
 date: 2026-04-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Biologie", "Mutterboden", "Wüstenbildung", "Agroforst"]
-categories: ["Wissenschaft & Natur", "Heimat & Herkunft"]
+categories: ["science", "home"]
 ---
 
 # Bodenpflege und Regeneration

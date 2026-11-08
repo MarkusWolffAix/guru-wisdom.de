@@ -1,12 +1,8 @@
 ---
-id: "ProductPassport"
 title: "Digital Product Passport"
 subtitle: "The future of the circular economy"
 description: "A comprehensive analysis of the Digital Product Passport (DPP) and its significance for transparency and sustainability in global supply chains."
-date: 2026-04-13
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Technologie", "Kreislaufwirtschaft", "Digitalisierung", "EU"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
 ---
 # Digital Product Passport
 ## The Future of the Circular Economy

@@ -1,12 +1,11 @@
 ---
-id: "EarthLove"
 title: "Die Chronik der Wärme"
 subtitle: "Die Erde als lebendiger Organismus der Liebe"
 description: "Eine Reflexion über die Erde als lebendiges Wesen, den universellen Kreislauf der Liebe und die heilende Kraft von aufrichtigem Interesse und Geschichten."
 date: 2026-05-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Gaia", "Achtsamkeit", "Interesse", "Geschichten"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Die Chronik der Wärme

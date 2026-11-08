@@ -1,12 +1,11 @@
 ---
-id: "NatureOfZero"
 title: "Die Natur der Null"
 subtitle: "Leere als Quelle aller Schöpfung"
 description: "Warum das Nichts nicht leer ist, sondern als fühlendes Wesen das unmanifestierte Potenzial für alle Möglichkeiten in sich trägt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Null", "Schöpfung", "Ohmm", "Potenzialität", "Manifestation"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
+categories: ["symbols", "spirituality", "science"]
 ---
 
 # Die Natur der Null

@@ -1,12 +1,8 @@
 ---
-id: "AyiaNapaLegends"
 title: "Ayia Napa"
 subtitle: "History and legends of a holiday paradise"
 description: "A story based on Venetian and Byzantine legends of Ayia Napa in Cyprus."
-date: 2026-04-11
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Orte", "Zypern", "Ayia Napa", "Meeresmythen"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # Ayia Napa
 ## History and Legends of a Holiday Paradise

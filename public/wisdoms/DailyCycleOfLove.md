@@ -1,12 +1,11 @@
 ---
-id: "DailyCycleOfLove"
 title: "Der atmende Tag"
 subtitle: "Vom Erwachen in die Schönheit und der Rückkehr ins Einssein"
 description: "Eine Reflexion über den Tagesablauf als bewusster Akt der Schöpfung, der liebevollen Transformation von Eindrücken und der friedvollen Rückkehr zur Erde."
 date: 2026-05-20
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Liebe", "Schöpfung", "Transformation", "Naturverbundenheit", "Innere Pflege"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Der atmende Tag

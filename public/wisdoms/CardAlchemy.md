@@ -1,12 +1,11 @@
 ---
-id: "CardAlchemy"
 title: "Die Alchemie der Spielkarten"
 subtitle: "Von italienischen Standessymbolen zur universellen Sprache"
 description: "Eine Reise durch die Kulturgeschichte der Spielkarten – wie aus greifbaren mittelalterlichen Ständen durch drucktechnische Abstraktion die universellen Elemente des menschlichen Bewusstseins wurden."
 date: 2026-06-13
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Liebe", "Spielkarten", "Tarot", "Feigenblatt", "Massendruck"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
+categories: ["symbols", "history"]
 ---
 
 # Die Alchemie der Spielkarten

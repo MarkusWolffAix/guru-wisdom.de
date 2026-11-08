@@ -1,12 +1,8 @@
 ---
-id: "Lombards"
 title: "The serpentine of history"
 subtitle: "From the Lombards to Francis of Assisi"
 description: "A reflection on the transformation of the Lombards from a warrior tribe to the architects of modern trust, and the spiritual necessity of curves in life's journey."
-date: 2026-06-25
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Achtsamkeit", "Langobarden", "Lombardkredit", "Vertragliches Vertrauen", "Franz von Assisi"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Serpentine of History
 ## From the Lombards to Francis of Assisi

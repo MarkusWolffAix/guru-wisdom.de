@@ -1,12 +1,11 @@
 ---
-id: "LoveWithoutEgo"
 title: "Der Fluss der Liebe"
 subtitle: "Von schützender Distanz zur wahren Nähe"
 description: "Eine Betrachtung darüber, wie das Loslassen des Egos und das wahre Verständnis von Respekt den natürlichen Fluss der Liebe ermöglichen."
 date: 2026-11-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Psychologie", "Ego", "Würde", "Distanz"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Der Fluss der Liebe

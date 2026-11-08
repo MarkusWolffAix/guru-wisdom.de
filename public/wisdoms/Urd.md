@@ -1,12 +1,11 @@
 ---
-id: "Urd"
 title: "Urd und die Schicksalsweberinnen"
 subtitle: "Vergangenheit und Karma in der nordischen Mythologie"
 description: "Tiefe Symbolik der Nornen und was Urd uns über unser eigenes Karma lehrt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Schicksal", "Mythen", "Urd", "Karma", "Runenmagie", "Runen", "Schicksalsweberin"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 # Urd und die Schicksalsweberinnen
 ## Vergangenheit und Karma in der nordischen Mythologie

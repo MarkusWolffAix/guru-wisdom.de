@@ -1,12 +1,8 @@
 ---
-id: "Chakras"
 title: "The Path of the Chakras"
 subtitle: "The synthesis of self, community, and the inner child"
 description: "The synthesis of self, community, and the inner child. A depth-psychological examination of the chakra theory."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Energie", "Hinduismus", "Chakren", "Inneres Kind", "Tantra"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Path of the Chakras
 ## The Synthesis of Self, Community, and the Inner Child

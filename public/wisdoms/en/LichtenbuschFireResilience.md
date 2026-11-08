@@ -1,12 +1,8 @@
 ---
-id: "LichtenbuschFireResilience"
 title: "Blessings from curses"
 subtitle: "The miraculous story of the Banneux Chapel in Lichtenbusch"
 description: "How curses became a blessing and destructive fire became a place of peace on the German-Belgian border."
-date: 2026-04-21
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Feuer", "Heilung", "Banneux", "Lichtenbusch", "Resilienz", "Grenze"]
-categories: ["Heimat & Herkunft", "Heilung & Achtsamkeit"]
 ---
 # Blessings from Curses
 

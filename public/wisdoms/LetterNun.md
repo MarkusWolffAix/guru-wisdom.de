@@ -1,12 +1,11 @@
 ---
-id: "LetterNun"
 title: "Das Echo von Nun"
 subtitle: "Vom Ozean und Fürsten zur reinen Linie"
 description: "Wie aus dem mythologischen Konzept des unendlichen Urgewässers und der sumerischen Keilschrift unser alltäglicher Buchstabe geschmiedet wurde."
 date: 2026-05-17
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Proto-Sinaitisch", "Hieroglyphen"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Das Echo von Nun

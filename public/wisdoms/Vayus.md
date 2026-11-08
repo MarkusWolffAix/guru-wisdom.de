@@ -1,12 +1,11 @@
 ---
-id: "PranaVayus"
 title: "Die fünf Vayus"
 subtitle: "Die subtilen Winde der Lebenskraft"
 description: "Eine tiefgründige Reise durch die fünf Prana Vayus. Wir beleuchten detailliert die physischen und geistigen Störungen unserer Lebensenergie und zeigen sanfte Wege zur Heilung auf."
 date: 2026-05-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Prana", "Achtsamkeit", "Blockaden", "Energiefluss"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Die fünf Vayus

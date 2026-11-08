@@ -1,12 +1,11 @@
 ---
-id: "IllusionAndShock"
 title: "Der heilsame Schock"
 subtitle: "Das Erwachen des Bewusstseins nach dem Knall"
 description: "Eine Reflexion über den Auslöser des inneren Schocks, das Zerbrechen unserer Illusionen und den bewussten Weg zurück zur allumfassenden Liebe."
 date: 2026-09-06
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Schockmoment", "Illusion", "Taschenuhr"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Der heilsame Schock

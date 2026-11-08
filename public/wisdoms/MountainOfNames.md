@@ -1,12 +1,11 @@
 ---
-id: "MountainOfNames"
 title: "Der Berg der vielen Namen"
 subtitle: "Von Igmu Tanka Pahá zum Monument des Mehr"
 description: "Eine Reflexion über die sprachliche und spirituelle Metamorphose eines Gipfels in den Black Hills – von der nährenden Erde bis zum Denkmal des Egos."
 date: 2026-07-13
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Elemente", "Tȟuŋkášila Šákpe", "Mount Rushmore", "Igmu Tanka Pahá", "Maka"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Der Berg der vielen Namen

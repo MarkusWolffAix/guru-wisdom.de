@@ -1,12 +1,8 @@
 ---
-id: "NunOrigin"
 title: "SO"
 subtitle: "Its absolute origin lies in Egypt and Mesopotamia."
 description: "A philosophical examination of the concept of NUN as an absolute origin, clarifying the linguistic independence between the Egyptian primordial waters and the Sumerian Nun.ki. And NUN 😀?"
-date: 2026-05-17
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Schöpfung", "Nun", "Eridu"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # NUN
 ## The Absolute Origin in Egypt and Mesopotamia

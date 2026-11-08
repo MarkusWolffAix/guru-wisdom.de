@@ -1,12 +1,11 @@
 ---
-id: "DivineSounds"
 title: "Die Resonanz des Göttlichen"
 subtitle: "Die verborgene Weisheit in AUM, UMA und UR"
 description: "Eine philosophische und linguistische Erkundung der Sanskrit-Laute AUM, UMA und UR sowie ihrer Verbindung zum Göttlichen und der universellen Liebe."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Klang", "Mantra", "Hinduismus", "Sanskrit", "AUM", "UMA", "Linguistik"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 
 # Die Resonanz des Göttlichen

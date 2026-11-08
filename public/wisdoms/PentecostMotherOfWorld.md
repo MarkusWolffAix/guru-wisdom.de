@@ -1,12 +1,11 @@
 ---
-id: "PentecostMotherOfWorld"
 title: "Pfingsten und die Urangst"
 subtitle: "Die Menschheit als Mutter der Welt"
 description: "Eine tiefgründige Betrachtung des Pfingstmysteriums als Weg aus der inneren Isolation hin zu einer universellen, furchtlosen Empathie."
 date: 2026-05-24
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Feuer", "Pneuma", "Empathie", "Urangst", "Isolation"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Pfingsten und die Urangst

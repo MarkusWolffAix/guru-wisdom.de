@@ -1,12 +1,8 @@
 ---
-id: "AmberEternity"
 title: "amber"
 subtitle: "The golden bridge between myth, time, and transience"
 description: "A reflection on amber as a witness to eternity, from the tears of the Heliades to Kant's philosophy and the fate of the Amber Room."
-date: 2026-10-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Unendlichkeit", "Phaethon", "Immanuel Kant", "Bernsteinzimmer"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 
 # Amber

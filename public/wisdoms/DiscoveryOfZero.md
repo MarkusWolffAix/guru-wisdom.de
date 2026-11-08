@@ -1,12 +1,11 @@
 ---
-id: "DiscoveryOfZero"
 title: "Die Entdeckung der Null"
 subtitle: "Der Ursprung des Nichts"
 description: "Erforsche die faszinierende Geschichte der Null und wie sie Mathematik und Philosophie revolutionierte."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Null", "Indien", "Shunyata", "Leere", "Zahlensystem"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
+categories: ["symbols", "history"]
 ---
 # Die Entdeckung der Null
 ## Der Ursprung des Nichts

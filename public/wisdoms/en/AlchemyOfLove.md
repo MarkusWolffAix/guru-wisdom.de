@@ -1,12 +1,8 @@
 ---
-id: "AlchemyOfLove"
 title: "The Architecture of Consciousness"
 subtitle: "Atman, Ego and the Alchemy of Love"
 description: "An essayistic reflection on the Atman as pure consciousness, the ego as its abstraction, and love as the universal source of all being."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Achtsamkeit", "Atman", "Ego", "Empathie", "Verschmelzung"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Architecture of Consciousness
 ## Atman, Ego, and the Alchemy of Love

@@ -1,12 +1,11 @@
 ---
-id: "NorfEssence"
 title: "Norf im Spiegel der Zeit"
 subtitle: "Natur, Struktur, Geist und die Erschaffung von Schönheit"
 description: "Eine tiefgründige Betrachtung der historischen Säulen von Norf: Die fließende Natur, die verbindende Baukunst, das spirituelle Fundament und die bewusste Ästhetik."
 date: 2026-09-22
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Heimat & Herkunft", "Elemente", "Vellbrüggen", "Schloss Müggenburg"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
+categories: ["history", "home"]
 ---
 
 # Norf im Spiegel der Zeit

@@ -1,12 +1,11 @@
 ---
-id: "FairMilk"
 title: "Faire Milch"
 subtitle: "Bewusste Ernährung für Körper und Geist"
 description: "Warum Qualität und Herkunft der Milch für einen reinen, sattvischen Lebensstil im Ayurveda essenziell sind."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Erde", "Sattva", "Milch", "Nachhaltigkeit", "Weidehaltung"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 # Faire Milch
 ## Bewusste Ernährung für Körper und Geist

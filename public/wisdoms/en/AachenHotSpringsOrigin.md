@@ -1,12 +1,8 @@
 ---
-id: "AachenHotSpringsOrigin"
 title: "Aachen thermal springs"
 subtitle: "The hot legacy of Earth's history"
 description: "A comprehensive summary of the geological origins, historical significance and physical wonders of Aachen's thermal springs."
-date: 2026-04-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Elemente", "Erde", "Thermalwasser", "Geologie", "Heilkraft"]
-categories: ["Heimat & Herkunft", "Wissenschaft & Natur"]
 ---
 # Aachen Thermal Springs
 ## The Hot Legacy of Earth's History

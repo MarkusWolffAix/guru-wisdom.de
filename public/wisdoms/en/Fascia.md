@@ -1,12 +1,8 @@
 ---
-id: "Fascia"
 title: "The fascia"
 subtitle: "The hidden network of our consciousness"
 description: "Discover how our fascial network supports the body and stores emotions and energy."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Heilung", "Achtsamkeit", "Faszien", "Bindegewebe", "Körperbewusstsein"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # Fascia
 ## The Hidden Network of Our Consciousness

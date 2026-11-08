@@ -1,12 +1,11 @@
 ---
-id: "DragonIslandArillas"
 title: "Dragon Island"
 subtitle: "Der Wächter von Arillas"
 description: "Eine tiefgründige Reflexion über die erdende, drachenhafte Kraft der Insel Gravia und die Entdeckung der inneren Stille."
 date: 2026-07-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Meditation", "Mantra", "Elemente", "Gravia", "Kosmischer Fokus", "Silbe Ma"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Dragon Island

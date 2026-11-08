@@ -1,12 +1,8 @@
 ---
-id: "VoicesOfTheWorld"
 title: "The Voices of the World"
 subtitle: "A family tree of language mothers"
 description: "A profound journey to the origins of human language, the major language families, and the infinite diversity of human sound."
-date: 2026-05-14
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Indien", "Klang", "Urindogermanisch", "Phonetik", "Sprachfamilien"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Voices of the World
 ## A Family Tree of Language Mothers

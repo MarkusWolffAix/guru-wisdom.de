@@ -1,12 +1,8 @@
 ---
-id: "OceanCycle"
 title: "The foundation of life"
 subtitle: "The return of the shells to the cycle"
 description: "A comprehensive look at the transformative power of nature, the formation of oyster reefs and the concrete vision of a circular network between Hamburg's gastronomy and the North Sea."
-date: 2026-07-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Schöpfung", "Hamburg", "Austernschalen", "Kreislaufwirtschaft", "WWF"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
 ---
 # The Foundation of Life
 ## The Return of Shells to the Cycle

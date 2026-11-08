@@ -1,12 +1,11 @@
 ---
-id: "UrSoundStory"
 title: "Die Geschichte des Urklangs"
 subtitle: "Wie das Universum das Singen lernte"
 description: "Ein poetischer Blick auf den ersten Klang des Universums und seine Reise zu unseren Herzen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Klang", "Schöpfung", "Mythen", "Urklang", "Poesie"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 # Die Geschichte des Urklangs
 ## Wie das Universum das Singen lernte

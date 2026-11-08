@@ -1,12 +1,11 @@
 ---
-id: "FrankenbergNode"
 title: "The Frankenberger network"
 subtitle: "A geographical map of the soul"
 description: "An overview of the mystical connections between biography, urban geography and spiritual development in Aachen."
 date: 2026-10-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Schöpfung", "Pastorplatz", "Anne Frank", "Knechtsteden"]
-categories: ["Heimat & Herkunft", "Symbole & Muster"]
+categories: ["home", "symbols"]
 ---
 
 # The Frankenberger Network

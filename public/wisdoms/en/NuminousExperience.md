@@ -1,12 +1,8 @@
 ---
-id: "NuminousExperience"
 title: "The numinous"
 subtitle: "Rudolf Otto's Path to the Completely Different"
 description: "The numinous describes the irrational and paradoxical experience of the absolutely sacred, characterized by profound awe and a captivating attraction. This essayistic exploration examines our encounter with the 'wholly other' according to Rudolf Otto."
-date: 2026-04-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Buddhismus", "Hinduismus", "Rudolf Otto", "Mysterium Tremendum", "Das Heilige"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # The Numinous
 ## Rudolf Otto's Path to the Wholly Other

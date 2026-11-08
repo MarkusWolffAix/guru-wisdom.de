@@ -1,12 +1,8 @@
 ---
-id: "NatureOfZero"
 title: "The Nature of Zero"
 subtitle: "Emptiness as the source of all creation"
 description: "Why nothingness is not empty, but contains within it the potential for all possibilities."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Null", "Indien", "Leere", "Schöpfung", "Shunyata"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # The Nature of Zero
 ## Emptiness as the Source of All Creation

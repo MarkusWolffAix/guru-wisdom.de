@@ -1,12 +1,11 @@
 ---
-id: "LoveBeacon"
 title: "Geburt aus dem Göttlichen"
 subtitle: "Der Leuchtturm der Liebe"
 description: "Eine tiefgründige Betrachtung darüber, wie die reine Liebe als kosmischer Magnet das göttliche Bewusstsein in die physische Form leitet."
 date: 2026-06-25
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Liebe", "Wiedergeburt", "Leuchtturm"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Geburt aus dem Göttlichen

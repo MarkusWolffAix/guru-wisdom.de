@@ -1,12 +1,8 @@
 ---
-id: "OmSound"
 title: "The sound of Om"
 subtitle: "The primordial frequency of the universe"
 description: "Explore the physical and spiritual significance of Om and its cosmic connection."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Mantra", "Klang", "Meditation", "Schwingung", "Fünf Elemente", "Weißes Licht"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Sound of Om
 ## The Primal Frequency of the Universe

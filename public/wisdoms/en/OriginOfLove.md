@@ -1,12 +1,8 @@
 ---
-id: "OriginOfLove"
 title: "Origin of Being"
 subtitle: "The essence of love, Gaia, and abstraction"
 description: "A reflection on love as the universal ground of being, the earth (Gaia) as the womb of the spirit, and abstraction as a tool in dealing with life."
-date: 2026-06-12
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Gaia", "Schöpfung", "Abstraktion", "Fraktale"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # Origin of Being
 ## The Essence of Love, Gaia, and Abstraction

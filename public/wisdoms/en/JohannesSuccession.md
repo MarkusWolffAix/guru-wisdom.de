@@ -1,12 +1,8 @@
 ---
-id: "JohannesSuccession"
 title: "The Many Faces of John"
 subtitle: "A spiritual succession"
 description: "A profound examination of the various biblical bearers of the name John and their role in the evolution of a spiritual doctrine."
-date: 2026-05-10
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Johannes", "Sukzession", "Johanneische Schule"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Many Faces of John
 ## A Spiritual Succession

@@ -1,12 +1,8 @@
 ---
-id: "ArchitectureOfCompassion"
 title: "The Architecture of Compassion"
 subtitle: "When the ego serves love"
 description: "A reflection on how the ego functions as a servant of love, the importance of active appreciation, and how constructive criticism helps to recognize and build upon beauty."
-date: 2026-07-30
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Yoga", "OpenSource", "Ego", "Wertschätzung", "Kritikfähigkeit"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Architecture of Compassion
 ## When the Ego Serves Love

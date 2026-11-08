@@ -1,12 +1,8 @@
 ---
-id: "ArillasCorfuTransformation"
 title: "The story of Arillas and Corfu"
 subtitle: "A journey through time, sound and energy"
 description: "A reflection on the historical and energetic transformation of Arillas on Corfu, from a pirate hideout to a modern spiritual oasis."
-date: 2026-06-26
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Achtsamkeit", "Korfu", "Transformation", "Etymologie", "Olivenhaine"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # The Story of Arillas and Corfu
 ## A Journey Through Time, Sound, and Energy

@@ -1,12 +1,8 @@
 ---
-id: "RetreatingTidesMesopotamia"
 title: "Receding tides"
 subtitle: "Mesopotamia's path from the sea to the inland"
 description: "The historical, mythological and geographical development of the Mesopotamian metropolises from the coastal cities to the inland metropolis of Babylon."
-date: 2026-04-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Erde", "Verlandung", "Geografie"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 # The Retreat of the Tides
 ## Mesopotamia's Journey from the Sea to the Inland

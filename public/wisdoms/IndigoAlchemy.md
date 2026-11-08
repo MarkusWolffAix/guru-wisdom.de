@@ -1,12 +1,11 @@
 ---
-id: "IndigoAlchemy"
 title: "Vom unsichtbaren Keim zum tiefen Blau"
 subtitle: "Die Transformation des Indigo"
 description: "Eine Betrachtung über die Botanik, Chemie und Geschichte des Indigo als Metapher für Transformation, Heilung und gesellschaftlichen Wandel."
 date: 2026-07-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Indien", "Biologie", "Indigo", "Satyagraha", "Alchemie"]
-categories: ["Wissenschaft & Natur", "Geschichte & Mythen"]
+categories: ["science", "history"]
 ---
 
 # Vom unsichtbaren Keim zum tiefen Blau

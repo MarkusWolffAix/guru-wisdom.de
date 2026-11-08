@@ -1,12 +1,8 @@
 ---
-id: "DivinePlayOfLove"
 title: "The Divine Game"
 subtitle: "The return to the primal joy of love"
 description: "A reflection on the unification of the Higher Self in the divine game through love, responsibility, helpfulness, and creative joy."
-date: 2026-09-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Liebe", "Schöpfung", "Klang", "Kreativität", "Urfreude", "Karma Yoga"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 
 # The Divine Play

@@ -1,12 +1,8 @@
 ---
-id: "ConsciousPause"
 title: "The art of conscious lingering"
 subtitle: "Practical guide to actively enjoying yourself at your desk"
 description: "A concrete handout for integrating micro-breaks, asanas, pranayama and targeted musical accompaniment into the solution-oriented workday."
-date: 2026-08-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Yoga", "Pranayama", "Ujjayi", "Klassische Musik", "Fokus"]
-categories: ["Heilung & Achtsamkeit"]
 ---
 # The Art of Mindful Respite
 ## A Practical Guide to Actively Enjoying Your Time at Your Desk

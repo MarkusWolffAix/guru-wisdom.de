@@ -1,12 +1,11 @@
 ---
-id: "EmpathicSchool"
 title: "Die Schule der Liebe"
 subtitle: "Weiche Strukturen und Lernen durch Fühlen"
 description: "Eine ganzheitliche Vision für ein Schulsystem, das auf Empathie, intrinsischer Motivation, weichen Strukturen und dem spielerischen Erleben von Wissen basiert."
 date: 2026-09-01
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Wissenschaft", "Yoga", "Weiche Strukturen", "Theaterpädagogik", "Intrinsische Motivation"]
-categories: ["Liebe & Verbundenheit", "Wissenschaft & Natur"]
+categories: ["love", "science"]
 ---
 
 # Die Schule der Liebe

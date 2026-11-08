@@ -1,12 +1,8 @@
 ---
-id: "AscensionDay"
 title: "Ascension Day: The Universal Path of Transformation"
 subtitle: "The Mysticism of the 40 Days and the Return to the Source"
 description: "A profound examination of the Ascension as a spiritual transition from the limited to the unlimited and the power of the 40-day metamorphosis."
-date: 2026-05-14
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Traditionen", "Konzepte", "Spiritualität", "Metamorphose", "Ascension"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Ascension Day
 ## The Universal Path of Transformation

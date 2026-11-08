@@ -1,12 +1,11 @@
 ---
-id: "VoicesOfTheWorld"
 title: "Die Stimmen der Welt"
 subtitle: "Ein Stammbaum der Sprachmütter"
 description: "Eine tiefgründige Reise zu den Ursprüngen der menschlichen Sprache, den großen Sprachfamilien und der unendlichen Vielfalt des menschlichen Klangs."
 date: 2026-05-14
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Indien", "Klang", "Urindogermanisch", "Phonetik", "Sprachfamilien"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Die Stimmen der Welt

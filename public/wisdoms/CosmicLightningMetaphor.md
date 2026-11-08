@@ -1,12 +1,11 @@
 ---
-id: "CosmicLightningMetaphor"
 title: "Die Anatomie des Gewitters"
 subtitle: "Natur, Geist und Liebe im kosmischen Spiegel"
 description: "Eine tiefgründige Betrachtung, die die Physik des Blitzes mit menschlicher Psychologie, dem göttlichen Funken und der antiken Elementenlehre zu einer universellen Metapher verbindet."
 date: 2026-03-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Feuer", "Kosmos", "Gewitter", "Äther", "Spannungsabbau"]
-categories: ["Symbole & Muster", "Liebe & Verbundenheit"]
+categories: ["symbols", "love"]
 ---
 
 # Die Anatomie des Gewitters

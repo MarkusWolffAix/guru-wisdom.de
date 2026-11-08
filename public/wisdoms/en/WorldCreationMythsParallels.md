@@ -1,12 +1,8 @@
 ---
-id: "WorldCreationMythsParallels"
 title: "Creation myths of the world"
 subtitle: "The universal parallels of the origin of the world"
 description: "A detailed examination of the structural and content-related similarities between the creation myths of the Māori, Greeks, Egyptians and Sumerians."
-date: 2026-04-05
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Religionen", "Mythen", "Papatūānuku", "Welteltern", "Vergleichende Mythologie"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Creation Myths of the World
 ## The Universal Parallels of the Origin of the World

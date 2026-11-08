@@ -1,12 +1,11 @@
 ---
-id: "CosmicBreath"
 title: "Das Kosmische Auge"
 subtitle: "Die Atmung der Schöpfung durch Liebe und Sternenstaub"
 description: "Eine mystisch-wissenschaftliche Betrachtung über Schwarze Löcher, Raumkrümmung und die universelle Kraft der Liebe."
 date: 2026-08-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Quantenphysik", "Schwarzes Loch", "Raumkrümmung", "Sternenstaub"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 # Das Kosmische Auge
 ## Die Atmung der Schöpfung durch Liebe und Sternenstaub

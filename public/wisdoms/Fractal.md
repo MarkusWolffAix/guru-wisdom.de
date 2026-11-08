@@ -1,12 +1,11 @@
 ---
-id: "Fractal"
 title: "Fraktale Welten"
 subtitle: "Das Große im Kleinen erkennen"
 description: "Wie fraktale Geometrie die Muster der Natur widerspiegelt und uns universelle Verbindung lehrt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Rekursion", "Selbstähnlichkeit"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
+categories: ["symbols", "science"]
 ---
 # Fraktale Welten
 ## Das Große im Kleinen erkennen

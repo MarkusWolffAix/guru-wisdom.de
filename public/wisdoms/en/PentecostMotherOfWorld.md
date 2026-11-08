@@ -1,12 +1,8 @@
 ---
-id: "PentecostMotherOfWorld"
 title: "Pentecost and the primal fear"
 subtitle: "Humanity as the mother of the world"
 description: "A profound exploration of the Pentecostal mystery as a path out of inner isolation towards a universal, fearless empathy."
-date: 2026-05-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Feuer", "Pneuma", "Empathie", "Urangst", "Isolation"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # Pentecost and the Primal Fear
 ## Humanity as Mother of the World

@@ -1,12 +1,8 @@
 ---
-id: "SoundOfEmpathy"
 title: "The Cosmic Symphony"
 subtitle: "Nada Brahma and the Resonance of Empathy"
 description: "A philosophical and physical exploration of how sound, quantum entanglement, and conscious listening shape the reality of our universe."
-date: 2026-09-23
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Quantenphysik", "Klang", "Liebe", "Stringtheorie", "Nada Brahma", "Relationalität"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 
 # The Cosmic Symphony

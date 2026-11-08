@@ -1,12 +1,11 @@
 ---
-id: "DivineHealingEye"
 title: "Die Heilung des Göttlichen"
 subtitle: "Von der Illusion des Leidens zur freudigen Erkenntnis"
 description: "Wie das Göttliche den Virus der Problemerzeugung überwand und die aufrichtige Freude an Natur und Nächstem zur wahren Quelle von Wissenschaft und Wissen wurde."
 date: 2026-09-10
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Wissenschaft", "Kosmische Grippe", "Das Auge", "Wissensfreude"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Die Heilung des Göttlichen

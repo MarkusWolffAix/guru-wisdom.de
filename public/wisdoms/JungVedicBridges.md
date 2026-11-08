@@ -1,12 +1,11 @@
 ---
-id: "JungVedicBridges"
 title: "Architektur der Seele"
 subtitle: "Carl Gustav Jung und die zeitlose Weisheit der Veden"
 description: "Eine essayistische Betrachtung der faszinierenden Parallelen zwischen der analytischen Psychologie C.G. Jungs und der alten indischen Philosophie."
 date: 2026-04-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Psychologie", "Kollektives Unbewusstes", "Archetypen", "Individuation"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Architektur der Seele

@@ -1,12 +1,11 @@
 ---
-id: "ReadReflection"
 title: "Die Eselsbrücke"
 subtitle: "Vom Umweg zur Selbsterkenntnis"
 description: "Eine Betrachtung über die Herkunft der Eselsbrücke und wie das Spiegelbild unserer Angst zur tiefsten Erkenntnis führen kann."
 date: 2026-09-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Eselsbruecke", "Spiegelbild", "Wortspiel"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Die Eselsbrücke

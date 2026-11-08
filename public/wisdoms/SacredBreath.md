@@ -1,12 +1,11 @@
 ---
-id: "SacredBreath"
 title: "Das Mysterium des H"
 subtitle: "Der unsichtbare Atem der Schöpfung und das kosmische Lachen"
 description: "Eine philosophische und linguistische Betrachtung des Buchstabens H als reiner Lebenshauch, Bindeglied zwischen Geist und Materie – und die befreiende Kraft des Lachens."
 date: 2026-05-15
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Schöpfung", "Klang", "Yoga", "Laryngaltheorie", "Prana", "Lachen", "Lila"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Das Mysterium des H

@@ -1,12 +1,8 @@
 ---
-id: "GoldenApple"
 title: "The fruit of knowledge"
 subtitle: "From Eve to Newton and the awakening from the Maya"
 description: "A philosophical journey about breaking out of the unconscious paradise, the masterful architecture of the physical world, and the symbols of true awakening."
-date: 2026-09-26
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Yoga", "Schöpfung", "Maya", "Demiurg", "Pentagramm"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 
 # The Fruit of Knowledge

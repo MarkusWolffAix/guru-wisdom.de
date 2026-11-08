@@ -1,12 +1,8 @@
 ---
-id: "MaternalCycleOfAum"
 title: "The cosmic womb"
 subtitle: "The maternal aspect in the transition from end to new beginning"
 description: "A philosophical consideration of the maternal principle as a transformative force at the threshold between the stillness of M and the awakening of A in the eternal cycle of AUM."
-date: 2026-04-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Mantra", "Klang", "Schöpfung", "Mutterprinzip", "Zyklus", "Neubeginn"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 # The Cosmic Womb
 ## The Maternal in the Transition from End to New Beginning

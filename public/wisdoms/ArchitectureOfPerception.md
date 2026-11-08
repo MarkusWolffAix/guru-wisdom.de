@@ -1,12 +1,11 @@
 ---
-id: "ArchitectureOfPerception"
 title: "Die Architektur der Wahrnehmung"
 subtitle: "Vom Außen ins Innen"
 description: "Eine faszinierende Reise durch die Anatomie unserer Sinne: Von der evolutionären Platzierung in unserem Gesicht über die vedische Samkhya-Philosophie bis hin zur modernen Interozeption und dem wahren Selbst."
 date: 2026-07-14
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Yoga", "Wissenschaft", "OM", "Antahkarana", "Interozeption", "Atman"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Die Architektur der Wahrnehmung

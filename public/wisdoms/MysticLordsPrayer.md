@@ -1,12 +1,11 @@
 ---
-id: "MysticLordsPrayer"
 title: "Das Vaterunser"
 subtitle: "Die kosmische Architektur eines alten Mantras"
 description: "Eine Synthese aus semitisch-griechischen Sprachwurzeln, kabbalistischer Schöpfungstheologie, mathematisch-struktureller Vektorgeometrie und non-dualer Bewusstseinsarchitektur."
 date: 2026-09-11
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Meditation", "Mantra", "Schöpfung", "Liebe", "Zimzum", "Tikkun Olam", "Epiousios", "Gethsemane", "Passivum Divinum"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Das Vaterunser

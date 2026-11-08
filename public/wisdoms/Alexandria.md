@@ -1,12 +1,11 @@
 ---
-id: "Alexandria"
 title: "Geschichtlicher Zeitstrahl"
 subtitle: "Besetzer & Einflüsse von Alexandria"
 description: "Eine detaillierte Zusammenfassung der historischen Epochen, Besatzer und kulturellen Einflüsse der Stadt Alexandria, ergänzt durch poetische Songtexte."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Wissenschaft", "Bibliothek", "Ägypten", "Zeitstrahl"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Geschichtlicher Zeitstrahl

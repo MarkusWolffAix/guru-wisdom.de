@@ -1,12 +1,11 @@
 ---
-id: "MaturationJourney"
 title: "Der Weg des Erwachsenwerdens"
 subtitle: "Verantwortung, innere Versöhnung und die Sorge für sich und andere"
 description: "Eine essayistische Betrachtung über das Erwachsenwerden als inneren Reifungsprozess, der die Annahme der eigenen Kindheit, die Übernahme von Verantwortung und die Fürsorge für sich selbst und andere umfasst."
 date: 2026-08-09
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Verantwortung", "Selbstfürsorge"]
-categories: ["Heilung & Achtsamkeit"]
+categories: ["healing"]
 ---
 
 # Der Weg des Erwachsenwerdens

@@ -1,12 +1,11 @@
 ---
-id: "YouAreUr"
 title: "You Are or Short UR"
 subtitle: "Die Brücke zwischen Stille und Klang"
 description: "Betrachtung der Chat-Abkürzung UR als Symbol für moderne Einfachheit und spirituelle Präsenz."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Sprache", "Philosophie", "Achtsamkeit", "Sprachwandel", "Identität"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
+categories: ["symbols", "history"]
 ---
 
 # UR

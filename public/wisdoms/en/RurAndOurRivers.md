@@ -1,12 +1,8 @@
 ---
-id: "   "
 title: "Rur and Our"
 subtitle: "The path of water from the High Fens to the North Sea"
 description: "A detailed summary of the river systems in the border region of three countries, focusing on the rivers Rur and Our, from their common source in the High Fens to their mouth in the North Sea."
-date: 2026-04-10
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Erde", "Orte", "Rur", "Our", "Flusssysteme", "Hohes Venn"]
-categories: ["Heimat & Herkunft", "Wissenschaft & Natur"]
 ---
 # Rur and Our
 ## The Water's Journey from the High Fens to the North Sea

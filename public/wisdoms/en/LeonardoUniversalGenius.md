@@ -1,12 +1,8 @@
 ---
-id: "LeonardoUniversalGenius"
 title: "The universe of Leonardo da Vinci"
 subtitle: "Art, myths, and the geometry of love"
 description: "A consideration of the life's work of Leonardo da Vinci: From the linguistic illusion of the Mona Lisa to the invisible theology in the Last Supper."
-date: 2026-06-15
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Liebe", "Leonardo da Vinci", "Mona Lisa", "Abendmahl", "Saper Vedere"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Universe of Leonardo da Vinci
 ## Art, Myths, and the Geometry of Love

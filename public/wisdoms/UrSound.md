@@ -1,12 +1,11 @@
 ---
-id: "UrSound"
 title: "Die globale sprachliche Bedeutung von „Ur“"
 subtitle: "Die Resonanz der Schöpfung"
 description: "Verbindung mit der Frequenz des Ursprungs durch Klangschalen und Mantras."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Klang", "Schöpfung", "Urklang", "Frequenz"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 # Die globale sprachliche Bedeutung von „Ur“
 ## Die Resonanz der Schöpfung

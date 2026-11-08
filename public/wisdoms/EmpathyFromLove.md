@@ -1,12 +1,11 @@
 ---
-id: "EmpathyFromLove"
 title: "Empathie als Brücke der Liebe"
 subtitle: "Von der Illusion der Trennung zur wahren Verbundenheit"
 description: "Eine Betrachtung darüber, wie Empathie als Brücke der Liebe gedacht ist, aber durch manipulative emotionale Fallen und Schein-Rechtfertigungen zur Projektion eigener Schatten missbraucht werden kann."
 date: 2026-09-17
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Achtsamkeit", "Projektion", "Verstrickung"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Empathie als Brücke der Liebe

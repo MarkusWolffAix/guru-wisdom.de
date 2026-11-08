@@ -1,12 +1,8 @@
 ---
-id: "JungVedicBridges"
 title: "Architecture of the Soul"
 subtitle: "Carl Gustav Jung and the timeless wisdom of the Vedas"
 description: "An essayistic exploration of the fascinating parallels between C.G. Jung's analytical psychology and ancient Indian philosophy."
-date: 2026-04-29
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Psychologie", "Kollektives Unbewusstes", "Archetypen", "Individuation"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # Architecture of the Soul
 ## Carl Gustav Jung and the Timeless Wisdom of the Vedas

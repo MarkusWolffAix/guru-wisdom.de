@@ -1,12 +1,8 @@
 ---
-id: "EarthLove"
 title: "The Chronicle of Warmth"
 subtitle: "The Earth as a living organism of love"
 description: "A reflection on the Earth as a living being, the universal cycle of love, and the healing power of sincere interest and stories."
-date: 2026-05-04
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Gaia", "Achtsamkeit", "Interesse", "Geschichten"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Chronicle of Warmth
 ## The Earth as a Living Organism of Love

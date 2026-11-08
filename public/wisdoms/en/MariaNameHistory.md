@@ -1,12 +1,8 @@
 ---
-id: "MariaNameHistory"
 title: "The name Maria"
 subtitle: "A journey from silent protest to worldwide love"
 description: "How a name from ancient Judea became a worldwide symbol of protection, devotion, and bridge-building."
-date: 2026-04-21
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Maria", "Christentum", "Mirjam", "Namensgeschichte", "Hoffnung"]
-categories: ["Geschichte & Mythen", "Liebe & Verbundenheit"]
 ---
 # The Name Maria
 ## A Journey from Silent Protest to Global Love

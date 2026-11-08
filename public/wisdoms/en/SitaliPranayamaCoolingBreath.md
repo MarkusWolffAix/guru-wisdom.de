@@ -1,12 +1,8 @@
 ---
-id: "SitaliPranayamaCoolingBreath"
 title: "The cooling breath – Sitali Pranayama"
 subtitle: "For refreshment and mental clarity"
 description: "A loving guide to the yogic breathing technique Sitali, which not only cools the overheated body but also gently calms restless thoughts."
-date: 2026-06-21
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Pranayama", "Achtsamkeit", "Yoga", "Kühlung", "Innere Ruhe", "Sommer"]
-categories: ["Heilung & Achtsamkeit", "Körper & Geist"]
 ---
 # The Cooling Breath - Sitali Pranayama
 ## For Refreshment and Mental Clarity

@@ -1,12 +1,8 @@
 ---
-id: "WaterResistanceMetamorphosis"
 title: "Water and resistance"
 subtitle: "The Metamorphosis of Life Energy"
 description: "How formless energy finds its true power through structure and resistance."
-date: 2026-07-25
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Psychologie", "Hingabe", "Transformation", "Ozeanwelle"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # Water and Resistance
 ## The Metamorphosis of Life Energy

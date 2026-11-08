@@ -1,12 +1,8 @@
 ---
-id: "YogicFullBreath"
 title: "The Wave of Life"
 subtitle: "The complete yogic breathing and vital capacity"
 description: "A profound journey through the three breathing spaces of yoga, the precise physiology of vital capacity, and the unfolding of our full life energy."
-date: 2026-07-30
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Achtsamkeit", "Biologie", "Vitalkapazität", "Schlüsselbeinatmung", "Atemräume", "Zwerchfellatmung"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # The Wave of Life
 ## Complete Yoga Breathing and Vital Capacity

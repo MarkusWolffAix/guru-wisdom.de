@@ -1,12 +1,8 @@
 ---
-id: "CardAlchemy"
 title: "The Alchemy of Playing Cards"
 subtitle: "From Italian status symbols to a universal language"
 description: "A journey through the cultural history of playing cards – how tangible medieval social classes were transformed through printing technology into the universal elements of human consciousness."
-date: 2026-06-13
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Liebe", "Spielkarten", "Tarot", "Feigenblatt", "Massendruck"]
-categories: ["Symbole & Muster", "Geschichte & Mythen"]
 ---
 # The Alchemy of Playing Cards
 ## From Italian Class Symbols to a Universal Language

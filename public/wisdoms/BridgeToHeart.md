@@ -1,12 +1,11 @@
 ---
-id: "BridgeToHeart"
 title: "Die Brücke zum Herzen"
 subtitle: "Wie wir Verstand und Gefühl in Einklang bringen"
 description: "Praktische Wege, um die Lücke zwischen rationalem Denken und tiefer Herzensweisheit zu schließen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Herz-Verstand-Kohärenz", "Emotionen"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 # Die Brücke zum Herzen
 ## Wie wir Verstand und Gefühl in Einklang bringen

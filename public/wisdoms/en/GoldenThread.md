@@ -1,12 +1,8 @@
 ---
-id: "GoldenThread"
 title: "The golden roots"
 subtitle: "Preserving original knowledge in the age of automation"
 description: "A profound reflection on the preservation of traditional and natural knowledge in a highly technological world."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Psychologie", "Automatisierung", "Handwerk", "Ursprungswissen"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # The Golden Roots
 ## Preserving Original Knowledge in the Age of Automation

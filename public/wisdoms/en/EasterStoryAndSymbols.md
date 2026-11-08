@@ -1,12 +1,8 @@
 ---
-id: "EasterStoryAndSymbols"
 title: "Easter"
 subtitle: "History, origin and symbols"
 description: "A comprehensive summary of the biblical Easter story, the origin of the word Easter, and the meaning of gravestone, Easter egg, and Easter bunny."
-date: 2026-04-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Symbole", "Ostern", "Grabstein", "Osterei", "Osterhase"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # Easter
 

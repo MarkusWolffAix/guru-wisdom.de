@@ -1,12 +1,11 @@
 ---
-id: "GoldenThread"
 title: "Die goldenen Wurzeln"
 subtitle: "Das Bewahren des Ursprungswissens im Zeitalter der Automatisierung"
 description: "Eine tiefgründige Reflexion über den Erhalt von handwerklichem und natürlichem Ursprungswissen in einer hochtechnisierten Welt."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Psychologie", "Automatisierung", "Handwerk", "Ursprungswissen"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
+categories: ["symbols", "science"]
 ---
 
 # Die goldenen Wurzeln

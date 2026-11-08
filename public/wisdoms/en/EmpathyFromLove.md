@@ -1,12 +1,8 @@
 ---
-id: "EmpathyFromLove"
 title: "Empathy as a bridge of love"
 subtitle: "From the illusion of separation to true connection"
 description: "A reflection on how empathy is intended as a bridge of love, but can be misused through manipulative emotional traps and pseudo-justifications to project one's own shadows."
-date: 2026-09-17
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Achtsamkeit", "Projektion", "Verstrickung"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 
 # Empathy as a Bridge of Love

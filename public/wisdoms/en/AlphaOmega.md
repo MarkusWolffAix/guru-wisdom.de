@@ -1,12 +1,8 @@
 ---
-id: "AlphaOmega"
 title: "Alpha and Omega"
 subtitle: "The eternal cycle of beginning and end"
 description: "Understanding the concept of infinity and how Alpha and Omega shape our view of eternity."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Unendlichkeit", "Alpha", "Omega", "Kosmos", "Anfang und Ende"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # Alpha and Omega
 ## The Eternal Cycle of Beginning and End

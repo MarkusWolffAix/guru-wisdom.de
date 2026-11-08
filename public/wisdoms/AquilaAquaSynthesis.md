@@ -1,12 +1,11 @@
 ---
-id: "AquilaAquaSynthesis"
 title: "Der Adler des fließenden Lichts"
 subtitle: "Die Synthese von Aquila, Aqua und dem kosmischen Ohmm"
 description: "Eine tiefe Untersuchung der Verwandlung vom kriegerischen Steinadler zum fließenden Element der Liebe und deren Ursprung im ewigen Klang Ohmm."
 date: 2026-05-14
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Aachen", "OM", "Liebe", "Ur-Resonanz", "Steinadler", "Aquila"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 
 # Der Adler des fließenden Lichts

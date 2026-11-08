@@ -1,12 +1,8 @@
 ---
-id: "InnerGalleryOfLife"
 title: "The inner gallery of our lives"
 subtitle: "From curator to gardener of consciousness"
 description: "A comprehensive collection of insights into the cultivation of inner images, the art of acceptance and letting go, and the vision of a collective gallery."
-date: 2026-04-23
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Kurator", "Innerer Garten", "Akzeptanz"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
 ---
 # The Inner Gallery of Our Lives
 ## From Curator to Gardener of Consciousness

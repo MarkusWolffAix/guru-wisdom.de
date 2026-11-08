@@ -1,12 +1,8 @@
 ---
-id: "DialogueOfLove"
 title: "The beauty of creation"
 subtitle: "A Dialogue of Love"
 description: "A reflection on how sincere effort and deep interest bring forth true beauty in all that is created."
-date: 2026-08-04
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Klang", "Innere Präsenz", "Aufrichtiges Bemühen"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Beauty of Creation
 ## A Dialogue of Love

@@ -1,12 +1,11 @@
 ---
-id: "SilentStonesBreathingSpace"
 title: "Die Kunst des Aussprechens"
 subtitle: "Vom stummen Erdulden zur heilsamen Verletzlichkeit"
 description: "Eine Reflexion über den Mut, unausgesprochene Konflikte in sanfte Einladungen zur Verbindung zu verwandeln und der Welt weich zu begegnen."
 date: 2026-08-04
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Mitwelt", "Resonanz", "Mikro-Grenzen", "Beziehungsraum"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Die Kunst des Aussprechens

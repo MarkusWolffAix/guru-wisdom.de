@@ -1,12 +1,11 @@
 ---
-id: "MutterErdeEinheit"
 title: "Der Ursprung des Seins"
 subtitle: "Wie das Kind die Welt vor der Abstraktion erlebt"
 description: "Eine Reflexion über den ursprünglichen, ungeteilten Zustand des Seins, bevor der menschliche Verstand beginnt, die Welt in Mengen und abstrakte Konzepte zu unterteilen."
 date: 2026-05-19
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Ursprung", "Muttererde", "Abstraktion"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Der Ursprung des Seins

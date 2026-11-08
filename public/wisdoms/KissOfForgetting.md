@@ -1,12 +1,11 @@
 ---
-id: "KissOfForgetting"
 title: "✨Der Kuss des Vergessens"
 subtitle: "Das Geschenk des Nicht-Wissens"
 description: "Eine Reflexion über die alte Legende des Engels, der Neugeborenen das kosmische Wissen nimmt, damit sie das irdische Leben erfahren können."
 date: 2026-08-22
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Liebe", "Psychologie", "Philtrum", "Engel Laila", "Seelenwissen"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # ✨Der Kuss des Vergessens

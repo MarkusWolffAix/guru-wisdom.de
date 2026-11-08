@@ -1,12 +1,11 @@
 ---
-id: "TheMasteryOfFireAndOmega"
 title: "Das gezähmte Licht"
 subtitle: "Vom Hüter der Flamme bis zum Omega der Schöpfung"
 description: "Eine philosophische Reise über die Bändigung des Feuers, die Harmonie der Gegensätze am Horizont und die vollkommene Versöhnung im Omega."
 date: 2026-04-22
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Feuer", "Evolution", "Philosophie", "Mäßigung", "Harmonie", "Horizont"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Das gezähmte Licht

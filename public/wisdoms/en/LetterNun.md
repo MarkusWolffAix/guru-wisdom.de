@@ -1,12 +1,8 @@
 ---
-id: "LetterNun"
 title: "The Echo of Nun"
 subtitle: "From ocean and princes to pure lineage"
 description: "How our everyday letter was forged from the mythological concept of the infinite primordial waters and the Sumerian cuneiform script."
-date: 2026-05-17
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Proto-Sinaitisch", "Hieroglyphen"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Echo of Nun
 ## From Ocean and Princes to Pure Line

@@ -1,12 +1,11 @@
 ---
-id: "SoundOfEmpathy"
 title: "Die kosmische Symphonie"
 subtitle: "Nada Brahma und die Resonanz der Empathie"
 description: "Eine philosophische und physikalische Betrachtung darüber, wie Klang, Quantenverschränkung und das bewusste Zuhören die Realität unseres Universums formen."
 date: 2026-09-23
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Quantenphysik", "Klang", "Liebe", "Stringtheorie", "Nada Brahma", "Relationalität"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 
 # Die kosmische Symphonie

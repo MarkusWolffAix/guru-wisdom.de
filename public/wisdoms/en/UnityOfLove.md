@@ -1,12 +1,8 @@
 ---
-id: "UnityOfLove"
 title: "The illusion of separation"
 subtitle: "Feelings as a reflection of all-encompassing love"
 description: "A reflection on how our emotions act as a direct compass, showing us our inseparable connection with universal love."
-date: 2026-08-25
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Getrenntheit", "Verbundenheit", "Widerstand"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Illusion of Separation
 ## Feelings as a Reflection of All-Encompassing Love

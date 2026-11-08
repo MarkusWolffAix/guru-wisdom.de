@@ -1,12 +1,11 @@
 ---
-id: "YogicFullBreath"
 title: "Die Welle des Lebens"
 subtitle: "Die vollständige Yogaatmung und Vitalkapazität"
 description: "Eine tiefgründige Reise durch die drei Atemräume des Yoga, die präzise Physiologie der Vitalkapazität und das Entfalten unserer vollen Lebensenergie."
 date: 2026-07-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Achtsamkeit", "Biologie", "Vitalkapazität", "Schlüsselbeinatmung", "Atemräume", "Zwerchfellatmung"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 
 # Die Welle des Lebens

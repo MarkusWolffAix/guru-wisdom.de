@@ -1,12 +1,11 @@
 ---
-id: "Mesopotamia"
 title: "Das antike Mesopotamien"
 subtitle: "Die Geschichte von Ur, Uruk und Eridu"
 description: "Eine umfassende Zusammenfassung über die Ursprünge der Zivilisation, die Pionierrolle von Eridu und Uruk, den wasserabhängigen Wohlstand von Ur sowie die Verbindung zum biblischen Garten Eden."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Antike", "Ur", "Uruk", "Eridu", "Sumerer", "Zivilisation"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Das antike Mesopotamien

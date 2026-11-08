@@ -1,12 +1,11 @@
 ---
-id: "VishnusFire"
 title: "🕉️ Vishnu und der Funke der Erkenntnis"
 subtitle: "Von der tickenden Zeit zum befreienden Atem"
 description: "Entdecke Vishnus Rolle als Erhalter und wie sein spirituelles Feuer uns beschützt."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Vishnu", "Feuer", "Hinduismus", "Schutz", "Erhaltung"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 # 🕉️ Vishnu und der Funke der Erkenntnis
 ## Von der tickenden Zeit zum befreienden Atem

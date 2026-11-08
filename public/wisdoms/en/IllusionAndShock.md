@@ -1,12 +1,8 @@
 ---
-id: "IllusionAndShock"
 title: "The salutary shock"
 subtitle: "The awakening of consciousness after the bang"
 description: "A reflection on the trigger of the inner shock, the shattering of our illusions, and the conscious path back to all-encompassing love."
-date: 2026-09-06
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Schockmoment", "Illusion", "Taschenuhr"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # The Healing Shock
 ## The Awakening of Consciousness After the Bang

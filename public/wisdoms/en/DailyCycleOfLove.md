@@ -1,12 +1,8 @@
 ---
-id: "DailyCycleOfLove"
 title: "The breathing day"
 subtitle: "From awakening to beauty and returning to oneness"
 description: "A reflection on the daily routine as a conscious act of creation, the loving transformation of impressions, and the peaceful return to Earth."
-date: 2026-05-20
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Liebe", "Schöpfung", "Transformation", "Naturverbundenheit", "Innere Pflege"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # The Breathing Day
 ## From Awakening to Beauty and Returning to Oneness

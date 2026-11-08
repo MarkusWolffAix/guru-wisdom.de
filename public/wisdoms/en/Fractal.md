@@ -1,12 +1,8 @@
 ---
-id: "Fractal"
 title: "Fractal worlds"
 subtitle: "Recognizing the great in the small"
 description: "How fractal geometry reflects the patterns of nature and teaches us universal connection."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Rekursion", "Selbstähnlichkeit"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # Fractal Worlds
 ## Recognizing the Great in the Small

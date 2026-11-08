@@ -1,12 +1,8 @@
 ---
-id: "ButterAlchemy"
 title: "The Alchemy of Butter"
 subtitle: "Awakening through constant friction"
 description: "A philosophical reflection on the process of butter-making as a metaphor for spiritual practice, overcoming the ego, and revealing inner Buddha-nature."
-date: 2026-09-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Elemente", "Tapas", "Phasenumkehr", "Dialektik"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Alchemy of Butter
 ## Awakening Through Constant Friction

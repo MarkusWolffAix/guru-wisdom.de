@@ -1,12 +1,11 @@
 ---
-id: "UnbrokenEye"
 title: "Das ungeteilte Auge"
 subtitle: "Die klare Sicht und das sanfte Joch"
 description: "Eine Reflexion über Matthäus 6 und 11, die sattvische Klarheit der reinen Wahrnehmung und das Ablegen des inneren Widerstands."
 date: 2026-08-23
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Yoga", "Achtsamkeit", "Haplous", "Sattvischer Zustand", "Yuj"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Das ungeteilte Auge

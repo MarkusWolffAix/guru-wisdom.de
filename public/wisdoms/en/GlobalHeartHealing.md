@@ -1,12 +1,8 @@
 ---
-id: "GlobalHeartHealing"
 title: "The Global Heart"
 subtitle: "The healing of the whole through the healthy cell"
 description: "A deep reflection on the hermetic principle 'As above, so below' using the metaphor of the human heart as healer of the global organism."
-date: 2026-06-06
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Zellgedächtnis", "Fraktale", "Liebe"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
 ---
 # The Global Heart
 ## Healing the Whole Through the Healthy Cell

@@ -1,12 +1,8 @@
 ---
-id: "ElderFuthark"
 title: "The Elder Futhark"
 subtitle: "Odin's self-sacrifice and the magic of the runes"
 description: "A profound journey into the world of the Germanic runic alphabet and Odin's mythical sacrifice at the world tree."
-date: 2026-08-26
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Schöpfung", "Yggdrasil", "Runenmagie", "Runen"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # The Elder Futhark
 ## Odin's Self-Sacrifice and the Magic of the Runes

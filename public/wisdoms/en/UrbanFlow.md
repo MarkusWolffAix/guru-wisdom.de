@@ -1,12 +1,8 @@
 ---
-id: "UrbanFlow"
 title: "The city river"
 subtitle: "Downpipes as vessels of transition"
 description: "A practical and in-depth plan to improve the urban water ecosystem through unsealing and the transformation of downpipe elements into lifelines."
-date: 2026-06-12
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Biologie", "Fallrohr", "Schwammstadt", "Regengarten"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
 ---
 # The Urban River
 ## Downpipes as Vessels of Transition

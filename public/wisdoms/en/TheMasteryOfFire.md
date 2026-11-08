@@ -1,12 +1,8 @@
 ---
-id: "TheMasteryOfFireAndOmega"
 title: "The tamed light"
 subtitle: "From the Guardian of the Flame to the Omega of Creation"
 description: "A philosophical journey about the taming of fire, the harmony of opposites on the horizon, and perfect reconciliation in Omega."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Feuer", "Evolution", "Philosophie", "Mäßigung", "Harmonie", "Horizont"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Tamed Light
 ## From the Guardian of the Flame to the Omega of Creation

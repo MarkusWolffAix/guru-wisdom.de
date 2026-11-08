@@ -1,12 +1,8 @@
 ---
-id: "UranosGaia"
 title: "Greek mythology"
 subtitle: "The Saga of Uranus, Gaia and Cronus"
 description: "A detailed summary of the ancient creation story: From the creation of the world by Gaia and Uranus, through the betrayal of the Titans, to the epic war of the gods led by Zeus."
-date: 2026-03-31
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Gottheiten", "Mythen", "Uranos", "Gaia", "Kronos", "Titanen"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 # Greek Mythology
 

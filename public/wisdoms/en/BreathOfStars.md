@@ -1,12 +1,8 @@
 ---
-id: "BreathOfStars"
 title: "The Breath of the Stars"
 subtitle: "From the primordial atom to conscious aliveness"
 description: "A journey through cosmic alchemy: How the building blocks of our body and our breath arose from the absolute primordial element hydrogen – and what consciousness has to do with it."
-date: 2026-05-15
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Kosmologie", "Meditation", "Atem", "Transformation", "Alchemie", "Verbundenheit"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 # The Breath of the Stars
 ## From the Primordial Atom to Conscious Aliveness

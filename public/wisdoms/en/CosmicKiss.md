@@ -1,12 +1,8 @@
 ---
-id: "CosmicKiss"
 title: "The cosmic kiss"
 subtitle: "The art of beautifying love and life, and the humility of the flame"
 description: "A poetic reflection on the eternal play of the elements, the fading memory of fire, and our task of continually beautifying this play."
-date: 2026-05-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Elemente", "Schöpfung", "Feuer", "Wasser", "Hingabe", "Vergänglichkeit", "Kosmischer Kuss"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Cosmic Kiss
 ## The Art of Enhancing Love and Life and the Humility of the Flame

@@ -1,12 +1,11 @@
 ---
-id: "Gilgamesch"
 title: "Das Gilgamesch-Epos"
 subtitle: "Die ewige Suche nach Unsterblichkeit"
 description: "Zeitlose Lektionen über Freundschaft, Verlust und den Sinn des Lebens aus der ältesten Geschichte."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Antike", "Uruk", "Unsterblichkeit", "Sintflut"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 # Das Gilgamesch-Epos
 ## Die ewige Suche nach Unsterblichkeit

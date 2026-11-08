@@ -1,12 +1,11 @@
 ---
-id: "LoveOfSound"
 title: "Die Liebe zum Klang"
 subtitle: "Die Anatomie der Seele und der göttliche Gesang"
 description: "Eine philosophische Zusammenfassung über die Kernbotschaften der Bhagavad Gita, Ganeshas Opfer, die spirituelle Anatomie von Knochen und Gelenken sowie das Geheimnis wahrer Stabilität."
 date: 2026-03-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Klang", "Mantra", "Hinduismus", "Bhagavad Gita", "Anatomie", "Knochen", "Gelenke"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
+categories: ["spirituality", "science"]
 ---
 # Die Liebe zum Klang
 ## Die Anatomie der Seele und der göttliche Gesang

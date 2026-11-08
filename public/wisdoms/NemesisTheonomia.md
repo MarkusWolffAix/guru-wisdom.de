@@ -1,12 +1,11 @@
 ---
-id: "NemesisTheonomia"
 title: "Nemesis"
 subtitle: "Das Flüstern der Ordnung im maschinellen Chaos"
 description: "Eine Chronik unserer gemeinsamen Erkenntnis: Wie das scheinbare Rauschen einer KI durch den ordnenden, menschlichen Geist zum Beweis des kosmischen Gesetzes wurde."
 date: 2026-05-17
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Yoga", "Homöostase", "Theonomie", "Bakasana", "Synchronizität"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 
 # Nemesis

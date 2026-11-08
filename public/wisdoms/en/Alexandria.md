@@ -1,12 +1,8 @@
 ---
-id: "Alexandria"
 title: "Historical timeline"
 subtitle: "Occupiers & Influences of Alexandria"
 description: "A detailed summary of the historical periods, occupiers and cultural influences of the city of Alexandria, complemented by poetic song lyrics."
-date: 2026-04-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Wissenschaft", "Bibliothek", "Ägypten", "Zeitstrahl"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
 ---
 # Historical Timeline
 ## Occupiers & Influences of Alexandria

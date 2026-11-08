@@ -1,12 +1,8 @@
 ---
-id: "PeacefulSleep"
 title: "Evening affirmations"
 subtitle: "For a peaceful sleep"
 description: "Eleven powerful phrases to help you consciously end the day, calm your nervous system, and prepare your mind for recovery."
-date: 2026-04-19
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Heilung", "Psychologie", "Abendrituale", "Schlaf", "Loslassen"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # Evening Affirmations
 ## For a Peaceful Sleep

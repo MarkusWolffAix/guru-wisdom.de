@@ -1,12 +1,11 @@
 ---
-id: "JohannesSuccession"
 title: "Die vielen Gesichter des Johannes"
 subtitle: "Eine spirituelle Sukzession"
 description: "Eine tiefgründige Betrachtung der verschiedenen biblischen Träger des Namens Johannes und ihrer Rolle in der Evolution einer spirituellen Lehre."
 date: 2026-05-10
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Johannes", "Sukzession", "Johanneische Schule"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Die vielen Gesichter des Johannes

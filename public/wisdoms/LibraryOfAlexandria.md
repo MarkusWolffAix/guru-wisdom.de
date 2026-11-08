@@ -1,12 +1,11 @@
 ---
-id: "LibraryOfAlexandria"
 title: "Die Bibliotheca Alexandrina"
 subtitle: "Ein metaphorisches Spiegelbild des universellen Wissens"
 description: "Eine detaillierte Zusammenfassung der philosophischen, architektonischen und musikalischen Metaphern der neuen Bibliothek von Alexandria."
 date: 2026-04-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Ägypten", "Wissenschaft", "Bibliothek", "Architektur", "Universalwissen"]
-categories: ["Geschichte & Mythen", "Wissenschaft & Natur"]
+categories: ["history", "science"]
 ---
 
 # Die Bibliotheca Alexandrina

@@ -1,12 +1,8 @@
 ---
-id: "UrSound"
 title: "The global linguistic meaning of "Ur""
 subtitle: "The resonance of creation"
 description: "Connection with the frequency of origin through singing bowls and mantras."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Klang", "Schöpfung", "Urklang", "Frequenz"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 # The Global Linguistic Meaning of "Ur"
 ## The Resonance of Creation

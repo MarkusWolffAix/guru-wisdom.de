@@ -1,12 +1,8 @@
 ---
-id: "UnbrokenEye"
 title: "The undivided eye"
 subtitle: "The clear view and the gentle yoke"
 description: "A reflection on Matthew 6 and 11, the sattvic clarity of pure perception, and the letting go of inner resistance."
-date: 2026-08-23
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Yoga", "Achtsamkeit", "Haplous", "Sattvischer Zustand", "Yuj"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Undivided Eye
 ## Clear Vision and the Gentle Yoke

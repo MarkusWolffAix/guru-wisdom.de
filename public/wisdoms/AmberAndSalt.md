@@ -1,12 +1,11 @@
 ---
-id: "AmberAndSalt"
 title: "Das Kreuz der Ströme"
 subtitle: "Wo Bernstein und Salz sich begegnen"
 description: "Eine essayistische Betrachtung der historischen Überlandrouten, an denen sich das weiße Gold und das Gold des Nordens kreuzen und in Salzburg ihre Vollendung finden."
 date: 2026-10-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Liebe", "Hellweg", "Bernsteinstraße", "Salzburg"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # Das Kreuz der Ströme

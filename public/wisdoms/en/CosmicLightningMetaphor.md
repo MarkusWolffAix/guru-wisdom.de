@@ -1,12 +1,8 @@
 ---
-id: "CosmicLightningMetaphor"
 title: "The Anatomy of a Thunderstorm"
 subtitle: "Nature, spirit and love in the cosmic mirror"
 description: "A profound exploration that combines the physics of lightning with human psychology, the divine spark, and the ancient theory of elements into a universal metaphor."
-date: 2026-03-30
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Feuer", "Kosmos", "Gewitter", "Äther", "Spannungsabbau"]
-categories: ["Symbole & Muster", "Liebe & Verbundenheit"]
 ---
 # The Anatomy of a Thunderstorm
 

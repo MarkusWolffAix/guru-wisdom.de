@@ -1,12 +1,8 @@
 ---
-id: "InnerVitality"
 title: "Vibrant presence"
 subtitle: "The tantric journey to ourselves"
 description: "A deep exploration of Tantra as a path to inner connection, vitality, and the union of lunar, solar, and fire energy."
-date: 2026-09-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Achtsamkeit", "Feuer", "Liebe", "Mondpraxis", "Pranayama"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 
 # Vibrant Presence

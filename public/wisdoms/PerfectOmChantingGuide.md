@@ -1,12 +1,11 @@
 ---
-id: "PerfectOmChantingGuide"
 title: "Der perfekte Om-Chanting Guide"
 subtitle: "Anleitung für die ultimative Klangmeditation"
 description: "Eine umfassende und fundierte Anleitung zum Chanten des perfekten OM (AUM), ergänzt durch die intuitive Smiley-Bogen-Visualisierung und sachliche Hintergründe aus Anatomie, Linguistik und Philosophie."
 date: 2026-03-30
 author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Mantra", "Yoga", "Achtsamkeit", "Chanting", "Sandhi", "Praxis"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Der perfekte Om-Chanting Guide

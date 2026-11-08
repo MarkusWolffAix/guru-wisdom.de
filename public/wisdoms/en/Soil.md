@@ -1,12 +1,8 @@
 ---
-id: "Soil"
 title: "Soil care and regeneration"
 subtitle: "An analysis"
 description: "Summary of the best methods for topsoil management and regenerative agriculture to combat desertification."
-date: 2026-04-04
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Biologie", "Mutterboden", "Wüstenbildung", "Agroforst"]
-categories: ["Wissenschaft & Natur", "Heimat & Herkunft"]
 ---
 # Soil Care and Regeneration
 

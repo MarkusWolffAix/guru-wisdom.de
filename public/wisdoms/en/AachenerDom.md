@@ -1,12 +1,8 @@
 ---
-id: "AachenerDom"
 title: "Aachen Cathedral"
 subtitle: "Built theology and cosmic order"
 description: "A profound examination of the spiritual and architectural symbolism of Aachen Cathedral – from the sacred geometry of the octagon to the inscriptions and the dissolution of matter in light."
-date: 2026-05-10
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Aachen", "Oktogon", "Lebendige Steine", "Barbarossaleuchter", "Karolingisch", "Gebaute Theologie"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Aachen Cathedral
 ## Built Theology and Cosmic Order

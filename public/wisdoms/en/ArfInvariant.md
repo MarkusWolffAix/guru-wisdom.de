@@ -1,12 +1,8 @@
 ---
-id: "ArfInvariant"
 title: "The Arf invariant"
 subtitle: "Mathematics as a reflection of cosmic order"
 description: "How complex mathematical topology helps us understand the deeper structures of the universe."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Topologie", "Invariante", "Ordnung"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # The Arf Invariant
 ## Mathematics as a Reflection of Cosmic Order

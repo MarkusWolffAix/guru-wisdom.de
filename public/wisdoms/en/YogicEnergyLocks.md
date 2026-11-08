@@ -1,12 +1,8 @@
 ---
-id: "YogicEnergyLocks"
 title: "The Gates of Energy"
 subtitle: "The secret of the sacred bandhas"
 description: "An in-depth analysis of the energetic locks for directing prana in the Hatha Yoga tradition, as well as their musical expression."
-date: 2026-05-02
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Indien", "Meditation", "Bandhas", "Sushumna Nadi", "Prana", "Lyrics"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Gates of Energy
 ## The Secret of the Sacred Bandhas

@@ -1,12 +1,8 @@
 ---
-id: "EtymologyOfSenses"
 title: "The body's memory"
 subtitle: "How the etymology of our five senses reveals a forgotten worldview"
 description: "A linguistic-historical journey to the roots of our sensory organs, showing how our ancestors understood perception as an active interaction with the elements."
-date: 2026-10-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Feuer", "Biologie", "Elemente", "Etymologie", "Sinnesorgane", "Lebensatem", "Wahrnehmung"]
-categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
 ---
 
 # The Body's Memory

@@ -1,12 +1,8 @@
 ---
-id: "LightFrequenciesChakras"
 title: "Light and Chakras"
 subtitle: "The resonance of colors in space and mind"
 description: "A consideration of how physical light frequencies resonate with the subtle anatomy of our chakras and awaken deep emotional states."
-date: 2026-08-07
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Biologie", "Liebe", "Farbtemperatur", "Urvertrauen", "Wurzelchakra", "Sakralchakra"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # Light and Chakras
 ## The Resonance of Colors in Space and Mind

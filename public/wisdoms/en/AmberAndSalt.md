@@ -1,12 +1,8 @@
 ---
-id: "AmberAndSalt"
 title: "The Cross of the Rivers"
 subtitle: "Where amber and salt meet"
 description: "An essayistic examination of the historical overland routes where the white gold and the gold of the north intersect and find their culmination in Salzburg."
-date: 2026-10-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Liebe", "Hellweg", "Bernsteinstraße", "Salzburg"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 
 # The Crossroads of Rivers

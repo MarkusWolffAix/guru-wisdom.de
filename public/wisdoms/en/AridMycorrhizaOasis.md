@@ -1,12 +1,8 @@
 ---
-id: "AridMycorrhizaOasis"
 title: "The Wood Wide Web of the desert"
 subtitle: "The art of ecological mycorrhizal cultivation"
 description: "A journey into the Earth's hidden networks: How we can transform the driest soils into vibrant oases through patience and natural barriers."
-date: 2026-06-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Elemente", "Fallenkultur", "Ollas", "Permakultur"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
 ---
 # The Wood Wide Web of the Desert
 ## The Art of Organic Mycorrhizal Cultivation

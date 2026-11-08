@@ -1,12 +1,8 @@
 ---
-id: "MetaIdentity"
 title: "Metamorphosis and Identity"
 subtitle: "On the nature of composition"
 description: "A philosophical treatise on the moment when individual parts merge to form a whole and the role of reason and emotion in this process."
-date: 2026-04-13
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Philosophie", "Identität", "Theseus", "Authentizität"]
-categories: ["Symbole & Muster", "Philosophie"]
 ---
 # Metamorphosis and Identity
 ## On the Nature of Composition

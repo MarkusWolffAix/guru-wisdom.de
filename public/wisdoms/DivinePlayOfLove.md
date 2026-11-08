@@ -1,12 +1,11 @@
 ---
-id: "DivinePlayOfLove"
 title: "Das göttliche Spiel"
 subtitle: "Die Rückkehr zur Urfreude der Liebe"
 description: "Eine Betrachtung über die Vereinigung des Höheren Selbst im göttlichen Spiel durch Liebe, Verantwortung, Hilfsbereitschaft und schöpferische Freude."
 date: 2026-09-24
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Liebe", "Schöpfung", "Klang", "Kreativität", "Urfreude", "Karma Yoga"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Das göttliche Spiel

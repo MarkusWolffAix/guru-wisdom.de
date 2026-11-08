@@ -1,12 +1,8 @@
 ---
-id: "AquilaAquaSynthesis"
 title: "The Eagle of Flowing Light"
 subtitle: "The synthesis of Aquila, Aqua, and the cosmic Ohm"
 description: "A deep investigation into the transformation from the warlike golden eagle to the flowing element of love and its origin in the eternal sound Ohm."
-date: 2026-05-14
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Aachen", "OM", "Liebe", "Ur-Resonanz", "Steinadler", "Aquila"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # The Eagle of Flowing Light
 ## The Synthesis of Aquila, Aqua, and the Cosmic Ohm

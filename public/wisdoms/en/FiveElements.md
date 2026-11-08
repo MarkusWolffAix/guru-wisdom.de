@@ -1,12 +1,8 @@
 ---
-id: "FiveElements"
 title: "The Philosophy of the Five Elements"
 subtitle: "From the breath to the universe"
 description: "Earth, water, fire, air and ether: How elements shape our health and consciousness."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "Elemente", "Natur", "Hinduismus", "Panchamahabhuta", "Tattvas", "Äther"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
 ---
 # The Philosophy of the Five Elements
 ## From Breath to the Universe

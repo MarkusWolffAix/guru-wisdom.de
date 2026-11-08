@@ -1,12 +1,11 @@
 ---
-id: "MorningMotivation"
 title: "The Winning Day"
 subtitle: "Ein Morgenmanifest"
 description: "Zusammenfassung eines inspirierenden morgendlichen Motivations-Manifests und dessen Übersetzung ins Deutsche."
 date: 2026-04-12
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Psychologie", "Morgenroutine", "Dankbarkeit", "Mindset"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # The Winning Day

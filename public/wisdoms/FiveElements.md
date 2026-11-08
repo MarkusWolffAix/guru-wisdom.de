@@ -1,12 +1,11 @@
 ---
-id: "FiveElements"
 title: "Die Philosophie der fünf Elemente"
 subtitle: "Vom Atemzug bis zum Universum"
 description: "Erde, Wasser, Feuer, Luft und Äther: Wie Elemente unsere Gesundheit und unser Bewusstsein formen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "Elemente", "Natur", "Hinduismus", "Panchamahabhuta", "Tattvas", "Äther"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
+categories: ["science", "spirituality"]
 ---
 
 # Die Philosophie der fünf Elemente

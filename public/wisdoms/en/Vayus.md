@@ -1,12 +1,8 @@
 ---
-id: "PranaVayus"
 title: "The five Vayus"
 subtitle: "The subtle winds of life force"
 description: "A profound journey through the five Prana Vayus. We examine in detail the physical and mental imbalances of our life energy and show gentle paths to healing."
-date: 2026-05-02
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Prana", "Achtsamkeit", "Blockaden", "Energiefluss"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # The Five Vayus
 ## The Subtle Winds of Life Force

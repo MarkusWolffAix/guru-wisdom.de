@@ -1,12 +1,11 @@
 ---
-id: "ClaySoundColor"
 title: "Das Geheimnis des Tons"
 subtitle: "Vom Gefäß der Erde bis zum Schwingen des Geistes"
 description: "Wie ein einziges Wort die Brücke zwischen der geformten Materie der Schöpfung, der Nuance des Lichts und der feinsten Resonanz des Klangs schlägt."
 date: 2026-10-19
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Klang", "Schöpfung", "Elemente", "Erde", "Resonanz", "Farbe"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 
 # Das Geheimnis des Tons

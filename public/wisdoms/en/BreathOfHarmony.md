@@ -1,12 +1,8 @@
 ---
-id: "BreathOfHarmony"
 title: "The breath of OM"
 subtitle: "On harmony, leadership, and the network of trust"
 description: "A reflection on the interplay of empathetic listening and formative leadership, which weaves an organic network of trust."
-date: 2026-08-05
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "Yoga", "Liebe", "Führung", "Vertrauensnetz", "Einatmen", "Ausatmen"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Breath of OM
 ## On Harmony, Leadership, and the Web of Trust

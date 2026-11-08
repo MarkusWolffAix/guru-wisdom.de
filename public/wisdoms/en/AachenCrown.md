@@ -1,12 +1,8 @@
 ---
-id: "AachenCrown"
 title: "Charlemagne"
 subtitle: "Heritage and coronation tradition in Aachen"
 description: "A comprehensive summary about Charlemagne, the symbolic bust of Charlemagne and the history of the 31 royal coronations in Aachen Cathedral."
-date: 2026-04-10
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Antike", "Christentum", "Karl der Große", "Mittelalter", "Krönung"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # Charlemagne
 ## Heritage and Coronation Tradition in Aachen

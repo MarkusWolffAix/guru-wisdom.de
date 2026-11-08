@@ -1,12 +1,11 @@
 ---
-id: "PhilosophyOfEridu"
 title: "Die Philosophie von Er-i-du"
 subtitle: "Von Trennung zur Einheit"
 description: "Eine Betrachtung über die mystische Verbindung von Sprache, Ursprung und der Überwindung des Egos hin zur göttlichen Einheit."
 date: 2026-04-06
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Antike", "Philosophie", "Eridu", "Mystik", "Einheit"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Die Philosophie von Er-i-du

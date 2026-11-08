@@ -1,12 +1,11 @@
 ---
-id: "ElderFuthark"
 title: "Das Ältere Futhark"
 subtitle: "Odins Selbstopfer und die Magie der Runen"
 description: "Eine tiefgründige Reise in die Welt des germanischen Runenalphabets und das mythische Opfer Odins am Weltenbaum."
 date: 2026-08-26
 author: "Markus Wolff guru-wisdom.de"
-tags: ["Antike", "Schöpfung", "Yggdrasil", "Runenmagie, "Runen"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+tags: ["Antike", "Schöpfung", "Yggdrasil", "Runenmagie", "Runen"]
+categories: ["spirituality", "history"]
 ---
 
 # Das Ältere Futhark

@@ -1,12 +1,11 @@
 ---
-id: "AlphaOmega"
 title: "Alpha und Omega"
 subtitle: "Der ewige Kreislauf von Anfang und Ende"
 description: "Das Konzept des Unendlichen verstehen und wie Alpha und Omega unsere Sicht auf die Ewigkeit prägen."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Unendlichkeit", "Alpha", "Omega", "Kosmos", "Anfang und Ende"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
+categories: ["symbols", "spirituality"]
 ---
 # Alpha und Omega
 ## Der ewige Kreislauf von Anfang und Ende

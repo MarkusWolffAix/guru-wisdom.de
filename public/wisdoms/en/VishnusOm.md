@@ -1,12 +1,8 @@
 ---
-id: "VishnusOm"
 title: "🕉️ Vishnu and the Song of the Worlds"
 subtitle: "From alpha to eternal struggle"
 description: "How the sacred sound Om is associated with Vishnu for inner stability and meditation."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Vishnu", "Mantra", "Klang", "Erhalter", "Klangschwingung"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # 🕉️ Vishnu and the Song of the Worlds
 ## From Alpha to Eternal Struggle

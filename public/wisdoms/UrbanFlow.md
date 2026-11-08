@@ -1,12 +1,11 @@
 ---
-id: "UrbanFlow"
 title: "Der städtische Fluss"
 subtitle: "Fallrohre als Gefäße des Übergangs"
 description: "Ein praktischer und tiefgründiger Plan zur Verbesserung des urbanen Wasserökosystems durch die Entsiegelung und die Transformation von Fallrohrelementen zu Lebensadern."
 date: 2026-06-12
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Biologie", "Fallrohr", "Schwammstadt", "Regengarten"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 
 # Der städtische Fluss

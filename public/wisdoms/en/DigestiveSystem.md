@@ -1,12 +1,8 @@
 ---
-id: "DigestiveSystem"
 title: "Our digestive system"
 subtitle: "Agni and the Fire of Life"
 description: "Ayurvedic insights into digestion and how a strong digestive fire transforms your health."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Heilung", "Ayurveda", "Verdauung", "Agni", "Stoffwechsel"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
 ---
 # Our Digestive System
 ## Agni and the Fire of Life

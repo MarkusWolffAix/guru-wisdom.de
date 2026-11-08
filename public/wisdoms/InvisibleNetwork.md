@@ -1,12 +1,11 @@
 ---
-id: "InvisibleNetwork"
 title: "Das unsichtbare nützliche Netzwerk"
 subtitle: "Die tiefe Weisheit der Mykorrhiza"
 description: "Eine essayistische Betrachtung der uralten Symbiose zwischen Pflanzen und Pilzen, die uns lehrt, dass wahres Wachstum durch Kooperation, Hingabe und das Loslassen von Kontrolle entsteht."
 date: 2026-06-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Achtsamkeit", "Mykorrhiza", "Wood Wide Web"]
-categories: ["Wissenschaft & Natur", "Heilung & Achtsamkeit"]
+categories: ["science", "healing"]
 ---
 
 # Das unsichtbare nützliche Netzwerk

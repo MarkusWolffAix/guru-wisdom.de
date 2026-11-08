@@ -1,12 +1,8 @@
 ---
-id: "KatschhofDualism"
 title: "Topography of attention"
 subtitle: "Katschhof & The Duality of Eight"
 description: "A profound etymological and topographical study of the existential bridge between attentive care and painful exclusion in historical Aachen."
-date: 2026-05-11
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Antike", "Achtsamkeit", "Pranger", "Rechtsgeschichte", "Acht", "ahta", "âhta" ]
-categories: ["Geschichte & Mythen", "Heilung & Achtsamkeit"]
 ---
 # Topography of Attention
 ## Katschhof & The Duality of Eight

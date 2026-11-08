@@ -1,12 +1,11 @@
 ---
-id: "SunriseSmile"
 title: "Das Land des Lächelns"
 subtitle: "Die innere Sonne des Morgens"
 description: "Eine ganzheitliche Betrachtung darüber, wie das Morgenlicht und ein bewusster Lächeln unseren Tag auf biologischer, psychologischer und spiritueller Ebene prägen."
 date: 2026-08-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Psychologie", "Sonnenaufgang", "Serotonin"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Das Land des Lächelns

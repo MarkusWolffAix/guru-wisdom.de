@@ -1,12 +1,8 @@
 ---
-id: "MandelbrotSet"
 title: "The Apple Man"
 subtitle: "An endless journey through mathematics, art, and spirituality"
 description: "A journey into the Mandelbrot set and what it teaches us about the potential of the mind."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mathematik", "Fraktale", "Unendlichkeit", "Mandelbrot-Menge", "Julia-Menge", "Apfelmännchen"]
-categories: ["Symbole & Muster", "Wissenschaft & Natur"]
 ---
 # The Mandelbrot Set
 ## An Infinite Journey Through Mathematics, Art, and Spirituality

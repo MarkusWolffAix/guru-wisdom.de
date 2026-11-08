@@ -1,12 +1,11 @@
 ---
-id: "BreathOfStars"
 title: "Der Atem der Sterne"
 subtitle: "Vom Ur-Atom zur bewussten Lebendigkeit"
 description: "Eine Reise durch die kosmische Alchemie: Wie aus dem absoluten Ur-Element Wasserstoff die Bausteine unseres Körpers und unseres Atems entstanden sind – und was Bewusstsein damit zu tun hat."
 date: 2026-05-15
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Elemente", "Kosmologie", "Meditation", "Atem", "Transformation", "Alchemie", "Verbundenheit"]
-categories: ["Wissenschaft & Natur", "Spiritualität & Mystik"]
+categories: ["science", "spirituality"]
 ---
 
 # Der Atem der Sterne

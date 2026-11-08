@@ -1,12 +1,11 @@
 ---
-id: "AveMariaBlessed"
 title: "Ave Maria"
 subtitle: "Die heilende Kraft des Gutzusprechens"
 description: "Eine essayistische Reflexion über das Ave Maria, die tröstende Kraft von Kindheitserinnerungen und die tiefe menschliche Bedeutung des Wortes 'gebenedeit'."
 date: 2026-04-18
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Maria", "Christentum", "Klang", "Ave Maria", "Gebenedeit", "Kunstgeschichte"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Ave Maria

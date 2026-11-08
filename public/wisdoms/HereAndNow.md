@@ -1,12 +1,11 @@
 ---
-id: "HereAndNow"
 title: "Das Hier und Jetzt"
 subtitle: "Die transformative Kraft der Gegenwart"
 description: "Warum das Verweilen im gegenwärtigen Moment der einzige Schlüssel zu wahrem inneren Frieden ist."
 date: 2026-03-27
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Meditation", "Gegenwart", "Fluss der Zeit", "Erdung"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
+categories: ["healing", "science"]
 ---
 # Das Hier und Jetzt
 ## Die transformative Kraft der Gegenwart

@@ -1,12 +1,8 @@
 ---
-id: "Urfa"
 title: "Is Urfa the biblical Ur?"
 subtitle: "The first temple of humanity"
 description: "A journey to the oldest temple in the world in Urfa and to our ancient spiritual roots."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Orte", "Religionen", "Historie", "Urfa", "Archäologie"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Is Urfa the Biblical Ur?
 

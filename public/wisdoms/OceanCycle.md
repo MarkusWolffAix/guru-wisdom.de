@@ -1,12 +1,11 @@
 ---
-id: "OceanCycle"
 title: "Das Fundament des Lebens"
 subtitle: "Die Rückkehr der Schalen in den Kreislauf"
 description: "Eine umfassende Betrachtung über die transformative Kraft der Natur, den Aufbau von Austernriffen und die konkrete Vision eines zirkulären Netzwerks zwischen der Gastronomie Hamburgs und der Nordsee."
 date: 2026-07-31
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Schöpfung", "Hamburg", "Austernschalen", "Kreislaufwirtschaft", "WWF"]
-categories: ["Wissenschaft & Natur", "Symbole & Muster"]
+categories: ["science", "symbols"]
 ---
 
 # Das Fundament des Lebens

@@ -1,12 +1,11 @@
 ---
-id: "NunKiEridu"
 title: "NUN.KI"
 subtitle: "Die Herabkunft der göttlichen Ordnung und das Erwachen von Eridu"
 description: "Eine metaphysische und konzeptionelle Analyse der sumerischen Ur-Archetypen, der Stadt Eridu und der Herabkunft des Bewusstseins."
 date: 2026-05-16
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Schöpfung", "NUN.KI", "Herabkunft", "Enki"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
+categories: ["history", "symbols"]
 ---
 
 # NUN.KI

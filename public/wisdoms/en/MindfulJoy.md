@@ -1,12 +1,8 @@
 ---
-id: "MindfulJoy"
 title: "Mindfulness in small things"
 subtitle: "Happiness in the Big Picture"
 description: "A philosophical reflection on mindfulness in the smallest moments of everyday life."
-date: 2026-04-12
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Psychologie", "Lebenskunst", "Alltag", "Glück"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
 ---
 # Mindfulness in Small Things
 

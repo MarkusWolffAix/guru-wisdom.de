@@ -1,12 +1,8 @@
 ---
-id: "LoveWithoutEgo"
 title: "The River of Love"
 subtitle: "From protective distance to true closeness"
 description: "A reflection on how letting go of the ego and a true understanding of respect allow the natural flow of love."
-date: 2026-11-02
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Psychologie", "Ego", "Würde", "Distanz"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 
 # The Flow of Love

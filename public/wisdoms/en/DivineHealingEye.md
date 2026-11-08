@@ -1,12 +1,8 @@
 ---
-id: "DivineHealingEye"
 title: "The Healing of the Divine"
 subtitle: "From the illusion of suffering to joyful realization"
 description: "How the divine overcame the virus of problem-creation and how sincere joy in nature and one's neighbor became the true source of science and knowledge."
-date: 2026-09-10
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Wissenschaft", "Kosmische Grippe", "Das Auge", "Wissensfreude"]
-categories: ["Spiritualität & Mystik", "Wissenschaft & Natur"]
 ---
 # The Healing of the Divine
 ## From the Illusion of Suffering to Joyful Realization

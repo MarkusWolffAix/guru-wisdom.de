@@ -1,12 +1,8 @@
 ---
-id: "LeavesOfTubaSalam"
 title: "The Tuba Tree"
 subtitle: "A reflection on paradise in Islam"
 description: "A consideration of the Islamic paradise (Jannah) beyond material concepts, leading to a deep spiritual level of cosmic peace and inner unity."
-date: 2026-05-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Sufismus", "Dschanna", "Tuba-Baum", "Salam", "Mystik", "Frieden"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Tuba Tree
 ## A Reflection on Paradise in Islam

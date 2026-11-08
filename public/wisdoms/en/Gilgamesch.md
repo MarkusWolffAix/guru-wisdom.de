@@ -1,12 +1,8 @@
 ---
-id: "Gilgamesch"
 title: "The Epic of Gilgamesh"
 subtitle: "The eternal quest for immortality"
 description: "Timeless lessons about friendship, loss, and the meaning of life from the oldest history."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Mesopotamien", "Antike", "Uruk", "Unsterblichkeit", "Sintflut"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Epic of Gilgamesh
 ## The Eternal Quest for Immortality

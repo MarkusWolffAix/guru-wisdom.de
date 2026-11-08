@@ -1,12 +1,8 @@
 ---
-id: "OmSymbol"
 title: "The Om symbol"
 subtitle: "A journey through consciousness"
 description: "Deciphering the curves and points of the sacred Om symbol and its Turiya meaning."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Symbole", "Hinduismus", "Yoga", "Symbolik", "Heilige Geometrie"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # The Om Symbol
 ## A Journey Through Consciousness

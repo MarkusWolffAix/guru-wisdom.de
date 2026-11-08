@@ -1,12 +1,11 @@
 ---
-id: "SacredSoundAumAudio"
 title: "Der Barbier, das Feuer am Ohr und das Geheimnis des Hörens"
 subtitle: "Wie der Atem das Feuer durch ein O entfacht und im Au am Ohr unsere Wahrnehmung erwacht"
 description: "Eine Parabel über den Barbier, das Anpusten der Glut und das Feuer am Ohr – verknüpft mit dem Mantra Om (Aum) und der sprachlichen Wurzel von Audio."
 date: 2026-11-03
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Bewusstsein", "Achtsamkeit", "Resonanz", "Weisheit", "Mantra", "Sanskrit", "Etymologie", "Urklang"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
+categories: ["spirituality", "symbols"]
 ---
 
 # Der Barbier, das Feuer am Ohr und das Geheimnis des Hörens

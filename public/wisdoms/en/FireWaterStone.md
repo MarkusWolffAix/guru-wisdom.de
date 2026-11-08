@@ -1,12 +1,8 @@
 ---
-id: "FireWaterStone"
 title: "The Alchemy of Bluestones"
 subtitle: "Between fire and water"
 description: "A philosophical journey from the cosmic rings at Stonehenge to the primeval seas of Aachen – and what they teach us about transformation and rootedness."
-date: 2026-08-21
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Wasser", "Feuer", "Elemente", "Stonehenge", "Blaustein", "Dualität"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # The Alchemy of Bluestones
 ## Between Fire and Water

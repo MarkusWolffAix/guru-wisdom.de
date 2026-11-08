@@ -1,12 +1,8 @@
 ---
-id: "ReadReflection"
 title: "The mnemonic device"
 subtitle: "From a detour to self-discovery"
 description: "A reflection on the origin of the mnemonic device and how the reflection of our fear can lead to the deepest insight."
-date: 2026-09-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Eselsbruecke", "Spiegelbild", "Wortspiel"]
-categories: ["Geschichte & Mythen", "Symbole & Muster"]
 ---
 # The Mnemonic Device
 ## From Detours to Self-Knowledge

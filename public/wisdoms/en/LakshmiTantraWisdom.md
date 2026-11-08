@@ -1,12 +1,8 @@
 ---
-id: "LakshmiTantraWisdom"
 title: "The Lakshmi Tantra"
 subtitle: "The union of pleasure and liberation"
 description: "A profound reflection on tantric philosophy, the primal feminine power, Kundalini, and the harmony of worldliness and spirituality."
-date: 2026-04-24
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Gottheiten", "Liebe", "Tantra", "Lakshmi", "Kundalini", "Ananda"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Lakshmi Tantra
 ## The Union of Pleasure and Liberation

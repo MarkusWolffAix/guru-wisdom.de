@@ -1,12 +1,11 @@
 ---
-id: "CosmicKiss"
 title: "Der kosmische Kuss"
 subtitle: "Die Kunst, die Liebe und das Leben zu verschönern und die Demut der Flamme"
 description: "Eine poetische Betrachtung über das ewige Spiel der Elemente, das verblassende Gedächtnis des Feuers und unsere Aufgabe, dieses Spiel stetig zu verschönern."
 date: 2026-05-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Elemente", "Schöpfung", "Feuer", "Wasser", "Hingabe", "Vergänglichkeit", "Kosmischer Kuss"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Der kosmische Kuss

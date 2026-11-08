@@ -1,12 +1,11 @@
 ---
-id: "EgoResistanceVoid"
 title: "Das Ego im Gespräch"
 subtitle: "Der Blitzableiter ins Leere"
 description: "Eine Betrachtung über die Rolle des Egos in Diskussionen, die Mechanik des inneren Widerstands und die befreiende Kraft, emotionale Energie ins Leere laufen zu lassen."
 date: 2026-08-08
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Blitzableiter", "Leere"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
+categories: ["healing", "spirituality"]
 ---
 
 # Das Ego im Gespräch

@@ -1,12 +1,8 @@
 ---
-id: "BrahmaAndShakti"
 title: "The Cosmic Order"
 subtitle: "The interplay of Brahma and Shakti"
 description: "A profound philosophical reflection on the universal law of consciousness and energy, structure and flow, personified by Brahma and Shakti."
-date: 2026-04-26
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Hinduismus", "Schöpfung", "Gottheiten", "Vedanta", "Tantra", "Bewusstsein", "Energie"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Cosmic Order
 ## The Interplay of Brahma and Shakti

@@ -1,12 +1,8 @@
 ---
-id: "LoveOfCows"
 title: "The Gift of the Three Cows"
 subtitle: "A story about love and memory"
 description: "Summary of a creative project about giving away three Indian cows, capturing the deep emotional bond through image, music and text."
-date: 2026-04-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Indien", "Erinnerung", "Loslassen", "Kunstprojekt"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
 ---
 # The Gift of the Three Cows
 ## A Story About Love and Remembrance

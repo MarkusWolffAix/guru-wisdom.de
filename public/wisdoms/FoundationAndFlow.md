@@ -1,12 +1,11 @@
 ---
-id: "FoundationAndFlow"
 title: "Die Balance der Liebe"
 subtitle: "Fundament und Fluss"
 description: "Eine philosophische Betrachtung über das Spannungsfeld zwischen der Erschaffung eines sicheren Fundaments und dem Erleben von unbeschwerter Leichtigkeit in Beziehungen."
 date: 2026-08-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Yoga", "Raum-Halten", "Verantwortlicher Spaß", "Zynismus"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Die Balance der Liebe

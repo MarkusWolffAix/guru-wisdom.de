@@ -1,12 +1,11 @@
 ---
-id: "ConsciousPause"
 title: "Die Kunst des bewussten Verweilens"
 subtitle: "Praktischer Leitfaden für aktives Genießen am Schreibtisch"
 description: "Ein konkretes Handout zur Integration von Mikropausen, Asanas, Pranayama und gezielter musikalischer Begleitung in den lösungsorientierten Arbeitsalltag."
 date: 2026-08-29
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Yoga", "Pranayama", "Ujjayi", "Klassische Musik", "Fokus"]
-categories: ["Heilung & Achtsamkeit"]
+categories: ["healing"]
 ---
 
 # Die Kunst des bewussten Verweilens

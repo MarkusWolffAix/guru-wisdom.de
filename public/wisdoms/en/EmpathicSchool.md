@@ -1,12 +1,8 @@
 ---
-id: "EmpathicSchool"
 title: "The School of Love"
 subtitle: "Soft structures and learning through feeling"
 description: "A holistic vision for a school system based on empathy, intrinsic motivation, soft structures, and the playful experience of learning."
-date: 2026-09-01
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Wissenschaft", "Yoga", "Weiche Strukturen", "Theaterpädagogik", "Intrinsische Motivation"]
-categories: ["Liebe & Verbundenheit", "Wissenschaft & Natur"]
 ---
 # The School of Love
 ## Soft Structures and Learning Through Feeling

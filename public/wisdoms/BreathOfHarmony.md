@@ -1,12 +1,11 @@
 ---
-id: "BreathOfHarmony"
 title: "Der Atem des OM"
 subtitle: "Über Harmonie, Führung und das Netz des Vertrauens"
 description: "Eine Reflexion über das Zusammenspiel von empathischem Zuhören und formender Führung, das ein organisches Netz des Vertrauens webt."
 date: 2026-08-05
 author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "Yoga", "Liebe", "Führung", "Vertrauensnetz", "Einatmen", "Ausatmen"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Der Atem des OM

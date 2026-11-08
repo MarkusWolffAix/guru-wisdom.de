@@ -1,12 +1,11 @@
 ---
-id: "OnegliaEchoes"
 title: "Piazza San Giovanni"
 subtitle: "Durch die Echos der Zeit zum inneren Neuanfang"
 description: "Eine Reflexion über die Piazza San Giovanni in Oneglia, wo das historische Echo eines alten Wandgemäldes auf den spirituellen Ruf des Johannes und die rauen Klänge Paolo Nutinis trifft."
 date: 2026-05-10
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Aachen", "Elemente", "Oneglia", "Wandgemälde", "Paolo Nutini", "Offenbarung"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
+categories: ["spirituality", "history"]
 ---
 
 # Piazza San Giovanni

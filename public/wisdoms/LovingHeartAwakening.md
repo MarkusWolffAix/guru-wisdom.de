@@ -1,12 +1,11 @@
 ---
-id: "LovingHeartAwakening"
 title: "Die Taufe am Jordan"
 subtitle: "Das Erwachen des liebenden Herzens"
 description: "Eine tiefe Betrachtung der Taufe Jesu als radikale Rückbesinnung auf die lebendige Essenz des Judentums und die universelle Kraft der Liebe."
 date: 2026-05-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Christentum", "Liebe", "Teschuwa", "JordanTaufe", "Mystik", "JohannesDerTäufer"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Die Taufe am Jordan

@@ -1,12 +1,8 @@
 ---
-id: "HiddenWaters"
 title: "The hidden current"
 subtitle: "From the unity of the forest to the depths of the worm"
 description: "A consideration of Aachen's underground waters and their deep symbolic meaning for creation and spirit."
-date: 2026-10-06
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Schöpfung", "Elemente", "Beverbach", "Gillesbach", "Wurm"]
-categories: ["Heimat & Herkunft", "Symbole & Muster"]
 ---
 
 # The Hidden Current

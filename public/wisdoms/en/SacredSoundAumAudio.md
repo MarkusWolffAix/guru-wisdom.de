@@ -1,12 +1,8 @@
 ---
-id: "SacredSoundAumAudio"
 title: "The Barber, the Fire in the Ear, and the Secret of Hearing"
 subtitle: "Like breath ignites fire through an O, and in the Au at the ear our perception awakens."
 description: "A parable about the barber, blowing on the embers and the fire at the ear – linked with the mantra Om (Aum) and the linguistic root of audio."
-date: 2026-11-03
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Bewusstsein", "Achtsamkeit", "Resonanz", "Weisheit", "Mantra", "Sanskrit", "Etymologie", "Urklang"]
-categories: ["Spiritualität & Mystik", "Symbole & Muster"]
 ---
 
 # The Barber, the Fire at the Ear, and the Secret of Hearing

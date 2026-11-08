@@ -1,12 +1,11 @@
 ---
-id: "ButterAlchemy"
 title: "Die Alchemie der Butter"
 subtitle: "Das Erwachen durch beständige Reibung"
 description: "Eine philosophische Betrachtung über den Prozess des Butterns als Metapher für spirituelle Praxis, das Überwinden des Egos und das Freilegen der inneren Buddha-Natur."
 date: 2026-09-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Elemente", "Tapas", "Phasenumkehr", "Dialektik"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Die Alchemie der Butter

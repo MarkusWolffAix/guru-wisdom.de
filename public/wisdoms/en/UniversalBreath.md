@@ -1,12 +1,8 @@
 ---
-id: "UniversalBreath"
 title: "Universal breathing"
 subtitle: "A master plan to heal the Earth"
 description: "An essayistic synthesis of ecological regeneration, the wisdom of ancient civilizations, and the formative consciousness space of Ma."
-date: 2026-06-08
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Biologie", "Liebe", "Mesopotamien", "Prinzip Ma", "Baum-Zeit", "Biotische Pumpe"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # Universal Breathing
 ## A Master Plan for Healing the Earth

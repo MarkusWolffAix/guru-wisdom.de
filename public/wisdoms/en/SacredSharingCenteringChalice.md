@@ -1,12 +1,8 @@
 ---
-id: "SharedCenteringChalice"
 title: "The common chalice"
 subtitle: "On the end of division and the power of the center"
 description: "A philosophical and cultural-historical examination of the transformation of communal rituals, the myth of the Grail, stone vessels of antiquity, and the healing return to the shared center."
-date: 2026-06-14
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Christentum", "Antike", "Heiliger Gral", "Mütterliche Schöpferkraft", "Halacha"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
 ---
 # The Shared Chalice
 ## On the End of Division and the Power of the Center

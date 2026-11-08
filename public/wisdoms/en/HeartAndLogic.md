@@ -1,12 +1,8 @@
 ---
-id: "HeartAndLogic"
 title: "The Servant of the Heart"
 subtitle: "Why the mind should not belong to itself"
 description: "An essayistic reflection on the idea that the human mind and all its abstractions only possess true value when they serve love and the heart."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Liebe", "Philosophie", "Verstand", "Abstraktion", "Systemkritik"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
 ---
 # The Servant of the Heart
 ## Why the Mind Must Not Belong to Itself

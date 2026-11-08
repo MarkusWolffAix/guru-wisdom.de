@@ -1,12 +1,11 @@
 ---
-id: "ReversingRome"
 title: "Rom im Spiegel"
 subtitle: "Die innere Rückkehr zu Liebe und Frieden"
 description: "Wie die Umkehrung der Namen Roms in alten Sprachen einen tiefen spirituellen Pfad von äußerer Macht zu innerem Frieden, Liebe und Licht offenbart."
 date: 2026-05-23
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Antike", "Schöpfung", "Amor", "Emor", "Sprachmystik"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
+categories: ["symbols", "spirituality"]
 ---
 
 # Rom im Spiegel

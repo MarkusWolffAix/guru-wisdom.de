@@ -1,12 +1,8 @@
 ---
-id: "BridgeToHeart"
 title: "The bridge to the heart"
 subtitle: "How we can reconcile mind and emotion"
 description: "Practical ways to bridge the gap between rational thinking and deep wisdom of the heart."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Herz-Verstand-Kohärenz", "Emotionen"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Bridge to the Heart
 ## How We Reconcile Mind and Emotion

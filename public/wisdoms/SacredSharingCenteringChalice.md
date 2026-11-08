@@ -1,12 +1,11 @@
 ---
-id: "SharedCenteringChalice"
 title: "Der gemeinsame Kelch"
 subtitle: "Vom Ende der Trennung und der Kraft der Mitte"
 description: "Eine philosophisch-kulturgeschichtliche Betrachtung über den Wandel von gemeinschaftlichen Ritualen, den Mythos des Grals, steinerne Gefäße der Antike und die heilende Rückkehr zur geteilten Mitte."
 date: 2026-06-14
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Christentum", "Antike", "Heiliger Gral", "Mütterliche Schöpferkraft", "Halacha"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
+categories: ["love", "symbols"]
 ---
 
 # Der gemeinsame Kelch

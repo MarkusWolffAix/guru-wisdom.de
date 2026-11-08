@@ -1,12 +1,11 @@
 ---
-id: "JumpForMyLove"
 title: "Der Sprung ins Ungewisse"
 subtitle: "Mut zur Verletzlichkeit in der Liebe"
 description: "Eine Reflexion über das Wagnis der Liebe, das Aufgeben von Kontrolle und den Mut, sich fallen zu lassen."
 date: 2026-04-26
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Mut", "Verletzlichkeit", "Komfortzone"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
+categories: ["love", "healing"]
 ---
 
 # Der Sprung ins Ungewisse

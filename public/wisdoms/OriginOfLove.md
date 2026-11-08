@@ -1,12 +1,11 @@
 ---
-id: "OriginOfLove"
 title: "Ursprung des Seins"
 subtitle: "Die Essenz von Liebe, Gaia und Abstraktion"
 description: "Eine Reflexion über die Liebe als universeller Urgrund, die Erde (Gaia) als Gebärmutter des Geistes und die Abstraktion als Werkzeug im Umgang mit dem Leben."
 date: 2026-06-12
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Gaia", "Schöpfung", "Abstraktion", "Fraktale"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
+categories: ["spirituality", "love"]
 ---
 
 # Ursprung des Seins

@@ -1,12 +1,11 @@
 ---
-id: "HabsburgLegacyRudolf"
 title: "Rudolf I. von Habsburg"
 subtitle: "Der Aufstieg einer Dynastie"
 description: "Eine umfassende Zusammenfassung über das Leben Rudolfs I., seinen Aufstieg zur Macht, wichtige historische Orte und sein musikalisches Denkmal."
 date: 2026-04-11
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Historie", "Europa", "Rudolf I", "Habsburg", "Steiermark", "Speyer"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
+categories: ["history", "home"]
 ---
 
 # Rudolf I. von Habsburg

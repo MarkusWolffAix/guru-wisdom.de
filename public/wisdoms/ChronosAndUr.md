@@ -1,12 +1,11 @@
 ---
-id: "ChronosAndUr"
 title: "Ur und Uhr"
 subtitle: "Die Dualität von Zeit und ewigem Ursprung"
 description: "Eine Betrachtung über die mythologische und sprachliche Verbindung von messbarer Zeit und dem zeitlosen Zustand des Seins."
 date: 2026-11-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Unendlichkeit", "Achtsamkeit", "Kronos", "Chronos", "Uranus"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # Ur und Uhr

@@ -1,12 +1,11 @@
 ---
-id: "CosmicArchiveOfLove"
 title: "Das Archiv des Lichts"
 subtitle: "Die kosmische Geometrie der Liebe"
 description: "Eine essayistische Betrachtung über die Form des Universums, in der das Licht ferner Sterne als Träger alter Geschichten und unendlicher Liebe verstanden wird."
 date: 2026-10-01
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Schöpfung", "Unendlichkeit", "Lichtgeschwindigkeit", "Sternstunden", "Kosmische Geometrie"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Das Archiv als Lichts

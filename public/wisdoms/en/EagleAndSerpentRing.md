@@ -1,12 +1,8 @@
 ---
-id: "EagleAndSerpentRing"
 title: "The unity of opposites"
 subtitle: "The Eagle, the Serpent and the Ring of Eternity"
 description: "A profound exploration of the ancient symbol of the eagle and the serpent, their connection, and the overcoming of duality through the Ring of Eternal Return."
-date: 2026-06-06
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Yoga", "Unendlichkeit", "Zarathustra", "Ouroboros", "Mexiko", "Prana", "Nietzsche", "Adler", "Schlange"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # The Unity of Opposites
 ## The Eagle, the Serpent, and the Ring of Eternity

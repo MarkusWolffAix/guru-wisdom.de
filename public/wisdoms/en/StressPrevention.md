@@ -1,12 +1,8 @@
 ---
-id: "StressPrevention"
 title: "Stress prevention"
 subtitle: "Ancient wisdom for the modern world"
 description: "Holistic techniques from yoga and Ayurveda to tackle stress at its root."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Achtsamkeit", "Heilung", "Stressprävention", "Ruhe", "Resilienz"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
 ---
 # Stress Prevention
 ## Ancient Wisdom for the Modern World

@@ -1,12 +1,8 @@
 ---
-id: "AlchemyOfNinety"
 title: "The philosophy of the loving 90%"
 subtitle: "Transformation and focus in everyday life"
 description: "A philosophical reflection on achieving goals through empathy, moving away from perfectionism, and the daily transformation of obstacles into love."
-date: 2026-05-18
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Achtsamkeit", "Selbstliebe", "Kleine Geschichten"]
-categories: ["Liebe & Verbundenheit", "Heilung & Achtsamkeit"]
 ---
 # The Philosophy of Loving 90%
 ## Transformation and Focus in Everyday Life

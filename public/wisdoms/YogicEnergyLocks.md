@@ -1,12 +1,11 @@
 ---
-id: "YogicEnergyLocks"
 title: "Die Tore der Energie"
 subtitle: "Das Geheimnis der heiligen Bandhas"
 description: "Eine tiefgehende Analyse der energetischen Verschlüsse zur Lenkung des Prana in der Hatha-Yoga-Tradition sowie deren musikalischer Ausdruck."
 date: 2026-05-02
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Yoga", "Indien", "Meditation", "Bandhas", "Sushumna Nadi", "Prana", "Lyrics"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
+categories: ["spirituality", "healing"]
 ---
 
 # Die Tore der Energie

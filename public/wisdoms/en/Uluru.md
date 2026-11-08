@@ -1,12 +1,8 @@
 ---
-id: "Uluru"
 title: "Uluru Ayers Rock"
 subtitle: "A monument to radical empathy"
 description: "A comprehensive collection of knowledge that links geological facts with the radical empathy of the Anangu culture and spiritual connection."
-date: 2026-04-16
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Erde", "Orte", "Mythen", "Uluru", "Tjukurpa", "Mala", "Traumzeit"]
-categories: ["Wissenschaft & Natur", "Geschichte & Mythen"]
 ---
 # Uluru Ayers Rock
 

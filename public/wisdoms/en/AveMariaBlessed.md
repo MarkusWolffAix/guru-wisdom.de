@@ -1,12 +1,8 @@
 ---
-id: "AveMariaBlessed"
 title: "Ave Maria"
 subtitle: "The healing power of kind words"
 description: "An essayistic reflection on the Ave Maria, the comforting power of childhood memories, and the profound human meaning of the word 'blessed'."
-date: 2026-04-18
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Maria", "Christentum", "Klang", "Ave Maria", "Gebenedeit", "Kunstgeschichte"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
 ---
 # Ave Maria
 ## The Healing Power of Words of Comfort

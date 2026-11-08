@@ -1,12 +1,8 @@
 ---
-id: "SecuringDivineInsights"
 title: "Legacy of Love"
 subtitle: "Preserving knowledge for future creations"
 description: "A reflection on the sacred cycle of creation and the methods by which wisdom gained can be secured as a spark of light for future cycles."
-date: 2026-04-22
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Philosophie", "Weisheit", "Ewigkeit", "Spirituelle Archivierung"]
-categories: ["Heilung & Achtsamkeit", "Spiritualität & Mystik"]
 ---
 # Legacy of Love
 ## Preserving Knowledge for Future Creations

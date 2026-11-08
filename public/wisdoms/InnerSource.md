@@ -1,12 +1,11 @@
 ---
-id: "InnerSource"
 title: "Die innere Karstquelle"
 subtitle: "Vom harten Stein zum fließenden Leben"
 description: "Eine Reflexion über die verborgenen Quellbereiche unseres Lebens und die Verwandlung harter Widerstände in fließende Lebenskraft."
 date: 2026-04-19
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Psychologie", "Heilung", "Karstquelle", "Resilienz", "Naturmetapher"]
-categories: ["Heilung & Achtsamkeit", "Geschichte & Mythen"]
+categories: ["healing", "history"]
 ---
 
 # Die innere Karstquelle

@@ -1,12 +1,11 @@
 ---
-id: "NunOrigin"
 title: "NUN"
 subtitle: "Der absolute Ursprung in Ägypten und Mesopotamien"
 description: "Eine philosophische Betrachtung des Begriffs NUN als absoluter Ursprung, unter Klärung der linguistischen Unabhängigkeit zwischen dem ägyptischen Urgewässer und dem sumerischen Nun.ki . Und NUN 😀 ?"
 date: 2026-05-17
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Mesopotamien", "Schöpfung", "Nun", "Eridu"]
-categories: ["Geschichte & Mythen", "Spiritualität & Mystik"]
+categories: ["history", "spirituality"]
 ---
 
 # NUN

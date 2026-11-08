@@ -1,12 +1,11 @@
 ---
-id: "LoveAndAbstraction"
 title: "Liebe und Abstraktion"
 subtitle: "Der Verstand als Diener des Herzens"
 description: "Eine philosophische Reise über die Dynamik von Liebe, Abstraktion, Empathie und Perspektivenwechsel."
 date: 2026-04-07
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Philosophie", "Psychologie", "Empathie", "Perspektivenwechsel"]
-categories: ["Liebe & Verbundenheit", "Symbole & Muster"]
+categories: ["love", "symbols"]
 ---
 
 # Liebe und Abstraktion

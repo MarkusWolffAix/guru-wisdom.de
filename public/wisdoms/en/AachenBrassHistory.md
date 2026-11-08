@@ -1,12 +1,8 @@
 ---
-id: "AachenHistorySprings"
 title: "The pulse under the plaster"
 subtitle: "Aachen: From steaming springs to the center of power"
 description: "A journey through the centuries of Aachen's city history – from the ancient thermal springs to Charlemagne and the city's unwavering soul."
-date: 2026-05-05
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Aachen", "Karl der Große", "Oktogon", "Thermalquellen", "Geschichte", "Kaiserstadt"]
-categories: ["Geschichte & Mythen", "Heimat & Herkunft"]
 ---
 # The Pulse Beneath the Pavement
 ## Aachen: From Steaming Springs to the Center of Power

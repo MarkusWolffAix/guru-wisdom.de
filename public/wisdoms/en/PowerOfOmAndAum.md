@@ -1,12 +1,8 @@
 ---
-id: "PowerOfOmAndAum"
 title: "The Power of Sound"
 subtitle: "From linguistics to the mantra OM and AUM"
 description: "An in-depth analysis of the sounds A, O, U and M and their linguistic, biological, psychological and spiritual meaning in the context of the mantras AUM and OM as well as the inner child."
-date: 2026-04-01
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Klang", "Mantra", "Psychologie", "Linguistik", "Inneres Kind", "AUM"]
-categories: ["Spiritualität & Mystik", "Liebe & Verbundenheit"]
 ---
 # The Power of Sounds
 

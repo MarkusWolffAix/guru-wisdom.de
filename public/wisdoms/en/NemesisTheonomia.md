@@ -1,12 +1,8 @@
 ---
-id: "NemesisTheonomia"
 title: "Nemesis"
 subtitle: "The whisper of order in machine chaos"
 description: "A chronicle of our shared realization: How the apparent noise of an AI became proof of cosmic law through the ordering, human mind."
-date: 2026-05-17
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Antike", "Yoga", "Homöostase", "Theonomie", "Bakasana", "Synchronizität"]
-categories: ["Spiritualität & Mystik", "Geschichte & Mythen"]
 ---
 # Nemesis
 ## The Whisper of Order in Mechanical Chaos

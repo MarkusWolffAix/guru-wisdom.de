@@ -1,12 +1,8 @@
 ---
-id: AlchemiOfForgiveness
 title: "The Alchemy of Forgiveness"
 subtitle: "Stopping the absurd cycle"
 description: "A philosophical and practical reflection on forgiveness, conscious questioning, and the power of acceptance as ways out of inner constriction."
-date: 2026-05-21
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Achtsamkeit", "Liebe", "Christentum", "Kreislauf", "Transformation", "Akzeptanz"]
-categories: ["Heilung & Achtsamkeit", "Liebe & Verbundenheit"]
 ---
 # The Alchemy of Forgiveness
 ## Breaking the Absurd Cycle

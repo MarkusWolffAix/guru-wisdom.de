@@ -1,12 +1,11 @@
 ---
-id: "UnityOfLove"
 title: "Die Illusion der Getrenntheit"
 subtitle: "Gefühle als Spiegel der allumfassenden Liebe"
 description: "Eine Reflexion darüber, wie unsere Emotionen als direkter Kompass fungieren, der uns unsere untrennbare Verbundenheit mit der universellen Liebe aufzeigt."
 date: 2026-08-25
 author: "Markus Wolff guru-wisdom.de"
 tags: ["Liebe", "Psychologie", "Getrenntheit", "Verbundenheit", "Widerstand"]
-categories: ["Liebe & Verbundenheit", "Spiritualität & Mystik"]
+categories: ["love", "spirituality"]
 ---
 
 # Die Illusion der Getrenntheit

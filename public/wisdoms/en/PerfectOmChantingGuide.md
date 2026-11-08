@@ -1,12 +1,8 @@
 ---
-id: "PerfectOmChantingGuide"
 title: "The perfect Om chanting guide"
 subtitle: "Instructions for the ultimate sound meditation"
 description: "A comprehensive and well-founded guide to chanting the perfect OM (AUM), supplemented by the intuitive smiley-bow visualization and factual background information from anatomy, linguistics and philosophy."
-date: 2026-03-30
-author: "Markus Wolff guru-wisdom.de"
 tags: ["OM", "AUM", "Mantra", "Yoga", "Achtsamkeit", "Chanting", "Sandhi", "Praxis"]
-categories: ["Spiritualität & Mystik", "Heilung & Achtsamkeit"]
 ---
 # The Perfect Om Chanting Guide
 ## Instructions for the Ultimate Sound Meditation

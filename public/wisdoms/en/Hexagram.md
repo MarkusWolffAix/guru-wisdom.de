@@ -1,12 +1,8 @@
 ---
-id: "Hexagram"
 title: "The hexagram"
 subtitle: "The sacred geometry of balance"
 description: "The hidden symbolism of the hexagram as a union of masculine and feminine energies."
-date: 2026-03-27
-author: "Markus Wolff guru-wisdom.de"
 tags: ["Symbole", "Religionen", "Hexagramm", "Geometrie", "Balance", "Davidstern"]
-categories: ["Symbole & Muster", "Spiritualität & Mystik"]
 ---
 # The Hexagram
 ## The Sacred Geometry of Balance
