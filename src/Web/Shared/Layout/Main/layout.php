@@ -12,9 +12,10 @@ declare(strict_types=1);
  * @var string $environment
  * @var string $language
  * @var \Yiisoft\Translator\TranslatorInterface $translator
- * @var array<string, mixed>|null $languageSwitch Data for the DE | EN switch (LanguageSwitcherHelper), null = switch off.
+ * @var \App\Web\Shared\LanguageSwitchHolder|array<string, mixed>|null $languageSwitch Holder with the DE | EN switch data (array or null = switch off).
  */
 
+use App\Web\Shared\LanguageSwitchHolder;
 use App\Web\Shared\Layout\Main\MainAsset;
 use Yiisoft\Html\Html;
 use Yiisoft\Bootstrap5\Nav;
@@ -23,7 +24,11 @@ use Yiisoft\Bootstrap5\NavBar;
 
 // $assetManager->register(MainAsset::class);
 $lang = $translator->getLocale(); 
-$languageSwitch = $languageSwitch ?? null;
+// The view parameter is the shared holder object that LocaleMiddleware fills; unwrap it
+if ($languageSwitch instanceof LanguageSwitchHolder) {
+    $languageSwitch = $languageSwitch->get();
+}
+$languageSwitch = is_array($languageSwitch) ? $languageSwitch : null;
 
 // hreflang pair, only for pages that exist in both languages
 if (is_array($languageSwitch) && is_array($languageSwitch['alternate'] ?? null)) {
