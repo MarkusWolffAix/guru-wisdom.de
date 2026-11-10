@@ -4,7 +4,7 @@ subtitle: "The gift of not knowing"
 description: "A reflection on the ancient legend of the angel who takes cosmic knowledge from newborns so that they can experience earthly life."
 tags: ["Ancient times", "Love", "psychology", "Philtrum", "Angel Laila", "Soul knowledge"]
 ---
-✨The Kiss of Forgetting
+# ✨The Kiss of Oblivion 
 ## The Gift of Not Knowing
 
 Before a child sees the light of day, ancient legends tell us, its soul rests in a place of absolute knowledge. In this heavenly stillness, the unborn know every secret of the universe. They understand the movement of the stars, the whisper of the wind, and the true meaning of life. But this all-encompassing knowledge is too heavy and too immense for earthly existence.
