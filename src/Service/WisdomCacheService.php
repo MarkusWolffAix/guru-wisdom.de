@@ -5,19 +5,14 @@ declare(strict_types=1);
 namespace App\Service;
 
 use Yiisoft\Cache\CacheInterface;
-use Yiisoft\Aliases\Aliases;
 use App\Service\GuruWisdomService;
 
 class WisdomCacheService
 {
-    private string $wisdomPath;
-
     public function __construct(
         private CacheInterface $cache,
-        private GuruWisdomService $guruWisdom,
-        Aliases $aliases
+        private GuruWisdomService $guruWisdom
     ) {
-        $this->wisdomPath = $aliases->get('@public/wisdoms');
     }
 
     /**
@@ -26,32 +21,24 @@ class WisdomCacheService
      */
     public function getSortedWisdoms(string $locale = 'de'): array
     {
-        $cacheKey = 'wisdom_sorted_index_' . $locale;
+        // In dev the drafts are part of the index. They get their own cache key and a short lifetime,
+        // so a new or edited draft shows up right away.
+        $draftsEnabled = $this->guruWisdom->areDraftsEnabled();
+        $cacheKey = 'wisdom_sorted_index_' . $locale . ($draftsEnabled ? '_drafts' : '');
+        $ttl = $draftsEnabled ? 2 : 86400;
 
         return $this->cache->getOrSet($cacheKey, function () use ($locale) {
             $wisdoms = [];
 
-            // 1. Pfad bestimmen: bei 'en' nach /public/wisdoms/en/ suchen
-            $baseDir = rtrim($this->wisdomPath, '/');
-            $targetDir = ($locale === 'en') ? $baseDir . '/en' : $baseDir;
+            // 1. Alle IDs der Sprache (veröffentlichte Weisheiten, in dev zusätzlich die Entwürfe)
+            $slugs = $this->guruWisdom->getAllIds($locale);
 
-            // Fallback auf Standardpfad, falls /en/ nicht existiert oder leer ist
-            if (!is_dir($targetDir) || empty(glob($targetDir . '/*.md'))) {
-                $targetDir = $baseDir;
-            }
-
-            $searchPath = $targetDir . '/*.md';
-            $files = glob($searchPath);
-
-            if (empty($files)) {
-                throw new \RuntimeException(
-                    "Diagnose-Fehler: Ich suche im Pfad '" . $searchPath . "', finde aber keine .md Dateien."
-                );
+            if (empty($slugs)) {
+                throw new \RuntimeException('Diagnose-Fehler: Es wurden keine .md Dateien für die Sprache ' . $locale . ' gefunden.');
             }
 
             // 2. Weisheiten parsen
-            foreach ($files as $file) {
-                $slug = basename($file, '.md');
+            foreach ($slugs as $slug) {
                 // Nur das Front Matter lesen (inkl. Vererbung aus der deutschen Datei), kein Markdown rendern
                 $data = $this->guruWisdom->getFrontMatter($slug, $locale);
 
@@ -62,7 +49,8 @@ class WisdomCacheService
                     'description' => $data['description'] ?? '',
                     'tags'        => $data['tags'] ?? [],
                     'categories'  => $data['categories'] ?? 'allgemein',
-                    'date'        => $data['date'] ?? date('Y-m-d', filemtime($file)),
+                    'date'        => $data['date'] ?? date('Y-m-d', (int)filemtime($this->guruWisdom->getFilePath($slug, $locale))),
+                    'draft'       => (bool)($data['draft'] ?? false),
                 ];
             }
 
@@ -71,7 +59,7 @@ class WisdomCacheService
             usort($wisdoms, fn($a, $b) => (strtotime((string)$b['date']) ?: 0) <=> (strtotime((string)$a['date']) ?: 0));
 
             return $wisdoms;
-        }, 86400);
+        }, $ttl);
     }
 
     /**
@@ -117,12 +105,15 @@ class WisdomCacheService
     {
         if ($locale !== null) {
             $this->cache->remove('wisdom_sorted_index_' . $locale);
+            $this->cache->remove('wisdom_sorted_index_' . $locale . '_drafts');
             return;
         }
 
-        // Beide Caches und alten Legacy-Key bereinigen
-        $this->cache->remove('wisdom_sorted_index_de');
-        $this->cache->remove('wisdom_sorted_index_en');
+        // Alle Caches (mit und ohne Entwürfe) und alten Legacy-Key bereinigen
+        foreach (['de', 'en'] as $lang) {
+            $this->cache->remove('wisdom_sorted_index_' . $lang);
+            $this->cache->remove('wisdom_sorted_index_' . $lang . '_drafts');
+        }
         $this->cache->remove('wisdom_sorted_index');
     }
 }

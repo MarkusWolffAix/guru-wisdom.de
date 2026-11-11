@@ -72,14 +72,42 @@ class GuruWisdomService
     private array $sortedIdsCache = [];
 
     /**
+     * Whether wisdoms from the /drafts folder are read as well (dev environment only).
+     */
+    private bool $draftsEnabled;
+
+    /**
      * Initializes the class and injects required Yii3 dependencies.
      *
      * @param Aliases $aliases Component to resolve directory aliases.
      */
     public function __construct(
-        Aliases $aliases
+        Aliases $aliases,
+        ?bool $draftsEnabled = null
     ) {
         $this->aliases = $aliases;
+
+        // Drafts (the folder /drafts, outside of the web root) are only visible in the dev environment.
+        $this->draftsEnabled = $draftsEnabled ?? (
+            (string)($_SERVER['APP_ENV'] ?? $_ENV['APP_ENV'] ?? getenv('APP_ENV')) === 'dev'
+        );
+
+        // Without an '@drafts' alias (e.g. a reduced alias set in tests) there are no drafts.
+        if ($this->draftsEnabled) {
+            try {
+                $aliases->get('@drafts');
+            } catch (\Throwable) {
+                $this->draftsEnabled = false;
+            }
+        }
+    }
+
+    /**
+     * Whether drafts from the /drafts folder are shown (dev environment only).
+     */
+    public function areDraftsEnabled(): bool
+    {
+        return $this->draftsEnabled;
     }
 
     /**
@@ -113,9 +141,73 @@ class GuruWisdomService
             if (is_file($enPath)) {
                 return $enPath;
             }
+            if ($this->draftsEnabled) {
+                $enDraft = $this->aliases->get('@drafts/en/' . $id . '.md');
+                if (is_file($enDraft)) {
+                    return $enDraft;
+                }
+            }
         }
 
-        return $this->aliases->get('@public/wisdoms/' . $id . '.md');
+        return $this->getBasePath($id);
+    }
+
+    /**
+     * Resolves the file of the default language (German): published first, then (in dev) the draft.
+     * A published wisdom always wins over a draft with the same ID.
+     *
+     * @param string $id A valid wisdom ID.
+     * @return string Absolute path. The published path if neither file exists.
+     */
+    private function getBasePath(string $id): string
+    {
+        $publicPath = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+        if ($this->draftsEnabled && !is_file($publicPath)) {
+            $draftPath = $this->aliases->get('@drafts/' . $id . '.md');
+            if (is_file($draftPath)) {
+                return $draftPath;
+            }
+        }
+
+        return $publicPath;
+    }
+
+    /**
+     * Whether a file is a draft, i.e. lies in the /drafts folder.
+     *
+     * @param string $path Absolute file path.
+     */
+    private function isDraftFile(string $path): bool
+    {
+        if (!$this->draftsEnabled) {
+            return false;
+        }
+
+        return str_starts_with($path, rtrim($this->aliases->get('@drafts'), '/') . '/');
+    }
+
+    /**
+     * Returns the IDs of all wisdoms of a locale: the published ones and, in dev, the drafts.
+     *
+     * @param string $locale The language code ('de' or 'en').
+     * @return list<string> IDs (unsorted).
+     */
+    public function getAllIds(string $locale = 'de'): array
+    {
+        $ids = [];
+        foreach ($this->getWisdomDirectories($locale) as $dir) {
+            $files = glob($dir . '*.md');
+            foreach ($files !== false ? $files : [] as $file) {
+                $id = basename($file, '.md');
+                // Files with other names (e.g. "Name.NP.md" backups) are not wisdoms and are skipped.
+                if ($this->isValidId($id)) {
+                    $ids[$id] = true;
+                }
+            }
+        }
+
+        // PHP converts numeric string array keys to int, so cast back to string.
+        return array_map('strval', array_keys($ids));
     }
 
     /**
@@ -388,7 +480,7 @@ class GuruWisdomService
 
         $data = $this->extractFrontMatter($content);
 
-        $basePath = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+        $basePath = $this->getBasePath($id);
         if ($basePath !== $filePath && is_file($basePath)) {
             $baseContent = file_get_contents($basePath);
             if ($baseContent !== false) {
@@ -408,6 +500,9 @@ class GuruWisdomService
 
         // The file name is the ID. A front matter 'id' is ignored.
         $data['id'] = $id;
+
+        // Wisdoms from the /drafts folder are marked (dev environment only).
+        $data['draft'] = $this->isDraftFile($filePath) || $this->isDraftFile($basePath);
 
         return $data;
     }
@@ -438,17 +533,23 @@ class GuruWisdomService
 
                 $file = $path . $id . '.md';
                 if (!is_file($file)) {
-                    $file = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+                    $file = $this->getBasePath($id);
                 }
                 if (is_file($file)) {
                     $wisdomsToSort[$id] = $file;
                 }
             }
         } else {
-            $files = glob($path . '*.md');
-            if ($files !== false) {
-                foreach ($files as $file) {
-                    $wisdomsToSort[basename($file, '.md')] = $file;
+            foreach ($this->getWisdomDirectories($locale) as $dir) {
+                $files = glob($dir . '*.md');
+                foreach ($files !== false ? $files : [] as $file) {
+                    $fileId = basename($file, '.md');
+                    // Files that are not valid wisdom IDs (e.g. "Name.NP.md") are skipped.
+                    if (!$this->isValidId($fileId)) {
+                        continue;
+                    }
+                    // A published wisdom wins over a draft with the same ID (published dir comes first).
+                    $wisdomsToSort[$fileId] ??= $file;
                 }
             }
         }
@@ -460,7 +561,7 @@ class GuruWisdomService
 
             // A translation without its own date uses the date of the default-language file.
             if ($timestamp === 0) {
-                $basePath = $this->aliases->get('@public/wisdoms/' . $id . '.md');
+                $basePath = $this->getBasePath((string)$id);
                 if ($basePath !== $file && is_file($basePath)) {
                     $timestamp = $this->readDateTimestamp($basePath);
                 }
@@ -501,6 +602,27 @@ class GuruWisdomService
         }
 
         return 0;
+    }
+
+    /**
+     * Returns all directories that hold wisdoms of a locale (each with trailing slash):
+     * the published directory first, then, in dev, the matching drafts directory.
+     * English falls back to the German directory if there is no /en directory, as in getWisdomsDirectory().
+     *
+     * @param string $locale The language code ('de' or 'en').
+     * @return list<string> Absolute directory paths.
+     */
+    private function getWisdomDirectories(string $locale): array
+    {
+        $directories = [$this->getWisdomsDirectory($locale)];
+
+        if ($this->draftsEnabled) {
+            $draftsDir = rtrim($this->aliases->get('@drafts'), '/') . '/';
+            $enDraftsDir = $draftsDir . 'en/';
+            $directories[] = ($locale === 'en' && is_dir($enDraftsDir)) ? $enDraftsDir : $draftsDir;
+        }
+
+        return array_values(array_unique($directories));
     }
 
     /**

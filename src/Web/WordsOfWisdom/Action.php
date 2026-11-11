@@ -131,6 +131,7 @@ final class Action implements RequestHandlerInterface
             ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
             ->render($viewName, [
                 'id'          => $id, 
+                'isDraft'     => (bool)($wisdomData['draft'] ?? false),
                 'wisdomText'  => $wisdomData['htmloutput'] ?? '', 
                 'title'       => $wisdomData['title'] ?? 'No Title',
                 'subtitle'    => $wisdomData['subtitle'] ?? '',

@@ -15,4 +15,5 @@ return [
     '@views'        => '@root/resources/views', 
     '@messages'     => '@root/resources/messages',
     '@wisdoms'      => '@public/wisdoms', 
+    '@drafts'       => '@root/drafts',
 ];
