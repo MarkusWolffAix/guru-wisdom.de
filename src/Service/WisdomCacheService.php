@@ -63,6 +63,28 @@ class WisdomCacheService
     }
 
     /**
+     * Overview order: drafts first (they only exist in dev), then the published wisdoms.
+     * The order inside both groups stays as it is (newest first). Pure function, no side effects.
+     *
+     * @param array<int, array<string, mixed>> $wisdoms
+     * @return array<int, array<string, mixed>>
+     */
+    public static function draftsFirst(array $wisdoms): array
+    {
+        $drafts = [];
+        $published = [];
+        foreach ($wisdoms as $wisdom) {
+            if (!empty($wisdom['draft'])) {
+                $drafts[] = $wisdom;
+            } else {
+                $published[] = $wisdom;
+            }
+        }
+
+        return array_merge($drafts, $published);
+    }
+
+    /**
      * Ermittelt die vorherige und nächste Weisheit für die Navigationspfeile.
      */
     public function getNeighbors(string $currentId, string $locale = 'de'): array

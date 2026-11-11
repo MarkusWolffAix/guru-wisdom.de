@@ -68,7 +68,8 @@ final class Action implements RequestHandlerInterface
         // 1. STARTSEITE: Wenn KEINE ID übergeben wurde, zeigen wir die Übersicht (Schriftrolle)
         if ($id === null) {
             // Nachher:
-	    $allWisdoms = $this->wisdomCache->getSortedWisdoms($locale);
+	    // Drafts (dev only) come first in the overview, then the published wisdoms
+	    $allWisdoms = WisdomCacheService::draftsFirst($this->wisdomCache->getSortedWisdoms($locale));
 	    
             $viewName = ($locale === 'en') ? 'en/overview' : 'overview';
 
