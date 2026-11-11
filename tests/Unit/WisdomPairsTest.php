@@ -21,7 +21,7 @@ final class WisdomPairsTest extends TestCase
      * New gaps that are not listed here make the test fail.
      */
     private const MISSING_IN_DE = [];
-    private const MISSING_IN_EN = ['RhythmOfLight'];
+    private const MISSING_IN_EN = [];
 
     /**
      * @return list<string> Sorted IDs (file names without ".md") of a language folder.
