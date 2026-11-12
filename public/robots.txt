@@ -1,3 +1,0 @@
-Sitemap: https://guru-wisdom.de/sitemap.xml
-User-agent: *
-Disallow:

@@ -5,6 +5,8 @@ declare(strict_types=1);
 use App\Web\Contact\Action as ContactAction;
 use App\Web\Imprint\Action as ImprintAction;
 use App\Web\Privacy\Action as PrivacyAction;
+use App\Web\Robots\Action as RobotsAction;
+use App\Web\Sitemap\Action as SitemapAction;
 use App\Web\WordsOfWisdom\Action as WordsOfWisdomAction;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -26,6 +28,15 @@ return [
     Route::get('/privacy')
         ->name('privacy')
         ->action([PrivacyAction::class, 'handle']),
+
+    // 🔍 SEO: dynamic per domain (replaces the static public/sitemap.xml and public/robots.txt)
+    Route::get('/sitemap.xml')
+        ->name('sitemap')
+        ->action([SitemapAction::class, 'handle']),
+
+    Route::get('/robots.txt')
+        ->name('robots')
+        ->action([RobotsAction::class, 'handle']),
 
     // 📜 Overview of all words of wisdom (Index)
     Route::get('/')
