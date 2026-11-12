@@ -29,11 +29,6 @@ return [
         ],
     ],
 
-    'yiisoft/cookies' => [
-        // Dein alter cookieValidationKey
-        'secretKey' => 'UJxxD25WdCiy4zAE9MolOQpdeZRwgkbH', 
-    ],
-
     'yiisoft/router' => [
     	'routes' => require __DIR__ . '/routes.php',
     ],    
