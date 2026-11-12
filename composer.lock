@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94b4fef72d7e06d5d335facb9a82b224",
+    "content-hash": "88454824898e1bda502c716a0e571972",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -1933,6 +1933,86 @@
                 }
             ],
             "time": "2025-12-11T05:44:17+00:00"
+        },
+        {
+            "name": "yiisoft/cache-file",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/cache-file.git",
+                "reference": "484cde38f64504aeda89065339f9a313bc0691aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/cache-file/zipball/484cde38f64504aeda89065339f9a313bc0691aa",
+                "reference": "484cde38f64504aeda89065339f9a313bc0691aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "psr/simple-cache": "^2.0|^3.0"
+            },
+            "provide": {
+                "psr/simple-cache-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "maglnet/composer-require-checker": "^4.4",
+                "php-mock/php-mock-phpunit": "^2.6",
+                "phpunit/phpunit": "^9.5",
+                "rector/rector": "^2.0",
+                "roave/infection-static-analysis-plugin": "^1.16",
+                "spatie/phpunit-watcher": "^1.23",
+                "vimeo/psalm": "^4.30|^5.21",
+                "yiisoft/aliases": "^3.0",
+                "yiisoft/di": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "config-plugin": {
+                    "di": "di.php",
+                    "params": "params.php"
+                },
+                "config-plugin-options": {
+                    "source-directory": "config"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yiisoft\\Cache\\File\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Yii Caching Library - File Handler",
+            "homepage": "https://www.yiiframework.com/",
+            "keywords": [
+                "cache",
+                "file",
+                "framework",
+                "psr-16",
+                "yii"
+            ],
+            "support": {
+                "chat": "https://t.me/yii3en",
+                "forum": "https://www.yiiframework.com/forum/",
+                "irc": "ircs://irc.libera.chat:6697/yii",
+                "issues": "https://github.com/yiisoft/cache-file/issues?state=open",
+                "source": "https://github.com/yiisoft/cache-file",
+                "wiki": "https://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2025-01-13T20:33:48+00:00"
         },
         {
             "name": "yiisoft/config",

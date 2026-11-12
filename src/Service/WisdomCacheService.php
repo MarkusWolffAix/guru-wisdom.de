@@ -21,11 +21,12 @@ class WisdomCacheService
      */
     public function getSortedWisdoms(string $locale = 'de'): array
     {
-        // In dev the drafts are part of the index. They get their own cache key and a short lifetime,
-        // so a new or edited draft shows up right away.
+        // In dev the drafts are part of the index (the stamp tells the two apart, see getContentStamp()).
         $draftsEnabled = $this->guruWisdom->areDraftsEnabled();
-        $cacheKey = 'wisdom_sorted_index_' . $locale . ($draftsEnabled ? '_drafts' : '');
-        $ttl = $draftsEnabled ? 2 : 86400;
+        // The content stamp is part of the key: a new, edited or removed file gives a new key,
+        // so a stale index is never served, even without clearing the cache. The old entries expire.
+        $cacheKey = self::cacheKey($locale, $this->guruWisdom->getContentStamp($locale));
+        $ttl = $draftsEnabled ? 3600 : 86400;
 
         return $this->cache->getOrSet($cacheKey, function () use ($locale) {
             $wisdoms = [];
@@ -121,21 +122,22 @@ class WisdomCacheService
     }
 
     /**
-     * Leert den Cache (entweder für eine bestimmte Sprache oder für alle).
+     * Key of the cached index of a locale for a given content stamp.
+     */
+    private static function cacheKey(string $locale, string $stamp): string
+    {
+        return 'wisdom_sorted_index_' . $locale . '_' . $stamp;
+    }
+
+    /**
+     * Entfernt den aktuellen Index (für eine bestimmte Sprache oder für alle).
+     * Wegen des Content-Stamps im Key ist das nur noch nötig, um Platz zu sparen oder einen
+     * Neuaufbau zu erzwingen; alte Einträge laufen von selbst ab.
      */
     public function clearCache(?string $locale = null): void
     {
-        if ($locale !== null) {
-            $this->cache->remove('wisdom_sorted_index_' . $locale);
-            $this->cache->remove('wisdom_sorted_index_' . $locale . '_drafts');
-            return;
+        foreach ($locale !== null ? [$locale] : ['de', 'en'] as $lang) {
+            $this->cache->remove(self::cacheKey($lang, $this->guruWisdom->getContentStamp($lang)));
         }
-
-        // Alle Caches (mit und ohne Entwürfe) und alten Legacy-Key bereinigen
-        foreach (['de', 'en'] as $lang) {
-            $this->cache->remove('wisdom_sorted_index_' . $lang);
-            $this->cache->remove('wisdom_sorted_index_' . $lang . '_drafts');
-        }
-        $this->cache->remove('wisdom_sorted_index');
     }
 }

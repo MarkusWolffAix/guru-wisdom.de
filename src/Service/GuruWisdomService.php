@@ -211,6 +211,34 @@ class GuruWisdomService
     }
 
     /**
+     * Fingerprint of the wisdom files of a locale (ID, modification time and size of the file and,
+     * for translations, of the German base file). It changes whenever a wisdom is added, removed,
+     * edited or published, so cache keys built from it never serve outdated data.
+     *
+     * @param string $locale The language code ('de' or 'en').
+     * @return string Hash, with a "d" suffix when drafts are included.
+     */
+    public function getContentStamp(string $locale = 'de'): string
+    {
+        // PHP caches file stats; without this a long-running worker would never see edits.
+        clearstatcache();
+
+        $parts = [];
+        foreach ($this->getAllIds($locale) as $id) {
+            $path = $this->getFilePath($id, $locale);
+            $base = $this->getBasePath($id);
+            $part = $id . ':' . (int)@filemtime($path) . ':' . (int)@filesize($path);
+            if ($base !== $path) {
+                $part .= ':' . (int)@filemtime($base) . ':' . (int)@filesize($base);
+            }
+            $parts[] = $part;
+        }
+        sort($parts);
+
+        return md5(implode('|', $parts)) . ($this->draftsEnabled ? 'd' : '');
+    }
+
+    /**
      * Sanitizes the requested ID and ensures the corresponding file exists.
      * Invalid or unknown IDs fall back to a random existing wisdom.
      *
