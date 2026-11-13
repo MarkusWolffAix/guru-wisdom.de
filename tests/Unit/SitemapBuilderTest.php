@@ -32,6 +32,23 @@ final class SitemapBuilderTest extends TestCase
         $this->assertSame('http://localhost', SitemapBuilder::baseUrl('localhost', 'http', 80));
     }
 
+    public function testCanonicalUrlHasNoQueryAndAlwaysHttps(): void
+    {
+        $this->assertSame('https://guru-wisdom.de/Fractal', SitemapBuilder::canonicalUrl('guru-wisdom.de', '/Fractal', 'http', 80));
+        $this->assertSame('https://guru-wisdom.com/Fractal', SitemapBuilder::canonicalUrl('www.guru-wisdom.com', 'Fractal'));
+    }
+
+    public function testCanonicalUrlOfTheStartPageEndsWithASlash(): void
+    {
+        $this->assertSame('https://guru-wisdom.de/', SitemapBuilder::canonicalUrl('guru-wisdom.de', '/'));
+        $this->assertSame('https://guru-wisdom.de/', SitemapBuilder::canonicalUrl('guru-wisdom.de', ''));
+    }
+
+    public function testCanonicalUrlKeepsSchemeAndPortOnLocalHosts(): void
+    {
+        $this->assertSame('http://en.localhost:8080/Fractal', SitemapBuilder::canonicalUrl('en.localhost', '/Fractal', 'http', 8080));
+    }
+
     public function testPartnerBaseUrl(): void
     {
         $this->assertSame('https://guru-wisdom.com', SitemapBuilder::partnerBaseUrl(self::SWITCH_MAP, 'guru-wisdom.de'));

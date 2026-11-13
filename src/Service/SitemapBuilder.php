@@ -34,6 +34,16 @@ final class SitemapBuilder
     }
 
     /**
+     * Canonical URL of a page: base URL of the host plus the path, without query string and fragment.
+     * Used for the canonical link, og:url and JSON-LD, so "?lang=en" or tracking parameters never end up
+     * there and the scheme does not depend on what the proxy passes to the app.
+     */
+    public static function canonicalUrl(string $host, string $path, string $scheme = 'https', ?int $port = null): string
+    {
+        return self::baseUrl($host, $scheme, $port) . '/' . ltrim($path, '/');
+    }
+
+    /**
      * Base URL of the partner domain (de <-> en), or null when the host has no partner.
      *
      * @param array<string, string> $switchMap multilingual.domain_switch_map

@@ -11,6 +11,7 @@ use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 use App\Service\CategoryLabelService;
 use App\Service\GuruWisdomService;
+use App\Service\SitemapBuilder;
 use App\Service\WisdomCacheService;
 use App\Web\NotFound\NotFoundHandler;
 
@@ -49,6 +50,16 @@ final class Action implements RequestHandlerInterface
     }
 
     /**
+     * Absolute canonical URL of the requested page (https, no www, no query string).
+     */
+    private static function canonicalUrl(ServerRequestInterface $request): string
+    {
+        $uri = $request->getUri();
+
+        return SitemapBuilder::canonicalUrl($uri->getHost(), $uri->getPath(), $uri->getScheme(), $uri->getPort());
+    }
+
+    /**
      * Processes the incoming server request and returns an HTTP response.
      *
      * Extracts the ID from the current route, sanitizes it, and loads the 
@@ -76,7 +87,7 @@ final class Action implements RequestHandlerInterface
             return $this->viewRenderer
                 ->withLayout('@src/Web/Shared/Layout/Main/layout') // Force path to layout
                 ->render($viewName, [
-                    'currentUrl'  => (string) $request->getUri(),
+                    'currentUrl'  => self::canonicalUrl($request),
                     'wisdoms' => $allWisdoms,
                     'categoryLabels' => $this->categoryLabels->labelsFor($allWisdoms, $locale),
                 ]); 
@@ -142,7 +153,7 @@ final class Action implements RequestHandlerInterface
                 'audio'       => $audio,
                 'prevId'      => $olderWisdom['slug'] ?? null,
                 'nextId'      => $newerWisdom['slug'] ?? null,
-                'currentUrl'  => (string) $request->getUri(), 
+                'currentUrl'  => self::canonicalUrl($request), 
                 'datePublished' => $wisdomData['date'] ?? null,
                 'publisherName' => $wisdomData['publisher'] ?? null,
                 'authorName'    => $wisdomData['author'] ?? null, 
