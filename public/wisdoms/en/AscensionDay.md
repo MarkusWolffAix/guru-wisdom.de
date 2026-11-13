@@ -1,5 +1,5 @@
 ---
-title: "Ascension Day: The Universal Path of Transformation"
+title: "Ascension Day"
 subtitle: "The Mysticism of the 40 Days and the Return to the Source"
 description: "A profound examination of the Ascension as a spiritual transition from the limited to the unlimited and the power of the 40-day metamorphosis."
 tags: ["Traditions", "Concepts", "Spirituality", "metamorphosis", "Ascension"]
