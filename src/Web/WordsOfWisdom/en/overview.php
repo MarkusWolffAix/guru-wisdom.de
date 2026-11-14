@@ -145,6 +145,7 @@ $this->setTitle($title);
                                 <div class="wisdom-text-container flex-grow-1 text-start">
                                     <h3 class="card-title h5 fw-bold mb-2 text-dark">
                                         <?php if (!empty($wisdom['draft'])): ?><span class="badge bg-warning text-dark me-2">Draft</span><?php endif; ?>
+                                        <?php if (!empty($wisdom['scheduled'])): ?><span class="badge bg-info text-dark me-2">Scheduled: <?= htmlspecialchars(date('Y-m-d', (int)strtotime((string)$wisdom['date']))) ?></span><?php endif; ?>
                                         <?= htmlspecialchars((string)$wisdomTitle) ?>
                                     </h3>
                                     <p class="card-text text-muted mb-0 small">

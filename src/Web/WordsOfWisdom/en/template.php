@@ -134,6 +134,9 @@ $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICO
         <?php if (!empty($isDraft)): ?>
         <div class="alert alert-warning text-center mb-0 py-2" role="alert"><strong>Draft: only visible in the development environment, not published.</strong></div>
         <?php endif; ?>
+        <?php if (!empty($scheduledFor)): ?>
+        <div class="alert alert-info text-center mb-0 py-2" role="alert"><strong>Scheduled: goes live on <?= htmlspecialchars(date('Y-m-d', (int)strtotime((string)$scheduledFor))) ?>, until then only visible in the development environment.</strong></div>
+        <?php endif; ?>
 
         <div class="preview-container" id="previewContainer">
             <div class="preview-content">

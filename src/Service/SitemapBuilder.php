@@ -84,9 +84,9 @@ final class SitemapBuilder
         ?string $partnerBaseUrl = null,
         array $partnerWisdoms = [],
     ): string {
-        $published = array_values(array_filter($wisdoms, static fn (array $w): bool => empty($w['draft'])));
+        $published = array_values(array_filter($wisdoms, static fn (array $w): bool => empty($w['draft']) && empty($w['scheduled'])));
         $partnerSlugs = array_flip(array_column(
-            array_filter($partnerWisdoms, static fn (array $w): bool => empty($w['draft'])),
+            array_filter($partnerWisdoms, static fn (array $w): bool => empty($w['draft']) && empty($w['scheduled'])),
             'slug',
         ));
 

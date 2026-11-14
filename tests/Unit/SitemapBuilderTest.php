@@ -71,6 +71,23 @@ final class SitemapBuilderTest extends TestCase
         $this->assertStringNotContainsString('Secret', $xml);
     }
 
+    public function testScheduledWisdomsAreNeverListed(): void
+    {
+        $xml = SitemapBuilder::sitemap(
+            [
+                ['slug' => 'Published', 'date' => '2026-11-10'],
+                ['slug' => 'NextWeek', 'date' => '2026-11-25', 'scheduled' => true],
+            ],
+            'https://guru-wisdom.de',
+            'de',
+        );
+
+        $this->assertStringContainsString('<loc>https://guru-wisdom.de/Published</loc>', $xml);
+        $this->assertStringNotContainsString('NextWeek', $xml);
+        // The start page must not get the future date as lastmod
+        $this->assertStringNotContainsString('2026-11-25', $xml);
+    }
+
     public function testStaticPagesAreListedAndOldGermanPathsAreNot(): void
     {
         $xml = SitemapBuilder::sitemap([], 'https://guru-wisdom.de', 'de');

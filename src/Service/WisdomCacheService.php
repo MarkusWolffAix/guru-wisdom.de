@@ -9,6 +9,9 @@ use App\Service\GuruWisdomService;
 
 class WisdomCacheService
 {
+    /** Time zone in which publication dates are read. */
+    public const TIMEZONE = 'Europe/Berlin';
+
     public function __construct(
         private CacheInterface $cache,
         private GuruWisdomService $guruWisdom
@@ -28,7 +31,7 @@ class WisdomCacheService
         $cacheKey = self::cacheKey($locale, $this->guruWisdom->getContentStamp($locale));
         $ttl = $draftsEnabled ? 3600 : 86400;
 
-        return $this->cache->getOrSet($cacheKey, function () use ($locale) {
+        $wisdoms = $this->cache->getOrSet($cacheKey, function () use ($locale) {
             $wisdoms = [];
 
             // 1. Alle IDs der Sprache (veröffentlichte Weisheiten, in dev zusätzlich die Entwürfe)
@@ -61,6 +64,58 @@ class WisdomCacheService
 
             return $wisdoms;
         }, $ttl);
+
+        // The cached index holds ALL wisdoms. The publication date is checked on every request
+        // (cheap, no file access), so a wisdom appears exactly at its date, even if the index is cached.
+        return self::applySchedule($wisdoms, new \DateTimeImmutable('now', new \DateTimeZone(self::TIMEZONE)), $draftsEnabled);
+    }
+
+    /**
+     * Wisdoms with a date in the future are scheduled: they are hidden until that moment, everywhere
+     * (overview, detail page, navigation, sitemap), because all of them read this list.
+     * In dev (keepScheduled = true) they stay in the list, marked with 'scheduled' => true,
+     * so they can be checked before they go live.
+     *
+     * The date is read as Berlin time: "2026-11-18" is visible from 18.11.2026 00:00,
+     * "2026-11-18 08:00" from 08:00.
+     *
+     * @param array<int, array<string, mixed>> $wisdoms
+     * @return array<int, array<string, mixed>>
+     */
+    public static function applySchedule(array $wisdoms, \DateTimeImmutable $now, bool $keepScheduled): array
+    {
+        $result = [];
+        foreach ($wisdoms as $wisdom) {
+            if (self::isScheduled($wisdom['date'] ?? null, $now)) {
+                if (!$keepScheduled) {
+                    continue;
+                }
+                $wisdom['scheduled'] = true;
+            }
+            $result[] = $wisdom;
+        }
+
+        return $result;
+    }
+
+    /**
+     * Whether a date lies after $now. Empty or unreadable dates are never scheduled
+     * (a typo must not make a wisdom vanish silently, that is covered by the front matter test).
+     */
+    public static function isScheduled(mixed $date, \DateTimeImmutable $now): bool
+    {
+        $value = trim((string)$date);
+        if ($value === '') {
+            return false;
+        }
+
+        try {
+            $publishAt = new \DateTimeImmutable($value, $now->getTimezone());
+        } catch (\Throwable) {
+            return false;
+        }
+
+        return $publishAt > $now;
     }
 
     /**

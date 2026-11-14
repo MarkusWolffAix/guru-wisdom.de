@@ -95,10 +95,13 @@ final class Action implements RequestHandlerInterface
 
         // 2. DETAILSEITE: Wenn eine ID da ist -> Validierung! (Ist sie im Archiv?)
         $isValid = false;
+        $scheduledFor = null;
         $allWisdoms = $this->wisdomCache->getSortedWisdoms($locale);
         foreach ($allWisdoms as $wisdom) {
             if ($wisdom['slug'] === $id) {
                 $isValid = true;
+                // Only dev gets scheduled wisdoms in the list (see WisdomCacheService::applySchedule())
+                $scheduledFor = !empty($wisdom['scheduled']) ? (string)$wisdom['date'] : null;
                 break;
             }
         }
@@ -144,6 +147,7 @@ final class Action implements RequestHandlerInterface
             ->render($viewName, [
                 'id'          => $id, 
                 'isDraft'     => (bool)($wisdomData['draft'] ?? false),
+                'scheduledFor' => $scheduledFor,
                 'wisdomText'  => $wisdomData['htmloutput'] ?? '', 
                 'title'       => $wisdomData['title'] ?? 'No Title',
                 'subtitle'    => $wisdomData['subtitle'] ?? '',
