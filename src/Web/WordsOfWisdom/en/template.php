@@ -159,6 +159,12 @@ $jsonLd = json_encode($schemaData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICO
       </div> <! close wisdom-card -->
     </div> <! close d-flex -->
 <?php
+// Auto height for own HTML pages embedded with [html:Name|Title|Height]:
+// the script is only loaded when this wisdom actually embeds such a page.
+if (str_contains($wisdomText, 'data-autoheight="true"')) {
+    $this->registerJsFile('/js/htmlEmbed.js', WebView::POSITION_HEAD, ['defer' => true]);
+}
+
 $needsMathJax = str_contains($wisdomText, '$') || str_contains($wisdomText, '\[');
 
 // Wenn ja, registrieren wir das CDN-Skript für diese Seite

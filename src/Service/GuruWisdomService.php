@@ -28,6 +28,28 @@ class GuruWisdomService
     private const NON_INHERITED_KEYS = ['title', 'subtitle', 'description'];
 
     /**
+     * Folder (below the web root) with own, self-contained HTML pages that can be embedded
+     * with [html:Name|Title|Height], e.g. simulations or small tools.
+     * Convention: the page is named after the wisdom ID (<ID>.html, <ID>2.html, ...).
+     * The page gets ?lang=de or ?lang=en and may use it or ignore it.
+     */
+    private const HTML_BASE_PATH = '/html/';
+
+    /**
+     * Start height in pixels of an embedded HTML page and the allowed range. The page
+     * may report its real height to /js/htmlEmbed.js, which then resizes the iframe.
+     */
+    private const HTML_DEFAULT_HEIGHT = 720;
+    private const HTML_MIN_HEIGHT = 200;
+    private const HTML_MAX_HEIGHT = 3000;
+
+    /**
+     * [html:Name|Title|Height]: Name only letters, digits, "_" and "-" (no paths),
+     * Title without "|" and "]", Height digits only. Title and Height are optional.
+     */
+    private const HTML_PATTERN = '/\[html:([A-Za-z0-9_-]+)(?:\|([^\|\]]*))?(?:\|(\d{1,4}))?\]/';
+
+    /**
      * Texts for the two-click placeholders, per locale.
      */
     private const TEXTS = [
@@ -43,6 +65,7 @@ class GuruWisdomService
             'content_button' => 'Inhalt laden',
             'video_unsupported' => 'Dein Browser unterstützt das Video-Tag nicht. Bitte aktualisiere deinen Browser.',
             'image_alt' => 'Bild zur Weisheit',
+            'html_fullscreen' => 'Im Vollbild öffnen',
         ],
         'en' => [
             'youtube_title' => 'External YouTube video',
@@ -56,6 +79,7 @@ class GuruWisdomService
             'content_button' => 'Load content',
             'video_unsupported' => 'Your browser does not support the video tag. Please update your browser.',
             'image_alt' => 'Image of wisdom',
+            'html_fullscreen' => 'Open full screen',
         ],
     ];
 
@@ -416,6 +440,34 @@ class GuruWisdomService
             $text
         );
 
+        // 5. Own HTML pages: self-hosted HTML from /html/ in an iframe.
+        //    [html:Name], [html:Name|Title] or [html:Name|Title|Height]
+        //    The page makes no requests to third parties, so no two-click consent is needed.
+        $text = preg_replace_callback(
+            self::HTML_PATTERN,
+            function (array $matches) use ($locale, $t) {
+                $name = $matches[1];
+                $title = trim($matches[2] ?? '');
+                if ($title === '') {
+                    $title = $name;
+                }
+                $height = self::HTML_DEFAULT_HEIGHT;
+                if (isset($matches[3]) && $matches[3] !== '') {
+                    $height = max(self::HTML_MIN_HEIGHT, min(self::HTML_MAX_HEIGHT, (int)$matches[3]));
+                }
+
+                $url = self::HTML_BASE_PATH . rawurlencode($name) . '.html?lang=' . ($locale === 'en' ? 'en' : 'de');
+                $safeUrl = htmlspecialchars($url, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $safeTitle = htmlspecialchars($title, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+                return '<figure class="html-embed my-4">
+                <iframe src="' . $safeUrl . '" title="' . $safeTitle . '" loading="lazy" data-autoheight="true" style="display: block; width: 100%; height: ' . $height . 'px; border: 0; border-radius: 8px;"></iframe>
+                <figcaption class="small text-end mt-1"><a href="' . $safeUrl . '" target="_blank" rel="noopener">' . $t('html_fullscreen') . '</a></figcaption>
+            </figure>';
+            },
+            $text
+        );
+
         return $text;
     }
 
@@ -696,7 +748,8 @@ class GuruWisdomService
         $pattern = '/\[(?:youtube:[a-zA-Z0-9_-]+'
             . '|spotify:(?:track|album|playlist|artist|episode|show):[a-zA-Z0-9]+'
             . '|image:[^\|\]]+(?:\|[^\]]+)?'
-            . '|video:[^\]]+)\]/';
+            . '|video:[^\]]+'
+            . '|html:[A-Za-z0-9_-]+(?:\|[^\|\]]*)?(?:\|\d{1,4})?)\]/';
 
         return (string)preg_replace_callback($pattern, function (array $matches) use ($locale, &$stash): string {
             $token = 'WISDOMPH' . count($stash) . 'X';

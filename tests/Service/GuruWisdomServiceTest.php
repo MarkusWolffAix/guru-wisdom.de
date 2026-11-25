@@ -130,6 +130,74 @@ final class GuruWisdomServiceTest extends TestCase
         $this->assertStringContainsString('data-src="https://open.spotify.com/embed/track/4uLU6hMCjM?utm_source=generator"', $html); 
     }
 
+    public function testProcessPlaceholdersConvertsHtmlTagToIframe(): void
+    {
+        $html = $this->guruWisdom->processPlaceholders('[html:UranusClockwork|Das Uranus-Uhrwerk|640]');
+
+        $this->assertStringContainsString('<figure class="html-embed', $html);
+        $this->assertStringContainsString('<iframe src="/html/UranusClockwork.html?lang=de"', $html);
+        $this->assertStringContainsString('title="Das Uranus-Uhrwerk"', $html);
+        $this->assertStringContainsString('height: 640px', $html);
+        $this->assertStringContainsString('loading="lazy"', $html);
+        $this->assertStringContainsString('data-autoheight="true"', $html);
+        $this->assertStringContainsString('Im Vollbild öffnen', $html);
+    }
+
+    public function testProcessPlaceholdersHtmlUsesEnglishPageAndTexts(): void
+    {
+        $html = $this->guruWisdom->processPlaceholders('[html:UranusClockwork|The Uranus Clockwork]', 'en');
+
+        $this->assertStringContainsString('src="/html/UranusClockwork.html?lang=en"', $html);
+        $this->assertStringContainsString('Open full screen', $html);
+    }
+
+    public function testProcessPlaceholdersHtmlDefaultsForTitleAndHeight(): void
+    {
+        $html = $this->guruWisdom->processPlaceholders('[html:UranusClockwork]');
+
+        $this->assertStringContainsString('title="UranusClockwork"', $html);
+        $this->assertStringContainsString('height: 720px', $html);
+    }
+
+    public function testProcessPlaceholdersHtmlClampsHeight(): void
+    {
+        $low = $this->guruWisdom->processPlaceholders('[html:Demo|Demo|50]');
+        $high = $this->guruWisdom->processPlaceholders('[html:Demo|Demo|9999]');
+
+        $this->assertStringContainsString('height: 200px', $low);
+        $this->assertStringContainsString('height: 3000px', $high);
+    }
+
+    public function testProcessPlaceholdersHtmlEscapesTitle(): void
+    {
+        $html = $this->guruWisdom->processPlaceholders('[html:Demo|"><script>alert(1)</script>]');
+
+        $this->assertStringNotContainsString('<script>', $html);
+        $this->assertStringContainsString('title="&quot;&gt;&lt;script&gt;alert(1)&lt;/script&gt;"', $html);
+    }
+
+    public function testProcessPlaceholdersHtmlRejectsPaths(): void
+    {
+        $text = '[html:../secret] [html:a/b] [html:x.html]';
+
+        $this->assertSame($text, $this->guruWisdom->processPlaceholders($text));
+    }
+
+    public function testParseFileRendersHtmlEmbedOutsideParagraph(): void
+    {
+        file_put_contents(
+            $this->tempDir . '/html-wisdom.md',
+            "---\ntitle: Html page\ndate: 2026-03-01\n---\n\n# Html page\n\nText before.\n\n[html:My_Sim-2|A *bold* _title_]\n\nText after."
+        );
+
+        $html = $this->guruWisdom->parseFile('html-wisdom')['htmloutput'];
+
+        $this->assertStringContainsString('src="/html/My_Sim-2.html?lang=de"', $html);
+        $this->assertStringContainsString('title="A *bold* _title_"', $html);
+        $this->assertStringNotContainsString('<p><figure', $html);
+        $this->assertStringNotContainsString('<em>', $html);
+    }
+
     public function testParseFileExtractsFrontMatterAndParsesMarkdown(): void
     {
         $data = $this->guruWisdom->parseFile('first-wisdom');
