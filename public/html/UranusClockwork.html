@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Uranus-Uhrwerk: Epsilon-Ring &amp; Schäfermonde</title>
+    <meta name="robots" content="noindex">
+    <!--
+        Own HTML page for guru-wisdom.de / guru-wisdom.com (folder public/html/).
+        Embedded in a wisdom with  [html:UranusClockwork|Title|Height]
+        Language:  ?lang=de (default) or ?lang=en
+        Self-contained: no requests to third parties (no CDN, no web fonts from outside).
+        Files: UranusClockwork.html (structure), UranusClockwork.css (styles),
+               UranusClockwork.js (simulation), all in public/html/.
+        When embedded, the page reports its height to the parent page
+        (see /js/htmlEmbed.js), so the iframe has no inner scroll bar.
+    -->
+    <link rel="stylesheet" href="UranusClockwork.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="brand">
+            <div class="logo" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" stroke-width="1.5"/>
+                    <circle cx="12" cy="12" r="3" stroke-width="1.5"/>
+                    <path stroke-linecap="round" stroke-width="1.5" d="M12 3v3m0 12v3M3 12h3m12 0h3"/>
+                </svg>
+            </div>
+            <div>
+                <h1 id="main-title" class="title" data-i18n="heading">Uranus &amp; der Epsilon-Ring</h1>
+                <p class="subtitle" data-i18n="subheading">Die kosmische Unruh &amp; ihre Schäfermonde</p>
+            </div>
+        </div>
+
+        <!-- View switch -->
+        <div class="mode-switch" role="group">
+            <button id="btn-mode-astro" type="button" class="mode-btn active-astro" data-i18n="modeAstro">Astronomisch</button>
+            <button id="btn-mode-clock" type="button" class="mode-btn" data-i18n="modeClock">Uhrwerk-Optik</button>
+        </div>
+    </header>
+
+    <!-- Canvas + live telemetry -->
+    <main class="main">
+        <div id="canvas-container" class="stage">
+            <canvas id="simCanvas" role="img" data-i18n-aria="canvasLabel"></canvas>
+
+            <div class="overlay info">
+                <div class="info-head">
+                    <span class="pulse-dot"></span>
+                    <span data-i18n="infoTitle">Wie die Unruh funktioniert</span>
+                </div>
+                <p data-i18n-html="infoText"></p>
+            </div>
+
+            <div class="overlay tick">
+                <div class="tick-text">
+                    <div class="tick-caption" data-i18n="tickCaption">Uhrwerk-Takt</div>
+                    <div id="tick-label" class="tick-label mono">TICK</div>
+                </div>
+                <div id="tick-led" class="tick-led"></div>
+            </div>
+        </div>
+
+        <aside class="side">
+            <div>
+                <h2>
+                    <span data-i18n="liveTitle">Live-Takte des Uhrwerks</span>
+                    <span id="sim-days" class="mono">Tag 0,00</span>
+                </h2>
+
+                <div class="cards">
+                    <!-- Beat 1: fast balance wheel (one orbit of the ring) -->
+                    <div class="card">
+                        <div class="card-head">
+                            <span data-i18n="beat1">1. Schneller Takt (1 Umlauf)</span>
+                            <span class="mono cyan" id="stat-orbit-count"></span>
+                        </div>
+                        <div class="bar"><div id="bar-orbit" class="bg-cyan"></div></div>
+                        <div class="card-foot">
+                            <span data-i18n="beat1Duration">Dauer: 8 Std. 25 Min.</span>
+                            <span><span data-i18n="width">Breite:</span> <strong id="stat-width">19,7 km</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Beat 2: escapement (Cordelia overtakes the ring) -->
+                    <div class="card">
+                        <div class="card-head">
+                            <span data-i18n="beat2">2. Hemmung (Cordelia-Impuls)</span>
+                            <span class="mono emerald" id="stat-synodic-count"></span>
+                        </div>
+                        <div class="bar"><div id="bar-synodic" class="bg-emerald"></div></div>
+                        <div class="card-foot">
+                            <span id="stat-synodic-period"></span>
+                            <span data-i18n="resonance">Resonanz: 24:25</span>
+                        </div>
+                    </div>
+
+                    <!-- Beat 3: big hand (precession of the ellipse) -->
+                    <div class="card">
+                        <div class="card-head">
+                            <span data-i18n="beat3">3. Großer Zeiger (Präzession)</span>
+                            <span class="mono amber" id="stat-precession-deg">0,0°</span>
+                        </div>
+                        <div class="bar"><div id="bar-precession" class="bg-amber"></div></div>
+                        <div class="card-foot">
+                            <span data-i18n="beat3Turn">360°-Drehung: 264 Tage</span>
+                            <span data-i18n="beat3Rate">1,36° / Tag</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legend of the shepherd moons -->
+            <div class="legend">
+                <div class="legend-row">
+                    <span><span class="dot" style="background: var(--emerald);"></span><span data-i18n="cordeliaLegend">Cordelia (innen)</span></span>
+                    <span class="mono" data-i18n="cordeliaInfo">8h 02m • Schub +</span>
+                </div>
+                <div class="legend-row">
+                    <span><span class="dot" style="background: var(--rose);"></span><span data-i18n="opheliaLegend">Ophelia (außen)</span></span>
+                    <span class="mono" data-i18n="opheliaInfo">9h 02m • Bremse −</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Controls -->
+    <footer class="controls">
+        <div class="group">
+            <button id="btn-play-pause" type="button" class="btn-play">
+                <span id="play-icon" aria-hidden="true">❚❚</span>
+                <span id="play-text">Pause</span>
+            </button>
+            <button id="btn-reset" type="button" class="btn-plain" data-i18n="reset">Zurücksetzen</button>
+        </div>
+
+        <div class="speed">
+            <span data-i18n="speed">Tempo:</span>
+            <input id="speed-slider" type="range" min="1" max="5" step="1" value="2" data-i18n-aria="speedAria">
+            <span id="speed-label" class="speed-label mono"></span>
+        </div>
+
+        <div class="group">
+            <button id="toggle-gravity" type="button" class="toggle" aria-pressed="true" data-i18n="toggleGravity">Gravitations-Impulse</button>
+            <button id="toggle-labels" type="button" class="toggle" aria-pressed="true" data-i18n="toggleLabels">Beschriftungen</button>
+            <button id="toggle-exaggerate" type="button" class="toggle" aria-pressed="true" data-i18n="toggleShape" data-i18n-title="toggleShapeTitle">Unruh-Form betonen</button>
+        </div>
+    </footer>
+
+    <script src="UranusClockwork.js"></script>
+</body>
+</html>
