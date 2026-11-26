@@ -15,10 +15,10 @@ The term **fascia** is often used today as a synonym for our **connective tissue
 
 
 ### 🌟 The 3 Golden Rules of Fascia
--
--* **Breathing:** Is your breath flowing calmly? Good! Are you holding your breath? Then the pressure is too high.
--* **Soft tissues:** **Never** roll over bones or joints (always avoid the spine, kneecap, shinbone, etc.!).
--* **The "good pain" pain:** It may feel like a pulling sensation and like after an intense massage, but never like a sharp, stabbing pain.
+
+* **Breathing:** Is your breath flowing calmly? Good! Are you holding your breath? Then the pressure is too high.
+* **Soft tissues:** **Never** roll over bones or joints (always avoid the spine, kneecap, shinbone, etc.!).
+* **The "good pain" pain:** It may feel like a pulling sensation and like after an intense massage, but never like a sharp, stabbing pain.
 
 
 - [ ] **Foot roll:** While standing, slowly roll a tennis ball under the sole of your foot from heel to toe. (1-2 minutes per foot)

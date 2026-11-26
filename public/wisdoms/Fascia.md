@@ -16,10 +16,10 @@ Der Begriff **Faszien** wird heute oft als Synonym für unser **Bindegewebe** ve
 - **Du brauchst nur:** 1 Tennisball, deinen DIY-Socken-Duoball (2 Tennisbälle in einer Socke), einen runden Stift ohne Kante, ein Nudelholz (oder eine glatte Flasche) und eine Wand/einen Türrahmen.
 
 ### 🌟 Die 3 Goldenen Faszien-Regeln
--
--* **Atmen:** Fließt der Atem ruhig? Gut! Hältst du die Luft an? Dann ist der Druck zu fest.
--* **Weichteile:** Rolle **niemals** über Knochen oder Gelenke (Wirbelsäule, Kniescheibe, Schienbein etc. immer aussparen!).
--* **Der "Wohlweh"-Schmerz:** Es darf ziehen und sich nach intensiver Massage anfühlen, aber niemals stechend schmerzen.
+
+* **Atmen:** Fließt der Atem ruhig? Gut! Hältst du die Luft an? Dann ist der Druck zu fest.
+* **Weichteile:** Rolle **niemals** über Knochen oder Gelenke (Wirbelsäule, Kniescheibe, Schienbein etc. immer aussparen!).
+* **Der "Wohlweh"-Schmerz:** Es darf ziehen und sich nach intensiver Massage anfühlen, aber niemals stechend schmerzen.
 
 
 - [ ] **Fußsohlen rollen:** Im Stehen den Tennisball unter der Fußsohle langsam von der Ferse zu jeden Zehen rollen. (1-2 Min. pro Fuß)
