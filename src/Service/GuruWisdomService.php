@@ -36,6 +36,19 @@ class GuruWisdomService
     private const HTML_BASE_PATH = '/html/';
 
     /**
+     * MathJax formulas ($...$, $$...$$, \(...\), \[...\]) are protected from the markdown
+     * parser, which would otherwise turn "F_n = F_{n-1}" into "F<em>n = F</em>{n-1}" or drop the
+     * backslash of "\[". Code blocks and code spans come first in the pattern, so a "$" inside
+     * code is never taken as a formula; they are left as they are.
+     */
+    private const MATH_PATTERN = '/(?:^|\n)[ \t]*(?:```|~~~)[\s\S]*?\n[ \t]*(?:```|~~~)[^\n]*'
+        . '|`[^`\n]+`'
+        . '|\$\$[\s\S]+?\$\$'
+        . '|(?<!\\\\)\$[^$\n]+?\$'
+        . '|\\\\\[[\s\S]+?\\\\\]'
+        . '|\\\\\([\s\S]+?\\\\\)/';
+
+    /**
      * Start height in pixels of an embedded HTML page and the allowed range. The page
      * may report its real height to /js/htmlEmbed.js, which then resizes the iframe.
      */
@@ -493,6 +506,10 @@ class GuruWisdomService
         $stash = [];
         $markdown = $this->protectPlaceholders($data['raw_markdown'], $locale, $stash);
 
+        // Same for MathJax formulas: they must reach the browser exactly as written.
+        $mathStash = [];
+        $markdown = self::protectMath($markdown, $mathStash);
+
         $parser = new GithubMarkdown();
         $html = $parser->parse($markdown);
 
@@ -502,6 +519,8 @@ class GuruWisdomService
             $replacements['<p>' . $token . '</p>'] = $placeholderHtml;
             $replacements[$token] = $placeholderHtml;
         }
+        // Formulas are inline text: no unwrapping, the surrounding <p> stays.
+        $replacements += $mathStash;
         $data['htmloutput'] = strtr($html, $replacements);
 
         unset($data['raw_markdown']);
@@ -733,6 +752,29 @@ class GuruWisdomService
     private function t(string $key, string $locale): string
     {
         return self::TEXTS[$locale][$key] ?? self::TEXTS['de'][$key] ?? $key;
+    }
+
+    /**
+     * Replaces MathJax formulas with unique tokens and stores them, HTML-escaped but otherwise
+     * unchanged, in $stash. Code blocks and code spans are left untouched.
+     *
+     * @param string               $markdown The markdown (placeholders already replaced).
+     * @param array<string,string> $stash    Receives token => escaped formula.
+     * @return string Markdown with tokens instead of formulas.
+     */
+    public static function protectMath(string $markdown, array &$stash): string
+    {
+        return (string)preg_replace_callback(self::MATH_PATTERN, function (array $matches) use (&$stash): string {
+            $match = $matches[0];
+            $trimmed = ltrim($match);
+            if (str_starts_with($trimmed, '`') || str_starts_with($trimmed, '~~~')) {
+                return $match;
+            }
+            $token = 'WISDOMMATH' . count($stash) . 'X';
+            $stash[$token] = htmlspecialchars($match, ENT_NOQUOTES | ENT_SUBSTITUTE, 'UTF-8');
+
+            return $token;
+        }, $markdown);
     }
 
     /**

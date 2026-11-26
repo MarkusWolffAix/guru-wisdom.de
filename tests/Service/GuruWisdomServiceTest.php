@@ -198,6 +198,75 @@ final class GuruWisdomServiceTest extends TestCase
         $this->assertStringNotContainsString('<em>', $html);
     }
 
+    public function testParseFileKeepsMathFormulasUnchanged(): void
+    {
+        // Nowdoc: "$" must not be interpolated by PHP
+        $markdown = <<<'MD'
+            ---
+            title: Math
+            date: 2026-03-02
+            ---
+
+            # Math
+
+            Fibonacci ($F_n = F_{n-1} + F_{n-2}$) and *real* italics.
+
+            $$|\Psi_{A}\rangle = a_i b_i$$
+
+            Display \[ x_1 < y_2 \] and inline \( a_b \).
+            MD;
+        file_put_contents($this->tempDir . '/math-wisdom.md', $markdown . "\n");
+
+        $html = $this->guruWisdom->parseFile('math-wisdom')['htmloutput'];
+
+        $this->assertStringContainsString('($F_n = F_{n-1} + F_{n-2}$)', $html);
+        $this->assertStringContainsString('<em>real</em>', $html);
+        $this->assertStringContainsString('$$|\Psi_{A}\rangle = a_i b_i$$', $html);
+        $this->assertStringContainsString('\[ x_1 &lt; y_2 \]', $html);
+        $this->assertStringContainsString('\( a_b \)', $html);
+        $this->assertStringNotContainsString('<em>n', $html);
+        $this->assertStringNotContainsString('WISDOMMATH', $html);
+    }
+
+    public function testProtectMathLeavesCodeUntouched(): void
+    {
+        $text = <<<'MD'
+            Cost `$HOME and $PATH` and $x_1$
+
+            ```
+            echo "$a $b"
+            ```
+            MD;
+        $stash = [];
+        $result = GuruWisdomService::protectMath($text, $stash);
+
+        $this->assertStringContainsString('`$HOME and $PATH`', $result);
+        $this->assertStringContainsString('echo "$a $b"', $result);
+        $this->assertSame(['WISDOMMATH0X' => '$x_1$'], $stash);
+    }
+
+    public function testParseFileMathAndPlaceholdersTogether(): void
+    {
+        $markdown = <<<'MD'
+            ---
+            title: Mixed
+            date: 2026-03-03
+            ---
+
+            # Mixed
+
+            [image:My_Pic_2|Alt]
+
+            Value $a_1$ here.
+            MD;
+        file_put_contents($this->tempDir . '/mixed-wisdom.md', $markdown . "\n");
+
+        $html = $this->guruWisdom->parseFile('mixed-wisdom')['htmloutput'];
+
+        $this->assertStringContainsString('My_Pic_2.webp', $html);
+        $this->assertStringContainsString('Value $a_1$ here.', $html);
+    }
+
     public function testParseFileExtractsFrontMatterAndParsesMarkdown(): void
     {
         $data = $this->guruWisdom->parseFile('first-wisdom');

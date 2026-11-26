@@ -98,6 +98,8 @@ further than before
 Smile, and you will become
 this very gate
 
+---
+
 **English Translation**
 
 [Verse 1]

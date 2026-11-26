@@ -25,12 +25,12 @@ Even in foreign linguistic regions where the term serves as an ancient measure o
 In this multifaceted view, the circle of the human image closes: We are formed clay from the silence of the earth, carried by the shades of our lived experiences and called to carry a living, distinctive song out into the world through our own breath.
 
 
- Dimension | Phenomenon | What it describes |
+| dimension | phenomenon | What it describes |
 | :--- | :--- | :--- |
 | **Matter & Origin** | The earth / the clay | The malleable primordial substance, the vessel of life, the body |
 | **Vibration & Spirit** | The music / the sound | The invisible wave, the breath, the resonance |
 | **Light & Perception** | The color / shade | The nuance, the depth, the interplay between light and shadow |
-| **Space & Measurability** | Weight & volume (ton) | The tangible anchoring in physical reality |
+| **Space & Measurability** | Weight & volume (ton) | The solid anchoring in physical reality |
 
 ---
 ## Lyrics
@@ -60,7 +60,7 @@ and depth opens up to the view.
 
 [Pre-Chorus]
 No sound alone tells the story of the picture,
-No shadow without its cause.
+There is no shadow without its cause.
 
 [Chorus]
 We are the sound, we are the song,

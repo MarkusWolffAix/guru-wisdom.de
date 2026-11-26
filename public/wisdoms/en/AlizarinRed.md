@@ -74,6 +74,8 @@ A deep human longing that begged to be whole.
 From the farmer's sweat to the chemist's glass,
 Watch the ancient empire of nature pass.
 
+---
+
 **Alchemical Red (German Translation)**
 
 (Verse 1)

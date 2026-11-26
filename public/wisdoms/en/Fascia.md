@@ -10,11 +10,10 @@ tags: ["Biology", "Cure", "Mindfulness", "Fascia", "Connective tissue", "Body aw
 
 ### 🧠 What exactly are fascia?
 The term **fascia** is often used today as a synonym for our **connective tissue** . Imagine fascia as an uninterrupted, three-dimensional, fibrous network that permeates our entire body. It envelops every muscle, every bone, our nerves, blood vessels, and even our internal organs. It gives us shape, support, and connects everything within us—from the scalp to the tips of our toes. Therefore, when we care for our fascia, we are caring for our deepest, inner foundation.
-
----
-
+    
 - **All you need is:** 1 tennis ball, your DIY sock duo ball (2 tennis balls in one sock), a round pen without a rim, a rolling pin (or a smooth bottle) and a wall/door frame.
--
+
+
 ### 🌟 The 3 Golden Rules of Fascia
 -
 -* **Breathing:** Is your breath flowing calmly? Good! Are you holding your breath? Then the pressure is too high.

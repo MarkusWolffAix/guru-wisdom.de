@@ -40,6 +40,7 @@ She is the ruler of physical form and sustains the world with life. She is profo
 
 It is the pure image of its parents. The child embodies the meditative stillness and boundless care of its creators. At the same time, it carries within it a "childlike spark" – an indelible spark of the original dynamism of the Big Bang, representing vitality, curiosity, and unstoppable growth.
 
+---
 
 [image:BigBang3|Creation of the Human Child]
 

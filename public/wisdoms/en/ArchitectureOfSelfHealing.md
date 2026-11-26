@@ -23,7 +23,7 @@ Creation is fractally structured ("As above, so below"). The self is without sca
 * **Self-similarity instead of identity:** The structure of healing is similar at every level, but not exactly the same. The respective context shapes the structure. This subtle variation is essential so that the system does not get stuck in an endless loop, but rather continues to develop along an evolutionary **spiral** (alpha and omega).
 * **The breathing of focus:** In order to heal, the self must constantly oscillate between two perspectives:
     * **The Close-Up (The Microcosm):** Immersing oneself in direct pain to feel the smallest details and to perform the concrete inner craftsmanship.
-    * **The overview (the macrocosm):** Zooming out (the macro-zoom) to recognize the large fractal pattern, to see the meaning and not to get lost in the emotional details.
+    * **The overview (the macrocosm):** Zooming out (the macro-zoom) to recognize the large fractal pattern, to see the meaning and not to get lost in the emotional detail.
 
 ### 3. Empathy and the "nursery" principle
 Love is the highest principle. It is not only the goal, but the foundation of every process. Empathy is the natural movement of love itself, through which the self builds a bridge to other sentient parts of creation. **Understanding** is not the purpose, but the **natural gift** of love.
@@ -43,7 +43,7 @@ The self uses the same core principle for healing in both the macrocosm (nature)
 
 | Phenomenon in the macrocosm (Earth) | Phenomenon in the microcosm (human) | The universal core idea of self-healing |
 | :--- | :--- | :--- |
-| **Forest fires & volcanism:** The old burns away, volcanoes bring deep earth to the surface. This creates extremely fertile ash for new growth. | **Fever & Anger:** The body raises its temperature against pathogens; the psyche uses anger/burnout to stop toxic conditions. | **The cleansing catharsis:** Controlled breakdown of the old/toxic to create fertile ground and space for something completely new. |
+| **Forest fires & volcanism:** The old burns away, volcanoes bring deep earth to the surface. This creates extremely fertile ash for new growth. | **Fever & Anger:** The body raises its temperature against pathogens; the psyche uses anger/burnout to stop toxic conditions. | **The cleansing catharsis:** Controlled breakdown of old/toxic substances to create fertile ground and space for something completely new. |
 | **Ecological succession:** After clear-cutting, robust lichens/mosses (pioneers) appear first, followed much later by large trees. | **Wound healing & scar formation:** First the blood clots, then a hard scab forms as protection before soft tissue grows back. | **Gradual regeneration:** Healing takes time and temporary, rough protective structures until the delicate final state can mature. |
 | **Mycelial networks:** When damage occurs in the forest, fungi redirect nutrients from healthy to diseased trees. | **Neuroplasticity:** In cases of brain injury, remaining neurons form new synapses to circumvent the damage. | **Adaptive rerouting:** If a path is blocked, the system flexibly shifts energy and creates new connections to maintain the whole. |
 | **Winter & Tides:** Sap retreats to the roots; ebb and flow wash away stagnation. | **Sleep & Rhythm:** Daily unconsciousness for cellular repair and abstraction in dreams. | **Rhythmic retreat (dormancy):** True healing requires cycles of absolute rest in which the focus is completely turned inward. |
@@ -58,33 +58,6 @@ The self uses concrete psychological tools to open up its own space for understa
 * **The simulation method (dream and play):** Consciousness creates an abstract, surreal simulation of reality. In this protected space, conflicts and solutions can be explored safely.
 * **The method of changing perspective (the macro-zoom):** The self shifts to a meta-perspective (like looking down at a labyrinth from above). The painful details of the close-up disappear, leaving behind the pure, abstract pattern of the conflict, which can be analyzed without emotional overwhelm.
 * **The method of untangling (The Prism):** A massive conflict is patiently broken down into its smallest, logical components until the individual parts are tangible enough to be understood one after the other and brought back into love.
-
----
-id: "ArchitectureOfLightLyrics"
-title: "Architecture of Light"
-subtitle: "Lyrics and translation"
-description: "The musical translation of the architecture of self-healing – a song about the fractal self, abstraction through the prism, and the return to love."
-Date: 2026-03-31
-author: "Markus Wolff guru-wisdom.de"
-tags: ["Biology", "Psychology", "Healing", "Self-healing", "Fractals", "Cellular memory"]
-categories: ["Healing & Mindfulness", "Science & Nature"]
----
-
-# Architecture of Light
-
-## Lyrics and translation
-
-### Verse 1
-
-> On the velvet moss, where the ancient roots weave deep,
-> A tired heart is kneeling, with a secret it must keep.
-> Above the restless water, where the heavy shadows reside,
-> A storm is gathering power, with nowhere left to hide.
-
-*On the velvety moss, where ancient roots weave deep,*
-*A weary heart kneels, bearing a secret it must guard.*
-*Above the restless water, where the heavy shadows dwell,*
-*When a storm gathers its strength, there is nowhere left to hide.*
 
 ---
 

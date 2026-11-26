@@ -110,6 +110,7 @@ In the ocean
 (I am the wave)
 And I let myself in
 
+---
 
 **Lyrics (Original German)**
 

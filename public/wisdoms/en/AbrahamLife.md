@@ -4,6 +4,7 @@ subtitle: "A journey of faith and devotion"
 description: "Explore the spiritual journey and timeless wisdom in the life of Abraham, the father of faith."
 tags: ["Abraham", "Christianity", "Religions", "Progenitor", "Judaism", "Believe"]
 ---
+
 # The Life of Abraham
 ## A Journey of Faith and Devotion
 
@@ -30,4 +31,8 @@ Abraham's true greatness was not revealed in blind submission, but in his radica
 
 Sodom, which archaeological evidence suggests was possibly destroyed by the massive meteorite impact of Tal el-Hammam, represented everything Abraham rejected: pride, coldness, and violence against strangers. Abraham's life, on the other hand, was the complete opposite. The escape of his nephew Lot from the burning city also left behind a timeless lesson: those who free themselves from a destructive environment must not look back wistfully (like Lot's wife, who turned into a pillar of salt), but must let go of what is toxic in order to avoid becoming stagnant inside.
 
-**A Blessing for the World** Abraham did not build colossal pyramids or palaces. His legacy was a tent whose sides were open in all directions to welcome every traveler. He combined the wisdom of the ancient world before the Flood with the vision of a just and merciful Creator. As the patriarch of billions of people in Judaism, Christianity, and Islam, his example—the light of knowledge, hospitality, and trust—shines into our own time.
+---
+
+**A Blessing for the World**
+
+Abraham did not build colossal pyramids or palaces. His legacy was a tent whose sides were open in all directions to welcome every traveler. He combined the wisdom of the ancient world before the Flood with the vision of a just and merciful Creator. As the patriarch of billions of people in Judaism, Christianity, and Islam, his example—the light of knowledge, hospitality, and trust—shines into our own time.

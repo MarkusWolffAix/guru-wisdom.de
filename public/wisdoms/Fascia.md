@@ -13,10 +13,8 @@ categories: ["healing", "science"]
 ### 🧠 Was sind eigentlich Faszien?
 Der Begriff **Faszien** wird heute oft als Synonym für unser **Bindegewebe** verwendet. Stell dir Faszien wie ein ununterbrochenes, dreidimensionales und faseriges Netz vor, das unseren gesamten Körper durchzieht. Sie umhüllen jeden Muskel, jeden Knochen, unsere Nerven, Blutgefäße und sogar unsere inneren Organe. Sie geben uns Form, Halt und verbinden alles in uns miteinander – von der Kopfhaut bis zu den Zehenspitzen. Wenn wir unsere Faszien pflegen, pflegen wir also unser tiefstes, inneres Fundament.
 
----
+- **Du brauchst nur:** 1 Tennisball, deinen DIY-Socken-Duoball (2 Tennisbälle in einer Socke), einen runden Stift ohne Kante, ein Nudelholz (oder eine glatte Flasche) und eine Wand/einen Türrahmen.
 
--**Du brauchst nur:** 1 Tennisball, deinen DIY-Socken-Duoball (2 Tennisbälle in einer Socke), einen runden Stift ohne Kante, ein Nudelholz (oder eine glatte Flasche) und eine Wand/einen Türrahmen.
--
 ### 🌟 Die 3 Goldenen Faszien-Regeln
 -
 -* **Atmen:** Fließt der Atem ruhig? Gut! Hältst du die Luft an? Dann ist der Druck zu fest.

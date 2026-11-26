@@ -31,7 +31,7 @@ This process symbolizes a universal insight: that which is truly valuable and pr
 
 In its native regions, the indigo shrub fulfills the function of a classic pioneer plant. As a legume, it has the ability to regenerate depleted and nutrient-poor soils. 
 
-In a fascinating symbiosis, the plant attracts special *rhizobia* bacteria to its roots. These bacteria possess the rare biochemical property of breaking down inert atmospheric nitrogen (N₂) and converting it into plant-available ammonia (NH₃).
+In a fascinating symbiosis, the plant attracts special *rhizobia* bacteria to its roots. These bacteria possess the rare biochemical property of breaking down inert atmospheric nitrogen ( $N_2$ ) and converting it into plant-available ammonia ( $NH_3$ ).
 
 $$N_2 + 8H^+ + 8e^- \rightarrow 2NH_3 + H_2$$
 

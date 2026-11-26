@@ -75,6 +75,7 @@ Anant hai yeh preet, na teri na meri.
 Nastaliq ke phool, Devanagari ka gyaan,
 Dono ke milne se, roshan hai jahaan.
 
+---
 
 #### German Translation
 

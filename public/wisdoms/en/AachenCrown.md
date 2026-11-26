@@ -1,112 +1,59 @@
 ---
 title: "Charlemagne"
 subtitle: "Heritage and coronation tradition in Aachen"
-description: "A comprehensive summary about Charlemagne, the symbolic bust of Charlemagne and the history of the 31 royal coronations in Aachen Cathedral."
-tags: ["Aachen", "Ancient times", "Christianity", "Charlemagne", "Medieval Times", "coronation"]
+description: "A comprehensive summary about Charlemagne, the symbolic bust of Charlemagne, and the history of the 31 royal coronations in Aachen Cathedral."
+tags: ["Aachen", "Ancient times", "Christianity", "Charlemagne", "Medieval Times", "Coronation"]
 ---
+
 # Charlemagne
-## Heritage and Coronation Tradition in Aachen
+## Heritage and coronation tradition in Aachen
 
-This summary provides a comprehensive overview of Charlemagne's legacy, the art-historical significance of his reliquary bust, and Aachen's centuries-long tradition as the coronation site of the Holy Roman Empire.
+This summary provides a comprehensive overview of the work of Charlemagne, the art historical significance of his reliquary bust, and Aachen's centuries-long tradition as the coronation site of the Holy Roman Empire.
 
-### I. Charlemagne: The Foundation of Europe
-Charlemagne (c. 742–814 AD), revered as **“Pater Europae”** (Father of Europe), created an empire that formed the core of the modern continent. He initiated the **Carolingian Renaissance**, reformed education, and introduced the Carolingian minuscule script.
+---
 
-#### The Imperial Coronation (800 AD)
-* **When & Where:** December 25, 800, in the old St. Peter's Basilica in Rome.
+###  Charlemagne: The Foundation of Europe
+Charlemagne (c. 742–814 AD), revered as **"Pater Europae"** (Father of Europe), created an empire that formed the core of the modern continent. He initiated the **Carolingian Renaissance** , reformed education and writing (Carolingian minuscule).
 
-* **The Act:** Pope Leo III crowned Charlemagne. This established the **Translatio Imperii** (transfer of the Roman Empire to the Franks).
-
-* **Politics:** It was an alliance of "throne and altar." Charlemagne protected the Pope from enemies, and the Pope bestowed upon him the imperial dignity. Charlemagne's alleged "surprise" at his coronation is now considered a politically staged event.
-
-* **Conflict:** This triggered the **Two Emperors Problem** with the Byzantine Empire, as Empress Irene reigned there, and Byzantium initially refused to recognize the new emperor in the West.
-
-### II. The Aachen Bust of Charlemagne: Reliquary and Symbol of Power
-The bust, commissioned by Emperor Charles IV around **1349**, is one of the most important works of Gothic art.
-
-* **Reliquary:** It contains the **original skullcap of Charlemagne**. Anthropological studies (2014) confirm the authenticity of the remains.
-
-* * **Heraldic Symbolism:** The robe displays the **Imperial Eagle** (Holy Roman Empire) and the **Lily** (Fleur-de-Lys for France). This marks Charlemagne as the common origin of both nations.
-
-* **Details:** The bust wears a detachable Gothic fleur-de-lis crown adorned with antique Roman **cameos** to emphasize its continuity with the Roman Empire.
-
-* **Realism:** Despite idealized features (a full beard instead of the historically probable mustache), it is considered an early milestone in individual portraiture.
-
-### III. Aachen as the Coronation Site (936–1531)
-Between the coronations of Otto I and Ferdinand I, Aachen was the rightful place for the investiture of the Holy Roman Emperors. Crucially, it was the enthronement on the **throne of Charlemagne** that was decisive. The privilege of coronation traditionally rested with the **Archbishop of Cologne**.
+### The imperial coronation (800 AD)
+* **When & Where:** On December 25, 800 in the old St. Peter's Basilica in Rome.
+* **The act:** Pope Leo III crowned Charlemagne. This established the **Translatio Imperii** (transfer of the Roman Empire to the Franks).
+* **Politics:** It was an alliance of "throne and altar." Charlemagne protected the Pope from his enemies, and the Pope bestowed upon him imperial dignity. Charlemagne's alleged "surprise" at the coronation is now considered a politically staged event.
+* **Conflict:** This triggered the **Two Emperors Problem** with the Byzantine Empire, as Empress Irene ruled there and Byzantium initially did not recognize the new emperor in the West.
 
 
-### #### Detailed List of Aachen Royal Coronations
+[image:AachenCrown3|Das Reich]
 
-| No. | Year | King / Ruler | Crowned by (Archbishop/Prelate) |
+### Earth, Water and the Eagle of Eternity
 
-| :--- | :--- | :--- | :--- |
+In the late 8th century, a historical transformation took place that would shape the foundations of Europe. Charlemagne, operating from his center in Aachen, extended the influence of the Frankish Empire far to the south. This expansion reveals a fascinating duality of power: the conquest of the solid earth and the failure to overcome the formless waters.
 
-| 1 | 936 | **Otto I (the Great)** | Hildebert (Mainz) & Wichfrid (Cologne) |
+**Reaching for Earth: Verona and the Alps**
+With the campaign of 773/774 against the Lombards, Charlemagne incorporated northern and central Italy into his vast empire. The massive fortresses and fertile soils of northern Italy, such as those in Verona, as well as the majestic mountain landscape around Lake Garda, became cornerstones of Frankish rule. Charlemagne ruled over the stones, the architecture of the cities, and the roads – the visible, tangible world.
 
-| 2 | 961 | **Otto II** | Bruno I (Cologne) |
+**The unconquerable lagoon: Venice**
+But the flowing water told a different story. Venice eluded the Frankish grasp, proving that sheer imperial power has its limits when confronted by the formless forces of nature. Formally under the protection of the Byzantine Empire, the Venetians used their fluid geography as a shield. When Charlemagne's son, King Pepin of Italy, attempted to conquer the city around 810, the inhabitants retreated to the inaccessible waters and sandbanks of the lagoon (then near Malamocco). The Frankish troops were thwarted by the tides and shallows. In the Peace of Aix-la-Chapelle (812), Charlemagne finally had to acknowledge that Venice lay outside his realm. Water, it seemed, could not be confined to rigid systemic boundaries.
 
-| 3 | 983 | **Otto III** | Willigis (Mainz) - *acting* |
+**The southern contact zones of the empire**
+The borders of the Frankish Empire were not rigid walls, but dynamic interfaces where completely different worlds collided:
+* **The Lombard legacy:** With Pavia as the ancient administrative center and Rome as the spiritual heart under Frankish protection.
+* **The Spanish March:** Outposts like Barcelona served as a buffer zone and bridge between Christian Europe and the highly developed Umayyad Emirate of Córdoba.
+* **The southeast:** Aquileia formed the gateway to the east, from where cultural and religious influence flowed deep into the Balkans.
 
-| 4 | 1002 | **Henry II** | Willigis (Mainz) - *Enthronement* |
+**The seal of power: The eagle**
+Above all these earthly boundaries hovers a symbol that expresses a deeper longing for permanence: the eagle. 
+Originally *the Aquila,* the standard of the Roman legions and a symbol of Jupiter, the eagle was chosen by Charlemagne to demonstrate his legitimate succession to the ancient Caesars ( *Translatio Imperii* ) at his imperial coronation in 800. He even crowned his palace in Aachen with such an iron bird. This Frankish imperial eagle survived the Holy Roman Empire as a heraldic animal and its continuity is still reflected today in the German federal eagle. It stands for sovereignty, foresight, and rising above earthly chaos.
 
-| 5 | 1024 | **Conrad II** | Aribo (Mainz) - *Enthronement* |
+**The philosophical dimension**
+Empires rise and fall. But the lessons of that era are timeless: It is essential to build structures with the steadfastness of the earth, yet simultaneously to preserve the adaptable and invulnerable flexibility of water. True wisdom lies in adopting an eagle's eye amidst complex systems and the daily noise – that higher, silent perspective which recognizes the connecting pattern of all things.
 
-| 6 | 1028 | **Henry III** | Pilgrim (Cologne) |
-| 7 | 1054 | **Henry IV** | Hermann II (Cologne) |
-| 8 | 1087 | **Konrad (son H. IV.)** | Sigewin (Cologne) |
-| 9 | 1099 | **Heinrich V** | Herman III (Cologne) |
-| 10 | 1125 | **Lothar III.** | Frederick I (Cologne) |
-| 11 | 1138 | **Conrad III.** | Cardinal Theodwin (Papal Legate) |
-| 12 | 1147 | **Heinrich Berengar** | Arnold I. (Cologne) |
-| 13 | 1152 | **Frederick I (Barbarossa)** | Arnold II (Cologne) |
-| 14 | 1169 | **Henry VI** | Philip I (Cologne) |
 
-| 15 | 1198 | **Otto IV (Welf)** | Adolf I (Cologne) |
+[image:AachenCrown2|Teilung des Reiches]
 
-| 16 | 1205 | **Philip of Swabia** | Adolf I (Cologne) - *Post-coronation* |
+### The division of a world: The Treaty of Verdun
 
-| 17 | 1215 | **Frederick II** | Siegfried II (Mainz) |
+The decisive turning point, from which the different paths developed, occurred only after Charlemagne's death. When his grandsons fought over the vast inheritance, the empire was divided into three parts by the Treaty of Verdun in 843. This geographical and political reorganization laid the foundation for modern Europe. The anchor points of these new realms were three cities that grew into centers of power and identity:
 
-| 18 | 1222 | **Henry (VII)** | Engelbert I (Cologne) |
-
-| 19 | 1237 | **Conrad IV** | Siegfried III (Mainz) - *Enthronement* |
-
-| 20 | 1248 | **William of Holland** | Conrad von Hochstaden (Cologne) |
-
-| 21 | 1257 | **Richard of Cornwall** | Konrad von Hochstaden (Cologne) |
-
-22 | 1273 | **Rudolf I (Habsburg)** | Engelbert II (Cologne) |
-
-23 | 1292 | **Adolf of Nassau** | Siegfried von Westerburg (Cologne) |
-
-24 | 1298 | **Albert I** | Wigbold von Holte (Cologne) |
-
-25 | 1309 | **Henry VII** | Henry II of Virneburg (Cologne) |
-
-26 | 1314 | **Louis IV (the Bavarian)** | Peter von Aspelt (Mainz) - *Dispute* |
-
-27 | 1349 | **Charles IV** | Walram of Jülich (Cologne) |
-
-28 | 1376 | Wenceslaus | Frederick III (Cologne) |
-
-29 | 1407 | Rupert | Frederick III (Cologne) - *Enthronement* |
-
-30 | 1414 | Sigismund | Dietrich II of Moers (Cologne) |
-
-31 | 1442 | Frederick III | Dietrich II of Moers (Cologne) |
-
-32 | 1486 | Maximilian I | Hermann IV of Hesse (Cologne) |
-
-33 | 1520 | Charles V | Hermann V of Wied (Cologne) |
-
-34 | 1531 | Ferdinand I | Hermann V of Wied (Cologne) - *Last Coronation* |
-
-*(Note: The official Aachen list usually names 31 kings. The number varies slightly historically, depending on whether one includes enthronements without a new consecration.)*
-
-### IV. End of the Aachen Era
-
-From **1562** (Maximilian II) onward, the kings were crowned in **Frankfurt am Main**. The reasons were purely practical: Elections took place in Frankfurt, the city was geographically more central, and the logistical advantages outweighed the ritual connection to Charlemagne's palace.
-
-### V. International Dimensions of the Empire
-Although the empire later received the suffix "of the German Nation," it was a supranational entity. Many rulers had an international cultural background (e.g., the **Luxembourgers** in Prague or **Charles V** in Flanders and Spain). This underscores the European core of the empire, which originated in the person of Charlemagne.
+*   **The Middle Kingdom (Lotharingia):** Lothair I received the geographical heartland, stretching from the North Sea to Italy. It encompassed Aachen, the "Rome of the North" and the imperial capital, as well as Rome itself. Whoever held Aachen preserved the physical and spiritual legacy of Charlemagne.
+*   **The West Frankish Kingdom:** Under Charles the Bald, the West developed. Paris, strategically located on the Seine, was already an ancient and powerful city and became the focal point of the territory that would later grow into France. It was a fertile region, heavily influenced by Roman infrastructure.
+*   **East Francia:** Louis the German took over the wilder east, shaped by Germanic tribes. From power centers like Regensburg on the Danube, he ruled a region that, while lacking ancient heritage and civilizational infrastructure, distinguished itself through its martial resilience and rugged strength – the seed of the later Holy Roman Empire and modern Germany.

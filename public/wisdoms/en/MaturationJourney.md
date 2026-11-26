@@ -111,6 +111,8 @@ I take charge of my life
 And if I preserve myself
 I can be there for you
 
+---
+
 **I'm Taking Charge of My Life (Original Lyrics)**
 
 [Verse 1]
