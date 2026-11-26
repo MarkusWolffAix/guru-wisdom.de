@@ -25,6 +25,8 @@ When we chant the sound "Ur," we physically resonate precisely in this chest. Th
 
 When we chant the sound "Ur," we resonate physically in precisely this chest. ***
 
+---
+
 ### Piece of music: The Circle of UMA (Lyrics & Translation)
 
 **English Lyrics**
@@ -52,6 +54,8 @@ Oh, AUM is the wheel, turning round in the light,
 Read it as UMA, the Mother so bright.
 U is the bridge where the universe plays,
 Holding love in a golden embrace.
+
+---
 
 **German Translation**
 

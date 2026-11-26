@@ -27,6 +27,8 @@ But the ego is not an enemy to be destroyed. True inner development consists of 
 
 The ego is not pure consciousness or freely flowing life energy, but it forms the absolutely necessary vessel. Without this supporting alignment and physicality, the posture would collapse; we would lose our ability to act in the everyday world. A healthy, open ego gives us the necessary contour and stability to safely contain and purposefully direct the immense energy of our consciousness. It does not build impenetrable concrete walls, but rather aligns itself flexibly. It transforms from a blockage into a completely natural, serving form.
 
+---
+
 ### Lyrics: Emptiness and Realization (German)
 
 **[Verse 1]**
@@ -130,6 +132,8 @@ The lightning burns out into nothingness
 But seeing is learned quietly
 The subject remains precise
 In its own way
+
+---
 
 ### Lyrics: Emptiness and Insight (English Translation)
 

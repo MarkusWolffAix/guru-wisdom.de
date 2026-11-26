@@ -44,6 +44,7 @@ A central aspect of identity formation is the process of letting go. To create a
 ### Conclusion
 A true composition emerges the moment there is a willingness to relinquish the individuality of the parts in favor of a higher narrative. The identity of a work is not the sum of its atoms, but rather the meaning, memory, and conscious transformation invested in its continued existence. The whole is thus not merely the sum of its parts, but the sum of its overcome farewells.
 
+---
 
 ## Musical Accompaniment: The Measured Plate
 

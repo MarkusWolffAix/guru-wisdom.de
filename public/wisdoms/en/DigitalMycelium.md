@@ -23,6 +23,8 @@ The interplay of Cloudflare, redundant S3 buckets, and a deployment pipeline con
 
 [Architecture_guru-wisdom.pdf](https://guru-wisdom.de/files/Architecture_guru-wisdom.pdf) (Accessed: May 11, 2026)
 
+---
+
 **Lyrics:**
 
 Under the bark, a silent law,

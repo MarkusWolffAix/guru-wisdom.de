@@ -36,6 +36,7 @@ To heal this rift, government intervention isn't necessarily required, but rathe
 
 When we begin to establish such central collection and cleaning networks, we perform a profoundly beneficial act. We transcend the linear, one-way street of our economic activity and re-enter the eternal, cyclical metabolism of nature. Every conscious step that understands the past as a nourishing part of the cycle allows us and our surrounding world to blossom again and again.
 
+---
 
 ### Music & Lyrics: The Anchor Stone
 

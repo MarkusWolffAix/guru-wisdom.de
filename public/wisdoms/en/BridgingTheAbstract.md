@@ -30,6 +30,8 @@ These structural approaches can be further refined through additional techniques
 
 Ultimately, the path to a true understanding of complex systems never leads through more pressure and abstraction. It leads through the loving, patient construction of bridges that connect the incomprehensible, step by step, with our lived, human experience.
 
+---
+
 ### Music: Stepping Stones
 
 **English Lyrics:**

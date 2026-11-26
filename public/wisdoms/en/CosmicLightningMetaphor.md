@@ -66,6 +66,8 @@ The ancient theory of the elements provides the perfect framework for this metap
 
 **Conclusion:** We need air (intellect) to define our boundaries. But to experience true connection, we must use water (emotion) to break through the resistance of air so that fire (insight) can land on Earth. All this happens in the deep embrace of the ether, the space that holds everything.
 
+---
+
 ### The Musical Essence: Silence at the Threshold
 
 *(Lyrics based on the metaphor)*

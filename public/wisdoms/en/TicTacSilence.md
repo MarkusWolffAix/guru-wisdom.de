@@ -15,6 +15,8 @@ But true liberation from this endless grid lies in the "toe"—our direct point 
 
 When we remove the ego and the hardened will to win from the equation, the battlefield transforms into a shared dance. The game becomes a pure celebration of the moment. And when the simple 3x3 grid is finally seen through and the ego starves, we don't succumb to boredom. We seek out more complex games—not to finally triumph again, but to celebrate the pure joy of mental and physical growth. The universal principles of rhythm, balance, and grounding stillness remain untouched. They simply unfold on a finer, more expansive scale, carried by the profound harmony that arises when we are simply together in the here and now.
 
+---
+
 ### Lyrics: The Grounding Silence / The grounding silence
 
 **English Translation:**

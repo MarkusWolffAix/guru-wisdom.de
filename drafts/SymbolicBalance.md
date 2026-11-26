@@ -36,4 +36,3 @@ Die organische Alternative ist die mündliche Überlieferung – das Weitergeben
 
 Die vollkommene Sicherung von Weisheit liegt daher in der Synthese. Die festgeschriebene Geschichte, der in Stein gemeißelte (oder digital programmierte) Text, bildet das unverwüstliche Gefäß. Doch erst wenn ein Mensch vor diesem Gefäß steht, die Worte in sich aufnimmt und sie in seinem eigenen Herzen zum Klingen bringt, erwacht der Stein zum Leben. Die wahre Archivierung benötigt die Struktur des Steins, aber sie ist vollkommen abhängig von der Begegnung mit dem menschlichen Bewusstsein – dem Wasser, das in das Gefäß gegossen wird, damit der Funke der Wahrheit für alle Zeiten weiterbrennt.
 
-```

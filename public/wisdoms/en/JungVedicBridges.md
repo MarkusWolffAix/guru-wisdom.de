@@ -34,6 +34,8 @@ Despite his fascination with the East, Jung always emphasized that the Western m
 ### Audio Bible Podcast Zeit
 https://www.zeit.de/gesellschaft/2026-04/carl-gustav-jung-psychologie-traeume-bibelpodcast
 
+---
+
 ### Lyrics
 
 **The Deepest Mirror**

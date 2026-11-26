@@ -27,6 +27,8 @@ Despite his victory in the east, Rudolf remained a typical medieval itinerant ki
 
 Rudolf died in 1291 in Germersheim. At his express wish, his body was buried in Speyer Cathedral. Speyer, located in Rhineland-Palatinate on the left bank of the Rhine, was the traditional burial place of the Salian and Hohenstaufen emperors. Through this burial, Rudolf symbolically placed himself among the great emperors and solidified the Habsburgs' dynastic claim even beyond his death.
 
+---
+
 ### 4. Musical Memorial: "Count in a Gray Coat"
 As a tribute to this eventful history, a piece of music in the style of "Neo-Classical Folk" was composed. Since the piece was originally written in German, the following lyrics represent both the original and translated text.
 

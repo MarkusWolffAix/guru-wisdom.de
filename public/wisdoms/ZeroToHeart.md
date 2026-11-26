@@ -37,6 +37,7 @@ Schneidet man eine Banane leicht schräg an, entsteht auf dem Holzbrett eine bei
 [image:ZeroToHeart2]
 
 Dieses kleine Wunder am Frühstückstisch beweist uns: Die Geometrie der Liebe erfordert keine abstrakten mathematischen Räume. Sie ist allgegenwärtig. Mit einem simplen Schnitt und einem winzigen Perspektivwechsel lässt sich die tiefste Struktur der Schöpfung mitten im Alltag sichtbar machen. Aus einer gewöhnlichen Bananenscheibe wird im Handumdrehen ein greifbares Zeichen der Verbundenheit.
+
 ---
 
 

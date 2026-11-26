@@ -19,6 +19,8 @@ For the Sufis, the mystics of Islam, all these images—the rivers, the trees, t
 
 Jannah is thus more than a place of reward; It is a state of perfect inner peace (*Dar as-Salam*), an absolute connection, and a return to the silent, radiant presence of the Divine.
 
+---
+
 ### Musical accompaniment: Leaves of Tuba (Salam)
 
 **English Lyrics:**

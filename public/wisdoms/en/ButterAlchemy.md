@@ -21,6 +21,7 @@ This grounding essence, gained through experience, ultimately serves as our prot
 
 Those who endure the friction and trust in time ultimately find awakening in its most mundane form—pure, grounding, and utterly unshakable.
 
+---
 
 **Lyrics: Everything's Fine / All is in Butter**
 
@@ -85,6 +86,8 @@ No distant sign, no grand illusion
 Awakening can be found in the simplest things
 A breath, a calm foundation
 Soft as butter and perfectly round
+
+---
 
 (English Translation)
 

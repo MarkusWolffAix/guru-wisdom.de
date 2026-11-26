@@ -26,6 +26,8 @@ The most fascinating element here is the "yoke" itself. In Indian philosophy, th
 
 It is the moment when tension dissolves and posture becomes completely effortless, fluid, and grounded because we are no longer forcing anything. When we learn to encounter life with this undivided awareness, a deep, constant clarity permeates our being. We recognize where the true treasure lies hidden: in the peaceful stillness of the soul that has ceased to struggle.
 
+---
+
 ### Music & Poetry
 
 **English Translation:**

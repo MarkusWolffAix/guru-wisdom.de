@@ -17,6 +17,8 @@ The number 40 is a sacred code in the world's wisdom traditions. It is the perio
 
 Ascension is not a journey to a distant place, but rather the awakening to omnipresence. By releasing its connection to the physical form, consciousness returns to its original, undivided state. The drop realizes that it has always been the entire ocean. This return to the source is the ultimate act of liberation and completion.
 
+---
+
 ### Lyrics
 
 **Eternal Day**

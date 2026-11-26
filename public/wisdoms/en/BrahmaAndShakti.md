@@ -31,6 +31,8 @@ This duality of consciousness and energy is reflected on all levels of the divin
 
 This reflection not only teaches us the mythology of an ancient worldview but also reveals a timeless psychological and spiritual truth: In our own lives, too, our inner structure (our knowledge and intentions) and our flow (our action and creative energy) must find each other. Only when the inner "Brahma" unites with its "Shakti" does life become a true act of creation.
 
+---
+
 ### Music & Lyrics: The Uncarved Stone
 
 The following piece of music was created in response to this profound insight. Its soundscape combines the majestic stillness of structure with the flowing power of creation.

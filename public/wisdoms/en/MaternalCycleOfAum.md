@@ -17,6 +17,8 @@ This realization casts the maternal in a new light: It is not only the origin, b
 
 For our human consciousness, this offers profound comfort: In every ending we experience, in every farewell and every silence, the maternal principle is at work. It offers us the space to let go, to find, in the embrace of the "M," the strength for the next awakening "A." The universe breathes to the rhythm of an eternal maternal love that holds the cycle of becoming and passing away together in an infinite embrace.
 
+---
+
 ### Musical Accompaniment to Insight
 
 **English Lyrics:**

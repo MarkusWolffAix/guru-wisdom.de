@@ -19,6 +19,8 @@ From this profound connection, science springs anew. Sincere interest is the dee
 
 Science thus transforms from a sober tool into a celebration of creation. The universe breathes a sigh of relief. From now on, the divine concerns itself only with love. And our pursuit of knowledge is nothing other than the joyful response to the beauty of the world.
 
+---
+
 **Lyrics: The Healed Divine**
 
 (Verse 1)
@@ -52,6 +54,8 @@ In the roots and in the trees
 Science born from mysteries
 Joy of knowing, joy of light
 The universe has healed tonight.
+
+---
 
 **German Translation:**
 

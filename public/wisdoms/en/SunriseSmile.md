@@ -20,6 +20,7 @@ On a spiritual level, the east, the source of the sunrise, represents rebirth, e
 
 Thus, the morning smile becomes a bridge between heaven and earth, between biology and spirit. It is a daily reminder that we don't have to wait for the light to come to us from the outside. We can open the gate ourselves.
 
+---
 
 ### Music & Lyrics
 

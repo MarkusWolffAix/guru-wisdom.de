@@ -26,6 +26,8 @@ It was damaged by fires several times, most severely in August 2022 by a devasta
 
 The Banneux Chapel in Lichtenbusch is more than just a building. It is a living testament to the fact that strength can arise from weakness, blessing from frustration, and new hope from destructive fire. It stands as a peaceful monument to transformation and human resilience at a border that does not divide, but unites people.
 
+---
+
 ### Music & Poetry
 
 #### Lichtenbusch's Fire

@@ -25,6 +25,8 @@ The path to a healthy cell inevitably leads through the practice of grounding. W
 
 In these moments of clear awareness, we recognize a fundamental truth: Love is not a fleeting feeling that we must seek externally or laboriously create. We *are* this love. It is our indestructible essence. From this deep grounding, we draw the strength to maintain the vibration of love even in the unpredictable and chaotic moments of everyday life. Those who have deeply understood that they themselves are love become an unshakable anchor of calm in the global organism—a cell of the global heart that ceaselessly heals, nourishes, and connects.
 
+---
+
 ### Music & Lyrics: Where the Heart Beats Wide
 
 **English Lyrics:**

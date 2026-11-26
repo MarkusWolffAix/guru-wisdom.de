@@ -29,6 +29,8 @@ The culmination of this inner development is not merely the breaking open of the
 
 The once massive obstacle becomes *transparent*—like a crystal formed under pressure. Our fears and ego-based walls give way to luminous insight and pure clarity. And the stone becomes *flexible*. The rigidity disappears; We no longer resist the flow of life. The former trauma that blocked us gently reshapes itself around the river of our life experience. The stone is no longer the enemy, but the permeable vessel for our highest life force. The stony heart has become something fully alive.
 
+---
+
 ### Musical Reflection: River Through Stone
 
 **Lyrics (English):**

@@ -45,6 +45,8 @@ An existential bridge is revealed: Whoever loses or deliberately disregards *res
 
 Caught between the cathedral's spiritual memory and the town hall's secular responsibility, the Katschhof reminds us of a universal truth: A human community can only flourish permanently where attentive, respectful care (*ahta*) structures the shared space. Only through this lived mindfulness can chaos be prevented from erupting and the individual from being plunged into the destructive distress (*ahta*) of isolation. The space between the cathedral and the town hall thus remains an eternal memorial and, at the same time, an invitation to conscious care.
 
+---
+
 ### Music & Lyrics
 
 #### Original Lyrics (German)

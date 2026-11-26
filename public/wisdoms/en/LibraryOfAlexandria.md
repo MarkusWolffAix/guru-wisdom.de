@@ -21,6 +21,8 @@ The library's redesign is a profound, symbolic representation of universal knowl
 
 * **Vigilant protection:** Knowledge is precious and must be preserved. This is metaphorically expressed by the library's windows, which are shaped like **eyes with eyelids** and watch protectively over the collected knowledge.
 
+---
+
 ### 2. Architectural and physical insights
 From combining your ideas with real-world references (satellite images and the physical model), we adapted the actual features of the modern *Bibliotheca Alexandrina*:
 
@@ -30,12 +32,16 @@ From combining your ideas with real-world references (satellite images and the p
 
 * **The Roof Structure:** The grid-like structure of the roof is designed to deflect the glaring sunlight (the "eyelids") while allowing indirect light to enter the vast reading room—the perfect architectural embodiment of "protection."
 
+---
+
 ### 3. Artistic and Musical Insights
 We have translated these profound philosophical and architectural concepts into emotional soundscapes and visual artworks:
 
 * **Sublimity and Quest:** The vastness of incomplete knowledge can be musically represented through ethereal ambient sounds, expansive reverberation, and open vowels.
 
 * **Warmth and Connection:** The aspect of the sun god Ra, the protective light, and the gathering of people call for a more loving, warmer musical interpretation with gentle melodies.
+
+---
 
 ### 4. The Musical Narrative (Lyrics & Translation)
 To unite all these insights from your guidance and our chat into a final work, here are summary lyrics that celebrate the entire concept of the library:

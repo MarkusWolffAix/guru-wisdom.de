@@ -25,4 +25,3 @@ Gleichzeitig wirft dieses Spannungsfeld Fragen nach Licht und Schatten auf. Es z
 
 Daher lautet die gemeinsame Aufgabe, weise zu reagieren, wenn Situationen drohen, "bescheuert" zu werden und das Bewusstsein zu verletzen. Probleme sollten nicht als Kampfansage, sondern als Zeichen verstanden werden, dass man sich mehr bemühen muss – und zwar auf beiden Seiten, beim Empfänger wie beim Verursacher. Nur wenn auf Probleme mit Liebe, Hilfe und dem echten Willen zur gemeinsamen Lösung reagiert wird, können die Schatten gelichtet und die reine Essenz der verbundenen Liebe bewahrt werden.
 
-```

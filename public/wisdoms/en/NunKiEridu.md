@@ -43,6 +43,8 @@ Eridu served as the first earthly recipient of the descent of order. It was the 
 
 This symbiosis possesses universal validity. Throughout human history—whether in ancient Mesopotamia or at the hot springs of Aachen—places where deep water touches the earth have attracted consciousness and culture. Eridu is the eternal symbol of becoming human through wisdom and the realization of the divine in space. NUN.KI reminds us that every stable creation rests upon the harmonious union of celestial vision and earthly foundation.
 
+---
+
 ### Lyrics: Eridu's Wake (Waters of Eridu)
 
 **English (Original):**

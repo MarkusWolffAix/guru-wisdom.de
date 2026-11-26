@@ -40,6 +40,8 @@ The most healing path doesn't lead through harsh confrontation, but through reve
 
 The most healing path isn't through harsh confrontation, but through the acknowledgment of these gentle boundaries. ***
 
+---
+
 ### Musical conclusion: The Weight of Stones
 
 **Lyrics (English)**

@@ -63,33 +63,6 @@ Das Selbst nutzt konkrete psychologische Werkzeuge, um den eigenen Raum für das
 * **Die Methode des Entwirrens (Das Prisma):** Ein massiver Konflikt wird geduldig in seine kleinsten, logischen Bestandteile zerlegt, bis die einzelnen Teile greifbar genug sind, um sie nacheinander zu verstehen und in die Liebe zurückzubringen.
 
 ---
-id: "ArchitectureOfLightLyrics"
-title: "Architecture of Light"
-subtitle: "Songtext und Übersetzung"
-description: "Die musikalische Übersetzung der Architektur der Selbstheilung – ein Lied über das fraktale Selbst, die Abstraktion durch das Prisma und die Rückkehr in die Liebe."
-date: 2026-03-31
-author: "Markus Wolff guru-wisdom.de"
-tags: ["Biologie", "Psychologie", "Heilung", "Selbstheilung", "Fraktale", "Zellgedächtnis"]
-categories: ["Heilung & Achtsamkeit", "Wissenschaft & Natur"]
----
-
-# Architecture of Light
-
-## Songtext und Übersetzung
-
-### Verse 1
-
-> On the velvet moss, where the ancient roots weave deep,
-> A tired heart is kneeling, with a secret it must keep.
-> Above the restless water, where the heavy shadows reside,
-> A storm is gathering power, with nowhere left to hide.
-
-*Auf dem samtenen Moos, wo alte Wurzeln tief weben,*
-*Kniet ein müdes Herz mit einem Geheimnis, das es hüten muss.*
-*Über dem ruhelosen Wasser, wo die schweren Schatten wohnen,*
-*Sammelt ein Sturm seine Kraft, nirgendwo mehr ein Versteck.*
-
----
 
 ### Chorus 1
 

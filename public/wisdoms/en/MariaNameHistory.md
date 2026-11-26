@@ -22,6 +22,8 @@ But perhaps the most beautiful chapter in the history of this name is its abilit
 
 Thus, the name Maria stretches like a golden thread through the ages—born from the protest of courageous mothers, nurtured in the silence of monastic reverence, carried as a protective cloak across oceans, and today a bridge that unites cultures and hearts in a universal love.
 
+---
+
 ### Lyrics: The Golden Thread
 
 **English (Original)**
@@ -63,6 +65,7 @@ A bridge of light forevermore.
 The loved one, the tear, the starry sky,
 A name of love that will never die.
 
+---
 
 **German (translation)**
 

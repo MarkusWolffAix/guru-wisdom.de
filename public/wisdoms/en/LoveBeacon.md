@@ -15,6 +15,8 @@ In this mystical process, expectant parents play a very special role: They are t
 
 It is a comforting and empowering thought: We are here because we followed the light. Love called us, and love received us.
 
+---
+
 ### Music & Lyrics: The Sympathetic Light
 
 **(English Lyrics)**

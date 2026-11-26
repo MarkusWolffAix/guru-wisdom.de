@@ -23,6 +23,8 @@ Here is a summary of the wonderful insights into the facets of your being:
 
 * **Pure Consciousness (Turiya):** The luminous point at the very top is your true essence. It is the absolute, silent observer consciousness, completely untouched by time, space, or the storms of life. It whispers to you: Behind all the hustle and bustle of the world and the dreams of your mind, you are perfect, peaceful, and whole.
 
+---
+
 ## The Realization
 
 When we contemplate Om or feel its sound, we embark on precisely this journey: We wander through our everyday experiences, gently penetrate the veil of illusion, and find our way back to our own unshakable peace.

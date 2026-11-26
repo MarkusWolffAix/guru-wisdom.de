@@ -17,6 +17,8 @@ Abstraction arises only when the flow falters: through pain, loss, or an obstacl
 
 The spiritual and human challenge, however, lies in the side effect: If we settle into this safe, abstract distance for too long, we risk losing touch with our roots. We begin to mistake the models we've created for reality itself—we confuse the map with the landscape—and lose the earthbound, direct experience of Gaia and primal love. The art lies in letting go of the analytical tool after the work is done, in order to find our way back from the head to feeling. Like fine threads of light weaving from the womb of the earth into the atmosphere, we must gently bend back and merge with the earth like luminous drops.
 
+---
+
 **Music & Lyrics: Return to the Spark (In the Womb of the Earth)**
 
 *English Lyrics:*

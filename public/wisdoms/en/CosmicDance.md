@@ -31,6 +31,8 @@ Air holds the greatest secret: It both divides and connects. It is the space tha
 
 At the same time, it is the absolute link. It flows between earthly love and the divine heavens. As the universal breath of life, this invisible spirit permeates everything and holds the creative process in tender touch. With every breath, we draw this space into ourselves and make it the spirit that nourishes our inner fire and eternally unites our earthly rhythm with the great primal impulse of the universe.
 
+---
+
 ### Lyric Archive: The Habitable Zone
 
 **English Lyrics**

@@ -44,6 +44,8 @@ It embodies the receptive principle: wide open at the top to receive life and ce
 
 [image:SharedCenteringChalice2]
 
+---
+
 ### Quarry, Purity, and Eternity: The Chalice in the Time of Jesus
 
 These metaphysical concepts are reflected in a fascinating way in the historical reality of life in ancient Judea. In Jesus' time, everyday drinking vessels were usually simple clay bowls. However, at the ritual Passover meal, the "Cup of Blessing" was passed around the circle. For such sacred acts, solid vessels made of limestone were often used.
@@ -142,6 +144,8 @@ The shadows fade, the separations pass.
 
 One central dish, one shared design,
 Your cup is holy, and so is mine.
+
+---
 
 ## German Translation: The Shared Chalice
 

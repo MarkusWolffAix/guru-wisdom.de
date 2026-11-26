@@ -59,6 +59,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Earth waxcap** (A fungus from the family Hymenoptera)
 * **Earth scalycap** (A smaller fungus that often grows on damp soil)
 
+---
+
 ## 💧 Element: Water
 
 ### Mammals & Birds
@@ -89,6 +91,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Duckweed** (Better known as water lettuce)
 * **Elodea** (A rapidly growing underwater plant)
 
+---
+
 ## 🔥 Element: Fire
 
 ### Animals
@@ -109,6 +113,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Mexico Maple** (A tree known for its fiery red autumn foliage)
 * **Fire Fungus** (A tree fungus; the tinder fungus was formerly used as tinder)
 
+---
+
 ## 🌬️ Element: Air
 
 ### Plants & Microorganisms
@@ -119,6 +125,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Aerial Algae** (Aerophytic algae that live suspended in the air and fed by atmospheric humidity)
 * **Aerial Plankton** (Collective term for tiny creatures carried by the wind)
 
+---
+
 ## ✨ Element: Ether & Space
 
 ### Animals & Plants (Indoors/Outer Space)
@@ -128,6 +136,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Housefly** (Synonym for housefly)
 * **Space Bear** (Humorous name for tardigrades, which survive in a vacuum)
 
+---
+
 ## 🕉️ The Syllable: "Om"
 
 ### Animals & Plants
@@ -136,6 +146,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Omicron Owlet** (Moth, (Named after the Greek letter)
 * **Cardamom** (The syllable is placed melodiously at the end of the spice)
 * **Ombu** (Dioecious pokeweed; a giant tree from South America)
+
+---
 
 ## 🦕 The Origin: "Primeval"
 
@@ -153,6 +165,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Ancient Grains** (Collective term for old grain varieties such as einkorn and emmer)
 * **Ancient Fern** (The earliest terrestrial vascular plants in Earth's history)
 
+---
+
 ## 💚 The word: "Love"
 
 ### Plants
@@ -160,6 +174,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Lovely Weigela** (A very popular, pink-flowering ornamental shrub)
 * **Symphaea Squill** (Small, delicate spring flower)
 * **Lovely Water Lily** (A particularly graceful aquatic plant species)
+
+---
 
 ## ❤️ The word: "Love"
 
@@ -176,6 +192,8 @@ tags: ["elements", "Language", "biology", "etymology"]
 * **Love Grass** (Genus of fine, veil-like grasses)
 * **Love Tree** (Alternative name for the Judas tree because of its heart-shaped leaves)
 * **Love Curl** (Special cultivated variety of rush with spirally twisted stems)
+
+---
 
 # 🎵 Lyrics
 ## Heart Leaf in the Sunset

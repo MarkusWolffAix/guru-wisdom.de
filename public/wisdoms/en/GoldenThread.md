@@ -28,6 +28,7 @@ To protect the foundation of our culture, initial, promising approaches have alr
 
 Preserving our creative roots is far more than just romantic nostalgia. It is a fundamental necessity to maintain our humanity, our respect for creation and our deepest inner balance in a highly technological world.
 
+---
 
 ### Musical reflection: Where the Timber Spoke
 

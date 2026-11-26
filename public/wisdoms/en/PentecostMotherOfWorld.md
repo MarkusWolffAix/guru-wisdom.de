@@ -17,6 +17,8 @@ This awakening marks the transition from the paralyzing fear of the ego to a rad
 
 Pentecost is thus far more than the historical "birthday of the Church." It is a timeless inner breakthrough. It is the moment when we speak the universal language of love, which needs no words to be understood from soul to soul. Trembling, isolated individuals become radiant presences who step into the world with fearless empathy and heal it simply by being.
 
+---
+
 ### Musical Reflection: Mother of the World
 
 **English Lyrics:**

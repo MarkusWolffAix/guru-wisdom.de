@@ -53,6 +53,8 @@ When we inhale deeply—whether walking through a forest, chanting a mantra, or 
 
 With every breath, our body unites material form with formless stillness anew to keep the inner fire burning. Every tiny, everyday moment of mindfulness carries within it this vast, billions-of-years-old cosmic story. We are a walking, breathing universe, reflecting upon ourselves.
 
+---
+
 ### Music & Poetry: Oxygen in the Fingertips
 
 **Original Lyrics (English):**

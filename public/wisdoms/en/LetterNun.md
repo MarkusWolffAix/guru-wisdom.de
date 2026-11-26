@@ -61,6 +61,8 @@ Just a stroke, straight and clear
 The ancient world is standing here.
 Ooooh... Well.
 
+---
+
 **Translation: Echoes of Nun**
 
 *(Verse 1)*

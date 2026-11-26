@@ -23,6 +23,8 @@ Smelling two things and tasting one thing.
 
 The human mind cannot simultaneously engage in intense, abstract rumination and process these subtle, profound sensory stimuli. This exercise forces the brain to switch from analytical "thinking mode" to immediate "experiential mode." This form of present-moment meditation creates an immediate break in the endless cycle. It's like finally pushing open a door in a stuffy, windowless room and breathing in the clear, fresh air of reality. In that moment of stillness, when the rumination stops, a space opens up for true inner peace.
 
+---
+
 ### Lyrics: Song of the Present
 
 **English Lyrics:**

@@ -2,48 +2,41 @@
 title: "Piazza San Giovanni"
 subtitle: "Through the echoes of time to an inner new beginning"
 description: "A reflection on the Piazza San Giovanni in Oneglia, where the historical echo of an old mural meets the spiritual call of John and the rough sounds of Paolo Nutini."
-tags: ["Christianity", "Aachen", "elements", "Oneglia", "mural", "Paolo Nutini", "revelation"]
+tags: ["Christianity", "Aachen", "Elements", "Oneglia", "Mural", "Paolo Nutini", "Revelation"]
 ---
+
 # Piazza San Giovanni
-## Through the Echoes of Time to Inner Rebirth
+## Through the echoes of time to an inner new beginning
 
-The Piazza San Giovanni in Oneglia, Liguria, is far more than an urban ensemble; it is a resonating chamber for the human soul and a place of profound metaphysical tension. Those who enter this square find themselves at a threshold where the tangible history of the past meets the urgent call for a spiritual future. It is a place where the earthly foundation and mystical purification converge.
+The Piazza San Giovanni in Oneglia, Liguria, is far more than an urban ensemble; it is a resonating chamber for the human soul and a place of profound metaphysical tension. Whoever enters this square finds themselves at a threshold where the tangible history of the past meets the urgent call for a spiritual future. It is a place where the earthly foundation and mystical purification converge.
 
-The architectural anchor of the square is the majestic Collegiata di San Giovanni Battista. This late Baroque collegiate church bears the scars of world history on its apse: cannonballs embedded in the wall from a French bombardment of 1792. They are silent witnesses to the fact that spirituality does not exist in a vacuum, but must endure amidst the storms of time.
+The majestic Collegiata di San Giovanni Battista forms the architectural anchor of the square. This late Baroque collegiate church bears the scars of world history on its apse: cannonballs embedded in it from a French bombardment in 1792. They stand as silent witnesses to the fact that spirituality does not exist in a vacuum, but must endure amidst the storms of time.
 
-### The Echo of History: The "Old Map"
+### The echo of history: The "old map"
+A defining element of the square is the large mural, a copy of the old veduta by Tommaso Borgonio from the 17th century. This fresco functions as the collective memory of Oneglia. It represents our "old map"—the historical fortifications, walls, and alleyways that show us where we come from. It stands for the echoes of our origins, those voices, customs, and structures that have shaped us and seek to hold us fast in nostalgia.
 
-A defining element of the square is the large mural, a copy of the old veduta by Tommaso Borgonio from the 17th century. This fresco functions as the collective memory of Oneglia. It represents our "old map"—the historical fortifications, walls, and alleyways that show us where we come from. It stands for the echoes of our origins, those voices, customs, and structures that have shaped us and seek to keep us trapped in nostalgia.
+### The way through: John the Baptist and Paolo Nutini
+The static echo of the mural contrasts with the dynamic, ascetic figure of John. As a forerunner, he shows us the way out of our entanglement in the past. His symbols—the desert of radical silence, the purifying water of baptism, and the pointing finger of humility—direct our gaze toward an unconditional new beginning. He calls upon us to abandon the old map.
 
-### The Path Through: John the Baptist and Paolo Nutini
-The static echo of the mural contrasts with the dynamic, ascetic figure of John. As a forerunner, he shows us the way out of being trapped in the past. His symbols—the desert of radical silence, the purifying water of baptism, and the outward-pointing finger of humility—direct our gaze toward an unconditional new beginning. He calls upon us to leave the old map behind.
+This spiritual movement finds a remarkable modern parallel in Paolo Nutini's song "Through the Echoes." Nutini's raw, almost prophetic voice evokes a cry in the desert. It's not about denying the past, but about acknowledging the historical foundation and consciously *walking through it* ("Through the Echoes") in order to ultimately reach the waters of inner purification.
 
-
-### The Path Through: John the Baptist and Paolo Nutini
-
-The static echo of the mural is contrasted with the dynamic, ascetic figure of John. As a precursor, he shows us the way out of being trapped in the past. His symbols—the desert of radical silence, the cleansing water of baptism, and the outward-pointing finger of humility—direct our gaze toward an unconditional new beginning. He calls upon us to leave the old map behind.
-
-
-### The Path Through: John the Baptist and Paolo Nutini This spiritual movement finds a remarkable modern counterpart in Paolo Nutini's song "Through the Echoes." Nutini's raw, almost prophetic voice evokes a call in the desert. It's not about denying the past, but about acknowledging the historical foundation and consciously *passing through* it ("Through the Echoes") to ultimately reach the waters of inner purification.
-
-This spiritual movement finds its modern counterpart in Paolo Nutini's song "Through the Echoes." Nutini's raw, almost prophetic voice evokes a call in the desert. The song addresses the conscious passage through the echoes of the past—the pain, the memories, and the old versions of ourselves. It's not about denying the echoes, but about passing through them ("Through the Echoes") to reach the still point of renewal.
+This spiritual movement finds its modern counterpart in Paolo Nutini's song "Through the Echoes." Nutini's raw, almost prophetic voice evokes a cry in the desert. The song explores the conscious journey through the echoes of the past—the pain, the memories, and the old versions of ourselves. It's not about denying the echoes, but about passing through them ("Through the Echoes") to reach the still point of renewal.
 
 [spotify:track:78NogwkqVC4GBQMxOwOQrC]
 
-### Synthesis in the Square
-In Piazza San Giovanni, these layers merge. We stand between the historical map (the mural) and the call to transcendence (John). Nutini's music provides the emotional soundtrack for this process: it encourages us to hear the echoes of the "ancient map," to honor them, but ultimately to follow John's finger, pointing toward freedom.
 
-Thus, visiting the square becomes an invitation to inner reflection. We acknowledge our history, but we are not defined by it. We use the water of purification to clear the echoes of the past and create space for the song of a new, liberated future.
+### Synthesis on the pitch
+In Piazza San Giovanni, these levels merge. We stand between the historical map (the mural) and the call for transcendence (John). Nutini's music provides the emotional soundtrack for this process: it encourages us to hear the echoes of the "old map," to honor it, but ultimately to follow John's finger pointing toward freedom.
+
+Thus, visiting this place becomes an invitation to inner reflection. We acknowledge our history, but we do not allow it to define us. We use the cleansing water to clear the echoes of the past and create space for the song of a new, liberated future.
 
 ***
 
-### Music: Through the Ancient Echoes
+### Musical piece: Through the Ancient Echoes
 
 **Lyrics (English):**
-On the cobblestone stage where the late light dies,
-
-Staring at the sepia stain, the ghost in the eyes.
-
+On the cobblestone stage where the late light dies, 
+Staring at the sepia stain, the ghost in the eyes. 
 The harbor walls and the old defense, 
 Trapped in a frame of high pretense. 
 Dust of the centuries, a static hum, 
@@ -89,58 +82,46 @@ Walk through the light. The water is clear now.
 
 **Translation (German):**
 On the cobblestone stage, where the late light dies,
-Staring at the sepia patch, the spirit in my eyes.
-
+Staring at the sepia spot, the ghost in his eyes.
 The harbor walls and the old defenses,
-Trapped in a frame of great pretension.
-
+Trapped in a framework of great arrogance.
 Dust of centuries, a static hum,
 A map of the man I have become.
 
-I breathe deeply into the warm air,
+I take a deep breath of the warm air,
 Walk through the echoes, let history shatter,
-Into the river that thirst cannot tame,
-San Giovanni points where morning is far away.
-
-Wash the geography straight from my mind,
+Into the river that thirst cannot conquer,
+San Giovanni points towards where the morning is far away.
+Wash the geography straight out of my mind,
 Leave the old map behind, leave the static in the stone,
-Go where the water is the only known truth.
+Go where water is the only known truth.
+The finger is made of bronze, but it feels like fire.
+Draw the line beyond the edge of desire.
 
-The finger is bronze, but it feels like fire,
-Draws the line beyond the edge of desire.
-
-
-Beyond the architecture, where the light shimmers,
+Beyond the architecture, where the reflection of light shimmers,
 Beyond the architecture of my own old dreams,
 The cobblestones know every step I've taken,
 But the water doesn't care what the old ledger looks like.
-
-I step through the spirit of the street.
-
+I walk through the spirit of the street.
 Walk through the echoes, let history shatter,
-Into the river that thirst cannot tame,
-San Giovanni points where morning is far away.
+Into the river that thirst cannot conquer,
+San Giovanni points towards where the morning is far away.
 
-Wash the geography straight from my mind,
+Wash the geography straight out of my mind,
 Leave the old map behind, leave the static in the stone,
-Go where the water is the only known truth.
-
+Go where water is the only known truth.
 I am not the fresco, I am not the stone,
 I am not the echo, I am not alone.
-
-The light falls in, the light falls in,
-
-Let the cleansing begin.
+The light is coming in, the light is coming in,
+Let the cleaning begin.
 
 I let go of the end.
-
 Walk through the echoes, let history shatter,
-Into the river that thirst cannot tame,
-San Giovanni points where morning is far away.
-
-Wash geography straight from my mind,
+Into the river that thirst cannot conquer,
+San Giovanni points towards where the morning is far away.
+Wash the geography straight out of my mind,
 Leave the old map behind, leave the static in the stone,
 Go where water is the only known truth.
 
 Through the echoes, San Giovanni,
-Walk through the light. The water is clear now.
+Walk through the light. The water is now clear.

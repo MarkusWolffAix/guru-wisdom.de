@@ -23,6 +23,8 @@ In modern communication, we often encounter symbols that appear purely functiona
 
 In the world of *guru-wisdom.de*, we interpret this abbreviation as a return to the essentials: The complexity of language gives way to a simple, resonant truth.
 
+---
+
 ### The Musical Piece: Symbols on the Pine
 
 In keeping with this philosophy, the ambient piece **"Symbols on the Pine"** was composed. It combines soft synthesizer textures with a traditional shakuhachi flute to bridge the gap between digital modernity and timeless nature.
@@ -62,6 +64,8 @@ There is no digital or ancient anymore
 (You are...)
 (You are...)
 (UR...)
+
+---
 
 #### German Translation (The Wisdom of Signs)
 

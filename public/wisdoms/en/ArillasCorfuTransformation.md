@@ -26,6 +26,8 @@ For approximately 400 years, Corfu remained under Venetian rule, protected from 
 
 Corfu, and Arillas in particular, symbolizes transformation and fusion. The island withstood storms and welcomed seekers. In Arillas, the earthy simplicity of the local people merges with the subtle aspirations of spiritual seekers. It is a vibrant synthesis of deepest roots (*Ur*) and highest bloom (*Ari*), sustained by the ancient hospitality of the Phaeacians and sheltered in the shade of centuries-old Venetian olive groves.
 
+---
+
 ### Lyrics: Where the Odyssey Ends
 
 The salt-foam braids her turquoise hair,

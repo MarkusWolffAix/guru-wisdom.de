@@ -17,6 +17,8 @@ But this mystery carries yet another, wonderfully light dimension. If we read th
 
 In spiritual traditions, we find this joy in the laughing Buddha or in the Hindu concept of *Lila*—divine play. Enlightenment and cosmic connection don't always have to be characterized by somber silence. Sometimes the greatest realization is a liberating laugh that unabashedly lets the pure breath of life flow forth. The "H" is thus not only the link between the formless cosmos and formed matter. It is the primal breath that breathes life into inanimate matter—and laughter is the **cosmic climax of creation**.
 
+---
+
 ### Music: Galaxy Upon Your Face (Sacred Breath)
 
 **English Lyrics:**

@@ -15,6 +15,8 @@ For this invisible force to become visible, it must encounter a foundation. Just
 
 Sometimes this energy glides smoothly along, but sometimes the long-matured wave crashes against a solid rock in the surf. At this moment, the flowing curve gives way to an abrupt, powerful transformation. The water doesn't struggle against the rock; it embraces it in total surrender, releasing its accumulated power in a liberating, chaotic dance of the elements. Whether life presents itself to us as a shaping sandbank or an insurmountable boulder, true strength arises where we cease to be rigid and instead embrace space, rhythm, and even resistance as part of our own unfolding.
 
+---
+
 ### Music & Lyrics
 
 **Style:** Acoustic Folk / Ambient

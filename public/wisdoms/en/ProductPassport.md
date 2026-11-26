@@ -45,6 +45,8 @@ The rollout will be phased in to avoid overwhelming businesses. Prioritized sect
 
 Despite the enormous potential, critical hurdles must be overcome. These include establishing global data standards to prevent system fragmentation, as well as protecting trade secrets while simultaneously disclosing supply chains. Furthermore, it must be ensured that the documentation requirements remain financially and bureaucratically manageable for small and medium-sized enterprises (SMEs).
 
+---
+
 ## Lyrics of the accompanying piece: Transparency is the new Gold
 
 ### Original (English)

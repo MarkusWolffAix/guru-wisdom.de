@@ -133,6 +133,8 @@ Stardust falls over.
 Giving love in the starlight.
 All is one.
 
+---
+
 **English Translation**
 
 **(Verse 1)**

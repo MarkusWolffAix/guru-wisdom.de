@@ -88,6 +88,8 @@ This first Ogham inscription was far more than just a message. It was an active 
 
 Ogham reminds us even today that language has power. If we choose wisely what we share with the world, every word becomes a seedling from which strength, protection, and wisdom can grow.
 
+---
+
 #### Lyrik / Geschichte
 
 **English:**

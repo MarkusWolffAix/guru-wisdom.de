@@ -28,7 +28,7 @@ Selbst in fremden Sprachräumen, in denen der Begriff als altes Maß für Raum u
 In dieser vielschichtigen Betrachtung schließt sich der Kreis des Menschenbildes: Wir sind geformter Ton aus der Stille des Erdbodens, getragen von den Schattierungen unserer gelebten Erfahrungen und gerufen, durch den eigenen Atem ein lebendiges, unverwechselbares Lied in die Welt hinauszutragen.
 
 
- Dimension | Phänomen | Was es beschreibt |
+| Dimension | Phänomen | Was es beschreibt |
 | :--- | :--- | :--- |
 | **Materie & Ursprung** | Die Erde / der Lehm | Der formbare Urstoff, das Gefäß des Lebens, der Körper |
 | **Schwingung & Geist** | Die Musik / der Klang | Die unsichtbare Welle, der Atem, die Resonanz |

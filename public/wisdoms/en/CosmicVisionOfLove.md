@@ -22,6 +22,8 @@ A fascinating and central role in this concept is played by the so-called "cosmi
 **The True Core**
 Despite this complex, vibrant network and the focusing power of the sentient cosmic being, the absolute core message of this worldview remains unshakeable: At the absolute center of all cosmic and divine events, there is never the "joke" or the focus itself, but always and solely the all-connecting love. It is the true origin and the ultimate goal in which everything becomes one.
 
+---
+
 ## Lyric: A Singular Breath
 
 **Original text (English)**

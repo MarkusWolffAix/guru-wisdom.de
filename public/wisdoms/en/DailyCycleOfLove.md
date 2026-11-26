@@ -15,6 +15,7 @@ A central wisdom of this conscious daily routine lies in immediate inner hygiene
 
 This continuous cleansing of consciousness is essential for our inner peace. For everything we don't resolve during the day casts a shadow over the evening. If we don't transform the unpleasant impressions immediately, we have to laboriously confront them before falling asleep in order to find peace again. However, if we deal with them directly, we pave the way for a completely unburdened return. In the evening, when the day's work is done, we sink back into tranquility. The circle closes and we become one with love and the earth again - supported and ready to draw new strength in our sleep.
 
+---
 
 ### Music: The inner measure
 

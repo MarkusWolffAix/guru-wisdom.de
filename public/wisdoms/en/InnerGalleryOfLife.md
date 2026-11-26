@@ -2,61 +2,52 @@
 title: "The inner gallery of our lives"
 subtitle: "From curator to gardener of consciousness"
 description: "A comprehensive collection of insights into the cultivation of inner images, the art of acceptance and letting go, and the vision of a collective gallery."
-tags: ["psychology", "Mindfulness", "curator", "Inner Garden", "acceptance"]
+tags: ["Psychology", "Mindfulness", "Curator", "Inner Garden", "Acceptance"]
 ---
-# The Inner Gallery of Our Lives
-## From Curator to Gardener of Consciousness
 
-Human consciousness is like an infinite gallery where every moment, every scent, and every sound creates an image or evokes an existing memory. These inner images are far more than mere mementos; they are emotional power centers that guide our present and shape our future. To avoid losing sight of this abundance, we transform ourselves from passive observers to active **gardener-curators**.
+# The inner gallery of our lives
+## From curator to gardener of consciousness
 
-### The Alchemy of Tending: How We Care for Our Images
+Human consciousness is like an endless gallery where every moment, every scent, and every sound creates an image or evokes an existing memory. These inner images are far more than mere mementos; they are emotional power centers that guide our present and shape our future. To avoid losing sight of this abundance, we transform ourselves from passive observers to active **gardeners and curators** .
 
-Tending an inner image is an active, loving process. To "tend" an image in our gallery means:
+### The alchemy of care: How we care for our pictures
 
-1. **Cleansing:** We free the image from the "dust" of old shame or judgment from others until the pure experience becomes visible again.
-
+Cultivating an inner image is an active, loving process. To "cultivate" an image in our gallery means:
+1. **The cleansing:** We free the image from the "dust" of old shame or the judgment of others, until the pure experience becomes visible again.
 2. **Polishing:** Through conscious appreciation, we bring the colors of an empowering image to life, so that it can better guide us in everyday life.
+3. **Reframing:** We consciously choose the frame. A painful experience is given a new frame – for example, that of "lesson" instead of "failure" – which changes the entire effect of the image in the space of our soul.
+4. **Cataloging:** By giving the image a name and recording its meaning on an "information panel", we make it reliably accessible to us at any time.
 
-
-# 3. **Reframing:** We consciously choose the frame. A painful experience is given a new frame—for example, that of "lesson" instead of "failure"—which changes the entire impact of the image in the space of our soul.
-
-4. **Catalogue:** By giving the image a name and recording its meaning on an "information board," we make it reliably accessible to us at any time.
-
-### Acceptance, Letting Go, and the Image of Light
+### Acceptance, letting go, and the image of light
 
 Within our inner garden, we encounter three phenomena that require different approaches:
 
-**The Image of Light (Gratitude):**
-These are the most precious pieces in our collection. An image of light arises from moments of gratitude and joy. Nurturing this image means not only seeing it but also feeling it in our bodies—often as a gentle warmth in the chest or abdomen. We polish the glass of this picture and hang it in a place of honor in our inner foyer so that it immediately greets us upon entering the garden and brightens our mood.
+**The image of light (gratitude):**
+These are the most precious works in our collection. An image of light arises from moments of gratitude and joy. Caring for this image means not only seeing it, but feeling it within your body – often as a gentle warmth in your chest or abdomen. We polish the glass of this image and hang it in a place of honor in our inner foyer, so that it immediately greets us upon entering the garden and brightens our mood.
 
-**Acceptance (The Stone):**
-There are images and events that are immovable—the "stones" on our path. Acceptance here doesn't mean removing the stone, but rather acknowledging it as part of the garden landscape. A wise gardener-curator doesn't try to smash the stone, but consciously places it at the edge of the path. There it can lie; it gives the garden structure and depth, but it no longer obstructs the flow of life.
+**The Acceptance (The Stone):**
+There are images and events that are immovable—the "stones" on our path. Acceptance here doesn't mean removing the stone, but acknowledging it as part of the garden landscape. A wise gardener-curator doesn't try to smash the stone, but deliberately places it at the edge of the path. There it can lie; it gives the garden structure and depth, but it no longer obstructs the flow of life.
 
-**Letting Go (The Overgrowth):**
-In contrast, there is the overgrowth: doubts, destructive thought patterns, or external expectations that drain our energy. Here, letting go is required. We gently but firmly prune this overgrowth. We consign these shoots to the "mental compost," where they can decompose into neutral soil from which new images can grow.
+**Letting Go (The Uncontrolled Growth):**
+In contrast, there is the uncontrolled growth: doubts, destructive thought patterns, or external expectations that drain our energy. Here, letting go is required. We gently but firmly prune this uncontrolled growth. We consign these shoots to the "mental compost," where they can decompose into neutral soil from which new images can grow.
 
-### The Measure of Growth: Maintaining Perspective
+### The measure of growth: Keeping track
 
-A garden and a gallery are constantly growing. The mastery, however, lies in limiting this growth sensibly. Only occupying as much space as one can mindfully tend prevents us from losing sight of the bigger picture in an "inner jungle." A well-tended garden is a place of tranquility, not a place of overwhelm.
+A garden and a gallery are constantly growing. The true skill, however, lies in knowing how to limit this growth. Occupying only as much space as one can mindfully cultivate prevents us from losing our bearings in an "inner jungle." A well-tended garden is a place of tranquility, not a place of overwhelm.
+
+---
 
 ### Guide: Evening Gardening for the Soul
 
-This routine serves as a practical tool for consciously arranging the day's images into your gallery:
+This routine serves as a practical tool to consciously organize the day's images into the gallery:
 
-1. **Arriving:** Two minutes of silence in a comfortable seat. Gently focus on your breath and let any thoughts that arise simply drift by like clouds in the sky, without holding onto them.
-
-2. **Gallery Walk:** A non-judgmental review of the day's images. What seedlings and stones have been added?
-
-3. **Sorting & Tending:** - **The Image of Light:** Choose a beautiful image from the day. Feel the warmth within your body. Polish the glass and give it a place of honor in the foyer.
-
-- **The Stone (Acceptance):** Identify a difficult fact. Deliberately place it by the side of the path. Acknowledge it without letting it block your way.
-
-- **The Overgrowth (Letting Go):** Identify draining thoughts. Cut them off and give them to the compost heap to be transformed.
-
-4. **Cataloging:** Create a short "information panel" (title, essence, feeling) for the most important image in your catalog of the soul. Jot down a few sentences in your journal.
-
-5. **Night's Rest:** Now that you've attended to the details of the garden, you see the garden as a whole and are content.
-
+1. **Arrival:** Two minutes of silence in a comfortable seat. Gently focus on your breath and let any thoughts that arise simply drift by like clouds in the sky, without holding onto them.
+2. **Gallery Walk:** A neutral review of today's pictures. What seedlings and stones have been added?
+3. **Sorting & Caring:** - **The Image of Light:** Choose a beautiful image of the day. Feel the warmth in your body. Polish the glass and give it a place of honor in the foyer.
+   - **The Stone (Acceptance):** Identify a difficult fact. Deliberately place it by the wayside. Acknowledge it without letting it block your path.
+   - **The uncontrolled growth (letting go):** Identify draining thoughts. Cut them off and give them to the compost to be transformed.
+4. **Cataloging:** Create a short "info panel" (title, essence, feeling) for the most important image in your catalog of the soul. Jot down a few sentences in your journal. 
+5. **Nighttime rest:** Now that one has taken care of the details of the garden, one sees the garden as a whole and is satisfied. 
 
 ***
 
@@ -88,47 +79,30 @@ Bending time against the waking will
 The frames align, the story flows  
 In the garden where the spirit grows  
 
-### English Translation: The Inner Gallery
+### German translation: The Inner Gallery
 
-Dust motes dance on the polished floor
+Dust motes dance on the polished floor.  
+I walk through an open, silent door.  
+Frames float in the cool air  
+Moments captured in a fixed gaze  
+I see the child, I see the rising sun  
+The tapestry has only just begun.  
+Curator of the tranquil mind  
+I'm leaving all those heavy spirits behind me.  
 
-I walk through an open, silent door
+The eye is open, in violet light.  
+It paints the future, old and new.  
+In this gallery, I keep the light  
+And lead the shadows out of the night.  
 
-Frames float in the cool air
+A heavy frame, a fully learned lesson  
+Charcoal drawings where bridges once burned  
+I polish the glass, I change my perspective.  
+Until the gray transforms back into something real.  
+This inner temple, vast and grand  
+Where fear no longer has room to hide  
+Only the observer who stands still  
+And time bends against the waking will.  
 
-Moments captured in a fixed gaze
-
-I see the child, I see the rising sun
-
-The tapestry has only just begun
-
-Curator of the serene mind
-
-I leave all the heavy spirits behind
-
-The eye is open, in violet light
-
-It paints the future, old and new
-
-In this gallery, I hold the light
-
-And lead the shadows from the night
-
-A heavy frame, a fully learned lesson
-
-Charcoal drawings where bridges once burned
-
-I polish the glass, I change the gaze
-
-Until the gray transforms back into something real
-
-This inner temple, vast and grand
-
-Where fear has nowhere left to hide
-
-Only the observer, standing still
-
-And bending time against the waking will
-
-The frames align themselves Out, the story flows
+The frames align, the story flows.  
 In the garden where the spirit grows

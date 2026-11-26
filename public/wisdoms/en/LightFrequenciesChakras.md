@@ -21,6 +21,7 @@ We instinctively sense which light frequency allows our inner state to unfold. C
 
 *The day begins with our mind and ends with bringing the experiences of the day with our heart in love in order to sleep peacefully.* 
 
+---
 
 ### Musical Reflection: Amber Glow
 
@@ -57,6 +58,8 @@ In the warmth of the fire, a quiet rebirth.
 
 Mind in the sky, but the soul in the flame,
 Frequencies shifting, we are not the same.
+
+---
 
 **German Translation**
 

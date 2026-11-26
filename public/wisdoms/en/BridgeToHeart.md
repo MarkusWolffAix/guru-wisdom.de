@@ -11,9 +11,13 @@ While bare facts, logic, and scientific data form the foundation of our reality,
 
 > **The Secret of Empathy:** We develop far more compassion for a protagonist when they are part of a beautiful story. This applies to other people, but especially to ourselves. When we understand our own lives as a narrative with a beautiful plot, we can treat ourselves with much more love and understanding.
 
+---
+
 ## The Bridge Between Mind and Heart
 
 Science and logic are not our enemies; they are a neutral shield that protects us from prejudice. The art lies in taking this secure, rational foundation and building an emotional bridge upon it. The facts explain the *how*, but the loving story explains the *why*.
+
+---
 
 ## Our Three Application Examples
 
@@ -35,6 +39,8 @@ We explored how cold facts can be transformed into heartwarming stories through 
 
 * **The Loving Story:** The dignified hero's journey of our own protagonist. Mistakes become courageous steps of self-discovery, crises become times of healing. We become the benevolent, empathetic author of our own biography.
 
+---
+
 ## Conclusion
 We often don't have control over which facts life presents us with. But we always have the choice of which voice we use to tell them. By crafting a beautiful narrative, we invite empathy into our lives.
 
@@ -48,6 +54,7 @@ Grandma reads a book to me.
 And the golden words she reads,
 Plant the courage in our deeds.
 
+---
 
 # Making stories from the light,
 
